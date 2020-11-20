@@ -16,14 +16,14 @@ This page contains release notes information for Aspose.OMR for .NET 20.3
 | :- | :- | :- |
 |OMRNET-73|Support for adding images to the template generation|New Feature|
 |OMRNET-72|Update questions naming order for recognition results|Enhancement |
-# **Public API and Backwards Incompatible Changes**
-## **Added APIs:**
+## **Public API and Backwards Incompatible Changes**
+### **Added APIs:**
 No Changes
-## **Updated APIs:**
+### **Updated APIs:**
 
 |**Type**|**Title**|
 | :- | :- |
 |Method|Aspose.OMR.Api.OmrEngine.GenerateTemplate|
-## **Removed APIs:**
+### **Removed APIs:**
 No Changes
 
