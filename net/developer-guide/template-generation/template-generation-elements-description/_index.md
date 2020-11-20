@@ -5,17 +5,17 @@ weight: 10
 url: /net/template-generation-elements-description/
 ---
 
-# **Introduction**
+## **Introduction**
 Template generation markup supports several types of elements, and most elements have a number of options that define the element' properties and appearance. This allows creating functional and nice-looking custom templates for any of your needs i.e. surveys, answer sheets, tests - anything you need.
 
 In this article, we provide a detailed description of each element and its attributes with the usage examples.
 
 It is important to note that each attribute is parsed successfully only if it starts with a **tabulation** symbol, not just spaces. If you notice strange behavior or errors, the first thing to check will be that all additional attributes in markup start with **\t**.
-# **Text element**
+## **Text element**
 Starts with **?text=** prefix and can be followed by any number of text lines not starting with **\t** (tabulation) until an empty line or another element is found. The text element allows us to add text lines to the template and has no additional attributes.
-## **Attributes**
+### **Attributes**
 This element has no additional attributes.
-## **Examples**
+### **Examples**
 **Markup**
 
 {{< highlight java >}}
@@ -31,9 +31,9 @@ Third line of text
 **Result**
 
 **![todo:image_alt_text](template-generation-elements-description_1.png)**
-# **Answer Sheet element**
+## **Answer Sheet element**
 Starts with **?answer_sheet=** prefix that sets the name of the sheet, i.e. the prefix of each question in the sheet. It allows adding choice boxes grouped in columns and rows. Use the answer sheet if you want to fit a lot of questions on a page since they are located close to each other.
-## **Attributes**
+### **Attributes**
 This element can be customized with attributes, each attribute must be on a new line starting with **\t** (tabulation) symbol. 
 
 |**Element**|**Prefix**|**Attribute**|**Attribute Description**|**Required/Optional**|**Attribute Default Value**|**Attribute usage example**|
@@ -42,7 +42,7 @@ This element can be customized with attributes, each attribute must be on a new
 |||columns_count|Sets the number of columns to be drawn.|Optional|4|columns_count=4|
 |||answers_count|The number of answer options for each question in the answer sheet.|Optional|4|answers_count=5|
 |||start_id|<p>The starting number of suffix in the title of each question.</p><p>If set, questions in the answer sheet will be named starting with this number.</p><p>If not set, numeration will take any added questions on the page into account, so that questions in the answer sheet will continue the numeration.</p>|Optional|-|<p>start_id=1</p><p>start_id=51</p>|
-## **Examples**
+### **Examples**
 **Markup**
 
 {{< highlight java >}}
@@ -78,13 +78,13 @@ This element can be customized with attributes, each attribute must be on a new
 **Result**
 
 ![todo:image_alt_text](template-generation-elements-description_3.png)
-# **Choice box element**
+## **Choice box element**
 Choice box (or, simply put, question) starts with the # symbol and then continued by the text of the question and answer options. The choice box is a basic element that represents a single question with a set amount of answers.
 
 The answer options start with parentheses with an answer name or a letter inside (e.g. <**(A)**>) proceeded with the answer text. Question text and answer options can be placed on several lines (see examples).
-## **Attributes**
+### **Attributes**
 This element has no additional attributes. 
-## **Examples**
+### **Examples**
 **Markup**
 
 {{< highlight java >}}
@@ -112,9 +112,9 @@ This element has no additional attributes. 
 **Result**
 
 ![todo:image_alt_text](template-generation-elements-description_4.png)
-# **Grid element**
+## **Grid element**
 Starts with **?grid=** prefix that sets the name of the element. Grid is a matrix consisting of several similar sections, and for each section there is a list of several options. Grid is best used for fields like ID, phone number, and similar. Another way to think about Grid is a set of identical choice boxes, the result of which is grouped into a single value.
-## **Attributes**
+### **Attributes**
 Grid element can be customized with attributes, each attribute must be on a new line starting with **\t** (tabulation) symbol.
 
 |**Element**|**Prefix**|**Attribute**|**Attribute Description**|**Required/Optional**|**Attribute Default Value**|**Attribute Usage Example**|
@@ -125,7 +125,7 @@ Grid element can be customized with attributes, each attribute must be on a new
 |||orientation|Grid orientation: horizontal or vertical. Determines the position of child choice boxes inside the grid.|Optional|horizontal|<p>orientation=horizontal</p><p>orientation=vertical</p>|
 |||underlines|Indicates whether to draw underline symbols at the start of the grid or not|Optional|true|<p>underlines=true</p><p>underlines=false</p>|
 |||x/y|<p>Sets the X and Y position in absolute coordinates. Allows to position grid element in any place on the page, or position several grids in one line. It overrides the align attribute. </p><p>You can provide both X and Y values, or specify only one (only X or only Y).</p>|Optional|-|<p>X=500</p><p>Y=350</p>|
-## **Examples**
+### **Examples**
 **Markup**
 
 {{< highlight java >}}
@@ -189,15 +189,15 @@ Grid element can be customized with attributes, each attribute must be on a new
 **Result**
 
 ![todo:image_alt_text](template-generation-elements-description_6.png)
-# **Image element**
+## **Image element**
 Starts with **?image=** prefix that sets the title of the image. Image element allows adding image files on the page, e.g. logos, instructions blocks, or any other type of image. Please pay attention to the size of the image you want to add so that it fits properly in the desired position and doesn't take too much space. The path to the images is provided in Generation method parameters.
-## **Attributes**
+### **Attributes**
 The image element can be customized with attributes, each attribute must be on a new line starting with **\t** (tabulation) symbol.
 
 |**Element**|**Prefix**|**Attribute**|**Attribute Description**|**Required/Optional**|**Attribute Default Value**|**Attribute Usage Example**|
 | :- | :- | :-: | :-: | :- | :- | :- |
 |Image|?image=|align|The horizontal alignment of the image element on the page.|Optional|Center|<p>align=left</p><p>align=center</p><p>align=right</p>|
-## **Examples**
+### **Examples**
 **Result**
 
 {{< highlight java >}}
@@ -211,9 +211,9 @@ The image element can be customized with attributes, each attribute must be on 
 Result
 
 ![todo:image_alt_text](template-generation-elements-description_7.png)
-# **Barcode element**
+## **Barcode element**
 Starts with **?barcode=** prefix that sets the name of the barcode element. The template generation supports adding barcodes and QR-codes on the page and provides support for lots of barcode types. You can encode link, ID, or any other value using barcode and position it exactly where you want to use attributes. Aspose.OMR for .NET supports barcode generation and recognition, so any information you decide to encode will be successfully decoded.
-## **Attributes**
+### **Attributes**
 Barcode element can be customized with attributes, each attribute must be on a new line starting with **\t** (tabulation) symbol.
 
 |**Element**|**Prefix**|**Attribute**|**Attribute Description**|**Required/Optional**|**Attribute Default Value**|**Attribute Usage Example**|
@@ -225,7 +225,7 @@ Barcode element can be customized with attributes, each attribute must be on a 
 |||height|The target height of the barcode image. If the height is not set, the barcode size is determined automatically. If you would like to make the barcode image bigger or smaller, use this attribute.|Optional|Auto|height=300|
 |||codetext|Indicates whether to draw barcode codetext (encoded text below barcode image)|Optional|False|<p>codetext=true</p><p>codetext=false</p>|
 |||x/y|<p>Sets the X and Y position in absolute pixel coordinates. Allows to position barcode element in any place on the page, or position several barcodes in one line. Overrides align attribute. </p><p>You can provide both X and Y values, or specify only one (only X or only Y).</p><p>Please note that paper size is standard A4 (2480x3508).</p>|Optional|-|<p>X=250</p><p>Y=1500</p>|
-## **Examples**
+### **Examples**
 **Markup**
 
 {{< highlight java >}}
