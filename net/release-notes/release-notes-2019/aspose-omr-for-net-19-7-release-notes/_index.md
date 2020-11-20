@@ -18,8 +18,8 @@ Template Generation: This feature allows creating template images and template f
 |OMR-410|Implement template generation in Aspose.OMR for .NET|New Feature|
 ## **Other Changes**
 Bug fixes regarding image processing.
-# **Public API and Backwards Incompatible Changes**
-## **Added APIs:**
+## **Public API and Backwards Incompatible Changes**
+### **Added APIs:**
 
 |**Type**|**Title**|
 | :- | :- |
@@ -31,6 +31,6 @@ Bug fixes regarding image processing.
 |Property|Aspose.OMR.Generation.GenerationResult.Warnings|
 |Method|Aspose.OMR.Generation.GenerationResult.Save(System.String,System.String)|
 |Method|Aspose.OMR.Api.OmrEngine.GenerateTemplate(System.String)|
-## **Removed APIs:**
+### **Removed APIs:**
 No Changes
 
