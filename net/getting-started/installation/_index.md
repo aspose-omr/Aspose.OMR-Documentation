@@ -5,7 +5,7 @@ weight: 50
 url: /net/installation/
 ---
 
-# **Evaluate Aspose.OMR for .NET**
+## **Evaluate Aspose.OMR for .NET**
 You can easily download Aspose.OMR for .NET for evaluation purposes. Please note, the evaluation version is the same as the purchased version. An evaluation version simply becomes licensed when you add a few lines of code to apply the license.
 
 The evaluation version (without a license initialization) provides full product functionality, but it has the following limitation: it processes only 5 questions on a page.
@@ -15,7 +15,7 @@ The evaluation version (without a license initialization) provides full product 
 If you want to test Aspose.OMR for .NET without the evaluation version limitations, you can also request a 30-day Temporary License. Please refer to [How to get a Temporary License?](https://purchase.aspose.com/temporary-license)
 
 {{% /alert %}} 
-# **Installing Aspose.OMR for .NET through NuGet**
+## **Installing Aspose.OMR for .NET through NuGet**
 NuGet is the easiest way to download and install Aspose APIs for .NET. Open Microsoft Visual Studio and NuGet package manager. Search "aspose" to find the desired Aspose API, click on "Install" and the selected API will be downloaded and referenced in your project.
 ### **Referencing Aspose.OMR for .NET**
 Taking benefit of this wonderful feature, we have bundled [Aspose.OMR for .NET](https://www.nuget.org/packages/Aspose.OMR/) libraries into a NuGet package and uploaded it into a NuGet repository. With this option, you benefit from using Aspose.OMR for .NET without installing this component on your system. NuGet runs in Visual Studio 2010 and later version(s), Visual Web Developer 2010, and Windows Phone Developer Tools 7.1. In our tests, we have tested it with Visual Studio 2015 Ultimate.
