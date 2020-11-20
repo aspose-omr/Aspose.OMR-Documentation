@@ -12,7 +12,7 @@ This page contains release notes information for [Aspose.OMR for .NET 19.4](http
 {{% /alert %}} 
 ## **First Public Release of Aspose.OMR for .NET**
 We are pleased to announce the first public release of Aspose.OMR for .NET. It is simple to use API that allows developers to perform OMR operation on images. Aspose.OMR can perform OMR operation on JPEG, PNG, GIF, TIFF, and BMP image files and save the output in CSV format. Please visit the [Product Features page](/omr/net/features-list/) for further details and get the chance to download the first release of [Aspose.OMR for .NET](https://downloads.aspose.com/omr/net). You can also get familiar with the solution by using Aspose.OMR for .NET examples and demo projects at [GitHub](https://github.com/aspose-omr/Aspose.OMR-for-.NET).
-# **Features**
+## **Features**
 Aspose.OMR for .NET has the capability to capture human-marked data from documents like surveys, questionnaires, examination paper, etc. With the use of Aspose.OMR for .NET, it is possible to recognize scanned images and even photos with high accuracy. Aspose.OMR for .NET supports the following features:
 
 - Recognition of scanned images and photos
@@ -21,7 +21,7 @@ Aspose.OMR for .NET has the capability to capture human-marked data from documen
 - High accuracy rate
 - GUI for correcting complex cases
 - Export the results to CSV file format
-# **Usage Example**
+## **Usage Example**
 {{< highlight csharp >}}
 
  string TemplateName = @"AsposeTest.omr";
