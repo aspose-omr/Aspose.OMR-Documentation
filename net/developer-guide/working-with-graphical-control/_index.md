@@ -9,7 +9,7 @@ url: /net/working-with-graphical-control/
 
 -----
 Aspose.OMR for .NET is a simple and lightweight API that makes performing OMR operation on images a breeze. Aspose.OMR for .NET also provides a graphical control that can be added into .NET applications to manually correct threshold and markup and see the changes in real-time. The following guide explains in detail the use of the graphical control. A complete working example can be downloaded from [Aspose.OMR GitHub Repository](https://github.com/aspose-omr/Aspose.OMR-for-.NET).
-# **Main Screen**
+## **Main Screen**
 When you start the sample application, you are greeted with this startup screen. It has the following four buttons
 
 - Get Control
@@ -18,7 +18,7 @@ When you start the sample application, you are greeted with this startup screen.
 - Report Results
 
 ![todo:image_alt_text](working-with-graphical-control_1.jpg)
-# **Get Control**
+## **Get Control**
 Click the **Get Control** button to show the Aspose.OMR user control on the interface. 
 
 
@@ -36,7 +36,7 @@ The control displays the following
 - Threshold Slider
 - Show/Hide Bubbles Button
 - License Status
-# **Selecting Image**
+## **Selecting Image**
 Click the **Select Image** button and select the image to perform OMR operation on. After selecting the image, you get the following view that displays the image inside the control. The following code snippet is executed on **Select Image** button click.
 
 
@@ -46,7 +46,7 @@ Click the **Select Image** button and select the image to perform OMR operation 
 
 
 ![todo:image_alt_text](working-with-graphical-control_3.jpg)
-# **Recognize Image**
+## **Recognize Image**
 Click the **Recognize Image** button to perform the OMR operation with the selected threshold on the image. The following code is executed on the **Recognize Image** button click.
 
 
@@ -60,19 +60,19 @@ After the OMR operation is done on the image, a grid with selected answers will 
 ![todo:image_alt_text](working-with-graphical-control_4.jpg)
 
 The green circles indicate the marked answers which have been recognized by the OMR engine.
-# **Threshold Slider**
+## **Threshold Slider**
 You may use the threshold slider to change how strict the API is to identify the answers. The following screenshot compares the images with the threshold setting of **50** and **66**. You can see that as the threshold value increased, the number selected answers decreased based on the quality of the highlighting.
 
 
 
 ![todo:image_alt_text](working-with-graphical-control_5.jpg)
-# **Grid Alignment**
+## **Grid Alignment**
 The control also provides four handles around the image for you to finetune the alignment of the grid on the image. You may move the handles to adjust the grid according to your requirements. The following screenshot shows the handles in the control.
 
 
 
 ![todo:image_alt_text](working-with-graphical-control_6.jpg)
-# **Export Result**
+## **Export Result**
 When you are satisfied with the result of the image, you may export the results by clicking the **Export Results** button. The following code snippet is executed on the **Export Results** button click.
 
 
