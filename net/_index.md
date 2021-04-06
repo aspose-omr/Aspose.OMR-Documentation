@@ -22,21 +22,21 @@ The Aspose.OMR for .NET also provides methods for creating custom answer sheets,
 
 ## Overview
 
-- [Product Overview](omr/net/product-overview/)
-- [Features List](omr/net/features-list/)
-- [Supported File Formats](omr/net/supported-file-formats/)
-- [Licensing](omr/net/licensing/)
+- [Product Overview](/omr/net/product-overview/)
+- [Features List](/omr/net/features-list/)
+- [Supported File Formats](/omr/net/supported-file-formats/)
+- [Licensing](/omr/net/licensing/)
 - [Release Notes](/omr/net/release-notes/)
 
 ## Getting Started
-- [System Requirements](omr/net/system-requirements/)
-- [Installation](omr/net/installation/)
-- [How to Run the Examples](omr/net/how-to-run-the-examples/)
+- [System Requirements](/omr/net/system-requirements/)
+- [Installation](/omr/net/installation/)
+- [How to Run the Examples](/omr/net/how-to-run-the-examples/)
 
 ## Developer Guide
-- [Create OMR Template](omr/net/create-omr-template/)
-- [Perform OMR on images](omr/net/perform-omr-on-images/)
-- [Template Generation Elements Description](omr/net/template-generation-elements-description/)
+- [Create OMR Template](/omr/net/create-omr-template/)
+- [Perform OMR on images](/omr/net/perform-omr-on-images/)
+- [Template Generation Elements Description](/omr/net/template-generation-elements-description/)
 
 ## Aspose.OMR for .NET Resources
 
