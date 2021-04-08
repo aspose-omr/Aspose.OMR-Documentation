@@ -9,6 +9,12 @@ description: This article teaches how to create custom Answer Sheet using C#.
 With Aspose.OMR for .NET API you can easily create custom Answer Sheet paper. A wide range of customization options will allow you to create a unique OMR Sheet specifically for your needs.
 This guide will walk you through the process of customizing and creating an Answer Sheet.
 
+{{% alert color="primary" %}} 
+
+Try online! You can test Answer Sheet generator online at products.aspose.app/omr/create-answer-sheet
+
+{{% /alert %}}
+
 ## Create simple Answer Sheet with C#
 
 To create image and template you will need textual Template Markup file (.txt), which describes the elements that will be placed on the generated image. 
