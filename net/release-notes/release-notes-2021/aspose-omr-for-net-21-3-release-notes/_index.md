@@ -32,7 +32,7 @@ This page contains release notes information for Aspose.OMR for .NET 21.3
 No Changes
 
 ## **Usage Example for global page settings**
-```code
+```csharp
 using System;
 using System.Diagnostics;
 using System.Drawing;

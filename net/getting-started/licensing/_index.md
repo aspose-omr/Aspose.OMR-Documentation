@@ -10,11 +10,7 @@ We want our customers to test our components thoroughly before buying so the eva
 
 **Limit of the Number of Questions that can be processed** 
 The evaluation version (without a license initialization) provides full product functionality, but it has the following limitation: only five questions of any page can be recognized.
-{{% alert color="primary" %}}
 
-Note that there are a number of general policies and practices that guide you on how to evaluate, properly license, and purchase our products. You can find them in the "Purchase Policies and FAQ" section.
-
-{{% /alert %}}
 ## **Apply License using File or Stream Object**
 The license can be loaded from a file or stream object. The easiest way to set a license is to put the license file in the same folder as the Aspose.OMR.dll file and specify the file name, without a path, as shown in the example below.
 

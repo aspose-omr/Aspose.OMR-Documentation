@@ -31,7 +31,7 @@ No Changes
 No Changes
 
 ## **Usage Example for Recognition from the stream**
-```code
+```csharp
 using System;
 using System.Diagnostics;
 using System.Drawing;
@@ -92,9 +92,7 @@ namespace ProgramOMR
 }
 ```
 ## **Usage Example for Batch recognition**
-```code
-    ...
-
+```csharp
     public static void Recognize()
     {
         // Get template for recognize
