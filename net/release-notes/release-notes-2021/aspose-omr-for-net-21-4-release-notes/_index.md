@@ -97,9 +97,9 @@ namespace ProgramOMR
 ?grid=ID
     sections_count=8
     options_count=5
-	bubble_size=large
-	vertical_margin=35
-	header_type=Square
-	header_border_size=10
-	header_border_color=Lime
+    bubble_size=large
+    vertical_margin=35
+    header_type=Square
+    header_border_size=10
+    header_border_color=Lime
 ```
