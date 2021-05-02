@@ -5,7 +5,7 @@ weight: 70
 url: /net/how-to-run-the-examples/
 ---
 
-## **Software Requirements**
+## Software Requirements
 
 Please make sure you meet the following requirements before downloading and running the examples.
 
@@ -14,13 +14,11 @@ Please make sure you meet the following requirements before downloading and runn
 1. Go to Tools->Options->NuGet Package Manager->Package Sources and make sure that the option **nuget.org** is checked
 1. The example project uses NuGet Automatic Package Restore feature, therefore, you should have an active internet connection. If you do not have an active internet connection on the machine where examples are to be executed please check [Installation](/omr/net/installation/) and manually add a reference to Aspose.OMR.dll in the example project.
 
-## **Download from GitHub**
+## Download from GitHub
 
 All examples of Aspose.OMR for .NET are hosted on [GitHub](https://github.com/aspose-omr/Aspose.OMR-for-.NET).
 
-## **Aspose.OMR Examples**
-
-- You can either clone the repository using your favorite GitHub client or download the ZIP file from [here](https://github.com/aspose-cells/Aspose.Cells-for-.NET/archive/master.zip).
+- You can either clone the repository using your favorite GitHub client or download the ZIP file from [here](https://github.com/aspose-omr/Aspose.OMR-for-.NET/archive/master.zip).
 - Extract the contents of the ZIP file to any folder on your computer. 
 - Console examples are located in Aspose.OMR.ConsoleDemo folder and Graphical Control examples are located in Aspose.OMR.GuiDemo folder.
 - There is a Visual Studio solution file for the Examples i.e. **Aspose.OMR.Demos.sln**.

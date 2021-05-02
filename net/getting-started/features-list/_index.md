@@ -28,4 +28,3 @@ Following are some limitations:
 
 - Recognition process works only with prepared templates (special markers will be drawn over the user’s form)
 - Performing OCR operation is also not supported for now
-- OMR operation will show results only in text format

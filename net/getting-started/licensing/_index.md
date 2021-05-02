@@ -10,6 +10,7 @@ We want our customers to test our components thoroughly before buying so the eva
 
 **Limit of the Number of Questions that can be processed** 
 The evaluation version (without a license initialization) provides full product functionality, but it has the following limitation: only five questions of any page can be recognized.
+
 ## **Apply License using File or Stream Object**
 The license can be loaded from a file or stream object. The easiest way to set a license is to put the license file in the same folder as the Aspose.OMR.dll file and specify the file name, without a path, as shown in the example below.
 
@@ -18,6 +19,11 @@ The license can be loaded from a file or stream object. The easiest way to set 
 If you use are using any other Aspose for .NET component along with Aspose.OMR for .NET, please specify the namespace for License like *Aspose.OMR.License*.
 
 {{% /alert %}} 
+
+## **Temporary License**
+If you wish to test Aspose.OMR without the limitations of the trial version, you can request a **30-day Temporary License**. For more details, please visit the ["Get a Temporary License"](https://purchase.aspose.com/temporary-license) page.
+
+
 ### **Loading a License from File**
 The easiest way to apply a license is to put the license file in the same folder as the Aspose.OMR.dll file and specify just the filename without a path.
 
