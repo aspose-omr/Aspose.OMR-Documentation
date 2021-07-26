@@ -196,7 +196,7 @@ Paragraph element can be customized with attributes, each attribute must be on 
 **![todo:image_alt_text](multi-column-template-paragraph.png)**
 
 ## **VerticalChoiceBox element**
-Starts with **?verticalChoiceBox=** prefix that sets the name of the element. The VerticalChoiceBox consists of a response element that contains a short response and Content elements that describe the response option in detail.
+Starts with **?verticalChoiceBox=** prefix that sets the name of the element. The VerticalChoiceBox consists of a Answer element that contains a short response and Content elements that describe the response option in detail. It can also contain a WriteIn element in which the user can enter his own answer.
 Ends with a **&verticalChoiceBox** prefix indicating the end of the element's bounds.
 
 ### **Attributes**
@@ -254,6 +254,37 @@ This element has no additional attributes. 
 **Result**
 
 **![todo:image_alt_text](multi-column-template-verticalChoiceBox.png)**
+
+## **WriteIn element**
+Starts with **?write_in=** prefix that sets the name of the element. The WriteIn element is a field in which the user can enter some data and, if necessary, receive it in the form of a picture. If the WriteIn element is part of the VerticalChoiceBox element, its result is preserved if the user fills the bubble associated with it.
+
+### **Attributes**
+WriteIn element can be customized with attributes, each attribute must be on a new line starting with **\t** (tabulation) symbol.
+|**Element**|**Prefix**|**Attribute**|**Attribute Description**|**Required/Optional**|**Attribute Default Value**|**Attribute Usage Example**|
+| :- | :- | :- | :- | :- | :- | :- |
+|WriteIn|?write_in=|required|Indicates obligatory the clipping of write-in field|Optional|false|required=true|
+
+### **Examples**
+{{< highlight java >}}
+
+?container=1-st
+	columns_count=3
+?block=Process
+	column=1
+?write_in=Process
+	required=true
+&block
+&container
+
+{{< /highlight >}}
+
+**Result**
+
+**![todo:image_alt_text](multi-column-template-write-in.png)**
+
+**Saved result**
+
+**![todo:image_alt_text](multi-column-template-write-in-cropped.png)**
 
 ### **Example for creating multi-column questionnaire**
 
