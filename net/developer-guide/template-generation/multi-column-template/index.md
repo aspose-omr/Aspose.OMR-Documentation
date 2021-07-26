@@ -260,6 +260,7 @@ Starts with **?write_in=** prefix that sets the name of the element. The Write
 
 ### **Attributes**
 WriteIn element can be customized with attributes, each attribute must be on a new line starting with **\t** (tabulation) symbol.
+
 |**Element**|**Prefix**|**Attribute**|**Attribute Description**|**Required/Optional**|**Attribute Default Value**|**Attribute Usage Example**|
 | :- | :- | :- | :- | :- | :- | :- |
 |WriteIn|?write_in=|required|Indicates obligatory the clipping of write-in field|Optional|false|required=true|
