@@ -49,8 +49,6 @@ No Changes
 &container
 ```
 
-{{< /highlight >}}
-
 **Result**
 
 **![todo:image_alt_text](table.png)**
@@ -87,8 +85,6 @@ No Changes
 &block
 &container
 ```
-
-{{< /highlight >}}
 
 **Result**
 
