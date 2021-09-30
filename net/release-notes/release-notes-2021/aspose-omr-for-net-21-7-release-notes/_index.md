@@ -32,7 +32,7 @@ No Changes
 
 No Changes
 
-## **Usage Example for PageMarginLeft**
+## **Usage Example for Orientation**
 ```code
 using System;
 using System.IO;
