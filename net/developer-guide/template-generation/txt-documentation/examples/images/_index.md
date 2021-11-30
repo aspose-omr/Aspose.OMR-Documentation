@@ -1,5 +1,5 @@
 ---
-title: Create OMR Template with Images
+title: OMR Template with Images example
 type: docs
 weight: 30
 url: /net/template-generation/txt/examples/image/
@@ -46,7 +46,6 @@ The following is the complete text markup that is used in the example code snipp
 	elements_count=50
 	columns_count=5
 ````
-
 
 
 The following code snippet processes the sample text markup to generate the OMR template file.

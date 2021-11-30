@@ -1,8 +1,8 @@
 ---
-title: Examples of TXT Markdown
+title: Examples of JSON Markdown
 type: docs
 weight: 10
-url: /net/template-generation/txt/examples
+url: /net/template-generation/json/examples
 ---
 
-The page provides template examples using TXT markup.
+The page provides template examples using JSON markup.

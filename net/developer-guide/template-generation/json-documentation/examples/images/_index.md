@@ -1,5 +1,5 @@
 ---
-title: Create OMR Template with Images
+title: OMR Template with Images example
 type: docs
 weight: 30
 url: /net/template-generation/json/examples/image/
@@ -118,7 +118,6 @@ The following is the complete json markup that is used in the example code snipp
   "type": "Template"
 }
 ````
-
 
 
 The following code snippet processes the sample text markup to generate the OMR template file.

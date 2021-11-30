@@ -1,5 +1,5 @@
 ---
-title: Template Generation elements description
+title: Elements description
 type: docs
 weight: 10
 url: /net/template-generation/txt/elements-description
@@ -15,7 +15,6 @@ In this article, we provide a detailed description of each element and its attri
 It is important to note that each attribute is parsed successfully only if it starts with a **tabulation** symbol, not just spaces. If you notice strange behavior or errors, the first thing to check will be that all additional attributes in markup start with **\t**.
 
 {{% /alert %}}
-
 
 
 ## **Text element**
@@ -35,7 +34,6 @@ Text element can be customized with attributes, each attribute must be on a new
 ### **Examples**
 **Markup**
 
-{{< highlight plaintext >}}
 ```text
 ?text=Header text
 	font_style=bold
@@ -47,7 +45,6 @@ second line of column text
 	align=right
 	font_style=italic
 ````
-{{< /highlight >}}
 
 **Result**
 
@@ -70,7 +67,6 @@ This element can be customized with attributes, each attribute must be on a new
 ### **Examples**
 **Markup**
 
-{{< highlight plaintext >}}
 ````text
  ?answer_sheet=Questions  
 	elements_count=60
@@ -78,7 +74,6 @@ This element can be customized with attributes, each attribute must be on a new
 	start_id=51
 	answers_count=5
 ````
-{{< /highlight >}}
 
 **Result**
 
@@ -86,13 +81,11 @@ This element can be customized with attributes, each attribute must be on a new
 
 **Markup**
 
-{{< highlight plaintext >}}
 ````text
  ?answer_sheet=Questions
 	elements_count=40
 	answers_list=(1)(2)(3)(4)(5)
 ````
-{{< /highlight >}}
 
 **Result**
 
@@ -106,7 +99,6 @@ This element has no additional attributes. 
 ### **Examples**
 **Markup**
 
-{{< highlight plaintext >}}
 ````text
  #Can Aspose.OMR process not only scans, but also photos?
 
@@ -126,7 +118,6 @@ This element has no additional attributes. 
 
     (1) (2) (3) (4) (5) (6) (7) (8) (9)
 ````
-{{< /highlight >}}
 
 **Result**
 
@@ -152,7 +143,6 @@ Grid element can be customized with attributes, each attribute must be on a new
 ### **Examples**
 **Markup**
 
-{{< highlight java >}}
 ```text
 ?grid=ID1
 	sections_count=6
@@ -167,7 +157,6 @@ Grid element can be customized with attributes, each attribute must be on a new
 	y=200
 	orientation=vertical
 ````
-{{< /highlight >}}
 
 **Result**
 
@@ -175,13 +164,11 @@ Grid element can be customized with attributes, each attribute must be on a new
 
 **Markup**
 
-{{< highlight java >}}
 ````text
 ?grid=ID1
 	sections_count=5
 	options_count=6
 	align=left
-
 
 ?grid=ID2
 	sections_count=5
@@ -189,7 +176,6 @@ Grid element can be customized with attributes, each attribute must be on a new
 	align=center
 	underlines=false
 ````
-{{< /highlight >}}
 
 **Result**
 
@@ -208,12 +194,10 @@ The image element can be customized with attributes, each attribute must be on 
 ### **Examples**
 **Result**
 
-{{< highlight java >}}
 ```text
 ?image=logo.png
     align=right
 ````
-{{< /highlight >}}
 
 Result
 
@@ -235,7 +219,6 @@ Barcode element can be customized with attributes, each attribute must be on a 
 ### **Examples**
 **Markup**
 
-{{< highlight java >}}
 ````text
 ?barcode=Test1
 	value=AlignLeft
@@ -250,7 +233,6 @@ Barcode element can be customized with attributes, each attribute must be on a 
 	X=2000
 	y=200
 ````
-{{< /highlight >}}
 
 **Result**
 
@@ -258,7 +240,6 @@ Barcode element can be customized with attributes, each attribute must be on a 
 
 ` `**Markup**
 
-{{< highlight java >}}
 ````text
 ?barcode=Test1
 	value=code39StandardTest
@@ -276,12 +257,10 @@ Barcode element can be customized with attributes, each attribute must be on a 
 	height=300
 	codetext=true
 ````
-{{< /highlight >}}
 
 **Result**
 
 ![todo:image_alt_text](template-generation-elements-description_9.png)
-
 
 
 ## **Container element**
@@ -297,18 +276,16 @@ Container element can be customized with attributes, each attribute must be on 
 
 ### **Examples**
 
-{{< highlight java >}}
 ```text
 ?container=1-st
 	columns_count=3
 &container
 ```
-{{< /highlight >}}
 
 If you want to create a **footer** in your template you must specify the footer attribute **type=footer** for your container
 
 ### **Examples**
-{{< highlight java >}}
+
 ````text
 ?barcode=Test4
 	value=Aspose Pty Ltd
@@ -352,7 +329,6 @@ If you want to create a **footer** in your template you must specify the footer 
 &block
 &container
 ````
-{{< /highlight >}}
 
 **Result**
 
@@ -372,13 +348,12 @@ Block element can be customized with attributes, each attribute must be on a ne
 |||border_color|Color of the border|Optional|Black|-|
 
 ### **Examples**
-{{< highlight java >}}
+
 ````text
 ?block=1-st
 	column=2
 &block
 ````
-{{< /highlight >}}
 
 ## **Content element**
 Starts with **?content=** prefix and can be followed by any number of text lines not starting with **\t** (tabulation) until an empty line or another element is found. Must be in the inside of the block element.
@@ -393,7 +368,7 @@ Content element can be customized with attributes, each attribute must be on a 
 |||font_size|The size of the text content|Optional|12|font_size=16|
 
 ### **Examples**
-{{< highlight java >}}
+
 ````text
 ?container=1-st
 	columns_count=2
@@ -406,7 +381,6 @@ Content element can be customized with attributes, each attribute must be on a 
 &block
 &container
 ````
-{{< /highlight >}}
 
 **Result**
 
@@ -424,7 +398,7 @@ Paragraph element can be customized with attributes, each attribute must be on 
 |Paragraph|?paragraph=|type|Type of Paragraph|Optional|ParagraphTypeEnum.normal|type=multiple|
 
 ### **Examples**
-{{< highlight java >}}
+
 ````text
 ?container=1-st
 	columns_count=3
@@ -457,7 +431,6 @@ Paragraph element can be customized with attributes, each attribute must be on 
 &block
 &container
 ````
-{{< /highlight >}}
 
 **Result**
 
@@ -471,7 +444,7 @@ Ends with a **&verticalChoiceBox** prefix indicating the end of the element's bo
 This element has no additional attributes. 
 
 ### **Examples**
-{{< highlight java >}}
+
 ````text
 ?container=1-st
 	columns_count=3
@@ -517,7 +490,6 @@ This element has no additional attributes. 
 &block
 &container
 ````
-{{< /highlight >}}
 
 **Result**
 
@@ -534,7 +506,7 @@ WriteIn element can be customized with attributes, each attribute must be on a 
 |WriteIn|?write_in=|required|Is clipping of write-in field required|Optional|false|required=true|
 
 ### **Examples**
-{{< highlight java >}}
+
 ````text
 ?container=1-st
 	columns_count=3
@@ -545,7 +517,6 @@ WriteIn element can be customized with attributes, each attribute must be on a 
 &block
 &container
 ````
-{{< /highlight >}}
 
 **Result**
 
@@ -629,7 +600,6 @@ Represent question with multiple answers. Value of this element placed in first 
 
 ### **Attributes**
 This element has no additional attributes. 
-
 
 ### **Example of table structure**
 ```text

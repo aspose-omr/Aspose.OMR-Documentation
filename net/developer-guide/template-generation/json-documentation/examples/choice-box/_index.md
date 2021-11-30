@@ -1,5 +1,5 @@
 ---
-title: Create OMR Template with ChoiceBox and AnswerSheet
+title: OMR Template with ChoiceBox and AnswerSheet example
 type: docs
 weight: 20
 url: /net/template-generation/json/examples/choice-box/
@@ -107,7 +107,6 @@ The following json markup in the example below can be used to generate the OMR t
 }
 
 ````
-
 
 The following code snippet processes the sample text markup to generate the OMR template file and the image of the sheet.
 

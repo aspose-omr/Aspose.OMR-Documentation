@@ -111,5 +111,4 @@ public static void CreateAnswerSheet()
 # Result
 Each of presented examples produce same generated Answer Sheet image below. Now you can print this image and pass it to the respondents to fill out. Then scan filled papers and recognize them using Aspose.OMR for .NET.
 
-
 ![OmrAnswerSheet](AnswerSheet.png)

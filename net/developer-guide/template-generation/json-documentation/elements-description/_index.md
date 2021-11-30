@@ -1,5 +1,5 @@
 ---
-title: Template Generation elements description
+title: Elements description
 type: docs
 weight: 10
 url: /net/template-generation/json/elements-description
@@ -28,7 +28,6 @@ Text element can be customized with attributes.
 ### **Examples**
 **Markup**
 
-{{< highlight plaintext >}}
 ```json
 {
 	"type" : "template",
@@ -60,7 +59,6 @@ Text element can be customized with attributes.
 	}]
 }
 ````
-{{< /highlight >}}
 
 **Result**
 
@@ -85,7 +83,6 @@ This element can be customized with attributes.
 ### **Examples**
 **Markup**
 
-{{< highlight plaintext >}}
 ````json
 {	
   "type": "Template",
@@ -106,7 +103,6 @@ This element can be customized with attributes.
   ]
 }
 ````
-{{< /highlight >}}
 
 **Result**
 
@@ -114,8 +110,7 @@ This element can be customized with attributes.
 
 **Markup**
 
-
-{{< highlight plaintext >}}	
+	
 ````json
 {
   "type": "Template",
@@ -134,7 +129,6 @@ This element can be customized with attributes.
   ]
 }
 ````
-{{< /highlight >}}
 
 **Result**
 
@@ -161,7 +155,6 @@ The answer options start with parentheses with an answer name or a letter insid
 <details>
 <summary>Click to expand json template</summary>
 
-{{< highlight plaintext >}}
 ````json
 {
   "type": "Template",
@@ -210,7 +203,7 @@ The answer options start with parentheses with an answer name or a letter insid
   ]
 }
 ````
-{{< /highlight >}}
+
 </details>
 
 **Result**
@@ -237,7 +230,7 @@ Grid element can be customized with attributes.
 ### **Examples**
 **Markup**
 
-{{< highlight java >}}
+
 ```json
 {
   "type": "Template",
@@ -269,7 +262,6 @@ Grid element can be customized with attributes.
   ],
 }
 ````
-{{< /highlight >}}
 
 **Result**
 
@@ -277,7 +269,7 @@ Grid element can be customized with attributes.
 
 **Markup**
 
-{{< highlight java >}}
+
 ````json
 {
   "type": "Template",
@@ -308,7 +300,6 @@ Grid element can be customized with attributes.
   ],
 }
 ````
-{{< /highlight >}}
 
 **Result**
 
@@ -329,7 +320,7 @@ The image element can be customized with attributes.
 ### **Examples**
 **Result**
 
-{{< highlight java >}}
+
 ```json
 {
   "type": "Template",
@@ -347,7 +338,6 @@ The image element can be customized with attributes.
   ]
 }
 ````
-{{< /highlight >}}
 
 Result
 
@@ -371,7 +361,7 @@ Barcode element can be customized with attributes.
 ### **Examples**
 **Markup**
 
-{{< highlight java >}}
+
 ````json
 {
   "type": "Template",
@@ -403,7 +393,6 @@ Barcode element can be customized with attributes.
   ]
 }
 ````
-{{< /highlight >}}
 
 **Result**
 
@@ -411,7 +400,7 @@ Barcode element can be customized with attributes.
 
 ` `**Markup**
 
-{{< highlight java >}}
+
 ````json
 {
   "type": "Template",
@@ -449,13 +438,10 @@ Barcode element can be customized with attributes.
   ]
 }
 ````
-{{< /highlight >}}
 
 **Result**
 
 ![todo:image_alt_text](template-generation-elements-description_9.png)
-
-
 
 ## **Container element**
 Grouping element. Container is not displayed and is intended for breaking the template into columns. 
@@ -474,7 +460,7 @@ Container element can be customized with attributes.
 
 ### **Examples**
 
-{{< highlight java >}}
+
 ```json
 {
   "type": "Template",
@@ -493,7 +479,6 @@ Container element can be customized with attributes.
   ]
 }
 ```
-{{< /highlight >}}
 
 If you want to create a **footer** in your template you must specify the footer attribute **"type":"footer"** for your container
 
@@ -501,7 +486,7 @@ If you want to create a **footer** in your template you must specify the footer 
 <details>
 <summary>Click to expand code</summary>
 
-{{< highlight java >}}
+
 ````json
 {
 
@@ -601,7 +586,6 @@ If you want to create a **footer** in your template you must specify the footer 
 }
 
 ````
-{{< /highlight >}}
 
 </details>
 **Result**
@@ -625,7 +609,7 @@ Block element can be customized with attributes.
 |border_color|Color of the border|Optional|Black|-|
 
 ### **Examples**
-{{< highlight java >}}
+
 ````json
 {
   "type": "Template",
@@ -643,7 +627,6 @@ Block element can be customized with attributes.
   ]
 }
 ````
-{{< /highlight >}}
 
 ## **Content element**
 Special text element. Must be in the inside of the block element.
@@ -660,7 +643,7 @@ Content element can be customized with attributes.
 |font_size|The size of the text content|Optional|12|"font_size":16|
 
 ### **Examples**
-{{< highlight java >}}
+
 ````json
 {
   "type": "Template",
@@ -695,7 +678,6 @@ Content element can be customized with attributes.
   ]
 }
 ````
-{{< /highlight >}}
 
 **Result**
 
@@ -718,7 +700,7 @@ paragraph_type|Type of Paragraph|Optional|ParagraphTypeEnum.normal|paragraph_typ
 
 <details>
 
-{{< highlight java >}}
+
 
 <summary>Click to expand code</summary>
 
@@ -802,7 +784,6 @@ paragraph_type|Type of Paragraph|Optional|ParagraphTypeEnum.normal|paragraph_typ
   ]
 }
 ````
-{{< /highlight >}}
 
 </details>
 
@@ -813,7 +794,6 @@ paragraph_type|Type of Paragraph|Optional|ParagraphTypeEnum.normal|paragraph_typ
 ## **VerticalChoiceBox element**
 The VerticalChoiceBox consists of a Answer element that contains a short response and Content elements that describe the response option in detail. It can also contain a WriteIn element in which the user can enter his own answer.
 Each of these elements must be in the children array.
-
 
 ### **Attributes**
 VerticalChoiceBox element can be customized with attributes.
@@ -829,7 +809,7 @@ VerticalChoiceBox element can be customized with attributes.
 <details>
 <summary>Click to expand code</summary>
 
-{{< highlight java >}}
+
 ````json
 {
   "type": "Template",
@@ -954,7 +934,7 @@ VerticalChoiceBox element can be customized with attributes.
   ]
 }
 ````
-{{< /highlight >}}
+
 </details>
 
 ## **Answer element**
@@ -983,7 +963,7 @@ WriteIn element can be customized with attributes.
 |required|Is clipping of write-in field required|Optional|false|"required":true|
 
 ### **Examples**
-{{< highlight java >}}
+
 ````json
 {
   "type": "template",
@@ -1014,7 +994,6 @@ WriteIn element can be customized with attributes.
   ]
 }
 ````
-{{< /highlight >}}
 
 **Result**
 
@@ -1066,7 +1045,6 @@ WriteIn element can be customized with attributes, each attribute must be on a 
 ```
 
 **![todo:image_alt_text](template-generation-elements-description_1.png)**
-
 
 ## **Table element**
 Can be used for questionnaires with a set amount of answers.  Grouping element. Supports TableHeader, TableTitle and Question elements as children.
@@ -1133,7 +1111,6 @@ For multiple columns - use multiple TableAnswer elements
 |name|String representation of answer|Required|-|"name":"High quality"
 |type|type of JSON object|Required|-|"type":"tableAnswer"
 
-
 ## **Question element**
 Can only be positioned inside of the Table element as a child.
 Represent question with multiple answers. Value of this element placed in the first column of the table for each row(Question) element.
@@ -1143,7 +1120,6 @@ Represent question with multiple answers. Value of this element placed in the fi
 | :- | :- | :- | :- | :- |
 |name|String representation of question|Required|-|"name":"How do you assess quality of this product?"
 |type|type of JSON object|Required|-|"type":"question"
-
 
 ### **Example of table structure**
 ```json

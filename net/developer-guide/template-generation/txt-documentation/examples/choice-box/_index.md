@@ -1,5 +1,5 @@
 ---
-title: Create OMR Template with ChoiceBox and AnswerSheet
+title: OMR Template with ChoiceBox and AnswerSheet example
 type: docs
 weight: 20
 url: /net/template-generation/txt/examples/choice-box/
@@ -50,7 +50,6 @@ The following is the text markup that is used in the example code snippet to gen
 ?text=Sign________________________________
 
 ````
-
 
 The following code snippet processes the sample text markup to generate the OMR template file and the image of the sheet.
 
