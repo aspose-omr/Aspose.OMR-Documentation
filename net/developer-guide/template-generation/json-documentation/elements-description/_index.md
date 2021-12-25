@@ -11,14 +11,14 @@ Template generation markup supports several types of elements, and most of them 
 In this article, we provide a detailed description of each element and its attributes with the usage examples represented in json markup.
 
 ## **Text element**
-The text element allows us to add text lines to the template. Identified by field **"type"** and it's value **"text"**.
+The text element allows us to add text lines to the template. Identified by field **"element_type"** and it's value **"text"**.
 
 ### **Attributes**
 Text element can be customized with attributes.
 
 |**Attribute**|**Attribute Description**|**Required/Optional**|**Attribute Default Value**|**Attribute Usage Example**|
 | :- | :- | :- | :- | :- |
-|type|Type of JSON object| Required|-| "type":"text"
+|element_type|Type of JSON object| Required|-| "element_type":"text"
 |name|String representation of text| Required|-|"name":"Please fill survey bellow"
 |font_family|The font family of the text|Optional|Segoe UI|"font_family":"arial"|
 |font_style|The style of the content|Optional|FontStyle.Regular|"font_style":"bold"|
@@ -30,28 +30,28 @@ Text element can be customized with attributes.
 
 ```json
 {
-	"type" : "template",
+	"element_type" : "template",
 	"children" : [{
-		"type":"page",
+		"element_type":"page",
 		"children": [
 		{
 			"name": "Header text",
-			"type": "text",
+			"element_type": "text",
 			"font_style" : "bold",
 			"font_size": 16,
 			"align" : "center"
 		},
 		{
-			"type": "emptyLine",
+			"element_type": "emptyLine",
 		},
 		{
-			"type": "text",
+			"element_type": "text",
 			"name" : "right column text",
 			"font_style": "italic",
 			"align": "right",
 		},
 		{
-			"type": "text",
+			"element_type": "text",
 			"name" : "second line of column text",
 			"font_style" : "italic",
 			"align": "right",
@@ -70,7 +70,7 @@ This element can be customized with attributes.
 
 |**Attribute**|**Attribute Description**|**Required/Optional**|**Attribute Default Value**|**Attribute usage example**|
 | :- | :- | :- | :- | :- |
-|type| Type of JSON object| Required|-|"type":"answersheet"
+|element_type| Type of JSON object| Required|-|"element_type":"answersheet"
 |name| Name of the sheet, i.e. the prefix of each question in the sheet|Required|-|"name":"Geography"
 |elements_count|Determines the total number of questions in the answer sheet.|Required|0|"elements_count":100|
 |columns_count|Sets the number of columns to be drawn.|Optional|4|"columns_count":4|
@@ -85,10 +85,10 @@ This element can be customized with attributes.
 
 ````json
 {	
-  "type": "Template",
+  "element_type": "Template",
   "children": [
     {
-      "type": "Page",
+      "element_type": "Page",
       "children": [
         {
           "name": "Questions",
@@ -96,7 +96,7 @@ This element can be customized with attributes.
           "columns_count": 3,
           "answers_count": 5,
           "start_id": 51,
-          "type": "AnswerSheet"
+          "element_type": "AnswerSheet"
         }
       ]
     }
@@ -113,16 +113,16 @@ This element can be customized with attributes.
 	
 ````json
 {
-  "type": "Template",
+  "element_type": "Template",
   "children": [
     {
-      "type": "Page",
+      "element_type": "Page",
       "children": [
         {
           "name": "Questions",
           "elements_count": 40,
           "answers_list": ["1","2","3","4","5"],
-          "type": "AnswerSheet"
+          "element_type": "AnswerSheet"
         }
       ]
     }
@@ -140,7 +140,7 @@ The answer options start with parentheses with an answer name or a letter insid
 
 |**Attribute**|**Attribute Description**|**Required/Optional**|**Attribute Default Value**|**Attribute usage example**|
 | :- | :- | :- | :- | :- |
-|type|Type of JSON object| Required|-| "type":"choicebox"
+|element_type|Type of JSON object| Required|-| "element_type":"choicebox"
 |question_text|String representation of question text|Required|-|"question_text":"How would you rate the quality of the product?"
 |answers_string| String representation of answer array|Required|-|"answers_string":"() Very high quality () High quality"
 |name| Name of choice box|Optional|-|"name":"Product questionnaire"
@@ -157,10 +157,10 @@ The answer options start with parentheses with an answer name or a letter insid
 
 ````json
 {
-  "type": "Template",
+  "element_type": "Template",
   "children": [
     {
-      "type": "Page",
+      "element_type": "Page",
       "children": [
         {
           "font_family": "Segoe UI",
@@ -169,7 +169,7 @@ The answer options start with parentheses with an answer name or a letter insid
           "align": "Left",
           "answers_string": "(() Yes, indeed! () No",
           "question_text": "Can Aspose.OMR process not only scans, but also photos?\r\n",
-          "type": "ChoiceBox"
+          "element_type": "ChoiceBox"
         },
         {
           "font_family": "Segoe UI",
@@ -178,7 +178,7 @@ The answer options start with parentheses with an answer name or a letter insid
           "align": "Left",
           "answers_string": "((Yes) Yes, indeed! (No) No",
           "question_text": "Aspose.OMR works with any kind of OMR forms: tests, exams, questionnaires, surveys, etc.\r\n",
-          "type": "ChoiceBox"
+          "element_type": "ChoiceBox"
         },
         {
           "font_family": "Segoe UI",
@@ -187,7 +187,7 @@ The answer options start with parentheses with an answer name or a letter insid
           "align": "Left",
           "answers_string": "(() Very high quality () High quality\r\n() Average quality () Low quality",
           "question_text": "How would you rate the quality of the product:\r\n",
-          "type": "ChoiceBox"
+          "element_type": "ChoiceBox"
         },
         {
           "font_family": "Segoe UI",
@@ -196,7 +196,7 @@ The answer options start with parentheses with an answer name or a letter insid
           "align": "Left",
           "answers_string": "(1) (2) (3) (4) (5) (6) (7) (8) (9)",
           "question_text": "How likely is it that you would recommend our company to a friend or colleague?\r\n",
-          "type": "ChoiceBox"
+          "element_type": "ChoiceBox"
         },
       ]
     }
@@ -216,7 +216,7 @@ Grid element can be customized with attributes.
 
 |**Attribute**|**Attribute Description**|**Required/Optional**|**Attribute Default Value**|**Attribute Usage Example**|
 | :- | :- | :- | :- | :- |
-|type|Type of JSON object| Required|-| "type":"grid"
+|element_type|Type of JSON object| Required|-| "element_type":"grid"
 |name| Name of choice box|Optional|-|"name":"Algebra"
 |options_count|<p>The number of choices for each section in the grid.</p><p>For example, in ID grid options determine possible values for each symbol (e.g. each ID symbol can be in 0-9 range)</p>|Optional|10|"options_count":8|
 |align|The horizontal alignment of the grid element on the page.|Optional|left|<p>"align":"left"</p><p>"align":"center"</p><p>"align":"right"</p>|
@@ -233,10 +233,10 @@ Grid element can be customized with attributes.
 
 ```json
 {
-  "type": "Template",
+  "element_type": "Template",
   "children": [
     {      
-      "type": "Page",
+      "element_type": "Page",
       "children": [
         {
           "name": "ID1",
@@ -244,10 +244,10 @@ Grid element can be customized with attributes.
           "options_count": 6,
           "x": 200,
           "y": 200,
-          "type": "Grid"
+          "element_type": "Grid"
         },
         {
-          "type": "EmptyLine"
+          "element_type": "EmptyLine"
         },
         {
           "name": "ID2",
@@ -255,7 +255,7 @@ Grid element can be customized with attributes.
           "options_count": 6,
           "x": 1200,
           "y": 200,
-          "type": "Grid"
+          "element_type": "Grid"
         }
       ]
     }
@@ -272,20 +272,20 @@ Grid element can be customized with attributes.
 
 ````json
 {
-  "type": "Template",
+  "element_type": "Template",
   "children": [
     {      
-      "type": "Page",
+      "element_type": "Page",
       "children": [
         {
           "name": "ID1",
           "sections_count": 5,
           "options_count": 6,
 		  "align":"left",
-          "type": "Grid"
+          "element_type": "Grid"
         },
         {
-          "type": "EmptyLine"
+          "element_type": "EmptyLine"
         },
         {
           "name": "ID2",
@@ -293,7 +293,7 @@ Grid element can be customized with attributes.
           "options_count": 6,
 		  "align":"center",
 		  "underlines": false,
-          "type": "Grid"
+          "element_type": "Grid"
         }
       ]
     }
@@ -311,7 +311,7 @@ The image element can be customized with attributes.
 
 |**Attribute**|**Attribute Description**|**Required/Optional**|**Attribute Default Value**|**Attribute Usage Example**|
 | :-: | :-: | :- | :- | :- |
-|type| Type of JSON object|Required|-|"type":"image"
+|element_type| Type of JSON object|Required|-|"element_type":"image"
 |name|Name of picture file|Required|-|"name":"logo.png"
 |align|The horizontal alignment of the image element on the page.|Optional|Center|<p>"align":"left"</p><p>"align":"center"</p><p>"align":"right"</p>|
 |x/y|<p>Sets the X and Y position in absolute coordinates. Allows to position image element in any place on the page, or position several images in one line. It overrides the align attribute. </p><p>You can provide both X and Y values in pixels, or specify only one (only X or only Y).</p>|Optional|-|<p>"X":500</p><p>"Y":350</p>|
@@ -323,15 +323,15 @@ The image element can be customized with attributes.
 
 ```json
 {
-  "type": "Template",
+  "element_type": "Template",
   "children": [
     {
-      "type": "Page",
+      "element_type": "Page",
       "children": [
         {
           "align": "right",
           "name": "logo.png",
-          "type": "Image"
+          "element_type": "Image"
         }
       ],
     }
@@ -349,7 +349,7 @@ Barcode element can be customized with attributes.
 
 |**Attribute**|**Attribute Description**|**Required/Optional**|**Attribute Default Value**|**Attribute Usage Example**|
 | :- | :- | :- | :- | :- |
-|type| Type of JSON object|Required|-|"type":"barcode"
+|element_type| Type of JSON object|Required|-|"element_type":"barcode"
 |name|Name of barcode|Required|-|"name":"student id"
 |value|The value that barcode encodes|Required|-|"value":"100"|
 |barcode_type|The type of barcode to draw|Optional|QR|<p>"barcode_type":"code39standard"</p><p>"barcode_type":"QR"</p><p>"barcode_type":"EAN8"</p>|
@@ -364,20 +364,20 @@ Barcode element can be customized with attributes.
 
 ````json
 {
-  "type": "Template",
+  "element_type": "Template",
   "children": [
     {
-      "type": "Page",
+      "element_type": "Page",
       "children": [
         {
           "name": "Test1",
           "value": "AlignLeft",
           "height": 300,
           "codetext": true,
-          "type": "Barcode"
+          "element_type": "Barcode"
         },
         {
-          "type": "EmptyLine"
+          "element_type": "EmptyLine"
         },
         {
           "name": "Test2",
@@ -386,7 +386,7 @@ Barcode element can be customized with attributes.
           "codetext": true,
           "X": 2000,
           "Y": 200,
-          "type": "Barcode"
+          "element_type": "Barcode"
         }
       ]
     }
@@ -403,17 +403,17 @@ Barcode element can be customized with attributes.
 
 ````json
 {
-  "type": "Template",
+  "element_type": "Template",
   "children": [
     {
-      "type": "Page",
+      "element_type": "Page",
       "children": [
         {
           "name": "Test1",
           "value": "code39StandardTest",
           "barcode_type": "code39standard",
           "height": 150,
-          "type": "Barcode"
+          "element_type": "Barcode"
         },
         {
           "name": "Test2",
@@ -423,7 +423,7 @@ Barcode element can be customized with attributes.
           "align": "left",
           "height": 300,
           "codetext": true,
-          "type": "Barcode"
+          "element_type": "Barcode"
         },
         {
           "name": "Test3",
@@ -431,7 +431,7 @@ Barcode element can be customized with attributes.
           "barcode_type": "pdf417",
           "height": 300,
           "codetext": true,
-          "type": "Barcode"
+          "element_type": "Barcode"
         }
       ]
     }
@@ -452,7 +452,7 @@ Container element can be customized with attributes.
 
 |**Attribute**|**Attribute Description**|**Required/Optional**|**Attribute Default Value**|**Attribute Usage Example**|
 | :- | :- | :- | :- | :- |
-|type| Type of JSON object|Required|-|"type":"container"
+|element_type| Type of JSON object|Required|-|"element_type":"container"
 |name|Name of container|Optional|-|"name":"Main elements"
 |children|Array of other elements nested in this container|Required|-|see examples below
 |columns_count|Amount of columns in a container|Required|1|"columns_count":3|
@@ -463,16 +463,16 @@ Container element can be customized with attributes.
 
 ```json
 {
-  "type": "Template",
+  "element_type": "Template",
   "children": [
     {
-      "type": "Page",
+      "element_type": "Page",
       "children": [
         {
           "name": "1-st",
           "children": [],
           "columns_count": 1,
-          "type": "Container"
+          "element_type": "Container"
         }
       ],
     }
@@ -480,7 +480,7 @@ Container element can be customized with attributes.
 }
 ```
 
-If you want to create a **footer** in your template you must specify the footer attribute **"type":"footer"** for your container
+If you want to create a **footer** in your template you must specify the footer attribute **"element_type":"footer"** for your container
 
 ### **Examples**
 <details>
@@ -490,9 +490,9 @@ If you want to create a **footer** in your template you must specify the footer 
 ````json
 {
 
-    "type": "Template",
+    "element_type": "Template",
     "children": [{
-            "type": "Page",
+            "element_type": "Page",
             "children": [{
                     "name": "Test4",
                     "value": "Aspose Pty Ltd",
@@ -500,7 +500,7 @@ If you want to create a **footer** in your template you must specify the footer 
                     "codetext": true,
                     "X": 2100,
                     "Y": 3030,
-                    "type": "Barcode"
+                    "element_type": "Barcode"
                 }, {
                     "name": "Footer",
                     "children": [{
@@ -511,39 +511,39 @@ If you want to create a **footer** in your template you must specify the footer 
                                             "name": "Precinct Aspose Style 1",
                                             "font_style": "Bold",
                                             "font_size": 14,
-                                            "type": "Content"
+                                            "element_type": "Content"
                                         }, {
                                             "name": "� Aspose Pty Ltd 2001-2021",
                                             "font_style": "Regular",
                                             "font_size": 10,
-                                            "type": "Content"
+                                            "element_type": "Content"
                                         }
                                     ],
                                     "paragraph_type": "Normal",
-                                    "type": "Paragraph"
+                                    "element_type": "Paragraph"
                                 }
                             ],
                             "column": 1,
                             "border": "None",
                             "border_size": 3,
                             "border_color": "Black",
-                            "type": "Block"
+                            "element_type": "Block"
                         }, {
                             "column": 2,
                             "border": "None",
                             "border_size": 3,
                             "border_color": "Black",
-                            "type": "Block",
+                            "element_type": "Block",
                             "name": "2",
                             "children": [{
                                     "name": "2",
                                     "paragraph_type": "Normal",
-                                    "type": "Paragraph",
+                                    "element_type": "Paragraph",
                                     "children": [{
                                             "name": "All Rights Reserved",
                                             "font_style": "Regular",
                                             "font_size": 10,
-                                            "type": "Content"
+                                            "element_type": "Content"
                                         }
                                     ]
                                 }
@@ -557,28 +557,28 @@ If you want to create a **footer** in your template you must specify the footer 
                                             "name": "Page 1",
                                             "font_style": "Bold",
                                             "font_size": 14,
-                                            "type": "Content"
+                                            "element_type": "Content"
                                         }, {
                                             "name": "June 26, 2021",
                                             "font_style": "Regular",
                                             "font_size": 10,
-                                            "type": "Content"
+                                            "element_type": "Content"
                                         }
                                     ],
                                     "paragraph_type": "Normal",
-                                    "type": "Paragraph"
+                                    "element_type": "Paragraph"
                                 }
                             ],
                             "column": 3,
                             "border": "None",
                             "border_size": 3,
                             "border_color": "Black",
-                            "type": "Block"
+                            "element_type": "Block"
                         }
                     ],
                     "columns_count": 3,
                     "container_type": "Footer",
-                    "type": "Container"
+                    "element_type": "Container"
                 }
             ]
         }
@@ -600,25 +600,26 @@ Block element can be customized with attributes.
 
 |**Attribute**|**Attribute Description**|**Required/Optional**|**Attribute Default Value**|**Attribute Usage Example**|
 | :- | :- | :- | :- | :- |
-|type| Type of JSON object|Required|-|"type":"block"
+|element_type| Type of JSON object|Required|-|"element_type":"block"
 |name|Name of block|Optional|-|"name":"header group"
 |children|Array of other elements nested in this block|Required|-|see examples below
 |column|Indicates which column of the container will be in|Required|1|"column":1|
 |border|Border type of Container element|Optional|normal|-|
 |border_size|The size of the border|Optional|3|-|
 |border_color|Color of the border|Optional|Black|-|
+|is_clipped|if set to true - block with all content will be clipped as picture upon recognition|Optional|false|"is_clipped":true
 
 ### **Examples**
 
 ````json
 {
-  "type": "Template",
+  "element_type": "Template",
   "children": [
     {
-      "type": "Page",
+      "element_type": "Page",
       "children": [
         {
-          "type": "Block",
+          "element_type": "Block",
           "name": "1-st",
           "column": 2
         }
@@ -636,20 +637,22 @@ Content element can be customized with attributes.
 
 **Attribute**|**Attribute Description**|**Required/Optional**|**Attribute Default Value**|**Attribute Usage Example**|
 | :- | :- | :- | :- | :- |
-|type| Type of JSON object|Required|-|"type":"content"
+|element_type| Type of JSON object|Required|-|"element_type":"content"
 |name| String value of content|Required|-|"name":"Thank you for purchasing!"
 |font_family|The font family of the content|Optional|Segoe UI|"font_family":"Arial"|
 |font_style|The style of the content|Optional|FontStyle.Regular|"font_style":"Bold"|
 |font_size|The size of the text content|Optional|12|"font_size":16|
+|align|Type of horizontal alignment inside parent element|Optional|left|<p>"align":"right"</p><p>"align":"center"</p><p>"align":"left"</p>
+|content_type|type of content. <p>Cells - allow to draw circle around each symbol, including space or tab.</p><p>Normal - draw text as is</p>|Optional|Normal|<p>"content_type":"cells"</p><p>"content_type":"normal"</p>
 
 ### **Examples**
 
 ````json
 {
-  "type": "Template",
+  "element_type": "Template",
   "children": [
     {
-      "type": "Page",
+      "element_type": "Page",
       "children": [
         {
           "name": "1-st",
@@ -662,16 +665,16 @@ Content element can be customized with attributes.
                   "font_family": "Arial",
                   "font_style": "Bold",
                   "font_size": 16,
-                  "type": "Content"
+                  "element_type": "Content"
                 }
               ],
               "column": 1,
-              "type": "Block"
+              "element_type": "Block"
             }
           ],
           "columns_count": 2,
           "container_type": "Normal",
-          "type": "Container"
+          "element_type": "Container"
         }
       ]
     }
@@ -691,7 +694,7 @@ Paragraph element can be customized with attributes.
 
 |**Attribute**|**Attribute Description**|**Required/Optional**|**Attribute Default Value**|**Attribute Usage Example**|
 | :- | :- | :- | :- | :- |
-|type| Type of JSON object|Required|-|"type":"paragraph"
+|element_type| Type of JSON object|Required|-|"element_type":"paragraph"
 |name|Name of paragraph|Optional|-|"name":"Pic and title"
 |children|Array of other elements nested in this paragraph|Required|-|see examples below
 paragraph_type|Type of Paragraph|Optional|ParagraphTypeEnum.normal|paragraph_type:multiple|
@@ -706,10 +709,10 @@ paragraph_type|Type of Paragraph|Optional|ParagraphTypeEnum.normal|paragraph_typ
 
 ````json
 {
-  "type": "Template",
+  "element_type": "Template",
   "children": [
     {
-      "type": "Page",
+      "element_type": "Page",
       "children": [
         {
           "name": "1-st",
@@ -727,25 +730,25 @@ paragraph_type|Type of Paragraph|Optional|ParagraphTypeEnum.normal|paragraph_typ
                       "y": 280,
                       "height": 175,
                       "width": 200,
-                      "type": "Image"
+                      "element_type": "Image"
                     },
                     {
                       "name": "Aspose.OMR for .NET",
                       "font_family": "Arial",
                       "font_style": "Bold",
                       "font_size": 16,
-                      "type": "Content"
+                      "element_type": "Content"
                     },
                     {
                       "name": "provides a simple Application Programming Interface (API) that is easy to learn and use.",
                       "font_family": "Segoe UI",
                       "font_style": "Italic",
                       "font_size": 13,
-                      "type": "Content"
+                      "element_type": "Content"
                     }
                   ],
                   "paragraph_type": "Multiple",
-                  "type": "Paragraph"
+                  "element_type": "Paragraph"
                 },
                 {
                   "name": "2nd",
@@ -755,25 +758,25 @@ paragraph_type|Type of Paragraph|Optional|ParagraphTypeEnum.normal|paragraph_typ
                       "font_family": "Arial",
                       "font_style": "Bold",
                       "font_size": 16,
-                      "type": "Content"
+                      "element_type": "Content"
                     },
                     {
                       "name": "provides a simple Application Programming Interface (API) that is easy to learn and use.",
                       "font_family": "Segoe UI",
                       "font_style": "Italic",
                       "font_size": 13,
-                      "type": "Content"
+                      "element_type": "Content"
                     }
                   ],
                   "paragraph_type": "Normal",
-                  "type": "Paragraph"
+                  "element_type": "Paragraph"
                 }
               ],
               "column": 1,
               "border": "None",
               "border_size": 3,
               "border_color": "Black",
-              "type": "Block"
+              "element_type": "Block"
             }
           ],
           "columns_count": 3,
@@ -800,7 +803,7 @@ VerticalChoiceBox element can be customized with attributes.
 
 |**Attribute**|**Attribute Description**|**Required/Optional**|**Attribute Default Value**|**Attribute Usage Example**|
 | :- | :- | :- | :- | :- |
-|type| Type of JSON object|Required|-|"type":"verticalChoiceBox"
+|element_type| Type of JSON object|Required|-|"element_type":"verticalChoiceBox"
 |name|Name of block|Optional|-|"name":"Pic and title"
 |children|Array of other elements nested in this VerticalChoiceBox|Required|-|see examples below
 
@@ -812,10 +815,10 @@ VerticalChoiceBox element can be customized with attributes.
 
 ````json
 {
-  "type": "Template",
+  "element_type": "Template",
   "children": [
     {
-      "type": "Page",
+      "element_type": "Page",
       "children": [
         {
           "name": "1-st",
@@ -831,25 +834,25 @@ VerticalChoiceBox element can be customized with attributes.
                       "font_family": "Segoe UI",
                       "font_style": "Bold",
                       "font_size": 8,
-                      "type": "Content"
+                      "element_type": "Content"
                     },
                     {
                       "name": "How would you rate the quality of the product?",
                       "font_family": "Segoe UI",
                       "font_style": "Bold",
                       "font_size": 12,
-                      "type": "Content"
+                      "element_type": "Content"
                     },
                     {
                       "name": "Choose 1",
                       "font_family": "Segoe UI",
                       "font_style": "Regular",
                       "font_size": 9,
-                      "type": "Content"
+                      "element_type": "Content"
                     }
                   ],
                   "paragraph_type": "Normal",
-                  "type": "Paragraph"
+                  "element_type": "Paragraph"
                 },
                 {
                   "name": "How would you rate the quality of the product:",
@@ -862,17 +865,17 @@ VerticalChoiceBox element can be customized with attributes.
                           "font_family": "Segoe UI",
                           "font_style": "Bold",
                           "font_size": 10,
-                          "type": "Content"
+                          "element_type": "Content"
                         },
                         {
                           "name": "of the product",
                           "font_family": "Segoe UI",
                           "font_style": "Regular",
                           "font_size": 10,
-                          "type": "Content"
+                          "element_type": "Content"
                         }
                       ],
-                      "type": "Answer"
+                      "element_type": "Answer"
                     },
                     {
                       "name": "4",
@@ -882,17 +885,17 @@ VerticalChoiceBox element can be customized with attributes.
                           "font_family": "Segoe UI",
                           "font_style": "Bold",
                           "font_size": 10,
-                          "type": "Content"
+                          "element_type": "Content"
                         },
                         {
                           "name": "of the product",
                           "font_family": "Segoe UI",
                           "font_style": "Regular",
                           "font_size": 10,
-                          "type": "Content"
+                          "element_type": "Content"
                         }
                       ],
-                      "type": "Answer"
+                      "element_type": "Answer"
                     },
                     {
                       "name": "3",
@@ -902,32 +905,32 @@ VerticalChoiceBox element can be customized with attributes.
                           "font_family": "Segoe UI",
                           "font_style": "Bold",
                           "font_size": 10,
-                          "type": "Content"
+                          "element_type": "Content"
                         },
                         {
                           "name": "of the product",
                           "font_family": "Segoe UI",
                           "font_style": "Regular",
                           "font_size": 10,
-                          "type": "Content"
+                          "element_type": "Content"
                         }
                       ],
-                      "type": "Answer"
+                      "element_type": "Answer"
                     }
                   ],
-                  "type": "VerticalChoiceBox"
+                  "element_type": "VerticalChoiceBox"
                 }
               ],
               "column": 2,
               "border": "Square",
               "border_size": 5,
               "border_color": "Black",
-              "type": "Block"
+              "element_type": "Block"
             }
           ],
           "columns_count": 3,
           "container_type": "Normal",
-          "type": "Container"
+          "element_type": "Container"
         }
       ]
     }
@@ -944,7 +947,7 @@ Used as a child in VerticalChoiceBox. Can have children. Usually a Content eleme
 
 |**Attribute**|**Attribute Description**|**Required/Optional**|**Attribute Default Value**|**Attribute Usage Example**|
 | :- | :- | :- | :- | :- |
-|type| Type of JSON object|Required|-|"type":"answer"
+|element_type| Type of JSON object|Required|-|"element_type":"answer"
 |children| array of nested elements|Required|-|see examples above
 
 **Result**
@@ -959,17 +962,17 @@ WriteIn element can be customized with attributes.
 
 |**Attribute**|**Attribute Description**|**Required/Optional**|**Attribute Default Value**|**Attribute Usage Example**|
 | :- | :- | :- | :- | :- |
-|type| Type of JSON object|Required|-|"type":"writein"
+|element_type| Type of JSON object|Required|-|"element_type":"writein"
 |required|Is clipping of write-in field required|Optional|false|"required":true|
 
 ### **Examples**
 
 ````json
 {
-  "type": "template",
+  "element_type": "template",
   "children": [
     {
-      "type": "page",
+      "element_type": "page",
       "children": [
         {
           "name": "1-st",
@@ -980,14 +983,14 @@ WriteIn element can be customized with attributes.
                 {
                   "name": "Process",
                   "required": true,
-                  "type": "writeIn"
+                  "element_type": "writeIn"
                 }
               ],
               "column": 1,
             }
           ],
           "columns_count": 3,
-          "type": "container"
+          "element_type": "container"
         }
       ]
     }
@@ -1013,7 +1016,7 @@ WriteIn element can be customized with attributes, each attribute must be on a 
 
 |**Attribute**|**Attribute Description**|**Required/Optional**|**Attribute Default Value**|**Attribute Usage Example**|
 | :- | :- | :- | :- | :- |
-|type| Type of JSON object|Required|-|"type":"emptyLine"
+|element_type| Type of JSON object|Required|-|"element_type":"emptyLine"
 |height|Vertical margin in pixels that will be used to occupy space with this invisible element|Optional|height of 1 line with default text|"height":300|
 
 ### Example
@@ -1021,23 +1024,23 @@ WriteIn element can be customized with attributes, each attribute must be on a 
 ```json
 		{
 			"name": "Header text",
-			"type": "text",
+			"element_type": "text",
 			"font_style" : "bold",
 			"font_size": 16,
 			"align" : "center"
 		},
 		{
-			"type": "emptyLine",
+			"element_type": "emptyLine",
 			"height": 82
 		},
 		{
-			"type": "text",
+			"element_type": "text",
 			"name" : "right column text",
 			"font_style": "italic",
 			"align": "right",
 		},
 		{
-			"type": "text",
+			"element_type": "text",
 			"name" : "second line of column text",
 			"font_style" : "italic",
 			"align": "right",
@@ -1046,160 +1049,111 @@ WriteIn element can be customized with attributes, each attribute must be on a 
 
 **![todo:image_alt_text](template-generation-elements-description_1.png)**
 
-## **Table element**
-Can be used for questionnaires with a set amount of answers.  Grouping element. Supports TableHeader, TableTitle and Question elements as children.
-Best used for drawing table structure with rows and columns. Columns described in TableHeader element. Question element represent rows.
-TableTitle used when you need an extra row above the table.
+## **InputGroup element**
+InputGroup is grouping element. It is used for drawing input field with description(label).
+Two Content element must be will be places inside.First ContentElement describe label and second input field.
+Does not participate in recognition.
 
 ### **Attributes**
-Table element can be customized with attributes.
+InputGroup element can be customized with attributes.
 
 |**Attribute**|**Attribute Description**|**Required/Optional**|**Attribute Default Value**|**Attribute Usage Example**|
-| :- | :- | :- | :- | :- |
-|type| type of JSON object|Required|-|"type":"table"
-|name| Name of the table. Does not displayed|Optional|-|"name":"Survey"
-|answers_count|Number of answers(columns) used in table|Required|-|"answers_count":5|
-|table_type|Type of table element. Can be striped or normal|Optional|normal|"table_type":"striped"
-|children|Child elements which represent table content|Required|-|see examples below
+ | :- | :- | :- | :- | :- |
+|label_border|Describe borderType for label element|Optional|None|"label_border":"square"|
+|input_border|Describe borderType for input element|Optional|None|"input_border":"square"|
+|border_size|Describe size of border line in pixels|Optional|3|"border_size":3
+|border_color|Describe color of border line|Optional|Black|"border_color":"red"
 
-## **TableTitle element**
-Represent additional header in table with one column - title.
-Text value of this element displayed above the header as the first row.
-Good for marking table names.
+**Example**
 
-### **Attributes**
-TableTitle element can be customized with attributes.
-
-|**Attribute**|**Attribute Description**|**Required/Optional**|**Attribute Default Value**|**Attribute Usage Example**|
-| :- | :- | :- | :- | :- |
-|type|type of JSON object|Required|-|"type":"tableTitle"
-|name|Title text|Optional|-|"name":"Quality assurance"
-|font_family|The font family of the text|Optional|Segoe UI|"font_family":"arial"|
-|font_style|The style of the content|Optional|FontStyle.Regular|"font_style":"bold"|
-|font_size|The size of the text content|Optional|12|"font_size":"16"|
-|color|Color of the text|Optional|Black|"color":"red"
-|background_color|Color of background layer|Optional|-|"background_color":"gray"
-|border|Border type of title element|Optional|normal|"border":"rounded"|
-|border_size|The size of the border|Optional|3|"border_size":3|
-|border_color|Color of the border|Optional|Black|"border_color":"red"|
-
-## **TableHeader element**
-Grouping element. Represent columns of the table and content inside them.
-Each of the columns(TableAnswer) nested inside of the children property.
-**Amount of TableAnswers inside must be equal to answers_count property of Table element**
-
-### **Attributes**
-TableHeader element can be customized with attributes.
-
-|**Attribute**|**Attribute Description**|**Required/Optional**|**Attribute Default Value**|**Attribute Usage Example**|
-| :- | :- | :- | :- | :- |
-|type|type of JSON object|Required|-|"type":"tableHeader"
-|name|Name of table header. Does not displayed.|Optional|-|"name":"First row"
-|font_family|The font family of the text|Optional|Segoe UI|"font_family":"arial"|
-|font_style|The style of the content|Optional|FontStyle.Regular|"font_style":"bold"|
-|font_size|The size of the text content|Optional|12|"font_size":16|
-|children|Child elements which represent table content|Required|-|see examples below
-
-## **TableAnswer element**
-Can only be positioned inside of the TableHeader element as a child.
-Represent answer that can be used for multiple questions. Can only describe one column and text inside of it. 
-For multiple columns - use multiple TableAnswer elements
-
-### **Attributes**
-|**Attribute**|**Attribute Description**|**Required/Optional**|**Attribute Default Value**|**Attribute Usage Example**|
-| :- | :- | :- | :- | :- |
-|name|String representation of answer|Required|-|"name":"High quality"
-|type|type of JSON object|Required|-|"type":"tableAnswer"
-
-## **Question element**
-Can only be positioned inside of the Table element as a child.
-Represent question with multiple answers. Value of this element placed in the first column of the table for each row(Question) element.
-
-### **Attributes**
-|**Attribute**|**Attribute Description**|**Required/Optional**|**Attribute Default Value**|**Attribute Usage Example**|
-| :- | :- | :- | :- | :- |
-|name|String representation of question|Required|-|"name":"How do you assess quality of this product?"
-|type|type of JSON object|Required|-|"type":"question"
-
-### **Example of table structure**
 ```json
 {
     "children": [{
             "children": [{
-                    "name": "1",
+                    "name": "all",
                     "children": [{
-                            "name": "1",
+                            "name": "left_size",
                             "children": [{
-                                    "name": "Survey",
+                                    "name": "name",
+                                    "element_type": "InputGroup",
                                     "children": [{
-                                            "font_family": "Italic",
+                                            "name": "First name",
                                             "font_style": "Bold",
-                                            "font_size": 16,
-                                            "color": "White",
-                                            "background_color": "Gray",
-                                            "border": "Square",
-                                            "border_size": 8,
-                                            "border_color": "Black",
-                                            "name": "Product satisfaction survey",
-                                            "type": "TableTitle"
+                                            "font_size": 7,
+                                            "align": "Left",
+                                            "element_type": "Content"
                                         }, {
-                                            "font_family": "Italic",
-                                            "font_style": "Regular",
-                                            "font_size": 12,
-                                            "name": "1",
-                                            "children": [{
-                                                    "name": "Products",
-                                                    "font_family": "Segoe UI",
-                                                    "font_style": "Regular",
-                                                    "font_size": 12,
-                                                    "type": "Content"
-                                                }, {
-                                                    "name": "Yes",
-                                                    "type": "TableAnswer"
-                                                }, {
-                                                    "name": "No",
-                                                    "type": "TableAnswer"
-                                                }, {
-                                                    "name": "I Don't Know",
-                                                    "type": "TableAnswer"
-                                                }
-                                            ],
-                                            "type": "TableHeader"
-                                        }, {
-                                            "name": "Are you satisfied with Product X?",
-                                            "type": "Question"
-                                        }, {
-                                            "name": "Are you satisfied with Product Y?",
-                                            "type": "Question"
-                                        }, {
-                                            "name": "Are you satisfied with Product Z?",
-                                            "type": "Question"
+                                            "name": "John",
+                                            "font_style": "Italic",
+                                            "font_size": 6,
+                                            "align": "Center",
+                                            "element_type": "Content"
                                         }
                                     ],
-                                    "answers_count": 3,
-                                    "table_type": "Striped",
-                                    "type": "Table"
+                                    "label_border": "None",
+                                    "input_border": "Square",
+                                    "border_size": 3,
+                                    "border_color": "Black"
+                                }, {
+                                    "name": "middle_name",
+                                    "element_type": "InputGroup",
+                                    "children": [{
+                                            "name": "Middle name",
+                                            "font_style": "Bold",
+                                            "font_size": 7,
+                                            "align": "Left",
+                                            "element_type": "Content"
+                                        }, {
+                                            "name": " Abraham",
+                                            "font_style": "Italic",
+                                            "font_size": 6,                                            
+                                            "align": "Center",
+                                            "element_type": "Content"
+                                        }
+                                    ],
+                                    "label_border": "None",
+                                    "input_border": "Square",
+                                    "border_size": 3,
+                                    "border_color": "Black"
+                                }, {
+                                    "name": "last_name",
+                                    "element_type": "InputGroup",
+                                    "children": [{
+                                            "name": "Last name",
+                                            "font_style": "Bold",
+                                            "font_size": 7,
+                                            "align": "Left",
+                                            "element_type": "Content"
+                                        }, {
+                                            "name": "Smith",
+                                            "font_size": 6,
+                                            "align": "Center",
+                                            "element_type": "Content"
+                                        }
+                                    ],
+                                    "label_border": "None",
+                                    "input_border": "Square",
+                                    "border_size": 3,
+                                    "border_color": "Black"
                                 }
                             ],
                             "column": 1,
-                            "border": "None",
-                            "border_size": 3,
-                            "border_color": "Black",
-                            "type": "Block"
+                            "element_type": "Block"
                         }
                     ],
+                    "columns_count": 2,
                     "container_type": "Normal",
-                    "type": "Container"
+                    "element_type": "Container"
                 }
             ],
-            "type": "Page"
+            "element_type": "Page"
         }
     ],
-    "type": "Template"
+    "element_type": "Template"
 }
 
-````
+```
 
 **Result**
 
-**![todo:image_alt_text](Table_documentation.png)**
+**![todo:image_alt_text](input_group-example.png)**

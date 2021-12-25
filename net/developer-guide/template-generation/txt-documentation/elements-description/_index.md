@@ -346,6 +346,7 @@ Block element can be customized with attributes, each attribute must be on a ne
 |||border|Border type of Container element|Optional|normal|-|
 |||border_size|The size of the border|Optional|3|-|
 |||border_color|Color of the border|Optional|Black|-|
+|||is_clipped|if set to true - block with all content will be clipped as picture upon recognition|Optional|false|is_clipped=true
 
 ### **Examples**
 
@@ -366,6 +367,9 @@ Content element can be customized with attributes, each attribute must be on a 
 |Content|?content=|font_family|The font family of the content|Optional|Segoe UI|font_family=Arial|
 |||font_style|The style of the content|Optional|FontStyle.Regular|font_style=Bold|
 |||font_size|The size of the text content|Optional|12|font_size=16|
+|||align|Type of horizontal alignment inside parent element|Optional|left|<p>align=right</p><p>align=center</p><p>align=left</p>
+|||content_type|type of content. <p>Cells - allow to draw circle around each symbol, including space or tab.</p><p>Normal - draw text as is</p>|Optional|Normal|<p>content_type=cells</p><p>content_type=normal</p>
+
 
 ### **Examples**
 
@@ -530,105 +534,70 @@ WriteIn element can be customized with attributes, each attribute must be on a 
 In txt markup empty lines of text(\r\n) is recognized as vertical margin.
 Placing empty line of text between two element can be used two create empty space between them.
 Size of margin is calculated as one line of text using default or GlobalPageSettings font and size
-
-## **Table element**
-Starts with **?table=** prefix that sets the name of the element.
-Can be used for questionnaire with set amount of answers.  Grouping element. Supports TableHeader, TableTitle and Question elements as children.
-Best used for drawing table structure with rows and columns. Columns described in TableHeader element. Question element represent rows.
-TableTitle used when need extra row above table.
+You can **also** add element empty_line with attribute height to skip custom height in pixels.
+Starts with **?empty_line=** prefix that sets the name of the element
 
 ### **Attributes**
-Table element can be customized with attributes, each attribute must be on a new line starting with **\t** (tabulation) symbol.
+EmptyLine element can be customized with attributes, each attribute must be on a new line starting with **\t** (tabulation) symbol.
 
 |**Element**|**Prefix**|**Attribute**|**Attribute Description**|**Required/Optional**|**Attribute Default Value**|**Attribute Usage Example**|
 | :- | :- | :- | :- | :- | :- | :- |
-|Table|?table=|answers_count|Number of answers(columns) used in table|Required|-|answers_count=5|
-|||table_type|Type of table element. Can be striped or normal|Optional|normal|table_type=striped
-|||children|Child elements which represent table content|Required|-|see examples below
+|EmptyLine|?empty_line=|height|Height in pixels to draw.|Optional|false|required=true|
 
-## **TableTitle element**
-Starts with **?table_title=** prefix that sets the name of the element and display value.
-Represent additional header in table with one column - title.
-Text value of this element displayed above header as first row.
-Good for marking table name.
+## **InputGroup element**
+Starts with **?input_group=** prefix that sets the name of the element. 
+InputGroup is grouping element. It is used for drawing input field with description(label).
+Two Content element must be will be places inside.First ContentElement describe label and second input field.
+Does not participate in recognition.
 
 ### **Attributes**
-TableTitle element can be customized with attributes, each attribute must be on a new line starting with **\t** (tabulation) symbol.
+InputGroup element can be customized with attributes, each attribute must be on a new line starting with **\t** (tabulation) symbol.
 
 |**Element**|**Prefix**|**Attribute**|**Attribute Description**|**Required/Optional**|**Attribute Default Value**|**Attribute Usage Example**|
 | :- | :- | :- | :- | :- | :- | :- |
-|TableTitle|?table_title=|answers_count|Number of answers(columns) used in table|Required|-|answers_count=5|
-|||font_family|The font family of the text|Optional|Segoe UI|font_family=arial|
-|||font_style|The style of the content|Optional|FontStyle.Regular|font_style=bold|
-|||font_size|The size of the text content|Optional|12|font_size=16|
-|||color|Color of the text|Optional|Black|color=red
-|||background_color|Color of background layer|Optional|-|background_color=gray
-|||border|Border type of title element|Optional|normal|-|
-|||border_size|The size of the border|Optional|3|-|
-|||border_color|Color of the border|Optional|Black|-|
+|InputGroup|?input_group=|label_border|Describe borderType for label element|Optional|None|label_border=square|
+|||input_border|Describe borderType for input element|Optional|None|input_border=square|
+|||border_size|Describe size of border line in pixels|Optional|3|border_size=3
+|||border_color|Describe color of border line|Optional|Black|border_color=red
 
-## **TableHeader element**
-Starts with **?table_header=** prefix that sets the name of the element.
-Grouping element. Represent columns of the table and content inside them.
-Each of columns(TableAnswer) placed below.
-**Amount of TableAnswers inside must be equal to answers_count property of Table element**
+**Example**
 
-### **Attributes**
-TableHeader element can be customized with attributes, each attribute must be on a new line starting with **\t** (tabulation) symbol.
-
-|**Element**|**Prefix**|**Attribute**|**Attribute Description**|**Required/Optional**|**Attribute Default Value**|**Attribute Usage Example**|
-| :- | :- | :- | :- | :- | :- | :- |
-|TableHeader|?table_header=|answers_count|Number of answers(columns) used in table|Required|-|answers_count=5|
-|||font_family|The font family of the text|Optional|Segoe UI|font_family=arial|
-|||font_style|The style of the content|Optional|FontStyle.Regular|font_style=bold|
-|||font_size|The size of the text content|Optional|12|font_size=16|
-|||children|Child elements which represent table content|Required|-|see examples below
-
-## **TableAnswer element**
-Starts with **?answer_value=** prefix that sets the name and value of the element.
-Can only be positioned inside of TableHeader element as child.
-Represent answer that can be used for multiple questions. Can only describe one column and text inside of it. 
-For multiple columns - use multiple TableAnswer elements
-
-### **Attributes**
-This element has no additional attributes. 
-
-## **Question element**
-Starts with **?question=** prefix that sets the name and value of the element.
-Can only be positioned inside of Table element as child.
-Represent question with multiple answers. Value of this element placed in first column of table for each row(Question) element.
-
-### **Attributes**
-This element has no additional attributes. 
-
-### **Example of table structure**
 ```text
-?table=Survey
-	answer_count=3
-	table_type=striped
-?table_title=Product satisfaction survey
-	font_family=Italic
-	font_size=16
-	font_style=Bold
-	color=White
-	background_color=Gray
-	border=Square
-	border_size=8
-	border_color=Black
-?table_header=1
-	font_family=Italic
-	font_size=12
-?content=Products
-?answer_value=Yes
-?answer_value=No
-?answer_value=I Don't Know
-&table_header
-?question=Are you satisfied with Product X?
-?question=Are you satisfied with Product Y?
-?question=Are you satisfied with Product Z?
-&table
-````
+?container=all
+	columns_count=2
+?block=left_size
+	column=1
+?input_group=name
+	input_border=square
+?content=First name
+	font_style=bold
+	font_size=7
+?content=John
+	align=center
+	font_size=6
+&input_group
+?input_group=middle_name
+	input_border=square
+?content=Middle name
+	font_size=7
+	font_style=bold
+?content= Abraham
+	align=center
+	font_size=6
+&input_group
+?input_group=last_name
+	input_border=square
+?content=Last name
+	font_size=7
+	font_style=bold
+?content=Smith
+	align=center
+	font_size=6
+&input_group
+&block
+&container
+```
 
 **Result**
 
-**![todo:image_alt_text](Table_documentation.png)**
+**![todo:image_alt_text](input_group-example.png)**

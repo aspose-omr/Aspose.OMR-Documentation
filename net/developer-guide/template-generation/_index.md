@@ -44,11 +44,11 @@ To create template you can pass path to a file with [JSON](https://docs.aspose.c
 ### AnswerSheet.json content
 ```json
 {
-	"type": "Template",
+	"element_type": "Template",
 	"children": [{
-		"type": "Page",
+		"element_type": "Page",
 		"children": [{
-			"type": "AnswerSheet",
+			"element_type": "AnswerSheet",
 			"elements_count": 100
 		}]
 	}]

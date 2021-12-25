@@ -25,21 +25,21 @@ In this article, we provide example of creating a multi-column questionnaire.
                                             "name": "Aspose Pty Ltd",
                                             "font_style": "Bold",
                                             "font_size": 8,
-                                            "type": "Content"
+                                            "element_type": "Content"
                                         }, {
                                             "name": "Can Aspose.OMR process not only scans, but also photos?",
                                             "font_style": "Bold",
                                             "font_size": 12,
-                                            "type": "Content"
+                                            "element_type": "Content"
                                         }, {
                                             "name": "?hoose 1",
                                             "font_style": "Regular",
                                             "font_size": 9,
-                                            "type": "Content"
+                                            "element_type": "Content"
                                         }
                                     ],
                                     "paragraph_type": "Normal",
-                                    "type": "Paragraph"
+                                    "element_type": "Paragraph"
                                 }, {
                                     "name": "Can Aspose.OMR process not only scans, but also photos?",
                                     "children": [{
@@ -49,10 +49,10 @@ In this article, we provide example of creating a multi-column questionnaire.
 
                                                     "font_style": "Bold",
                                                     "font_size": 10,
-                                                    "type": "Content"
+                                                    "element_type": "Content"
                                                 }
                                             ],
-                                            "type": "Answer"
+                                            "element_type": "Answer"
                                         }, {
                                             "name": "No",
                                             "children": [{
@@ -60,20 +60,20 @@ In this article, we provide example of creating a multi-column questionnaire.
 
                                                     "font_style": "Bold",
                                                     "font_size": 10,
-                                                    "type": "Content"
+                                                    "element_type": "Content"
                                                 }
                                             ],
-                                            "type": "Answer"
+                                            "element_type": "Answer"
                                         }
                                     ],
-                                    "type": "VerticalChoiceBox"
+                                    "element_type": "VerticalChoiceBox"
                                 }
                             ],
                             "column": 1,
                             "border": "Square",
                             "border_size": 5,
                             "border_color": "Black",
-                            "type": "Block"
+                            "element_type": "Block"
                         }, {
                             "name": "Rate",
                             "children": [{
@@ -83,23 +83,23 @@ In this article, we provide example of creating a multi-column questionnaire.
 
                                             "font_style": "Bold",
                                             "font_size": 8,
-                                            "type": "Content"
+                                            "element_type": "Content"
                                         }, {
                                             "name": "How would you rate the quiality of the product?",
 
                                             "font_style": "Bold",
                                             "font_size": 12,
-                                            "type": "Content"
+                                            "element_type": "Content"
                                         }, {
                                             "name": "?hoose 1",
 
                                             "font_style": "Regular",
                                             "font_size": 9,
-                                            "type": "Content"
+                                            "element_type": "Content"
                                         }
                                     ],
                                     "paragraph_type": "Normal",
-                                    "type": "Paragraph"
+                                    "element_type": "Paragraph"
                                 }, {
                                     "name": "How would you rate the quiality of the product:",
                                     "children": [{
@@ -109,16 +109,16 @@ In this article, we provide example of creating a multi-column questionnaire.
 
                                                     "font_style": "Bold",
                                                     "font_size": 10,
-                                                    "type": "Content"
+                                                    "element_type": "Content"
                                                 }, {
                                                     "name": "of the product",
 
                                                     "font_style": "Regular",
                                                     "font_size": 10,
-                                                    "type": "Content"
+                                                    "element_type": "Content"
                                                 }
                                             ],
-                                            "type": "Answer"
+                                            "element_type": "Answer"
                                         }, {
                                             "name": "4",
                                             "children": [{
@@ -126,16 +126,16 @@ In this article, we provide example of creating a multi-column questionnaire.
 
                                                     "font_style": "Bold",
                                                     "font_size": 10,
-                                                    "type": "Content"
+                                                    "element_type": "Content"
                                                 }, {
                                                     "name": "of the product",
 
                                                     "font_style": "Regular",
                                                     "font_size": 10,
-                                                    "type": "Content"
+                                                    "element_type": "Content"
                                                 }
                                             ],
-                                            "type": "Answer"
+                                            "element_type": "Answer"
                                         }, {
                                             "name": "3",
                                             "children": [{
@@ -143,26 +143,26 @@ In this article, we provide example of creating a multi-column questionnaire.
 
                                                     "font_style": "Bold",
                                                     "font_size": 10,
-                                                    "type": "Content"
+                                                    "element_type": "Content"
                                                 }, {
                                                     "name": "of the product",
 
                                                     "font_style": "Regular",
                                                     "font_size": 10,
-                                                    "type": "Content"
+                                                    "element_type": "Content"
                                                 }
                                             ],
-                                            "type": "Answer"
+                                            "element_type": "Answer"
                                         }
                                     ],
-                                    "type": "VerticalChoiceBox"
+                                    "element_type": "VerticalChoiceBox"
                                 }
                             ],
                             "column": 2,
                             "border": "Square",
                             "border_size": 5,
                             "border_color": "Black",
-                            "type": "Block"
+                            "element_type": "Block"
                         }, {
                             "name": "Forms",
                             "children": [{
@@ -172,23 +172,23 @@ In this article, we provide example of creating a multi-column questionnaire.
 
                                             "font_style": "Bold",
                                             "font_size": 8,
-                                            "type": "Content"
+                                            "element_type": "Content"
                                         }, {
                                             "name": "Aspose.OMR works with any kind of OMR forms: tests, exams, questionnaires, surveys, etc.?",
 
                                             "font_style": "Bold",
                                             "font_size": 12,
-                                            "type": "Content"
+                                            "element_type": "Content"
                                         }, {
                                             "name": "?hoose 1",
 
                                             "font_style": "Regular",
                                             "font_size": 9,
-                                            "type": "Content"
+                                            "element_type": "Content"
                                         }
                                     ],
                                     "paragraph_type": "Normal",
-                                    "type": "Paragraph"
+                                    "element_type": "Paragraph"
                                 }, {
                                     "name": "Aspose.OMR works with any kind of OMR forms: tests, exams, questionnaires, surveys, etc.?",
                                     "children": [{
@@ -198,10 +198,10 @@ In this article, we provide example of creating a multi-column questionnaire.
 
                                                     "font_style": "Bold",
                                                     "font_size": 10,
-                                                    "type": "Content"
+                                                    "element_type": "Content"
                                                 }
                                             ],
-                                            "type": "Answer"
+                                            "element_type": "Answer"
                                         }, {
                                             "name": "No",
                                             "children": [{
@@ -209,20 +209,20 @@ In this article, we provide example of creating a multi-column questionnaire.
 
                                                     "font_style": "Bold",
                                                     "font_size": 10,
-                                                    "type": "Content"
+                                                    "element_type": "Content"
                                                 }
                                             ],
-                                            "type": "Answer"
+                                            "element_type": "Answer"
                                         }
                                     ],
-                                    "type": "VerticalChoiceBox"
+                                    "element_type": "VerticalChoiceBox"
                                 }
                             ],
                             "column": 1,
                             "border": "Square",
                             "border_size": 5,
                             "border_color": "Black",
-                            "type": "Block"
+                            "element_type": "Block"
                         }, {
                             "name": "Reccomend",
                             "children": [{
@@ -232,23 +232,23 @@ In this article, we provide example of creating a multi-column questionnaire.
 
                                             "font_style": "Bold",
                                             "font_size": 8,
-                                            "type": "Content"
+                                            "element_type": "Content"
                                         }, {
                                             "name": "How likely is it that you would reccomend our company to a friend or colleague?",
 
                                             "font_style": "Bold",
                                             "font_size": 12,
-                                            "type": "Content"
+                                            "element_type": "Content"
                                         }, {
                                             "name": "?hoose 1",
 
                                             "font_style": "Regular",
                                             "font_size": 9,
-                                            "type": "Content"
+                                            "element_type": "Content"
                                         }
                                     ],
                                     "paragraph_type": "Normal",
-                                    "type": "Paragraph"
+                                    "element_type": "Paragraph"
                                 }, {
                                     "name": "How likely is it that you would reccomend our company to a friend or colleague?",
                                     "children": [{
@@ -258,10 +258,10 @@ In this article, we provide example of creating a multi-column questionnaire.
 
                                                     "font_style": "Bold",
                                                     "font_size": 10,
-                                                    "type": "Content"
+                                                    "element_type": "Content"
                                                 }
                                             ],
-                                            "type": "Answer"
+                                            "element_type": "Answer"
                                         }, {
                                             "name": "2",
                                             "children": [{
@@ -269,10 +269,10 @@ In this article, we provide example of creating a multi-column questionnaire.
 
                                                     "font_style": "Bold",
                                                     "font_size": 10,
-                                                    "type": "Content"
+                                                    "element_type": "Content"
                                                 }
                                             ],
-                                            "type": "Answer"
+                                            "element_type": "Answer"
                                         }, {
                                             "name": "3",
                                             "children": [{
@@ -280,10 +280,10 @@ In this article, we provide example of creating a multi-column questionnaire.
 
                                                     "font_style": "Bold",
                                                     "font_size": 10,
-                                                    "type": "Content"
+                                                    "element_type": "Content"
                                                 }
                                             ],
-                                            "type": "Answer"
+                                            "element_type": "Answer"
                                         }, {
                                             "name": "4",
                                             "children": [{
@@ -291,10 +291,10 @@ In this article, we provide example of creating a multi-column questionnaire.
 
                                                     "font_style": "Bold",
                                                     "font_size": 10,
-                                                    "type": "Content"
+                                                    "element_type": "Content"
                                                 }
                                             ],
-                                            "type": "Answer"
+                                            "element_type": "Answer"
                                         }, {
                                             "name": "5",
                                             "children": [{
@@ -302,10 +302,10 @@ In this article, we provide example of creating a multi-column questionnaire.
 
                                                     "font_style": "Bold",
                                                     "font_size": 10,
-                                                    "type": "Content"
+                                                    "element_type": "Content"
                                                 }
                                             ],
-                                            "type": "Answer"
+                                            "element_type": "Answer"
                                         }, {
                                             "name": "6",
                                             "children": [{
@@ -313,10 +313,10 @@ In this article, we provide example of creating a multi-column questionnaire.
 
                                                     "font_style": "Bold",
                                                     "font_size": 10,
-                                                    "type": "Content"
+                                                    "element_type": "Content"
                                                 }
                                             ],
-                                            "type": "Answer"
+                                            "element_type": "Answer"
                                         }, {
                                             "name": "7",
                                             "children": [{
@@ -324,10 +324,10 @@ In this article, we provide example of creating a multi-column questionnaire.
 
                                                     "font_style": "Bold",
                                                     "font_size": 10,
-                                                    "type": "Content"
+                                                    "element_type": "Content"
                                                 }
                                             ],
-                                            "type": "Answer"
+                                            "element_type": "Answer"
                                         }, {
                                             "name": "8",
                                             "children": [{
@@ -335,10 +335,10 @@ In this article, we provide example of creating a multi-column questionnaire.
 
                                                     "font_style": "Bold",
                                                     "font_size": 10,
-                                                    "type": "Content"
+                                                    "element_type": "Content"
                                                 }
                                             ],
-                                            "type": "Answer"
+                                            "element_type": "Answer"
                                         }, {
                                             "name": "9",
                                             "children": [{
@@ -346,28 +346,28 @@ In this article, we provide example of creating a multi-column questionnaire.
 
                                                     "font_style": "Bold",
                                                     "font_size": 10,
-                                                    "type": "Content"
+                                                    "element_type": "Content"
                                                 }
                                             ],
-                                            "type": "Answer"
+                                            "element_type": "Answer"
                                         }
                                     ],
-                                    "type": "VerticalChoiceBox"
+                                    "element_type": "VerticalChoiceBox"
                                 }
                             ],
                             "column": 3,
                             "border": "Square",
                             "border_size": 5,
                             "border_color": "Black",
-                            "type": "Block"
+                            "element_type": "Block"
                         }
                     ],
                     "columns_count": 3,
                     "container_type": "Normal",
-                    "type": "Container"
+                    "element_type": "Container"
                 }, {
 
-                    "type": "EmptyLine"
+                    "element_type": "EmptyLine"
                 }, {
                     "name": "Test4",
                     "value": "Aspose Pty Ltd",
@@ -378,7 +378,7 @@ In this article, we provide example of creating a multi-column questionnaire.
                     "codetext": true,
                     "X": 2100,
                     "Y": 3030,
-                    "type": "Barcode"
+                    "element_type": "Barcode"
                 }, {
                     "name": "Footer",
                     "children": [{
@@ -390,24 +390,24 @@ In this article, we provide example of creating a multi-column questionnaire.
 
                                             "font_style": "Bold",
                                             "font_size": 14,
-                                            "type": "Content"
+                                            "element_type": "Content"
                                         }, {
                                             "name": "� Aspose Pty Ltd 2001-2021",
 
                                             "font_style": "Regular",
                                             "font_size": 10,
-                                            "type": "Content"
+                                            "element_type": "Content"
                                         }
                                     ],
                                     "paragraph_type": "Normal",
-                                    "type": "Paragraph"
+                                    "element_type": "Paragraph"
                                 }
                             ],
                             "column": 1,
                             "border": "None",
                             "border_size": 3,
                             "border_color": "Black",
-                            "type": "Block"
+                            "element_type": "Block"
                         }, {
                             "name": "2",
                             "children": [{
@@ -417,18 +417,18 @@ In this article, we provide example of creating a multi-column questionnaire.
 
                                             "font_style": "Regular",
                                             "font_size": 10,
-                                            "type": "Content"
+                                            "element_type": "Content"
                                         }
                                     ],
                                     "paragraph_type": "Normal",
-                                    "type": "Paragraph"
+                                    "element_type": "Paragraph"
                                 }
                             ],
                             "column": 2,
                             "border": "None",
                             "border_size": 3,
                             "border_color": "Black",
-                            "type": "Block"
+                            "element_type": "Block"
                         }, {
                             "name": "3",
                             "children": [{
@@ -438,35 +438,35 @@ In this article, we provide example of creating a multi-column questionnaire.
 
                                             "font_style": "Bold",
                                             "font_size": 14,
-                                            "type": "Content"
+                                            "element_type": "Content"
                                         }, {
                                             "name": "June 26, 2021",
 
                                             "font_style": "Regular",
                                             "font_size": 10,
-                                            "type": "Content"
+                                            "element_type": "Content"
                                         }
                                     ],
                                     "paragraph_type": "Normal",
-                                    "type": "Paragraph"
+                                    "element_type": "Paragraph"
                                 }
                             ],
                             "column": 3,
                             "border": "None",
                             "border_size": 3,
                             "border_color": "Black",
-                            "type": "Block"
+                            "element_type": "Block"
                         }
                     ],
                     "columns_count": 3,
                     "container_type": "Footer",
-                    "type": "Container"
+                    "element_type": "Container"
                 }
             ],
-            "type": "Page"
+            "element_type": "Page"
         }
     ],
-    "type": "Template"
+    "element_type": "Template"
 }
 
 ````
