@@ -1,7 +1,7 @@
 ---
 title: Aspose.OMR for .NET 21.6 Release Notes
 type: docs
-weight: 10
+weight: 70
 url: /net/aspose-omr-for-net-21-6-release-notes/
 ---
 
