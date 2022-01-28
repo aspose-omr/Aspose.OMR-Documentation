@@ -1,5 +1,6 @@
 ---
 title: Aspose.OMR Product Family
+description: Aspose.OMR is an API to recognize OMR, the optical mark recognition meaning, optical marks from OMRSheet which is a digitized sheet of images.
 type: docs
 weight: 10
 url: /

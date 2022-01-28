@@ -1,5 +1,6 @@
 ---
 title: Template Generation
+description: OMR template generation 
 type: docs
 weight: 10
 url: /net/template-generation/
@@ -11,7 +12,7 @@ Try online! You can test Answer Sheet generator online at https://products.aspos
 
 {{% /alert %}}
 
-# TXT markup
+## TXT markup
 To create template you can pass path to a file with [TXT](https://docs.aspose.com/omr/net/template-generation/txt/) markup.
 
 ### AnswerSheet.txt content
@@ -38,7 +39,7 @@ public static void CreateAnswerSheet()
 }
 ```
 
-# JSON markup
+## JSON markup
 To create template you can pass path to a file with [JSON](https://docs.aspose.com/omr/net/template-generation/json/) markup.
 
 ### AnswerSheet.json content
@@ -73,7 +74,7 @@ public static void CreateAnswerSheet()
 }
 ```
 
-# Object 
+## Object 
 To create template you can create and pass TemplateConfig object.
 ### C# code
 ```csharp
@@ -108,7 +109,7 @@ public static void CreateAnswerSheet()
     res.Save(outputPath, resultName);
 }
 ```
-# Result
+## Result
 Each of presented examples produce same generated Answer Sheet image below. Now you can print this image and pass it to the respondents to fill out. Then scan filled papers and recognize them using Aspose.OMR for .NET.
 
 ![OmrAnswerSheet](AnswerSheet.png)
