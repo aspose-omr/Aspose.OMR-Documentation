@@ -87,11 +87,14 @@ This element has no additional attributes. 
 
 ### **Example of table structure**
 ```text
+?container=table_container
+	columns_count=1
+?block=table_block
+	column=1
 ?table=Survey
-	answer_count=3
+	answers_count=3
 	table_type=striped
 ?table_title=Product satisfaction survey
-	font_family=Italic
 	font_size=16
 	font_style=Bold
 	color=White
@@ -99,9 +102,9 @@ This element has no additional attributes. 
 	border=Square
 	border_size=8
 	border_color=Black
-?table_header=1
-	font_family=Italic
-	font_size=12
+?table_header=table_header
+	font_size=10
+	font_style=Italic
 ?content=Products
 ?answer_value=Yes
 ?answer_value=No
@@ -111,6 +114,8 @@ This element has no additional attributes. 
 ?question=Are you satisfied with Product Y?
 ?question=Are you satisfied with Product Z?
 &table
+&block
+&container
 ````
 
 **Result**

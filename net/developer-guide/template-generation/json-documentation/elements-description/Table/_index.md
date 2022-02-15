@@ -97,8 +97,7 @@ Represent question with multiple answers. Value of this element placed in the fi
                             "children": [{
                                     "name": "Survey",
                                     "children": [{
-                                            "font_family": "Italic",
-                                            "font_style": "Bold",
+                                            "font_style": "Italic",
                                             "font_size": 16,
                                             "color": "White",
                                             "background_color": "Gray",
@@ -108,15 +107,12 @@ Represent question with multiple answers. Value of this element placed in the fi
                                             "name": "Product satisfaction survey",
                                             "element_type": "TableTitle"
                                         }, {
-                                            "font_family": "Italic",
-                                            "font_style": "Regular",
-                                            "font_size": 12,
-                                            "name": "1",
+                                            "font_style": "Italic",
+											"font_size": 10,
+                                            "name": "header",
                                             "children": [{
                                                     "name": "Products",
-                                                    "font_family": "Segoe UI",
                                                     "font_style": "Regular",
-                                                    "font_size": 12,
                                                     "element_type": "Content"
                                                 }, {
                                                     "name": "Yes",
@@ -162,6 +158,7 @@ Represent question with multiple answers. Value of this element placed in the fi
     ],
     "element_type": "Template"
 }
+
 
 ````
 

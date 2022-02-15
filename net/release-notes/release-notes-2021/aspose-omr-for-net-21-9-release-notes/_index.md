@@ -44,7 +44,6 @@ No Changes
 	answer_count=3
 	table_type=striped
 ?table_title=COVID-19 Questionnaire
-	font_family=Italic
 	font_size=16
 	font_style=Bold
 	color=White
@@ -53,7 +52,6 @@ No Changes
 	border_size=8
 	border_color=Black
 ?table_header=1
-	font_family=Italic
 	font_size=12
 ?content=Questions
 ?answer_value=Yes
