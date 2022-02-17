@@ -987,6 +987,7 @@ WriteIn element can be customized with attributes.
                 }
               ],
               "column": 1,
+			  "element_type": "block"
             }
           ],
           "columns_count": 3,
@@ -1012,7 +1013,7 @@ Size of margin is calculated as one line of text using default or GlobalPageSett
 Or you can specify it in pixels with "height" property
 
 ### **Attributes**
-WriteIn element can be customized with attributes, each attribute must be on a new line starting with **\t** (tabulation) symbol.
+EmptyLine element can be customized with attributes, each attribute must be on a new line starting with **\t** (tabulation) symbol.
 
 |**Attribute**|**Attribute Description**|**Required/Optional**|**Attribute Default Value**|**Attribute Usage Example**|
 | :- | :- | :- | :- | :- |
