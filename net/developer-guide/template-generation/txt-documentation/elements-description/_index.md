@@ -100,23 +100,18 @@ This element has no additional attributes. 
 **Markup**
 
 ````text
- #Can Aspose.OMR process not only scans, but also photos?
-
-    () Yes, indeed! () No
+#Can Aspose.OMR process not only scans, but also photos?
+	() Yes, indeed! () No
 
 #Aspose.OMR works with any kind of OMR forms: tests, exams, questionnaires, surveys, etc.
-
-    (Yes) Yes, indeed! (No) No
+	(Yes) Yes, indeed! (No) No
 
 #How would you rate the quality of the product:
-
-    () Very high quality () High quality 
-
-    () Average quality () Low quality
+	() Very high quality () High quality 
+	() Average quality () Low quality
 
 #How likely is it that you would recommend our company to a friend or colleague?
-
-    (1) (2) (3) (4) (5) (6) (7) (8) (9)
+	(1) (2) (3) (4) (5) (6) (7) (8) (9)
 ````
 
 **Result**
@@ -351,9 +346,12 @@ Block element can be customized with attributes, each attribute must be on a ne
 ### **Examples**
 
 ````text
+?container=common_container
+	columns_count=2
 ?block=1-st
 	column=2
 &block
+&container
 ````
 
 ## **Content element**

@@ -10,10 +10,20 @@ To add the image, add the following to the json markup with the name of the imag
 
 ````json
 {
-	"align": "Center",
-	"name": "Aspose.jpg",
-	"element_type": "Image"
-},
+  "children": [
+    {
+      "children": [
+        {		
+			"align": "Center",
+			"name": "Aspose.jpg",
+			"element_type": "Image"
+		}
+      ],
+      "element_type": "Page"
+    }
+  ],
+  "element_type": "Template"
+}
 ````
 
 The following is the complete json markup that is used in the example code snippet to generate the OMR template file.

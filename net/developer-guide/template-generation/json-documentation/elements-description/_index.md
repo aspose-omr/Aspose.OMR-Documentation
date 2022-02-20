@@ -619,9 +619,16 @@ Block element can be customized with attributes.
       "element_type": "Page",
       "children": [
         {
-          "element_type": "Block",
-          "name": "1-st",
-          "column": 2
+          "element_type": "Container",
+          "name": "1-st container",
+          "columns_count": 2,
+		  "children":[		  
+			{
+			  "element_type": "Block",
+			  "name": "1-st",
+			  "column": 2
+			}
+		  ]
         }
       ]
     }
@@ -780,6 +787,7 @@ paragraph_type|Type of Paragraph|Optional|ParagraphTypeEnum.normal|paragraph_typ
             }
           ],
           "columns_count": 3,
+		  "element_type": "Container",
           "container_type": "Normal",
         }
       ]
