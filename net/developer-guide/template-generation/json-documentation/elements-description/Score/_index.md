@@ -42,6 +42,7 @@ ScoreQuestion element can be customized with attributes.
 | :- | :- | :- | :- | :- |
 |name|Name of ScoreQuestion|Required|-|"name":"Are you satisfied with services provided?"
 |element_type|Type of JSON object| Required|-| "element_type":"ScoreQuestion"
+|score_display|Describe display behavior for score value. <p>DisplayAsExtraColumn = Score value will be displayed as extra column and will be visible to user.</p>  <p> DontDisplay = Score value will be hidden. </p> <p>DisplayInsideCell = Score value will be displayed inside each cell.</p>|Optional|DontDisplay|"score_display":"DisplayAsExtraColumn"
 |children|Array of other elements nested in this container|Required|-|see examples below
 |row_proportions|In table structure represent amount of width for each column in percent. Total value must be 100%. Amount of column must be equal to ScoreHeader children + 1(ScoreAnswer)|Required|-|"row_proportions": [80,10,10]|
 |font_family|The font family of the text|Optional|Segoe UI|"font_family":"arial"|
@@ -63,7 +64,7 @@ ScoreHeader element can be customized with attributes.
 | :- | :- | :- | :- | :- |
 |name|Name of ScoreHeader|Required|-|"name":"Yes"
 |element_type|Type of JSON object| Required|-| "element_type":"ScoreHeader"
-|header_type|Set content behavior inside this column <p>Positive = Value will be added upon bubble filling. </p> <p>Amount = Only displaying of value. </p> <p>Negative = upon filling value will not be added</p>|Required|Positive|<p>"score_header_type":"amount"</p><p>"score_header_type":"positive"</p><p>"score_header_type":"negative"</p>
+|header_type|Set content behavior inside this column <p>Positive = Value will be added upon bubble filling. </p> <p>Amount = Only displaying of value. </p> <p>Negative = upon filling value will not be added</p> <p>Question = this header will store question text, instead of first column</p> <p>Content = this column will store content from TableContent element</p>|Required|Positive|<p>"score_header_type":"amount"</p><p>"score_header_type":"positive"</p><p>"score_header_type":"negative"</p><p>"score_header_type":"question"</p><p>"score_header_type":"content"</p>
 
 
 ## **ScoreAnswer element**
@@ -76,12 +77,29 @@ ScoreAnswer element can be customized with attributes.
 
 |**Attribute**|**Attribute Description**|**Required/Optional**|**Attribute Default Value**|**Attribute Usage Example**|
 | :- | :- | :- | :- | :- |
+|element_type|Type of JSON object| Required|-| "element_type":"ScoreAnswer"
 |score|number value that will be added to total sum of ScoreQuestion|Required|-|"score":5
 |font_family|The font family of the content|Optional|Segoe UI|"font_family":"Arial"|
 |font_style|The style of the content|Optional|FontStyle.Regular|"font_style":"Bold"|
 |font_size|The size of the text content|Optional|12|"font_size":16|
 |align|type of horizontal alignment for this text inside it's cell|Optional|left|<p>"align":"left"</p><p>"align":"right"</p><p>"align":"center"</p>
 
+## **TableContent element**
+The TableContent element identified by field **"element_type"** and it's value **"TableContent"**.
+Can only be positioned inside of ScoreQuestion element as child.
+Represent one string of text inside specific cell. Useful when creating complex and custom tables.
+
+### **Attributes**
+TableContent element can be customized with attributes.
+
+|**Attribute**|**Attribute Description**|**Required/Optional**|**Attribute Default Value**|**Attribute Usage Example**|
+| :- | :- | :- | :- | :- |
+|element_type| Type of JSON object|Required|-|"element_type":"TableContent"
+|name| String value of content|Required|-|"name":"Thank you for purchasing!"
+|font_family|The font family of the content|Optional|Segoe UI|"font_family":"Arial"|
+|font_style|The style of the content|Optional|FontStyle.Regular|"font_style":"Bold"|
+|font_size|The size of the text content|Optional|12|"font_size":16|
+|align|Type of horizontal alignment inside parent element|Optional|left|<p>"align":"right"</p><p>"align":"center"</p><p>"align":"left"</p>
 
 
 ### **Example of ScoreGroup structure**
@@ -118,10 +136,14 @@ ScoreAnswer element can be customized with attributes.
                                             "children": [{
                                                     "name": "Yes",
                                                     "header_type": "Positive",
+													"align": "center",
+													"font_style":"bold",
                                                     "element_type": "ScoreHeader"
                                                 }, {
                                                     "name": "No",
                                                     "header_type": "Negative",
+													"align": "center",
+													"font_style":"bold",
                                                     "element_type": "ScoreHeader"
                                                 }, {
                                                     "Score": 1,
@@ -147,18 +169,36 @@ ScoreAnswer element can be customized with attributes.
                                             "font_style": "Bold",
                                             "font_size": 12,
                                             "row_proportions": [
-                                                80,
+												5,
+                                                75,
                                                 10,
                                                 10
                                             ],
                                             "name": "How would you rate our services ?",
+											"score_display":"DisplayInsideCell",
                                             "children": [{
+													"name":"",
+													"header_type":"Content",
+													"align": "center",
+													"font_style":"bold",
+													"element_type":"ScoreHeader",
+												},{
+													"name":"How would you rate our services ?",
+													"header_type":"Question",
+													"align": "center",
+													"font_style":"bold",
+													"element_type":"ScoreHeader"
+												},{
                                                     "name": "Yes",
                                                     "header_type": "Positive",
+													"align": "center",
+													"font_style":"bold",
                                                     "element_type": "ScoreHeader"
                                                 }, {
                                                     "name": "No",
                                                     "header_type": "Negative",
+													"align": "center",
+													"font_style":"bold",
                                                     "element_type": "ScoreHeader"
                                                 }, {
                                                     "Score": 2,
@@ -180,7 +220,42 @@ ScoreAnswer element can be customized with attributes.
                                                     "Score": 3,
                                                     "element_type": "ScoreAnswer",
                                                     "name": "Air conditioner provided an optimal microclimate in my hotel room.",
-                                                }
+                                                },{
+													"element_type":"TableContent",
+													"row":1,
+													"column":1,
+													"name":"1.",
+													"align":"center",
+													"font_style":"bold"
+												},{
+													"element_type":"TableContent",
+													"row":2,
+													"column":1,
+													"name":"2.",
+													"align":"center",
+													"font_style":"bold"
+												},{
+													"element_type":"TableContent",
+													"row":3,
+													"column":1,
+													"name":"3.",
+													"align":"center",
+													"font_style":"bold"
+												},{
+													"element_type":"TableContent",
+													"row":4,
+													"column":1,
+													"name":"4.",
+													"align":"center",
+													"font_style":"bold"
+												},{
+													"element_type":"TableContent",
+													"row":5,
+													"column":1,
+													"name":"5.",
+													"align":"center",
+													"font_style":"bold"
+												}
                                             ],
                                             "element_type": "ScoreQuestion"
                                         }, {
@@ -194,17 +269,24 @@ ScoreAnswer element can be customized with attributes.
                                                 10
                                             ],
                                             "name": "How would you rate you total experience?",
+											"score_display":"DisplayAsExtraColumn",
                                             "children": [{
                                                     "name": "Score",
                                                     "header_type": "Amount",
+													"align": "center",
+													"font_style":"bold",
                                                     "element_type": "ScoreHeader"
                                                 }, {
                                                     "name": "Yes",
                                                     "header_type": "Positive",
+													"align": "center",
+													"font_style":"bold",
                                                     "element_type": "ScoreHeader"
                                                 }, {
                                                     "name": "No",
                                                     "header_type": "Negative",
+													"align": "center",
+													"font_style":"bold",
                                                     "element_type": "ScoreHeader"
                                                 }, {
                                                     "Score": 5,
@@ -236,7 +318,6 @@ ScoreAnswer element can be customized with attributes.
     ],
     "element_type": "Template"
 }
-
 ````
 
 **Result**
@@ -251,12 +332,13 @@ ScoreAnswer element can be customized with attributes.
 
 ```text
 Element Name,Value,
-How would you rate our hospitality?,"Location of hotel is excellent.,Personnel is polite."
+How would you rate our hospitality?,"Website provided me with all information needed for booking.,Personnel is polite."
 How would you rate our hospitality?_total,"6"
 How would you rate our services ?,"Housekeeping visited my room daily.,I enjoy continental Breakfast.,I enjoy interior design of my hotel room."
 How would you rate our services ?_total,"8"
 How would you rate you total experience?,"I enjoy my stay.,I will recommend it to my friends."
 How would you rate you total experience?_total,"15"
-hotel guest survey,"29"
+product survey_total,"29"
+
 
 ```

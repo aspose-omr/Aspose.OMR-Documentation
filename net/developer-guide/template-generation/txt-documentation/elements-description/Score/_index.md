@@ -44,6 +44,7 @@ ScoreQuestion element can be customized with attributes, each attribute must be
 |**Element**|**Prefix**|**Attribute**|**Attribute Description**|**Required/Optional**|**Attribute Default Value**|**Attribute Usage Example**|
 | :- | :- | :- | :- | :- | :- | :- |
 |ScoreQuestion|?score_question=|row_proportions|In table structure represent amount of width for each column in percent. Total value must be 100%. Amount of column must be equal to ScoreHeader children + 1(ScoreAnswer)|Required|-|row_proportions=80%-10%-10%|
+|||score_display|Describe display behavior for score value. <p>DisplayAsExtraColumn = Score value will be displayed as extra column and will be visible to user.</p>  <p> DontDisplay = Score value will be hidden. </p> <p>DisplayInsideCell = Score value will be displayed inside each cell.</p>|Optional|DontDisplay|score_display=DisplayAsExtraColumn
 |||font_family|The font family of the text|Optional|Segoe UI|font_family=arial|
 |||font_style|The style of the content|Optional|FontStyle.Regular|font_style=bold|
 |||font_size|The size of the text content|Optional|12|font_size=16|
@@ -62,7 +63,7 @@ ScoreHeader element can be customized with attributes, each attribute must be o
 
 |**Element**|**Prefix**|**Attribute**|**Attribute Description**|**Required/Optional**|**Attribute Default Value**|**Attribute Usage Example**|
 | :- | :- | :- | :- | :- | :- | :- |
-|ScoreHeader|?score_header=|header_type|Set content behavior inside this column <p>Positive = Value will be added upon bubble filling. </p> <p>Amount = Only displaying of value. </p> <p>Negative = upon filling value will not be added</p>|Required|Positive|<p>score_header_type=amount</p><p>score_header_type=positive</p><p>score_header_type=negative</p>
+|ScoreHeader|?score_header=|header_type|Set content behavior inside this column <p>Positive = Value will be added upon bubble filling. </p> <p>Amount = Only displaying of value. </p> <p>Negative = upon filling value will not be added</p> <p>Question = this header will store question text, instead of first column</p> <p>Content = this column will store content from TableContent element</p>|Required|Positive|<p>score_header_type=amount</p><p>score_header_type=positive</p><p>score_header_type=negative</p><p>score_header_type=question</p><p>score_header_type=content</p>
 
 
 ## **ScoreAnswer element**
@@ -81,7 +82,20 @@ ScoreAnswer element can be customized with attributes, each attribute must be o
 |||font_size|The size of the text content|Optional|12|font_size=16|
 |||align|type of horizontal alignment for this text inside it's cell|Optional|left|<p>align=left</p><p>align=right</p><p>align=center</p>
 
+## **TableContent element**
+Starts with **?table_content=** prefix that sets the name and value of the element.
+Can only be positioned inside of ScoreQuestion element as child.
+Represent one string of text inside specific cell. Useful when creating complex and custom tables.
 
+### **Attributes**
+TableContent element can be customized with attributes.
+
+|**Element**|**Prefix**|**Attribute**|**Attribute Description**|**Required/Optional**|**Attribute Default Value**|**Attribute Usage Example**|
+| :- | :- | :- | :- | :- | :- | :- |
+|TableContent|?table_content=|font_family|The font family of the content|Optional|Segoe UI|font_family=Arial|
+|||font_style|The style of the content|Optional|FontStyle.Regular|font_style=Bold|
+|||font_size|The size of the text content|Optional|12|font_size=16|
+|||align|Type of horizontal alignment inside parent element|Optional|left|<p>align=right"</p><p>align=center</p><p>align=left</p>
 
 ### **Example of ScoreGroup structure**
 ```text
@@ -102,8 +116,12 @@ ScoreAnswer element can be customized with attributes, each attribute must be o
 	row_proportions=80%-10%-10%
 ?score_header=Yes
 	header_type=positive
+	font_style=bold
+	align=center
 ?score_header=No
 	header_type=negative
+	font_style=bold
+	align=center
 ?score_answer=Website provided me with all information needed for booking.
 	score=1
 	align=left
@@ -120,11 +138,22 @@ ScoreAnswer element can be customized with attributes, each attribute must be o
 ?score_question=How would you rate our services ?
 	font_size=12
 	font_style=bold	
-	row_proportions=80%-10%-10%
+	row_proportions=5%-75%-10%-10%
+	score_display=DisplayInsideCell
+?score_header=
+	header_type=Content
+?score_header=How would you rate our services ?
+	header_type=Question
+	align=center
+	font_style=bold
 ?score_header=Yes
 	header_type=positive
+	font_style=bold
+	align=center
 ?score_header=No
 	header_type=negative
+	font_style=bold
+	align=center
 ?score_answer=Housekeeping visited my room daily.
 	score=2
 	align=left
@@ -140,17 +169,49 @@ ScoreAnswer element can be customized with attributes, each attribute must be o
 ?score_answer=Air conditioner provided an optimal microclimate in my hotel room.
 	score=3
 	align=left
+?table_content=1.
+	row=1
+	column=1
+	font_style=bold
+	align=center
+?table_content=2.
+	row=2
+	column=1
+	font_style=bold
+	align=center
+?table_content=3.
+	row=3
+	column=1
+	font_style=bold
+	align=center
+?table_content=4.
+	row=4
+	column=1
+	font_style=bold
+	align=center
+?table_content=5.
+	row=5
+	column=1
+	font_style=bold
+	align=center
 &score_question
 ?score_question=How would you rate you total experience?
 	font_size=12
 	font_style=bold	
 	row_proportions=60%-20%-10%-10%
+	score_display=DisplayAsExtraColumn
 ?score_header=Score
 	header_type=Amount
+	font_style=bold
+	align=center
 ?score_header=Yes
 	header_type=positive
+	font_style=bold
+	align=center
 ?score_header=No
 	header_type=negative
+	font_style=bold
+	align=center
 ?score_answer=I enjoy my stay.
 	score=5
 	align=left
@@ -176,11 +237,13 @@ ScoreAnswer element can be customized with attributes, each attribute must be o
 ```text
 Element Name,Value,
 How would you rate our hospitality?,"Location of hotel is excellent.,Personnel is polite."
+How would you rate our hospitality?,"Website provided me with all information needed for booking.,Personnel is polite."
 How would you rate our hospitality?_total,"6"
 How would you rate our services ?,"Housekeeping visited my room daily.,I enjoy continental Breakfast.,I enjoy interior design of my hotel room."
 How would you rate our services ?_total,"8"
 How would you rate you total experience?,"I enjoy my stay.,I will recommend it to my friends."
 How would you rate you total experience?_total,"15"
 hotel guest survey,"29"
+product survey_total,"29"
 
 ```
