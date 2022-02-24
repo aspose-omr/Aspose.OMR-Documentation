@@ -106,7 +106,7 @@ Behavior triggered when bubble is filled
 |||value|value of trigger. Implementation based of trigger type|Optional|-|"this question is skipped"
 |||trigger_type|Type of trigger. Control it's behavior. <p>ReplaceValue = upon filling the bubble find target element by name and replace it's value for value of trigger</p>|Required|ReplaceValue|trigger_type=ReplaceValue
 
-### **Example of ScoreGroup structure**
+### **Example of CustomAnswerSheet structure**
 ```text
 ?custom_answer_sheet=60 questions
 	section_border=square
