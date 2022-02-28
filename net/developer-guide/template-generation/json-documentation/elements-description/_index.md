@@ -1067,7 +1067,9 @@ Does not participate in recognition.
 InputGroup element can be customized with attributes.
 
 |**Attribute**|**Attribute Description**|**Required/Optional**|**Attribute Default Value**|**Attribute Usage Example**|
- | :- | :- | :- | :- | :- |
+ | :- | :- | :- | :- | :- | 
+|element_type| Type of JSON object|Required|-|"element_type":"InputGroup"
+|children|Array of other elements nested in this InputGroup|Required|-|see examples below
 |label_border|Describe borderType for label element|Optional|None|"label_border":"square"|
 |input_border|Describe borderType for input element|Optional|None|"input_border":"square"|
 |border_size|Describe size of border line in pixels|Optional|3|"border_size":3
@@ -1166,3 +1168,144 @@ InputGroup element can be customized with attributes.
 **Result**
 
 **![todo:image_alt_text](input_group-example.png)**
+
+## **Checkbox element**
+CheckBox is grouping element. It is used for selecting one of multiple values. Each available value represented by Content element and present as square box.
+Main affection is ability to customize recognition threshold, which allow use partially filled marks.
+
+
+### **Attributes**
+Checkbox element can be customized with attributes.
+
+|**Attribute**|**Attribute Description**|**Required/Optional**|**Attribute Default Value**|**Attribute Usage Example**|
+| :- | :- | :- | :- | :- |
+|threshold|Set recognition threshold. Percent of filled square box, after surpassing which element is considered marked. Can be set as number from 0 to 100, where 100 is fully filled square box.|Optional|3|threshold=76
+|font_style|The style of the content|Optional|FontStyle.Regular|font_style=Bold|
+|font_size|The size of the text content|Optional|12|font_size=16|
+|align|Type of horizontal alignment inside parent element|Optional|left|<p>align=right</p><p>align=center</p><p>align=left</p>
+|hide_name|Boolean property. When set to true disable display of checkbox name.|Optional|false|hide_name=true
+|bubble_size|Size of bubbles|Optional|normal|<p>bubble_size=extrasmall</p><p>bubble_size=small</p><p>bubble_size=normal</p><p>bubble_size=large</p><p>bubble_size=extralarge</p>
+
+
+**Example**
+
+```json
+{
+  "children": [
+    {
+      "children": [
+        {
+          "name": "header",
+          "children": [
+            {
+              "name": "text",
+              "children": [
+                {
+                  "name": "Airport of townname satisfactory survey",
+                  "font_style": "Bold",
+                  "font_size": 14,
+                  "content_type": "Normal",
+                  "align": "Center",
+                  "element_type": "Content"
+                }
+              ],
+              "column": 1,
+              "element_type": "Block"
+            }
+          ],
+          "columns_count": 1,
+          "element_type": "Container"
+        },
+        {
+          "name": "userInfo",
+          "children": [
+            {
+              "name": "name",
+              "children": [
+                {
+                  "name": "Name:_________________________",
+				  "font_size":10,
+                  "element_type": "Content"
+                }
+              ],
+              "column": 1,
+              "element_type": "Block"
+            },
+            {
+              "name": "age",
+              "children": [
+                {
+                  "name": "Age:________",
+				  "font_size":10,
+                  "element_type": "Content"
+                }
+              ],
+              "column": 2,
+              "element_type": "Block"
+            },
+            {
+              "name": "sex",
+              "children": [
+                {
+                  "name": "Sex:",
+				  "bubble_size": "extrasmall",
+                  "element_type": "CheckBox",
+				  "font_size":10,
+                  "children": [
+                    {
+                      "name": "Male",
+					  "font_style":"italic",
+					  "font_size":10,
+                      "element_type": "Content"
+                    },
+                    {
+                      "name": "Female",
+					  "font_style":"italic",
+					  "font_size":10,
+                      "element_type": "Content"
+                    }
+                  ],
+                }
+              ],
+              "column": 3,
+              "element_type": "Block"
+            },
+            {
+              "name": "date",
+              "children": [
+                {
+                  "name": "Date:______",
+				  "font_size":10,
+                  "element_type": "Content"
+                }
+              ],
+              "column": 4,
+              "element_type": "Block"
+            }
+          ],
+          "columns_proportions": [
+            40,
+            15,
+            30,
+            15
+          ],
+          "container_type": "Normal",
+          "element_type": "Container"
+        }
+      ],
+      "element_type": "Page"
+    }
+  ],
+  "element_type": "Template"
+}
+```
+
+**Result image(.png)**
+
+**![todo:image_alt_text](checkbox-generation-result.png)**
+
+**Recognition Result(.csv)**
+````text
+Element Name,Value,
+Sex:,"Male"
+````

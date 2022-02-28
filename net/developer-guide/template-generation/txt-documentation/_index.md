@@ -1,7 +1,7 @@
 ---
 title: Markup Documentation (.txt)
 type: docs
-weight: 10
+weight: 20
 url: /net/template-generation/txt/
 ---
 

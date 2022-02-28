@@ -1,7 +1,7 @@
 ---
 title: Markup Documentation (.json)
 type: docs
-weight: 10
+weight: 30
 url: /net/template-generation/json/
 ---
 

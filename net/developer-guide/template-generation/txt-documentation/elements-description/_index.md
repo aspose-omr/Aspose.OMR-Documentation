@@ -1,7 +1,7 @@
 ---
 title: Elements description
 type: docs
-weight: 10
+weight: 12
 url: /net/template-generation/txt/elements-description
 ---
 
@@ -599,3 +599,79 @@ InputGroup element can be customized with attributes, each attribute must be on
 **Result**
 
 **![todo:image_alt_text](input_group-example.png)**
+
+## **Checkbox element**
+Starts with **?checkbox=** prefix that sets the name of the element. 
+CheckBox is grouping element. It is used for selecting one of multiple values. Each available value represented by Content element and present as square box.
+Main affection is ability to customize recognition threshold, which allow use partially filled marks.
+
+
+### **Attributes**
+Checkbox element can be customized with attributes, each attribute must be on a new line starting with **\t** (tabulation) symbol.
+
+|**Element**|**Prefix**|**Attribute**|**Attribute Description**|**Required/Optional**|**Attribute Default Value**|**Attribute Usage Example**|
+| :- | :- | :- | :- | :- | :- | :- |
+|Checkbox|?input_group=|threshold|Set recognition threshold. Percent of filled square box, after surpassing which element is considered marked. Can be set as number from 0 to 100, where 100 is fully filled square box.|Optional|3|threshold=76
+|||font_style|The style of the content|Optional|FontStyle.Regular|font_style=Bold|
+|||font_size|The size of the text content|Optional|12|font_size=16|
+|||align|Type of horizontal alignment inside parent element|Optional|left|<p>align=right</p><p>align=center</p><p>align=left</p>
+|||hide_name|Boolean property. When set to true disable display of checkbox name.|Optional|false|hide_name=true
+|||bubble_size|Size of bubbles|Optional|normal|<p>bubble_size=extrasmall</p><p>bubble_size=small</p><p>bubble_size=normal</p><p>bubble_size=large</p><p>bubble_size=extralarge</p>
+
+
+**Example**
+
+```text
+?container=header
+	columns_count=1
+?block=text
+	column=1
+?content=Airport of townname satisfactory survey
+	font_style=bold
+	font_size=14
+	align=center
+&block
+&container
+?container=userInfo
+	columns_proportions=40-15-30-15
+?block=name
+	column=1
+?content=Name:_________________________
+	font_size=10
+&block
+?block=age
+	column=2
+?content=Age:________
+	font_size=10
+&block
+?block=sex
+	column=3
+?checkbox=Sex:
+	bubble_size=extrasmall
+	font_size=10
+?content=Male
+	font_style=italic
+	font_size=10
+?content=Female
+	font_style=italic
+	font_size=10
+&checkbox
+&block
+?block=date
+	column=4
+?content=Date:______
+	font_size=10
+	align=left
+&block
+&container
+```
+
+**Result image(.png)**
+
+**![todo:image_alt_text](checkbox-generation-result.png)**
+
+**Recognition Result(.csv)**
+````text
+Element Name,Value,
+Sex:,"Male"
+````
