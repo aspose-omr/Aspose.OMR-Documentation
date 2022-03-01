@@ -1,9 +1,11 @@
 ---
 title: What element should i use?
 type: docs
-weight: 1
+weight: 5
 url: /net/template-generation/which-element/
 ---
+
+**<h1>What do you expect from your user?</h1>**
 
 {{% alert color="primary" %}} 
 
@@ -11,9 +13,6 @@ We have a lot of elements.
 This page helps you choose right elements to use in your template and get the best result!
 
 {{% /alert %}}
-
-
-**<h1>What do you expect from your user?</h1>**
 
 ## **Read text**
 For display of text we have multiple elements:
@@ -73,7 +72,7 @@ Don't forget to set block property *is_clipable* to *true*.
 
 **Recognition result**
 
-**![todo:image_alt_text](multi-column-template-write-in-cropped.png)**
+**![write_in_recognition](multi-column-template-write-in-cropped.png)**
 
 
 ## **Compose value from different symbols**
