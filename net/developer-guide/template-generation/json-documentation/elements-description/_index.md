@@ -78,7 +78,7 @@ This element can be customized with attributes.
 |start_id|<p>The starting number of suffix in the title of each question.</p><p>If set questions in the answer sheet will be named starting with this number.</p><p>If not set numeration will take any added questions on the page into account, so that questions in the answer sheet will continue the numeration.</p>|Optional|-|<p>"start_id":1</p><p>"start_id":51</p>|
 |<p>vertical_margin</p>| Vertical margin of answersheet. Set in pixels.|Optional|0|"vertical_margin":200
 |bubble_size|The size of a bubble|Optional|Normal|"bubble_size":small
-|answers_list|Represent each symbol inside of the bubble.|Optional|-|"answers_list":"(A)(B)(C)(D)"
+|answers_list|Represent each symbol inside the bubble.|Optional|-|"answers_list":"(A)(B)(C)(D)"
 |column|In multi-column template indicates in which column to draw sheet|Optional|-|"column":2
 ### **Examples**
 **Markup**

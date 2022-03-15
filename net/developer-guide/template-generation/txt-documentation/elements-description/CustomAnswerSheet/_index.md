@@ -64,7 +64,7 @@ Represent column header and content inside it.
 ## **CustomRow element**
 Starts with **?custom_row=** prefix that sets the name.
 Grouping element.
-Can only be positioned inside of *CustomAnswerSheet* element as child.
+Can only be positioned inside *CustomAnswerSheet* element as child.
 Represent one of row which will be repeated for finite amount of times.
 
 **Inside this element exist special constant - %index% which will be replaced for actual index of element e.g. "%index%_name" will be places in config as "4_name" where 4 mean that it's fourth row drawn**
