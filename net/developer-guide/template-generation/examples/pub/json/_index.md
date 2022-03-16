@@ -1,5 +1,5 @@
 ---
-title: Pub questionnaire (.json)
+title: Pub survey (.json)
 type: docs
 weight: 5
 url: /net/template-generation/examples/pub/json

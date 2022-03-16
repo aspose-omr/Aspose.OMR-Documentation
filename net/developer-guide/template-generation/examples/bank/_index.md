@@ -1,5 +1,5 @@
 ---
-title: Examples
+title: Contract for Financial services
 type: docs
 weight: 5
 url: /net/template-generation/examples/bank

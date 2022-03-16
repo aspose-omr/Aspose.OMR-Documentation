@@ -1,5 +1,5 @@
 ---
-title: Pub questionnaire (.txt)
+title: Pub survey (.txt)
 type: docs
 weight: 5
 url: /net/template-generation/examples/pub/txt

@@ -1,5 +1,5 @@
 ---
-title: Hotel HQ (.json)
+title: Hotel QA (.json)
 type: docs
 weight: 5
 url: /net/template-generation/examples/hotel/json

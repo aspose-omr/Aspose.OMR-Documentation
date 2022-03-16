@@ -1,12 +1,12 @@
 ---
-title: Examples
+title: Hotel QA 
 type: docs
 weight: 5
-url: /net/template-generation/examples/
+url: /net/template-generation/examples/hotel
 ---
 
 {{% alert color="primary" %}} 
 
-In this page you will find examples of templates. Image, TXT\JSON markdown.
+In this page you will find examples of hotel Quality Assurance.
 
 {{% /alert %}}
