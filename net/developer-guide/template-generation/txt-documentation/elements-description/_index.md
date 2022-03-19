@@ -268,6 +268,9 @@ Container element can be customized with attributes, each attribute must be on 
 | :- | :- | :- | :- | :- | :- | :- |
 |Container|?container=|columns_count|Amount of columns in a container|Required|1|columns_count=3|
 |||type|Type of Container element|Optional|normal|type=footer|
+|||block_right_margin|Amount of pixels to be placed between Block elements on the right side|Optional|40|block_right_margin=60
+|||block_bottom_margin|Amount of pixels to be placed below Block elements.|Optional|20|block_bottom_margin=0
+|||block_top_padding|Amount of pixels to be placed after top border of Block element.|Optional|20|block_top_padding=0
 
 ### **Examples**
 
