@@ -40,7 +40,7 @@ TableTitle element can be customized with attributes.
 |element_type|type of JSON object|Required|-|"element_type":"tableTitle"
 |name|Title text|Optional|-|"name":"Quality assurance"
 |font_family|The font family of the text|Optional|Segoe UI|"font_family":"arial"|
-|font_style|The style of the content|Optional|FontStyle.Regular|"font_style":"bold"|
+|font_style|The style of the content, can be combined from multiple styles|Optional|FontStyle.Regular|<p>"font_style":"bold"</p><p>"font_style":["bold", "underline"]|
 |font_size|The size of the text content|Optional|12|"font_size":"16"|
 |color|Color of the text|Optional|Black|"color":"red"
 |background_color|Color of background layer|Optional|-|"background_color":"gray"
@@ -61,7 +61,7 @@ TableHeader element can be customized with attributes.
 |element_type|type of JSON object|Required|-|"element_type":"tableHeader"
 |name|Name of table header. Does not displayed.|Optional|-|"name":"First row"
 |font_family|The font family of the text|Optional|Segoe UI|"font_family":"arial"|
-|font_style|The style of the content|Optional|FontStyle.Regular|"font_style":"bold"|
+|font_style|The style of the content, can be combined from multiple styles|Optional|FontStyle.Regular|<p>"font_style":"bold"</p><p>"font_style":["bold", "underline"]|
 |font_size|The size of the text content|Optional|12|"font_size":16|
 |children|Child elements which represent table content|Required|-|see examples below
 

@@ -21,7 +21,7 @@ Text element can be customized with attributes.
 |element_type|Type of JSON object| Required|-| "element_type":"text"
 |name|String representation of text| Required|-|"name":"Please fill survey bellow"
 |font_family|The font family of the text|Optional|Segoe UI|"font_family":"arial"|
-|font_style|The style of the content|Optional|FontStyle.Regular|"font_style":"bold"|
+|font_style|The style of the content, can be combined from multiple styles|Optional|FontStyle.Regular|<p>"font_style":"bold"</p><p>"font_style":["bold", "underline"]|
 |font_size|The size of the text content|Optional|12|"font_size":16|
 |align|Text alignment, indicating where text should be drawn on page|Optional|left|"align":"center"
 
@@ -145,7 +145,7 @@ The answer options start with parentheses with an answer name or a letter insid
 |answers_string| String representation of answer array|Required|-|"answers_string":"() Very high quality () High quality"
 |name| Name of choice box|Optional|-|"name":"Product questionnaire"
 |font_family|The font family of the text|Optional|Segoe UI|"font_family":"arial"|
-|font_style|The style of the content|Optional|FontStyle.Regular|"font_style":"bold"|
+|font_style|The style of the content, can be combined from multiple styles|Optional|FontStyle.Regular|<p>"font_style":"bold"</p><p>"font_style":["bold", "underline"]|
 |font_size|The size of the text content|Optional|12|"font_size":16|
 |align|Text alignment, indicating where text should be drawn on page|Optional|left|"align":"center"
 
@@ -647,7 +647,7 @@ Content element can be customized with attributes.
 |element_type| Type of JSON object|Required|-|"element_type":"content"
 |name| String value of content|Required|-|"name":"Thank you for purchasing!"
 |font_family|The font family of the content|Optional|Segoe UI|"font_family":"Arial"|
-|font_style|The style of the content|Optional|FontStyle.Regular|"font_style":"Bold"|
+|font_style|The style of the content, can be combined from multiple styles|Optional|FontStyle.Regular|<p>"font_style":"bold"</p><p>"font_style":["bold", "underline"]|
 |font_size|The size of the text content|Optional|12|"font_size":16|
 |align|Type of horizontal alignment inside parent element|Optional|left|<p>"align":"right"</p><p>"align":"center"</p><p>"align":"left"</p>
 |content_type|type of content. <p>Cells - allow to draw circle around each symbol, including space or tab.</p><p>Normal - draw text as is</p>|Optional|Normal|<p>"content_type":"cells"</p><p>"content_type":"normal"</p>
@@ -1180,7 +1180,7 @@ Checkbox element can be customized with attributes.
 |**Attribute**|**Attribute Description**|**Required/Optional**|**Attribute Default Value**|**Attribute Usage Example**|
 | :- | :- | :- | :- | :- |
 |threshold|Set recognition threshold. Percent of filled square box, after surpassing which element is considered marked. Can be set as number from 0 to 100, where 100 is fully filled square box.|Optional|3|threshold=76
-|font_style|The style of the content|Optional|FontStyle.Regular|font_style=Bold|
+|font_style|The style of the content, can be combined from multiple styles|Optional|FontStyle.Regular|<p>"font_style":"bold"</p><p>"font_style":["bold", "underline"]|
 |font_size|The size of the text content|Optional|12|font_size=16|
 |align|Type of horizontal alignment inside parent element|Optional|left|<p>align=right</p><p>align=center</p><p>align=left</p>
 |hide_name|Boolean property. When set to true disable display of checkbox name.|Optional|false|hide_name=true

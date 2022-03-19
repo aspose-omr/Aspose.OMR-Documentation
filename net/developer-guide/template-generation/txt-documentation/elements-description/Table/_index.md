@@ -44,7 +44,7 @@ TableTitle element can be customized with attributes, each attribute must be on
 | :- | :- | :- | :- | :- | :- | :- |
 |TableTitle|?table_title=|answers_count|Number of answers(columns) used in table|Required|-|answers_count=5|
 |||font_family|The font family of the text|Optional|Segoe UI|font_family=arial|
-|||font_style|The style of the content|Optional|FontStyle.Regular|font_style=bold|
+|||font_style|The style of the content, can be combined from multiple styles|Optional|FontStyle.Regular|<p>font_style=bold</p><p>font_style=bold, underline</p>|
 |||font_size|The size of the text content|Optional|12|font_size=16|
 |||color|Color of the text|Optional|Black|color=red
 |||background_color|Color of background layer|Optional|-|background_color=gray
@@ -65,7 +65,7 @@ TableHeader element can be customized with attributes, each attribute must be o
 | :- | :- | :- | :- | :- | :- | :- |
 |TableHeader|?table_header=|answers_count|Number of answers(columns) used in table|Required|-|answers_count=5|
 |||font_family|The font family of the text|Optional|Segoe UI|font_family=arial|
-|||font_style|The style of the content|Optional|FontStyle.Regular|font_style=bold|
+|||font_style|The style of the content, can be combined from multiple styles|Optional|FontStyle.Regular|<p>font_style=bold</p><p>font_style=bold, underline</p>|
 |||font_size|The size of the text content|Optional|12|font_size=16|
 
 ## **TableAnswer element**

@@ -46,7 +46,7 @@ ScoreQuestion element can be customized with attributes.
 |children|Array of other elements nested in this container|Required|-|see examples below
 |row_proportions|In table structure represent amount of width for each column in percent. Total value must be 100%. Amount of column must be equal to ScoreHeader children + 1(ScoreAnswer)|Required|-|"row_proportions": [80,10,10]|
 |font_family|The font family of the text|Optional|Segoe UI|"font_family":"arial"|
-|font_style|The style of the content|Optional|FontStyle.Regular|"font_style":"bold"|
+|font_style|The style of the content, can be combined from multiple styles|Optional|FontStyle.Regular|<p>"font_style":"bold"</p><p>"font_style":["bold", "underline"]|
 |font_size|The size of the text content|Optional|12|"font_size":"16"|
 
 
@@ -80,7 +80,7 @@ ScoreAnswer element can be customized with attributes.
 |element_type|Type of JSON object| Required|-| "element_type":"ScoreAnswer"
 |score|number value that will be added to total sum of ScoreQuestion|Required|-|"score":5
 |font_family|The font family of the content|Optional|Segoe UI|"font_family":"Arial"|
-|font_style|The style of the content|Optional|FontStyle.Regular|"font_style":"Bold"|
+|font_style|The style of the content, can be combined from multiple styles|Optional|FontStyle.Regular|<p>"font_style":"bold"</p><p>"font_style":["bold", "underline"]|
 |font_size|The size of the text content|Optional|12|"font_size":16|
 |align|type of horizontal alignment for this text inside it's cell|Optional|left|<p>"align":"left"</p><p>"align":"right"</p><p>"align":"center"</p>
 
@@ -97,7 +97,7 @@ TableContent element can be customized with attributes.
 |element_type| Type of JSON object|Required|-|"element_type":"TableContent"
 |name| String value of content|Required|-|"name":"Thank you for purchasing!"
 |font_family|The font family of the content|Optional|Segoe UI|"font_family":"Arial"|
-|font_style|The style of the content|Optional|FontStyle.Regular|"font_style":"Bold"|
+|font_style|The style of the content, can be combined from multiple styles|Optional|FontStyle.Regular|<p>"font_style":"bold"</p><p>"font_style":["bold", "underline"]|
 |font_size|The size of the text content|Optional|12|"font_size":16|
 |align|Type of horizontal alignment inside parent element|Optional|left|<p>"align":"right"</p><p>"align":"center"</p><p>"align":"left"</p>
 

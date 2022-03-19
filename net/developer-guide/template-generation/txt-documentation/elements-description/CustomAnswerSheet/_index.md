@@ -55,7 +55,7 @@ Represent column header and content inside it.
 |**Element**|**Prefix**|**Attribute**|**Attribute Description**|**Required/Optional**|**Attribute Default Value**|**Attribute Usage Example**|
 | :- | :- | :- | :- | :- | :- | :- |
 |Column|?column=|font_family|The font family of the content|Optional|Segoe UI|font_family=Arial|
-|||font_style|The style of the content|Optional|FontStyle.Regular|font_style=Bold|
+|||font_style|The style of the content, can be combined from multiple styles|Optional|FontStyle.Regular|<p>font_style=bold</p><p>font_style=bold, underline</p>|
 |||font_size|The size of the text content|Optional|12|font_size=16|
 |||align|Type of horizontal alignment inside parent element|Optional|left|<p>align=right</p><p>align=center</p><p>align=left</p>
 |||content_type|type of content. <p>Cells - allow to draw circle around each symbol, including space or tab.</p><p>Normal - draw text as is</p>|Optional|Normal|<p>content_type=cells</p><p>content_type=normal</p>
@@ -85,7 +85,7 @@ Represent bubbles inside *CustomRow*
 |BubbleArray|?bubble_array=||bubble_size|The size of a bubble|Optional|Normal|bubble_size=small
 |||answers_list|Represent symbol inside of bubble and amount of bubbles.|Optional|-|answers_list=(A)(B)(C)(D)
 |||font_family|The font family of the text|Optional|Segoe UI|font_family=arial|
-|||font_style|The style of the content|Optional|FontStyle.Regular|font_style=bold|
+|||font_style|The style of the content, can be combined from multiple styles|Optional|FontStyle.Regular|<p>font_style=bold</p><p>font_style=bold, underline</p>|
 |||font_size|The size of the text content|Optional|12|font_size=16|
 
 ## **CustomTrigger element**
