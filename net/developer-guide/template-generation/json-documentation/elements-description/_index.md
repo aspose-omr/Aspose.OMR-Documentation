@@ -817,6 +817,8 @@ VerticalChoiceBox element can be customized with attributes.
 |element_type| Type of JSON object|Required|-|"element_type":"verticalChoiceBox"
 |name|Name of block|Optional|-|"name":"Pic and title"
 |children|Array of other elements nested in this VerticalChoiceBox|Required|-|see examples below
+|bubble_type|Type of bubble.Affects every Answer element inside|Optional|Round|"bubble_type":"Square"
+|threshold|Percent of marked pixels after which bubble considered filled.Affects every Answer element inside.|Optional|45|"threshold": 30
 
 ### **Examples**
 

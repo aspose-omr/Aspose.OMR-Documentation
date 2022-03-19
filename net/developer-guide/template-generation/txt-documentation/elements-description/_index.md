@@ -446,7 +446,11 @@ Starts with **?verticalChoiceBox=** prefix that sets the name of the element. 
 Ends with a **&verticalChoiceBox** prefix indicating the end of the element's bounds.
 
 ### **Attributes**
-This element has no additional attributes. 
+|**Element**|**Prefix**|**Attribute**|**Attribute Description**|**Required/Optional**|**Attribute Default Value**|**Attribute Usage Example**|
+| :- | :- | :- | :- | :- | :- | :- |
+|VerticalChoiceBox|?vertical_choicebox=|required|name of element|Optional|false|vertical_choicebox=question No. 1|
+|||bubble_type|Type of bubble. Affects every Answer element inside|Optional|Round|bubble_type=Square
+|||threshold|Percent of marked pixels after which bubble considered filled. Affects every Answer element inside|Optional|45|threshold=30
 
 ### **Examples**
 
