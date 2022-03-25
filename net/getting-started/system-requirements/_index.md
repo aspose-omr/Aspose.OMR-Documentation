@@ -39,3 +39,5 @@ The following .NET Framework versions are supported:
 - .NET Framework 4.6.2
 - .NET Framework 4.7
 - .NET Framework 4.7.2
+- .NET Standard 2.0
+- .NET 5.0

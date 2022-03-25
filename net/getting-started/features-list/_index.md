@@ -15,12 +15,13 @@ Aspose.OMR for .NET has the capability to capture human-marked data from documen
 - Recognize data from tests, exams, questionnaires, surveys, etc.
 - High accuracy rate
 - GUI for correcting complex cases
-- Export the results to CSV and PDF file format
-- Generate OMR Templates using text markup
+- Export the results to CSV\JSON\XML and PDF file format
+- Generate OMR Templates using text markup\JSON\C# code
 ### **General Features**
 - Written completely in C#
 - API reference in HTML and Microsoft Help format
-- Supported .NET Frameworks (4.0, 4.0_ClientProfile, 4.5.0, 4.5.1, 4.6.0 and 4.6.2)
+- Support .NET Framework (4.0, 4.0_ClientProfile, 4.5.0, 4.5.1, 4.6.0 and 4.6.2)
+- Support .NET Standard 2.0 and .NET 5.0
 - 32-bit OS support
 - 64-bit OS support
 ### **Limitations**
