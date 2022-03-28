@@ -15,19 +15,17 @@ url: /net/supported-file-formats/
 ### **Generated template can be saved as:**
 ||**Format**|**Description**
 | :- | :- | :- | 
+|{{< emoticons/tick >}}|[PDF](https://docs.fileformat.com/pdf/)|Portable Document Format|
 |{{< emoticons/tick >}}|[JPEG](https://docs.fileformat.com/image/jpeg/)|JPEG image format| 
 |{{< emoticons/tick >}}|[PNG](https://docs.fileformat.com/image/png/)|Portable Network Graphics Format|
 |{{< emoticons/tick >}}|[GIF](https://docs.fileformat.com/image/gif/)|Graphical Interchange Format|
 |{{< emoticons/tick >}}|[TIFF](https://docs.fileformat.com/image/tiff/)|Tagged Image File Format|
 |{{< emoticons/tick >}}|[BMP](https://docs.fileformat.com/image/bmp/)|Bitmap Image Format|
-|{{< emoticons/tick >}}|[PDF](https://docs.fileformat.com/pdf/)|Portable Document Format|
-
-### **Print template and let users mark it**
-{{< emoticons/tick >}}
 
 ### **To recognize result - scan marked template from:**
 ||**Format**|**Description**
 | :- | :- | :- | 
+|{{< emoticons/tick >}}|[PDF](https://docs.fileformat.com/pdf/)|Portable Document Format|
 |{{< emoticons/tick >}}|[JPEG](https://docs.fileformat.com/image/jpeg/)|JPEG image format| 
 |{{< emoticons/tick >}}|[PNG](https://docs.fileformat.com/image/png/)|Portable Network Graphics Format|
 |{{< emoticons/tick >}}|[GIF](https://docs.fileformat.com/image/gif/)|Graphical Interchange Format|
