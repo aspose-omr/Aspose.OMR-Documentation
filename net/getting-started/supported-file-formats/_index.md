@@ -5,7 +5,7 @@ weight: 20
 url: /net/supported-file-formats/
 ---
 
-### **Don't have template? You can generate template using:**
+### **Don't have template? You can generate template using: **
 ||**Format**|**Description**|
 | :- | :- | :- |
 {{< emoticons/tick >}}|[JSON](https://docs.aspose.com/omr/net/template-generation/#json-markup)|JavaScript Object Notation|
