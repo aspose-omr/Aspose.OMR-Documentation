@@ -41,7 +41,7 @@ No Changes
 ?container=1
 ?block=1
 ?table=COVID-19
-	answer_count=3
+	answers_count=3
 	table_type=striped
 ?table_title=COVID-19 Questionnaire
 	font_size=16
@@ -70,8 +70,19 @@ No Changes
 ?container=1
 ?block=1
 ?table=COVID-19
+	answers_count=2
 ?table_title=COVID-19 Questionnaire
+	font_size=16
+	font_style=Bold
+	color=White
+	background_color=Gray
+	border=Square
+	border_size=8
+	border_color=Black
 ?table_header=1
+?content=Questions
+?answer_value=Yes
+?answer_value=No
 &table_header
 ?question=Burning sensation
 ?question=Painful sensation of cold
@@ -85,8 +96,19 @@ No Changes
 ?container=1
 ?block=1
 ?table=COVID-19
+	answers_count=2
 ?table_title=XXX
+	font_size=16
+	font_style=Bold
+	color=White
+	background_color=Gray
+	border=Square
+	border_size=8
+	border_color=Black
 ?table_header=1
+?content=Questions
+?answer_value=Yes
+?answer_value=No
 &table_header
 ?question=Burning sensation
 ?question=Painful sensation of cold

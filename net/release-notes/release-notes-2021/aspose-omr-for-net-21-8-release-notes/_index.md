@@ -39,6 +39,9 @@ No Changes
 ?table=COVID-19
 ?table_title=COVID-19 Questionnaire
 ?table_header=1
+?answer_value=Yes
+?answer_value=No
+?answer_value=I Don't Know
 &table_header
 ?question=Burning sensation
 ?question=Painful sensation of cold
