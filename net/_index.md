@@ -1,53 +1,94 @@
 ---
-title: Aspose.OMR for .NET
-description: Aspose.OMR is an API to recognize OMR, the optical mark recognition meaning, optical marks from OMRSheet which is a digitized sheet of images.
-type: docs
 weight: 10
+date: "2022-04-11"
+author: "Vladimir Lapin"
+type: docs
 url: /net/
 is_root: true
+title: Aspose.OMR for .NET
+description: Aspose.OMR for .NET is an easy-to-use .NET library for designing and recognizing hand-filled questionnaires, surveys, and similar forms.
+keywords:
+- .NET
+- library
+- software
+- OMR
+- form
+- recognition
 ---
 
-## Aspose.OMR for .NET
+## Welcome to Aspose.OMR for .NET
 
-{{% alert color="primary" %}} 
+![Aspose.OMR for .NET](aspose-omr-net.png)
 
-**![Aspose.OMR for .NET Product Logo](home_1.png)**
+**Aspose.OMR for .NET** is an easy-to-use, versatile, and cost-effective API for [designing](/omr/net/template-generation/), rendering and [recognizing](/omr/net/perform-omr-on-images/) hand-filled answer sheets, surveys, applications, and similar forms. With it, you can quickly develop on-premise and web-based .NET software for [optical mark recognition (OMR)](/omr/net/omr-technology/) that work without dedicated scanners, transoptic paper or special ink. Respondents can fill out your forms with a pen or pencil and use any type of marks - artificial intelligence and advanced accuracy calibration ensure reliable results.
 
-**Welcome to the Aspose.OMR for .NET**
+Aspose.OMR for .NET library can recognize scanned images or even smartphone photos in the most popular [formats](/omr/net/supported-file-formats/): JPG, PDF, TIFF, PNG, BMP or GIF. Results are returned as CSV, XML or JSON, which allows for importing them into the database, CRM or analysis system of your choice.
 
-Aspose.OMR for .NET is an API to recognize optical marks from OMR digitized sheet images. It can be used to recognize optical marks in a variety of image formats like BMP, JPG, TIF, TIFF, GIF. The API allows capturing human-marked data from document forms such as surveys, questionnaires, multiple-choice examination papers, and other tests. With this solution, it is possible to recognize scanned images and even photos with high accuracy. Recognition is based on a template markup which contains a graphical mapping of the elements to be recognized from the scanned images. 
+In addition to form recognition, Aspose.OMR for .NET can generate professional print forms, from examination papers to customer satisfaction surveys and election ballots. A highly flexible [markup language](/omr/net/template-generation/) allows you to combine various elements that best suit your purpose and target audience. You can further personalize OMR forms by adding logos, barcodes, QR codes, or images.
 
-The Aspose.OMR for .NET also provides methods for creating custom answer sheets, test papers and many other types of omr forms. Utilize Template Generation functionality to design and save ready to print images for your respondents. 
+## Product overview
 
-{{% /alert %}} 
+Learn more about OMR technology and discover the features and benefits of Aspose.OMR for .NET.
 
-## Overview
+- [Optical mark recognition (OMR) at a glance](/omr/net/omr-technology/)
+- [Why Aspose.OMR?](/omr/net/features-benefits/)
+- [Supported file formats](/omr/net/supported-file-formats/)
 
-- [Product Overview](/omr/net/product-overview/)
-- [Features List](/omr/net/features-list/)
-- [Supported File Formats](/omr/net/supported-file-formats/)
-- [Licensing](/omr/net/licensing/)
-- [Release Notes](/omr/net/release-notes/)
+## Getting started
 
-## Getting Started
-- [System Requirements](/omr/net/system-requirements/)
+Get familiar with Aspose.OMR for .NET library in a few simple steps.
+
+- [System requirements](/omr/net/system-requirements/)
 - [Installation](/omr/net/installation/)
-- [How to Run the Examples](/omr/net/how-to-run-the-examples/)
+- [Licensing](/omr/net/licensing/)
+- [Hello, World!](/omr/net/hello-world/)
 
-## Developer Guide
-- [Create OMR Template](/omr/net/create-omr-template/)
-- [Perform OMR on images](/omr/net/perform-omr-on-images/)
-- [Template Generation Elements Description](/omr/net/template-generation-elements-description/)
+## Developer reference
 
-## Aspose.OMR for .NET Resources
+Dive deep into OMR forms and applications development with Aspose.OMR for .NET.
 
-Following are the links to some useful resources you may need to accomplish your tasks.
+- [Designing OMR forms](/omr/net/template-generation/)
+- [Recognizing filled forms](/omr/net/perform-omr-on-images/)
+- [Working with UI control](/omr/net/working-with-graphical-control/)
 
-- [Aspose.OMR for .NET Features](/omr/net/features-list/)
-- [Aspose.OMR for .NET Release Notes](/omr/net/release-notes/)
-- [Install Aspose.OMR for .NET NuGet Package](https://www.nuget.org/packages/Aspose.Omr/)
-- [Aspose.OMR for .NET GitHub](https://github.com/aspose-omr/Aspose.OMR-for-.NET)
-- [Aspose.OMR for .NET API Reference Guide](https://apireference.aspose.com/net/omr)
-- [Aspose.OMR for .NET Free Support Forum](https://forum.aspose.com/c/omr)
-- [Aspose.OMR for .NET Paid Support Helpdesk](https://helpdesk.aspose.com/)
-- [Aspose.OMR Free web apps](https://products.aspose.app/omr/family)
+## Aspose.OMR for .NET online apps
+
+Explore free online apps build with Aspose.OMR for .NET. Experience product capabilities without writing a single line of code.
+
+- [Create Answer Sheet](https://products.aspose.app/omr/create-answer-sheet)
+- [Scan Answer Sheet](https://products.aspose.app/omr/scan-answer-sheet)
+- [Grade Calculator](https://products.aspose.app/omr/grade-calculator)
+
+## Showcases
+
+Check out how Aspose.OMR for .NET  can be used to solve real-world problems.
+
+- [Biology test](/omr/net/showcases/biology/)
+- [Financial services contract](/omr/net/showcases/bank/)
+- [English test](/omr/net/showcases/english/)
+- [Guest satisfaction survey](/omr/net/showcases/hotel/)
+- [Math test](/omr/net/showcases/math/)
+- [Medical journal questionnaire](/omr/net/showcases/journal/)
+- [Customer service feedback](/omr/net/showcases/pub/)
+
+## Release Notes
+
+Read a summary of recent changes, enhancements and bug fixes in Aspose.OMR for .NET releases.
+
+- [Latest release (April 2022)](/omr/net/release-notes/latest/)
+- [2022 releases](/omr/net/release-notes-2022/)
+- [2021 releases](/omr/net/release-notes-2021/)
+- [2020 releases](/omr/net/release-notes-2020/)
+- [2019 releases](/omr/net/release-notes-2019/)
+
+## Resources
+
+Find more information, download Aspose.OMR for .NET packages and get professional help.
+
+- [NuGet package](https://www.nuget.org/packages/Aspose.Omr/)
+- [GitHub repository](https://github.com/aspose-omr/Aspose.OMR-for-.NET)
+- [API reference](https://apireference.aspose.com/omr/net)
+- [Examples](https://github.com/aspose-omr/Aspose.OMR-for-.NET)
+- [Blog](https://blog.aspose.com/category/omr/)
+- [Free Support Forum](https://forum.aspose.com/c/omr/38)
+- [Paid Support Helpdesk](https://helpdesk.aspose.com/)

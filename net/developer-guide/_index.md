@@ -1,7 +1,7 @@
 ---
-title: Developer Guide
+title: Developer reference
 type: docs
-weight: 20
+weight: 30
 url: /net/developer-guide/
 ---
 

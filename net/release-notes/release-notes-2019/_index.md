@@ -1,7 +1,7 @@
 ---
 title: Release Notes - 2019
 type: docs
-weight: 30
+weight: 400
 url: /net/release-notes-2019/
 ---
 

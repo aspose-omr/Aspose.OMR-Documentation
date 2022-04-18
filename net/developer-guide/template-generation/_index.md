@@ -1,5 +1,5 @@
 ---
-title: Template Generation
+title: Designing OMR forms
 description: OMR template generation 
 type: docs
 weight: 10

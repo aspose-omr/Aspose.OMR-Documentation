@@ -819,6 +819,7 @@ VerticalChoiceBox element can be customized with attributes.
 |children|Array of other elements nested in this VerticalChoiceBox|Required|-|see examples below
 |bubble_type|Type of bubble.Affects every Answer element inside|Optional|Round|"bubble_type":"Square"
 |threshold|Percent of marked pixels after which bubble considered filled.Affects every Answer element inside.|Optional|45|"threshold": 30
+|top_padding|The height of the vertical padding (in pixels) before the first Answer element.|Optional|0|"top_padding": 160
 
 ### **Examples**
 

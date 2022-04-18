@@ -1,57 +1,86 @@
 ---
-title: Installation
+weight: 20
+date: "2022-04-14"
+author: "Vladimir Lapin"
 type: docs
-weight: 50
 url: /net/installation/
+title: Installation
+description: Adding or updating Aspose.OMR for .NET NuGet package in your project.
+keywords:
+- install
+- update
+- NuGet
+- package
 ---
 
-## **Evaluate Aspose.OMR for .NET**
-You can easily download Aspose.OMR for .NET for evaluation purposes. Please note, the evaluation version is the same as the purchased version. An evaluation version simply becomes licensed when you add a few lines of code to apply the license.
-
-The evaluation version (without a license initialization) provides full product functionality, but it has the following limitation: it processes only 5 questions on a page.
+**Aspose.OMR for .NET** is distributed as a NuGet package. There is no need to download and install any software - the package can be added to your project directly from Microsoft Visual Studio.
 
 {{% alert color="primary" %}} 
 
-If you want to test Aspose.OMR for .NET without the evaluation version limitations, you can also request a 30-day Temporary License. Please refer to [How to get a Temporary License?](https://purchase.aspose.com/temporary-license)
+The instructions below describe how to install or update Aspose.OMR for .NET in **Microsoft Visual Studio Community 2019**. The installation process for [other versions](/omr/net/system-requirements/) of Visual Studio should be quite similar; refer to [documentation](https://docs.microsoft.com/en-us/previous-versions/visualstudio/) for specific details.
 
 {{% /alert %}} 
-## **Installing Aspose.OMR for .NET through NuGet**
-NuGet is the easiest way to download and install Aspose APIs for .NET. Open Microsoft Visual Studio and NuGet package manager. Search "aspose" to find the desired Aspose API, click on "Install" and the selected API will be downloaded and referenced in your project.
-### **Referencing Aspose.OMR for .NET**
-Taking benefit of this wonderful feature, we have bundled [Aspose.OMR for .NET](https://www.nuget.org/packages/Aspose.OMR/) libraries into a NuGet package and uploaded it into a NuGet repository. With this option, you benefit from using Aspose.OMR for .NET without installing this component on your system. NuGet runs in Visual Studio 2010 and later version(s), Visual Web Developer 2010, and Windows Phone Developer Tools 7.1. In our tests, we have tested it with Visual Studio 2015 Ultimate.
 
-To get started:
+## Using NuGet Package Manager UI
 
-1. Open your solution or project in Visual Studio.
-1. Add NuGet Package Manager as a Visual Studio extension:
-   1. Select the Tools menu followed by Extension Manager.
-   1. Select Online Gallery to get a complete list of packages available online.
-   1. Select NuGet Package Manager.
-   1. Click Download.
-   1. Once the package Manager is installed, restart Visual Studio to bring the changes into effect.
-      When NuGet Package Manager is installed, you can find, install, remove, and update packages from the Manage NuGet Packages window, or by using PowerShell command-line commands in the Package Manager Console dedicated Visual Studio window. You can find both options if you select the Tools followed by the NuGet Package Manager.
-### **Install the Package using Package Manager Console**
-To reference the component using the package manager console:
+NuGet Package Manager UI is the easiest way to install and update Aspose.OMR for .NET in your project.
 
-1. Open your .NET application in Visual Studio.
-1. On the Tools menu, select NuGet Package Manager and then Package Manager Console.
-1. Type the command “Install-Package Aspose.OMR” to install the latest full release, or type the command “Install-Package Aspose.OMR -prerelease” to install the latest release including hotfixes.
-1. Press Enter.
-### **Update package using Package Manager Console**
-If you have already referenced the component through NuGet, follow these steps to update the reference to the latest version:
+### Installing
 
-1. Open your .NET application in Visual Studio.
-1. From the Tools menu, select NuGet Package Manager, followed by the Package Manager Console to open the Package Manager console.
-1. Type the command “Update-Package Aspose.OMR” to reference the latest full release, or type the command “Update-Package Aspose.OMR -prerelease” to install the latest release including hotfixes.
-1. Press Enter.
-### **Install the Package using the Package Manager GUI**
-Follow these steps to reference the component using the package manager GUI:
+1. Open your solution or a project in Microsoft Visual Studio.
+2. Click **Project** menu and select **Manage NuGet Packages**.  
+   Alternatively, you can right-click the project in **Solution Explorer** and select **Manage NuGet Packages** from the context menu.
+3. Switch to **Browse** tab.
+4. Type "_Aspose.OMR_" (without quotes) in the search box.
+5. Select **Aspose.OMR** package from the list.
+6. Click **Install** button.  
+   You can select a specific version to be installed. However, it is recommended to always use the [latest version](/omr/net/release-notes/latest/) for new projects.
+7. If prompted, confirm changes to the solution.
+8. If prompted, accept the license terms for installed packages.
 
-1. Open your .NET application in Visual Studio.
-1. From the Tools menu, select NuGet Package Manager and Manage NuGet Packages from the Solution option.
-   You can also get a similar option from the Solution Explorer:
-   1. Right-click the project name.
-   1. Select Manage NuGet Packages.
-1. Select Browse from the top tabs.
-1. Type Aspose.OMR into the search box to find Aspose.OMR for .NET.
-1. Click Install/Update next to the latest version of Aspose.OMR for .NET.
+### Updating
+
+{{% alert color="primary" %}} 
+
+Refer to Aspose.OMR for .NET [Release Notes](/omr/net/release-notes/) to check if the update might alter the application behavior or require changes to existing code.
+
+{{% /alert %}} 
+
+1. Open your solution or a project in Microsoft Visual Studio.
+2. Click **Project** menu and click **Manage NuGet Packages**.  
+   Alternatively, you can right-click the project in **Solution Explorer** and select **Manage NuGet Packages** from the context menu.
+3. Select **Aspose.OMR** package from the list.
+4. Select the update version and click **Update** button.
+5. If prompted, confirm changes to the solution.
+6. If prompted, accept the license terms for update packages.
+
+## Using NuGet Package Manager Console
+
+NuGet Package Manager Console lets you install and update Aspose.OMR for .NET in your project using PowerShell commands.
+
+### Installing
+
+1. Open your solution or a project in Microsoft Visual Studio.
+2. Click **Tools** menu, select **NuGet Package Manager** and click **Package Manager Console**.
+3. Execute the command `Install-Package Aspose.OMR` to install the latest version of Aspose.OMR NuGet package.
+
+### Updating
+
+{{% alert color="primary" %}} 
+
+Refer to Aspose.OMR for .NET [Release Notes](/omr/net/release-notes/) to check if the update might alter the application behavior or require changes to existing code.
+
+{{% /alert %}} 
+
+1. Open your solution or a project in Microsoft Visual Studio.
+2. Click **Tools** menu, select **NuGet Package Manager** and click **Package Manager Console**.
+3. Checks if there are newer versions available for any installed packages by executing a command `Get-Package -updates`. If an update is available, you will see something like this:
+
+   ```
+   Id           Versions   Description                                   ProjectName
+   --           --------   -----------                                   -----------
+   Aspose.OMR   {22.3.0}   Aspose.OMR for .NET is a standalone .NET l... ConsoleApp1
+   ```
+4. Update Aspose.OMR for .NET to the latest version by executing a command `Update-Package Aspose.OMR`.  
+   
+   To update to a specific version, provide its name in the `-Version` parameter . For example: `Update-Package Aspose.OMR -Version 22.2.0`.

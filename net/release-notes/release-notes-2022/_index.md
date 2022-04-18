@@ -1,7 +1,7 @@
 ---
 title: Release Notes - 2022
 type: docs
-weight: 9
+weight: 100
 url: /net/release-notes-2022/
 ---
 

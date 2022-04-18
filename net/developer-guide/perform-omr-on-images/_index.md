@@ -1,5 +1,5 @@
 ---
-title: Perform OMR on Images
+title: Recognizing filled forms
 type: docs
 weight: 20
 url: /net/perform-omr-on-images/

@@ -450,7 +450,8 @@ Ends with a **&verticalChoiceBox** prefix indicating the end of the element's bo
 | :- | :- | :- | :- | :- | :- | :- |
 |VerticalChoiceBox|?vertical_choicebox=|required|name of element|Optional|false|vertical_choicebox=question No. 1|
 |||bubble_type|Type of bubble. Affects every Answer element inside|Optional|Round|bubble_type=Square
-|||threshold|Percent of marked pixels after which bubble considered filled. Affects every Answer element inside|Optional|45|threshold=30
+|||threshold|Percent of marked pixels after which bubble considered filled. Affects every Answer element inside.|Optional|45|threshold=30
+|||top_padding|The height of the vertical padding (in pixels) before the first Answer element.|Optional|0|top_padding=160
 
 ### **Examples**
 

@@ -1,5 +1,5 @@
 ---
-title: Working with Graphical Control
+title: Working with UI control
 type: docs
 weight: 30
 url: /net/working-with-graphical-control/
