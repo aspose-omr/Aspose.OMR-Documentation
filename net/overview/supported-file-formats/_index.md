@@ -27,7 +27,7 @@ Format     | Details
 **TXT**    | Lightweight text markup specifically tailored for Aspose.OMR forms.
 **Object** | Describe the OMR form directly in the application code.
 
-## Print forms
+## Printable forms
 
 Once the template source code is ready, you can generate a printable document from it. Aspose.OMR for .NET intellectually selects the file format based on the provided extension:
 

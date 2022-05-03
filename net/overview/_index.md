@@ -4,6 +4,8 @@ date: "2022-04-11"
 author: "Vladimir Lapin"
 type: docs
 url: /net/overview/
+aliases:
+- /net/product-overview/
 title: Product overview
 description: An introduction to OMR technology and how Aspose.OMR for .NET  can help you use it for your day-to-day business needs.
 keywords:

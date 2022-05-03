@@ -23,7 +23,7 @@ The instructions below describe how to install or update Aspose.OMR for .NET in 
 
 ## Using NuGet Package Manager UI
 
-NuGet Package Manager UI is the easiest way to install and update Aspose.OMR for .NET in your project.
+**NuGet Package Manager UI** is the easiest way to install and update Aspose.OMR for .NET in your project.
 
 ### Installing
 
@@ -56,7 +56,7 @@ Refer to Aspose.OMR for .NET [Release Notes](/omr/net/release-notes/) to check i
 
 ## Using NuGet Package Manager Console
 
-NuGet Package Manager Console lets you install and update Aspose.OMR for .NET in your project using PowerShell commands.
+**NuGet Package Manager Console** lets you install and update Aspose.OMR for .NET in your project using PowerShell commands.
 
 ### Installing
 

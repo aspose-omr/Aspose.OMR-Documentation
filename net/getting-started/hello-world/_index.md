@@ -1,6 +1,6 @@
 ---
 weight: 40
-date: "2022-04-14"
+date: "2022-04-15"
 author: "Vladimir Lapin"
 type: docs
 url: /net/hello-world/
@@ -41,7 +41,7 @@ While our OMR application requires minimal coding, the underlying process is a b
 ![Necessary steps to be taken](steps.png)
 
 1. **Design** the questionnaire.
-2. **Generate** print form and recognition pattern files.
+2. **Generate** a printable form and recognition pattern files.
 3. **Print** the form.
 4. **Fill** the form.
 5. **Scan** or take a photo of the form.
@@ -63,11 +63,11 @@ The structure and layout of the questionnaire (template source) is defined in a 
 	() Pretty good, thanks! () I won't respond until I see my lawyer.
 ```
 
-In this article, we won't delve into the full syntax of the template. Let's just take a look at its key building blocks:
+In this article, we won't delve into the [full syntax](/omr/net/txt-markup/) of the template. Let's just take a look at its key building blocks:
 
-- The text after `?text=` keyword is rendered as a simple paragraph. You can optionally format it by adding layout attributes (font, style, and the like) on the lines immediately following the text. Each attribute definition must be preceded by a **tabulation** symbol.
-- The question text is provided on a new line starting with a hash (`#`) symbol. The hash itself is not rendered.
-- The answers are provided on new lines immediately following the question. You can either place all answers on a single line or on several lines by adding line breaks. Each line must begin with a **tabulation** symbol.
+- The text after `?text=` keyword is rendered as a simple paragraph. You can optionally format it by adding layout attributes (font, style, and the like) on the lines immediately following the text. Each attribute definition must be preceded by a **tab character**.
+- The question text is provided on a new line starting with a hash (`#`). The hash itself is not rendered.
+- The answers are provided on new lines immediately following the question. You can either place all answers on a single line or on several lines by adding line breaks. Each line must begin with a **tab character**.
 
 Save the template source somewhere on you disk under the name **template.txt**. You will need it on the next step.
 
@@ -111,8 +111,8 @@ namespace HelloOMR
 Now run the program. If the template is correct, you should get 2 files in **bin\Debug** directory of the project:
 
 - **Hello.OMR.png**  
-  A print form in PNG format. Since we have not provided a [license](/omr/net/licensing/), there will be a watermark on the page.  
-  ![Print form](print-form.png)
+  A printable form in PNG format. Since we have not provided a [license](/omr/net/licensing/), there will be a watermark on the page.  
+  ![Printable form](print-form.png)
 - **Hello.OMR.omr**  
   A recognition pattern used by Aspose.OMR recognition engine. **This file is required for recognizing filled forms, make sure you do not accidentally delete it!**
 
@@ -184,4 +184,4 @@ Question1,"A"
 
 ## What's next?
 
-Congratulations! You have taken the first steps in optical mark recognition technology. Read the [Developer reference](/omr/net/developer-guide/) and [API reference](https://apireference.aspose.com/omr/net) for details on developing OMR forms and applications with Aspose.OMR for .NET.
+Congratulations! You have taken the first steps in optical mark recognition technology. Read the [Developer reference](/omr/net/developer-reference/) and [API reference](https://apireference.aspose.com/omr/net) for details on developing advanced OMR forms and applications with Aspose.OMR for .NET.
