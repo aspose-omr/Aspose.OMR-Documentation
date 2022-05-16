@@ -1,0 +1,64 @@
+---
+weight: 20
+date: "2022-05-13"
+author: "Vladimir Lapin"
+type: docs
+url: /net/generate-template/images/
+title: Adding images
+description: How to include images in Aspose.OMR forms.
+keywords:
+- render
+- page
+- form
+- print
+- generate
+- image
+- picture
+---
+
+Aspose.OMR allows you to customize questionnaires, answer sheets, and other forms by adding images (such as your company logo) to them. In addition to describing the element in the [source code](/omr/net/design-form/), the full path to _each_ image file must be directly passed to the [form generator](/omr/net/generate-template/).
+
+{{% alert color="primary" %}}
+
+If an image file is mentioned in the source code but no file path is provided, an error will be thrown and the form will not be generated.
+
+{{% /alert %}}
+
+Image paths can be provided with:
+
+- A string array in [`GenerateTemplate`](https://apireference.aspose.com/omr/net/aspose.omr.api.omrengine/generatetemplate/methods/5) method.  
+  It only works with text markup files and **does not** allow you to configure page settings.
+- `ImagesPaths` property of [`GlobalPageSettings`](https://apireference.aspose.com/omr/net/aspose.omr.generation/globalpagesettings) object. Full paths to images are provided as an array of strings.  
+  This is a universal approach that works with all types of sources, and also allows you to [customize page settings](/omr/net/generate-template/page-setup/).
+
+## Example
+
+Template source code:
+
+```
+?image=aspose-logo.png
+	align=center
+?text=Customer Satisfaction Survey
+	align=center
+	font_size=16
+	font_style=bold
+?image=vignette.png
+	align=center
+```
+
+Generate and save the printable form:
+
+```csharp
+string workingDirectory = System.IO.Directory.GetCurrentDirectory();
+Aspose.OMR.Generation.GlobalPageSettings globalPageSettings = new Aspose.OMR.Generation.GlobalPageSettings() {
+	PaperSize = Aspose.OMR.Generation.PaperSize.Tabloid,
+	BubbleColor= Aspose.OMR.Generation.Color.Red,
+	ImagesPaths = new string[] {
+		System.IO.Path.Combine(workingDirectory, "aspose-logo.png"),
+		@"C:\Users\Public\Pictures\vignette.png"
+	}
+};
+Aspose.OMR.Api.OmrEngine omrEngine = new Aspose.OMR.Api.OmrEngine();
+Aspose.OMR.Generation.GenerationResult generationResult = omrEngine.GenerateTemplate("source.txt", globalPageSettings);
+generationResult.Save("", "OMR-Form");
+```

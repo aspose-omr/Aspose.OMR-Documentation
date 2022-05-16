@@ -1,6 +1,6 @@
 ---
 weight: 60
-date: "2022-04-27"
+date: "2022-05-13"
 author: "Vladimir Lapin"
 type: docs
 url: /net/json-markup/image/
@@ -32,7 +32,7 @@ Image file name is provided in the **name** property.
 }
 ```
 
-Full paths to all images used in the form are passed to the [template generator](/omr/net/generate-template/) using [ImagesPaths](https://apireference.aspose.com/omr/net/aspose.omr.generation/globalpagesettings/fields/imagespaths) parameter of the [global page settings](https://apireference.aspose.com/omr/net/aspose.omr.generation/globalpagesettings).
+Full paths to all images used in the form must be [provided to the template generator](/omr/net/generate-template/images/).
 
 ### Required properties
 

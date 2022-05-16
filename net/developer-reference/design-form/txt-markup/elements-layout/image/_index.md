@@ -1,6 +1,6 @@
 ---
 weight: 60
-date: "2022-04-21"
+date: "2022-05-13"
 author: "Vladimir Lapin"
 type: docs
 url: /net/txt-markup/image/
@@ -24,7 +24,7 @@ This element is used to add a picture.
 
 The element is declared with `?image=<image file name>` statement. This statement must be placed on a separate line.
 
-Full paths to all images used in the form are passed to the [template generator](/omr/net/generate-template/) using [ImagesPaths](https://apireference.aspose.com/omr/net/aspose.omr.generation/globalpagesettings/fields/imagespaths) parameter of the [global page settings](https://apireference.aspose.com/omr/net/aspose.omr.generation/globalpagesettings).
+Full paths to all images used in the form must be [provided to the template generator](/omr/net/generate-template/images/).
 
 {{% alert color="primary" %}} 
 
