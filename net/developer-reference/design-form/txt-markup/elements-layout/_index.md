@@ -1,6 +1,6 @@
 ---
 weight: 10
-date: "2022-04-21"
+date: "2022-05-16"
 author: "Vladimir Lapin"
 type: docs
 url: /net/txt-markup/elements-layout/
@@ -28,6 +28,8 @@ All form elements are rendered one below the other and occupy the entire width o
 
 ## Layout elements
 
+- [page](/omr/net/txt-markup/page/)  
+  This element is used to break large forms into several pages that are recognized as a single document.
 - [container](/omr/net/txt-markup/container/)  
   This element is used to break content into columns and to add a footer to the form.
 - [block](/omr/net/txt-markup/block/)  

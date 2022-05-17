@@ -1,6 +1,6 @@
 ---
 weight: 20
-date: "2022-04-27"
+date: "2022-05-16"
 author: "Vladimir Lapin"
 type: docs
 url: /net/json-markup/
@@ -70,6 +70,12 @@ The top-level element of the Aspose.OMR template source must always be an object
 	]
 }
 ```
+
+{{% alert color="primary" %}} 
+
+You can use multiple top-level [Page](/omr/net/json-markup/page/) elements to separate the content of large forms into several pages.
+
+{{% /alert %}}
 
 Content [elements]({{< ref "#elements" >}}) are provided as objects with the following set of properties:
 

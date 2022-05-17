@@ -1,6 +1,6 @@
 ---
 weight: 10
-date: "2022-04-27"
+date: "2022-05-16"
 author: "Vladimir Lapin"
 type: docs
 url: /net/json-markup/elements-layout/
@@ -31,6 +31,8 @@ All form elements are rendered one below the other and occupy the entire width o
 
 The type of the element is specified in the value of **element_type** property of a corresponding object. The property value is provided as a case-insensitive string.
 
+- [Page](/omr/net/json-markup/page/)  
+  This element is used to break large forms into several pages that are recognized as a single document.
 - [Container](/omr/net/json-markup/container/)  
   This element is used to break content into columns and to add a footer to the form.
 - [Block](/omr/net/json-markup/block/)  

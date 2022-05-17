@@ -1,6 +1,6 @@
 ---
 weight: 10
-date: "2022-04-21"
+date: "2022-05-16"
 author: "Vladimir Lapin"
 type: docs
 url: /net/txt-markup/container/
@@ -47,7 +47,7 @@ Attribute | Default value | Description | Usage example
 --------- | ------------- | ----------- | -------------
 **columns_count** | 1 | The number of columns in the container (1 or more).<br />All columns have the same width regardless of their content. | `columns_count=2`
 **columns_proportions** | n/a | Overrides the number of columns and sets their relative proportions.<br />The attribute value is provided in the following format: `{Column 1 width %}-{Column 2 width %}-...{Column N width %}`. The grand total of all column widths must not exceed 100%. | `columns_proportions=20%-40%-20%-20%`
-**type** | normal | Determines whether the container is displayed inside the body of the form (`normal`) or as a footer on every page (`footer`).<br />**There can be only one footer in the form!** | `type=footer`
+**type** | normal | Determines whether the container is displayed inside the body of the form (`normal`) or as a footer at the bottom of the page (`footer`).<br />**Each [page](/omr/net/txt-markup/page/) can only have one footer!** | `type=footer`
 **block_right_margin** | 40 | Right margin (in pixels) of container's columns. | `block_right_margin=60`
 **block_bottom_margin** | 20 | Bottom margin (in pixels) of nested [**block**](/omr/net/txt-markup/block/) elements. | `block_bottom_margin=100`
 **block_top_padding** | 20 | Top padding (in pixels) of nested [**block**](/omr/net/txt-markup/block/) elements. | `block_top_padding=50`
@@ -55,7 +55,7 @@ Attribute | Default value | Description | Usage example
 
 ## Adding page footer
 
-To add a footer that will appear on every page:
+To add a footer that will appear at the bottom of the page:
 
 1. Create a **container** element.
 2. Set the `type` attribute of the **container** element to `footer`.

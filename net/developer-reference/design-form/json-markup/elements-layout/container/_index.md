@@ -1,6 +1,6 @@
 ---
 weight: 10
-date: "2022-04-27"
+date: "2022-05-16"
 author: "Vladimir Lapin"
 type: docs
 url: /net/json-markup/container/
@@ -53,14 +53,14 @@ Name | Type | Default value | Description
 **name** | string | _n/a_ | Used as a reminder of the container's purpose; for example, "_General Chemistry_". You can use the same value for multiple containers.<br />This text is not displayed on the form.
 **columns_count** | integer |	1 | The number of columns in the container (1 or more). All columns have the same width regardless of their content.
 **columns_proportions** | array | _n/a_ | Overrides the number of columns and sets their relative proportions.<br />The number of columns is determined by the length of the array. Column widths (in percent) are provided as array items. The grand total of all column widths must not exceed 100%.
-**container_type** | string | "normal" | Determines whether the container is displayed inside the body of the form (`"normal"`) or as a footer on every page (`"footer"`).<br />**The form can only have one footer!**
+**container_type** | string | "normal" | Determines whether the container is displayed inside the body of the form (`"normal"`) or as a footer at the bottom of the page (`"footer"`).<br />**Each [Page](/omr/net/json-markup/page/) can only have one footer!**
 **block_right_margin** | integer | 40 | Right margin (in pixels) of container's columns.
 **block_bottom_margin** | integer | 20 | Bottom margin (in pixels) of nested [**Block**](/omr/net/json-markup/block/) elements.
 **block_top_padding** | integer | 20 | Top padding (in pixels) of nested [**Block**](/omr/net/json-markup/block/) elements.
 
 ## Adding page footer
 
-To add a footer that will appear on every page:
+To add a footer that will appear at the bottom of the page:
 
 1. Create a **Container** object.
 2. Set the `container_type` property of the object to `"footer"`.
