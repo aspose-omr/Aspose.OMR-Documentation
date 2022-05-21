@@ -1,7 +1,7 @@
 ---
 title: Aspose.OMR for .NET 22.2 Release Notes
 type: docs
-weight: 100
+weight: 110
 url: /net/aspose-omr-for-net-22-2-release-notes/
 ---
 

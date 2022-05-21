@@ -1,6 +1,6 @@
 ---
 weight: 20
-date: "2022-04-22"
+date: "2022-05-19"
 author: "Vladimir Lapin"
 type: docs
 url: /net/txt-markup/grid/
@@ -60,6 +60,14 @@ Attribute | Default value | Description | Usage example
 ## Allowed child elements
 
 None.
+
+## Recognition behavior
+
+Numbers from each marked bubble are merged into a single number.
+
+If several bubbles are marked in one row / column, they are also merged into a number with multiple digits. For example, if the respondent marks bubbles "_3_" and "_7_" in one row and "_5_" in another, the recognition result for the **grid** element will be "_375_".
+
+If this behavior is undesirable, instruct respondents to select one bubble per row / column (depending on the `orientation` attribute) or use [**composite_grid**](/omr/net/txt-markup/composite_grid/) element.
 
 ## Examples
 

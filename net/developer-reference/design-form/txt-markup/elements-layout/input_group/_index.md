@@ -43,8 +43,8 @@ An attribute is written as `[attribute_name]=[value]`. Each attribute must be pl
 
 Attribute | Default value | Description | Usage example
 --------- | ------------- | ----------- | -------------
-**label_border** | none | Whether to draw a border around the label.<ul><li>`none` - no border.</li><li>`square` - draw a rectangular border.</li></ul> | `label_border=square`
-**input_border** | none | Whether to draw a border around the field.<ul><li>`none` - no border.</li><li>`square` - draw a rectangular border.</li></ul> | `input_border=square`
+**label_border** | none | Whether to draw a border around the label.<ul><li>`none` - no border.</li><li>`square` - draw a rectangular border.</li><li>`rounded` - draw a rectangular border with rounded corners.</li></ul> | `label_border=square`
+**input_border** | none | Whether to draw a border around the field.<ul><li>`none` - no border.</li><li>`square` - draw a rectangular border.</li><li>`rounded` - draw a rectangular border with rounded corners.</li></ul> | `input_border=square`
 **border_size** | 3 | Width of all borders. | `border_size=10`
 **border_color** | black | Color of all borders. Can be picked from the following values: `Aqua`, `Aquamarine`, `Black`, `Blue`, `BlueViolet`, `Crimson`, `DarkBlue`, `DarkGreen`, `DarkOrange`, `DarkSalmon`, `Fuchsia`, `Indigo`, `Lime`, `Red`, `Teal`, `White`, `Gray`, `LightGray`. | `border_color=red`
 

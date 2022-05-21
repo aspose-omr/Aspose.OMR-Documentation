@@ -1,6 +1,6 @@
 ---
 weight: 20
-date: "2022-04-28"
+date: "2022-05-19"
 author: "Vladimir Lapin"
 type: docs
 url: /net/json-markup/grid/
@@ -63,6 +63,14 @@ Name | Type | Default value | Description
 **x** | integer | _n/a_ | Set the absolute position of the **Grid** element relative to the left edge of the page.<br />Overrides the value of **align** property.
 **y** | integer | _n/a_ | Set the absolute position of the **Grid** element relative to the top edge of the page.
 **column** | integer | 1 | The number of the column where the **Grid** element will be placed. Only applicable if **Grid** is placed in a multi-column [**Container**](/omr/net/json-markup/container/) element.
+
+## Recognition behavior
+
+Numbers from each marked bubble are merged into a single number.
+
+If several bubbles are marked in one row / column, they are also merged into a number with multiple digits. For example, if the respondent marks bubbles "_3_" and "_7_" in one row and "_5_" in another, the recognition result for the **grid** element will be "_375_".
+
+If this behavior is undesirable, instruct respondents to select one bubble per row / column (depending on the `orientation` property) or use [**CompositeGrid**](/omr/net/json-markup/compositegrid/) element.
 
 ## Allowed child elements
 

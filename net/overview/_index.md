@@ -1,6 +1,6 @@
 ---
 weight: 10
-date: "2022-04-11"
+date: "2022-05-19"
 author: "Vladimir Lapin"
 type: docs
 url: /net/overview/
@@ -25,3 +25,5 @@ Learn what optical mark recognition (OMR) is, how it can be used in everyday lif
   Discover features and benefits of Aspose.OMR for .NET API.
 - [Supported file formats](/omr/net/supported-file-formats/)  
   Aspose.OMR for .NET can generate print forms, recognize images and return results in any popular format.
+- [OMR form structure](/omr/net/omr-form-structure/)  
+  The layout and structure of the Aspose.OMR for .NET printable form and the meaning of its key elements.

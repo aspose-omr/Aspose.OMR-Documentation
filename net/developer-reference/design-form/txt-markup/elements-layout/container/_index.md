@@ -31,12 +31,6 @@ The element declaration begins with `?container=[name]` statement and ends with 
 
 `name` property is used as a reminder of the container's purpose; for example, "_General Chemistry_". This is an optional property - you can use the same **name** for multiple containers or just omit it. The name is not displayed on the form.
 
-{{% alert color="primary" %}} 
-
-Never add empty lines after the opening `?container=` statement. Doing so will prevent container's child elements from being rendered.
-
-{{% /alert %}}
-
 ### Attributes
 
 The **container** element can be customized by adding optional attributes to it.

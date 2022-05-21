@@ -1,6 +1,6 @@
 ---
 weight: 40
-date: "2022-04-22"
+date: "2022-05-19"
 author: "Vladimir Lapin"
 type: docs
 url: /net/txt-markup/composite_grid/
@@ -54,6 +54,12 @@ Attribute | Default value | Description | Usage example
 ## Allowed child elements
 
 None.
+
+## Recognition behavior
+
+Numbers from each marked bubble are merged into a single number.
+
+If the respondent marks more than one bubble per row / column (depending on the `orientation` attribute), the affected **composite_grid** element will not be recognized and an error will be written to the recognition results.
 
 ## Examples
 

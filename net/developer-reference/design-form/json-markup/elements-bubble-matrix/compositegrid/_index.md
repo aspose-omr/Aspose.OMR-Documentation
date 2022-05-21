@@ -1,6 +1,6 @@
 ---
 weight: 40
-date: "2022-04-28"
+date: "2022-05-19"
 author: "Vladimir Lapin"
 type: docs
 url: /net/json-markup/compositegrid/
@@ -68,6 +68,12 @@ Name | Type | Default value | Description
 ## Allowed child elements
 
 None.
+
+## Recognition behavior
+
+Numbers from each marked bubble are merged into a single number.
+
+If the respondent marks more than one bubble per row / column (depending on the `orientation` attribute), the affected **CompositeGrid** element will not be recognized and an error will be written to the recognition results.
 
 ## Examples
 

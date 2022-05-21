@@ -77,7 +77,7 @@ Attribute | Default value | Description | Usage example
 **font_size** | 12 | Font size for the title text. | `font_size=16`
 **color** | black | Color of the title text. Can be picked from the following values: `Aqua`, `Aquamarine`, `Black`, `Blue`, `BlueViolet`, `Crimson`, `DarkBlue`, `DarkGreen`, `DarkOrange`, `DarkSalmon`, `Fuchsia`, `Indigo`, `Lime`, `Red`, `Teal`, `White`, `Gray`, `LightGray`. | `color=red`
 **background_color** | transparent | Background color of the title row. Can be picked from the following values: `Aqua`, `Aquamarine`, `Black`, `Blue`, `BlueViolet`, `Crimson`, `DarkBlue`, `DarkGreen`, `DarkOrange`, `DarkSalmon`, `Fuchsia`, `Indigo`, `Lime`, `Red`, `Teal`, `White`, `Gray`, `LightGray`. | `background_color=gray`
-**border** | none | Whether to draw a border around the title row.<ul><li>`none` - no border.</li><li>`square` - draw a rectangular border.</li></ul> | `border=square`
+**border** | none | Whether to draw a border around the title row.<ul><li>`none` - no border.</li><li>`square` - draw a rectangular border.</li><li>`rounded` - draw a rectangular border with rounded corners.</li></ul> | `border=square`
 **border_size** | 3 | Width of the title row borders. | `border_size=10`
 **border_color** | black | Color of the title row borders. Can be picked from the following values: `Aqua`, `Aquamarine`, `Black`, `Blue`, `BlueViolet`, `Crimson`, `DarkBlue`, `DarkGreen`, `DarkOrange`, `DarkSalmon`, `Fuchsia`, `Indigo`, `Lime`, `Red`, `Teal`, `White`, `Gray`, `LightGray`. | `border_color=red`
 

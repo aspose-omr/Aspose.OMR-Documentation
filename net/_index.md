@@ -1,6 +1,6 @@
 ---
 weight: 10
-date: "2022-04-11"
+date: "2022-05-19"
 author: "Vladimir Lapin"
 type: docs
 url: /net/
@@ -33,6 +33,7 @@ Learn more about OMR technology and discover the features and benefits of Aspose
 - [Optical mark recognition (OMR) at a glance](/omr/net/omr-technology/)
 - [Why Aspose.OMR?](/omr/net/features-benefits/)
 - [Supported file formats](/omr/net/supported-file-formats/)
+- [OMR form structure](/omr/net/omr-form-structure/)
 
 ## Getting started
 
