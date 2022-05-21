@@ -14,6 +14,8 @@ keywords:
 - OMR
 - form
 - recognition
+- portable
+- offline
 ---
 
 ## Welcome to Aspose.OMR for .NET
