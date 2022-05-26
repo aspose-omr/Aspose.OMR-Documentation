@@ -1,11 +1,11 @@
 ---
 weight: 40
-date: "2022-04-19"
+date: "2022-05-20"
 author: "Vladimir Lapin"
 type: docs
 url: /net/recognition/
 title: Optical mark recognition (OMR)
-description: 
+description: How to recognize the filled form with Aspose.OMR for .NET.
 keywords:
 - OMR
 - recognition
@@ -15,36 +15,97 @@ keywords:
 - result
 ---
 
-Aspose.OMR for .NET is a simple and lightweight API that makes performing OMR operation on images a breeze. The upcoming examples demonstrate how easy it is to get started with performing OMR on images.
+To recognize a filled questionnaire, answer sheet, ballot, or other OMR form, digitize it in one of the [supported formats](/omr/net/supported-file-formats/). For best results, we recommend using a scanner (a basic office scanner or multifunction copier will suffice). If you do not have a scanner, you can simply take a picture of the form with any modern smartphone and upload the photo to your computer.
 
-## **Perform OMR operation on Images**
+{{% alert color="primary" %}} 
 
-Aspose.OMR for .NET provides simple to use features for performing OMR operation. For a simple OMR operation, you only need two things, the prepared template (special markers will be drawn over the user's form and the image(s) to perform OMR operation on. Aspose.OMR provides [**TemplateProcessor.RecognizeImage()**](https://apireference.aspose.com/omr/net/aspose.omr.api/templateprocessor/methods/recognizeimage) method that takes an image path and returns a string output. The following code sample shows the use of [**OmrEngine**](https://apireference.aspose.com/omr/net/aspose.omr.api/omrengine) and [**TemplateProcessor**](https://apireference.aspose.com/omr/net/aspose.omr.api/templateprocessor) to perform OMR operation on two images.
+Make sure that all 4 [positioning markers](/omr/net/omr-form-structure/) are present on the image.
 
-{{< gist "aspose-com-gists" "9351fac3e25a64343d5920a7770ded08" "Examples-CSharp-PerformOMR-PerformOMROnImages-1.cs" >}}
+{{% /alert %}} 
 
-## **Perform OMR operation with a threshold setting**
+## Initializing the recognition engine
 
-Aspose.OMR provides a threshold setting to fine-tune the result of OMR according to your needs. You can set the value of the threshold from 0 to 100 depending on your requirements. By increasing the value of the threshold, the API becomes more strict regarding the highlighting of the answers. [**TemplateProcessor.RecognizeImage()**](https://apireference.aspose.com/omr/net/aspose.omr.api/templateprocessor/methods/recognizeimage) method takes threshold as the optional 2nd parameter with the default value of 0. The use of the threshold setting is demonstrated in the following code sample.
+Aspose.OMR recognition engine is initialized with the recognition pattern (a file with _.OMR_ extension), [generated](/omr/net/generate-template/) along with the printable form. The recognition pattern is loaded using `GetTemplateProcessor` method of [`Aspose.OMR.Api.OmrEngine`](https://apireference.aspose.com/omr/net/aspose.omr.api/omrengine/) class:
 
-{{< gist "aspose-com-gists" "9351fac3e25a64343d5920a7770ded08" "Examples-CSharp-PerformOMR-PerformOMRWithThreshold-1.cs" >}}
+```csharp
+Aspose.OMR.Api.OmrEngine omrEngine = new Aspose.OMR.Api.OmrEngine();
+Aspose.OMR.Api.TemplateProcessor templateProcessor = omrEngine.GetTemplateProcessor("pattern.omr");
+```
 
-## **Perform OMR operation with Recalculation**
+You can also load the recognition pattern as a `MemoryStream` object, which can be very useful when building web applications or APIs:
 
-Aspose.OMR for .NET provides you with the ability to perform recalculation on the image during the OMR operation. There might be some cases where you might want to process an image multiple times by changing the threshold setting to get the desired result. In that case, you may want to process the image again by calling [**TemplateProcessor.RecognizeImage()**](https://apireference.aspose.com/omr/net/aspose.omr.api/templateprocessor/methods/recognizeimage). But Aspose.OMR for .NET provides a better way to do this by providing the [**TemplateProcessor.Recalculate()**](https://apireference.aspose.com/omr/net/aspose.omr.api/templateprocessor/methods/recalculate) method. This method takes the result of [**TemplateProcessor.RecognizeImage()**](https://apireference.aspose.com/omr/net/aspose.omr.api/templateprocessor/methods/recognizeimage) as the first parameter and an optional threshold. [**TemplateProcessor.Recalculate()**](https://apireference.aspose.com/omr/net/aspose.omr.api/templateprocessor/methods/recalculate) method improves the efficiency of image processing and saves time as represented by the following code sample.
+```csharp
+byte[] pattern = Encoding.UTF8.GetBytes(payload);
+Aspose.OMR.Api.OmrEngine omrEngine = new Aspose.OMR.Api.OmrEngine();
+Aspose.OMR.Api.TemplateProcessor templateProcessor = null;
+using(MemoryStream ms = new MemoryStream(pattern))
+{
+	templateProcessor = omrEngine.GetTemplateProcessor(ms, Encoding.UTF8);
+}
+```
 
-{{< gist "aspose-com-gists" "9351fac3e25a64343d5920a7770ded08" "Examples-CSharp-PerformOMR-PerformOMRRecalculation-1.cs" >}}
+### Recovering a recognition pattern file
 
-## **Perform OMR operation with Barcode Recognition**
+If you have lost the recognition pattern file for the survey, simply [generate](/omr/net/generate-template/) it again from the [form source code](/omr/net/design-form/) using **exactly the same** paper size, orientation, font, and other [layout setting](/omr/net/generate-template/page-setup/).
 
-Aspose.OMR for .NET provides you with the ability to recognize barcodes during OMR operation by default. The sample code snippet performs OMR operation on an image containing a barcode. The following is the image of the source file used.
+## Recognizing OMR forms
 
-![todo:image_alt_text](perform-omr-on-images_1.jpg)
+{{% alert color="primary" %}} 
 
-After the sample code snippet is executed, the barcode value is added at the end of the CSV file as shown in the following picture.
+All recognition methods support [accuracy adjustments](/omr/net/recognition/accuracy-threshold/) for reliable results under various conditions.
 
-![todo:image_alt_text](perform-omr-on-images_2.jpg)
+{{% /alert %}} 
 
-The following is the code snippet used for the demonstration of this feature.
+To recognize a filled form page, process its scan or photo with the [initialized]({{< ref "#initializing-the-recognition-engine" >}}) recognition engine using `RecognizeImage` method of the [`Aspose.OMR.Api.TemplateProcessor`](https://apireference.aspose.com/omr/net/aspose.omr.api/templateprocessor/) class:
 
-{{< gist "aspose-com-gists" "9351fac3e25a64343d5920a7770ded08" "Aspose.OMR.ConsoleDemo-PerformOMR-OMROperationWithBarcodeRecognition-1.cs" >}}
+```csharp
+Aspose.OMR.Api.OmrEngine omrEngine = new Aspose.OMR.Api.OmrEngine();
+Aspose.OMR.Api.TemplateProcessor templateProcessor = omrEngine.GetTemplateProcessor("pattern.omr");
+Aspose.OMR.Model.RecognitionResult recognitionResult = templateProcessor.RecognizeImage("form-20220519.png");
+```
+
+You can also provide a form image as a `MemoryStream` object, which can be very useful when building web applications or APIs:
+
+```csharp
+// Load recognition pattern and form image
+byte[] pattern = Encoding.UTF8.GetBytes(payload[0]);
+byte[] form = Encoding.UTF8.GetBytes(payload[1]);
+// Initialize recognition engine
+Aspose.OMR.Api.OmrEngine omrEngine = new Aspose.OMR.Api.OmrEngine();
+Aspose.OMR.Api.TemplateProcessor templateProcessor = null;
+using(MemoryStream patternStream = new MemoryStream(pattern))
+{
+	templateProcessor = omrEngine.GetTemplateProcessor(patternStream, Encoding.UTF8);
+}
+// Recognize
+Aspose.OMR.Model.RecognitionResult recognitionResult = null;
+using(MemoryStream formStream = new MemoryStream(form))
+{
+	recognitionResult = templateProcessor.RecognizeImage(formStream);
+}
+```
+
+### Batch recognition
+
+The whole idea behind OMR is to automatically process hundreds of forms. Aspose.OMR for .NET greatly simplifies this task by allowing you to recognize a directory with form images with a [single method](https://apireference.aspose.com/omr/net/aspose.omr.api/templateprocessor/recognizefolder/) instead recognizing files one by one:
+
+```csharp
+Aspose.OMR.Api.OmrEngine omrEngine = new Aspose.OMR.Api.OmrEngine();
+Aspose.OMR.Api.TemplateProcessor templateProcessor = omrEngine.GetTemplateProcessor("pattern.omr");
+Aspose.OMR.Model.RecognitionResult recognitionResults[] = templateProcessor.RecognizeFolder(@"C:\final_exam\");
+```
+
+### Recognizing multi-page forms
+
+If a form consists of several pages, use [`RecognizeMultiPageTemplate`](https://apireference.aspose.com/omr/net/aspose.omr.api/templateprocessor/recognizemultipagetemplate/) method to recognize them as a single entity:
+
+```csharp
+string[] formPages = { "page1.png", "page2.png", "page3.png" };
+Aspose.OMR.Api.OmrEngine omrEngine = new Aspose.OMR.Api.OmrEngine();
+Aspose.OMR.Api.TemplateProcessor templateProcessor = omrEngine.GetTemplateProcessor("pattern.omr");
+Aspose.OMR.Model.RecognitionResult recognitionResult[] = templateProcessor.RecognizeMultiPageTemplate(formPages);
+```
+
+## Saving recognition results
+
+Recognition results are returned in the most popular data storage formats that can be imported into any popular database or analysis system: CSV, XML or JSON. See more information in the [dedicated article](/omr/net/recognition/save/).
