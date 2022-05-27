@@ -87,7 +87,7 @@ using(MemoryStream formStream = new MemoryStream(form))
 
 ### Batch recognition
 
-The whole idea behind OMR is to automatically process hundreds of forms. Aspose.OMR for .NET greatly simplifies this task by allowing you to recognize a directory with form images with a [single method](https://apireference.aspose.com/omr/net/aspose.omr.api/templateprocessor/recognizefolder/) instead recognizing files one by one:
+The whole idea behind OMR is to automatically process hundreds of forms. Aspose.OMR for .NET greatly simplifies this task by allowing you to recognize a directory with form images using a [single method](https://apireference.aspose.com/omr/net/aspose.omr.api/templateprocessor/recognizefolder/) rather than recognizing files one by one:
 
 ```csharp
 Aspose.OMR.Api.OmrEngine omrEngine = new Aspose.OMR.Api.OmrEngine();
@@ -109,3 +109,7 @@ Aspose.OMR.Model.RecognitionResult recognitionResult[] = templateProcessor.Recog
 ## Saving recognition results
 
 Recognition results are returned in the most popular data storage formats that can be imported into any popular database or analysis system: CSV, XML or JSON. See more information in the [dedicated article](/omr/net/recognition/save/).
+
+## Interactive adjustments and debugging
+
+You can use the [graphical user interface control](/omr/net/working-with-ui-control/) bundled with Aspose.OMR for .NET package to interactively [fine tuning recognition accuracy](/omr/net/recognition/accuracy-threshold/) before batch processing a large number of scanned forms or for investigating recognition problems.

@@ -20,9 +20,6 @@ keywords:
 
 After the [recognition](/omr/net/recognition/) is finished, you can get results in the most popular data storage formats.
 
-- **JSON** - the most popular popular open standard format for describing nested data structures. Best suited for NoSQL databases or web.
-- **XML** - **E**xtensible **M**arkup **L**anguage, a universal format for most systems.
-
 ## Saving as CSV
 
 **Comma-separated values (CSV)** is a lightweight text format that uses a comma to separate values in a table-like structure. Best suited for spreadsheet applications and simple relational database tables.

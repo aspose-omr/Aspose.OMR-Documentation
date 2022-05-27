@@ -21,7 +21,7 @@ Different types of OMR forms can take different types of marks. Answer sheets us
 
 In addition, paper quality, security watermarks, and lighting conditions when taking a photo of the filled form can adversely affect recognition accuracy.
 
-All Aspose.OMR for .NET [recognition methods](/omr/net/recognition/) support `recognitionThreshold` parameter that allows you to fine-tune form processing to produce results with near 100% accuracy. This parameter is called **recognition accuracy threshold**.
+All Aspose.OMR for .NET [recognition methods](/omr/net/recognition/) support `recognitionThreshold` parameter that allows you to fine-tune form processing and produce results with near 100% accuracy. This parameter is called **recognition accuracy threshold**.
 
 From a technical point of view, it defines the fill percentage of the bubble from `0` (empty bubble) to `100` (completely filled bubble). Lower values allow even the lightest marks (like dots or crosses) to be recognized, but may cause dirt, paper defects or watermarks to be treated as false positives. Higher values require a more solid fill and may cause pencil marks or small checks to be ignored.
 
@@ -29,7 +29,7 @@ From a technical point of view, it defines the fill percentage of the bubble fro
 
 {{% alert color="primary" %}} 
 
-It is very important that all the bubbles in the form are filled in the same manner by all respondents. Otherwise, the recognition results may be unreliable, regardless of fine tuning.
+It is very important that all the bubbles in the form are filled in the same manner by all respondents. Otherwise, the recognition results in batch processing may be unreliable, regardless of fine tuning.
 
 {{% /alert %}} 
 

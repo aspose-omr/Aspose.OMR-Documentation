@@ -1,6 +1,6 @@
 ---
 weight: 30
-date: "2022-05-21"
+date: "2022-05-23"
 author: "Vladimir Lapin"
 type: docs
 url: /net/recognition/write-in/
