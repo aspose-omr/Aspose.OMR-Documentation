@@ -1,9 +1,23 @@
 ---
-title: Aspose.OMR Product Family
-description: Aspose.OMR is an API to recognize OMR, the optical mark recognition meaning, optical marks from OMRSheet which is a digitized sheet of images.
-type: docs
 weight: 10
+date: "2022-06-01"
+author: "Vladimir Lapin"
+type: docs
 url: /
+title: Aspose.OMR Product Family
+description: Aspose.OMR is a fast, reliable and easy-to-use API for designing and recognizing hand-filled questionnaires, surveys, answer sheets and similar forms.
+keywords:
+- OMR
+- form
+- recognition
+- API
+- library
+- software
+- .NET
+- Java
+- app
+- application
+- mobile
 ---
 
 ## Aspose.OMR for .NET
@@ -14,21 +28,27 @@ url: /
 
 **Welcome to the Aspose.OMR for .NET**
 
-Aspose.OMR for .NET is an API to recognize optical marks from OMR digitized sheet images. It can be used to recognize optical marks in a variety of image formats like BMP, JPG, TIF, TIFF, GIF. The API allows capturing human-marked data from document forms such as surveys, questionnaires, multiple-choice examination papers, and other tests. With this solution, it is possible to recognize scanned images and even photos with high accuracy. Recognition is based on a template markup which contains a graphical mapping of the elements to be recognized from the scanned images.
+**Aspose.OMR for .NET** is an easy-to-use, versatile, and cost-effective API for [designing](/omr/net/design-form/), [rendering](/omr/net/generate-template/) and [recognizing](/omr/net/recognition/) hand-filled answer sheets, surveys, applications, and similar forms. With it, you can quickly develop on-premise and web-based .NET software for [optical mark recognition (OMR)](/omr/net/omr-technology/) that work without dedicated scanners, transoptic paper or special ink. Respondents can fill out your forms with a pen or pencil and use any type of marks - artificial intelligence and advanced accuracy calibration ensure reliable results.
+
+Aspose.OMR for .NET library can recognize scanned images or even smartphone photos in the most popular [formats](/omr/net/supported-file-formats/): JPG, PDF, TIFF, PNG, BMP or GIF. Results are returned as CSV, XML or JSON, which allows for importing them into the database, CRM or analysis system of your choice.
+
+In addition to form recognition, Aspose.OMR for .NET can generate professional print forms, from examination papers to customer satisfaction surveys and election ballots. A highly flexible [markup language](/omr/net/design-form/) allows you to combine various elements that best suit your purpose and target audience. You can further personalize and brand OMR forms by adding logos, barcodes, QR codes, or images.
 
 {{% /alert %}} 
 
-## Aspose.OMR for .NET Resources
+### Resources
 
-Following are the links to some useful resources you may need to accomplish your tasks.
+Find more information, download Aspose.OMR for .NET packages and get professional help:
 
-- [Aspose.OMR for .NET Online Documentation](/omr/net/)
-- [Aspose.OMR for .NET Features](/omr/net/features-list/)
+- [Aspose.OMR for .NET online documentation](/omr/net/)
 - [Aspose.OMR for .NET Release Notes](/omr/net/release-notes/)
-- [Install Aspose.OMR for .NET NuGet Package](https://www.nuget.org/packages/Aspose.Omr/)
-- [Aspose.OMR for .NET API Reference Guide](https://apireference.aspose.com/net/omr)
-- [Aspose.OMR for .NET Free Support Forum](https://forum.aspose.com/c/omr)
-- [Aspose.OMR for .NET Paid Support Helpdesk](https://helpdesk.aspose.com/)
+- [Aspose.OMR for .NET NuGet package](https://www.nuget.org/packages/Aspose.Omr/)
+- [Aspose.OMR for .NET downloads](https://downloads.aspose.com/omr/net)
+- [Aspose.OMR for .NET API reference](https://apireference.aspose.com/omr/net)
+- [Aspose.OMR for .NET Examples](https://github.com/aspose-omr/Aspose.OMR-for-.NET)
+- [Blog](https://blog.aspose.com/category/omr/)
+- [Free Support Forum](https://forum.aspose.com/c/omr/38)
+- [Paid Support Helpdesk](https://helpdesk.aspose.com/)
 
 ## Aspose.OMR for Java
 
@@ -38,19 +58,28 @@ Following are the links to some useful resources you may need to accomplish your
 
 **Welcome to the Aspose.OMR for Java**
 
-Aspose.OMR for Java is an API to recognize optical marks from OMR digitized sheet images. It can be used to recognize optical marks in a variety of image formats like BMP, JPG, TIF, TIFF, GIF. The API allows capturing human-marked data from document forms such as surveys, questionnaires, multiple-choice examination papers, and other tests. With this solution, it is possible to recognize scanned images and even photos with high accuracy. Recognition is based on a template markup which contains a graphical mapping of the elements to be recognized from the scanned images.
+**Aspose.OMR for Java** is an fast, versatile, and cost-effective Java API for designing, rendering and recognizing hand-filled answer sheets, surveys, applications, and similar forms. With it, you can quickly develop on-premise and web-based software for optical mark recognition (OMR) that work without dedicated scanners, transoptic paper or special ink. Respondents can fill out your forms with a pen or pencil and use any type of marks - artificial intelligence and advanced accuracy calibration ensure reliable results.
 
 {{% /alert %}} 
 
-## Aspose.OMR for Java Resources
+### Resources
 
-The following are the links to some useful resources you may need to accomplish your tasks.
+Find more information, download Aspose.OMR for Java and get professional help:
 
-- [Aspose.OMR for Java Online Documentation](/omr/java/)
-- [Aspose.OMR for Java Features](/omr/java/features-list/)
+- [Aspose.OMR for Java online documentation](/omr/java/)
 - [Aspose.OMR for Java Release Notes](/omr/java/release-notes/)
 - [Install Aspose.OMR for Java from Maven Repository](/omr/java/installation/)
-- [Aspose.OMR for Java API Reference Guide](https://apireference.aspose.com/java/omr)
-- [Aspose.OMR for Java Free Support Forum](https://forum.aspose.com/c/omr)
-- [Aspose.OMR for Java Paid Support Helpdesk](https://helpdesk.aspose.com/)
+- [Aspose.OMR for Java downloads](https://downloads.aspose.com/omr/java)
+- [Aspose.OMR for Java API reference](https://apireference.aspose.com/omr/java)
+- [Blog](https://blog.aspose.com/category/omr/)
+- [Free Support Forum](https://forum.aspose.com/c/omr/38)
+- [Paid Support Helpdesk](https://helpdesk.aspose.com/)
 
+## Applications
+
+Discover full capabilities of Aspose.OMR without writing a single line of code.
+
+- [Free online applications](/omr/apps/web/)  
+  Instantly create and recognize OMR forms from anywhere using only a web browser. No additional software is required on your computer.
+- [Free mobile app](/omr/apps/mobile/)  
+  Create, photograph and recognize OMR forms with your smartphone.
