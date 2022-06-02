@@ -110,6 +110,8 @@ Aspose.OMR offers a wide range of elements that allow you to create forms of any
 
 - [Layout](/omr/net/json-markup/elements-layout/)  
   Arrange other elements; define the appearance and design of OMR forms.
+- [Questionnaires](/omr/net/json-markup/elements-questionnaire/)  
+  Build OMR-ready surveys, ballots, checklists, and similar forms.
 - [Answer sheets](/omr/net/json-markup/elements-bubble-matrix/)  
   Populate a form with a grid of bubbles representing answers to an exam, test, or assessment.
 - [Barcodes and QR codes](/omr/net/json-markup/elements-barcode/)  

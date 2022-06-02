@@ -55,9 +55,9 @@ Name | Type | Default value | Description
 **threshold** | integer | 3 | Set the recognition accuracy for the answer boxes, from 0 to 100. Lower values allow even the lightest marks to be recognized, but may cause dirt or paper defects to be treated as marks. Higher values require a more solid fill and may cause pencil marks or small checks to be ignored.<br /><br />![Checkbox threshold](checkbox-threshold.png)
 **bubble_size** | string | "normal" | Size of bubbles: `"extrasmall"`, `"small"`, `"normal"`, `"large"`, or `"extralarge"`.
 **hide_name** | Boolean | false | Set to `true` to hide the label (**name**) of the **CheckBox** element.
+**font_family** | string | "Segoe UI" | The font family for the text.
 **font_style** | string | "regular" | The font style for a **CheckBox** label: `"bold"`, `"italic"` or `"underline"`.<br />Several font styles can be combined by providing them as an array, for example `["bold", "italic"]`.
 **font_size** | integer | 12 | Font size for the **CheckBox** label.
-**align** | string| "left" | Horizontal alignment of **CheckBox**s element: `"left"`, `"center"` or `"right"`.
 
 ## Allowed child elements
 

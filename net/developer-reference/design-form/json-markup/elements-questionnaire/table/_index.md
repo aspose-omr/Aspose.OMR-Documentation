@@ -121,7 +121,7 @@ This element is declared as an object with `"element_type": "TableHeader"` prope
 Name | Type | Description
 ---- | ---- | -----------
 **element_type** | string | Must be `"TableHeader"` (case-insensitive).
-**children** | array | [**Content**](/omr/net/json-markup/content/) element that defines the question text and one or more [**TableAnswer**]({{< ref "#tableanswer-element" >}}) elements that define the answers.<br />The number of **TableAnswer** elements must be equal to the value of the c property of the **Table** element.
+**children** | array | [**Content**](/omr/net/json-markup/content/) element that defines the question text and one or more [**TableAnswer**]({{< ref "#tableanswer-element" >}}) elements that define the answers.<br />The number of **TableAnswer** elements must be equal to the value of the **answers_count** property of the **Table** element.
 
 #### Optional properties
 

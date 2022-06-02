@@ -1,6 +1,6 @@
 ---
 weight: 10
-date: "2022-06-01"
+date: "2022-05-19"
 author: "Vladimir Lapin"
 type: docs
 url: /net/
@@ -55,14 +55,11 @@ Dive deep into OMR forms and applications development with Aspose.OMR for .NET.
 
 ## Aspose.OMR for .NET online apps
 
-Explore free online apps built with Aspose.OMR for .NET. Experience product capabilities without writing a single line of code.
+Explore free online apps build with Aspose.OMR for .NET. Experience product capabilities without writing a single line of code.
 
-- [Create Answer Sheet](https://products.aspose.app/omr/create-answer-sheet)  
-  Create a printable answer sheet ready for automatic recognition.
-- [Scan Answer Sheet](https://products.aspose.app/omr/scan-answer-sheet)  
-  Automatically recognize OMR-ready answer sheets with your web browser.
-- [Grade Calculator](https://products.aspose.app/omr/grade-calculator)  
-  Easily calculate a grade of the test, exam, quiz or assignment using free online grade calculator.
+- [Create Answer Sheet](https://products.aspose.app/omr/create-answer-sheet)
+- [Scan Answer Sheet](https://products.aspose.app/omr/scan-answer-sheet)
+- [Grade Calculator](https://products.aspose.app/omr/grade-calculator)
 
 ## Showcases
 

@@ -86,7 +86,7 @@ Name | Type | Default value | Description
 ---- | ---- | ------------- | -----------
 **name** | string | Used for identifying the marked answer in recognition results.
 
-## Combining with write_in elements
+## Combining with WriteIn elements
 
 [**WriteIn**](/omr/net/json-markup/writein/) element can be included into **VerticalChoicebox** element to give the respondent the opportunity to provide a free-form answer to an open-ended question.
 
@@ -106,6 +106,8 @@ In this case, the content of the element is stored to [Images](https://apirefere
 					"children": [
 						{
 							"element_type": "Block",
+							"border_type": "square",
+							"border-size": 5,
 							"children": [
 								{
 									"element_type": "Content",

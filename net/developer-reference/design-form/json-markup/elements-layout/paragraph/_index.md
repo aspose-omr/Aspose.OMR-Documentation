@@ -54,7 +54,7 @@ Name | Type | Default value | Description
 To allow the text to wrap around an image:
 
 1. Set the **width**, **height**, **x** and **y** properties of the [**Image**](/omr/net/json-markup/image/) element.
-2. Set the **type** property of the **Paragraph** element to `"multiple"`.
+2. Set the **paragraph_type** property of the **Paragraph** element to `"multiple"`.
 
 ## Allowed child elements
 
