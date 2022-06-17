@@ -1,10 +1,10 @@
 ---
-weight: 1
+weight: 70
 date: "2022-06-16"
 author: "Vladimir Lapin"
 type: docs
-url: /net/release-notes/latest/
-title: Latest release (June 2022)
+url: /net/aspose-omr-for-net-22-6-release-notes/
+title: Aspose.OMR for .NET 22.6 Release Notes
 description: A summary of recent changes, enhancements and bug fixes in Aspose.OMR for .NET 22.6 (June 2022) release.
 keywords:
 - 2022
