@@ -44,7 +44,7 @@ Adding images to a survey requires changes to both the application code and the 
 
 ### Application code
 
-You must add all images you mention in the template to the [ImagesPaths](https://apireference.aspose.com/omr/net/aspose.omr.generation/globalpagesettings/fields/imagespaths) parameter of the [global page settings](https://apireference.aspose.com/omr/net/aspose.omr.generation/globalpagesettings).
+You must add all images you mention in the template to the [ImagesPaths](https://reference.aspose.com/omr/net/aspose.omr.generation/globalpagesettings/fields/imagespaths) parameter of the [global page settings](https://reference.aspose.com/omr/net/aspose.omr.generation/globalpagesettings).
 
 If the image file is named `aspose-logo.png` and is located in the same folder as the application exactable:
 

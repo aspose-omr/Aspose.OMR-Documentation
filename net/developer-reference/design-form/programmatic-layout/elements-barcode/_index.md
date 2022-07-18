@@ -94,7 +94,7 @@ Aspose.OMT for .NET can generate and recognize a wide variety of barcodes:
 
 ## Declaration
 
-This element is declared as an instance of [`BarcodeConfig`](https://apireference.aspose.com/omr/net/aspose.omr.generation.config.elements/barcodeconfig/) class. Reference `Aspose.OMR.Generation.Config.Elements` and `Aspose.OMR.Generation.Config.Enums` namespaces to use `ContentConfig` types without specifying the fully qualified namespace:
+This element is declared as an instance of [`BarcodeConfig`](https://reference.aspose.com/omr/net/aspose.omr.generation.config.elements/barcodeconfig/) class. Reference `Aspose.OMR.Generation.Config.Elements` and `Aspose.OMR.Generation.Config.Enums` namespaces to use `ContentConfig` types without specifying the fully qualified namespace:
 
 ```csharp
 using Aspose.OMR.Generation.Config.Elements;
@@ -120,10 +120,10 @@ Name | Type | Description
 Name | Type | Default value | Description
 ---- | ---- | ------------- | -----------
 **Name** | `string` | _n/a_ | Used as an element's identifier in recognition results and as a reminder of the element's purpose in template source; for example, "_Web site_".<br />This text is not displayed on the form.
-**BarcodeType** | [Barcode type](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/encodetypes/) | _QR Code_ | Type of the barcode.
-**BarcodeQRVersion** | [`Aspose.BarCode.Generation.QRVersion`](https://apireference.aspose.com/barcode/net/aspose.barcode.generation/qrversion/) | _Automatic_ | QR Code version. Only applicable when `BarcodeType` is `QR`.
+**BarcodeType** | [Barcode type](https://reference.aspose.com/barcode/net/aspose.barcode.generation/encodetypes/) | _QR Code_ | Type of the barcode.
+**BarcodeQRVersion** | [`Aspose.BarCode.Generation.QRVersion`](https://reference.aspose.com/barcode/net/aspose.barcode.generation/qrversion/) | _Automatic_ | QR Code version. Only applicable when `BarcodeType` is `QR`.
 **DrawCodetext** | `bool` | false | Add a string from the `Value` property below the barcode image.
-**Align** | [`AlignmentEnum`](https://apireference.aspose.com/omr/net/aspose.omr.generation.config.enums/alignmentenum/) | `AlignmentEnum.Center` | Horizontal alignment of the barcode image.
+**Align** | [`AlignmentEnum`](https://reference.aspose.com/omr/net/aspose.omr.generation.config.enums/alignmentenum/) | `AlignmentEnum.Center` | Horizontal alignment of the barcode image.
 **Height** | `int` | _Automatic_ | Barcode height, in pixels. The width is adjusted automatically.
 **X** | `int` | _n/a_ | Set the absolute position of the barcode relative to the left edge of the page.<br />Overrides the value of `Align` property.
 **Y** | `int` | _n/a_ | Set the absolute position of the barcode relative to the top edge of the page.

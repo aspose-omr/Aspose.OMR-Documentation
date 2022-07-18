@@ -27,7 +27,7 @@ This element generates a vertical block with answers.
 
 ## Declaration
 
-**VerticalChoiceBoxConfig** element is declared as an instance of [`VerticalChoiceBoxConfig`](https://apireference.aspose.com/omr/net/aspose.omr.generation.config.elements.parents/verticalchoiceboxconfig/) class. Reference `Aspose.OMR.Generation.Config.Elements.Parents`, `Aspose.OMR.Generation.Config.Elements` and `Aspose.OMR.Generation.Config.Enums` namespaces to use `VerticalChoiceBoxConfig` types without specifying the fully qualified namespace:
+**VerticalChoiceBoxConfig** element is declared as an instance of [`VerticalChoiceBoxConfig`](https://reference.aspose.com/omr/net/aspose.omr.generation.config.elements.parents/verticalchoiceboxconfig/) class. Reference `Aspose.OMR.Generation.Config.Elements.Parents`, `Aspose.OMR.Generation.Config.Elements` and `Aspose.OMR.Generation.Config.Enums` namespaces to use `VerticalChoiceBoxConfig` types without specifying the fully qualified namespace:
 
 ```csharp
 using Aspose.OMR.Generation.Config.Elements;
@@ -73,7 +73,7 @@ Name | Type | Default value | Description
 
 This element declares an answer to the **VerticalChoiceBoxConfig** question.
 
-**AnswerConfig** element is declared as an instance of [`AnswerConfig`](https://apireference.aspose.com/omr/net/aspose.omr.generation.config.elements.parents/answerconfig/) class.
+**AnswerConfig** element is declared as an instance of [`AnswerConfig`](https://reference.aspose.com/omr/net/aspose.omr.generation.config.elements.parents/answerconfig/) class.
 
 Each **AnswerConfig** element can include the following elements (as well as their combinations) in its **children** property:
 
@@ -97,7 +97,7 @@ Name | Type | Default value | Description
 
 [**WriteInConfig**](/omr/net/programmatic-forms/writeinconfig/) element can be included into **VerticalChoiceBoxConfig** element to give the respondent the opportunity to provide a free-form answer to an open-ended question.
 
-In this case, the content of the element is stored to [Images](https://apireference.aspose.com/omr/net/aspose.omr.model/recognitionresult/properties/images) collection only if the respondent marks the corresponding bubble.
+In this case, the content of the element is stored to [Images](https://reference.aspose.com/omr/net/aspose.omr.model/recognitionresult/properties/images) collection only if the respondent marks the corresponding bubble.
 
 ## Example
 

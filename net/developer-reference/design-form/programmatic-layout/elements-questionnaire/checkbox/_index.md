@@ -26,7 +26,7 @@ You can directly specify the recognition accuracy for this element so that even 
 
 ## Declaration
 
-**CheckBoxConfig** element is declared as an instance of [`CheckBoxConfig`](https://apireference.aspose.com/omr/net/aspose.omr.generation.config.elements.parents/checkboxconfig/) class. Reference `Aspose.OMR.Generation.Config.Elements.Parents`, `Aspose.OMR.Generation.Config.Elements` and `Aspose.OMR.Generation.Config.Enums` namespaces to use `CheckBoxConfig` types without specifying the fully qualified namespace:
+**CheckBoxConfig** element is declared as an instance of [`CheckBoxConfig`](https://reference.aspose.com/omr/net/aspose.omr.generation.config.elements.parents/checkboxconfig/) class. Reference `Aspose.OMR.Generation.Config.Elements.Parents`, `Aspose.OMR.Generation.Config.Elements` and `Aspose.OMR.Generation.Config.Enums` namespaces to use `CheckBoxConfig` types without specifying the fully qualified namespace:
 
 ```csharp
 using Aspose.OMR.Generation.Config.Elements;
@@ -61,10 +61,10 @@ Name | Type | Description
 Name | Type | Default value | Description
 ---- | ---- | ------------- | -----------
 **Threshold** | `int` | 3 | Set the recognition accuracy for the answer boxes, from 0 to 100. Lower values allow even the lightest marks to be recognized, but may cause dirt or paper defects to be treated as marks. Higher values require a more solid fill and may cause pencil marks or small checks to be ignored.<br /><br />![Checkbox threshold](program-threshold.png)
-**BubbleSize** | [`BubbleSize`](https://apireference.aspose.com/omr/net/aspose.omr.generation/bubblesize/) | `BubbleSize.Normal` | Size of bubbles.
+**BubbleSize** | [`BubbleSize`](https://reference.aspose.com/omr/net/aspose.omr.generation/bubblesize/) | `BubbleSize.Normal` | Size of bubbles.
 **HideName** | `bool` | false | Set to `true` to hide the label (**Name**) of the **CheckBoxConfig** element.
 **FontFamily** | `string` | "Segoe UI" | The font family for the text.
-**FontStyle** | [`FontStyle`](https://apireference.aspose.com/omr/net/aspose.omr.generation/fontstyle/) | `FontStyle.Regular` | The font style for a text.<br />Several font styles can be combined with `\|` operator, for example `FontStyle.Bold \| FontStyle.Italic`.
+**FontStyle** | [`FontStyle`](https://reference.aspose.com/omr/net/aspose.omr.generation/fontstyle/) | `FontStyle.Regular` | The font style for a text.<br />Several font styles can be combined with `\|` operator, for example `FontStyle.Bold \| FontStyle.Italic`.
 **FontSize** | `int` | 12 | Font size for the text.
 
 ## Allowed child elements

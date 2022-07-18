@@ -66,7 +66,7 @@ Attribute | Default value | Description | Usage example
 
 [**Write_in**](/omr/net/txt-markup/write_in/) element can be included into **vertical_choicebox** element to give the respondent the opportunity to provide a free-form answer to an open-ended question.
 
-In this case, the content of the element is stored to [Images](https://apireference.aspose.com/omr/net/aspose.omr.model/recognitionresult/properties/images) collection only if the respondent marks the corresponding bubble.
+In this case, the content of the element is stored to [Images](https://reference.aspose.com/omr/net/aspose.omr.model/recognitionresult/properties/images) collection only if the respondent marks the corresponding bubble.
 
 ## Example
 

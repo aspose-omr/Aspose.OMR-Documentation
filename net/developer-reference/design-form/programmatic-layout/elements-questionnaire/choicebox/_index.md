@@ -23,7 +23,7 @@ This element generates a question with a fixed number of answers. The respondent
 
 ## Declaration
 
-**ChoiceBoxConfig** element is declared as an instance of [`ChoiceBoxConfig`](https://apireference.aspose.com/omr/net/aspose.omr.generation.config.elements/choiceboxconfig/) class. Reference `Aspose.OMR.Generation.Config.Elements` and `Aspose.OMR.Generation.Config.Enums` namespaces to use `ChoiceBoxConfig` types without specifying the fully qualified namespace:
+**ChoiceBoxConfig** element is declared as an instance of [`ChoiceBoxConfig`](https://reference.aspose.com/omr/net/aspose.omr.generation.config.elements/choiceboxconfig/) class. Reference `Aspose.OMR.Generation.Config.Elements` and `Aspose.OMR.Generation.Config.Enums` namespaces to use `ChoiceBoxConfig` types without specifying the fully qualified namespace:
 
 ```csharp
 using Aspose.OMR.Generation.Config.Elements;
@@ -54,9 +54,9 @@ Name | Type | Default value | Description
 ---- | ---- | ------------- | -----------
 **Name** | `string` | _n/a_ | Used as an element's identifier in recognition results and as a reminder of the element's purpose in template source; for example, "_Satisfaction_".<br />This text is not displayed on the form.
 **FontFamily** | `string` | "Segoe UI" | The font family for the text.
-**FontStyle** | [`FontStyle`](https://apireference.aspose.com/omr/net/aspose.omr.generation/fontstyle/) | `FontStyle.Regular` | The font style for a text.<br />Several font styles can be combined with `\|` operator, for example `FontStyle.Bold \| FontStyle.Italic`.
+**FontStyle** | [`FontStyle`](https://reference.aspose.com/omr/net/aspose.omr.generation/fontstyle/) | `FontStyle.Regular` | The font style for a text.<br />Several font styles can be combined with `\|` operator, for example `FontStyle.Bold \| FontStyle.Italic`.
 **FontSize** | `int` | 12 | Font size for the text.
-**TextAlignment** | [`AlignmentEnum`](https://apireference.aspose.com/omr/net/aspose.omr.generation.config.enums/alignmentenum/) | `AlignmentEnum.Left` | Horizontal text alignment.
+**TextAlignment** | [`AlignmentEnum`](https://reference.aspose.com/omr/net/aspose.omr.generation.config.enums/alignmentenum/) | `AlignmentEnum.Left` | Horizontal text alignment.
 
 ## Rating scale
 

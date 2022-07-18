@@ -31,7 +31,7 @@ Use one of the following methods, depending on your preferred format of the prin
 
 ## Save as image
 
-Call `Save` method of of the [`GenerationResult`](https://apireference.aspose.com/omr/net/aspose.omr.generation/generationresult) object returned by [`GenerateTemplate` or `GenerateJSONTemplate` methods](/omr/net/generate-template/). The method takes the following arguments:
+Call `Save` method of of the [`GenerationResult`](https://reference.aspose.com/omr/net/aspose.omr.generation/generationresult) object returned by [`GenerateTemplate` or `GenerateJSONTemplate` methods](/omr/net/generate-template/). The method takes the following arguments:
 
 - Target directory name, either absolute or relative to your application's working directory. Provide an empty string to save files into the working directory.
 - File name mask (without extension) for printable form pages and the recognition pattern.
@@ -53,7 +53,7 @@ generationResult.Save("", "OMR-Form");
 
 ## Save as PDF
 
-Call `SaveAsPdf` method of of the [`GenerationResult`](https://apireference.aspose.com/omr/net/aspose.omr.generation/generationresult) object returned by [`GenerateTemplate` or `GenerateJSONTemplate` methods](/omr/net/generate-template/). The method takes the following arguments:
+Call `SaveAsPdf` method of of the [`GenerationResult`](https://reference.aspose.com/omr/net/aspose.omr.generation/generationresult) object returned by [`GenerateTemplate` or `GenerateJSONTemplate` methods](/omr/net/generate-template/). The method takes the following arguments:
 
 - Target directory name, either absolute or relative to your application's working directory. Provide an empty string to save files into the working directory.
 - File name mask (without extension) for printable form pages and the recognition pattern.
@@ -75,7 +75,7 @@ generationResult.SaveAsPdf("result", "OMR-Form");
 
 ## Iterating through pages
 
-[GenerationResult](https://apireference.aspose.com/omr/net/aspose.omr.generation/generationresult) object returned by [`GenerateTemplate` or `GenerateJSONTemplate` methods](/omr/net/generate-template/) also contains a collection of all generated printable pages (as `System.Drawing.Bitmap` objects). You can manually iterate through this list and save the pages in [different formats](/omr/net/supported-file-formats/) if necessary.
+[GenerationResult](https://reference.aspose.com/omr/net/aspose.omr.generation/generationresult) object returned by [`GenerateTemplate` or `GenerateJSONTemplate` methods](/omr/net/generate-template/) also contains a collection of all generated printable pages (as `System.Drawing.Bitmap` objects). You can manually iterate through this list and save the pages in [different formats](/omr/net/supported-file-formats/) if necessary.
 
 ### Example
 

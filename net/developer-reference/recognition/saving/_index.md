@@ -24,7 +24,7 @@ After the [recognition](/omr/net/recognition/) is finished, you can get results 
 
 **Comma-separated values (CSV)** is a lightweight text format that uses a comma to separate values in a table-like structure. Best suited for spreadsheet applications and simple relational database tables.
 
-To get recognition results in CSV format, use the following methods of [`Aspose.OMR.Model.RecognitionResult`](https://apireference.aspose.com/omr/net/aspose.omr.model/recognitionresult/) class:
+To get recognition results in CSV format, use the following methods of [`Aspose.OMR.Model.RecognitionResult`](https://reference.aspose.com/omr/net/aspose.omr.model/recognitionresult/) class:
 
 ### GetCsv
 
@@ -52,7 +52,7 @@ MemoryStream result = recognitionResult.GetCsvAsStream(Encoding.UTF8);
 
 **JSON** is the most popular popular open standard format for describing nested data structures. Best suited for NoSQL databases or web.
 
-To get recognition results in JSON format, use the following methods of [`Aspose.OMR.Model.RecognitionResult`](https://apireference.aspose.com/omr/net/aspose.omr.model/recognitionresult/) class:
+To get recognition results in JSON format, use the following methods of [`Aspose.OMR.Model.RecognitionResult`](https://reference.aspose.com/omr/net/aspose.omr.model/recognitionresult/) class:
 
 ### GetJson
 
@@ -80,7 +80,7 @@ MemoryStream result = recognitionResult.GetJsonAsStream(Encoding.UTF8);
 
 **Etensible Markup Language (XML)** is a universal format for most systems - from databases to CRM.
 
-To get recognition results in XML format, use the following methods of [`Aspose.OMR.Model.RecognitionResult`](https://apireference.aspose.com/omr/net/aspose.omr.model/recognitionresult/) class:
+To get recognition results in XML format, use the following methods of [`Aspose.OMR.Model.RecognitionResult`](https://reference.aspose.com/omr/net/aspose.omr.model/recognitionresult/) class:
 
 ### GetXml
 

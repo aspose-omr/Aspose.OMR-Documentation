@@ -20,23 +20,23 @@ keywords:
 - color
 ---
 
-The paper size, orientation, font, and other layout settings are configured through [`GlobalPageSettings`](https://apireference.aspose.com/omr/net/aspose.omr.generation/globalpagesettings) object. It also allows you to provide paths to images used in the form. `GlobalPageSettings` object is passed as an optional parameter to the [template generation methods](/omr/net/generate-template/).
+The paper size, orientation, font, and other layout settings are configured through [`GlobalPageSettings`](https://reference.aspose.com/omr/net/aspose.omr.generation/globalpagesettings) object. It also allows you to provide paths to images used in the form. `GlobalPageSettings` object is passed as an optional parameter to the [template generation methods](/omr/net/generate-template/).
 
 ## Page setup
 
 You can customize the following page layout parameters through `GlobalPageSettings`:
 
-- [`PaperSize`](https://apireference.aspose.com/omr/net/aspose.omr.generation/papersize) - page sizes and dimensions. Default: _A4 (210 x 297 mm)_.
-- [`Orientation`](https://apireference.aspose.com/omr/net/aspose.omr.generation/orientation) - page orientation. Default: _portrait (vertical)_.
+- [`PaperSize`](https://reference.aspose.com/omr/net/aspose.omr.generation/papersize) - page sizes and dimensions. Default: _A4 (210 x 297 mm)_.
+- [`Orientation`](https://reference.aspose.com/omr/net/aspose.omr.generation/orientation) - page orientation. Default: _portrait (vertical)_.
 - `PageMarginLeft` and `PageMarginRight` - left and right margins of the page, in pixels.
 - `FontFamily` - default font family for all texts, except for those directly overridden in the source code. For example, `"Courier New"`.  
   {{% alert color="primary" %}}
   Make sure the font is installed on the system that generates the printable form!
   {{% /alert %}}
 - `FontSize` - default font size for all texts, except for those directly overridden in the source code.
-- [`FontStyle`](https://apireference.aspose.com/omr/net/aspose.omr.generation/fontstyle) - default font style for all texts, except for those directly overridden in the source code.
-- [`BubbleSize`](https://apireference.aspose.com/omr/net/aspose.omr.generation/bubblesize) - default size of answer bubbles, except for those directly overridden in the source code.
-- [`BubbleColor`](https://apireference.aspose.com/omr/net/aspose.omr.generation/color) - color of all bubbles. Default: black.
+- [`FontStyle`](https://reference.aspose.com/omr/net/aspose.omr.generation/fontstyle) - default font style for all texts, except for those directly overridden in the source code.
+- [`BubbleSize`](https://reference.aspose.com/omr/net/aspose.omr.generation/bubblesize) - default size of answer bubbles, except for those directly overridden in the source code.
+- [`BubbleColor`](https://reference.aspose.com/omr/net/aspose.omr.generation/color) - color of all bubbles. Default: black.
 
 ## Image paths
 

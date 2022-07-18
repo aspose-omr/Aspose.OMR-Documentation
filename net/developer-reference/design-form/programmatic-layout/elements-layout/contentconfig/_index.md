@@ -22,7 +22,7 @@ This element is used to add a single line of text to the parent element. **Conte
 
 ## Declaration
 
-**ContentConfig** element is declared as an instance of [`ContentConfig`](https://apireference.aspose.com/omr/net/aspose.omr.generation.config.elements/contentconfig/) class. Reference `Aspose.OMR.Generation.Config.Elements` and `Aspose.OMR.Generation.Config.Enums` namespaces to use `ContentConfig` types without specifying the fully qualified namespace:
+**ContentConfig** element is declared as an instance of [`ContentConfig`](https://reference.aspose.com/omr/net/aspose.omr.generation.config.elements/contentconfig/) class. Reference `Aspose.OMR.Generation.Config.Elements` and `Aspose.OMR.Generation.Config.Enums` namespaces to use `ContentConfig` types without specifying the fully qualified namespace:
 
 ```csharp
 using Aspose.OMR.Generation.Config.Elements;
@@ -48,10 +48,10 @@ Name | Type | Description
 Name | Type | Default value | Description
 ---- | ---- | ------------- | -----------
 **FontFamily** | `string` | "Segoe UI" | The font family for the text.
-**FontStyle** | [`FontStyle`](https://apireference.aspose.com/omr/net/aspose.omr.generation/fontstyle/) | `FontStyle.Regular` | The font style for a text.<br />Several font styles can be combined with `\|` operator, for example `FontStyle.Bold \| FontStyle.Italic`.
+**FontStyle** | [`FontStyle`](https://reference.aspose.com/omr/net/aspose.omr.generation/fontstyle/) | `FontStyle.Regular` | The font style for a text.<br />Several font styles can be combined with `\|` operator, for example `FontStyle.Bold \| FontStyle.Italic`.
 **FontSize** | `int` | 12 | Font size for the text.
-**TextAlignment** | [`AlignmentEnum`](https://apireference.aspose.com/omr/net/aspose.omr.generation.config.enums/alignmentenum/) | `AlignmentEnum.Left` | Horizontal text alignment.
-**ContentType** | [`ContentType`](https://apireference.aspose.com/omr/net/aspose.omr.generation.config.enums/contenttype/) | `ContentType.Normal` | Set the value of this property to `ContentType.Cells` to draw a border around every character, including spaces.
+**TextAlignment** | [`AlignmentEnum`](https://reference.aspose.com/omr/net/aspose.omr.generation.config.enums/alignmentenum/) | `AlignmentEnum.Left` | Horizontal text alignment.
+**ContentType** | [`ContentType`](https://reference.aspose.com/omr/net/aspose.omr.generation.config.enums/contenttype/) | `ContentType.Normal` | Set the value of this property to `ContentType.Cells` to draw a border around every character, including spaces.
 
 ## Allowed child elements
 

@@ -90,7 +90,7 @@ Find more information, download Aspose.OMR for .NET packages and get professiona
 - [NuGet package](https://www.nuget.org/packages/Aspose.Omr/)
 - [Downloads](https://downloads.aspose.com/omr/net)
 - [GitHub repository](https://github.com/aspose-omr/Aspose.OMR-for-.NET)
-- [API reference](https://apireference.aspose.com/omr/net)
+- [API reference](https://reference.aspose.com/omr/net)
 - [Examples](https://github.com/aspose-omr/Aspose.OMR-for-.NET)
 - [Blog](https://blog.aspose.com/category/omr/)
 - [Free Support Forum](https://forum.aspose.com/c/omr/38)

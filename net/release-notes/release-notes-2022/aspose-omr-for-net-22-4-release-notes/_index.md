@@ -23,10 +23,10 @@ This article contains a summary of recent changes, enhancements and bug fixes in
 
 Key | Summary | Category
 --- | ------- | --------
-OMRNET-445 | Added the ability to customize the right margin of print form pages by specifying the margin width (in pixels) for the `PageMarginRight` property in [`GlobalPageSettings`](https://apireference.aspose.com/omr/net/aspose.omr.generation/globalpagesettings). | New Feature
+OMRNET-445 | Added the ability to customize the right margin of print form pages by specifying the margin width (in pixels) for the `PageMarginRight` property in [`GlobalPageSettings`](https://reference.aspose.com/omr/net/aspose.omr.generation/globalpagesettings). | New Feature
 OMRNET-445 | A barcode can be added to the page footer of the OMR form. | Enhancement
 OMRNET-445 | Added the ability to customize the top padding of the `VerticalChoiceBox` form element by specifying the padding height (in pixels) for the optional `top_padding` element's property. | New Feature
-OMRNET-449 | Added support for new [paper sizes](https://apireference.aspose.com/omr/net/aspose.omr.generation/papersize): **Tabloid (11 x 17 inches)**, non-standard long (**8.5 x 19 inches**) and non-standard extra long (**8.5 x 21 inches**). | Enhancement
+OMRNET-449 | Added support for new [paper sizes](https://reference.aspose.com/omr/net/aspose.omr.generation/papersize): **Tabloid (11 x 17 inches)**, non-standard long (**8.5 x 19 inches**) and non-standard extra long (**8.5 x 21 inches**). | Enhancement
 
 ## Known issues and limitations
 

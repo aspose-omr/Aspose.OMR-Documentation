@@ -43,7 +43,7 @@ Aspose.OMR.Model.RecognitionResult recognitionResults[] = templateProcessor.Reco
 
 ## Adjusting recognition accuracy at run time
 
-Aspose.OMR for .NET allows you to process the form image multiple times with different recognition accuracy thresholds. Use [`Recalculate`](https://apireference.aspose.com/omr/net/aspose.omr.api/templateprocessor/recalculate/) method of [`Aspose.OMR.Api.TemplateProcessor`](https://apireference.aspose.com/omr/net/aspose.omr.api/templateprocessor/) class:
+Aspose.OMR for .NET allows you to process the form image multiple times with different recognition accuracy thresholds. Use [`Recalculate`](https://reference.aspose.com/omr/net/aspose.omr.api/templateprocessor/recalculate/) method of [`Aspose.OMR.Api.TemplateProcessor`](https://reference.aspose.com/omr/net/aspose.omr.api/templateprocessor/) class:
 
 ```csharp
 Aspose.OMR.Api.OmrEngine omrEngine = new Aspose.OMR.Api.OmrEngine();

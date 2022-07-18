@@ -34,7 +34,7 @@ Generated pages are marked with a special QR code that is automatically added to
 
 ## Declaration
 
-**PageConfig** element is declared as an instance of [`PageConfig`](https://apireference.aspose.com/omr/net/aspose.omr.generation.config.elements.parents/pageconfig/) class. Reference `Aspose.OMR.Generation.Config.Elements.Parents` namespace to use `PageConfig` types without specifying the fully qualified namespace:
+**PageConfig** element is declared as an instance of [`PageConfig`](https://reference.aspose.com/omr/net/aspose.omr.generation.config.elements.parents/pageconfig/) class. Reference `Aspose.OMR.Generation.Config.Elements.Parents` namespace to use `PageConfig` types without specifying the fully qualified namespace:
 
 ```csharp
 using Aspose.OMR.Generation.Config.Elements.Parents;

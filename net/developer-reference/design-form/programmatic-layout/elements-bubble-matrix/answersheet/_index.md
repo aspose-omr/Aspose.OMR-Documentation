@@ -27,7 +27,7 @@ This element generates a numbered matrix of bubbles representing answers to a li
 
 ## Declaration
 
-**AnswerSheetConfig** element is declared as an instance of [`AnswerSheetConfig`](https://apireference.aspose.com/omr/net/aspose.omr.generation.config.elements/answersheetconfig/) class. Reference `Aspose.OMR.Generation.Config.Elements` namespace to use `AnswerSheetConfig` types without specifying the fully qualified namespace:
+**AnswerSheetConfig** element is declared as an instance of [`AnswerSheetConfig`](https://reference.aspose.com/omr/net/aspose.omr.generation.config.elements/answersheetconfig/) class. Reference `Aspose.OMR.Generation.Config.Elements` namespace to use `AnswerSheetConfig` types without specifying the fully qualified namespace:
 
 ```csharp
 using Aspose.OMR.Generation.Config.Elements;
@@ -62,7 +62,7 @@ Name | Type | Default value | Description
 **AanswersCount** | `int` | 4 | The total number of bubbles (answers) for each question.<br />You can only set the same number of answers for all questions. If the number of answers is different for each section of the exam, use multiple **AnswerSheetConfig** elements.
 **StartId** | `int` | _Automatic_ | The number of the first line used as a base for further numbering.<br />If omitted, the number will be calculated based on the numbering of previous elements.
 **VerticalMargin** | `int` | 0 | Vertical spacing between lines, in pixels.
-**BubbleSize** | [`BubbleSize`](https://apireference.aspose.com/omr/net/aspose.omr.generation/bubblesize/) | `BubbleSize.Normal` | Size of bubbles.
+**BubbleSize** | [`BubbleSize`](https://reference.aspose.com/omr/net/aspose.omr.generation/bubblesize/) | `BubbleSize.Normal` | Size of bubbles.
 **AnswersValues** | `string[]` | _["A" ... "Z"]_ | Characters to be drawn inside bubbles. The total number of array items must match the value of the **AnswersCount** property.
 **Column** | `int` | 1 | The number of the column where the **AnswerSheetConfig** element will be placed. Only applicable if **AnswerSheetConfig** is placed in a multi-column [**ContainerConfig**](/omr/net/programmatic-forms/containerconfig/) element.
 

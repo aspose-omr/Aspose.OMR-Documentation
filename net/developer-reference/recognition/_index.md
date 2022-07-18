@@ -25,7 +25,7 @@ Make sure that all 4 [positioning markers](/omr/net/omr-form-structure/) are pre
 
 ## Initializing the recognition engine
 
-Aspose.OMR recognition engine is initialized with the recognition pattern (a file with _.OMR_ extension), [generated](/omr/net/generate-template/) along with the printable form. The recognition pattern is loaded using `GetTemplateProcessor` method of [`Aspose.OMR.Api.OmrEngine`](https://apireference.aspose.com/omr/net/aspose.omr.api/omrengine/) class:
+Aspose.OMR recognition engine is initialized with the recognition pattern (a file with _.OMR_ extension), [generated](/omr/net/generate-template/) along with the printable form. The recognition pattern is loaded using `GetTemplateProcessor` method of [`Aspose.OMR.Api.OmrEngine`](https://reference.aspose.com/omr/net/aspose.omr.api/omrengine/) class:
 
 ```csharp
 Aspose.OMR.Api.OmrEngine omrEngine = new Aspose.OMR.Api.OmrEngine();
@@ -56,7 +56,7 @@ All recognition methods support [accuracy adjustments](/omr/net/recognition/accu
 
 {{% /alert %}} 
 
-To recognize a filled form page, process its scan or photo with the [initialized]({{< ref "#initializing-the-recognition-engine" >}}) recognition engine using `RecognizeImage` method of the [`Aspose.OMR.Api.TemplateProcessor`](https://apireference.aspose.com/omr/net/aspose.omr.api/templateprocessor/) class:
+To recognize a filled form page, process its scan or photo with the [initialized]({{< ref "#initializing-the-recognition-engine" >}}) recognition engine using `RecognizeImage` method of the [`Aspose.OMR.Api.TemplateProcessor`](https://reference.aspose.com/omr/net/aspose.omr.api/templateprocessor/) class:
 
 ```csharp
 Aspose.OMR.Api.OmrEngine omrEngine = new Aspose.OMR.Api.OmrEngine();
@@ -87,7 +87,7 @@ using(MemoryStream formStream = new MemoryStream(form))
 
 ### Batch recognition
 
-The whole idea behind OMR is to automatically process hundreds of forms. Aspose.OMR for .NET greatly simplifies this task by allowing you to recognize a directory with form images using a [single method](https://apireference.aspose.com/omr/net/aspose.omr.api/templateprocessor/recognizefolder/) rather than recognizing files one by one:
+The whole idea behind OMR is to automatically process hundreds of forms. Aspose.OMR for .NET greatly simplifies this task by allowing you to recognize a directory with form images using a [single method](https://reference.aspose.com/omr/net/aspose.omr.api/templateprocessor/recognizefolder/) rather than recognizing files one by one:
 
 ```csharp
 Aspose.OMR.Api.OmrEngine omrEngine = new Aspose.OMR.Api.OmrEngine();
@@ -97,7 +97,7 @@ Aspose.OMR.Model.RecognitionResult recognitionResults[] = templateProcessor.Reco
 
 ### Recognizing multi-page forms
 
-If a form consists of several pages, use [`RecognizeMultiPageTemplate`](https://apireference.aspose.com/omr/net/aspose.omr.api/templateprocessor/recognizemultipagetemplate/) method to recognize them as a single entity:
+If a form consists of several pages, use [`RecognizeMultiPageTemplate`](https://reference.aspose.com/omr/net/aspose.omr.api/templateprocessor/recognizemultipagetemplate/) method to recognize them as a single entity:
 
 ```csharp
 string[] formPages = { "page1.png", "page2.png", "page3.png" };

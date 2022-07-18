@@ -13,7 +13,7 @@ Template generation requires a valid license. To request a 30 Day Temporary Lice
 {{% /alert %}} 
 
 
-Aspose.OMR for Java provides the option to generate OMR template (.omr) files and images by using simple text markup. The API provides [OmrEngine.GenerateTemplate](https://apireference.aspose.com/java/omr/com.aspose.omr/OmrEngine#generateTemplate-java.lang.String-) method that takes the path of the markup text file as a parameter. The [OmrEngine.GenerateTemplate](https://apireference.aspose.com/java/omr/com.aspose.omr/OmrEngine#generateTemplate-java.lang.String-) method returns a [GenerationResult](https://apireference.aspose.com/java/omr/com.aspose.omr/GenerationResult) object which contains the template image and the template (JSON that describes elements location on the image).
+Aspose.OMR for Java provides the option to generate OMR template (.omr) files and images by using simple text markup. The API provides [OmrEngine.GenerateTemplate](https://reference.aspose.com/java/omr/com.aspose.omr/OmrEngine#generateTemplate-java.lang.String-) method that takes the path of the markup text file as a parameter. The [OmrEngine.GenerateTemplate](https://reference.aspose.com/java/omr/com.aspose.omr/OmrEngine#generateTemplate-java.lang.String-) method returns a [GenerationResult](https://reference.aspose.com/java/omr/com.aspose.omr/GenerationResult) object which contains the template image and the template (JSON that describes elements location on the image).
 
 The following is the text markup that is used in the example code snippet to generate OMR template file.
 

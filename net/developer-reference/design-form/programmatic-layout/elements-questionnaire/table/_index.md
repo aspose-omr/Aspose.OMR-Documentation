@@ -25,7 +25,7 @@ Tables are best suited for large surveys where all questions have the same set o
 
 ## Declaration
 
-**TableConfig** element is declared as an instance of [`TableConfig`](https://apireference.aspose.com/omr/net/aspose.omr.generation.config.elements.table/tableconfig/) class. Reference `Aspose.OMR.Generation.Config.Elements.Table`, `Aspose.OMR.Generation.Config.Elements` and `Aspose.OMR.Generation.Config.Enums` namespaces to use `TableConfig` types without specifying the fully qualified namespace:
+**TableConfig** element is declared as an instance of [`TableConfig`](https://reference.aspose.com/omr/net/aspose.omr.generation.config.elements.table/tableconfig/) class. Reference `Aspose.OMR.Generation.Config.Elements.Table`, `Aspose.OMR.Generation.Config.Elements` and `Aspose.OMR.Generation.Config.Enums` namespaces to use `TableConfig` types without specifying the fully qualified namespace:
 
 ```csharp
 using Aspose.OMR.Generation.Config.Elements;
@@ -68,13 +68,13 @@ Name | Type | Description
 Name | Type | Default value | Description
 ---- | ---- | ------------- | -----------
 **Name** | `string` | _n/a_ | Used as an element's identifier and as a reminder of the element's purpose in template source; for example, `"Satisfaction survey"`.<br />This text is not displayed on the form.
-**TableType** | [`TableType`](https://apireference.aspose.com/omr/net/aspose.omr.generation.config.enums/tabletype/) | `TableType.None` | Table style:<ul><li>`TableType.None` - standard table</li><li>`TableType.Striped` - zebra-striped table rows</li><li>`TableType.EqualCells` - make all table columns equal</li></ul>
+**TableType** | [`TableType`](https://reference.aspose.com/omr/net/aspose.omr.generation.config.enums/tabletype/) | `TableType.None` | Table style:<ul><li>`TableType.None` - standard table</li><li>`TableType.Striped` - zebra-striped table rows</li><li>`TableType.EqualCells` - make all table columns equal</li></ul>
 
 ### TableTitleConfig element
 
 This optional element defines the title row of the table. If **TableTitleConfig** element is omitted, the table will be rendered without a title row.
 
-**TableTitleConfig** element is declared as an instance of [`TableTitleConfig`](https://apireference.aspose.com/omr/net/aspose.omr.generation.config.elements.table/tabletitleconfig/) class.
+**TableTitleConfig** element is declared as an instance of [`TableTitleConfig`](https://reference.aspose.com/omr/net/aspose.omr.generation.config.elements.table/tabletitleconfig/) class.
 
 Title text is provided in the **Name** property.
 
@@ -95,19 +95,19 @@ Name | Type | Description
 Name | Type | Default value | Description
 ---- | ---- | ------------- | -----------
 **FontFamily** | `string` | "Segoe UI" | The font family for the title text.
-**FontStyle** | [`FontStyle`](https://apireference.aspose.com/omr/net/aspose.omr.generation/fontstyle/) | `FontStyle.Regular` | The font style for the title text.<br />Several font styles can be combined with `\|` operator, for example `FontStyle.Bold \| FontStyle.Italic`.
+**FontStyle** | [`FontStyle`](https://reference.aspose.com/omr/net/aspose.omr.generation/fontstyle/) | `FontStyle.Regular` | The font style for the title text.<br />Several font styles can be combined with `\|` operator, for example `FontStyle.Bold \| FontStyle.Italic`.
 **FontSize** | `int` | 12 | Font size for the title text.
-**Color** | [`Color`](https://apireference.aspose.com/omr/net/aspose.omr.generation/color/) | `Color.Black` | Color of the title text.
-**BackgroundColor** | [`Color`](https://apireference.aspose.com/omr/net/aspose.omr.generation/color/) | _transparent_ | Background color of the title row.
-**BorderType** | [`BorderType`](https://apireference.aspose.com/omr/net/aspose.omr.generation.config.enums/bordertype/) | `BorderType.None` | Whether to draw a border around the title row.<ul><li>`BorderType.None` - no border.</li><li>`BorderType.Square` - draw a rectangular border.</li><li>`BorderType.Rounded` - draw a rectangular border with rounded corners.</li></ul>
+**Color** | [`Color`](https://reference.aspose.com/omr/net/aspose.omr.generation/color/) | `Color.Black` | Color of the title text.
+**BackgroundColor** | [`Color`](https://reference.aspose.com/omr/net/aspose.omr.generation/color/) | _transparent_ | Background color of the title row.
+**BorderType** | [`BorderType`](https://reference.aspose.com/omr/net/aspose.omr.generation.config.enums/bordertype/) | `BorderType.None` | Whether to draw a border around the title row.<ul><li>`BorderType.None` - no border.</li><li>`BorderType.Square` - draw a rectangular border.</li><li>`BorderType.Rounded` - draw a rectangular border with rounded corners.</li></ul>
 **BorderSize** | `int`| 3 | Width of the title row borders.
-**BorderColor** | [`Color`](https://apireference.aspose.com/omr/net/aspose.omr.generation/color/) | `Color.Black` | Color of the title row borders.
+**BorderColor** | [`Color`](https://reference.aspose.com/omr/net/aspose.omr.generation/color/) | `Color.Black` | Color of the title row borders.
 
 ### TableHeaderConfig element
 
 This element specifies the content of the table header row.
 
-**TableHeaderConfig** element is declared as an instance of [`TableHeaderConfig`](https://apireference.aspose.com/omr/net/aspose.omr.generation.config.elements.table/tableheaderconfig/) class.
+**TableHeaderConfig** element is declared as an instance of [`TableHeaderConfig`](https://reference.aspose.com/omr/net/aspose.omr.generation.config.elements.table/tableheaderconfig/) class.
 
 **TableHeaderConfig** element includes a [**ContentConfig**](/omr/net/programmatic-forms/contentconfig/) object that defines the question text and several [**TableAnswerConfig**]({{< ref "#tableanswerconfig-element" >}}) objects that define the answers in the **Children** list.
 
@@ -132,14 +132,14 @@ Name | Type | Description
 Name | Type | Default value | Description
 ---- | ---- | ------------- | -----------
 **FontFamily** | `string` | "Segoe UI" | The font family for the table header text.
-**FontStyle** | [`FontStyle`](https://apireference.aspose.com/omr/net/aspose.omr.generation/fontstyle/) | `FontStyle.Regular` | The font style for the table header text.<br />Several font styles can be combined with `\|` operator, for example `FontStyle.Bold \| FontStyle.Italic`.
+**FontStyle** | [`FontStyle`](https://reference.aspose.com/omr/net/aspose.omr.generation/fontstyle/) | `FontStyle.Regular` | The font style for the table header text.<br />Several font styles can be combined with `\|` operator, for example `FontStyle.Bold \| FontStyle.Italic`.
 **FontSize** | `int` | 12 | Font size for the table header text.
 
 #### TableAnswerConfig element
 
 The **TableAnswerConfig** element defines the answer text that will be displayed in the table header. The number of **TableAnswerConfig** elements must be equal to the value of the [**AnswersCount**]({{< ref "#required-properties" >}}) property of the **TableConfig** element.
 
-**TableAnswerConfig** element is declared as an instance of [`TableAnswerConfig`](https://apireference.aspose.com/omr/net/aspose.omr.generation.config.elements.table/tableanswerconfig/) class.
+**TableAnswerConfig** element is declared as an instance of [`TableAnswerConfig`](https://reference.aspose.com/omr/net/aspose.omr.generation.config.elements.table/tableanswerconfig/) class.
 
 Answer text is provided in the **Name** property.
 
@@ -159,7 +159,7 @@ Name | Type | Description
 
 The **QuestionConfig** element defines the question text. A **TableConfig** can include multiple question elements that will be displayed as rows.
 
-**QuestionConfig** element is declared as an instance of [`QuestionConfig`](https://apireference.aspose.com/omr/net/aspose.omr.generation.config.elements.table/questionconfig/) class.
+**QuestionConfig** element is declared as an instance of [`QuestionConfig`](https://reference.aspose.com/omr/net/aspose.omr.generation.config.elements.table/questionconfig/) class.
 
 Question text is provided in the **Name** property.
 

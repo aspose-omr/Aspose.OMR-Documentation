@@ -24,7 +24,7 @@ This element is used to combine [text](/omr/net/programmatic-forms/contentconfig
 
 ## Declaration
 
-**ParagraphConfig** element is declared as an instance of [`ParagraphConfig`](https://apireference.aspose.com/omr/net/aspose.omr.generation.config.elements.parents/paragraphconfig/) class. Reference `Aspose.OMR.Generation.Config.Elements.Parents` and `Aspose.OMR.Generation.Config.Enums` namespaces to use `ParagraphConfig` types without specifying the fully qualified namespace:
+**ParagraphConfig** element is declared as an instance of [`ParagraphConfig`](https://reference.aspose.com/omr/net/aspose.omr.generation.config.elements.parents/paragraphconfig/) class. Reference `Aspose.OMR.Generation.Config.Elements.Parents` and `Aspose.OMR.Generation.Config.Enums` namespaces to use `ParagraphConfig` types without specifying the fully qualified namespace:
 
 ```csharp
 using Aspose.OMR.Generation.Config.Elements.Parents;
