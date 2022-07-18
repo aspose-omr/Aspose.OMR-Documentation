@@ -23,14 +23,14 @@ This article contains a summary of recent changes, enhancements and bug fixes in
 
 Key | Summary | Category
 --- | ------- | --------
-OMRNET-494 | `GetTemplateProcessor` method of [`Aspose.OMR.Api.OmrEngine`](https://apireference.aspose.com/omr/net/aspose.omr.api/omrengine) class now accepts the recognition pattern as a `System.IO.MemoryStream` object. | New feature
-OMRNET-495 | [Recognition results](https://apireference.aspose.com/omr/net/aspose.omr.model/recognitionresult) can now be received as an array of bytes. See [Public API changes and backwards compatibility]({{< ref "#added-public-apis" >}}) for details. | New feature
-OMRNET-495 | [Recognition results](https://apireference.aspose.com/omr/net/aspose.omr.model/recognitionresult) can now be received as a `System.IO.MemoryStream` object. See [Public API changes and backwards compatibility]({{< ref "#added-public-apis" >}}) for details. | New feature
+OMRNET-494 | `GetTemplateProcessor` method of [`Aspose.OMR.Api.OmrEngine`](https://reference.aspose.com/omr/net/aspose.omr.api/omrengine) class now accepts the recognition pattern as a `System.IO.MemoryStream` object. | New feature
+OMRNET-495 | [Recognition results](https://reference.aspose.com/omr/net/aspose.omr.model/recognitionresult) can now be received as an array of bytes. See [Public API changes and backwards compatibility]({{< ref "#added-public-apis" >}}) for details. | New feature
+OMRNET-495 | [Recognition results](https://reference.aspose.com/omr/net/aspose.omr.model/recognitionresult) can now be received as a `System.IO.MemoryStream` object. See [Public API changes and backwards compatibility]({{< ref "#added-public-apis" >}}) for details. | New feature
 OMRNET-496 | Empty lines after the opening [`?container=` statement](/omr/net/txt-markup/container/) no longer cause the entire **container** element to be skipped during rendering. | Fix
-OMRNET-497 | `Save` and `SaveAsPdf` methods of [`Aspose.OMR.Generation.GenerationResult`](https://apireference.aspose.com/omr/net/aspose.omr.generation/generationresult) class now provide verbose error details in the thrown exception. | Enhancement
+OMRNET-497 | `Save` and `SaveAsPdf` methods of [`Aspose.OMR.Generation.GenerationResult`](https://reference.aspose.com/omr/net/aspose.omr.generation/generationresult) class now provide verbose error details in the thrown exception. | Enhancement
 OMRNET-498 | Added support for rounded element borders. | New feature
 OMRNET-501 | Images used in a form can now be loaded not only from the file system, but also from memory through a special [`Aspose.OMR.Api.ImageCollection`]({{< ref "#asposeomrapiimagecollection" >}}) object - a collection of key-value pairs where the key contains the image file name and the value contains the binary content (`System.IO.MemoryStream`) of the image file. See [Public API changes and backwards compatibility]({{< ref "#public-api-changes-and-backwards-compatibility" >}}) for details. | New feature
-OMRNET-505 | Added `GenerateJSONTemplateFromString` method to [`Aspose.OMR.Api.OmrEngine`](https://apireference.aspose.com/omr/net/aspose.omr.api/omrengine) class, which allows to generate a printable form and a recognition pattern file from JSON markup provided as a string. See [Public API changes and backwards compatibility]({{< ref "#asposeomrapigeneratejsontemplatefromstring" >}}) for details. | New feature
+OMRNET-505 | Added `GenerateJSONTemplateFromString` method to [`Aspose.OMR.Api.OmrEngine`](https://reference.aspose.com/omr/net/aspose.omr.api/omrengine) class, which allows to generate a printable form and a recognition pattern file from JSON markup provided as a string. See [Public API changes and backwards compatibility]({{< ref "#asposeomrapigeneratejsontemplatefromstring" >}}) for details. | New feature
 OMRNET-520 | Changed the recognition behavior of **CompositeGrid** element: only one bubble per row / column (depending on the element's orientation) is allowed to be marked. See [CompositeGrid recognition]({{< ref "#compositegrid-recognition" >}}) for details. | Enhancement
 n/a | Improved layout of **CustomAnswerSheet** and **ScoreGroup** elements. | Enhancement
 
@@ -110,7 +110,7 @@ Returns recognition results in XML format as a `System.IO.MemoryStream` object.
 Added a new method that accepts the following parameters:
 
 - **jsonString** - source code in [JSON markup](/omr/net/json-markup/) as a string.
-- **settings** - [Aspose.OMR.Generation.GlobalPageSettings](https://apireference.aspose.com/omr/net/aspose.omr.generation/globalpagesettings) object. Optional.
+- **settings** - [Aspose.OMR.Generation.GlobalPageSettings](https://reference.aspose.com/omr/net/aspose.omr.generation/globalpagesettings) object. Optional.
 - **userImages** - form images, as [`Aspose.OMR.Api.ImageCollection`]({{< ref "#asposeomrapiimagecollection" >}}) object. Optional.
 
 Returns `Aspose.OMR.Generation.GenerationResult` object.
@@ -141,7 +141,7 @@ This change will not affect existing code, print forms, or recognition results.
 
 {{% /alert %}} 
 
-Added an optional parameter to the [method](https://apireference.aspose.com/omr/net/aspose.omr.api.omrengine/generatetemplate/methods/6):
+Added an optional parameter to the [method](https://reference.aspose.com/omr/net/aspose.omr.api.omrengine/generatetemplate/methods/6):
 
 - **userImages** - form images, as [`Aspose.OMR.Api.ImageCollection`]({{< ref "#asposeomrapiimagecollection" >}}) object. Optional.
 
@@ -155,7 +155,7 @@ This change will not affect existing code, print forms, or recognition results.
 
 {{% /alert %}} 
 
-Added an optional parameter to the [method](https://apireference.aspose.com/omr/net/aspose.omr.api.omrengine/generatetemplate/methods/7):
+Added an optional parameter to the [method](https://reference.aspose.com/omr/net/aspose.omr.api.omrengine/generatetemplate/methods/7):
 
 - **userImages** - form images, as [`Aspose.OMR.Api.ImageCollection`]({{< ref "#asposeomrapiimagecollection" >}}) object. Optional.
 
@@ -169,7 +169,7 @@ This change will not affect existing code, print forms, or recognition results.
 
 {{% /alert %}} 
 
-Added an optional parameter to the [method](https://apireference.aspose.com/omr/net/aspose.omr.api.omrengine/generatetemplate/methods/1):
+Added an optional parameter to the [method](https://reference.aspose.com/omr/net/aspose.omr.api.omrengine/generatetemplate/methods/1):
 
 - **userImages** - form images, as [`Aspose.OMR.Api.ImageCollection`]({{< ref "#asposeomrapiimagecollection" >}}) object. Optional.
 
@@ -183,7 +183,7 @@ This change will not affect existing code, print forms, or recognition results.
 
 {{% /alert %}} 
 
-Added an optional parameter to the [method](https://apireference.aspose.com/omr/net/aspose.omr.api.omrengine/generatetemplate/methods/2):
+Added an optional parameter to the [method](https://reference.aspose.com/omr/net/aspose.omr.api.omrengine/generatetemplate/methods/2):
 
 - **userImages** - form images, as [`Aspose.OMR.Api.ImageCollection`]({{< ref "#asposeomrapiimagecollection" >}}) object. Optional.
 
@@ -197,7 +197,7 @@ This change will not affect existing code, print forms, or recognition results.
 
 {{% /alert %}} 
 
-Added an optional parameter to the [method](https://apireference.aspose.com/omr/net/aspose.omr.api/omrengine/methods/generatetemplate):
+Added an optional parameter to the [method](https://reference.aspose.com/omr/net/aspose.omr.api/omrengine/methods/generatetemplate):
 
 - **userImages** - form images, as [`Aspose.OMR.Api.ImageCollection`]({{< ref "#asposeomrapiimagecollection" >}}) object. Optional.
 

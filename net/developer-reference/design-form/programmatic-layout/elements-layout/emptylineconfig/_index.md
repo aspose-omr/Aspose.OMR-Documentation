@@ -23,7 +23,7 @@ This element is used to add vertical spacing equal to _one line of text_ between
 
 ## Declaration
 
-**EmptyLineConfig** element is declared as an instance of [`EmptyLineConfig`](https://apireference.aspose.com/omr/net/aspose.omr.generation.config.elements/emptylineconfig/) class. Reference `Aspose.OMR.Generation.Config.Elements` namespace to use `EmptyLineConfig` types without specifying the fully qualified namespace:
+**EmptyLineConfig** element is declared as an instance of [`EmptyLineConfig`](https://reference.aspose.com/omr/net/aspose.omr.generation.config.elements/emptylineconfig/) class. Reference `Aspose.OMR.Generation.Config.Elements` namespace to use `EmptyLineConfig` types without specifying the fully qualified namespace:
 
 ```csharp
 using Aspose.OMR.Generation.Config.Elements;

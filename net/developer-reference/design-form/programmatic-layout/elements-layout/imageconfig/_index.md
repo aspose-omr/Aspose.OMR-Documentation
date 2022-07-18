@@ -23,7 +23,7 @@ This element is used to add a picture.
 
 ## Declaration
 
-**ImageConfig** element is declared as an instance of [`ImageConfig`](https://apireference.aspose.com/omr/net/aspose.omr.generation.config.elements/imageconfig/) class. Reference `Aspose.OMR.Generation.Config.Elements` and `Aspose.OMR.Generation.Config.Enums` namespaces to use `ImageConfig` types without specifying the fully qualified namespace:
+**ImageConfig** element is declared as an instance of [`ImageConfig`](https://reference.aspose.com/omr/net/aspose.omr.generation.config.elements/imageconfig/) class. Reference `Aspose.OMR.Generation.Config.Elements` and `Aspose.OMR.Generation.Config.Enums` namespaces to use `ImageConfig` types without specifying the fully qualified namespace:
 
 ```csharp
 using Aspose.OMR.Generation.Config.Elements;
@@ -54,7 +54,7 @@ Name | Type | Default value | Description
 **Height** | `int` | _Original image height_ | Image height, in pixels. Smaller or larger images will be resized.
 **XPosition** | `int` | _n/a_ | Set the absolute position of the image relative to the left edge of the page.<br />Overrides the value of `ImageAlign` property.
 **YPosition** | `int` | _n/a_ | Set the absolute position of the image relative to the top edge of the page.
-**ImageAlign** | [`AlignmentEnum`](https://apireference.aspose.com/omr/net/aspose.omr.generation.config.enums/alignmentenum/) | `AlignmentEnum.Left` | Horizontal image alignment.
+**ImageAlign** | [`AlignmentEnum`](https://reference.aspose.com/omr/net/aspose.omr.generation.config.enums/alignmentenum/) | `AlignmentEnum.Left` | Horizontal image alignment.
 
 ## Allowed child elements
 

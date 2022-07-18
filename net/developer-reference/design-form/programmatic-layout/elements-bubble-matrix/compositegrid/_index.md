@@ -25,7 +25,7 @@ This element works similarly to the [GridConfig](/omr/net/programmatic-forms/gri
 
 ## Declaration
 
-**CompositeGridConfig** element is declared as an instance of [`CompositeGridConfig`](https://apireference.aspose.com/omr/net/aspose.omr.generation.config.elements/compositegridconfig/) class. Reference `Aspose.OMR.Generation.Config.Elements` and `Aspose.OMR.Generation.Config.Enums` namespaces to use `CompositeGridConfig` types without specifying the fully qualified namespace:
+**CompositeGridConfig** element is declared as an instance of [`CompositeGridConfig`](https://reference.aspose.com/omr/net/aspose.omr.generation.config.elements/compositegridconfig/) class. Reference `Aspose.OMR.Generation.Config.Elements` and `Aspose.OMR.Generation.Config.Enums` namespaces to use `CompositeGridConfig` types without specifying the fully qualified namespace:
 
 ```csharp
 using Aspose.OMR.Generation.Config.Elements;
@@ -56,14 +56,14 @@ Name | Type | Default value | Description
 ---- | ---- | ------------- | -----------
 **Name** | `string` | _n/a_ | Used as an element's identifier in recognition results and is displayed as a label on the form.
 **ExtraRow** | `string[][]` | _n/a_ | Each array provided in this property adds a custom line / column of bubbles at the start of the grid. Characters drawn inside these bubbles may differ from those provided in **Values** property.<br />A set of characters that will be displayed inside the bubbles of a particular line / column is defined as an array of strings. **The length of the array cannot be less than the value of the **ColumnsCount** property.** To hide certain bubbles, provide an empty string (`""`) at their positions.
-**GridAlignment** | [`AlignmentEnum`](https://apireference.aspose.com/omr/net/aspose.omr.generation.config.enums/alignmentenum/) | `AlignmentEnum.Left` | Horizontal grid alignment.
-**GridOrientation** | [`Orientation`](https://apireference.aspose.com/omr/net/aspose.omr.generation/orientation/) | `Orientation.Horizontal` | Element's orientation:<ul><li>`Orientation.Horizontal` - each digit is represented as a column of bubbles;</li><li>`Orientation.Vertical` - each digit is represented as a row of bubbles.</li></ul>
+**GridAlignment** | [`AlignmentEnum`](https://reference.aspose.com/omr/net/aspose.omr.generation.config.enums/alignmentenum/) | `AlignmentEnum.Left` | Horizontal grid alignment.
+**GridOrientation** | [`Orientation`](https://reference.aspose.com/omr/net/aspose.omr.generation/orientation/) | `Orientation.Horizontal` | Element's orientation:<ul><li>`Orientation.Horizontal` - each digit is represented as a column of bubbles;</li><li>`Orientation.Vertical` - each digit is represented as a row of bubbles.</li></ul>
 **RotationAngle** | `int` | 0 | Rotate the element by the given degree. The following values are supported: `90`, `180`, `270`.
-**HeaderType** | [`GridHeaderTypeEnum`](https://apireference.aspose.com/omr/net/aspose.omr.generation.config.enums/gridheadertypeenum/) | `GridHeaderTypeEnum.Underline` | The type of the box to be displayed in front of each column / row. This box can be used for hand-writing the answer in addition to marking bubbles.<ul><li>`GridHeaderTypeEnum.Underline` - draw a horizontal line.</li><li>`GridHeaderTypeEnum.Square` - draw a box.</li></ul>
+**HeaderType** | [`GridHeaderTypeEnum`](https://reference.aspose.com/omr/net/aspose.omr.generation.config.enums/gridheadertypeenum/) | `GridHeaderTypeEnum.Underline` | The type of the box to be displayed in front of each column / row. This box can be used for hand-writing the answer in addition to marking bubbles.<ul><li>`GridHeaderTypeEnum.Underline` - draw a horizontal line.</li><li>`GridHeaderTypeEnum.Square` - draw a box.</li></ul>
 **HeaderBorderSize** | `int` | 3 | Border width of the box to be displayed in front of each column / row.
-**HeaderBorderColor** | [`Color`](https://apireference.aspose.com/omr/net/aspose.omr.generation/color/) | `Color.Black` | Border color of the box to be displayed in front of each column / row.
+**HeaderBorderColor** | [`Color`](https://reference.aspose.com/omr/net/aspose.omr.generation/color/) | `Color.Black` | Border color of the box to be displayed in front of each column / row.
 **VerticalMargin** | `int` | 0 | Vertical spacing between the element's lines, in pixels.
-**BubbleSize** | [`BubbleSize`](https://apireference.aspose.com/omr/net/aspose.omr.generation/bubblesize/) | `BubbleSize.Normal` | Size of bubbles.
+**BubbleSize** | [`BubbleSize`](https://reference.aspose.com/omr/net/aspose.omr.generation/bubblesize/) | `BubbleSize.Normal` | Size of bubbles.
 **XPosition** | `int` | _n/a_ | Set the absolute position of the **GridConfig** element relative to the left edge of the page.<br />Overrides the value of **GridAlignment** property.
 **YPosition** | `int` | _n/a_ | Set the absolute position of the **GridConfig** element relative to the top edge of the page.
 **Column** | `int` | 1 | The number of the column where the **GridConfig** element will be placed. Only applicable if **GridConfig** is placed in a multi-column [**ContainerConfig**](/omr/net/programmatic-forms/containerconfig/) element.

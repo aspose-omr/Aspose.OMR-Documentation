@@ -23,9 +23,9 @@ Aspose.OMR allows you to describe the layout and content of an OMR form directly
 
 ## Form object
 
-The form is described as an instance of [`TemplateConfig`](https://apireference.aspose.com/omr/net/aspose.omr.generation.config/templateconfig) class. All internal elements are nested inside this object.
+The form is described as an instance of [`TemplateConfig`](https://reference.aspose.com/omr/net/aspose.omr.generation.config/templateconfig) class. All internal elements are nested inside this object.
 
-You must also define at least one page as an instance of [`PageConfig`](https://apireference.aspose.com/omr/net/aspose.omr.generation.config.elements.parents/pageconfig/) class.
+You must also define at least one page as an instance of [`PageConfig`](https://reference.aspose.com/omr/net/aspose.omr.generation.config.elements.parents/pageconfig/) class.
 
 {{% alert color="primary" %}} 
 Reference `Aspose.OMR.Generation.Config` and `Aspose.OMR.Generation.Config.Elements.Parents` namespaces to use `TemplateConfig` and `PageConfig` types without specifying the fully qualified namespace:

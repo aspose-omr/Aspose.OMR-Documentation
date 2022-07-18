@@ -27,6 +27,6 @@ The following are the links to some useful resources you may need to accomplish 
 - [Aspose.OMR for Java Features](/omr/java/features-list/)
 - [Aspose.OMR for Java Release Notes](/omr/java/release-notes/)
 - [Install Aspose.OMR for Java from Maven Repository](/omr/java/installation/)
-- [Aspose.OMR for Java API Reference Guide](https://apireference.aspose.com/java/omr)
+- [Aspose.OMR for Java API Reference Guide](https://reference.aspose.com/java/omr)
 - [Aspose.OMR for Java Free Support Forum](https://forum.aspose.com/c/omr)
 - [Aspose.OMR for Java Paid Support Helpdesk](https://helpdesk.aspose.com/)

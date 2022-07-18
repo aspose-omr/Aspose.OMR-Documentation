@@ -28,7 +28,7 @@ This element is used to organize content within [**containers**](/omr/net/progra
 
 ## Declaration
 
-**BlockConfig** element is declared as an instance of [`BlockConfig`](https://apireference.aspose.com/omr/net/aspose.omr.generation.config.elements.parents/blockconfig/) class. Reference `Aspose.OMR.Generation.Config.Elements.Parents` and `Aspose.OMR.Generation.Config.Enums` namespaces to use `BlockConfig` types without specifying the fully qualified namespace:
+**BlockConfig** element is declared as an instance of [`BlockConfig`](https://reference.aspose.com/omr/net/aspose.omr.generation.config.elements.parents/blockconfig/) class. Reference `Aspose.OMR.Generation.Config.Elements.Parents` and `Aspose.OMR.Generation.Config.Enums` namespaces to use `BlockConfig` types without specifying the fully qualified namespace:
 
 ```csharp
 using Aspose.OMR.Generation.Config.Elements.Parents;
@@ -59,10 +59,10 @@ Name | Type | Default value | Description
 ---- | ---- | ------------- | -----------
 **Name** | `string` | _n/a_ | Used as a reminder of the element's purpose; for example, "_Column 1_". You can use the same value for multiple blocks.<br />This text is not displayed on the form.
 **Column** | `int` | 1 | The number of the column in which the **BlockConfig** element will be placed.<br />This number must not exceed the number of columns of the parent [**Container**](/omr/net/programmatic-forms/container/) element.
-**BorderType** | [`BorderType`](https://apireference.aspose.com/omr/net/aspose.omr.generation.config.enums/bordertype/) | `BorderType.None` | Whether to draw a border around the **BlockConfig** element.<ul><li>`BorderType.None` - no border.</li><li>`BorderType.Square` - draw a rectangular border.</li><li>`BorderType.Rounded` - draw a rectangular border with rounded corners.</li></ul>
+**BorderType** | [`BorderType`](https://reference.aspose.com/omr/net/aspose.omr.generation.config.enums/bordertype/) | `BorderType.None` | Whether to draw a border around the **BlockConfig** element.<ul><li>`BorderType.None` - no border.</li><li>`BorderType.Square` - draw a rectangular border.</li><li>`BorderType.Rounded` - draw a rectangular border with rounded corners.</li></ul>
 **BorderSize** | `int` | 3 | Width of the **BlockConfig** borders.
-**BorderColor** | [`Color`](https://apireference.aspose.com/omr/net/aspose.omr.generation/color/) | `Color.Black` | Color of the **BlockConfig** borders.
-**IsClipped** | `bool` | false | If set to `true`, the content of the **BlockConfig** element is stored to [Images](https://apireference.aspose.com/omr/net/aspose.omr.model/recognitionresult/properties/images) collection during recognition, similar to the [**WriteInConfig**](/omr/net/programmatic-forms/writeinconfig/) element. The image can be can be passed to optical character recognition library, such as [Aspose.OCR](https://products.aspose.app/ocr), or saved.<br />If the **BlockConfig** contains OMR elements, they will be recognized even if this property is set to `true`.
+**BorderColor** | [`Color`](https://reference.aspose.com/omr/net/aspose.omr.generation/color/) | `Color.Black` | Color of the **BlockConfig** borders.
+**IsClipped** | `bool` | false | If set to `true`, the content of the **BlockConfig** element is stored to [Images](https://reference.aspose.com/omr/net/aspose.omr.model/recognitionresult/properties/images) collection during recognition, similar to the [**WriteInConfig**](/omr/net/programmatic-forms/writeinconfig/) element. The image can be can be passed to optical character recognition library, such as [Aspose.OCR](https://products.aspose.app/ocr), or saved.<br />If the **BlockConfig** contains OMR elements, they will be recognized even if this property is set to `true`.
 
 ## Allowed child elements
 

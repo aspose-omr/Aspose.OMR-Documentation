@@ -26,7 +26,7 @@ Write-in field always has an underline and "_write-in_" comment below.
 
 {{% /alert %}}
 
-The hand-filled content of the **WriteIn** element is stored as an [image](https://apireference.aspose.com/omr/net/aspose.omr.model/recognitionresult/properties/images) during recognition and can be passed to optical character recognition library, such as [Aspose.OCR](https://products.aspose.app/ocr).
+The hand-filled content of the **WriteIn** element is stored as an [image](https://reference.aspose.com/omr/net/aspose.omr.model/recognitionresult/properties/images) during recognition and can be passed to optical character recognition library, such as [Aspose.OCR](https://products.aspose.app/ocr).
 
 ![WriteIn element](json-writein.png)
 
@@ -53,13 +53,13 @@ Name | Type | Description
 Name | Type | Default value | Description
 ---- | ---- | ------------- | -----------
 **name** | string | _n/a_ | Used as a reminder of the element's purpose; for example, "_Phone_". You can use the same value for multiple elements.<br />This text is not displayed on the form.
-**required** | Boolean | false | Set to `true` to store the hand-filled content of the element to [Images](https://apireference.aspose.com/omr/net/aspose.omr.model/recognitionresult/properties/images) collection during recognition. Set to `false` or omit the property to ignore this element during recognition.
+**required** | Boolean | false | Set to `true` to store the hand-filled content of the element to [Images](https://reference.aspose.com/omr/net/aspose.omr.model/recognitionresult/properties/images) collection during recognition. Set to `false` or omit the property to ignore this element during recognition.
 
 ## Combining with VerticalChoicebox elements
 
 **WriteIn** element can be included into [**VerticalChoicebox**](/omr/net/json-markup/VerticalChoicebox/) element to give the respondent the opportunity to provide a free-form answer to an open-ended question.
 
-In this case, the content of the element is stored to [Images](https://apireference.aspose.com/omr/net/aspose.omr.model/recognitionresult/properties/images) collection only if the respondent marks the corresponding bubble.
+In this case, the content of the element is stored to [Images](https://reference.aspose.com/omr/net/aspose.omr.model/recognitionresult/properties/images) collection only if the respondent marks the corresponding bubble.
 
 ## Allowed child elements
 

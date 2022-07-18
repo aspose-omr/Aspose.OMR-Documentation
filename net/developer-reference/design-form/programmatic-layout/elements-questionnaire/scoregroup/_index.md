@@ -27,7 +27,7 @@ This element defines a group of questions with multiple evaluation criteria. The
 
 ## Declaration
 
-**ScoreGroupConfig** element is declared as an instance of [`ScoreGroupConfig`](https://apireference.aspose.com/omr/net/aspose.omr.generation.config.elements.scoregroup/scoregroupconfig/) class. Reference `Aspose.OMR.Generation.Config.Elements.ScoreGroup` and `Aspose.OMR.Generation.Config.Enums` namespaces to use `ScoreGroupConfig` types without specifying the fully qualified namespace:
+**ScoreGroupConfig** element is declared as an instance of [`ScoreGroupConfig`](https://reference.aspose.com/omr/net/aspose.omr.generation.config.elements.scoregroup/scoregroupconfig/) class. Reference `Aspose.OMR.Generation.Config.Elements.ScoreGroup` and `Aspose.OMR.Generation.Config.Enums` namespaces to use `ScoreGroupConfig` types without specifying the fully qualified namespace:
 
 ```csharp
 using Aspose.OMR.Generation.Config.Elements.ScoreGroup;
@@ -59,13 +59,13 @@ Name | Type | Description
 Name | Type | Default value | Description
 ---- | ---- | ------------- | -----------
 **Name** | `string` | _n/a_ | Used as an element's identifier and as a reminder of the element's purpose in template source; for example, `"Satisfaction survey"`.<br />This text is not displayed on the form.
-**ScoreGroupType** | [`ScoreGroupType`](https://apireference.aspose.com/omr/net/aspose.omr.generation.config.enums/scoregrouptype/) | `ScoreGroupType.Table` | Layout of the **ScoreGroup** element.<br />This property is reserved for future use.
+**ScoreGroupType** | [`ScoreGroupType`](https://reference.aspose.com/omr/net/aspose.omr.generation.config.enums/scoregrouptype/) | `ScoreGroupType.Table` | Layout of the **ScoreGroup** element.<br />This property is reserved for future use.
 
 ### ScoreQuestionConfig element
 
 This element defines the question to be rated based on the underlying criteria.
 
-**ScoreQuestionConfig** element is declared as an instance of [`ScoreQuestionConfig`](https://apireference.aspose.com/omr/net/aspose.omr.generation.config.elements.scoregroup/scorequestionconfig/) class.
+**ScoreQuestionConfig** element is declared as an instance of [`ScoreQuestionConfig`](https://reference.aspose.com/omr/net/aspose.omr.generation.config.elements.scoregroup/scorequestionconfig/) class.
 
 Question text is provided in the **Name** property.
 
@@ -98,9 +98,9 @@ Name | Type | Description
 
 Name | Type | Default value | Description
 ---- | ---- | ------------- | -----------
-**ScoreDisplay** | [`ScoreDisplay`](https://apireference.aspose.com/omr/net/aspose.omr.generation.config.enums/scoredisplay/) | `ScoreDisplay.DontDisplay` | Defines how to display the numeric score for each evaluation criterion (value of the **Score** property of [**ScoreAnswerConfig**]({{< ref "#scoreanswerconfig-element" >}}) element).
+**ScoreDisplay** | [`ScoreDisplay`](https://reference.aspose.com/omr/net/aspose.omr.generation.config.enums/scoredisplay/) | `ScoreDisplay.DontDisplay` | Defines how to display the numeric score for each evaluation criterion (value of the **Score** property of [**ScoreAnswerConfig**]({{< ref "#scoreanswerconfig-element" >}}) element).
 **FontFamily** | `string` | "Segoe UI" | The font family for the question text.
-**FontStyle** | [`FontStyle`](https://apireference.aspose.com/omr/net/aspose.omr.generation/fontstyle/) | `FontStyle.Regular` | The font style for the question text.<br />Several font styles can be combined with `\|` operator, for example `FontStyle.Bold \| FontStyle.Italic`.
+**FontStyle** | [`FontStyle`](https://reference.aspose.com/omr/net/aspose.omr.generation/fontstyle/) | `FontStyle.Regular` | The font style for the question text.<br />Several font styles can be combined with `\|` operator, for example `FontStyle.Bold \| FontStyle.Italic`.
 **FontSize** | `int` | 12 | Font size for the question text.
 
 #### ScoreHeaderConfig element
@@ -115,7 +115,7 @@ One column is always reserved for the [criteria text]({{< ref "#scoreanswerconfi
 
 {{% /alert %}}
 
-**ScoreHeaderConfig** element is declared as an instance of [`ScoreHeaderConfig`](https://apireference.aspose.com/omr/net/aspose.omr.generation.config.elements.scoregroup/scoreheaderconfig/) class.
+**ScoreHeaderConfig** element is declared as an instance of [`ScoreHeaderConfig`](https://reference.aspose.com/omr/net/aspose.omr.generation.config.elements.scoregroup/scoreheaderconfig/) class.
 
 Column header text is provided in the **name** property.
 
@@ -133,22 +133,22 @@ new ScoreHeaderConfig() {
 Name | Type | Description
 ---- | ---- | -----------
 **name** | `string` | Column header text.
-**HeaderType** | [`ScoreHeaderType`](https://apireference.aspose.com/omr/net/aspose.omr.generation.config.enums/scoreheadertype/) | Determines what will be displayed inside the corresponding column. This property can take one of the following values:<ul><li>`ScoreHeaderType.Positive` (default) - draw a bubble that, if marked, will add the criteria score to the resulting score of the question.</li><li>`ScoreHeaderType.Negative` - draw a bubble that, if marked, will be ignored.</li><li>`ScoreHeaderType.Amount` - show the criterion score in the corresponding column. Requires **ScoreDisplay** property of the parent [**ScoreQuestionConfig**]({{< ref "#scorequestionconfig-element" >}}) element to be set to `ScoreDisplay.DisplayAsExtraColumn`.</li><li>`ScoreHeaderType.Question` - moves the first column with criteria to this position. All other columns are shifted to the left.</li><li>`ScoreHeaderType.Content` - fills the column with the value of [**TableContentConfig**]({{< ref "#tablecontentconfig-element" >}}) element.</li></ul>
+**HeaderType** | [`ScoreHeaderType`](https://reference.aspose.com/omr/net/aspose.omr.generation.config.enums/scoreheadertype/) | Determines what will be displayed inside the corresponding column. This property can take one of the following values:<ul><li>`ScoreHeaderType.Positive` (default) - draw a bubble that, if marked, will add the criteria score to the resulting score of the question.</li><li>`ScoreHeaderType.Negative` - draw a bubble that, if marked, will be ignored.</li><li>`ScoreHeaderType.Amount` - show the criterion score in the corresponding column. Requires **ScoreDisplay** property of the parent [**ScoreQuestionConfig**]({{< ref "#scorequestionconfig-element" >}}) element to be set to `ScoreDisplay.DisplayAsExtraColumn`.</li><li>`ScoreHeaderType.Question` - moves the first column with criteria to this position. All other columns are shifted to the left.</li><li>`ScoreHeaderType.Content` - fills the column with the value of [**TableContentConfig**]({{< ref "#tablecontentconfig-element" >}}) element.</li></ul>
 
 ##### Optional properties
 
 Name | Type | Default value | Description
 ---- | ---- | ------------- | -----------
 **FontFamily** | `string` | "Segoe UI" | The font family for the header text.
-**FontStyle** | [`FontStyle`](https://apireference.aspose.com/omr/net/aspose.omr.generation/fontstyle/) | `FontStyle.Regular` | The font style for the header text.<br />Several font styles can be combined with `\|` operator, for example `FontStyle.Bold \| FontStyle.Italic`.
+**FontStyle** | [`FontStyle`](https://reference.aspose.com/omr/net/aspose.omr.generation/fontstyle/) | `FontStyle.Regular` | The font style for the header text.<br />Several font styles can be combined with `\|` operator, for example `FontStyle.Bold \| FontStyle.Italic`.
 **FontSize** | `int` | 12 | Font size for the header text.
-**Alignment** | [`AlignmentEnum`](https://apireference.aspose.com/omr/net/aspose.omr.generation.config.enums/alignmentenum/) | `AlignmentEnum.Left` | Horizontal text alignment.
+**Alignment** | [`AlignmentEnum`](https://reference.aspose.com/omr/net/aspose.omr.generation.config.enums/alignmentenum/) | `AlignmentEnum.Left` | Horizontal text alignment.
 
 #### ScoreAnswerConfig element
 
 This element defines the evaluation criterion.
 
-**ScoreAnswerConfig** element is declared as an instance of [`ScoreAnswerConfig`](https://apireference.aspose.com/omr/net/aspose.omr.generation.config.elements.scoregroup/scoreanswerconfig/) class.
+**ScoreAnswerConfig** element is declared as an instance of [`ScoreAnswerConfig`](https://reference.aspose.com/omr/net/aspose.omr.generation.config.elements.scoregroup/scoreanswerconfig/) class.
 
 Criterion text is provided in the **Name** property.
 
@@ -173,15 +173,15 @@ Name | Type | Description
 Name | Type | Default value | Description
 ---- | ---- | ------------- | -----------
 **FontFamily** | `string` | "Segoe UI" | The font family for the criterion text.
-**FontStyle** | [`FontStyle`](https://apireference.aspose.com/omr/net/aspose.omr.generation/fontstyle/) | `FontStyle.Regular` | The font style for the criterion text.<br />Several font styles can be combined with `\|` operator, for example `FontStyle.Bold \| FontStyle.Italic`.
+**FontStyle** | [`FontStyle`](https://reference.aspose.com/omr/net/aspose.omr.generation/fontstyle/) | `FontStyle.Regular` | The font style for the criterion text.<br />Several font styles can be combined with `\|` operator, for example `FontStyle.Bold \| FontStyle.Italic`.
 **FontSize** | `int` | 12 | Font size for the criterion text.
-**Alignment** | [`AlignmentEnum`](https://apireference.aspose.com/omr/net/aspose.omr.generation.config.enums/alignmentenum/) | `AlignmentEnum.Left` | Horizontal text alignment.
+**Alignment** | [`AlignmentEnum`](https://reference.aspose.com/omr/net/aspose.omr.generation.config.enums/alignmentenum/) | `AlignmentEnum.Left` | Horizontal text alignment.
 
 #### TableContentConfig element
 
 This optional element allows you to define the content of the custom column declared with [**ScoreHeaderConfig**]({{< ref "#scoreheaderconfig-element" >}}) element with the **HeaderType** property equals to `ScoreHeaderType.Content`.
 
-**TableContentConfig** element is declared as an instance of [`TableContentConfig`](https://apireference.aspose.com/omr/net/aspose.omr.generation.config.elements.scoregroup/tablecontentconfig/) class.
+**TableContentConfig** element is declared as an instance of [`TableContentConfig`](https://reference.aspose.com/omr/net/aspose.omr.generation.config.elements.scoregroup/tablecontentconfig/) class.
 
 The text to be put in the custom column is provided in the **Name** property.
 
@@ -208,9 +208,9 @@ Name | Type | Description
 Name | Type | Default value | Description
 ---- | ---- | ------------- | -----------
 **FontFamily** | `string` | "Segoe UI" | The font family for the text.
-**FontStyle** | [`FontStyle`](https://apireference.aspose.com/omr/net/aspose.omr.generation/fontstyle/) | `FontStyle.Regular` | The font style for the text.<br />Several font styles can be combined with `\|` operator, for example `FontStyle.Bold \| FontStyle.Italic`.
+**FontStyle** | [`FontStyle`](https://reference.aspose.com/omr/net/aspose.omr.generation/fontstyle/) | `FontStyle.Regular` | The font style for the text.<br />Several font styles can be combined with `\|` operator, for example `FontStyle.Bold \| FontStyle.Italic`.
 **FontSize** | `int` | 12 | Font size for the text.
-**Alignment** | [`AlignmentEnum`](https://apireference.aspose.com/omr/net/aspose.omr.generation.config.enums/alignmentenum/) | `AlignmentEnum.Left` | Horizontal text alignment.
+**Alignment** | [`AlignmentEnum`](https://reference.aspose.com/omr/net/aspose.omr.generation.config.enums/alignmentenum/) | `AlignmentEnum.Left` | Horizontal text alignment.
 
 ## Examples
 

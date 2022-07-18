@@ -184,4 +184,4 @@ Question1,"A"
 
 ## What's next?
 
-Congratulations! You have taken the first steps in optical mark recognition technology. Read the [Developer reference](/omr/net/developer-reference/) and [API reference](https://apireference.aspose.com/omr/net) for details on developing advanced OMR forms and applications with Aspose.OMR for .NET.
+Congratulations! You have taken the first steps in optical mark recognition technology. Read the [Developer reference](/omr/net/developer-reference/) and [API reference](https://reference.aspose.com/omr/net) for details on developing advanced OMR forms and applications with Aspose.OMR for .NET.

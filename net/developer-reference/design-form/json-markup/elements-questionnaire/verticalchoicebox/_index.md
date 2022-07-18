@@ -90,7 +90,7 @@ Name | Type | Default value | Description
 
 [**WriteIn**](/omr/net/json-markup/writein/) element can be included into **VerticalChoicebox** element to give the respondent the opportunity to provide a free-form answer to an open-ended question.
 
-In this case, the content of the element is stored to [Images](https://apireference.aspose.com/omr/net/aspose.omr.model/recognitionresult/properties/images) collection only if the respondent marks the corresponding bubble.
+In this case, the content of the element is stored to [Images](https://reference.aspose.com/omr/net/aspose.omr.model/recognitionresult/properties/images) collection only if the respondent marks the corresponding bubble.
 
 ## Example
 

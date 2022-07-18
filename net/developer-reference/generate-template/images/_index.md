@@ -26,9 +26,9 @@ If an image file is mentioned in the source code but no file path is provided, a
 
 Image paths can be provided with:
 
-- A string array in [`GenerateTemplate`](https://apireference.aspose.com/omr/net/aspose.omr.api.omrengine/generatetemplate/methods/5) method.  
+- A string array in [`GenerateTemplate`](https://reference.aspose.com/omr/net/aspose.omr.api.omrengine/generatetemplate/methods/5) method.  
   It only works with text markup files and **does not** allow you to configure page settings.
-- `ImagesPaths` property of [`GlobalPageSettings`](https://apireference.aspose.com/omr/net/aspose.omr.generation/globalpagesettings) object. Full paths to images are provided as an array of strings.  
+- `ImagesPaths` property of [`GlobalPageSettings`](https://reference.aspose.com/omr/net/aspose.omr.generation/globalpagesettings) object. Full paths to images are provided as an array of strings.  
   This is a universal approach that works with all types of sources, and also allows you to [customize page settings](/omr/net/generate-template/page-setup/).
 - `Aspose.OMR.Api.ImageCollection` object - a collection of key-value pairs where the key contains the image file name and the value contains the binary content (`System.IO.MemoryStream`) of the image file.
 

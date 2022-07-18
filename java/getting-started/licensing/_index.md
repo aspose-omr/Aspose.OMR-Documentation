@@ -19,7 +19,7 @@ The easiest way to apply a license is to put the license file in the same folder
 
 {{% alert color="primary" %}} 
 
-When you call the [SetLicense](https://apireference.aspose.com/java/omr/com.aspose.omr/License#setLicense-java.lang.String-) method, the license name that you pass should be that of your license file. For example, if you change the license file name to "Aspose.OMR.lic.xml" pass that filename to the [OMR.SetLicense(…)](https://apireference.aspose.com/java/omr/com.aspose.omr/License#setLicense-java.lang.String-) method. The license file can be specific for Aspose.OMR for Java or you can use Aspose.Total for Java license file.
+When you call the [SetLicense](https://reference.aspose.com/java/omr/com.aspose.omr/License#setLicense-java.lang.String-) method, the license name that you pass should be that of your license file. For example, if you change the license file name to "Aspose.OMR.lic.xml" pass that filename to the [OMR.SetLicense(…)](https://reference.aspose.com/java/omr/com.aspose.omr/License#setLicense-java.lang.String-) method. The license file can be specific for Aspose.OMR for Java or you can use Aspose.Total for Java license file.
 
 {{% /alert %}} 
 #### **Example 2**

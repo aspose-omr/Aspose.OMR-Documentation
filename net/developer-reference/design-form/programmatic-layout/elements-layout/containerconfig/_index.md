@@ -28,7 +28,7 @@ This element is used to break content into columns and to add a footer to the fo
 
 ## Declaration
 
-**ContainerConfig** element is declared as an instance of [`ContainerConfig`](https://apireference.aspose.com/omr/net/aspose.omr.generation.config.elements.parents/containerconfig/) class. Reference `Aspose.OMR.Generation.Config.Elements.Parents` and `Aspose.OMR.Generation.Config.Enums` namespaces to use `ContainerConfig` types without specifying the fully qualified namespace:
+**ContainerConfig** element is declared as an instance of [`ContainerConfig`](https://reference.aspose.com/omr/net/aspose.omr.generation.config.elements.parents/containerconfig/) class. Reference `Aspose.OMR.Generation.Config.Elements.Parents` and `Aspose.OMR.Generation.Config.Enums` namespaces to use `ContainerConfig` types without specifying the fully qualified namespace:
 
 ```csharp
 using Aspose.OMR.Generation.Config.Elements.Parents;
@@ -60,7 +60,7 @@ Name | Type | Default value | Description
 **Name** | `string` | _n/a_ | Used as a reminder of the container's purpose; for example, "_General Chemistry_". You can use the same value for multiple containers.<br />This text is not displayed on the form.
 **ColumnsCount** | `int` |	1 | The number of columns in the container (1 or more). All columns have the same width regardless of their content.
 **Proportions** | `List<int>` | _n/a_ | Overrides the number of columns and sets their relative proportions.<br />The number of columns is determined by the number of list items. Column widths (in percent) are provided as list items. The grand total of all column widths must not exceed 100%.
-**ContainerType** | [`ContainerTypeEnum`](https://apireference.aspose.com/omr/net/aspose.omr.generation.config.enums/containertypeenum/) | `ContainerTypeEnum.Normal` | Determines whether the container is displayed inside the body of the form (`ContainerTypeEnum.Normal`) or as a footer at the bottom of the page (`ContainerTypeEnum.Footer`).<br />**Each [page](/omr/net/programmatic-forms/pageconfig/) can only have one footer!**
+**ContainerType** | [`ContainerTypeEnum`](https://reference.aspose.com/omr/net/aspose.omr.generation.config.enums/containertypeenum/) | `ContainerTypeEnum.Normal` | Determines whether the container is displayed inside the body of the form (`ContainerTypeEnum.Normal`) or as a footer at the bottom of the page (`ContainerTypeEnum.Footer`).<br />**Each [page](/omr/net/programmatic-forms/pageconfig/) can only have one footer!**
 **BlockRightMargin** | `int` | 40 | Right margin (in pixels) of container's columns.
 **BlockBottomMargin** | `int` | 20 | Bottom margin (in pixels) of nested [**BlockConfig**](/omr/net/programmatic-forms/blockconfig/) elements.
 **BlockTopPadding** | `int` | 20 | Top padding (in pixels) of nested [**BlockConfig**](/omr/net/programmatic-forms/blockconfig/) elements.

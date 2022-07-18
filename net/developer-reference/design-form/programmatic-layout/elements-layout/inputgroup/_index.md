@@ -25,7 +25,7 @@ This element is used to insert personalized information, such as the respondent'
 
 ## Declaration
 
-**InputGroup** element is declared as an instance of [`InputGroup`](https://apireference.aspose.com/omr/net/aspose.omr.generation.config.elements/inputgroup/) class. Reference `Aspose.OMR.Generation.Config.Elements` and `Aspose.OMR.Generation.Config.Enums` namespaces to use `InputGroup` types without specifying the fully qualified namespace:
+**InputGroup** element is declared as an instance of [`InputGroup`](https://reference.aspose.com/omr/net/aspose.omr.generation.config.elements/inputgroup/) class. Reference `Aspose.OMR.Generation.Config.Elements` and `Aspose.OMR.Generation.Config.Enums` namespaces to use `InputGroup` types without specifying the fully qualified namespace:
 
 ```csharp
 using Aspose.OMR.Generation.Config.Elements;
@@ -57,10 +57,10 @@ new InputGroup() {
 Name | Type | Default value | Description
 ---- | ---- | ------------- | -----------
 **Name** | `string` | _n/a_ | Used as a reminder of the element's purpose; for example, "_Student name_". You can use the same value for multiple elements.<br />This text is not displayed on the form.
-**LabelBorder** | [`BorderType`](https://apireference.aspose.com/omr/net/aspose.omr.generation.config.enums/bordertype/) | `BorderType.None` | Whether to draw a border around the label.<ul><li>`BorderType.None` - no border.</li><li>`BorderType.Square` - draw a rectangular border.</li><li>`BorderType.Rounded` - draw a rectangular border with rounded corners.</li></ul>
-**InputBorder** | [`BorderType`](https://apireference.aspose.com/omr/net/aspose.omr.generation.config.enums/bordertype/) | `BorderType.None` | Whether to draw a border around the field.<ul><li>`BorderType.None` - no border.</li><li>`BorderType.Square` - draw a rectangular border.</li><li>`BorderType.Rounded` - draw a rectangular border with rounded corners.</li></ul>
+**LabelBorder** | [`BorderType`](https://reference.aspose.com/omr/net/aspose.omr.generation.config.enums/bordertype/) | `BorderType.None` | Whether to draw a border around the label.<ul><li>`BorderType.None` - no border.</li><li>`BorderType.Square` - draw a rectangular border.</li><li>`BorderType.Rounded` - draw a rectangular border with rounded corners.</li></ul>
+**InputBorder** | [`BorderType`](https://reference.aspose.com/omr/net/aspose.omr.generation.config.enums/bordertype/) | `BorderType.None` | Whether to draw a border around the field.<ul><li>`BorderType.None` - no border.</li><li>`BorderType.Square` - draw a rectangular border.</li><li>`BorderType.Rounded` - draw a rectangular border with rounded corners.</li></ul>
 **BorderSize** | `int` | 3 | Width of all borders.
-**BorderColor** | [`Color`](https://apireference.aspose.com/omr/net/aspose.omr.generation/color/) | `Color.Black` | Color of the **BlockConfig** borders.
+**BorderColor** | [`Color`](https://reference.aspose.com/omr/net/aspose.omr.generation/color/) | `Color.Black` | Color of the **BlockConfig** borders.
 
 ## Allowed child elements
 
