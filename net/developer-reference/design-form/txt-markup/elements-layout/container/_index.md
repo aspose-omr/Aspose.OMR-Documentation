@@ -19,7 +19,7 @@ keywords:
 - footer
 ---
 
-This element is used to break content into columns and to add a footer to the form. Containers cannot be nested within other elements - they should always be top-level elements in the form hierarchy.
+This element is used to break content into columns and to add a footer to the form. Nested containers must be placed inside [**block**](/omr/net/txt-markup/block/) elements.
 
 **Container** element does not have a visual representation and is only used to arrange other elements.
 

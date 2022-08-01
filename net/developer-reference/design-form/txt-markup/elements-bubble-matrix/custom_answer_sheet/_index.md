@@ -129,6 +129,7 @@ An attribute is written as `[attribute_name]=[value]`. Each attribute must be pl
 Attribute | Default value | Description | Usage example
 --------- | ------------- | ----------- | -------------
 **bubble_size** | Normal | Size of bubbles: `extrasmall`, `small`, `normal`, `large`, or `extralarge`. | `bubble_size=large`
+**bubble_type** | round | Bubble style: `round` or `square`. | `bubble_type=square`
 **font_family** | Segoe UI | The font family for the bubble character. | `font_family=Courier New`
 **font_style** | regular | The font style for the bubble character: `bold`, `italic` or `underline`.<br />Several font styles can be combined by listing them separated by commas. | `font_style=bold, italic`
 **font_size** | 12 | Font size for the bubble character. | `font_size=16`
@@ -151,6 +152,7 @@ Attribute | Default value | Description | Usage example
 **target** | n/a | Name of [**bubble_array**]({{< relref "#bubble_array" >}}) element whose value will be replaced. Use **%index%** variable to point to the same row where the **custom_trigger** element instance is rendered. | `target=b_%index%`
 **trigger_type** | ReplaceValue | Action when the bubble is marked. `ReplaceValue` replaces the value of the [**bubble_array**]({{< relref "#bubble_array" >}}) specified in **target** attribute with the **value** attribute.<br />This property is reserved for future use; you can omit it. | `trigger_type=replaceValue`
 **bubble_size** | Normal | Size of bubbles: `extrasmall`, `small`, `normal`, `large`, or `extralarge`. | `bubble_size=large`
+**bubble_type** | round | Bubble style: `round` or `square`. | `bubble_type=square`
 
 ## Example
 

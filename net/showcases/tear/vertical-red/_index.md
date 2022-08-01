@@ -37,30 +37,18 @@ Two identical forms on one sheet separated with a horizontal or vertical tear li
 	height=200
 	width=200
 	align=center
-?empty_line=
-	height=200
 ?content=Aspose Board
 	font_style=bold
 	font_size=18
 	align=center
-?empty_line=
-	height=10
 ?content=of education
 	font_style=bold
 	font_size=18
 	align=center
-?font_style=Personalized test
-	font_style=bold
-	font_size=12
-	align=center
-?empty_line=100
-	height=100	
 ?content=Personalized Test
 	font_style=bold
 	font_size=12
 	align=center
-?empty_line=100
-	height=50	
 &paragraph
 &block
 ?block=left-header
@@ -70,8 +58,6 @@ Two identical forms on one sheet separated with a horizontal or vertical tear li
 	font_size=10
 	align=center
 	font_style=bold, italic
-?empty_line=50
-	height=30
 &block
 ?block=left-header-description
 	column=1
@@ -85,8 +71,6 @@ Two identical forms on one sheet separated with a horizontal or vertical tear li
 	column=1
 	border=none
 	is_clipped=true
-?empty_line=
-	height=50
 ?input_group=first_name
 	input_border=rounded
 	label_border=rounded
@@ -123,8 +107,6 @@ Two identical forms on one sheet separated with a horizontal or vertical tear li
 ?block=left_space
 	column=1
 	border=none
-?empty_line=
-	height=100
 &block
 ?block=left_section_1_header
 	column=1
@@ -133,28 +115,20 @@ Two identical forms on one sheet separated with a horizontal or vertical tear li
 	font_size=12
 	align=center
 	font_style=bold, italic
-?empty_line=50
-	height=50
 &block
 ?block=left_section_1_content
 	column=1
 	border=rounded
 	border_color=Red
-?empty_line=25
-	height=25
 ?grid=SEC1.
 	column=1
 	sections_count=10
 	options_count=6
-	align=right
-?empty_line=25
-	height=25
+	align=center
 &block
 ?block=left_space
 	column=1
 	border=none
-?empty_line=
-	height=100
 &block
 ?block=left_section_2_header
 	column=1
@@ -163,27 +137,19 @@ Two identical forms on one sheet separated with a horizontal or vertical tear li
 	font_size=12
 	align=center
 	font_style=bold, italic
-?empty_line=50
-	height=50
 &block
 ?block=left_section_2_content
 	column=1
 	border=rounded
 	border_color=Red
-?empty_line=25
-	height=25
 ?grid=SEC2.
 	column=1
 	sections_count=10
 	options_count=6
-	align=right
-?empty_line=25
-	height=25
+	align=center
 &block
 ?block=left_footer
 	column=1
-?empty_line=50
-	height=150
 ?barcode=test_id
 	codetext=true
 	value=15478977
@@ -195,32 +161,18 @@ Two identical forms on one sheet separated with a horizontal or vertical tear li
 ?image=logo.jpg
 	height=200
 	width=200
-	x=1750
-	y=180
-?empty_line=
-	height=200
 ?content=Aspose Board
 	font_style=bold
 	font_size=18
 	align=center
-?empty_line=
-	height=10
 ?content=of education
 	font_style=bold
 	font_size=18
-	align=center
-?font_style=Personalized test
-	font_style=bold
-	font_size=12
-	align=center
-?empty_line=100
-	height=100	
+	align=center	
 ?content=Personalized Test
 	font_style=bold
 	font_size=12
 	align=center
-?empty_line=100
-	height=50
 &paragraph
 &block
 ?block=right-header
@@ -230,8 +182,6 @@ Two identical forms on one sheet separated with a horizontal or vertical tear li
 	font_size=10
 	align=center
 	font_style=bold, italic
-?empty_line=50
-	height=30
 &block
 ?block=right-header-description
 	column=3
@@ -245,8 +195,6 @@ Two identical forms on one sheet separated with a horizontal or vertical tear li
 	column=3
 	border=none
 	is_clipped=true
-?empty_line=
-	height=50
 ?input_group=first_name
 	input_border=rounded
 	label_border=rounded
@@ -283,8 +231,6 @@ Two identical forms on one sheet separated with a horizontal or vertical tear li
 ?block=right_space
 	column=3
 	border=none
-?empty_line=
-	height=100
 &block
 ?block=right_section_1_header
 	column=3
@@ -293,28 +239,20 @@ Two identical forms on one sheet separated with a horizontal or vertical tear li
 	font_size=12
 	align=center
 	font_style=bold, italic
-?empty_line=50
-	height=50
 &block
 ?block=right_section_1_content
 	column=3
 	border=rounded
 	border_color=Red
-?empty_line=25
-	height=25
 ?grid=SEC1.
 	column=3
 	sections_count=10
 	options_count=6
-	align=right
-?empty_line=25
-	height=25
+	align=center
 &block
 ?block=right_space
 	column=3
 	border=none
-?empty_line=
-	height=100
 &block
 ?block=right_section_2_header
 	column=3
@@ -323,27 +261,19 @@ Two identical forms on one sheet separated with a horizontal or vertical tear li
 	font_size=12
 	align=center
 	font_style=bold, italic
-?empty_line=50
-	height=50
 &block
 ?block=right_section_2_content
 	column=3
 	border=rounded
 	border_color=Red
-?empty_line=25
-	height=25
 ?grid=SEC2.
 	column=3
 	sections_count=10
 	options_count=6
-	align=right
-?empty_line=25
-	height=25
+	align=center
 &block
 ?block=right_footer
 	column=3
-?empty_line=50
-	height=150
 ?barcode=test_id
 	codetext=true
 	value=15478977
@@ -364,603 +294,774 @@ Two identical forms on one sheet separated with a horizontal or vertical tear li
 
 ```json
 {
-    "children": [{
-            "children": [{
-                    "name": "main",
-                    "children": [{
-                            "name": "left-header",
-                            "children": [{
-                                    "children": [{
-                                            "align": "Center",
-                                            "name": "logo.jpg",
-                                            "height": 200,
-                                            "width": 200,
-                                            "element_type": "Image"
-                                        }, {
-                                            "height": 200,
-                                            "element_type": "EmptyLine"
-                                        }, {
-                                            "name": "Aspose Board",
-                                            "font_style": "Bold",
-                                            "font_size": 18,
-                                            "align": "Center",
-                                            "element_type": "Content"
-                                        }, {
-                                            "height": 10,
-                                            "element_type": "EmptyLine"
-                                        }, {
-                                            "name": "of education",
-                                            "font_style": "Bold",
-                                            "font_size": 18,
-                                            "align": "Center",
-                                            "element_type": "Content"
-                                        }, {
-                                            "name": "100",
-                                            "height": 100,
-                                            "element_type": "EmptyLine"
-                                        }, {
-                                            "name": "Personalized Test",
-                                            "font_style": "Bold",
-                                            "font_size": 12,
-                                            "align": "Center",
-                                            "element_type": "Content"
-                                        }, {
-                                            "name": "100",
-                                            "height": 50,
-                                            "element_type": "EmptyLine"
-                                        }
-                                    ],
-                                    "paragraph_type": "Normal",
-                                    "element_type": "Paragraph"
-                                }
-                            ],
-                            "column": 1,
-                            "element_type": "Block"
-                        }, {
-                            "name": "left-header",
-                            "children": [{
-                                    "name": "Personal Info",
-                                    "font_style": [
-                                        "Bold",
-                                        "Italic"
-                                    ],
-                                    "font_size": 10,
-                                    "align": "Center",
-                                    "element_type": "Content"
-                                }, {
-                                    "name": "50",
-                                    "height": 30,
-                                    "element_type": "EmptyLine"
-                                }
-                            ],
-                            "column": 1,
-                            "element_type": "Block"
-                        }, {
-                            "name": "left-header-description",
-                            "children": [{
-                                    "name": "Please check your name and school. Make sure it is your personal information. Make sure spelling is correct.",
-                                    "font_style": "Italic",
-                                    "font_size": 6,
-                                    "align": "Right",
-                                    "element_type": "Content"
-                                }
-                            ],
-                            "column": 1,
-                            "element_type": "Block"
-                        }, {
-                            "name": "left-content",
-                            "children": [{
-                                    "height": 50,
-                                    "element_type": "EmptyLine"
-                                }, {
-                                    "name": "first_name",
-                                    "element_type": "InputGroup",
-                                    "children": [{
-                                            "name": "First name",
-                                            "align": "Left",
-                                            "element_type": "Content"
-                                        }, {
-                                            "name": "John",
-                                            "align": "Center",
-                                            "element_type": "Content"
-                                        }
-                                    ],
-                                    "label_border": "Rounded",
-                                    "input_border": "Rounded",
-                                    "border_color": "Red"
-                                }, {
-                                    "name": "middle_name",
-                                    "element_type": "InputGroup",
-                                    "children": [{
-                                            "name": "Middle name",
-                                            "align": "Left",
-                                            "element_type": "Content"
-                                        }, {
-                                            "name": "Gavin",
-                                            "align": "Center",
-                                            "element_type": "Content"
-                                        }
-                                    ],
-                                    "label_border": "Rounded",
-                                    "input_border": "Rounded",
-                                    "border_color": "Red"
-                                }, {
-                                    "name": "last_name",
-                                    "element_type": "InputGroup",
-                                    "children": [{
-                                            "name": "Last name",
-                                            "align": "Left",
-                                            "element_type": "Content"
-                                        }, {
-                                            "name": "Malkovich ",
-                                            "align": "Center",
-                                            "element_type": "Content"
-                                        }
-                                    ],
-                                    "label_border": "Rounded",
-                                    "input_border": "Rounded",
-                                    "border_color": "Red"
-                                }, {
-                                    "name": "school",
-                                    "element_type": "InputGroup",
-                                    "children": [{
-                                            "name": "School",
-                                            "align": "Left",
-                                            "element_type": "Content"
-                                        }, {
-                                            "name": "Aspose High School",
-                                            "align": "Center",
-                                            "element_type": "Content"
-                                        }
-                                    ],
-                                    "label_border": "Rounded",
-                                    "input_border": "Rounded",
-                                    "border_color": "Red"
-                                }
-                            ],
-                            "column": 1,
-                            "is_clipped": true,
-                            "element_type": "Block"
-                        }, {
-                            "name": "left_space",
-                            "children": [{
-                                    "height": 100,
-                                    "element_type": "EmptyLine"
-                                }
-                            ],
-                            "column": 1,
-                            "element_type": "Block"
-                        }, {
-                            "name": "left_section_1_header",
-                            "children": [{
-                                    "name": "Section 1",
-                                    "font_style": [
-                                        "Bold",
-                                        "Italic"
-                                    ],
-                                    "font_size": 12,
-                                    "align": "Center",
-                                    "element_type": "Content"
-                                }, {
-                                    "name": "50",
-                                    "height": 50,
-                                    "element_type": "EmptyLine"
-                                }
-                            ],
-                            "column": 1,
-                            "element_type": "Block"
-                        }, {
-                            "name": "left_section_1_content",
-                            "children": [{
-                                    "name": "25",
-                                    "height": 25,
-                                    "element_type": "EmptyLine"
-                                }, {
-                                    "bubble_size": "undefined",
-                                    "name": "SEC1.",
-                                    "column": 1,
-                                    "sections_count": 10,
-                                    "options_count": 6,
-                                    "align": "Right",
-                                    "header_type": "Underline",
-                                    "header_border_size": 3,
-                                    "header_border_color": "Black",
-                                    "orientation": "Horizontal",
-                                    "element_type": "Grid"
-                                }, {
-                                    "name": "25",
-                                    "height": 25,
-                                    "element_type": "EmptyLine"
-                                }
-                            ],
-                            "column": 1,
-                            "border": "Rounded",
-                            "border_color": "Red",
-                            "element_type": "Block"
-                        }, {
-                            "name": "left_space",
-                            "children": [{
-                                    "height": 100,
-                                    "element_type": "EmptyLine"
-                                }
-                            ],
-                            "column": 1,
-                            "element_type": "Block"
-                        }, {
-                            "name": "left_section_2_header",
-                            "children": [{
-                                    "name": "Section 2",
-                                    "font_style": [
-                                        "Bold",
-                                        "Italic"
-                                    ],
-                                    "font_size": 12,
-                                    "align": "Center",
-                                    "element_type": "Content"
-                                }, {
-                                    "name": "50",
-                                    "height": 50,
-                                    "element_type": "EmptyLine"
-                                }
-                            ],
-                            "column": 1,
-                            "element_type": "Block"
-                        }, {
-                            "name": "left_section_2_content",
-                            "children": [{
-                                    "name": "25",
-                                    "height": 25,
-                                    "element_type": "EmptyLine"
-                                }, {
-                                    "bubble_size": "undefined",
-                                    "name": "SEC2.",
-                                    "column": 1,
-                                    "sections_count": 10,
-                                    "options_count": 6,
-                                    "align": "Right",
-                                    "header_type": "Underline",
-                                    "header_border_size": 3,
-                                    "header_border_color": "Black",
-                                    "orientation": "Horizontal",
-                                    "element_type": "Grid"
-                                }, {
-                                    "name": "25",
-                                    "height": 25,
-                                    "element_type": "EmptyLine"
-                                }
-                            ],
-                            "column": 1,
-                            "border": "Rounded",
-                            "border_color": "Red",
-                            "element_type": "Block"
-                        }, {
-                            "name": "left_footer",
-                            "children": [{
-                                    "name": "50",
-                                    "height": 150,
-                                    "element_type": "EmptyLine"
-                                }, {
-                                    "name": "test_id",
-                                    "value": "15478977",
-                                    "barcode_type": "code32",
-                                    "align": "Center",
-                                    "codetext": true,
-                                    "element_type": "Barcode"
-                                }
-                            ],
-                            "column": 1,
-                            "element_type": "Block"
-                        }, {
-                            "name": "right-header",
-                            "children": [{
-                                    "children": [{
-                                            "align": "Center",
-                                            "name": "logo.jpg",
-                                            "x": 1750,
-                                            "y": 180,
-                                            "height": 200,
-                                            "width": 200,
-                                            "element_type": "Image"
-                                        }, {
-                                            "height": 200,
-                                            "element_type": "EmptyLine"
-                                        }, {
-                                            "name": "Aspose Board",
-                                            "font_style": "Bold",
-                                            "font_size": 18,
-                                            "align": "Center",
-                                            "element_type": "Content"
-                                        }, {
-                                            "height": 10,
-                                            "element_type": "EmptyLine"
-                                        }, {
-                                            "name": "of education",
-                                            "font_style": "Bold",
-                                            "font_size": 18,
-                                            "align": "Center",
-                                            "element_type": "Content"
-                                        }, {
-                                            "name": "100",
-                                            "height": 100,
-                                            "element_type": "EmptyLine"
-                                        }, {
-                                            "name": "Personalized Test",
-                                            "font_style": "Bold",
-                                            "font_size": 12,
-                                            "align": "Center",
-                                            "element_type": "Content"
-                                        }, {
-                                            "name": "100",
-                                            "height": 50,
-                                            "element_type": "EmptyLine"
-                                        }
-                                    ],
-                                    "paragraph_type": "Normal",
-                                    "element_type": "Paragraph"
-                                }
-                            ],
-                            "column": 3,
-                            "element_type": "Block"
-                        }, {
-                            "name": "right-header",
-                            "children": [{
-                                    "name": "Personal Info",
-                                    "font_style": [
-                                        "Bold",
-                                        "Italic"
-                                    ],
-                                    "font_size": 10,
-                                    "align": "Center",
-                                    "element_type": "Content"
-                                }, {
-                                    "name": "50",
-                                    "height": 30,
-                                    "element_type": "EmptyLine"
-                                }
-                            ],
-                            "column": 3,
-                            "element_type": "Block"
-                        }, {
-                            "name": "right-header-description",
-                            "children": [{
-                                    "name": "Please check your name and school. Make sure it is your personal information. Make sure spelling is correct.",
-                                    "font_style": "Italic",
-                                    "font_size": 6,
-                                    "align": "Right",
-                                    "element_type": "Content"
-                                }
-                            ],
-                            "column": 3,
-                            "element_type": "Block"
-                        }, {
-                            "name": "right-personal-content",
-                            "children": [{
-                                    "height": 50,
-                                    "element_type": "EmptyLine"
-                                }, {
-                                    "name": "first_name",
-                                    "element_type": "InputGroup",
-                                    "children": [{
-                                            "name": "First name",
-                                            "align": "Left",
-                                            "element_type": "Content"
-                                        }, {
-                                            "name": "Andrew",
-                                            "align": "Center",
-                                            "element_type": "Content"
-                                        }
-                                    ],
-                                    "label_border": "Rounded",
-                                    "input_border": "Rounded",
-                                    "border_color": "Red"
-                                }, {
-                                    "name": "middle_name",
-                                    "element_type": "InputGroup",
-                                    "children": [{
-                                            "name": "Middle name",
-                                            "align": "Left",
-                                            "element_type": "Content"
-                                        }, {
-                                            "name": "Willson",
-                                            "align": "Center",
-                                            "element_type": "Content"
-                                        }
-                                    ],
-                                    "label_border": "Rounded",
-                                    "input_border": "Rounded",
-                                    "border_color": "Red"
-                                }, {
-                                    "name": "last_name",
-                                    "element_type": "InputGroup",
-                                    "children": [{
-                                            "name": "Last name",
-                                            "align": "Left",
-                                            "element_type": "Content"
-                                        }, {
-                                            "name": "Smith ",
-                                            "align": "Center",
-                                            "element_type": "Content"
-                                        }
-                                    ],
-                                    "label_border": "Rounded",
-                                    "input_border": "Rounded",
-                                    "border_color": "Red"
-                                }, {
-                                    "name": "school",
-                                    "element_type": "InputGroup",
-                                    "children": [{
-                                            "name": "School",
-                                            "align": "Left",
-                                            "element_type": "Content"
-                                        }, {
-                                            "name": "Aspose High School",
-                                            "align": "Center",
-                                            "element_type": "Content"
-                                        }
-                                    ],
-                                    "label_border": "Rounded",
-                                    "input_border": "Rounded",
-                                    "border_color": "Red"
-                                }
-                            ],
-                            "column": 3,
-                            "is_clipped": true,
-                            "element_type": "Block"
-                        }, {
-                            "name": "right_space",
-                            "children": [{
-                                    "height": 100,
-                                    "element_type": "EmptyLine"
-                                }
-                            ],
-                            "column": 3,
-                            "element_type": "Block"
-                        }, {
-                            "name": "right_section_1_header",
-                            "children": [{
-                                    "name": "Section 1",
-                                    "font_style": [
-                                        "Bold",
-                                        "Italic"
-                                    ],
-                                    "font_size": 12,
-                                    "align": "Center",
-                                    "element_type": "Content"
-                                }, {
-                                    "name": "50",
-                                    "height": 50,
-                                    "element_type": "EmptyLine"
-                                }
-                            ],
-                            "column": 3,
-                            "element_type": "Block"
-                        }, {
-                            "name": "right_section_1_content",
-                            "children": [{
-                                    "name": "25",
-                                    "height": 25,
-                                    "element_type": "EmptyLine"
-                                }, {
-                                    "bubble_size": "undefined",
-                                    "name": "SEC1.",
-                                    "column": 3,
-                                    "sections_count": 10,
-                                    "options_count": 6,
-                                    "align": "Right",
-                                    "header_type": "Underline",
-                                    "header_border_size": 3,
-                                    "header_border_color": "Black",
-                                    "orientation": "Horizontal",
-                                    "element_type": "Grid"
-                                }, {
-                                    "name": "25",
-                                    "height": 25,
-                                    "element_type": "EmptyLine"
-                                }
-                            ],
-                            "column": 3,
-                            "border": "Rounded",
-                            "border_color": "Red",
-                            "element_type": "Block"
-                        }, {
-                            "name": "right_space",
-                            "children": [{
-                                    "height": 100,
-                                    "element_type": "EmptyLine"
-                                }
-                            ],
-                            "column": 3,
-                            "element_type": "Block"
-                        }, {
-                            "name": "right_section_2_header",
-                            "children": [{
-                                    "name": "Section 2",
-                                    "font_style": [
-                                        "Bold",
-                                        "Italic"
-                                    ],
-                                    "font_size": 12,
-                                    "align": "Center",
-                                    "element_type": "Content"
-                                }, {
-                                    "name": "50",
-                                    "height": 50,
-                                    "element_type": "EmptyLine"
-                                }
-                            ],
-                            "column": 3,
-                            "element_type": "Block"
-                        }, {
-                            "name": "right_section_2_content",
-                            "children": [{
-                                    "name": "25",
-                                    "height": 25,
-                                    "element_type": "EmptyLine"
-                                }, {
-                                    "bubble_size": "undefined",
-                                    "name": "SEC2.",
-                                    "column": 3,
-                                    "sections_count": 10,
-                                    "options_count": 6,
-                                    "align": "Right",
-                                    "header_type": "Underline",
-                                    "header_border_size": 3,
-                                    "header_border_color": "Black",
-                                    "orientation": "Horizontal",
-                                    "element_type": "Grid"
-                                }, {
-                                    "name": "25",
-                                    "height": 25,
-                                    "element_type": "EmptyLine"
-                                }
-                            ],
-                            "column": 3,
-                            "border": "Rounded",
-                            "border_color": "Red",
-                            "element_type": "Block"
-                        }, {
-                            "name": "right_footer",
-                            "children": [{
-                                    "name": "50",
-                                    "height": 150,
-                                    "element_type": "EmptyLine"
-                                }, {
-                                    "name": "test_id",
-                                    "value": "15478977",
-                                    "barcode_type": "code32",
-                                    "align": "Center",
-                                    "codetext": true,
-                                    "element_type": "Barcode"
-                                }
-                            ],
-                            "column": 3,
-                            "element_type": "Block"
-                        }
-                    ],
-                    "columns_proportions": [
-                        46,
-                        8,
-                        46
-                    ],
-                    "container_type": "Normal",
-                    "block_right_margin": 0,
-                    "block_bottom_margin": 0,
-                    "block_top_padding": 0,
-                    "element_type": "Container"
-                }, {
-                    "align": "Center",
-                    "name": "tear-line.png",
-                    "x": 1200,
-                    "y": 0,
-                    "height": 3295,
-                    "width": 150,
-                    "element_type": "Image"
+  "name": null,
+  "children": [
+    {
+      "name": null,
+      "children": [
+        {
+          "name": "main",
+          "children": [
+            {
+              "name": "left-header",
+              "children": [
+                {
+                  "name": "",
+                  "children": [
+                    {
+                      "align": "Center",
+                      "name": "logo.jpg",
+                      "image_path": null,
+                      "x": -1,
+                      "y": -1,
+                      "height": 200,
+                      "width": 200,
+                      "element_type": "Image"
+                    },
+                    {
+                      "name": "Aspose Board",
+                      "font_family": "Calibri",
+                      "font_style": "Bold",
+                      "font_size": 18,
+                      "content_type": "Normal",
+                      "align": "Center",
+                      "element_type": "Content"
+                    },
+                    {
+                      "name": "of education",
+                      "font_family": "Calibri",
+                      "font_style": "Bold",
+                      "font_size": 18,
+                      "content_type": "Normal",
+                      "align": "Center",
+                      "element_type": "Content"
+                    },
+                    {
+                      "name": "Personalized Test",
+                      "font_family": "Calibri",
+                      "font_style": "Bold",
+                      "font_size": 12,
+                      "content_type": "Normal",
+                      "align": "Center",
+                      "element_type": "Content"
+                    }
+                  ],
+                  "paragraph_type": "Normal",
+                  "element_type": "Paragraph"
                 }
-            ],
-            "element_type": "Page"
+              ],
+              "column": 1,
+              "border": "None",
+              "border_size": 3,
+              "border_color": "Black",
+              "is_clipped": false,
+              "element_type": "Block"
+            },
+            {
+              "name": "left-header",
+              "children": [
+                {
+                  "name": "Personal Info",
+                  "font_family": "Calibri",
+                  "font_style": [
+                    "Bold",
+                    "Italic"
+                  ],
+                  "font_size": 10,
+                  "content_type": "Normal",
+                  "align": "Center",
+                  "element_type": "Content"
+                }
+              ],
+              "column": 1,
+              "border": "None",
+              "border_size": 3,
+              "border_color": "Black",
+              "is_clipped": false,
+              "element_type": "Block"
+            },
+            {
+              "name": "left-header-description",
+              "children": [
+                {
+                  "name": "Please check your name and school. Make sure it is your personal information. Make sure spelling is correct.",
+                  "font_family": "Calibri",
+                  "font_style": "Italic",
+                  "font_size": 6,
+                  "content_type": "Normal",
+                  "align": "Right",
+                  "element_type": "Content"
+                }
+              ],
+              "column": 1,
+              "border": "None",
+              "border_size": 3,
+              "border_color": "Black",
+              "is_clipped": false,
+              "element_type": "Block"
+            },
+            {
+              "name": "left-content",
+              "children": [
+                {
+                  "name": "first_name",
+                  "element_type": "InputGroup",
+                  "children": [
+                    {
+                      "name": "First name",
+                      "font_family": "Calibri",
+                      "font_style": "Regular",
+                      "font_size": 10,
+                      "content_type": "Normal",
+                      "align": "Left",
+                      "element_type": "Content"
+                    },
+                    {
+                      "name": "John",
+                      "font_family": "Calibri",
+                      "font_style": "Regular",
+                      "font_size": 10,
+                      "content_type": "Normal",
+                      "align": "Center",
+                      "element_type": "Content"
+                    }
+                  ],
+                  "label_border": "Rounded",
+                  "input_border": "Rounded",
+                  "border_size": 3,
+                  "border_color": "Red"
+                },
+                {
+                  "name": "middle_name",
+                  "element_type": "InputGroup",
+                  "children": [
+                    {
+                      "name": "Middle name",
+                      "font_family": "Calibri",
+                      "font_style": "Regular",
+                      "font_size": 10,
+                      "content_type": "Normal",
+                      "align": "Left",
+                      "element_type": "Content"
+                    },
+                    {
+                      "name": "Gavin",
+                      "font_family": "Calibri",
+                      "font_style": "Regular",
+                      "font_size": 10,
+                      "content_type": "Normal",
+                      "align": "Center",
+                      "element_type": "Content"
+                    }
+                  ],
+                  "label_border": "Rounded",
+                  "input_border": "Rounded",
+                  "border_size": 3,
+                  "border_color": "Red"
+                },
+                {
+                  "name": "last_name",
+                  "element_type": "InputGroup",
+                  "children": [
+                    {
+                      "name": "Last name",
+                      "font_family": "Calibri",
+                      "font_style": "Regular",
+                      "font_size": 10,
+                      "content_type": "Normal",
+                      "align": "Left",
+                      "element_type": "Content"
+                    },
+                    {
+                      "name": "Malkovich ",
+                      "font_family": "Calibri",
+                      "font_style": "Regular",
+                      "font_size": 10,
+                      "content_type": "Normal",
+                      "align": "Center",
+                      "element_type": "Content"
+                    }
+                  ],
+                  "label_border": "Rounded",
+                  "input_border": "Rounded",
+                  "border_size": 3,
+                  "border_color": "Red"
+                },
+                {
+                  "name": "school",
+                  "element_type": "InputGroup",
+                  "children": [
+                    {
+                      "name": "School",
+                      "font_family": "Calibri",
+                      "font_style": "Regular",
+                      "font_size": 10,
+                      "content_type": "Normal",
+                      "align": "Left",
+                      "element_type": "Content"
+                    },
+                    {
+                      "name": "Aspose High School",
+                      "font_family": "Calibri",
+                      "font_style": "Regular",
+                      "font_size": 10,
+                      "content_type": "Normal",
+                      "align": "Center",
+                      "element_type": "Content"
+                    }
+                  ],
+                  "label_border": "Rounded",
+                  "input_border": "Rounded",
+                  "border_size": 3,
+                  "border_color": "Red"
+                }
+              ],
+              "column": 1,
+              "border": "None",
+              "border_size": 3,
+              "border_color": "Black",
+              "is_clipped": true,
+              "element_type": "Block"
+            },
+            {
+              "name": "left_space",
+              "children": [],
+              "column": 1,
+              "border": "None",
+              "border_size": 3,
+              "border_color": "Black",
+              "is_clipped": false,
+              "element_type": "Block"
+            },
+            {
+              "name": "left_section_1_header",
+              "children": [
+                {
+                  "name": "Section 1",
+                  "font_family": "Calibri",
+                  "font_style": [
+                    "Bold",
+                    "Italic"
+                  ],
+                  "font_size": 12,
+                  "content_type": "Normal",
+                  "align": "Center",
+                  "element_type": "Content"
+                }
+              ],
+              "column": 1,
+              "border": "None",
+              "border_size": 3,
+              "border_color": "Black",
+              "is_clipped": false,
+              "element_type": "Block"
+            },
+            {
+              "name": "left_section_1_content",
+              "children": [
+                {
+                  "name": "SEC1.",
+                  "column": 1,
+                  "sections_count": 10,
+                  "options_count": 6,
+                  "align": "Center",
+                  "header_type": "Underline",
+                  "header_border_size": 3,
+                  "header_border_color": "Black",
+                  "orientation": "Horizontal",
+                  "vertical_margin": 0,
+                  "bubble_size": "Normal",
+                  "bubble_type": "Round",
+                  "x": -1,
+                  "y": -1,
+                  "element_type": "Grid"
+                }
+              ],
+              "column": 1,
+              "border": "Rounded",
+              "border_size": 3,
+              "border_color": "Red",
+              "is_clipped": false,
+              "element_type": "Block"
+            },
+            {
+              "name": "left_space",
+              "children": [],
+              "column": 1,
+              "border": "None",
+              "border_size": 3,
+              "border_color": "Black",
+              "is_clipped": false,
+              "element_type": "Block"
+            },
+            {
+              "name": "left_section_2_header",
+              "children": [
+                {
+                  "name": "Section 2",
+                  "font_family": "Calibri",
+                  "font_style": [
+                    "Bold",
+                    "Italic"
+                  ],
+                  "font_size": 12,
+                  "content_type": "Normal",
+                  "align": "Center",
+                  "element_type": "Content"
+                }
+              ],
+              "column": 1,
+              "border": "None",
+              "border_size": 3,
+              "border_color": "Black",
+              "is_clipped": false,
+              "element_type": "Block"
+            },
+            {
+              "name": "left_section_2_content",
+              "children": [
+                {
+                  "name": "SEC2.",
+                  "column": 1,
+                  "sections_count": 10,
+                  "options_count": 6,
+                  "align": "Center",
+                  "header_type": "Underline",
+                  "header_border_size": 3,
+                  "header_border_color": "Black",
+                  "orientation": "Horizontal",
+                  "vertical_margin": 0,
+                  "bubble_size": "Normal",
+                  "bubble_type": "Round",
+                  "x": -1,
+                  "y": -1,
+                  "element_type": "Grid"
+                }
+              ],
+              "column": 1,
+              "border": "Rounded",
+              "border_size": 3,
+              "border_color": "Red",
+              "is_clipped": false,
+              "element_type": "Block"
+            },
+            {
+              "name": "left_footer",
+              "children": [
+                {
+                  "name": "test_id",
+                  "value": "15478977",
+                  "barcode_type": "Code32",
+                  "qr_version": "Auto",
+                  "align": "Center",
+                  "height": -1,
+                  "codetext": true,
+                  "X": -1,
+                  "Y": -1,
+                  "element_type": "Barcode"
+                }
+              ],
+              "column": 1,
+              "border": "None",
+              "border_size": 3,
+              "border_color": "Black",
+              "is_clipped": false,
+              "element_type": "Block"
+            },
+            {
+              "name": "right-header",
+              "children": [
+                {
+                  "name": "",
+                  "children": [
+                    {
+                      "align": "Center",
+                      "name": "logo.jpg",
+                      "image_path": null,
+                      "x": -1,
+                      "y": -1,
+                      "height": 200,
+                      "width": 200,
+                      "element_type": "Image"
+                    },
+                    {
+                      "name": "Aspose Board",
+                      "font_family": "Calibri",
+                      "font_style": "Bold",
+                      "font_size": 18,
+                      "content_type": "Normal",
+                      "align": "Center",
+                      "element_type": "Content"
+                    },
+                    {
+                      "name": "of education",
+                      "font_family": "Calibri",
+                      "font_style": "Bold",
+                      "font_size": 18,
+                      "content_type": "Normal",
+                      "align": "Center",
+                      "element_type": "Content"
+                    },
+                    {
+                      "name": "Personalized Test",
+                      "font_family": "Calibri",
+                      "font_style": "Bold",
+                      "font_size": 12,
+                      "content_type": "Normal",
+                      "align": "Center",
+                      "element_type": "Content"
+                    }
+                  ],
+                  "paragraph_type": "Normal",
+                  "element_type": "Paragraph"
+                }
+              ],
+              "column": 3,
+              "border": "None",
+              "border_size": 3,
+              "border_color": "Black",
+              "is_clipped": false,
+              "element_type": "Block"
+            },
+            {
+              "name": "right-header",
+              "children": [
+                {
+                  "name": "Personal Info",
+                  "font_family": "Calibri",
+                  "font_style": [
+                    "Bold",
+                    "Italic"
+                  ],
+                  "font_size": 10,
+                  "content_type": "Normal",
+                  "align": "Center",
+                  "element_type": "Content"
+                }
+              ],
+              "column": 3,
+              "border": "None",
+              "border_size": 3,
+              "border_color": "Black",
+              "is_clipped": false,
+              "element_type": "Block"
+            },
+            {
+              "name": "right-header-description",
+              "children": [
+                {
+                  "name": "Please check your name and school. Make sure it is your personal information. Make sure spelling is correct.",
+                  "font_family": "Calibri",
+                  "font_style": "Italic",
+                  "font_size": 6,
+                  "content_type": "Normal",
+                  "align": "Right",
+                  "element_type": "Content"
+                }
+              ],
+              "column": 3,
+              "border": "None",
+              "border_size": 3,
+              "border_color": "Black",
+              "is_clipped": false,
+              "element_type": "Block"
+            },
+            {
+              "name": "right-personal-content",
+              "children": [
+                {
+                  "name": "first_name",
+                  "element_type": "InputGroup",
+                  "children": [
+                    {
+                      "name": "First name",
+                      "font_family": "Calibri",
+                      "font_style": "Regular",
+                      "font_size": 10,
+                      "content_type": "Normal",
+                      "align": "Left",
+                      "element_type": "Content"
+                    },
+                    {
+                      "name": "Andrew",
+                      "font_family": "Calibri",
+                      "font_style": "Regular",
+                      "font_size": 10,
+                      "content_type": "Normal",
+                      "align": "Center",
+                      "element_type": "Content"
+                    }
+                  ],
+                  "label_border": "Rounded",
+                  "input_border": "Rounded",
+                  "border_size": 3,
+                  "border_color": "Red"
+                },
+                {
+                  "name": "middle_name",
+                  "element_type": "InputGroup",
+                  "children": [
+                    {
+                      "name": "Middle name",
+                      "font_family": "Calibri",
+                      "font_style": "Regular",
+                      "font_size": 10,
+                      "content_type": "Normal",
+                      "align": "Left",
+                      "element_type": "Content"
+                    },
+                    {
+                      "name": "Willson",
+                      "font_family": "Calibri",
+                      "font_style": "Regular",
+                      "font_size": 10,
+                      "content_type": "Normal",
+                      "align": "Center",
+                      "element_type": "Content"
+                    }
+                  ],
+                  "label_border": "Rounded",
+                  "input_border": "Rounded",
+                  "border_size": 3,
+                  "border_color": "Red"
+                },
+                {
+                  "name": "last_name",
+                  "element_type": "InputGroup",
+                  "children": [
+                    {
+                      "name": "Last name",
+                      "font_family": "Calibri",
+                      "font_style": "Regular",
+                      "font_size": 10,
+                      "content_type": "Normal",
+                      "align": "Left",
+                      "element_type": "Content"
+                    },
+                    {
+                      "name": "Smith ",
+                      "font_family": "Calibri",
+                      "font_style": "Regular",
+                      "font_size": 10,
+                      "content_type": "Normal",
+                      "align": "Center",
+                      "element_type": "Content"
+                    }
+                  ],
+                  "label_border": "Rounded",
+                  "input_border": "Rounded",
+                  "border_size": 3,
+                  "border_color": "Red"
+                },
+                {
+                  "name": "school",
+                  "element_type": "InputGroup",
+                  "children": [
+                    {
+                      "name": "School",
+                      "font_family": "Calibri",
+                      "font_style": "Regular",
+                      "font_size": 10,
+                      "content_type": "Normal",
+                      "align": "Left",
+                      "element_type": "Content"
+                    },
+                    {
+                      "name": "Aspose High School",
+                      "font_family": "Calibri",
+                      "font_style": "Regular",
+                      "font_size": 10,
+                      "content_type": "Normal",
+                      "align": "Center",
+                      "element_type": "Content"
+                    }
+                  ],
+                  "label_border": "Rounded",
+                  "input_border": "Rounded",
+                  "border_size": 3,
+                  "border_color": "Red"
+                }
+              ],
+              "column": 3,
+              "border": "None",
+              "border_size": 3,
+              "border_color": "Black",
+              "is_clipped": true,
+              "element_type": "Block"
+            },
+            {
+              "name": "right_space",
+              "children": [],
+              "column": 3,
+              "border": "None",
+              "border_size": 3,
+              "border_color": "Black",
+              "is_clipped": false,
+              "element_type": "Block"
+            },
+            {
+              "name": "right_section_1_header",
+              "children": [
+                {
+                  "name": "Section 1",
+                  "font_family": "Calibri",
+                  "font_style": [
+                    "Bold",
+                    "Italic"
+                  ],
+                  "font_size": 12,
+                  "content_type": "Normal",
+                  "align": "Center",
+                  "element_type": "Content"
+                }
+              ],
+              "column": 3,
+              "border": "None",
+              "border_size": 3,
+              "border_color": "Black",
+              "is_clipped": false,
+              "element_type": "Block"
+            },
+            {
+              "name": "right_section_1_content",
+              "children": [
+                {
+                  "name": "SEC1.",
+                  "column": 3,
+                  "sections_count": 10,
+                  "options_count": 6,
+                  "align": "Center",
+                  "header_type": "Underline",
+                  "header_border_size": 3,
+                  "header_border_color": "Black",
+                  "orientation": "Horizontal",
+                  "vertical_margin": 0,
+                  "bubble_size": "Normal",
+                  "bubble_type": "Round",
+                  "x": -1,
+                  "y": -1,
+                  "element_type": "Grid"
+                }
+              ],
+              "column": 3,
+              "border": "Rounded",
+              "border_size": 3,
+              "border_color": "Red",
+              "is_clipped": false,
+              "element_type": "Block"
+            },
+            {
+              "name": "right_space",
+              "children": [],
+              "column": 3,
+              "border": "None",
+              "border_size": 3,
+              "border_color": "Black",
+              "is_clipped": false,
+              "element_type": "Block"
+            },
+            {
+              "name": "right_section_2_header",
+              "children": [
+                {
+                  "name": "Section 2",
+                  "font_family": "Calibri",
+                  "font_style": [
+                    "Bold",
+                    "Italic"
+                  ],
+                  "font_size": 12,
+                  "content_type": "Normal",
+                  "align": "Center",
+                  "element_type": "Content"
+                }
+              ],
+              "column": 3,
+              "border": "None",
+              "border_size": 3,
+              "border_color": "Black",
+              "is_clipped": false,
+              "element_type": "Block"
+            },
+            {
+              "name": "right_section_2_content",
+              "children": [
+                {
+                  "name": "SEC2.",
+                  "column": 3,
+                  "sections_count": 10,
+                  "options_count": 6,
+                  "align": "Center",
+                  "header_type": "Underline",
+                  "header_border_size": 3,
+                  "header_border_color": "Black",
+                  "orientation": "Horizontal",
+                  "vertical_margin": 0,
+                  "bubble_size": "Normal",
+                  "bubble_type": "Round",
+                  "x": -1,
+                  "y": -1,
+                  "element_type": "Grid"
+                }
+              ],
+              "column": 3,
+              "border": "Rounded",
+              "border_size": 3,
+              "border_color": "Red",
+              "is_clipped": false,
+              "element_type": "Block"
+            },
+            {
+              "name": "right_footer",
+              "children": [
+                {
+                  "name": "test_id",
+                  "value": "15478977",
+                  "barcode_type": "Code32",
+                  "qr_version": "Auto",
+                  "align": "Center",
+                  "height": -1,
+                  "codetext": true,
+                  "X": -1,
+                  "Y": -1,
+                  "element_type": "Barcode"
+                }
+              ],
+              "column": 3,
+              "border": "None",
+              "border_size": 3,
+              "border_color": "Black",
+              "is_clipped": false,
+              "element_type": "Block"
+            }
+          ],
+          "columns_count": 0,
+          "columns_proportions": [
+            46,
+            8,
+            46
+          ],
+          "container_type": "Normal",
+          "block_right_margin": 0,
+          "block_bottom_margin": 0,
+          "block_top_padding": 0,
+          "element_type": "Container"
+        },
+        {
+          "align": "Center",
+          "name": "tear-line.png",
+          "image_path": null,
+          "x": 1200,
+          "y": 0,
+          "height": 3295,
+          "width": 150,
+          "element_type": "Image"
         }
-    ],
-    "element_type": "Template"
+      ],
+      "element_type": "Page"
+    }
+  ],
+  "element_type": "Template"
 }
 ```
 
@@ -1004,7 +1105,7 @@ test_id,"154789770"
 File | Description
 ---- | -----------
 **logo.jpg** | company logo
-**settings.txt** | [page settings](/omr/net/generate-template/page-setup/)
+**settings.json** | [page settings](/omr/net/generate-template/page-setup/)
 **tear-line.png** | vertical tear line image
 **vertical tear-line.csv** | recognition results based on the filled form available in this package
 **vertical tear-line.json** | source code in [JSON markup](/omr/net/json-markup/)

@@ -18,7 +18,7 @@ keywords:
 - columns
 ---
 
-This element is used to organize content within [**containers**](/omr/net/txt-markup/container/). Blocks can only be nested within [**container**](/omr/net/txt-markup/container/) elements and cannot contain other **block** elements.
+This element is used to organize content within [**containers**](/omr/net/txt-markup/container/). Blocks can only be nested within [**container**](/omr/net/txt-markup/container/) elements.
 
 Blocks may not have a visual representation or have a border around them.
 
@@ -52,7 +52,7 @@ Attribute | Default value | Description | Usage example
 
 ## Allowed child elements
 
-All, except for **container** or **block**.
+All, except for **block**.
 
 ## **Examples**
 

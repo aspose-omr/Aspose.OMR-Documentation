@@ -17,7 +17,7 @@ keywords:
 - paragraph
 ---
 
-This element is used to combine [text](/omr/net/txt-markup/content/) and [images](/omr/net/txt-markup/image/). **Paragraph** elements can only be nested within other elements and cannot be used at the top level of the form hierarchy.
+This element is used to combine [text](/omr/net/txt-markup/content/) and [images](/omr/net/txt-markup/image/).
 
 ## Syntax
 
@@ -39,14 +39,14 @@ An attribute is written as `[attribute_name]=[value]`. Each attribute must be pl
 
 Attribute | Default value | Description | Usage example
 --------- | ------------- | ----------- | -------------
-**type** | normal | Set this attribute to `multiple` so that text can wrap around the image.<br />Omitting this attribute or setting it to `normal` will cause the text to overlay the image. | `type=multiple`
+**type** | normal | Set this attribute to `ImageWrap` so that text can wrap around the image.<br />Omitting this attribute or setting it to `normal` will cause the text to overlay the image. | `type=ImageWrap`
 
 ## Image wrapping
 
 To allow the text to wrap around an image:
 
 1. Set the **width**, **height**, **x** and **y** attributes of the [**image**](/omr/net/txt-markup/image/) element.
-2. Set the **type** attribute of the **paragraph** element to `multiple`.
+2. Set the **type** attribute of the **paragraph** element to `ImageWrap`.
 
 ## Allowed child elements
 
@@ -87,7 +87,7 @@ Check out the code examples to see how **paragraph** elements can be used.
 ?container=Example
 ?block=
 ?paragraph=
-	type=multiple
+	type=ImageWrap
 ?image=logo.jpg
 	x=1000
 	y=200

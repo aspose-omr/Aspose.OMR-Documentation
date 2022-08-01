@@ -135,6 +135,7 @@ Name | Type | Default value | Description
 ---- | ---- | ------------- | -----------
 **name** | string | _n/a_ | An identifier, which can be used by [**CustomTrigger**]({{< relref "#customtrigger-element" >}}) element. Use **%index%** variable to guarantee the uniqueness; for example, `"Bubbles %index%"`.
 **bubble_size** | string | "normal" | Size of bubbles: `"extrasmall"`, `"small"`, `"normal"`, `"large"`, or `"extralarge"`.
+**bubble_type** | string | "round" | Bubble style: `"round`" or `"square"`.
 **font_family** | string | "Segoe UI" | The font family for the bubble character.
 **font_style** | string / array | "regular" | The font style for the bubble character: `"bold"`, `"italic"` or `"underline"`.<br />Several font styles can be combined by providing them as an array; for example `["bold", "italic"]`.
 **font_size** | integer | 12 | Font size for the bubble character.
@@ -153,13 +154,14 @@ Name | Type | Description
 **target** | string | Name of [**BubbleArray**]({{< relref "#bubblearray-element" >}}) element whose value will be replaced. Use **%index%** variable to point to the same row where the **CustomTrigger** element instance is rendered; for example, `"Bubbles %index%"`.
 **value** | string | The replacement value to be used when the element is marked; for example `"Prefer not to answer"`.
 
-##### BubbleArray optional properties
+##### CustomTrigger optional properties
 
 Name | Type | Default value | Description
 ---- | ---- | ------------- | -----------
 **name** | string | _n/a_ | An identifier of the **CustomTrigger** element. Use **%index%** variable to guarantee the uniqueness; for example, "_Own choice %index%_".
 **trigger_type** | string | "ReplaceValue" | Action when the bubble is marked. `"ReplaceValue"` replaces the value of the [**BubbleArray**]({{< relref "#bubblearray-element" >}}) specified in **target** property with the **value** property.<br />This property is reserved for future use; you can omit it.
 **bubble_size** | string | "normal" | Size of bubbles: `"extrasmall"`, `"small"`, `"normal"`, `"large"`, or `"extralarge"`.
+**bubble_type** | string | "round" | Bubble style: `"round`" or `"square"`.
 
 ## Example
 

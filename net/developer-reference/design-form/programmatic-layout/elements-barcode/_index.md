@@ -27,70 +27,73 @@ Information from the barcode is decoded during recognition.
 
 Aspose.OMT for .NET can generate and recognize a wide variety of barcodes:
 
-- AustralianPosteParcel
-- AustraliaPost
-- Aztec
+- QR code
 - Codabar
-- CodablockF
 - Code11
-- Code128
-- Code16K
-- Code32
-- Code39Extended
 - Code39Standard
-- Code93Extended
+- Code39Extended
 - Code93Standard
-- DatabarExpanded
-- DatabarExpandedStacked
-- DatabarLimited
-- DatabarOmniDirectional
-- DatabarStacked
-- DatabarStackedOmniDirectional
-- DatabarTruncated
-- DataLogic2of5
-- DataMatrix
-- DeutschePostIdentcode
-- DeutschePostLeitcode
-- DotCode
-- DutchKIX
+- Code93Extended
+- Code128
+- GS1Code128
+- EAN8
 - EAN13
 - EAN14
-- EAN8
-- GS1Code128
-- GS1DataMatrix
-- GS1QR
-- IATA2of5
-- Interleaved2of5
-- ISBN
-- ISMN
-- ISSN
-- ItalianPost25
-- ITF14
-- ITF6
-- MacroPdf417
-- Mailmark
-- Matrix2of5
-- MaxiCode
-- MicroPdf417
-- MSI
-- OneCode
-- OPC
-- PatchCode
-- Pdf417
-- Pharmacode
-- Planet
-- Postnet
-- PZN
-- QR code
-- RM4SCC
 - SCC14
 - SSCC18
-- Standard2of5
-- SwissPostParcel
-- SwissQR
 - UPCA
 - UPCE
+- ISBN
+- ISSN
+- ISMN
+- Standard2of5
+- Interleaved2of5
+- Matrix2of5
+- ItalianPost25
+- IATA2of5
+- ITF14
+- ITF6
+- MSI
 - VIN
+- DeutschePostIdentcode
+- DeutschePostLeitcode
+- OPC
+- PZN
+- Code16K
+- Pharmacode
+- DataMatrix
+- Aztec
+- Pdf417
+- MacroPdf417
+- AustraliaPost
+- Postnet
+- Planet
+- OneCode
+- RM4SCC
+- Mailmark
+- DatabarOmniDirectional
+- DatabarTruncated
+- DatabarLimited
+- DatabarExpanded
+- SingaporePost
+- GS1DataMatrix
+- AustralianPosteParcel
+- SwissPostParcel
+- PatchCode
+- DatabarExpandedStacked
+- DatabarStacked
+- DatabarStackedOmniDirectional
+- MicroPdf417
+- GS1QR
+- MaxiCode
+- Code32
+- DataLogic2of5
+- DotCode
+- DutchKIX
+- UpcaGs1Code128Coupon
+- UpcaGs1DatabarCoupon
+- CodablockF
+- GS1CodablockF
 
 ## Declaration
 
@@ -120,8 +123,8 @@ Name | Type | Description
 Name | Type | Default value | Description
 ---- | ---- | ------------- | -----------
 **Name** | `string` | _n/a_ | Used as an element's identifier in recognition results and as a reminder of the element's purpose in template source; for example, "_Web site_".<br />This text is not displayed on the form.
-**BarcodeType** | [Barcode type](https://reference.aspose.com/barcode/net/aspose.barcode.generation/encodetypes/) | _QR Code_ | Type of the barcode.
-**BarcodeQRVersion** | [`Aspose.BarCode.Generation.QRVersion`](https://reference.aspose.com/barcode/net/aspose.barcode.generation/qrversion/) | _Automatic_ | QR Code version. Only applicable when `BarcodeType` is `QR`.
+**BarcodeType** | Type of the barcode, a value from `Aspose.OMR.Generation.Config.Enums.BarcodeType` enumerator. | `BarcodeType.QR` | Type of the barcode.
+**BarcodeQRVersion** | QR code version, a value from `Aspose.OMR.Generation.Config.Enums.QRVersion` enumerator. | `QRVersion.Auto` | QR Code version. Only applicable when `BarcodeType` is `QR`.
 **DrawCodetext** | `bool` | false | Add a string from the `Value` property below the barcode image.
 **Align** | [`AlignmentEnum`](https://reference.aspose.com/omr/net/aspose.omr.generation.config.enums/alignmentenum/) | `AlignmentEnum.Center` | Horizontal alignment of the barcode image.
 **Height** | `int` | _Automatic_ | Barcode height, in pixels. The width is adjusted automatically.

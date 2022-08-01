@@ -20,7 +20,7 @@ keywords:
 - border
 ---
 
-This element is used to organize content within [**containers**](/omr/net/programmatic-forms/containerconfig/). **BlockConfig** elements can only be nested within [**ContainerConfig**](/omr/net/programmatic-forms/containerconfig/) elements and cannot contain other **BlockConfig** elements.
+This element is used to organize content within [**containers**](/omr/net/programmatic-forms/containerconfig/). **BlockConfig** elements can only be nested within [**ContainerConfig**](/omr/net/programmatic-forms/containerconfig/) elements.
 
 **BlockConfig** elements may have no visual representation or have a border around them.
 
@@ -66,7 +66,7 @@ Name | Type | Default value | Description
 
 ## Allowed child elements
 
-All, except for [**ContainerConfig**](/omr/net/programmatic-forms/containerconfig/) or another **BlockConfig**.
+All, except for another **BlockConfig**.
 
 ## **Examples**
 

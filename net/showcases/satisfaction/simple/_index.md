@@ -39,8 +39,6 @@ Understand how your clients are satisfied with your services, capabilities and t
 	columns_count=1
 ?block=
 	column=1
-?empty_line=
-	height=50
 ?content=Thank you for your purchase! We want your experience to be Perfect! Please help us be more Amazing by answering some question about your purchase.
 	font_style=Italic
 &block
@@ -159,13 +157,9 @@ Understand how your clients are satisfied with your services, capabilities and t
 ?block=
 	column=1	
 ?content=If you overall experience was unsatisfactory - leave your contact information. We'll contact you about it!
-?empty_line=
-	height=50
 ?write_in=contact_information
 &block
 &container
-?empty_line=150
-	height=100
 ?barcode=test_id
 	codetext=true
 	value=15478977
@@ -179,363 +173,584 @@ Understand how your clients are satisfied with your services, capabilities and t
 
 ```json
 {
-    "children": [{
-            "children": [{
-                    "name": "AmazeCar Customer Satisfaction Survey",
-                    "font_style": "Bold",
-                    "font_size": 18,
-                    "align": "Center",
-                    "element_type": "Text"
-                }, {
-                    "align": "Left",
-                    "name": "logo.jpg",
-                    "x": 278,
-                    "y": 100,
-                    "height": 200,
-                    "width": 200,
-                    "element_type": "Image"
-                }, {
-                    "name": "description",
-                    "children": [{
-                            "children": [{
-                                    "height": 50,
-                                    "element_type": "EmptyLine"
-                                }, {
-                                    "name": "Thank you for your purchase! We want your experience to be Perfect! Please help us be more Amazing by answering some question about your purchase.",
-                                    "font_style": "Italic",
-                                    "align": "Left",
-                                    "element_type": "Content"
-                                }
-                            ],
-                            "column": 1,
-                            "element_type": "Block"
-                        }
-                    ],
-                    "columns_count": 1,
-                    "container_type": "Normal",
-                    "element_type": "Container"
-                }, {
-                    "name": "about yourself_header",
-                    "children": [{
-                            "children": [{
-                                    "name": "Please tell us a bit about yourself...",
-                                    "font_style": "Bold",
-                                    "font_size": 14,
-                                    "align": "Left",
-                                    "element_type": "Content"
-                                }, {
-                                    "height": 50,
-                                    "element_type": "EmptyLine"
-                                }
-                            ],
-                            "column": 1,
-                            "border": "Square",
-                            "element_type": "Block"
-                        }
-                    ],
-                    "columns_proportions": [
-                        100
-                    ],
-                    "container_type": "Normal",
-                    "block_bottom_margin": 0,
-                    "block_top_padding": 0,
-                    "element_type": "Container"
-                }, {
-                    "height": 50,
-                    "element_type": "EmptyLine"
-                }, {
-                    "name": "about yourself_content",
-                    "children": [{
-                            "children": [{
-                                    "name": "Gender:",
-                                    "font_style": "Bold",
-                                    "font_size": 12,
-                                    "align": "Left",
-                                    "element_type": "Content"
-                                }, {
-                                    "name": "Gender",
-                                    "children": [{
-                                            "name": "Female",
-                                            "children": [{
-                                                    "name": "Female",
-                                                    "align": "Left",
-                                                    "element_type": "Content"
-                                                }
-                                            ],
-                                            "bubble_type": "Round",
-                                            "element_type": "Answer"
-                                        }, {
-                                            "name": "Male",
-                                            "children": [{
-                                                    "name": "Male",
-                                                    "align": "Left",
-                                                    "element_type": "Content"
-                                                }
-                                            ],
-                                            "bubble_type": "Round",
-                                            "element_type": "Answer"
-                                        }, {
-                                            "name": "Other(specify)",
-                                            "children": [{
-                                                    "name": "Other(specify)",
-                                                    "align": "Left",
-                                                    "element_type": "Content"
-                                                }, {
-                                                    "name": "Gender",
-                                                    "element_type": "WriteIn"
-                                                }
-                                            ],
-                                            "bubble_type": "Round",
-                                            "element_type": "Answer"
-                                        }
-                                    ],
-                                    "element_type": "VerticalChoiceBox",
-                                    "top_padding": 0
-                                }
-                            ],
-                            "column": 1,
-                            "element_type": "Block"
-                        }, {
-                            "children": [{
-                                    "name": "Age Group:",
-                                    "font_style": "Bold",
-                                    "font_size": 12,
-                                    "align": "Left",
-                                    "element_type": "Content"
-                                }, {
-                                    "name": "Age Group",
-                                    "children": [{
-                                            "name": "18-21",
-                                            "children": [{
-                                                    "name": "18-21",
-                                                    "align": "Left",
-                                                    "element_type": "Content"
-                                                }
-                                            ],
-                                            "bubble_type": "Round",
-                                            "element_type": "Answer"
-                                        }, {
-                                            "name": "21-30",
-                                            "children": [{
-                                                    "name": "21-30",
-                                                    "align": "Left",
-                                                    "element_type": "Content"
-                                                }
-                                            ],
-                                            "bubble_type": "Round",
-                                            "element_type": "Answer"
-                                        }, {
-                                            "name": "31-45",
-                                            "children": [{
-                                                    "name": "31-45",
-                                                    "align": "Left",
-                                                    "element_type": "Content"
-                                                }
-                                            ],
-                                            "bubble_type": "Round",
-                                            "element_type": "Answer"
-                                        }, {
-                                            "name": "46-60",
-                                            "children": [{
-                                                    "name": "46-60",
-                                                    "align": "Left",
-                                                    "element_type": "Content"
-                                                }
-                                            ],
-                                            "bubble_type": "Round",
-                                            "element_type": "Answer"
-                                        }, {
-                                            "name": ">60",
-                                            "children": [{
-                                                    "name": ">60",
-                                                    "align": "Left",
-                                                    "element_type": "Content"
-                                                }
-                                            ],
-                                            "bubble_type": "Round",
-                                            "element_type": "Answer"
-                                        }, {
-                                            "name": "21-30",
-                                            "children": [{
-                                                    "name": "21-30",
-                                                    "align": "Left",
-                                                    "element_type": "Content"
-                                                }
-                                            ],
-                                            "bubble_type": "Round",
-                                            "element_type": "Answer"
-                                        }
-                                    ],
-                                    "element_type": "VerticalChoiceBox",
-                                    "top_padding": 0
-                                }
-                            ],
-                            "column": 3,
-                            "element_type": "Block"
-                        }, {
-                            "children": [{
-                                    "name": "Income Level:",
-                                    "font_style": "Bold",
-                                    "font_size": 12,
-                                    "align": "Left",
-                                    "element_type": "Content"
-                                }, {
-                                    "name": "Gender",
-                                    "children": [{
-                                            "name": "<$50K",
-                                            "children": [{
-                                                    "name": "<$50K",
-                                                    "align": "Left",
-                                                    "element_type": "Content"
-                                                }
-                                            ],
-                                            "bubble_type": "Round",
-                                            "element_type": "Answer"
-                                        }, {
-                                            "name": "$50-$100K",
-                                            "children": [{
-                                                    "name": "$50-$100K",
-                                                    "align": "Left",
-                                                    "element_type": "Content"
-                                                }
-                                            ],
-                                            "bubble_type": "Round",
-                                            "element_type": "Answer"
-                                        }, {
-                                            "name": "$100-$150K",
-                                            "children": [{
-                                                    "name": "$100-$150K",
-                                                    "align": "Left",
-                                                    "element_type": "Content"
-                                                }
-                                            ],
-                                            "bubble_type": "Round",
-                                            "element_type": "Answer"
-                                        }, {
-                                            "name": ">$150K",
-                                            "children": [{
-                                                    "name": ">$150K",
-                                                    "align": "Left",
-                                                    "element_type": "Content"
-                                                }
-                                            ],
-                                            "bubble_type": "Round",
-                                            "element_type": "Answer"
-                                        }
-                                    ],
-                                    "element_type": "VerticalChoiceBox",
-                                    "top_padding": 0
-                                }
-                            ],
-                            "column": 5,
-                            "element_type": "Block"
-                        }
-                    ],
-                    "columns_proportions": [
-                        33,
-                        10,
-                        22,
-                        2,
-                        33
-                    ],
-                    "container_type": "Normal",
-                    "block_bottom_margin": 0,
-                    "block_top_padding": 0,
-                    "element_type": "Container"
-                }, {
-                    "height": 25,
-                    "element_type": "EmptyLine"
-                }, {
-                    "align": "Left",
-                    "answers_string": "\t()Fantastic! ()Excellent ()Satisfactory ()Mediocre ()Negative\t",
-                    "question_text": "The manner in which you were greeted by SALESPERSON",
-                    "element_type": "ChoiceBox"
-                }, {
-                    "align": "Left",
-                    "answers_string": "\t()Fantastic! ()Excellent ()Satisfactory ()Mediocre ()Negative",
-                    "question_text": "Sincerity and honesty of SALESPERSON when dealing with you ",
-                    "element_type": "ChoiceBox"
-                }, {
-                    "align": "Left",
-                    "answers_string": "\t()Fantastic! ()Excellent ()Satisfactory ()Mediocre ()Negative",
-                    "question_text": "SALESPERSON consideration of your time",
-                    "element_type": "ChoiceBox"
-                }, {
-                    "align": "Left",
-                    "answers_string": "\t()Fantastic! ()Excellent ()Satisfactory ()Mediocre ()Negative",
-                    "question_text": "SALESPERSON ability to listen, understand and answer your questions",
-                    "element_type": "ChoiceBox"
-                }, {
-                    "align": "Left",
-                    "answers_string": "\t()Fantastic! ()Excellent ()Satisfactory ()Mediocre ()Negative",
-                    "question_text": "Fulfilled all commitments made to you by SALESPERSON",
-                    "element_type": "ChoiceBox"
-                }, {
-                    "align": "Left",
-                    "answers_string": "\t()Fantastic! ()Excellent ()Satisfactory ()Mediocre ()Negative",
-                    "question_text": "The vehicle price and/or payments were discussed by SALESTEAM in a thorough manner",
-                    "element_type": "ChoiceBox"
-                }, {
-                    "align": "Left",
-                    "answers_string": "\t()Fantastic! ()Excellent ()Satisfactory ()Mediocre ()Negative",
-                    "question_text": "Explanation of warranty coverage by SALESTEAM",
-                    "element_type": "ChoiceBox"
-                }, {
-                    "align": "Left",
-                    "answers_string": "\t()Fantastic! ()Excellent ()Satisfactory ()Mediocre ()Negative",
-                    "question_text": "The professional manner in which you were treated by SALESTEAM",
-                    "element_type": "ChoiceBox"
-                }, {
-                    "align": "Left",
-                    "answers_string": "\t()Fantastic! ()Excellent ()Satisfactory ()Mediocre ()Negative",
-                    "question_text": "Fulfilled all commitments made to you by SALESTEAM",
-                    "element_type": "ChoiceBox"
-                }, {
-                    "align": "Left",
-                    "answers_string": "\t()Fantastic! ()Excellent ()Satisfactory ()Mediocre ()Negative",
-                    "question_text": "If you have contacted out store by phone, how satisfied are you with the way your call was handled?",
-                    "element_type": "ChoiceBox"
-                }, {
-                    "height": 50,
-                    "element_type": "EmptyLine"
-                }, {
-                    "children": [{
-                            "children": [{
-                                    "name": "If you overall experience was unsatisfactory - leave your contact information. We'll contact you about it!",
-                                    "align": "Left",
-                                    "element_type": "Content"
-                                }, {
-                                    "height": 50,
-                                    "element_type": "EmptyLine"
-                                }, {
-                                    "name": "contact_information",
-                                    "element_type": "WriteIn"
-                                }
-                            ],
-                            "column": 1,
-                            "element_type": "Block"
-                        }
-                    ],
-                    "columns_count": 1,
-                    "container_type": "Normal",
-                    "element_type": "Container"
-                }, {
-                    "name": "150",
-                    "height": 100,
-                    "element_type": "EmptyLine"
-                }, {
-                    "name": "test_id",
-                    "value": "15478977",
-                    "barcode_type": "code32",
-                    "align": "Center",
-                    "codetext": true,
-                    "element_type": "Barcode"
+  "name": null,
+  "children": [
+    {
+      "name": null,
+      "children": [
+        {
+          "name": "AmazeCar Customer Satisfaction Survey\r\n",
+          "font_family": "Calibri",
+          "font_style": "Bold",
+          "font_size": 18,
+          "align": "Center",
+          "element_type": "Text"
+        },
+        {
+          "align": "Left",
+          "name": "logo.jpg",
+          "image_path": null,
+          "x": 278,
+          "y": 100,
+          "height": 200,
+          "width": 200,
+          "element_type": "Image"
+        },
+        {
+          "name": "description",
+          "children": [
+            {
+              "name": "",
+              "children": [
+                {
+                  "name": "Thank you for your purchase! We want your experience to be Perfect! Please help us be more Amazing by answering some question about your purchase.",
+                  "font_family": "Calibri",
+                  "font_style": "Italic",
+                  "font_size": 10,
+                  "content_type": "Normal",
+                  "align": "Left",
+                  "element_type": "Content"
                 }
-            ],
-            "element_type": "Page"
+              ],
+              "column": 1,
+              "border": "None",
+              "border_size": 3,
+              "border_color": "Black",
+              "is_clipped": false,
+              "element_type": "Block"
+            }
+          ],
+          "columns_count": 1,
+          "columns_proportions": null,
+          "container_type": "Normal",
+          "block_right_margin": 40,
+          "block_bottom_margin": 20,
+          "block_top_padding": 20,
+          "element_type": "Container"
+        },
+        {
+          "name": "about yourself_header",
+          "children": [
+            {
+              "name": "",
+              "children": [
+                {
+                  "name": "Please tell us a bit about yourself...",
+                  "font_family": "Calibri",
+                  "font_style": "Bold",
+                  "font_size": 14,
+                  "content_type": "Normal",
+                  "align": "Left",
+                  "element_type": "Content"
+                },
+                {
+                  "name": "",
+                  "height": 50,
+                  "element_type": "EmptyLine"
+                }
+              ],
+              "column": 1,
+              "border": "Square",
+              "border_size": 3,
+              "border_color": "Black",
+              "is_clipped": false,
+              "element_type": "Block"
+            }
+          ],
+          "columns_count": 0,
+          "columns_proportions": [
+            100
+          ],
+          "container_type": "Normal",
+          "block_right_margin": 40,
+          "block_bottom_margin": 0,
+          "block_top_padding": 0,
+          "element_type": "Container"
+        },
+        {
+          "name": "",
+          "height": 50,
+          "element_type": "EmptyLine"
+        },
+        {
+          "name": "about yourself_content",
+          "children": [
+            {
+              "name": "",
+              "children": [
+                {
+                  "name": "Gender:",
+                  "font_family": "Calibri",
+                  "font_style": "Bold",
+                  "font_size": 12,
+                  "content_type": "Normal",
+                  "align": "Left",
+                  "element_type": "Content"
+                },
+                {
+                  "name": "Gender",
+                  "children": [
+                    {
+                      "name": "Female",
+                      "children": [
+                        {
+                          "name": "Female",
+                          "font_family": "Calibri",
+                          "font_style": "Regular",
+                          "font_size": 10,
+                          "content_type": "Normal",
+                          "align": "Left",
+                          "element_type": "Content"
+                        }
+                      ],
+                      "bubble_type": "Round",
+                      "element_type": "Answer"
+                    },
+                    {
+                      "name": "Male",
+                      "children": [
+                        {
+                          "name": "Male",
+                          "font_family": "Calibri",
+                          "font_style": "Regular",
+                          "font_size": 10,
+                          "content_type": "Normal",
+                          "align": "Left",
+                          "element_type": "Content"
+                        }
+                      ],
+                      "bubble_type": "Round",
+                      "element_type": "Answer"
+                    },
+                    {
+                      "name": "Other(specify)",
+                      "children": [
+                        {
+                          "name": "Other(specify)",
+                          "font_family": "Calibri",
+                          "font_style": "Regular",
+                          "font_size": 10,
+                          "content_type": "Normal",
+                          "align": "Left",
+                          "element_type": "Content"
+                        },
+                        {
+                          "name": "Gender",
+                          "required": false,
+                          "element_type": "WriteIn"
+                        }
+                      ],
+                      "bubble_type": "Round",
+                      "element_type": "Answer"
+                    }
+                  ],
+                  "element_type": "VerticalChoiceBox",
+                  "threshold": 0,
+                  "top_padding": 0
+                }
+              ],
+              "column": 1,
+              "border": "None",
+              "border_size": 3,
+              "border_color": "Black",
+              "is_clipped": false,
+              "element_type": "Block"
+            },
+            {
+              "name": "",
+              "children": [
+                {
+                  "name": "Age Group:",
+                  "font_family": "Calibri",
+                  "font_style": "Bold",
+                  "font_size": 12,
+                  "content_type": "Normal",
+                  "align": "Left",
+                  "element_type": "Content"
+                },
+                {
+                  "name": "Age Group",
+                  "children": [
+                    {
+                      "name": "18-21",
+                      "children": [
+                        {
+                          "name": "18-21",
+                          "font_family": "Calibri",
+                          "font_style": "Regular",
+                          "font_size": 10,
+                          "content_type": "Normal",
+                          "align": "Left",
+                          "element_type": "Content"
+                        }
+                      ],
+                      "bubble_type": "Round",
+                      "element_type": "Answer"
+                    },
+                    {
+                      "name": "21-30",
+                      "children": [
+                        {
+                          "name": "21-30",
+                          "font_family": "Calibri",
+                          "font_style": "Regular",
+                          "font_size": 10,
+                          "content_type": "Normal",
+                          "align": "Left",
+                          "element_type": "Content"
+                        }
+                      ],
+                      "bubble_type": "Round",
+                      "element_type": "Answer"
+                    },
+                    {
+                      "name": "31-45",
+                      "children": [
+                        {
+                          "name": "31-45",
+                          "font_family": "Calibri",
+                          "font_style": "Regular",
+                          "font_size": 10,
+                          "content_type": "Normal",
+                          "align": "Left",
+                          "element_type": "Content"
+                        }
+                      ],
+                      "bubble_type": "Round",
+                      "element_type": "Answer"
+                    },
+                    {
+                      "name": "46-60",
+                      "children": [
+                        {
+                          "name": "46-60",
+                          "font_family": "Calibri",
+                          "font_style": "Regular",
+                          "font_size": 10,
+                          "content_type": "Normal",
+                          "align": "Left",
+                          "element_type": "Content"
+                        }
+                      ],
+                      "bubble_type": "Round",
+                      "element_type": "Answer"
+                    },
+                    {
+                      "name": ">60",
+                      "children": [
+                        {
+                          "name": ">60",
+                          "font_family": "Calibri",
+                          "font_style": "Regular",
+                          "font_size": 10,
+                          "content_type": "Normal",
+                          "align": "Left",
+                          "element_type": "Content"
+                        }
+                      ],
+                      "bubble_type": "Round",
+                      "element_type": "Answer"
+                    },
+                    {
+                      "name": "21-30",
+                      "children": [
+                        {
+                          "name": "21-30",
+                          "font_family": "Calibri",
+                          "font_style": "Regular",
+                          "font_size": 10,
+                          "content_type": "Normal",
+                          "align": "Left",
+                          "element_type": "Content"
+                        }
+                      ],
+                      "bubble_type": "Round",
+                      "element_type": "Answer"
+                    }
+                  ],
+                  "element_type": "VerticalChoiceBox",
+                  "threshold": 0,
+                  "top_padding": 0
+                }
+              ],
+              "column": 3,
+              "border": "None",
+              "border_size": 3,
+              "border_color": "Black",
+              "is_clipped": false,
+              "element_type": "Block"
+            },
+            {
+              "name": "",
+              "children": [
+                {
+                  "name": "Income Level:",
+                  "font_family": "Calibri",
+                  "font_style": "Bold",
+                  "font_size": 12,
+                  "content_type": "Normal",
+                  "align": "Left",
+                  "element_type": "Content"
+                },
+                {
+                  "name": "Gender",
+                  "children": [
+                    {
+                      "name": "<$50K",
+                      "children": [
+                        {
+                          "name": "<$50K",
+                          "font_family": "Calibri",
+                          "font_style": "Regular",
+                          "font_size": 10,
+                          "content_type": "Normal",
+                          "align": "Left",
+                          "element_type": "Content"
+                        }
+                      ],
+                      "bubble_type": "Round",
+                      "element_type": "Answer"
+                    },
+                    {
+                      "name": "$50-$100K",
+                      "children": [
+                        {
+                          "name": "$50-$100K",
+                          "font_family": "Calibri",
+                          "font_style": "Regular",
+                          "font_size": 10,
+                          "content_type": "Normal",
+                          "align": "Left",
+                          "element_type": "Content"
+                        }
+                      ],
+                      "bubble_type": "Round",
+                      "element_type": "Answer"
+                    },
+                    {
+                      "name": "$100-$150K",
+                      "children": [
+                        {
+                          "name": "$100-$150K",
+                          "font_family": "Calibri",
+                          "font_style": "Regular",
+                          "font_size": 10,
+                          "content_type": "Normal",
+                          "align": "Left",
+                          "element_type": "Content"
+                        }
+                      ],
+                      "bubble_type": "Round",
+                      "element_type": "Answer"
+                    },
+                    {
+                      "name": ">$150K",
+                      "children": [
+                        {
+                          "name": ">$150K",
+                          "font_family": "Calibri",
+                          "font_style": "Regular",
+                          "font_size": 10,
+                          "content_type": "Normal",
+                          "align": "Left",
+                          "element_type": "Content"
+                        }
+                      ],
+                      "bubble_type": "Round",
+                      "element_type": "Answer"
+                    }
+                  ],
+                  "element_type": "VerticalChoiceBox",
+                  "threshold": 0,
+                  "top_padding": 0
+                }
+              ],
+              "column": 5,
+              "border": "None",
+              "border_size": 3,
+              "border_color": "Black",
+              "is_clipped": false,
+              "element_type": "Block"
+            }
+          ],
+          "columns_count": 0,
+          "columns_proportions": [
+            33,
+            10,
+            22,
+            2,
+            33
+          ],
+          "container_type": "Normal",
+          "block_right_margin": 40,
+          "block_bottom_margin": 0,
+          "block_top_padding": 0,
+          "element_type": "Container"
+        },
+        {
+          "name": "",
+          "height": 25,
+          "element_type": "EmptyLine"
+        },
+        {
+          "name": null,
+          "font_family": "Calibri",
+          "font_style": "Regular",
+          "font_size": 10,
+          "align": "Left",
+          "answers_string": "\t()Fantastic! ()Excellent ()Satisfactory ()Mediocre ()Negative\t\r\n",
+          "question_text": "The manner in which you were greeted by SALESPERSON\r\n",
+          "element_type": "ChoiceBox"
+        },
+        {
+          "name": null,
+          "font_family": "Calibri",
+          "font_style": "Regular",
+          "font_size": 10,
+          "align": "Left",
+          "answers_string": "\t()Fantastic! ()Excellent ()Satisfactory ()Mediocre ()Negative\r\n",
+          "question_text": "Sincerity and honesty of SALESPERSON when dealing with you \r\n",
+          "element_type": "ChoiceBox"
+        },
+        {
+          "name": null,
+          "font_family": "Calibri",
+          "font_style": "Regular",
+          "font_size": 10,
+          "align": "Left",
+          "answers_string": "\t()Fantastic! ()Excellent ()Satisfactory ()Mediocre ()Negative\r\n",
+          "question_text": "SALESPERSON consideration of your time\r\n",
+          "element_type": "ChoiceBox"
+        },
+        {
+          "name": null,
+          "font_family": "Calibri",
+          "font_style": "Regular",
+          "font_size": 10,
+          "align": "Left",
+          "answers_string": "\t()Fantastic! ()Excellent ()Satisfactory ()Mediocre ()Negative\r\n",
+          "question_text": "SALESPERSON ability to listen, understand and answer your questions\r\n",
+          "element_type": "ChoiceBox"
+        },
+        {
+          "name": null,
+          "font_family": "Calibri",
+          "font_style": "Regular",
+          "font_size": 10,
+          "align": "Left",
+          "answers_string": "\t()Fantastic! ()Excellent ()Satisfactory ()Mediocre ()Negative\r\n",
+          "question_text": "Fulfilled all commitments made to you by SALESPERSON\r\n",
+          "element_type": "ChoiceBox"
+        },
+        {
+          "name": null,
+          "font_family": "Calibri",
+          "font_style": "Regular",
+          "font_size": 10,
+          "align": "Left",
+          "answers_string": "\t()Fantastic! ()Excellent ()Satisfactory ()Mediocre ()Negative\r\n",
+          "question_text": "The vehicle price and/or payments were discussed by SALESTEAM in a thorough manner\r\n",
+          "element_type": "ChoiceBox"
+        },
+        {
+          "name": null,
+          "font_family": "Calibri",
+          "font_style": "Regular",
+          "font_size": 10,
+          "align": "Left",
+          "answers_string": "\t()Fantastic! ()Excellent ()Satisfactory ()Mediocre ()Negative\r\n",
+          "question_text": "Explanation of warranty coverage by SALESTEAM\r\n",
+          "element_type": "ChoiceBox"
+        },
+        {
+          "name": null,
+          "font_family": "Calibri",
+          "font_style": "Regular",
+          "font_size": 10,
+          "align": "Left",
+          "answers_string": "\t()Fantastic! ()Excellent ()Satisfactory ()Mediocre ()Negative\r\n",
+          "question_text": "The professional manner in which you were treated by SALESTEAM\r\n",
+          "element_type": "ChoiceBox"
+        },
+        {
+          "name": null,
+          "font_family": "Calibri",
+          "font_style": "Regular",
+          "font_size": 10,
+          "align": "Left",
+          "answers_string": "\t()Fantastic! ()Excellent ()Satisfactory ()Mediocre ()Negative\r\n",
+          "question_text": "Fulfilled all commitments made to you by SALESTEAM\r\n",
+          "element_type": "ChoiceBox"
+        },
+        {
+          "name": null,
+          "font_family": "Calibri",
+          "font_style": "Regular",
+          "font_size": 10,
+          "align": "Left",
+          "answers_string": "\t()Fantastic! ()Excellent ()Satisfactory ()Mediocre ()Negative\r\n",
+          "question_text": "If you have contacted out store by phone, how satisfied are you with the way your call was handled?\r\n",
+          "element_type": "ChoiceBox"
+        },
+        {
+          "name": "",
+          "height": 50,
+          "element_type": "EmptyLine"
+        },
+        {
+          "name": "",
+          "children": [
+            {
+              "name": "",
+              "children": [
+                {
+                  "name": "If you overall experience was unsatisfactory - leave your contact information. We'll contact you about it!",
+                  "font_family": "Calibri",
+                  "font_style": "Regular",
+                  "font_size": 10,
+                  "content_type": "Normal",
+                  "align": "Left",
+                  "element_type": "Content"
+                },
+                {
+                  "name": "contact_information",
+                  "required": false,
+                  "element_type": "WriteIn"
+                }
+              ],
+              "column": 1,
+              "border": "None",
+              "border_size": 3,
+              "border_color": "Black",
+              "is_clipped": false,
+              "element_type": "Block"
+            }
+          ],
+          "columns_count": 1,
+          "columns_proportions": null,
+          "container_type": "Normal",
+          "block_right_margin": 40,
+          "block_bottom_margin": 20,
+          "block_top_padding": 20,
+          "element_type": "Container"
+        },
+        {
+          "name": "test_id",
+          "value": "15478977",
+          "barcode_type": "Code32",
+          "qr_version": "Auto",
+          "align": "Center",
+          "height": -1,
+          "codetext": true,
+          "X": -1,
+          "Y": -1,
+          "element_type": "Barcode"
         }
-    ],
-    "element_type": "Template"
+      ],
+      "element_type": "Page"
+    }
+  ],
+  "element_type": "Template"
 }
 ```
 
@@ -595,4 +810,4 @@ File | Description
 **car-dealership.txt** | source code in [text markup](/omr/net/txt-markup/)
 **car-dealership-recognized.png** | filled form
 **logo.jpg** | company logo
-**settings.txt** | [page settings](/omr/net/generate-template/page-setup/)
+**settings.json** | [page settings](/omr/net/generate-template/page-setup/)

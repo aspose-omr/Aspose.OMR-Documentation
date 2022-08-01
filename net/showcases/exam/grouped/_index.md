@@ -1,6 +1,6 @@
 ---
 weight: 10
-date: "2022-06-03"
+date: "2022-07-29"
 author: "Vladimir Lapin"
 type: docs
 url: /net/showcases/exam/grouped/
@@ -32,7 +32,7 @@ Single-page OMR ready answer sheet for any type of test, exam, quiz, assessment 
 	columns_count=1
 ?block=text
 	column=1
-?content=Aspose High School Final-exam
+?content=Aspose High School Final Exam
 	font_style=bold
 	font_size=14
 	align=center
@@ -55,8 +55,6 @@ Single-page OMR ready answer sheet for any type of test, exam, quiz, assessment 
 	width=700
 	height=300
 	align=left
-?empty_line=
-	height=365
 &block
 ?block=
 	column=2
@@ -78,22 +76,20 @@ Single-page OMR ready answer sheet for any type of test, exam, quiz, assessment 
 	align=left
 	content_type=cells
 	align=center
-?empty_line=
-	height=50
 ?barcode=test_id
 	codetext=true
 	value=15478977
 	barcode_type=Code32
+?empty_line=
+	height=15
 &block
 &container
 ?empty_line=
-	height=25
+	height=50
 ?text=Part I
 	font_size=12
 	font_style=bold
 	align=left
-?empty_line=
-	height=50
 ?container=1
 ?block=2
 ?custom_answer_sheet=PartI
@@ -133,13 +129,12 @@ Single-page OMR ready answer sheet for any type of test, exam, quiz, assessment 
 &custom_answer_sheet
 &block
 &container
-
+?empty_line=
+	height=50
 ?text=Part II
 	font_size=12
 	font_style=bold
 	align=left
-?empty_line=
-	height=50
 ?container=1
 ?block=2
 ?custom_answer_sheet=PartII
@@ -179,13 +174,12 @@ Single-page OMR ready answer sheet for any type of test, exam, quiz, assessment 
 &custom_answer_sheet
 &block
 &container
-
+?empty_line=
+	height=50
 ?text=Part III
 	font_size=12
 	font_style=bold
 	align=left
-?empty_line=
-	height=50
 ?container=1
 ?block=2
 ?custom_answer_sheet=PartIII
@@ -234,383 +228,569 @@ Single-page OMR ready answer sheet for any type of test, exam, quiz, assessment 
 
 ```json
 {
-    "children": [{
-            "children": [{
-                    "align": "Center",
-                    "name": "logo.jpg",
-                    "height": 200,
-                    "width": 200,
-                    "element_type": "Image"
-                }, {
-                    "name": "header",
-                    "children": [{
-                            "name": "text",
-                            "children": [{
-                                    "name": "Aspose High School Final-exam",
-                                    "font_style": "Bold",
-                                    "font_size": 14,
-                                    "align": "Center",
-                                    "element_type": "Content"
-                                }
-                            ],
-                            "column": 1,
-                            "element_type": "Block"
-                        }
-                    ],
-                    "columns_count": 1,
-                    "container_type": "Normal",
-                    "element_type": "Container"
-                }, {
-                    "children": [{
-                            "children": [{
-                                    "name": "Instructions",
-                                    "font_style": "Bold",
-                                    "font_size": 12,
-                                    "align": "Left",
-                                    "element_type": "Content"
-                                }, {
-                                    "name": "Mark answer by filling circle fully. If question is skipped - mark special bubble under \"Question skipped\"",
-                                    "font_style": "Italic",
-                                    "font_size": 10,
-                                    "align": "Left",
-                                    "element_type": "Content"
-                                }, {
-                                    "align": "Left",
-                                    "name": "example.png",
-                                    "height": 300,
-                                    "width": 700,
-                                    "element_type": "Image"
-                                }, {
-                                    "height": 365,
-                                    "element_type": "EmptyLine"
-                                }
-                            ],
-                            "column": 1,
-                            "border": "Rounded",
-                            "element_type": "Block"
-                        }, {
-                            "children": [{
-                                    "height": 25,
-                                    "element_type": "EmptyLine"
-                                }, {
-                                    "name": "Name:________________________________________",
-                                    "font_size": 10,
-                                    "align": "Left",
-                                    "element_type": "Content"
-                                }, {
-                                    "height": 50,
-                                    "element_type": "EmptyLine"
-                                }, {
-                                    "name": "Teacher:_____________________________________",
-                                    "font_size": 10,
-                                    "align": "Left",
-                                    "element_type": "Content"
-                                }, {
-                                    "height": 25,
-                                    "element_type": "EmptyLine"
-                                }, {
-                                    "name": "Month/Day/Year",
-                                    "align": "Center",
-                                    "element_type": "Content"
-                                }, {
-                                    "name": "  /  /    ",
-                                    "font_size": 10,
-                                    "content_type": "Cells",
-                                    "align": "Center",
-                                    "element_type": "Content"
-                                }, {
-                                    "height": 50,
-                                    "element_type": "EmptyLine"
-                                }, {
-                                    "name": "test_id",
-                                    "value": "15478977",
-                                    "barcode_type": "code32",
-                                    "align": "Center",
-                                    "codetext": true,
-                                    "element_type": "Barcode"
-                                }
-                            ],
-                            "column": 2,
-                            "border": "Rounded",
-                            "element_type": "Block"
-                        }
-                    ],
-                    "columns_count": 2,
-                    "container_type": "Normal",
-                    "block_bottom_margin": 0,
-                    "block_top_padding": 0,
-                    "element_type": "Container"
-                }, {
-                    "height": 25,
-                    "element_type": "EmptyLine"
-                }, {
-                    "name": "Part I",
-                    "font_style": "Bold",
-                    "font_size": 12,
-                    "align": "Left",
-                    "element_type": "Text"
-                }, {
-                    "height": 50,
-                    "element_type": "EmptyLine"
-                }, {
-                    "name": "1",
-                    "children": [{
-                            "name": "2",
-                            "children": [{
-                                    "columns_count": 4,
-                                    "amount": 60,
-                                    "name": "PartI",
-                                    "border": "Rounded",
-                                    "border_color": "DarkOrange",
-                                    "children": [{
-                                            "name": "123",
-                                            "children": [{
-                                                    "name": "QNo.",
-                                                    "font_style": "Bold",
-                                                    "font_size": 6,
-                                                    "align": "Center",
-                                                    "element_type": "Content"
-                                                }, {
-                                                    "name": "Answer Options",
-                                                    "font_style": "Bold",
-                                                    "font_size": 6,
-                                                    "align": "Center",
-                                                    "element_type": "Content"
-                                                }, {
-                                                    "name": "Question skipped",
-                                                    "font_style": "Bold",
-                                                    "font_size": 6,
-                                                    "align": "Center",
-                                                    "element_type": "Content"
-                                                }
-                                            ],
-                                            "element_type": "TableHeader"
-                                        }, {
-                                            "name": "row_%index%",
-                                            "children": [{
-                                                    "name": "%index%",
-                                                    "font_size": 6,
-                                                    "align": "Center",
-                                                    "element_type": "Content"
-                                                }, {
-                                                    "name": "b_%index%",
-                                                    "answers_list": [
-                                                        "A",
-                                                        "B",
-                                                        "C",
-                                                        "D"
-                                                    ],
-                                                    "font_size": 4,
-                                                    "bubble_size": "Extrasmall",
-                                                    "element_type": "BubbleArray"
-                                                }, {
-                                                    "bubble_size": "Extrasmall",
-                                                    "value": "question skipped",
-                                                    "name": "trigger_to_skip_question",
-                                                    "target": "PartI_%index%",
-                                                    "trigger_type": "ReplaceValue",
-                                                    "element_type": "CustomTrigger"
-                                                }
-                                            ],
-                                            "element_type": "CustomRow"
-                                        }
-                                    ],
-                                    "element_type": "CustomAnswerSheet",
-                                    "row_proportions": [
-                                        20,
-                                        50,
-                                        30
-                                    ]
-                                }
-                            ],
-                            "column": 1,
-                            "element_type": "Block"
-                        }
-                    ],
-                    "container_type": "Normal",
-                    "element_type": "Container"
-                }, {
-                    "element_type": "EmptyLine"
-                }, {
-                    "name": "Part II",
-                    "font_style": "Bold",
-                    "font_size": 12,
-                    "align": "Left",
-                    "element_type": "Text"
-                }, {
-                    "height": 50,
-                    "element_type": "EmptyLine"
-                }, {
-                    "name": "1",
-                    "children": [{
-                            "name": "2",
-                            "children": [{
-                                    "columns_count": 4,
-                                    "amount": 60,
-                                    "name": "PartII",
-                                    "border": "Rounded",
-                                    "border_color": "DarkOrange",
-                                    "children": [{
-                                            "name": "123",
-                                            "children": [{
-                                                    "name": "QNo.",
-                                                    "font_style": "Bold",
-                                                    "font_size": 6,
-                                                    "align": "Center",
-                                                    "element_type": "Content"
-                                                }, {
-                                                    "name": "Answer Options",
-                                                    "font_style": "Bold",
-                                                    "font_size": 6,
-                                                    "align": "Center",
-                                                    "element_type": "Content"
-                                                }, {
-                                                    "name": "Question skipped",
-                                                    "font_style": "Bold",
-                                                    "font_size": 6,
-                                                    "align": "Center",
-                                                    "element_type": "Content"
-                                                }
-                                            ],
-                                            "element_type": "TableHeader"
-                                        }, {
-                                            "name": "row_%index%",
-                                            "children": [{
-                                                    "name": "%index%",
-                                                    "font_size": 6,
-                                                    "align": "Center",
-                                                    "element_type": "Content"
-                                                }, {
-                                                    "name": "b_%index%",
-                                                    "answers_list": [
-                                                        "A",
-                                                        "B",
-                                                        "C",
-                                                        "D"
-                                                    ],
-                                                    "font_size": 4,
-                                                    "bubble_size": "Extrasmall",
-                                                    "element_type": "BubbleArray"
-                                                }, {
-                                                    "bubble_size": "Extrasmall",
-                                                    "value": "question skipped",
-                                                    "name": "trigger_to_skip_question",
-                                                    "target": "PartII_%index%",
-                                                    "trigger_type": "ReplaceValue",
-                                                    "element_type": "CustomTrigger"
-                                                }
-                                            ],
-                                            "element_type": "CustomRow"
-                                        }
-                                    ],
-                                    "element_type": "CustomAnswerSheet",
-                                    "row_proportions": [
-                                        20,
-                                        50,
-                                        30
-                                    ]
-                                }
-                            ],
-                            "column": 1,
-                            "element_type": "Block"
-                        }
-                    ],
-                    "container_type": "Normal",
-                    "element_type": "Container"
-                }, {
-                    "element_type": "EmptyLine"
-                }, {
-                    "name": "Part III",
-                    "font_style": "Bold",
-                    "font_size": 12,
-                    "align": "Left",
-                    "element_type": "Text"
-                }, {
-                    "height": 50,
-                    "element_type": "EmptyLine"
-                }, {
-                    "name": "1",
-                    "children": [{
-                            "name": "2",
-                            "children": [{
-                                    "columns_count": 4,
-                                    "amount": 60,
-                                    "name": "PartIII",
-                                    "border": "Rounded",
-                                    "border_color": "DarkOrange",
-                                    "children": [{
-                                            "name": "123",
-                                            "children": [{
-                                                    "name": "QNo.",
-                                                    "font_style": "Bold",
-                                                    "font_size": 6,
-                                                    "align": "Center",
-                                                    "element_type": "Content"
-                                                }, {
-                                                    "name": "Answer Options",
-                                                    "font_style": "Bold",
-                                                    "font_size": 6,
-                                                    "align": "Center",
-                                                    "element_type": "Content"
-                                                }, {
-                                                    "name": "Question skipped",
-                                                    "font_style": "Bold",
-                                                    "font_size": 6,
-                                                    "align": "Center",
-                                                    "element_type": "Content"
-                                                }
-                                            ],
-                                            "element_type": "TableHeader"
-                                        }, {
-                                            "name": "row_%index%",
-                                            "children": [{
-                                                    "name": "%index%",
-                                                    "font_size": 6,
-                                                    "align": "Center",
-                                                    "element_type": "Content"
-                                                }, {
-                                                    "name": "b_%index%",
-                                                    "answers_list": [
-                                                        "A",
-                                                        "B",
-                                                        "C",
-                                                        "D"
-                                                    ],
-                                                    "font_size": 4,
-                                                    "bubble_size": "Extrasmall",
-                                                    "element_type": "BubbleArray"
-                                                }, {
-                                                    "bubble_size": "Extrasmall",
-                                                    "value": "question skipped",
-                                                    "name": "trigger_to_skip_question",
-                                                    "target": "PartIII_%index%",
-                                                    "trigger_type": "ReplaceValue",
-                                                    "element_type": "CustomTrigger"
-                                                }
-                                            ],
-                                            "element_type": "CustomRow"
-                                        }
-                                    ],
-                                    "element_type": "CustomAnswerSheet",
-                                    "row_proportions": [
-                                        20,
-                                        50,
-                                        30
-                                    ]
-                                }
-                            ],
-                            "column": 1,
-                            "element_type": "Block"
-                        }
-                    ],
-                    "container_type": "Normal",
-                    "element_type": "Container"
+  "name": null,
+  "children": [
+    {
+      "name": null,
+      "children": [
+        {
+          "align": "Center",
+          "name": "logo.jpg",
+          "image_path": null,
+          "x": -1,
+          "y": -1,
+          "height": 200,
+          "width": 200,
+          "element_type": "Image"
+        },
+        {
+          "name": "header",
+          "children": [
+            {
+              "name": "text",
+              "children": [
+                {
+                  "name": "Aspose High School Final Exam",
+                  "font_family": "Calibri",
+                  "font_style": "Bold",
+                  "font_size": 14,
+                  "content_type": "Normal",
+                  "align": "Center",
+                  "element_type": "Content"
                 }
-            ],
-            "element_type": "Page"
+              ],
+              "column": 1,
+              "border": "None",
+              "border_size": 3,
+              "border_color": "Black",
+              "is_clipped": false,
+              "element_type": "Block"
+            }
+          ],
+          "columns_count": 1,
+          "columns_proportions": null,
+          "container_type": "Normal",
+          "block_right_margin": 40,
+          "block_bottom_margin": 20,
+          "block_top_padding": 20,
+          "element_type": "Container"
+        },
+        {
+          "name": "",
+          "children": [
+            {
+              "name": "",
+              "children": [
+                {
+                  "name": "Instructions",
+                  "font_family": "Calibri",
+                  "font_style": "Bold",
+                  "font_size": 12,
+                  "content_type": "Normal",
+                  "align": "Left",
+                  "element_type": "Content"
+                },
+                {
+                  "name": "Mark answer by filling circle fully. If question is skipped - mark special bubble under \"Question skipped\"",
+                  "font_family": "Calibri",
+                  "font_style": "Italic",
+                  "font_size": 10,
+                  "content_type": "Normal",
+                  "align": "Left",
+                  "element_type": "Content"
+                },
+                {
+                  "align": "Left",
+                  "name": "example.png",
+                  "image_path": null,
+                  "x": -1,
+                  "y": -1,
+                  "height": 300,
+                  "width": 700,
+                  "element_type": "Image"
+                }
+              ],
+              "column": 1,
+              "border": "Rounded",
+              "border_size": 3,
+              "border_color": "Black",
+              "is_clipped": false,
+              "element_type": "Block"
+            },
+            {
+              "name": "",
+              "children": [
+                {
+                  "name": "",
+                  "height": 25,
+                  "element_type": "EmptyLine"
+                },
+                {
+                  "name": "Name:________________________________________",
+                  "font_family": "Calibri",
+                  "font_style": "Regular",
+                  "font_size": 10,
+                  "content_type": "Normal",
+                  "align": "Left",
+                  "element_type": "Content"
+                },
+                {
+                  "name": "",
+                  "height": 50,
+                  "element_type": "EmptyLine"
+                },
+                {
+                  "name": "Teacher:_____________________________________",
+                  "font_family": "Calibri",
+                  "font_style": "Regular",
+                  "font_size": 10,
+                  "content_type": "Normal",
+                  "align": "Left",
+                  "element_type": "Content"
+                },
+                {
+                  "name": "",
+                  "height": 25,
+                  "element_type": "EmptyLine"
+                },
+                {
+                  "name": "Month/Day/Year",
+                  "font_family": "Calibri",
+                  "font_style": "Regular",
+                  "font_size": 9,
+                  "content_type": "Normal",
+                  "align": "Center",
+                  "element_type": "Content"
+                },
+                {
+                  "name": "  /  /    ",
+                  "font_family": "Calibri",
+                  "font_style": "Regular",
+                  "font_size": 10,
+                  "content_type": "Cells",
+                  "align": "Center",
+                  "element_type": "Content"
+                },
+                {
+                  "name": "test_id",
+                  "value": "15478977",
+                  "barcode_type": "Code32",
+                  "qr_version": "Auto",
+                  "align": "Center",
+                  "height": -1,
+                  "codetext": true,
+                  "X": -1,
+                  "Y": -1,
+                  "element_type": "Barcode"
+                },
+                {
+                  "name": "",
+                  "height": 15,
+                  "element_type": "EmptyLine"
+                }
+              ],
+              "column": 2,
+              "border": "Rounded",
+              "border_size": 3,
+              "border_color": "Black",
+              "is_clipped": false,
+              "element_type": "Block"
+            }
+          ],
+          "columns_count": 2,
+          "columns_proportions": null,
+          "container_type": "Normal",
+          "block_right_margin": 40,
+          "block_bottom_margin": 0,
+          "block_top_padding": 0,
+          "element_type": "Container"
+        },
+        {
+          "name": "",
+          "height": 50,
+          "element_type": "EmptyLine"
+        },
+        {
+          "name": "Part I\r\n",
+          "font_family": "Calibri",
+          "font_style": "Bold",
+          "font_size": 12,
+          "align": "Left",
+          "element_type": "Text"
+        },
+        {
+          "name": "1",
+          "children": [
+            {
+              "name": "2",
+              "children": [
+                {
+                  "columns_count": 4,
+                  "amount": 60,
+                  "name": "PartI",
+                  "border": "Rounded",
+                  "border_size": 3,
+                  "border_color": "DarkOrange",
+                  "children": [
+                    {
+                      "font_family": "Calibri",
+                      "font_style": "Regular",
+                      "font_size": 9,
+                      "name": "123",
+                      "children": [
+                        {
+                          "name": "QNo.",
+                          "font_family": "Calibri",
+                          "font_style": "Bold",
+                          "font_size": 6,
+                          "content_type": "Normal",
+                          "align": "Center",
+                          "element_type": "Content"
+                        },
+                        {
+                          "name": "Answer Options",
+                          "font_family": "Calibri",
+                          "font_style": "Bold",
+                          "font_size": 6,
+                          "content_type": "Normal",
+                          "align": "Center",
+                          "element_type": "Content"
+                        },
+                        {
+                          "name": "Question skipped",
+                          "font_family": "Calibri",
+                          "font_style": "Bold",
+                          "font_size": 6,
+                          "content_type": "Normal",
+                          "align": "Center",
+                          "element_type": "Content"
+                        }
+                      ],
+                      "element_type": "TableHeader"
+                    },
+                    {
+                      "name": "row_%index%",
+                      "children": [
+                        {
+                          "name": "%index%",
+                          "font_family": "Calibri",
+                          "font_style": "Regular",
+                          "font_size": 6,
+                          "content_type": "Normal",
+                          "align": "Center",
+                          "element_type": "Content"
+                        },
+                        {
+                          "name": "b_%index%",
+                          "answers_list": [
+                            "A",
+                            "B",
+                            "C",
+                            "D"
+                          ],
+                          "font_family": "Calibri",
+                          "font_style": "Regular",
+                          "font_size": 4,
+                          "bubble_size": "Extrasmall",
+                          "bubble_type": "Round",
+                          "element_type": "BubbleArray"
+                        },
+                        {
+                          "bubble_size": "Extrasmall",
+                          "value": "question skipped",
+                          "name": "trigger_to_skip_question",
+                          "target": "PartI_%index%",
+                          "bubble_type": "Round",
+                          "trigger_type": "ReplaceValue",
+                          "element_type": "CustomTrigger"
+                        }
+                      ],
+                      "element_type": "CustomRow"
+                    }
+                  ],
+                  "element_type": "CustomAnswerSheet",
+                  "row_proportions": [
+                    20,
+                    50,
+                    30
+                  ]
+                }
+              ],
+              "column": 1,
+              "border": "None",
+              "border_size": 3,
+              "border_color": "Black",
+              "is_clipped": false,
+              "element_type": "Block"
+            }
+          ],
+          "columns_count": 1,
+          "columns_proportions": null,
+          "container_type": "Normal",
+          "block_right_margin": 40,
+          "block_bottom_margin": 20,
+          "block_top_padding": 20,
+          "element_type": "Container"
+        },
+        {
+          "name": "",
+          "height": 50,
+          "element_type": "EmptyLine"
+        },
+        {
+          "name": "Part II\r\n",
+          "font_family": "Calibri",
+          "font_style": "Bold",
+          "font_size": 12,
+          "align": "Left",
+          "element_type": "Text"
+        },
+        {
+          "name": "1",
+          "children": [
+            {
+              "name": "2",
+              "children": [
+                {
+                  "columns_count": 4,
+                  "amount": 60,
+                  "name": "PartII",
+                  "border": "Rounded",
+                  "border_size": 3,
+                  "border_color": "DarkOrange",
+                  "children": [
+                    {
+                      "font_family": "Calibri",
+                      "font_style": "Regular",
+                      "font_size": 9,
+                      "name": "123",
+                      "children": [
+                        {
+                          "name": "QNo.",
+                          "font_family": "Calibri",
+                          "font_style": "Bold",
+                          "font_size": 6,
+                          "content_type": "Normal",
+                          "align": "Center",
+                          "element_type": "Content"
+                        },
+                        {
+                          "name": "Answer Options",
+                          "font_family": "Calibri",
+                          "font_style": "Bold",
+                          "font_size": 6,
+                          "content_type": "Normal",
+                          "align": "Center",
+                          "element_type": "Content"
+                        },
+                        {
+                          "name": "Question skipped",
+                          "font_family": "Calibri",
+                          "font_style": "Bold",
+                          "font_size": 6,
+                          "content_type": "Normal",
+                          "align": "Center",
+                          "element_type": "Content"
+                        }
+                      ],
+                      "element_type": "TableHeader"
+                    },
+                    {
+                      "name": "row_%index%",
+                      "children": [
+                        {
+                          "name": "%index%",
+                          "font_family": "Calibri",
+                          "font_style": "Regular",
+                          "font_size": 6,
+                          "content_type": "Normal",
+                          "align": "Center",
+                          "element_type": "Content"
+                        },
+                        {
+                          "name": "b_%index%",
+                          "answers_list": [
+                            "A",
+                            "B",
+                            "C",
+                            "D"
+                          ],
+                          "font_family": "Calibri",
+                          "font_style": "Regular",
+                          "font_size": 4,
+                          "bubble_size": "Extrasmall",
+                          "bubble_type": "Round",
+                          "element_type": "BubbleArray"
+                        },
+                        {
+                          "bubble_size": "Extrasmall",
+                          "value": "question skipped",
+                          "name": "trigger_to_skip_question",
+                          "target": "PartII_%index%",
+                          "bubble_type": "Round",
+                          "trigger_type": "ReplaceValue",
+                          "element_type": "CustomTrigger"
+                        }
+                      ],
+                      "element_type": "CustomRow"
+                    }
+                  ],
+                  "element_type": "CustomAnswerSheet",
+                  "row_proportions": [
+                    20,
+                    50,
+                    30
+                  ]
+                }
+              ],
+              "column": 1,
+              "border": "None",
+              "border_size": 3,
+              "border_color": "Black",
+              "is_clipped": false,
+              "element_type": "Block"
+            }
+          ],
+          "columns_count": 1,
+          "columns_proportions": null,
+          "container_type": "Normal",
+          "block_right_margin": 40,
+          "block_bottom_margin": 20,
+          "block_top_padding": 20,
+          "element_type": "Container"
+        },
+        {
+          "name": "",
+          "height": 50,
+          "element_type": "EmptyLine"
+        },
+        {
+          "name": "Part III\r\n",
+          "font_family": "Calibri",
+          "font_style": "Bold",
+          "font_size": 12,
+          "align": "Left",
+          "element_type": "Text"
+        },
+        {
+          "name": "1",
+          "children": [
+            {
+              "name": "2",
+              "children": [
+                {
+                  "columns_count": 4,
+                  "amount": 60,
+                  "name": "PartIII",
+                  "border": "Rounded",
+                  "border_size": 3,
+                  "border_color": "DarkOrange",
+                  "children": [
+                    {
+                      "font_family": "Calibri",
+                      "font_style": "Regular",
+                      "font_size": 9,
+                      "name": "123",
+                      "children": [
+                        {
+                          "name": "QNo.",
+                          "font_family": "Calibri",
+                          "font_style": "Bold",
+                          "font_size": 6,
+                          "content_type": "Normal",
+                          "align": "Center",
+                          "element_type": "Content"
+                        },
+                        {
+                          "name": "Answer Options",
+                          "font_family": "Calibri",
+                          "font_style": "Bold",
+                          "font_size": 6,
+                          "content_type": "Normal",
+                          "align": "Center",
+                          "element_type": "Content"
+                        },
+                        {
+                          "name": "Question skipped",
+                          "font_family": "Calibri",
+                          "font_style": "Bold",
+                          "font_size": 6,
+                          "content_type": "Normal",
+                          "align": "Center",
+                          "element_type": "Content"
+                        }
+                      ],
+                      "element_type": "TableHeader"
+                    },
+                    {
+                      "name": "row_%index%",
+                      "children": [
+                        {
+                          "name": "%index%",
+                          "font_family": "Calibri",
+                          "font_style": "Regular",
+                          "font_size": 6,
+                          "content_type": "Normal",
+                          "align": "Center",
+                          "element_type": "Content"
+                        },
+                        {
+                          "name": "b_%index%",
+                          "answers_list": [
+                            "A",
+                            "B",
+                            "C",
+                            "D"
+                          ],
+                          "font_family": "Calibri",
+                          "font_style": "Regular",
+                          "font_size": 4,
+                          "bubble_size": "Extrasmall",
+                          "bubble_type": "Round",
+                          "element_type": "BubbleArray"
+                        },
+                        {
+                          "bubble_size": "Extrasmall",
+                          "value": "question skipped",
+                          "name": "trigger_to_skip_question",
+                          "target": "PartIII_%index%",
+                          "bubble_type": "Round",
+                          "trigger_type": "ReplaceValue",
+                          "element_type": "CustomTrigger"
+                        }
+                      ],
+                      "element_type": "CustomRow"
+                    }
+                  ],
+                  "element_type": "CustomAnswerSheet",
+                  "row_proportions": [
+                    20,
+                    50,
+                    30
+                  ]
+                }
+              ],
+              "column": 1,
+              "border": "None",
+              "border_size": 3,
+              "border_color": "Black",
+              "is_clipped": false,
+              "element_type": "Block"
+            }
+          ],
+          "columns_count": 1,
+          "columns_proportions": null,
+          "container_type": "Normal",
+          "block_right_margin": 40,
+          "block_bottom_margin": 20,
+          "block_top_padding": 20,
+          "element_type": "Container"
         }
-    ],
-    "element_type": "Template"
+      ],
+      "element_type": "Page"
+    }
+  ],
+  "element_type": "Template"
 }
 ```
 
@@ -838,4 +1018,4 @@ File | Description
 **final-exam.txt** | source code in [text markup](/omr/net/txt-markup/)
 **final-exam-recognized.png** | filled form
 **logo.jpg** | company logo
-**settings.txt** | [page settings](/omr/net/generate-template/page-setup/)
+**settings.json** | [page settings](/omr/net/generate-template/page-setup/)

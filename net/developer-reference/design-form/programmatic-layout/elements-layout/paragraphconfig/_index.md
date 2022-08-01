@@ -20,7 +20,7 @@ keywords:
 - wrapping
 ---
 
-This element is used to combine [text](/omr/net/programmatic-forms/contentconfig/) and [images](/omr/net/programmatic-forms/imageconfig/). **ParagraphConfig** elements can only be nested within other elements and cannot be used at the top level of the form hierarchy.
+This element is used to combine [text](/omr/net/programmatic-forms/contentconfig/) and [images](/omr/net/programmatic-forms/imageconfig/).
 
 ## Declaration
 
@@ -54,14 +54,14 @@ Name | Type | Description
 Name | Type | Default value | Description
 ---- | ---- | ------------- | -----------
 **Name** | `string` | _n/a_ | Used as a reminder of the element's purpose; for example, "_Important notice_". You can use the same value for multiple paragraphs.<br />This text is not displayed on the form.
-**ParagraphType** | `ParagraphTypeEnum` | `ParagraphTypeEnum.Normal` | Set the value to `ParagraphTypeEnum.Multiple` so that text can wrap around the image.<br />Omitting this property or setting its value to `ParagraphTypeEnum.Normal` will cause the text to overflow the image.
+**ParagraphType** | `ParagraphTypeEnum` | `ParagraphTypeEnum.Normal` | Set the value to `ParagraphTypeEnum.ImageWrap` so that text can wrap around the image.<br />Omitting this property or setting its value to `ParagraphTypeEnum.Normal` will cause the text to overflow the image.
 
 ## Image wrapping
 
 To allow the text to wrap around an image:
 
 1. Set the **Width**, **Height**, **XPosition** and **YPosition** properties of the [**ImageConfig**](/omr/net/programmatic-forms/imageconfig/) element.
-2. Set the **ParagraphType** property of the **ParagraphConfig** element to `ParagraphTypeEnum.Multiple`.
+2. Set the **ParagraphType** property of the **ParagraphConfig** element to `ParagraphTypeEnum.ImageWrap`.
 
 ## Allowed child elements
 
@@ -134,7 +134,7 @@ TemplateConfig templateConfig = new TemplateConfig() {
 						new BlockConfig() {
 							Children = new List<BaseConfig>() {
 								new ParagraphConfig() {
-									ParagraphType = ParagraphTypeEnum.Multiple,
+									ParagraphType = ParagraphTypeEnum.ImageWrap,
 									Children = new List<BaseConfig> {
 										new ImageConfig() {
 											Name = "logo.png",

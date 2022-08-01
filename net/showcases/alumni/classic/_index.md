@@ -209,450 +209,724 @@ Collect information about the post-grad employment and achievements of your form
 
 ```json
 {
-    "children": [{
-            "children": [{
-                    "align": "Center",
-                    "name": "logo.jpg",
-                    "x": 1169,
-                    "y": 100,
-                    "height": 200,
-                    "width": 200,
-                    "element_type": "Image"
-                }, {
-                    "name": "Aspose University ",
-                    "font_style": "Bold",
-                    "font_size": 16,
-                    "align": "Center",
-                    "element_type": "Text"
-                }, {
-                    "name": "Alumni Questionnaire",
-                    "font_size": 14,
-                    "align": "Center",
-                    "element_type": "Text"
-                }, {
-                    "height": 75,
-                    "element_type": "EmptyLine"
-                }, {
-                    "name": "instructions",
-                    "children": [{
-                            "children": [{
-                                    "name": "Instructions",
-                                    "font_style": "Bold",
-                                    "font_size": 12,
-                                    "align": "Center",
-                                    "element_type": "Content"
-                                }, {
-                                    "name": "height",
-                                    "height": 50,
-                                    "element_type": "EmptyLine"
-                                }, {
-                                    "name": "Please fill circle completely, as shown in example:",
-                                    "align": "Left",
-                                    "element_type": "Content"
-                                }, {
-                                    "align": "Left",
-                                    "name": "example.png",
-                                    "height": 280,
-                                    "width": 700,
-                                    "element_type": "Image"
-                                }
-                            ],
-                            "column": 2,
-                            "border": "Rounded",
-                            "element_type": "Block"
-                        }, {
-                            "children": [{
-                                    "name": "1. Gender",
-                                    "font_style": "Bold",
-                                    "font_size": 12,
-                                    "align": "Left",
-                                    "element_type": "Content"
-                                }, {
-                                    "name": "Gender",
-                                    "children": [{
-                                            "name": "Female",
-                                            "children": [{
-                                                    "name": "Female",
-                                                    "align": "Left",
-                                                    "element_type": "Content"
-                                                }
-                                            ],
-                                            "bubble_type": "Round",
-                                            "element_type": "Answer"
-                                        }, {
-                                            "name": "Male",
-                                            "children": [{
-                                                    "name": "Male",
-                                                    "align": "Left",
-                                                    "element_type": "Content"
-                                                }
-                                            ],
-                                            "bubble_type": "Round",
-                                            "element_type": "Answer"
-                                        }, {
-                                            "name": "Other(specify)",
-                                            "children": [{
-                                                    "name": "Other(specify)",
-                                                    "align": "Left",
-                                                    "element_type": "Content"
-                                                }, {
-                                                    "name": "Gender",
-                                                    "element_type": "WriteIn"
-                                                }
-                                            ],
-                                            "bubble_type": "Round",
-                                            "element_type": "Answer"
-                                        }
-                                    ],
-                                    "element_type": "VerticalChoiceBox",
-                                    "top_padding": 0
-                                }
-                            ],
-                            "column": 1,
-                            "element_type": "Block"
-                        }
-                    ],
-                    "columns_count": 2,
-                    "container_type": "Normal",
-                    "element_type": "Container"
-                }, {
-                    "height": 50,
-                    "element_type": "EmptyLine"
-                }, {
-                    "name": "2-3",
-                    "children": [{
-                            "children": [{
-                                    "name": "2. Year of Graduation",
-                                    "font_style": "Bold",
-                                    "font_size": 12,
-                                    "align": "Left",
-                                    "element_type": "Content"
-                                }, {
-                                    "height": 25,
-                                    "element_type": "EmptyLine"
-                                }, {
-                                    "bubble_size": "undefined",
-                                    "name": "Year",
-                                    "columns_count": 4,
-                                    "align": "Left",
-                                    "header_type": "Square",
-                                    "header_border_size": 3,
-                                    "header_border_color": "Black",
-                                    "orientation": "Horizontal",
-                                    "values": [
-                                        "0",
-                                        "1",
-                                        "2",
-                                        "3",
-                                        "4",
-                                        "5",
-                                        "6",
-                                        "7",
-                                        "8",
-                                        "9"
-                                    ],
-                                    "element_type": "CompositeGrid"
-                                }
-                            ],
-                            "column": 1,
-                            "element_type": "Block"
-                        }, {
-                            "children": [{
-                                    "name": "3. Major at Graduation(mark all that apply)",
-                                    "font_style": "Bold",
-                                    "font_size": 12,
-                                    "align": "Left",
-                                    "element_type": "Content"
-                                }, {
-                                    "name": "Major at Graduation",
-                                    "children": [{
-                                            "name": "Biology",
-                                            "children": [{
-                                                    "name": "Biology",
-                                                    "align": "Left",
-                                                    "element_type": "Content"
-                                                }
-                                            ],
-                                            "bubble_type": "Round",
-                                            "element_type": "Answer"
-                                        }, {
-                                            "name": "Botany",
-                                            "children": [{
-                                                    "name": "Botany",
-                                                    "align": "Left",
-                                                    "element_type": "Content"
-                                                }
-                                            ],
-                                            "bubble_type": "Round",
-                                            "element_type": "Answer"
-                                        }, {
-                                            "name": "Drama",
-                                            "children": [{
-                                                    "name": "Drama",
-                                                    "align": "Left",
-                                                    "element_type": "Content"
-                                                }
-                                            ],
-                                            "bubble_type": "Round",
-                                            "element_type": "Answer"
-                                        }, {
-                                            "name": "Education",
-                                            "children": [{
-                                                    "name": "Education",
-                                                    "align": "Left",
-                                                    "element_type": "Content"
-                                                }
-                                            ],
-                                            "bubble_type": "Round",
-                                            "element_type": "Answer"
-                                        }, {
-                                            "name": "French",
-                                            "children": [{
-                                                    "name": "French",
-                                                    "align": "Left",
-                                                    "element_type": "Content"
-                                                }
-                                            ],
-                                            "bubble_type": "Round",
-                                            "element_type": "Answer"
-                                        }, {
-                                            "name": "General",
-                                            "children": [{
-                                                    "name": "General",
-                                                    "align": "Left",
-                                                    "element_type": "Content"
-                                                }
-                                            ],
-                                            "bubble_type": "Round",
-                                            "element_type": "Answer"
-                                        }, {
-                                            "name": "History",
-                                            "children": [{
-                                                    "name": "History",
-                                                    "align": "Left",
-                                                    "element_type": "Content"
-                                                }
-                                            ],
-                                            "bubble_type": "Round",
-                                            "element_type": "Answer"
-                                        }, {
-                                            "name": "Drama",
-                                            "children": [{
-                                                    "name": "Drama",
-                                                    "align": "Left",
-                                                    "element_type": "Content"
-                                                }
-                                            ],
-                                            "bubble_type": "Round",
-                                            "element_type": "Answer"
-                                        }, {
-                                            "name": "Journalism",
-                                            "children": [{
-                                                    "name": "Journalism",
-                                                    "align": "Left",
-                                                    "element_type": "Content"
-                                                }
-                                            ],
-                                            "bubble_type": "Round",
-                                            "element_type": "Answer"
-                                        }, {
-                                            "name": "Mathematics",
-                                            "children": [{
-                                                    "name": "Mathematics",
-                                                    "align": "Left",
-                                                    "element_type": "Content"
-                                                }
-                                            ],
-                                            "bubble_type": "Round",
-                                            "element_type": "Answer"
-                                        }, {
-                                            "name": "Physics",
-                                            "children": [{
-                                                    "name": "Physics",
-                                                    "align": "Left",
-                                                    "element_type": "Content"
-                                                }
-                                            ],
-                                            "bubble_type": "Round",
-                                            "element_type": "Answer"
-                                        }, {
-                                            "name": "Psychology",
-                                            "children": [{
-                                                    "name": "Psychology",
-                                                    "align": "Left",
-                                                    "element_type": "Content"
-                                                }
-                                            ],
-                                            "bubble_type": "Round",
-                                            "element_type": "Answer"
-                                        }, {
-                                            "name": "Spanish",
-                                            "children": [{
-                                                    "name": "Spanish",
-                                                    "align": "Left",
-                                                    "element_type": "Content"
-                                                }
-                                            ],
-                                            "bubble_type": "Round",
-                                            "element_type": "Answer"
-                                        }
-                                    ],
-                                    "element_type": "VerticalChoiceBox",
-                                    "top_padding": 0
-                                }
-                            ],
-                            "column": 2,
-                            "element_type": "Block"
-                        }, {
-                            "children": [{
-                                    "name": "4. What was your overall GPA?",
-                                    "font_style": "Bold",
-                                    "font_size": 12,
-                                    "align": "Left",
-                                    "element_type": "Content"
-                                }, {
-                                    "height": 25,
-                                    "element_type": "EmptyLine"
-                                }, {
-                                    "bubble_size": "undefined",
-                                    "name": "GPA",
-                                    "columns_count": 3,
-                                    "align": "Left",
-                                    "header_type": "Square",
-                                    "header_border_size": 3,
-                                    "header_border_color": "Black",
-                                    "orientation": "Horizontal",
-                                    "values": [
-                                        "0",
-                                        "1",
-                                        "2",
-                                        "3",
-                                        "4",
-                                        "5",
-                                        "6",
-                                        "7",
-                                        "8",
-                                        "9"
-                                    ],
-                                    "element_type": "CompositeGrid"
-                                }
-                            ],
-                            "column": 1,
-                            "element_type": "Block"
-                        }, {
-                            "children": [{
-                                    "name": "5. Type of major:",
-                                    "font_style": "Bold",
-                                    "font_size": 12,
-                                    "align": "Left",
-                                    "element_type": "Content"
-                                }, {
-                                    "name": "Type of Major",
-                                    "children": [{
-                                            "name": "Single",
-                                            "children": [{
-                                                    "name": "Single",
-                                                    "align": "Left",
-                                                    "element_type": "Content"
-                                                }
-                                            ],
-                                            "bubble_type": "Round",
-                                            "element_type": "Answer"
-                                        }, {
-                                            "name": "Dual",
-                                            "children": [{
-                                                    "name": "Dual",
-                                                    "align": "Left",
-                                                    "element_type": "Content"
-                                                }
-                                            ],
-                                            "bubble_type": "Round",
-                                            "element_type": "Answer"
-                                        }, {
-                                            "name": "Double",
-                                            "children": [{
-                                                    "name": "Double",
-                                                    "align": "Left",
-                                                    "element_type": "Content"
-                                                }
-                                            ],
-                                            "bubble_type": "Round",
-                                            "element_type": "Answer"
-                                        }, {
-                                            "name": "Other",
-                                            "children": [{
-                                                    "name": "Other",
-                                                    "align": "Left",
-                                                    "element_type": "Content"
-                                                }, {
-                                                    "name": "Type of Major",
-                                                    "element_type": "WriteIn"
-                                                }
-                                            ],
-                                            "bubble_type": "Round",
-                                            "element_type": "Answer"
-                                        }
-                                    ],
-                                    "element_type": "VerticalChoiceBox",
-                                    "top_padding": 0
-                                }
-                            ],
-                            "column": 2,
-                            "element_type": "Block"
-                        }
-                    ],
-                    "columns_count": 2,
-                    "container_type": "Normal",
-                    "element_type": "Container"
-                }, {
-                    "element_type": "EmptyLine"
-                }, {
-                    "name": "Employment",
-                    "font_style": "Bold",
-                    "font_size": 12,
-                    "align": "Left",
-                    "element_type": "Text"
-                }, {
-                    "element_type": "EmptyLine"
-                }, {
-                    "align": "Left",
-                    "answers_string": "\t() Yes () No",
-                    "question_text": "Have you been employed since graduating?",
-                    "element_type": "ChoiceBox"
-                }, {
-                    "align": "Left",
-                    "answers_string": "\t() Yes () No",
-                    "question_text": "Were you able to find a job related to your major?",
-                    "element_type": "ChoiceBox"
-                }, {
-                    "align": "Left",
-                    "answers_string": "\t() Yes () No",
-                    "question_text": "Are you happy you chose this major?",
-                    "element_type": "ChoiceBox"
-                }, {
-                    "align": "Left",
-                    "answers_string": "\t() Yes () No",
-                    "question_text": "Did your coursework prepare you for this job?",
-                    "element_type": "ChoiceBox"
-                }, {
-                    "element_type": "EmptyLine"
-                }, {
-                    "name": "150",
-                    "height": 150,
-                    "element_type": "EmptyLine"
-                }, {
-                    "name": "test_id",
-                    "value": "15478977",
-                    "barcode_type": "code32",
-                    "align": "Center",
-                    "codetext": true,
-                    "element_type": "Barcode"
+  "name": null,
+  "children": [
+    {
+      "name": null,
+      "children": [
+        {
+          "align": "Center",
+          "name": "logo.jpg",
+          "image_path": null,
+          "x": 1169,
+          "y": 100,
+          "height": 200,
+          "width": 200,
+          "element_type": "Image"
+        },
+        {
+          "name": "Aspose University \r\n",
+          "font_family": "Calibri",
+          "font_style": "Bold",
+          "font_size": 16,
+          "align": "Center",
+          "element_type": "Text"
+        },
+        {
+          "name": "Alumni Questionnaire\r\n",
+          "font_family": "Calibri",
+          "font_style": "Regular",
+          "font_size": 14,
+          "align": "Center",
+          "element_type": "Text"
+        },
+        {
+          "name": "",
+          "height": 75,
+          "element_type": "EmptyLine"
+        },
+        {
+          "name": "instructions",
+          "children": [
+            {
+              "name": "",
+              "children": [
+                {
+                  "name": "Instructions",
+                  "font_family": "Calibri",
+                  "font_style": "Bold",
+                  "font_size": 12,
+                  "content_type": "Normal",
+                  "align": "Center",
+                  "element_type": "Content"
+                },
+                {
+                  "name": "height",
+                  "height": 50,
+                  "element_type": "EmptyLine"
+                },
+                {
+                  "name": "Please fill circle completely, as shown in example:",
+                  "font_family": "Calibri",
+                  "font_style": "Regular",
+                  "font_size": 9,
+                  "content_type": "Normal",
+                  "align": "Left",
+                  "element_type": "Content"
+                },
+                {
+                  "align": "Left",
+                  "name": "example.png",
+                  "image_path": null,
+                  "x": -1,
+                  "y": -1,
+                  "height": 280,
+                  "width": 700,
+                  "element_type": "Image"
                 }
-            ],
-            "element_type": "Page"
+              ],
+              "column": 2,
+              "border": "Rounded",
+              "border_size": 3,
+              "border_color": "Black",
+              "is_clipped": false,
+              "element_type": "Block"
+            },
+            {
+              "name": "",
+              "children": [
+                {
+                  "name": "1. Gender",
+                  "font_family": "Calibri",
+                  "font_style": "Bold",
+                  "font_size": 12,
+                  "content_type": "Normal",
+                  "align": "Left",
+                  "element_type": "Content"
+                },
+                {
+                  "name": "Gender",
+                  "children": [
+                    {
+                      "name": "Female",
+                      "children": [
+                        {
+                          "name": "Female",
+                          "font_family": "Calibri",
+                          "font_style": "Regular",
+                          "font_size": 9,
+                          "content_type": "Normal",
+                          "align": "Left",
+                          "element_type": "Content"
+                        }
+                      ],
+                      "bubble_type": "Round",
+                      "element_type": "Answer"
+                    },
+                    {
+                      "name": "Male",
+                      "children": [
+                        {
+                          "name": "Male",
+                          "font_family": "Calibri",
+                          "font_style": "Regular",
+                          "font_size": 9,
+                          "content_type": "Normal",
+                          "align": "Left",
+                          "element_type": "Content"
+                        }
+                      ],
+                      "bubble_type": "Round",
+                      "element_type": "Answer"
+                    },
+                    {
+                      "name": "Other(specify)",
+                      "children": [
+                        {
+                          "name": "Other(specify)",
+                          "font_family": "Calibri",
+                          "font_style": "Regular",
+                          "font_size": 9,
+                          "content_type": "Normal",
+                          "align": "Left",
+                          "element_type": "Content"
+                        },
+                        {
+                          "name": "Gender",
+                          "required": false,
+                          "element_type": "WriteIn"
+                        }
+                      ],
+                      "bubble_type": "Round",
+                      "element_type": "Answer"
+                    }
+                  ],
+                  "element_type": "VerticalChoiceBox",
+                  "threshold": 0,
+                  "top_padding": 0
+                }
+              ],
+              "column": 1,
+              "border": "None",
+              "border_size": 3,
+              "border_color": "Black",
+              "is_clipped": false,
+              "element_type": "Block"
+            }
+          ],
+          "columns_count": 2,
+          "columns_proportions": null,
+          "container_type": "Normal",
+          "block_right_margin": 40,
+          "block_bottom_margin": 20,
+          "block_top_padding": 20,
+          "element_type": "Container"
+        },
+        {
+          "name": "",
+          "height": 50,
+          "element_type": "EmptyLine"
+        },
+        {
+          "name": "2-3",
+          "children": [
+            {
+              "name": "",
+              "children": [
+                {
+                  "name": "2. Year of Graduation",
+                  "font_family": "Calibri",
+                  "font_style": "Bold",
+                  "font_size": 12,
+                  "content_type": "Normal",
+                  "align": "Left",
+                  "element_type": "Content"
+                },
+                {
+                  "name": "",
+                  "height": 25,
+                  "element_type": "EmptyLine"
+                },
+                {
+                  "vertical_margin": 0,
+                  "bubble_size": "Small",
+                  "name": "Year",
+                  "column": 0,
+                  "columns_count": 4,
+                  "align": "Left",
+                  "header_type": "Square",
+                  "header_border_size": 3,
+                  "header_border_color": "Black",
+                  "orientation": "Horizontal",
+                  "bubble_type": "Round",
+                  "x": -1,
+                  "y": -1,
+                  "values": [
+                    "0",
+                    "1",
+                    "2",
+                    "3",
+                    "4",
+                    "5",
+                    "6",
+                    "7",
+                    "8",
+                    "9"
+                  ],
+                  "extra_row": [],
+                  "rotate": 0,
+                  "element_type": "CompositeGrid"
+                }
+              ],
+              "column": 1,
+              "border": "None",
+              "border_size": 3,
+              "border_color": "Black",
+              "is_clipped": false,
+              "element_type": "Block"
+            },
+            {
+              "name": "",
+              "children": [
+                {
+                  "name": "3. Major at Graduation(mark all that apply)",
+                  "font_family": "Calibri",
+                  "font_style": "Bold",
+                  "font_size": 12,
+                  "content_type": "Normal",
+                  "align": "Left",
+                  "element_type": "Content"
+                },
+                {
+                  "name": "Major at Graduation",
+                  "children": [
+                    {
+                      "name": "Biology",
+                      "children": [
+                        {
+                          "name": "Biology",
+                          "font_family": "Calibri",
+                          "font_style": "Regular",
+                          "font_size": 9,
+                          "content_type": "Normal",
+                          "align": "Left",
+                          "element_type": "Content"
+                        }
+                      ],
+                      "bubble_type": "Round",
+                      "element_type": "Answer"
+                    },
+                    {
+                      "name": "Botany",
+                      "children": [
+                        {
+                          "name": "Botany",
+                          "font_family": "Calibri",
+                          "font_style": "Regular",
+                          "font_size": 9,
+                          "content_type": "Normal",
+                          "align": "Left",
+                          "element_type": "Content"
+                        }
+                      ],
+                      "bubble_type": "Round",
+                      "element_type": "Answer"
+                    },
+                    {
+                      "name": "Drama",
+                      "children": [
+                        {
+                          "name": "Drama",
+                          "font_family": "Calibri",
+                          "font_style": "Regular",
+                          "font_size": 9,
+                          "content_type": "Normal",
+                          "align": "Left",
+                          "element_type": "Content"
+                        }
+                      ],
+                      "bubble_type": "Round",
+                      "element_type": "Answer"
+                    },
+                    {
+                      "name": "Education",
+                      "children": [
+                        {
+                          "name": "Education",
+                          "font_family": "Calibri",
+                          "font_style": "Regular",
+                          "font_size": 9,
+                          "content_type": "Normal",
+                          "align": "Left",
+                          "element_type": "Content"
+                        }
+                      ],
+                      "bubble_type": "Round",
+                      "element_type": "Answer"
+                    },
+                    {
+                      "name": "French",
+                      "children": [
+                        {
+                          "name": "French",
+                          "font_family": "Calibri",
+                          "font_style": "Regular",
+                          "font_size": 9,
+                          "content_type": "Normal",
+                          "align": "Left",
+                          "element_type": "Content"
+                        }
+                      ],
+                      "bubble_type": "Round",
+                      "element_type": "Answer"
+                    },
+                    {
+                      "name": "General",
+                      "children": [
+                        {
+                          "name": "General",
+                          "font_family": "Calibri",
+                          "font_style": "Regular",
+                          "font_size": 9,
+                          "content_type": "Normal",
+                          "align": "Left",
+                          "element_type": "Content"
+                        }
+                      ],
+                      "bubble_type": "Round",
+                      "element_type": "Answer"
+                    },
+                    {
+                      "name": "History",
+                      "children": [
+                        {
+                          "name": "History",
+                          "font_family": "Calibri",
+                          "font_style": "Regular",
+                          "font_size": 9,
+                          "content_type": "Normal",
+                          "align": "Left",
+                          "element_type": "Content"
+                        }
+                      ],
+                      "bubble_type": "Round",
+                      "element_type": "Answer"
+                    },
+                    {
+                      "name": "Drama",
+                      "children": [
+                        {
+                          "name": "Drama",
+                          "font_family": "Calibri",
+                          "font_style": "Regular",
+                          "font_size": 9,
+                          "content_type": "Normal",
+                          "align": "Left",
+                          "element_type": "Content"
+                        }
+                      ],
+                      "bubble_type": "Round",
+                      "element_type": "Answer"
+                    },
+                    {
+                      "name": "Journalism",
+                      "children": [
+                        {
+                          "name": "Journalism",
+                          "font_family": "Calibri",
+                          "font_style": "Regular",
+                          "font_size": 9,
+                          "content_type": "Normal",
+                          "align": "Left",
+                          "element_type": "Content"
+                        }
+                      ],
+                      "bubble_type": "Round",
+                      "element_type": "Answer"
+                    },
+                    {
+                      "name": "Mathematics",
+                      "children": [
+                        {
+                          "name": "Mathematics",
+                          "font_family": "Calibri",
+                          "font_style": "Regular",
+                          "font_size": 9,
+                          "content_type": "Normal",
+                          "align": "Left",
+                          "element_type": "Content"
+                        }
+                      ],
+                      "bubble_type": "Round",
+                      "element_type": "Answer"
+                    },
+                    {
+                      "name": "Physics",
+                      "children": [
+                        {
+                          "name": "Physics",
+                          "font_family": "Calibri",
+                          "font_style": "Regular",
+                          "font_size": 9,
+                          "content_type": "Normal",
+                          "align": "Left",
+                          "element_type": "Content"
+                        }
+                      ],
+                      "bubble_type": "Round",
+                      "element_type": "Answer"
+                    },
+                    {
+                      "name": "Psychology",
+                      "children": [
+                        {
+                          "name": "Psychology",
+                          "font_family": "Calibri",
+                          "font_style": "Regular",
+                          "font_size": 9,
+                          "content_type": "Normal",
+                          "align": "Left",
+                          "element_type": "Content"
+                        }
+                      ],
+                      "bubble_type": "Round",
+                      "element_type": "Answer"
+                    },
+                    {
+                      "name": "Spanish",
+                      "children": [
+                        {
+                          "name": "Spanish",
+                          "font_family": "Calibri",
+                          "font_style": "Regular",
+                          "font_size": 9,
+                          "content_type": "Normal",
+                          "align": "Left",
+                          "element_type": "Content"
+                        }
+                      ],
+                      "bubble_type": "Round",
+                      "element_type": "Answer"
+                    }
+                  ],
+                  "element_type": "VerticalChoiceBox",
+                  "threshold": 0,
+                  "top_padding": 0
+                }
+              ],
+              "column": 2,
+              "border": "None",
+              "border_size": 3,
+              "border_color": "Black",
+              "is_clipped": false,
+              "element_type": "Block"
+            },
+            {
+              "name": "",
+              "children": [
+                {
+                  "name": "4. What was your overall GPA?",
+                  "font_family": "Calibri",
+                  "font_style": "Bold",
+                  "font_size": 12,
+                  "content_type": "Normal",
+                  "align": "Left",
+                  "element_type": "Content"
+                },
+                {
+                  "name": "",
+                  "height": 25,
+                  "element_type": "EmptyLine"
+                },
+                {
+                  "vertical_margin": 0,
+                  "bubble_size": "Small",
+                  "name": "GPA",
+                  "column": 0,
+                  "columns_count": 3,
+                  "align": "Left",
+                  "header_type": "Square",
+                  "header_border_size": 3,
+                  "header_border_color": "Black",
+                  "orientation": "Horizontal",
+                  "bubble_type": "Round",
+                  "x": -1,
+                  "y": -1,
+                  "values": [
+                    "0",
+                    "1",
+                    "2",
+                    "3",
+                    "4",
+                    "5",
+                    "6",
+                    "7",
+                    "8",
+                    "9"
+                  ],
+                  "extra_row": [],
+                  "rotate": 0,
+                  "element_type": "CompositeGrid"
+                }
+              ],
+              "column": 1,
+              "border": "None",
+              "border_size": 3,
+              "border_color": "Black",
+              "is_clipped": false,
+              "element_type": "Block"
+            },
+            {
+              "name": "",
+              "children": [
+                {
+                  "name": "5. Type of major:",
+                  "font_family": "Calibri",
+                  "font_style": "Bold",
+                  "font_size": 12,
+                  "content_type": "Normal",
+                  "align": "Left",
+                  "element_type": "Content"
+                },
+                {
+                  "name": "Type of Major",
+                  "children": [
+                    {
+                      "name": "Single",
+                      "children": [
+                        {
+                          "name": "Single",
+                          "font_family": "Calibri",
+                          "font_style": "Regular",
+                          "font_size": 9,
+                          "content_type": "Normal",
+                          "align": "Left",
+                          "element_type": "Content"
+                        }
+                      ],
+                      "bubble_type": "Round",
+                      "element_type": "Answer"
+                    },
+                    {
+                      "name": "Dual",
+                      "children": [
+                        {
+                          "name": "Dual",
+                          "font_family": "Calibri",
+                          "font_style": "Regular",
+                          "font_size": 9,
+                          "content_type": "Normal",
+                          "align": "Left",
+                          "element_type": "Content"
+                        }
+                      ],
+                      "bubble_type": "Round",
+                      "element_type": "Answer"
+                    },
+                    {
+                      "name": "Double",
+                      "children": [
+                        {
+                          "name": "Double",
+                          "font_family": "Calibri",
+                          "font_style": "Regular",
+                          "font_size": 9,
+                          "content_type": "Normal",
+                          "align": "Left",
+                          "element_type": "Content"
+                        }
+                      ],
+                      "bubble_type": "Round",
+                      "element_type": "Answer"
+                    },
+                    {
+                      "name": "Other",
+                      "children": [
+                        {
+                          "name": "Other",
+                          "font_family": "Calibri",
+                          "font_style": "Regular",
+                          "font_size": 9,
+                          "content_type": "Normal",
+                          "align": "Left",
+                          "element_type": "Content"
+                        },
+                        {
+                          "name": "Type of Major",
+                          "required": false,
+                          "element_type": "WriteIn"
+                        }
+                      ],
+                      "bubble_type": "Round",
+                      "element_type": "Answer"
+                    }
+                  ],
+                  "element_type": "VerticalChoiceBox",
+                  "threshold": 0,
+                  "top_padding": 0
+                }
+              ],
+              "column": 2,
+              "border": "None",
+              "border_size": 3,
+              "border_color": "Black",
+              "is_clipped": false,
+              "element_type": "Block"
+            }
+          ],
+          "columns_count": 2,
+          "columns_proportions": null,
+          "container_type": "Normal",
+          "block_right_margin": 40,
+          "block_bottom_margin": 20,
+          "block_top_padding": 20,
+          "element_type": "Container"
+        },
+        {
+          "name": null,
+          "height": 0,
+          "element_type": "EmptyLine"
+        },
+        {
+          "name": "Employment\r\n",
+          "font_family": "Calibri",
+          "font_style": "Bold",
+          "font_size": 12,
+          "align": "Left",
+          "element_type": "Text"
+        },
+        {
+          "name": null,
+          "height": 0,
+          "element_type": "EmptyLine"
+        },
+        {
+          "name": null,
+          "font_family": "Calibri",
+          "font_style": "Regular",
+          "font_size": 9,
+          "align": "Left",
+          "answers_string": "\t() Yes () No\r\n",
+          "question_text": "Have you been employed since graduating?\r\n",
+          "element_type": "ChoiceBox"
+        },
+        {
+          "name": null,
+          "font_family": "Calibri",
+          "font_style": "Regular",
+          "font_size": 9,
+          "align": "Left",
+          "answers_string": "\t() Yes () No\r\n",
+          "question_text": "Were you able to find a job related to your major?\r\n",
+          "element_type": "ChoiceBox"
+        },
+        {
+          "name": null,
+          "font_family": "Calibri",
+          "font_style": "Regular",
+          "font_size": 9,
+          "align": "Left",
+          "answers_string": "\t() Yes () No\r\n",
+          "question_text": "Are you happy you chose this major?\r\n",
+          "element_type": "ChoiceBox"
+        },
+        {
+          "name": null,
+          "font_family": "Calibri",
+          "font_style": "Regular",
+          "font_size": 9,
+          "align": "Left",
+          "answers_string": "\t() Yes () No\r\n",
+          "question_text": "Did your coursework prepare you for this job?\r\n",
+          "element_type": "ChoiceBox"
+        },
+        {
+          "name": null,
+          "height": 0,
+          "element_type": "EmptyLine"
+        },
+        {
+          "name": "150",
+          "height": 150,
+          "element_type": "EmptyLine"
+        },
+        {
+          "name": "test_id",
+          "value": "15478977",
+          "barcode_type": "Code32",
+          "qr_version": "Auto",
+          "align": "Center",
+          "height": -1,
+          "codetext": true,
+          "X": -1,
+          "Y": -1,
+          "element_type": "Barcode"
         }
-    ],
-    "element_type": "Template"
+      ],
+      "element_type": "Page"
+    }
+  ],
+  "element_type": "Template"
 }
 ```
 
@@ -709,4 +983,4 @@ File | Description
 **alumni-recognized.png** | filled form
 **example.png** | "how to fill" guidelines
 **logo.jpg** | company logo
-**settings.txt** | [page settings](/omr/net/generate-template/page-setup/)
+**settings.json** | [page settings](/omr/net/generate-template/page-setup/)

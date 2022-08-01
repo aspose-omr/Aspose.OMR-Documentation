@@ -28,16 +28,10 @@ Single-page OMR ready answer sheet for any type of test, exam, quiz, assessment 
 	align=center
 	width=200
 	height=200
-?container=header
-	columns_count=1
-?block=text
-	column=1
-?content=Aspose High School Final-exam
+?text=Aspose High School Final Exam
 	font_style=bold
 	font_size=14
 	align=center
-&block
-&container
 ?container=
 	columns_count=2
 	block_bottom_margin=0
@@ -57,7 +51,7 @@ Single-page OMR ready answer sheet for any type of test, exam, quiz, assessment 
 	height=300
 	align=left
 ?empty_line=
-	height=365
+	height=34
 &block
 ?block=
 	column=2
@@ -100,13 +94,10 @@ Single-page OMR ready answer sheet for any type of test, exam, quiz, assessment 
 	height=50
 ?grid=Part I
 	column=1
-	x=190
 	header_type=square
 	sections_count=25
 	options_count=4
 	header_border_color=red
-?empty_line=
-	height=50
 &block
 ?block=
 	column=1
@@ -116,13 +107,10 @@ Single-page OMR ready answer sheet for any type of test, exam, quiz, assessment 
 	height=50
 ?grid=Part II
 	column=1
-	x=190
 	header_type=square
 	sections_count=25
 	options_count=4
 	header_border_color=red
-?empty_line=
-	height=50
 &block
 ?block=
 	column=1
@@ -132,13 +120,10 @@ Single-page OMR ready answer sheet for any type of test, exam, quiz, assessment 
 	height=50
 ?grid=Part III
 	column=1
-	x=190
 	header_type=square
 	sections_count=25
 	options_count=4
 	header_border_color=red
-?empty_line=
-	height=50
 &block
 ?block=
 	column=1
@@ -148,13 +133,10 @@ Single-page OMR ready answer sheet for any type of test, exam, quiz, assessment 
 	height=50
 ?grid=Part IV
 	column=1
-	x=190
 	header_type=square
 	sections_count=25
 	options_count=4
 	header_border_color=red
-?empty_line=
-	height=50
 &block
 ?block=
 	column=1
@@ -164,13 +146,10 @@ Single-page OMR ready answer sheet for any type of test, exam, quiz, assessment 
 	height=50
 ?grid=Part V
 	column=1
-	x=190
 	header_type=square
 	sections_count=25
 	options_count=4
 	header_border_color=red
-?empty_line=
-	height=50
 &block
 &container
 ```
@@ -182,259 +161,351 @@ Single-page OMR ready answer sheet for any type of test, exam, quiz, assessment 
 
 ```json
 {
-    "children": [{
-            "children": [{
-                    "align": "Center",
-                    "name": "logo.jpg",
-                    "height": 200,
-                    "width": 200,
-                    "element_type": "Image"
-                }, {
-                    "name": "header",
-                    "children": [{
-                            "name": "text",
-                            "children": [{
-                                    "name": "Aspose High School Final-exam",
-                                    "font_style": "Bold",
-                                    "font_size": 14,
-                                    "align": "Center",
-                                    "element_type": "Content"
-                                }
-                            ],
-                            "column": 1,
-                            "element_type": "Block"
-                        }
-                    ],
-                    "columns_count": 1,
-                    "container_type": "Normal",
-                    "element_type": "Container"
-                }, {
-                    "children": [{
-                            "children": [{
-                                    "name": "Instructions",
-                                    "font_style": "Bold",
-                                    "font_size": 12,
-                                    "align": "Left",
-                                    "element_type": "Content"
-                                }, {
-                                    "name": "Mark answer by filling circle fully. If question is skipped - mark special bubble under \"Question skipped\"",
-                                    "font_style": "Italic",
-                                    "font_size": 10,
-                                    "align": "Left",
-                                    "element_type": "Content"
-                                }, {
-                                    "align": "Left",
-                                    "name": "example.png",
-                                    "height": 300,
-                                    "width": 700,
-                                    "element_type": "Image"
-                                }, {
-                                    "height": 365,
-                                    "element_type": "EmptyLine"
-                                }
-                            ],
-                            "column": 1,
-                            "border": "Rounded",
-                            "border_color": "Red",
-                            "element_type": "Block"
-                        }, {
-                            "children": [{
-                                    "height": 25,
-                                    "element_type": "EmptyLine"
-                                }, {
-                                    "name": "Name:________________________________________",
-                                    "font_size": 10,
-                                    "align": "Left",
-                                    "element_type": "Content"
-                                }, {
-                                    "height": 50,
-                                    "element_type": "EmptyLine"
-                                }, {
-                                    "name": "Teacher:_____________________________________",
-                                    "font_size": 10,
-                                    "align": "Left",
-                                    "element_type": "Content"
-                                }, {
-                                    "height": 25,
-                                    "element_type": "EmptyLine"
-                                }, {
-                                    "name": "Month/Day/Year",
-                                    "align": "Center",
-                                    "element_type": "Content"
-                                }, {
-                                    "name": "  /  /    ",
-                                    "font_size": 10,
-                                    "content_type": "Cells",
-                                    "align": "Center",
-                                    "element_type": "Content"
-                                }, {
-                                    "height": 50,
-                                    "element_type": "EmptyLine"
-                                }, {
-                                    "name": "test_id",
-                                    "value": "15478977",
-                                    "barcode_type": "code32",
-                                    "align": "Center",
-                                    "codetext": true,
-                                    "element_type": "Barcode"
-                                }
-                            ],
-                            "column": 2,
-                            "border": "Rounded",
-                            "border_color": "Red",
-                            "element_type": "Block"
-                        }
-                    ],
-                    "columns_count": 2,
-                    "container_type": "Normal",
-                    "block_bottom_margin": 0,
-                    "block_top_padding": 0,
-                    "element_type": "Container"
-                }, {
-                    "height": 50,
-                    "element_type": "EmptyLine"
-                }, {
-                    "children": [{
-                            "children": [{
-                                    "height": 50,
-                                    "element_type": "EmptyLine"
-                                }, {
-                                    "bubble_size": "undefined",
-                                    "name": "Part I",
-                                    "column": 1,
-                                    "sections_count": 25,
-                                    "options_count": 4,
-                                    "align": "Left",
-                                    "header_type": "Square",
-                                    "header_border_size": 3,
-                                    "header_border_color": "Red",
-                                    "orientation": "Horizontal",
-                                    "x": 190,
-                                    "element_type": "Grid"
-                                }, {
-                                    "height": 50,
-                                    "element_type": "EmptyLine"
-                                }
-                            ],
-                            "column": 1,
-                            "border": "Rounded",
-                            "border_color": "Red",
-                            "element_type": "Block"
-                        }, {
-                            "children": [{
-                                    "height": 50,
-                                    "element_type": "EmptyLine"
-                                }, {
-                                    "bubble_size": "undefined",
-                                    "name": "Part II",
-                                    "column": 1,
-                                    "sections_count": 25,
-                                    "options_count": 4,
-                                    "align": "Left",
-                                    "header_type": "Square",
-                                    "header_border_size": 3,
-                                    "header_border_color": "Red",
-                                    "orientation": "Horizontal",
-                                    "x": 190,
-                                    "element_type": "Grid"
-                                }, {
-                                    "height": 50,
-                                    "element_type": "EmptyLine"
-                                }
-                            ],
-                            "column": 1,
-                            "border": "Rounded",
-                            "border_color": "Red",
-                            "element_type": "Block"
-                        }, {
-                            "children": [{
-                                    "height": 50,
-                                    "element_type": "EmptyLine"
-                                }, {
-                                    "bubble_size": "undefined",
-                                    "name": "Part III",
-                                    "column": 1,
-                                    "sections_count": 25,
-                                    "options_count": 4,
-                                    "align": "Left",
-                                    "header_type": "Square",
-                                    "header_border_size": 3,
-                                    "header_border_color": "Red",
-                                    "orientation": "Horizontal",
-                                    "x": 190,
-                                    "element_type": "Grid"
-                                }, {
-                                    "height": 50,
-                                    "element_type": "EmptyLine"
-                                }
-                            ],
-                            "column": 1,
-                            "border": "Rounded",
-                            "border_color": "Red",
-                            "element_type": "Block"
-                        }, {
-                            "children": [{
-                                    "height": 50,
-                                    "element_type": "EmptyLine"
-                                }, {
-                                    "bubble_size": "undefined",
-                                    "name": "Part IV",
-                                    "column": 1,
-                                    "sections_count": 25,
-                                    "options_count": 4,
-                                    "align": "Left",
-                                    "header_type": "Square",
-                                    "header_border_size": 3,
-                                    "header_border_color": "Red",
-                                    "orientation": "Horizontal",
-                                    "x": 190,
-                                    "element_type": "Grid"
-                                }, {
-                                    "height": 50,
-                                    "element_type": "EmptyLine"
-                                }
-                            ],
-                            "column": 1,
-                            "border": "Rounded",
-                            "border_color": "Red",
-                            "element_type": "Block"
-                        }, {
-                            "children": [{
-                                    "height": 50,
-                                    "element_type": "EmptyLine"
-                                }, {
-                                    "bubble_size": "undefined",
-                                    "name": "Part V",
-                                    "column": 1,
-                                    "sections_count": 25,
-                                    "options_count": 4,
-                                    "align": "Left",
-                                    "header_type": "Square",
-                                    "header_border_size": 3,
-                                    "header_border_color": "Red",
-                                    "orientation": "Horizontal",
-                                    "x": 190,
-                                    "element_type": "Grid"
-                                }, {
-                                    "height": 50,
-                                    "element_type": "EmptyLine"
-                                }
-                            ],
-                            "column": 1,
-                            "border": "Rounded",
-                            "border_color": "Red",
-                            "element_type": "Block"
-                        }
-                    ],
-                    "columns_count": 1,
-                    "container_type": "Normal",
-                    "element_type": "Container"
+  "name": null,
+  "children": [
+    {
+      "name": null,
+      "children": [
+        {
+          "align": "Center",
+          "name": "logo.jpg",
+          "image_path": null,
+          "x": -1,
+          "y": -1,
+          "height": 200,
+          "width": 200,
+          "element_type": "Image"
+        },
+        {
+          "name": "Aspose High School Final Exam\r\n",
+          "font_family": "Calibri",
+          "font_style": "Bold",
+          "font_size": 14,
+          "align": "Center",
+          "element_type": "Text"
+        },
+        {
+          "name": "",
+          "children": [
+            {
+              "name": "",
+              "children": [
+                {
+                  "name": "Instructions",
+                  "font_family": "Calibri",
+                  "font_style": "Bold",
+                  "font_size": 12,
+                  "content_type": "Normal",
+                  "align": "Left",
+                  "element_type": "Content"
+                },
+                {
+                  "name": "Mark answer by filling circle fully. If question is skipped - mark special bubble under \"Question skipped\"",
+                  "font_family": "Calibri",
+                  "font_style": "Italic",
+                  "font_size": 10,
+                  "content_type": "Normal",
+                  "align": "Left",
+                  "element_type": "Content"
+                },
+                {
+                  "align": "Left",
+                  "name": "example.png",
+                  "image_path": null,
+                  "x": -1,
+                  "y": -1,
+                  "height": 300,
+                  "width": 700,
+                  "element_type": "Image"
+                },
+                {
+                  "name": "",
+                  "height": 34,
+                  "element_type": "EmptyLine"
                 }
-            ],
-            "element_type": "Page"
+              ],
+              "column": 1,
+              "border": "Rounded",
+              "border_size": 3,
+              "border_color": "Red",
+              "is_clipped": false,
+              "element_type": "Block"
+            },
+            {
+              "name": "",
+              "children": [
+                {
+                  "name": "",
+                  "height": 25,
+                  "element_type": "EmptyLine"
+                },
+                {
+                  "name": "Name:________________________________________",
+                  "font_family": "Calibri",
+                  "font_style": "Regular",
+                  "font_size": 10,
+                  "content_type": "Normal",
+                  "align": "Left",
+                  "element_type": "Content"
+                },
+                {
+                  "name": "",
+                  "height": 50,
+                  "element_type": "EmptyLine"
+                },
+                {
+                  "name": "Teacher:_____________________________________",
+                  "font_family": "Calibri",
+                  "font_style": "Regular",
+                  "font_size": 10,
+                  "content_type": "Normal",
+                  "align": "Left",
+                  "element_type": "Content"
+                },
+                {
+                  "name": "",
+                  "height": 25,
+                  "element_type": "EmptyLine"
+                },
+                {
+                  "name": "Month/Day/Year",
+                  "font_family": "Calibri",
+                  "font_style": "Regular",
+                  "font_size": 9,
+                  "content_type": "Normal",
+                  "align": "Center",
+                  "element_type": "Content"
+                },
+                {
+                  "name": "  /  /    ",
+                  "font_family": "Calibri",
+                  "font_style": "Regular",
+                  "font_size": 10,
+                  "content_type": "Cells",
+                  "align": "Center",
+                  "element_type": "Content"
+                },
+                {
+                  "name": "",
+                  "height": 50,
+                  "element_type": "EmptyLine"
+                },
+                {
+                  "name": "test_id",
+                  "value": "15478977",
+                  "barcode_type": "Code32",
+                  "qr_version": "Auto",
+                  "align": "Center",
+                  "height": -1,
+                  "codetext": true,
+                  "X": -1,
+                  "Y": -1,
+                  "element_type": "Barcode"
+                }
+              ],
+              "column": 2,
+              "border": "Rounded",
+              "border_size": 3,
+              "border_color": "Red",
+              "is_clipped": false,
+              "element_type": "Block"
+            }
+          ],
+          "columns_count": 2,
+          "columns_proportions": null,
+          "container_type": "Normal",
+          "block_right_margin": 40,
+          "block_bottom_margin": 0,
+          "block_top_padding": 0,
+          "element_type": "Container"
+        },
+        {
+          "name": "",
+          "height": 50,
+          "element_type": "EmptyLine"
+        },
+        {
+          "name": "",
+          "children": [
+            {
+              "name": "",
+              "children": [
+                {
+                  "name": "",
+                  "height": 50,
+                  "element_type": "EmptyLine"
+                },
+                {
+                  "name": "Part I",
+                  "column": 1,
+                  "sections_count": 25,
+                  "options_count": 4,
+                  "align": "Left",
+                  "header_type": "Square",
+                  "header_border_size": 3,
+                  "header_border_color": "Red",
+                  "orientation": "Horizontal",
+                  "vertical_margin": 0,
+                  "bubble_size": "Normal",
+                  "bubble_type": "Round",
+                  "x": -1,
+                  "y": -1,
+                  "element_type": "Grid"
+                }
+              ],
+              "column": 1,
+              "border": "Rounded",
+              "border_size": 3,
+              "border_color": "Red",
+              "is_clipped": false,
+              "element_type": "Block"
+            },
+            {
+              "name": "",
+              "children": [
+                {
+                  "name": "",
+                  "height": 50,
+                  "element_type": "EmptyLine"
+                },
+                {
+                  "name": "Part II",
+                  "column": 1,
+                  "sections_count": 25,
+                  "options_count": 4,
+                  "align": "Left",
+                  "header_type": "Square",
+                  "header_border_size": 3,
+                  "header_border_color": "Red",
+                  "orientation": "Horizontal",
+                  "vertical_margin": 0,
+                  "bubble_size": "Normal",
+                  "bubble_type": "Round",
+                  "x": -1,
+                  "y": -1,
+                  "element_type": "Grid"
+                }
+              ],
+              "column": 1,
+              "border": "Rounded",
+              "border_size": 3,
+              "border_color": "Red",
+              "is_clipped": false,
+              "element_type": "Block"
+            },
+            {
+              "name": "",
+              "children": [
+                {
+                  "name": "",
+                  "height": 50,
+                  "element_type": "EmptyLine"
+                },
+                {
+                  "name": "Part III",
+                  "column": 1,
+                  "sections_count": 25,
+                  "options_count": 4,
+                  "align": "Left",
+                  "header_type": "Square",
+                  "header_border_size": 3,
+                  "header_border_color": "Red",
+                  "orientation": "Horizontal",
+                  "vertical_margin": 0,
+                  "bubble_size": "Normal",
+                  "bubble_type": "Round",
+                  "x": -1,
+                  "y": -1,
+                  "element_type": "Grid"
+                }
+              ],
+              "column": 1,
+              "border": "Rounded",
+              "border_size": 3,
+              "border_color": "Red",
+              "is_clipped": false,
+              "element_type": "Block"
+            },
+            {
+              "name": "",
+              "children": [
+                {
+                  "name": "",
+                  "height": 50,
+                  "element_type": "EmptyLine"
+                },
+                {
+                  "name": "Part IV",
+                  "column": 1,
+                  "sections_count": 25,
+                  "options_count": 4,
+                  "align": "Left",
+                  "header_type": "Square",
+                  "header_border_size": 3,
+                  "header_border_color": "Red",
+                  "orientation": "Horizontal",
+                  "vertical_margin": 0,
+                  "bubble_size": "Normal",
+                  "bubble_type": "Round",
+                  "x": -1,
+                  "y": -1,
+                  "element_type": "Grid"
+                }
+              ],
+              "column": 1,
+              "border": "Rounded",
+              "border_size": 3,
+              "border_color": "Red",
+              "is_clipped": false,
+              "element_type": "Block"
+            },
+            {
+              "name": "",
+              "children": [
+                {
+                  "name": "",
+                  "height": 50,
+                  "element_type": "EmptyLine"
+                },
+                {
+                  "name": "Part V",
+                  "column": 1,
+                  "sections_count": 25,
+                  "options_count": 4,
+                  "align": "Left",
+                  "header_type": "Square",
+                  "header_border_size": 3,
+                  "header_border_color": "Red",
+                  "orientation": "Horizontal",
+                  "vertical_margin": 0,
+                  "bubble_size": "Normal",
+                  "bubble_type": "Round",
+                  "x": -1,
+                  "y": -1,
+                  "element_type": "Grid"
+                }
+              ],
+              "column": 1,
+              "border": "Rounded",
+              "border_size": 3,
+              "border_color": "Red",
+              "is_clipped": false,
+              "element_type": "Block"
+            }
+          ],
+          "columns_count": 1,
+          "columns_proportions": null,
+          "container_type": "Normal",
+          "block_right_margin": 40,
+          "block_bottom_margin": 20,
+          "block_top_padding": 20,
+          "element_type": "Container"
         }
-    ],
-    "element_type": "Template"
+      ],
+      "element_type": "Page"
+    }
+  ],
+  "element_type": "Template"
 }
 ```
 
@@ -487,4 +558,4 @@ File | Description
 **final-exam.txt** | source code in [text markup](/omr/net/txt-markup/)
 **final-exam-recognized.png** | filled form
 **logo.jpg** | company logo
-**settings.txt** | [page settings](/omr/net/generate-template/page-setup/)
+**settings.json** | [page settings](/omr/net/generate-template/page-setup/)

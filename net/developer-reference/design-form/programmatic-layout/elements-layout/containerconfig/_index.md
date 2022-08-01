@@ -20,7 +20,7 @@ keywords:
 - footer
 ---
 
-This element is used to break content into columns and to add a footer to the form. **ContainerConfig** elements cannot be nested within other layout elements - they should always be placed directly in the `Children` list of the [`PageConfig` object](/omr/net/programmatic-forms/pageconfig/).
+This element is used to break content into columns and to add a footer to the form. Nested containers must be placed inside [**BlockConfig**](/omr/net/programmatic-forms/blockconfig/) elements.
 
 **ContainerConfig** element does not have a visual representation and is only used to arrange other elements.
 

@@ -57,6 +57,7 @@ Attribute | Default value | Description | Usage example
 **start_id** | Automatic | The number of the first line used as a base for further numbering.<br />If omitted, the number will be calculated based on the numbering of previous elements. | `start_id=1`
 **vertical_margin** | 0 | Vertical spacing between lines, in pixels. | `vertical_margin=10`
 **bubble_size** | Normal | Size of bubbles: `extrasmall`, `small`, `normal`, `large`, or `extralarge`. | `bubble_size=large`
+**bubble_type** | round | Bubble style: `round` or `square`. | `bubble_type=square`
 **answers_list** | A to Z | Characters to be drawn inside bubbles in _({Character 1})({Character 2})...({Character N})_ format.<br />The total number of characters must match the value of the **answers_count** attribute. | `answers_list=(α)(β)(γ)(δ)(ε)`
 **column** | 1 | The number of the column where the **answer_sheet** element will be placed. Only applicable if **answer_sheet** is placed in a multi-column [container](/omr/net/txt-markup/container/). | `column=2`
 

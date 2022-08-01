@@ -59,6 +59,7 @@ Name | Type | Default value | Description
 **start_id** | integer | _Automatic_ | The number of the first line used as a base for further numbering.<br />If omitted, the number will be calculated based on the numbering of previous elements.
 **vertical_margin** | integer | 0 | Vertical spacing between lines, in pixels.
 **bubble_size** | string | "Normal" | Size of bubbles: `"extrasmall"`, `"small"`, `"normal"`, `"large"`, or `"extralarge"`.
+**bubble_type** | string | "round" | Bubble style: `"round`" or `"square"`.
 **answers_list** | array | _["A" ... "Z"]_ | Characters to be drawn inside bubbles. The total number of array items must match the value of the **answers_count** property.
 **column** | integer | 1 | The number of the column where the **AnswerSheet** element will be placed. Only applicable if **AnswerSheet** is placed in a multi-column [**Container**](/omr/net/json-markup/container/).
 

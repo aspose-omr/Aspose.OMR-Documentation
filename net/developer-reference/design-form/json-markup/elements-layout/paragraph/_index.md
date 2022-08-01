@@ -18,7 +18,7 @@ keywords:
 - wrapping
 ---
 
-This element is used to combine [text](/omr/net/json-markup/content/) and [images](/omr/net/json-markup/image/). **Paragraph** elements can only be nested within other elements and cannot be used at the top level of the form hierarchy.
+This element is used to combine [text](/omr/net/json-markup/content/) and [images](/omr/net/json-markup/image/).
 
 ## Declaration
 
@@ -47,14 +47,14 @@ Name | Type | Description
 Name | Type | Default value | Description
 ---- | ---- | ------------- | -----------
 **name** | string | _n/a_ | Used as a reminder of the element's purpose; for example, "_Important notice_". You can use the same value for multiple paragraphs.<br />This text is not displayed on the form.
-**paragraph_type** | string | "normal" | Set the value to `"multiple"` so that text can wrap around the image.<br />Omitting this property or setting its value to `"normal"` will cause the text to overlay the image.
+**paragraph_type** | string | "normal" | Set the value to `"ImageWrap"` so that text can wrap around the image.<br />Omitting this property or setting its value to `"normal"` will cause the text to overlay the image.
 
 ## Image wrapping
 
 To allow the text to wrap around an image:
 
 1. Set the **width**, **height**, **x** and **y** properties of the [**Image**](/omr/net/json-markup/image/) element.
-2. Set the **paragraph_type** property of the **Paragraph** element to `"multiple"`.
+2. Set the **paragraph_type** property of the **Paragraph** element to `"ImageWrap"`.
 
 ## Allowed child elements
 
@@ -144,7 +144,7 @@ Check out the code examples to see how **Paragraph** elements can be used.
 							"children": [
 								{
 									"element_type": "Paragraph ",
-									"paragraph_type": "multiple",
+									"paragraph_type": "ImageWrap",
 									"children": [
 										{
 											"element_type": "Image",

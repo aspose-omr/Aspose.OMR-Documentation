@@ -47,6 +47,7 @@ Attribute | Default value | Description | Usage example
 **header_border_color** | black | Border color of the box to be displayed in front of each column / row. Can be picked from the following values: `Aqua`, `Aquamarine`, `Black`, `Blue`, `BlueViolet`, `Crimson`, `DarkBlue`, `DarkGreen`, `DarkOrange`, `DarkSalmon`, `Fuchsia`, `Indigo`, `Lime`, `Red`, `Teal`, `White`, `Gray`, `LightGray`. | `border_color=red`
 **vertical_margin** | 0 | Vertical spacing between the element's lines, in pixels. | `vertical_margin=10`
 **bubble_size** | Normal | Size of bubbles: `extrasmall`, `small`, `normal`, `large`, or `extralarge`. | `bubble_size=large`
+**bubble_type** | round | Bubble style: `round` or `square`. | `bubble_type=square`
 **x** | n/a | Set the absolute position of the **composite_grid** element relative to the left edge of the page.<br />Overrides the value of **align** attribute. | `x=300`
 **y** | n/a | Set the absolute position of the **composite_grid** element relative to the top edge of the page. | `y=500`
 **column** | 1 | The number of the column where the **composite_grid** element will be placed. Only applicable if **composite_grid** is placed in a multi-column [container](/omr/net/txt-markup/container/). | `column=2`

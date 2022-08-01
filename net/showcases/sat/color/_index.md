@@ -140,191 +140,299 @@ Ready-made answer sheet for SAT Exam - one of the most popular and globally acce
 
 ```json
 {
-    "children": [{
-            "children": [{
-                    "name": "SAT FORM",
-                    "font_style": "Bold",
-                    "font_size": 18,
-                    "align": "Left",
-                    "element_type": "Text"
-                }, {
-                    "name": "100",
-                    "height": 100,
-                    "element_type": "EmptyLine"
-                }, {
-                    "name": "header",
-                    "children": [{
-                            "name": "instructions",
-                            "children": [{
-                                    "name": "Instructions",
-                                    "font_style": "Bold",
-                                    "font_size": 10,
-                                    "align": "Center",
-                                    "element_type": "Content"
-                                }, {
-                                    "height": 5,
-                                    "element_type": "EmptyLine"
-                                }
-                            ],
-                            "column": 1,
-                            "element_type": "Block"
-                        }, {
-                            "children": [{
-                                    "name": "· Fill in circle completely. ",
-                                    "align": "Left",
-                                    "element_type": "Content"
-                                }, {
-                                    "name": "· To make changes, erase marks completely.",
-                                    "align": "Left",
-                                    "element_type": "Content"
-                                }
-                            ],
-                            "column": 1,
-                            "border": "Rounded",
-                            "border_color": "Red",
-                            "element_type": "Block"
-                        }, {
-                            "name": "space",
-                            "children": [{
-                                    "height": 50,
-                                    "element_type": "EmptyLine"
-                                }
-                            ],
-                            "column": 1,
-                            "element_type": "Block"
-                        }, {
-                            "name": "examples_header",
-                            "children": [{
-                                    "name": "Examples",
-                                    "font_style": "Bold",
-                                    "font_size": 10,
-                                    "align": "Center",
-                                    "element_type": "Content"
-                                }
-                            ],
-                            "column": 1,
-                            "element_type": "Block"
-                        }, {
-                            "name": "example_pic",
-                            "children": [{
-                                    "align": "Left",
-                                    "name": "example.png",
-                                    "height": 600,
-                                    "width": 1400,
-                                    "element_type": "Image"
-                                }
-                            ],
-                            "column": 1,
-                            "border": "Rounded",
-                            "border_color": "Red",
-                            "element_type": "Block"
-                        }, {
-                            "name": "student_id",
-                            "children": [{
-                                    "bubble_size": "Small",
-                                    "name": "StudentId",
-                                    "column": 3,
-                                    "sections_count": 6,
-                                    "options_count": 9,
-                                    "align": "Right",
-                                    "header_type": "Underline",
-                                    "header_border_size": 3,
-                                    "header_border_color": "Black",
-                                    "orientation": "Horizontal",
-                                    "element_type": "Grid"
-                                }
-                            ],
-                            "column": 2,
-                            "element_type": "Block"
-                        }
-                    ],
-                    "columns_proportions": [
-                        60,
-                        10,
-                        30
-                    ],
-                    "container_type": "Normal",
-                    "block_bottom_margin": 0,
-                    "block_top_padding": 0,
-                    "element_type": "Container"
-                }, {
-                    "height": 100,
-                    "element_type": "EmptyLine"
-                }, {
-                    "name": "Section 1",
-                    "font_style": "Bold",
-                    "font_size": 14,
-                    "align": "Left",
-                    "element_type": "Text"
-                }, {
-                    "height": 50,
-                    "element_type": "EmptyLine"
-                }, {
-                    "bubble_size": "Normal",
-                    "name": "MainQuestions",
-                    "elements_count": 40,
-                    "columns_count": 5,
-                    "answers_count": 4,
-                    "element_type": "AnswerSheet"
-                }, {
-                    "height": 50,
-                    "element_type": "EmptyLine"
-                }, {
-                    "name": "Section 2",
-                    "font_style": "Bold",
-                    "font_size": 14,
-                    "align": "Left",
-                    "element_type": "Text"
-                }, {
-                    "height": 50,
-                    "element_type": "EmptyLine"
-                }, {
-                    "bubble_size": "Normal",
-                    "name": "MainQuestions",
-                    "elements_count": 40,
-                    "columns_count": 5,
-                    "answers_count": 4,
-                    "start_id": 40,
-                    "element_type": "AnswerSheet"
-                }, {
-                    "height": 50,
-                    "element_type": "EmptyLine"
-                }, {
-                    "name": "Section 3",
-                    "font_style": "Bold",
-                    "font_size": 14,
-                    "align": "Left",
-                    "element_type": "Text"
-                }, {
-                    "height": 50,
-                    "element_type": "EmptyLine"
-                }, {
-                    "bubble_size": "Normal",
-                    "name": "MainQuestions",
-                    "elements_count": 40,
-                    "columns_count": 5,
-                    "answers_count": 4,
-                    "start_id": 80,
-                    "element_type": "AnswerSheet"
-                }, {
-                    "element_type": "EmptyLine"
-                }, {
-                    "name": "50",
-                    "height": 100,
-                    "element_type": "EmptyLine"
-                }, {
-                    "name": "test_id",
-                    "value": "15478977",
-                    "barcode_type": "code32",
-                    "align": "Center",
-                    "codetext": true,
-                    "element_type": "Barcode"
+  "name": null,
+  "children": [
+    {
+      "name": null,
+      "children": [
+        {
+          "name": "SAT FORM\r\n",
+          "font_family": "Calibri",
+          "font_style": "Bold",
+          "font_size": 18,
+          "align": "Left",
+          "element_type": "Text"
+        },
+        {
+          "name": "100",
+          "height": 100,
+          "element_type": "EmptyLine"
+        },
+        {
+          "name": "header",
+          "children": [
+            {
+              "name": "instructions",
+              "children": [
+                {
+                  "name": "Instructions",
+                  "font_family": "Calibri",
+                  "font_style": "Bold",
+                  "font_size": 10,
+                  "content_type": "Normal",
+                  "align": "Center",
+                  "element_type": "Content"
+                },
+                {
+                  "name": "",
+                  "height": 5,
+                  "element_type": "EmptyLine"
                 }
-            ],
-            "element_type": "Page"
+              ],
+              "column": 1,
+              "border": "None",
+              "border_size": 3,
+              "border_color": "Black",
+              "is_clipped": false,
+              "element_type": "Block"
+            },
+            {
+              "name": "",
+              "children": [
+                {
+                  "name": "· Fill in circle completely. ",
+                  "font_family": "Calibri",
+                  "font_style": "Regular",
+                  "font_size": 9,
+                  "content_type": "Normal",
+                  "align": "Left",
+                  "element_type": "Content"
+                },
+                {
+                  "name": "· To make changes, erase marks completely.",
+                  "font_family": "Calibri",
+                  "font_style": "Regular",
+                  "font_size": 9,
+                  "content_type": "Normal",
+                  "align": "Left",
+                  "element_type": "Content"
+                }
+              ],
+              "column": 1,
+              "border": "Rounded",
+              "border_size": 3,
+              "border_color": "Red",
+              "is_clipped": false,
+              "element_type": "Block"
+            },
+            {
+              "name": "space",
+              "children": [
+                {
+                  "name": "",
+                  "height": 50,
+                  "element_type": "EmptyLine"
+                }
+              ],
+              "column": 1,
+              "border": "None",
+              "border_size": 3,
+              "border_color": "Black",
+              "is_clipped": false,
+              "element_type": "Block"
+            },
+            {
+              "name": "examples_header",
+              "children": [
+                {
+                  "name": "Examples",
+                  "font_family": "Calibri",
+                  "font_style": "Bold",
+                  "font_size": 10,
+                  "content_type": "Normal",
+                  "align": "Center",
+                  "element_type": "Content"
+                }
+              ],
+              "column": 1,
+              "border": "None",
+              "border_size": 3,
+              "border_color": "Black",
+              "is_clipped": false,
+              "element_type": "Block"
+            },
+            {
+              "name": "example_pic",
+              "children": [
+                {
+                  "align": "Left",
+                  "name": "example.png",
+                  "image_path": null,
+                  "x": -1,
+                  "y": -1,
+                  "height": 600,
+                  "width": 1400,
+                  "element_type": "Image"
+                }
+              ],
+              "column": 1,
+              "border": "Rounded",
+              "border_size": 3,
+              "border_color": "Red",
+              "is_clipped": false,
+              "element_type": "Block"
+            },
+            {
+              "name": "student_id",
+              "children": [
+                {
+                  "name": "StudentId",
+                  "column": 3,
+                  "sections_count": 6,
+                  "options_count": 9,
+                  "align": "Right",
+                  "header_type": "Underline",
+                  "header_border_size": 3,
+                  "header_border_color": "Black",
+                  "orientation": "Horizontal",
+                  "vertical_margin": 0,
+                  "bubble_size": "Small",
+                  "bubble_type": "Round",
+                  "x": -1,
+                  "y": -1,
+                  "element_type": "Grid"
+                }
+              ],
+              "column": 2,
+              "border": "None",
+              "border_size": 3,
+              "border_color": "Black",
+              "is_clipped": false,
+              "element_type": "Block"
+            }
+          ],
+          "columns_count": 0,
+          "columns_proportions": [
+            60,
+            10,
+            30
+          ],
+          "container_type": "Normal",
+          "block_right_margin": 40,
+          "block_bottom_margin": 0,
+          "block_top_padding": 0,
+          "element_type": "Container"
+        },
+        {
+          "name": "",
+          "height": 100,
+          "element_type": "EmptyLine"
+        },
+        {
+          "name": "Section 1\r\n",
+          "font_family": "Calibri",
+          "font_style": "Bold",
+          "font_size": 14,
+          "align": "Left",
+          "element_type": "Text"
+        },
+        {
+          "name": "",
+          "height": 50,
+          "element_type": "EmptyLine"
+        },
+        {
+          "bubble_size": "Normal",
+          "name": "MainQuestions",
+          "column": 0,
+          "elements_count": 40,
+          "columns_count": 5,
+          "answers_count": 4,
+          "start_id": -1,
+          "vertical_margin": 0,
+          "bubble_type": "Round",
+          "answers_list": null,
+          "element_type": "AnswerSheet"
+        },
+        {
+          "name": "",
+          "height": 50,
+          "element_type": "EmptyLine"
+        },
+        {
+          "name": "Section 2\r\n",
+          "font_family": "Calibri",
+          "font_style": "Bold",
+          "font_size": 14,
+          "align": "Left",
+          "element_type": "Text"
+        },
+        {
+          "name": "",
+          "height": 50,
+          "element_type": "EmptyLine"
+        },
+        {
+          "bubble_size": "Normal",
+          "name": "MainQuestions",
+          "column": 0,
+          "elements_count": 40,
+          "columns_count": 5,
+          "answers_count": 4,
+          "start_id": 40,
+          "vertical_margin": 0,
+          "bubble_type": "Round",
+          "answers_list": null,
+          "element_type": "AnswerSheet"
+        },
+        {
+          "name": "",
+          "height": 50,
+          "element_type": "EmptyLine"
+        },
+        {
+          "name": "Section 3\r\n",
+          "font_family": "Calibri",
+          "font_style": "Bold",
+          "font_size": 14,
+          "align": "Left",
+          "element_type": "Text"
+        },
+        {
+          "name": "",
+          "height": 50,
+          "element_type": "EmptyLine"
+        },
+        {
+          "bubble_size": "Normal",
+          "name": "MainQuestions",
+          "column": 0,
+          "elements_count": 40,
+          "columns_count": 5,
+          "answers_count": 4,
+          "start_id": 80,
+          "vertical_margin": 0,
+          "bubble_type": "Round",
+          "answers_list": null,
+          "element_type": "AnswerSheet"
+        },
+        {
+          "name": null,
+          "height": 0,
+          "element_type": "EmptyLine"
+        },
+        {
+          "name": "50",
+          "height": 100,
+          "element_type": "EmptyLine"
+        },
+        {
+          "name": "test_id",
+          "value": "15478977",
+          "barcode_type": "Code32",
+          "qr_version": "Auto",
+          "align": "Center",
+          "height": -1,
+          "codetext": true,
+          "X": -1,
+          "Y": -1,
+          "element_type": "Barcode"
         }
-    ],
-    "element_type": "Template"
+      ],
+      "element_type": "Page"
+    }
+  ],
+  "element_type": "Template"
 }
 ```
 
@@ -493,4 +601,4 @@ File | Description
 **sat.png** | printable form
 **sat.txt** | source code in [text markup](/omr/net/txt-markup/)
 **sat-recognized.png** | filled form
-**settings.txt** | [page settings](/omr/net/generate-template/page-setup/)
+**settings.json** | [page settings](/omr/net/generate-template/page-setup/)

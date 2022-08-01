@@ -18,7 +18,7 @@ keywords:
 - footer
 ---
 
-This element is used to break content into columns and to add a footer to the form. **Container** elements cannot be nested within other layout elements - they should always be placed directly in the `children` array of the [template page object]({{< relref "../../#asposeomr-template-structure" >}}).
+This element is used to break content into columns and to add a footer to the form. Nested containers must be placed inside [block](/omr/net/json-markup/block/) elements.
 
 **Container** element does not have a visual representation and is only used to arrange other elements.
 

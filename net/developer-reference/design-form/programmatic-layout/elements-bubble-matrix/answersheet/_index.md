@@ -63,6 +63,7 @@ Name | Type | Default value | Description
 **StartId** | `int` | _Automatic_ | The number of the first line used as a base for further numbering.<br />If omitted, the number will be calculated based on the numbering of previous elements.
 **VerticalMargin** | `int` | 0 | Vertical spacing between lines, in pixels.
 **BubbleSize** | [`BubbleSize`](https://reference.aspose.com/omr/net/aspose.omr.generation/bubblesize/) | `BubbleSize.Normal` | Size of bubbles.
+**BubbleType** | [`BubbleType`](https://reference.aspose.com/omr/net/aspose.omr.generation/bubbletype/) | `BubbleType.Round` | Bubble style.
 **AnswersValues** | `string[]` | _["A" ... "Z"]_ | Characters to be drawn inside bubbles. The total number of array items must match the value of the **AnswersCount** property.
 **Column** | `int` | 1 | The number of the column where the **AnswerSheetConfig** element will be placed. Only applicable if **AnswerSheetConfig** is placed in a multi-column [**ContainerConfig**](/omr/net/programmatic-forms/containerconfig/) element.
 

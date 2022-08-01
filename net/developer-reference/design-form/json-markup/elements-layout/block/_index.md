@@ -18,7 +18,7 @@ keywords:
 - border
 ---
 
-This element is used to organize content within [**Containers**](/omr/net/json-markup/container/). **Block** elements can only be nested within [**Container**](/omr/net/json-markup/container/) elements and cannot contain other **Block** elements.
+This element is used to organize content within [**Containers**](/omr/net/json-markup/container/). **Block** elements can only be nested within [**Container**](/omr/net/json-markup/container/) elements.
 
 **Block** elements may have no visual representation or have a border around them.
 
@@ -59,7 +59,7 @@ Name | Type | Default value | Description
 
 ## Allowed child elements
 
-All, except for [**Container**](/omr/net/json-markup/container/) or another **Block**.
+All, except for another **Block**.
 
 ## **Examples**
 
