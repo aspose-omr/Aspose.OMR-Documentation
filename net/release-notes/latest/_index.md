@@ -1,6 +1,6 @@
 ---
 weight: 1
-date: "2022-07-28"
+date: "2022-08-08"
 author: "Vladimir Lapin"
 type: docs
 url: /net/release-notes/latest/
@@ -27,6 +27,7 @@ n/a | Fixed a line-height (leading) issue that caused adjacent lines with larger
 OMRNET-353 | Added an alternative bubble type (square) for **AnswerSheet**, **CustomAnswerSheet**, **Grid**, **CompositeGrid**, and **CheckBox** elements. | New feature
 OMRNET-499 | Fixed a layout issue with **Table** ([text markup](/omr/net/txt-markup/table/) / [JSON markup](/omr/net/json-markup/table/)) element when header text does not fit in one line. | Fix
 OMRNET-541 | Added human-readable enumerators for `BarcodeType` and `BarcodeQRVersion` properties of [**BarcodeConfig**](/omr/net/programmatic-forms/elements-barcode/) element. | Enhancement
+OMRNET-614 | Fixed the behavior of **WriteIn** element inside **VerticalChoicebox** element ([text markup](/omr/net/txt-markup/vertical_choicebox/#combining-with-write_in-elements) / [JSON markup](/omr/net/json-markup/verticalchoicebox/#combining-with-writein-elements)).
 n/a | Fixed rendering issues for **Container** elements ([text markup](/omr/net/txt-markup/container/) / [JSON markup](/omr/net/json-markup/container/)) that caused left and right margins to be different. | Fix
 n/a | **Container** ([text markup](/omr/net/txt-markup/container/) / [JSON markup](/omr/net/json-markup/container/)) elements can now be nested within other container elements. | Enhancement
 n/a | **Paragraphs** ([text markup](/omr/net/txt-markup/paragraph/) / [JSON markup](/omr/net/json-markup/paragraph/)) can now be placed at the top level of the form hierarchy, without wrapping them in **block** elements. | Enhancement

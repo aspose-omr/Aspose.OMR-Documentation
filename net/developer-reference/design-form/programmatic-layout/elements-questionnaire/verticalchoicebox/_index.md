@@ -99,6 +99,12 @@ Name | Type | Default value | Description
 
 In this case, the content of the element is stored to [Images](https://reference.aspose.com/omr/net/aspose.omr.model/recognitionresult/properties/images) collection only if the respondent marks the corresponding bubble.
 
+{{% alert color="primary" %}}
+
+If the corresponding bubble is marked, the contents of the [**WriteInConfig**](/omr/net/programmatic-forms/writeinconfig/) element are always saved, even if its [`Required`](/omr/net/programmatic-forms/writeinconfig/#optional-properties) property is set to `false`.
+
+{{% /alert %}}
+
 ## Example
 
 ```csharp

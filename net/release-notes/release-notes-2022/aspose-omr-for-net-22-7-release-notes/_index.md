@@ -1,11 +1,11 @@
 ---
 weight: 1
-date: "2022-07-28"
+date: "2022-08-08"
 author: "Vladimir Lapin"
 type: docs
 url: /net/aspose-omr-for-net-22-7-release-notes/
 title: Aspose.OMR for .NET 22.7 Release Notes
-description: A summary of recent changes, enhancements and bug fixes in Aspose.OMR for .NET 22.7 (June 2022) release.
+description: A summary of recent changes, enhancements and bug fixes in Aspose.OMR for .NET 22.7 (July 2022) release.
 keywords:
 - 2022
 - July
@@ -24,9 +24,10 @@ This article contains a summary of recent changes, enhancements and bug fixes in
 Key | Summary | Category
 --- | ------- | --------
 n/a | Fixed a line-height (leading) issue that caused adjacent lines with larger font sizes to overlap. | Fix
-OMRNET-353 | Added an alternative bubble type (square) for **AnswerSheet**, **CustomAnswerSheet** (**CustomTrigger** element), **Grid**, **CompositeGrid**, and **CheckBox** elements. | New feature
+OMRNET-353 | Added an alternative bubble type (square) for **AnswerSheet**, **CustomAnswerSheet**, **Grid**, **CompositeGrid**, and **CheckBox** elements. | New feature
 OMRNET-499 | Fixed a layout issue with **Table** ([text markup](/omr/net/txt-markup/table/) / [JSON markup](/omr/net/json-markup/table/)) element when header text does not fit in one line. | Fix
 OMRNET-541 | Added human-readable enumerators for `BarcodeType` and `BarcodeQRVersion` properties of [**BarcodeConfig**](/omr/net/programmatic-forms/elements-barcode/) element. | Enhancement
+OMRNET-614 | Fixed the behavior of **WriteIn** element inside **VerticalChoicebox** element ([text markup](/omr/net/txt-markup/vertical_choicebox/#combining-with-write_in-elements) / [JSON markup](/omr/net/json-markup/verticalchoicebox/#combining-with-writein-elements)).
 n/a | Fixed rendering issues for **Container** elements ([text markup](/omr/net/txt-markup/container/) / [JSON markup](/omr/net/json-markup/container/)) that caused left and right margins to be different. | Fix
 n/a | **Container** ([text markup](/omr/net/txt-markup/container/) / [JSON markup](/omr/net/json-markup/container/)) elements can now be nested within other container elements. | Enhancement
 n/a | **Paragraphs** ([text markup](/omr/net/txt-markup/paragraph/) / [JSON markup](/omr/net/json-markup/paragraph/)) can now be placed at the top level of the form hierarchy, without wrapping them in **block** elements. | Enhancement
@@ -39,7 +40,7 @@ n/a | Improved elements wrapping within **paragraphs** ([text markup](/omr/net/t
 Key | Summary | Workaround
 --- | ------- | ----------
 OMRNET-462 | Recognition of multi-page PDF and TIFF files causes an error. | Scan each page of the filled form into a separate file and recognize them one-by-one.
-OMRNET-555 | [`Recalculate`](https://reference.aspose.com/omr/net/aspose.omr.api/templateprocessor/recalculate/) method results in incorrect processing of **ScoreGroup** elements ([text markup](/omr/net/txt-markup/score_group/) / [JSON markup](/omr/net/json-markup/scoregroup/)) and **CustomAnswerSheet** elements containing **CustomTrigger** elements ([text markup](/omr/net/txt-markup/custom_answer_sheet/#custom_trigger) / [JSON markup](/omr/net/json-markup/customanswersheet/#customtrigger-element)). | Use [`RecognizeImage`](https://reference.aspose.com/omr/net/aspose.omr.api/templateprocessor/recognizeimage/) method with different threshold setting instead of [run-time adjustments of recognition accuracy](/omr/net/recognition/accuracy-threshold/#adjusting-recognition-accuracy-at-run-time).
+OMRNET-555 | [`Recalculate`](https://reference.aspose.com/omr/net/aspose.omr.api/templateprocessor/recalculate/) method results in incorrect processing of **ScoreGroup** elements ([text markup](/omr/net/txt-markup/score_group/) / [JSON markup](/omr/net/json-markup/scoregroup/)) and **CustomAnswerSheet** elements([text markup](/omr/net/txt-markup/custom_answer_sheet/) / [JSON markup](/omr/net/json-markup/customanswersheet/)). | Use [`RecognizeImage`](https://reference.aspose.com/omr/net/aspose.omr.api/templateprocessor/recognizeimage/) method with different threshold setting instead of [run-time adjustments of recognition accuracy](/omr/net/recognition/accuracy-threshold/#adjusting-recognition-accuracy-at-run-time).
 
 ## Public API changes and backwards compatibility
 
@@ -66,7 +67,7 @@ This change will not affect existing code, print forms, or recognition results.
 Added a new `bubble_type` property for the following elements:
 
 - **AnswerSheet** ([text markup](/omr/net/txt-markup/answer_sheet/) / [JSON markup](/omr/net/json-markup/answersheet/))
-- **CustomAnswerSheet** / **CustomTrigger** ([text markup](/omr/net/txt-markup/custom_answer_sheet/#custom_trigger) / [JSON markup](/omr/net/json-markup/customanswersheet/#customtrigger-element))
+- **CustomAnswerSheet** ([text markup](/omr/net/txt-markup/custom_answer_sheet/) / [JSON markup](/omr/net/json-markup/customanswersheet/))
 - **Grid** ([text markup](/omr/net/txt-markup/grid/) / [JSON markup](/omr/net/json-markup/grid/))
 - **CompositeGrid** ([text markup](/omr/net/txt-markup/composite_grid/) / [JSON markup](/omr/net/json-markup/compositegrid/))
 - **CheckBox** ([text markup](/omr/net/txt-markup/checkbox/) / [JSON markup](/omr/net/json-markup/checkbox/))
@@ -75,11 +76,21 @@ This property affects the design of the bubble and allows it to be displayed as 
 
 #### `BarcodeType` enumerator
 
-Added human-readable enumerator that allows you to specify the type of [programmatically generated barcode](/omr/net/programmatic-forms/elements-barcode/#optional-properties). The rendering of barcodes is not affected.
+Added an enumerator that allows you to specify the type of [programmatically generated barcode](/omr/net/programmatic-forms/elements-barcode/#optional-properties): `Aspose.OMR.Generation.Config.Enums.BarcodeType`.
+
+The rendering of barcodes is not affected.
 
 #### `BarcodeQRVersion` enumerator
 
-Added human-readable enumerator that allows you to specify the version of [programmatically generated QR code](/omr/net/programmatic-forms/elements-barcode/#optional-properties). The rendering of QR codes is not affected.
+Added an enumerator that allows you to specify the version of [programmatically generated QR code](/omr/net/programmatic-forms/elements-barcode/#optional-properties): `Aspose.OMR.Generation.Config.Enums.QRVersion`.
+
+The rendering of QR codes is not affected.
+
+#### Paragraph
+
+Added a new value for [paragraph_type](/omr/net/json-markup/paragraph/#optional-properties) / [type](/omr/net/txt-markup/paragraph/#attributes) attribute: `ImageWrap`. This allows text to wrap around the image, acting as an alias for the existing value `multiple`.
+
+For programmatically generated forms, the corresponding enumerator value is `Aspose.OMR.Generation.Config.Enums.ParagraphTypeEnum.ImageWrap`.
 
 ### Removed public APIs:
 
