@@ -95,14 +95,12 @@ Name | Type | Default value | Description
 
 ## Combining with WriteInConfig elements
 
-[**WriteInConfig**](/omr/net/programmatic-forms/writeinconfig/) element can be included into **VerticalChoiceBoxConfig** element to give the respondent the opportunity to provide a free-form answer to an open-ended question.
+The **AnswerConfig** element may contain a [**WriteInConfig**](/omr/net/programmatic-forms/writeinconfig/) element to allow respondents to provide free-form answers to an open-ended question. You can add several write-in fields per **VerticalChoiceBoxConfig** element.
 
-In this case, the content of the element is stored to [Images](https://reference.aspose.com/omr/net/aspose.omr.model/recognitionresult/properties/images) collection only if the respondent marks the corresponding bubble.
+If the bubble is marked, the contents of the corresponding **WriteInConfig** element are saved to [Images](https://reference.aspose.com/omr/net/aspose.omr.model/recognitionresult/properties/images) collection. It will work even if the [`Required`](/omr/net/programmatic-forms/writeinconfig/#optional-properties) property of the **WriteInConfig** is set to `false`.
 
 {{% alert color="primary" %}}
-
-If the corresponding bubble is marked, the contents of the [**WriteInConfig**](/omr/net/programmatic-forms/writeinconfig/) element are always saved, even if its [`Required`](/omr/net/programmatic-forms/writeinconfig/#optional-properties) property is set to `false`.
-
+Each **WriteInConfig** element must have a unique name.
 {{% /alert %}}
 
 ## Example

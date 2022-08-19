@@ -20,7 +20,7 @@ Most OMR-ready forms have a unified structure that allows the recognition engine
 
 ## Positioning markers
 
-Located at the corners of the page, these boxes allow a recognition engine to quickly find inner elements of the form, and determine its size and orientation. Positioning markers are crucial for processing skewed images, such as photos.
+Located at the corners of the page, these 5 boxes allow a recognition engine to quickly find inner elements of the form, and determine its size and orientation. Positioning markers are crucial for processing skewed scans and photos.
 
 {{% alert color="primary" %}} 
 

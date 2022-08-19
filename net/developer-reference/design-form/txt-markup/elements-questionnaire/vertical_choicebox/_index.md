@@ -64,14 +64,12 @@ Attribute | Default value | Description | Usage example
 
 ## Combining with write_in elements
 
-[**Write_in**](/omr/net/txt-markup/write_in/) element can be included into **vertical_choicebox** element to give the respondent the opportunity to provide a free-form answer to an open-ended question.
+The **answer** element may contain a [**write_in**](/omr/net/txt-markup/write_in/) element to allow respondents to provide free-form answers to an open-ended question. You can add several write-in fields per **vertical_choicebox** element.
 
-In this case, the content of the element is stored to [Images](https://reference.aspose.com/omr/net/aspose.omr.model/recognitionresult/properties/images) collection only if the respondent marks the corresponding bubble.
+If the bubble is marked, the contents of the corresponding [**write_in**](/omr/net/txt-markup/write_in/) element are saved to [Images](https://reference.aspose.com/omr/net/aspose.omr.model/recognitionresult/properties/images) collection. It will work even if the [`required`](/omr/net/txt-markup/write_in/#attributes) attribute of the **write_in** is set to `false`.
 
 {{% alert color="primary" %}}
-
-If the corresponding bubble is marked, the contents of the [**write_in**](/omr/net/txt-markup/write_in/) element are always saved, even if its [`required`](/omr/net/txt-markup/write_in/#attributes) attribute is set to `false`.
-
+Each **write_in** element must have a unique name.
 {{% /alert %}}
 
 ## Example

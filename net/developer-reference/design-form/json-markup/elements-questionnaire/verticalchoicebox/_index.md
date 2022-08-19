@@ -88,14 +88,12 @@ Name | Type | Default value | Description
 
 ## Combining with WriteIn elements
 
-[**WriteIn**](/omr/net/json-markup/writein/) element can be included into **VerticalChoicebox** element to give the respondent the opportunity to provide a free-form answer to an open-ended question.
+The **Answer** element may contain a [**WriteIn**](/omr/net/txt-markup/writein/) element to allow respondents to provide free-form answers to an open-ended question. You can add several write-in fields per **VerticalChoiceBox** element.
 
-In this case, the content of the element is stored to [Images](https://reference.aspose.com/omr/net/aspose.omr.model/recognitionresult/properties/images) collection only if the respondent marks the corresponding bubble.
+If the bubble is marked, the contents of the corresponding **WriteIn** element are saved to [Images](https://reference.aspose.com/omr/net/aspose.omr.model/recognitionresult/properties/images) collection. It will work even if the [`required`](/omr/net/json-markup/writein/#optional-properties) property of the **WriteIn** is set to `false`.
 
 {{% alert color="primary" %}}
-
-If the corresponding bubble is marked, the contents of the [**WriteIn**](/omr/net/json-markup/writein/) element are always saved, even if its [`required`](/omr/net/json-markup/writein/#optional-properties) property is set to `false`.
-
+Each **WriteIn** element must have a unique name.
 {{% /alert %}}
 
 ## Example
