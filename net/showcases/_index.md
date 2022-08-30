@@ -4,6 +4,11 @@ date: "2022-06-03"
 author: "Vladimir Lapin"
 type: docs
 url: /net/showcases/
+aliases:
+- /net/showcases/hotel/
+- /net/showcases/hotel/json/
+- /net/showcases/hotel/txt/
+- /net/template-generation/examples/hotel/
 title: Showcases
 description: Check out how Aspose.OMR for .NET can be used to solve real-world problems.
 keywords:
