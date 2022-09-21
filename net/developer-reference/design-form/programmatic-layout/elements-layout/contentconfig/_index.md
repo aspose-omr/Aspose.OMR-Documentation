@@ -50,6 +50,7 @@ Name | Type | Default value | Description
 **FontFamily** | `string` | "Segoe UI" | The font family for the text.
 **FontStyle** | [`FontStyle`](https://reference.aspose.com/omr/net/aspose.omr.generation/fontstyle/) | `FontStyle.Regular` | The font style for a text.<br />Several font styles can be combined with `\|` operator, for example `FontStyle.Bold \| FontStyle.Italic`.
 **FontSize** | `int` | 12 | Font size for the text.
+**Color** | [`Color`](https://reference.aspose.com/omr/net/aspose.omr.generation/color/) | `Color.Black` | Text color.
 **TextAlignment** | [`AlignmentEnum`](https://reference.aspose.com/omr/net/aspose.omr.generation.config.enums/alignmentenum/) | `AlignmentEnum.Left` | Horizontal text alignment.
 **ContentType** | [`ContentType`](https://reference.aspose.com/omr/net/aspose.omr.generation.config.enums/contenttype/) | `ContentType.Normal` | Set the value of this property to `ContentType.Cells` to draw a border around every character, including spaces.
 

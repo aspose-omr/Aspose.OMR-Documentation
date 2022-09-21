@@ -1,6 +1,6 @@
 ---
 weight: 30
-date: "2022-04-22"
+date: "2022-09-20"
 author: "Vladimir Lapin"
 type: docs
 url: /net/txt-markup/custom_answer_sheet/
@@ -51,6 +51,18 @@ Attribute | Default value | Description | Usage example
 **amount** | n/a | The number of exam questions that the answer sheet corresponds to. Each question will correspond to a numbered answer. | `amount=30`
 **columns_count** | n/a | The number of columns to arrange answers into. Use multiple columns to make the answer sheet more compact. | `columns_count=3`
 **row_proportions** | n/a | The content of each answer is divided into one or more columns. This attribute specifies the number of columns and their relative proportions.<br />The attribute value is provided in the following format: `{Column 1 width %}-{Column 2 width %}-...{Column N width %}`. The grand total of all column widths must not exceed 100%. | `row_proportions=15%-50%-20%-15%`
+
+### Optional custom_answer_sheet attributes
+
+Attribute | Default value | Description | Usage example
+--------- | ------------- | ----------- | -------------
+**border** | none | Whether to draw a border around the block.<ul><li>`none` - no border.</li><li>`square` - draw a rectangular border.</li><li>`rounded` - draw a rectangular border with rounded corners.</li></ul> | `border=square`
+**border_size** | 3 | Width of all borders. | `border_size=10`
+**border_color** | black | Color of all borders. Can be picked from the following values: `Aqua`, `Aquamarine`, `Black`, `Blue`, `BlueViolet`, `Crimson`, `DarkBlue`, `DarkGreen`, `DarkOrange`, `DarkSalmon`, `Fuchsia`, `Indigo`, `Lime`, `Red`, `Teal`, `White`, `Gray`, `LightGray`. | `border_color=red`
+**border_top_style** | _inherits border_size and border_color_ | Override the width and color of the element's top border in `<border width> <border color>` format. Specify `none` to remove the top border. | `border_top_style=10 red`
+**border_bottom_style** | _inherits border_size and border_color_ | Override the width and color of the element's bottom border in `<border width> <border color>` format. Specify `none` to remove the bottom border. | `border_bottom_style=10 red`
+**border_left_style** | _inherits border_size and border_color_ | Override the width and color of the element's left border in `<border width> <border color>` format. Specify `none` to remove the left border. | `border_left_style=10 red`
+**border_right_style** | _inherits border_size and border_color_ | Override the width and color of the element's right border in `<border width> <border color>` format. Specify `none` to remove the right border. | `border_right_style=10 red`
 
 ### Header element
 

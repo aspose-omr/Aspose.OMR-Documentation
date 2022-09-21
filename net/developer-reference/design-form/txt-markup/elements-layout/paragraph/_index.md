@@ -39,7 +39,8 @@ An attribute is written as `[attribute_name]=[value]`. Each attribute must be pl
 
 Attribute | Default value | Description | Usage example
 --------- | ------------- | ----------- | -------------
-**type** | normal | Set this attribute to `ImageWrap` so that text can wrap around the image.<br />Omitting this attribute or setting it to `normal` will cause the text to overlay the image. | `type=ImageWrap`
+**type** | normal | Defines how paragraph elements are rendered:<ul><li>`ImageWrap` - wrap text around the image.</li><li>`inline` - place all paragraph elements on the same line.</li></ul>Omitting this attribute or setting it to `normal` will cause the text to overlay the image. | `type=ImageWrap`
+**vertical_align** | center | Controls how inline elements of different sizes align vertically within the lines of a paragraph:<ul><li>`top` - the elements are aligned with the top of the tallest element on the line.</li><li>`center` - smaller elements are placed in the middle of the line.</li><li>`bottom` - the bottom of the elements are aligned with the bottom of the entire line.</li></ul>If all paragraph elements have the same height, this property does not visually apply. | `vertical_align=top`
 
 ## Image wrapping
 

@@ -1,6 +1,6 @@
 ---
 weight: 30
-date: "2022-04-19"
+date: "2022-09-19"
 author: "Vladimir Lapin"
 type: docs
 url: /net/generate-template/
@@ -54,6 +54,12 @@ string[] images = {
 	System.IO.Path.Combine(workingDirectory, "aspose-logo.png")
 };
 Aspose.OMR.Generation.GenerationResult generationResult = omrEngine.GenerateTemplate("source.txt", images);
+```
+
+You can also define the encoding of a text file. By default, the API treats the source file as UTF-8 encoded.
+
+```csharp
+Aspose.OMR.Generation.GenerationResult generationResult = omrEngine.GenerateTemplate("source.txt", Encoding.ASCII);
 ```
 
 ### As an array of lines
@@ -154,6 +160,18 @@ using(System.IO.FileStream fs = new System.IO.FileStream("source.txt", System.IO
 };
 ```
 
+You can also define the encoding of a memory stream. By default, the API treats the stream as UTF-8 encoded text.
+
+```csharp
+Aspose.OMR.Generation.GenerationResult generationResult = null;
+using(System.IO.FileStream fs = new System.IO.FileStream("source.txt", System.IO.FileMode.Open))
+{
+	System.IO.MemoryStream ms = new System.IO.MemoryStream();
+	fs.CopyTo(ms);
+	generationResult = omrEngine.GenerateTemplate(ms, Encoding.ASCII);
+};
+```
+
 ## JSON markup
 
 Aspose.OMR [JSON markup](/omr/net/json-markup/) is an easy-to-read, open standard format that supports syntax highlighting, automatic formatting, and code folding in all popular code editors.
@@ -180,6 +198,12 @@ globalPageSettings.ImagesPaths = new string[] {
 	System.IO.Path.Combine(workingDirectory, "aspose-logo.png")
 };
 Aspose.OMR.Generation.GenerationResult generationResult = omrEngine.GenerateJSONTemplate("source.json", globalPageSettings);
+```
+
+You can also define the encoding of a JSON file. By default, the API treats the source file as UTF-8 encoded.
+
+```csharp
+Aspose.OMR.Generation.GenerationResult generationResult = omrEngine.GenerateJSONTemplate("source.json", Encoding.ASCII);
 ```
 
 ### As a string containing JSON markup data

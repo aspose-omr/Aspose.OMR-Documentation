@@ -45,6 +45,7 @@ Name | Type | Default value | Description
 **font_family** | string | "Segoe UI" | The font family for the text.
 **font_style** | string / array | "regular" | The font style for a text: `"bold"`, `"italic"` or `"underline"`.<br />Several font styles can be combined by providing them as an array, for example `["bold", "italic"]`.
 **font_size** | integer | 12 | Font size for the text.
+**color** | string | black | Text color. Can be picked from the following values: `"Aqua"`, `"Aquamarine"`, `"Black"`, `"Blue"`, `"BlueViolet"`, `"Crimson"`, `"DarkBlue"`, `"DarkGreen"`, `"DarkOrange"`, `"DarkSalmon"`, `"Fuchsia"`, `"Indigo"`, `"Lime"`, `"Red"`, `"Teal"`, `"White"`, `"Gray"`, `"LightGray"`.
 **align** | string | "left" | Horizontal text alignment: `"left"`, `"center"` or `"right"`.
 **content_type** | string | "Normal" | Set the value of this property to `"Cells"` to draw a border around every character, including spaces.
 

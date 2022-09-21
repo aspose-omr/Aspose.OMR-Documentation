@@ -61,6 +61,7 @@ Attribute | Default value | Description | Usage example
 **threshold** | 45 | Set the recognition accuracy for the answer bubbles, from 0 to 100. Lower values allow even the lightest marks to be recognized, but may cause dirt or paper defects to be treated as marks. Higher values require a more solid fill and may cause pencil marks or small checks to be ignored.<br /><br />![vertical_choicebox threshold](vertical_choicebox-threshold.png) | `threshold=35`
 **bubble_type** | round | Set the bubble design:<ul><li>`round` - circle</li><li>`square` - box</li></ul> | `bubble_type=square`
 **top_padding** | 0 | The vertical spacing (in pixels) before the first **answer** element. | `top_padding=160`
+**bubble_position** | left | The bubble position relative to the answer text:<ul><li>`"left"`</li><li>`"right"`</li></ul> | `bubble_position=right`
 
 ## Combining with write_in elements
 

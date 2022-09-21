@@ -54,6 +54,8 @@ Name | Type | Default value | Description
 ---- | ---- | ------------- | -----------
 **Name** | `string` | _n/a_ | Used as a reminder of the element's purpose; for example, "_Phone_". You can use the same value for multiple elements.<br />This text is not displayed on the form.
 **Required** | `bool` | false | Set to `true` to store the hand-filled content of the element to [Images](https://reference.aspose.com/omr/net/aspose.omr.model/recognitionresult/properties/images) collection during recognition. Set to `false` or omit the property to ignore this element during recognition.
+**Hint** | `string` | "write-in" | Redefine the underlying label of the write-in element.
+**Color** | [`Color`](https://reference.aspose.com/omr/net/aspose.omr.generation/color/) | `Color.Black` | Color of the underlying label text.
 
 ## Combining with VerticalChoiceBoxConfig elements
 

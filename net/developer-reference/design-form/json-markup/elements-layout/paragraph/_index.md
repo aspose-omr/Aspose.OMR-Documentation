@@ -47,7 +47,8 @@ Name | Type | Description
 Name | Type | Default value | Description
 ---- | ---- | ------------- | -----------
 **name** | string | _n/a_ | Used as a reminder of the element's purpose; for example, "_Important notice_". You can use the same value for multiple paragraphs.<br />This text is not displayed on the form.
-**paragraph_type** | string | "normal" | Set the value to `"ImageWrap"` so that text can wrap around the image.<br />Omitting this property or setting its value to `"normal"` will cause the text to overlay the image.
+**paragraph_type** | string | "normal" | Defines how paragraph elements are rendered:<ul><li>`ImageWrap` - wrap text around the image.</li><li>`Inline` - place all paragraph elements on the same line.</li></ul>Omitting this attribute or setting it to `normal` will cause the text to overlay the image.
+**vertical_align** | string | "center" | Controls how inline elements of different sizes align vertically within the lines of a paragraph:<ul><li>`top` - the elements are aligned with the top of the tallest element on the line.</li><li>`center` - smaller elements are placed in the middle of the line.</li><li>`bottom` - the bottom of the elements are aligned with the bottom of the entire line.</li></ul>If all paragraph elements have the same height, this property does not visually apply.
 
 ## Image wrapping
 

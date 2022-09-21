@@ -37,6 +37,9 @@ You can customize the following page layout parameters through `GlobalPageSettin
 - [`FontStyle`](https://reference.aspose.com/omr/net/aspose.omr.generation/fontstyle) - default font style for all texts, except for those directly overridden in the source code.
 - [`BubbleSize`](https://reference.aspose.com/omr/net/aspose.omr.generation/bubblesize) - default size of answer bubbles, except for those directly overridden in the source code.
 - [`BubbleColor`](https://reference.aspose.com/omr/net/aspose.omr.generation/color) - color of all bubbles. Default: black.
+- [`Wrap`](https://reference.aspose.com/omr/net/aspose.omr.generation/wrap) - wrapping mode:
+    - `Aspose.OMR.Generation.WrappingPolicy.None` - disable column wrapping (default);
+    - `Aspose.OMR.Generation.WrappingPolicy.Column` - enable automatic column wrapping.
 
 ## Image paths
 

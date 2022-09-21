@@ -92,6 +92,7 @@ Name | Type | Description
 Name | Type | Default value | Description
 ---- | ---- | ------------- | -----------
 **Name** | `string` | Used for identifying the marked answer in recognition results.
+**BubblePosition** | `string` | The bubble position relative to the answer text:<ul><li>`"left"`</li><li>`"right"`</li></ul>
 
 ## Combining with WriteInConfig elements
 

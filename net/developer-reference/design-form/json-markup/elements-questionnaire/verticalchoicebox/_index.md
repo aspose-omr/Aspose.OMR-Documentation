@@ -85,6 +85,7 @@ Name | Type | Description
 Name | Type | Default value | Description
 ---- | ---- | ------------- | -----------
 **name** | string | Used for identifying the marked answer in recognition results.
+**bubble_position** | string | left | The bubble position relative to the answer text:<ul><li>`"left"`</li><li>`"right"`</li></ul>
 
 ## Combining with WriteIn elements
 
