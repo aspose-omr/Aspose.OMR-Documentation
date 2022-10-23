@@ -4,6 +4,10 @@ date: "2022-09-19"
 author: "Vladimir Lapin"
 type: docs
 url: /net/generate-template/
+aliases:
+- /net/template-generation/examples/english/txt/
+- /net/template-generation/examples/pub/txt/
+- /net/template-generation/examples/math/txt/
 title: Generating the template
 description: How to render a printable form and generate a recognition pattern file for Aspose.OMR engine.
 keywords:
