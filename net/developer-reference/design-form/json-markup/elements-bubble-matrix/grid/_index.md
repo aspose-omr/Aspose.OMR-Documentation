@@ -57,7 +57,7 @@ Name | Type | Default value | Description
 **orientation** | string | "horizontal" | Element's orientation:<ul><li>`"horizontal"` - each digit is represented as a column of bubbles;</li><li>`"vertical"` - each digit is represented as a row of bubbles.</li></ul>
 **header_type** | string | "underline" | The type of the box to be displayed in front of each column / row. This box can be used for hand-writing the answer in addition to marking bubbles.<ul><li>`"underline"` - draw a horizontal line.</li><li>`"square"` - draw a box.</li></ul>
 **header_border_size** | integer | 3 | Border width of the box to be displayed in front of each column / row.
-**header_border_color** | string | "black" | Border color of the box to be displayed in front of each column / row. Can be picked from the following values: `"Aqua"`, `"Aquamarine"`, `"Black"`, `"Blue"`, `"BlueViolet"`, `"Crimson"`, `"DarkBlue"`, `"DarkGreen"`, `"DarkOrange"`, `"DarkSalmon"`, `"Fuchsia"`, `"Indigo"`, `"Lime"`, `"Red"`, `"Teal"`, `"White"`, `"Gray"`, `"LightGray"`.
+**header_border_color** | string | "black" | Border color of the box to be displayed in front of each column / row. Can be picked from one of the [supported](/omr/net/supported-colors/) values.
 **vertical_margin** | integer| 0 | Vertical spacing between the element's lines, in pixels.
 **bubble_size** | string | "normal" | Size of bubbles: `"extrasmall"`, `"small"`, `"normal"`, `"large"`, or `"extralarge"`.
 **bubble_type** | string | "round" | Bubble style: `"round`" or `"square"`.

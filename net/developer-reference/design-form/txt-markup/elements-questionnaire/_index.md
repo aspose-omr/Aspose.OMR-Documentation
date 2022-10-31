@@ -1,11 +1,11 @@
 ---
 weight: 20
-date: "2022-04-25"
+date: "2022-10-25"
 author: "Vladimir Lapin"
 type: docs
 url: /net/txt-markup/elements-questionnaire/
 title: Questionnaires
-description: Questionnairy elements allow you to build OMR-ready surveys, ballots, checklists, and similar forms.
+description: Questionnairy elements allow you to build OMR-ready customer satisfaction surveys, voting ballots, customs forms, and similar forms.
 keywords:
 - layout
 - markup
@@ -18,9 +18,9 @@ keywords:
 - questionnaire
 ---
 
-OMR is a fast and fail-safe way to process surveys, ballots, checklists, insurance claim forms, and similar questionnaires in which the respondent answers questions by filling in circles or checking boxes.
+OMR is a fast and easy way to process customer satisfaction surveys, voting ballots, customs forms, and similar questionnaires in which the respondent answers questions by filling in circles or checking boxes.
 
-With Aspose.OMR elements, you can design professional-looking questionnaires that can be automatically recognized.
+With Aspose.OMR text markup, you can design professional-looking questionnaires that can be automatically recognized.
 
 ## Elements
 

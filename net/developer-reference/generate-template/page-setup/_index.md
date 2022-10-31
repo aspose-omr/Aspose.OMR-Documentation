@@ -40,12 +40,28 @@ You can customize the following page layout parameters through `GlobalPageSettin
 - [`Wrap`](https://reference.aspose.com/omr/net/aspose.omr.generation/wrap) - wrapping mode:
     - `Aspose.OMR.Generation.WrappingPolicy.None` - disable column wrapping (default);
     - `Aspose.OMR.Generation.WrappingPolicy.Column` - enable automatic column wrapping.
+- `RotationPointPosition` - the placement of the rectangular [positioning marker](/omr/net/omr-form-structure/) that is used to detect the page orientation. See details below.
 
 ## Image paths
 
 The `GlobalPageSettings` object is also used to provide the full path to each image mentioned in the [source code](/omr/net/design-form/). The paths are provided as an array of strings using `ImagesPaths` property.
 
 Read more info in this [article](/omr/net/generate-template/images/).
+
+## Positioning marker placement
+
+The `RotationPointPosition` property controls the placement of the rectangular [positioning marker](/omr/net/omr-form-structure/) that is used to detect the page orientation. It is provided one of the following values of `Aspose.OMR.Generation.RotationPointPosition` enumerator:
+
+Enumeration | Value | Result
+---------- | ----- | ------
+`TopLeft1` | 10 | ![Below the top-left square positioning marker](TopLeft1.png)
+`TopLeft2` | 11 | ![To the right of the top-left square positioning marker](TopLeft2.png)
+`TopRight1` | 20 | ![Below the top-right square positioning marker](TopRight1.png)
+`TopRight2` | 21 | ![To the left of the top-left square positioning marker](TopRight2.png)
+`BottomLeft1` | 30 | ![Above the bottom-left square positioning marker](BottomLeft1.png)
+`BottomLeft2` | 31 | ![To the right of the bottom-left square positioning marker](BottomLeft2.png)
+`BottomRight1` | 40 | ![Above the bottom-right square positioning marker](BottomRight1.png)
+`BottomRight2` | 41 | ![To the left of the bottom-right square positioning marker](BottomRight2.png)
 
 ## Example
 

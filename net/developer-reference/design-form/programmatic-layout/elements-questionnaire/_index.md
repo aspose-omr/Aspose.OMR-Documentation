@@ -1,11 +1,11 @@
 ---
 weight: 20
-date: "2022-05-31"
+date: "2022-10-25"
 author: "Vladimir Lapin"
 type: docs
 url: /net/programmatic-forms/elements-questionnaire/
 title: Questionnaires
-description: Questionnairy elements allow you to build OMR-ready surveys, ballots, checklists, and similar forms.
+description: Questionnairy elements allow you to programmatically build OMR-ready surveys, ballots, checklists, and similar forms.
 keywords:
 - layout
 - markup
@@ -21,7 +21,7 @@ keywords:
 
 OMR is a fast and fail-safe way to process surveys, ballots, checklists, insurance claim forms, and similar questionnaires in which the respondent answers questions by filling in circles or checking boxes.
 
-With Aspose.OMR elements, you can design professional-looking questionnaires that can be automatically recognized.
+With Aspose.OMR elements, you can programmatically design professional-looking questionnaires that can be automatically recognized.
 
 ## Elements
 

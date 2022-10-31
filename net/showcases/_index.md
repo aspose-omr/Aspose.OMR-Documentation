@@ -1,6 +1,6 @@
 ---
 weight: 40
-date: "2022-06-03"
+date: "2022-10-25"
 author: "Vladimir Lapin"
 type: docs
 url: /net/showcases/
@@ -10,6 +10,9 @@ aliases:
 - /net/showcases/hotel/txt/
 - /net/template-generation/examples/hotel/
 - /net/showcases/journal/
+- /net/template-generation/examples/biology/
+- /net/template-generation/examples/biology/txt/
+- /net/template-generation/examples/journal/json/
 title: Showcases
 description: Check out how Aspose.OMR for .NET can be used to solve real-world problems.
 keywords:

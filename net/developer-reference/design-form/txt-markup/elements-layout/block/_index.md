@@ -1,6 +1,6 @@
 ---
 weight: 20
-date: "2022-04-21"
+date: "2022-10-25"
 author: "Vladimir Lapin"
 type: docs
 url: /net/txt-markup/block/
@@ -47,12 +47,13 @@ Attribute | Default value | Description | Usage example
 **column** | 1 | The number of the column in which the **block** will be placed.<br />This number must not exceed the number of columns of the parent [**container**](/omr/net/txt-markup/container/) element. | `column=2`
 **border** | none | Whether to draw a border around the block.<ul><li>`none` - no border.</li><li>`square` - draw a rectangular border.</li><li>`rounded` - draw a rectangular border with rounded corners.</li></ul> | `border=square`
 **border_size** | 3 | Width of the block borders. | `border_size=10`
-**border_color** | black | Color of the block borders. Can be picked from the following values: `Aqua`, `Aquamarine`, `Black`, `Blue`, `BlueViolet`, `Crimson`, `DarkBlue`, `DarkGreen`, `DarkOrange`, `DarkSalmon`, `Fuchsia`, `Indigo`, `Lime`, `Red`, `Teal`, `White`, `Gray`, `LightGray`. | `border_color=red`
+**border_color** | black | Color of the block borders. Can be picked from one of the [supported](/omr/net/supported-colors/) values. | `border_color=red`
 **border_top_style** | _inherits border_size and border_color_ | Override the width and color of the element's top border in `<border width> <border color>` format. Specify `none` to remove the top border. | `border_top_style=10 red`
 **border_bottom_style** | _inherits border_size and border_color_ | Override the width and color of the element's bottom border in `<border width> <border color>` format. Specify `none` to remove the bottom border. | `border_bottom_style=10 red`
 **border_left_style** | _inherits border_size and border_color_ | Override the width and color of the element's left border in `<border width> <border color>` format. Specify `none` to remove the left border. | `border_left_style=10 red`
 **border_right_style** | _inherits border_size and border_color_ | Override the width and color of the element's right border in `<border width> <border color>` format. Specify `none` to remove the right border. | `border_right_style=10 red`
 **is_clipped** | false | If set to `true`, the content of the block is stored to [Images](https://reference.aspose.com/omr/net/aspose.omr.model/recognitionresult/properties/images) collection during recognition, similar to the [**write_in**](/omr/net/txt-markup/write_in/) element. The image can be can be passed to optical character recognition library, such as [Aspose.OCR](https://products.aspose.app/ocr), or saved.<br />If the block contains OMR elements, they will be recognized even if this attribute is set to `true`. | `is_clipped=true`
+**background_color** | _no fill_ | Background color of the block element. Can be picked from one of the [supported](/omr/net/supported-colors/) values. | `background_color=red`
 
 ## Allowed child elements
 

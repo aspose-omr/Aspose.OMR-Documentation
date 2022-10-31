@@ -58,13 +58,14 @@ Name | Type | Default value | Description
 **rotate** | integer | 0 | Rotate the element by the given degree. The following values are supported: `90`, `180`, `270`.
 **header_type** | string | "underline" | The type of the box to be displayed in front of each column / row. This box can be used for hand-writing the answer in addition to marking bubbles.<ul><li>`"underline"` - draw a horizontal line.</li><li>`"square"` - draw a box.</li></ul>
 **header_border_size** | integer | 3 | Border width of the box to be displayed in front of each column / row.
-**header_border_color** | string | "black" | Border color of the box to be displayed in front of each column / row. Can be picked from the following values: `"Aqua"`, `"Aquamarine"`, `"Black"`, `"Blue"`, `"BlueViolet"`, `"Crimson"`, `"DarkBlue"`, `"DarkGreen"`, `"DarkOrange"`, `"DarkSalmon"`, `"Fuchsia"`, `"Indigo"`, `"Lime"`, `"Red"`, `"Teal"`, `"White"`, `"Gray"`, `"LightGray"`.
+**header_border_color** | string | "black" | Border color of the box to be displayed in front of each column / row. Can be picked from one of the [supported](/omr/net/supported-colors/) values.
 **vertical_margin** | integer| 0 | Vertical spacing between the element's lines, in pixels.
 **bubble_size** | string | "normal" | Size of bubbles: `"extrasmall"`, `"small"`, `"normal"`, `"large"`, or `"extralarge"`.
 **bubble_type** | string | "round" | Bubble style: `"round`" or `"square"`.
 **x** | integer | _n/a_ | Set the absolute position of the **Grid** element relative to the left edge of the page.<br />Overrides the value of **align** property.
 **y** | integer | _n/a_ | Set the absolute position of the **Grid** element relative to the top edge of the page.
 **column** | integer | 1 | The number of the column where the **Grid** element will be placed. Only applicable if **Grid** is placed in a multi-column [**Container**](/omr/net/json-markup/container/) element.
+**display_hint** | boolean | `true` | Show (`true`) or hide (`false`) the label above the element.
 
 ## Allowed child elements
 

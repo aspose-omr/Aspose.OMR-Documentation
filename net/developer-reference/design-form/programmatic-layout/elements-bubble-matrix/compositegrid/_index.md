@@ -68,6 +68,7 @@ Name | Type | Default value | Description
 **XPosition** | `int` | _n/a_ | Set the absolute position of the **GridConfig** element relative to the left edge of the page.<br />Overrides the value of **GridAlignment** property.
 **YPosition** | `int` | _n/a_ | Set the absolute position of the **GridConfig** element relative to the top edge of the page.
 **Column** | `int` | 1 | The number of the column where the **GridConfig** element will be placed. Only applicable if **GridConfig** is placed in a multi-column [**ContainerConfig**](/omr/net/programmatic-forms/containerconfig/) element.
+**DisplayHint** | `bool` | `true` | Show (`true`) or hide (`false`) the label above the element.
 
 ## Allowed child elements
 

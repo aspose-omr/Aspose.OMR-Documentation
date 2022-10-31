@@ -51,7 +51,7 @@ Attribute | Default value | Description | Usage example
 --------- | ------------- | ----------- | -------------
 **required** | false | Set to `true` to store the hand-filled content of the element to [Images](https://reference.aspose.com/omr/net/aspose.omr.model/recognitionresult/properties/images) collection during recognition. Set to `false` or omit the attribute to ignore this element during recognition. | `required=true`
 **hint** | "write-in" | Redefine the underlying label of the write-in element. | `hint=phone`
-**color** | black | Color of the underlying label text. Can be picked from the following values: `Aqua`, `Aquamarine`, `Black`, `Blue`, `BlueViolet`, `Crimson`, `DarkBlue`, `DarkGreen`, `DarkOrange`, `DarkSalmon`, `Fuchsia`, `Indigo`, `Lime`, `Red`, `Teal`, `White`, `Gray`, `LightGray`. | `color=red`
+**color** | black | Color of the underlying label text. Can be picked from one of the [supported](/omr/net/supported-colors/) values. | `color=red`
 
 ## Combining with vertical_choicebox elements
 

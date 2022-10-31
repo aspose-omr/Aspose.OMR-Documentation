@@ -75,11 +75,11 @@ Attribute | Default value | Description | Usage example
 **font_family** | Segoe UI | The font family for the title text. | `font_family=Courier New`
 **font_style** | regular | The font style for the title text: `bold`, `italic` or `underline`.<br />Several font styles can be combined by listing them separated by commas. | `font_style=bold, italic`
 **font_size** | 12 | Font size for the title text. | `font_size=16`
-**color** | black | Color of the title text. Can be picked from the following values: `Aqua`, `Aquamarine`, `Black`, `Blue`, `BlueViolet`, `Crimson`, `DarkBlue`, `DarkGreen`, `DarkOrange`, `DarkSalmon`, `Fuchsia`, `Indigo`, `Lime`, `Red`, `Teal`, `White`, `Gray`, `LightGray`. | `color=red`
-**background_color** | transparent | Background color of the title row. Can be picked from the following values: `Aqua`, `Aquamarine`, `Black`, `Blue`, `BlueViolet`, `Crimson`, `DarkBlue`, `DarkGreen`, `DarkOrange`, `DarkSalmon`, `Fuchsia`, `Indigo`, `Lime`, `Red`, `Teal`, `White`, `Gray`, `LightGray`. | `background_color=gray`
+**color** | black | Color of the title text. Can be picked from one of the [supported](/omr/net/supported-colors/) values. | `color=red`
+**background_color** | transparent | Background color of the title row. Can be picked from one of the [supported](/omr/net/supported-colors/) values. | `background_color=gray`
 **border** | none | Whether to draw a border around the title row.<ul><li>`none` - no border.</li><li>`square` - draw a rectangular border.</li><li>`rounded` - draw a rectangular border with rounded corners.</li></ul> | `border=square`
 **border_size** | 3 | Width of the title row borders. | `border_size=10`
-**border_color** | black | Color of the title row borders. Can be picked from the following values: `Aqua`, `Aquamarine`, `Black`, `Blue`, `BlueViolet`, `Crimson`, `DarkBlue`, `DarkGreen`, `DarkOrange`, `DarkSalmon`, `Fuchsia`, `Indigo`, `Lime`, `Red`, `Teal`, `White`, `Gray`, `LightGray`. | `border_color=red`
+**border_color** | black | Color of the title row borders. Can be picked from one of the [supported](/omr/net/supported-colors/) values. | `border_color=red`
 **border_top_style** | _inherits border_size and border_color_ | Override the width and color of the element's top border in `<border width> <border color>` format. Specify `none` to remove the top border. | `border_top_style=10 red`
 **border_bottom_style** | _inherits border_size and border_color_ | Override the width and color of the element's bottom border in `<border width> <border color>` format. Specify `none` to remove the bottom border. | `border_bottom_style=10 red`
 **border_left_style** | _inherits border_size and border_color_ | Override the width and color of the element's left border in `<border width> <border color>` format. Specify `none` to remove the left border. | `border_left_style=10 red`

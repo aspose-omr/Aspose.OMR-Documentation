@@ -1,6 +1,6 @@
 ---
 weight: 30
-date: "2022-04-28"
+date: "2022-10-25"
 author: "Vladimir Lapin"
 type: docs
 url: /net/json-markup/elements-bubble-matrix/
@@ -19,11 +19,11 @@ keywords:
 - matrix
 ---
 
-An answer sheet is a special paper form supplemental to an assessment, on which the respondent marks the bubbles to answer the questions. It is commonly used for exams, quizzes, and tests. Automatic recognition of answer sheets is the most common use case for OMR systems.
+An answer sheet is a special paper form supplemental to an assessment, on which the respondent marks the bubbles to answer the questions. It is commonly used for exams, quizzes, assessments, and tests. Automatic recognition of answer sheets is the most common use case for OMR systems.
 
 ![Filled answer sheet](answer-sheets.png)
 
-Aspose.OMR offers a number of elements that allow you to design answer sheets of any layout and complexity.
+Aspose.OMR offers a number of elements that allow you to design machine-readable answer sheets of any layout and complexity.
 
 ## Elements
 

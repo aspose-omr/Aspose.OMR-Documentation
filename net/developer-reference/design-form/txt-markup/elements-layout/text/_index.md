@@ -41,7 +41,7 @@ Attribute | Default value | Description | Usage example
 **font_family** | Segoe UI | The font family for the text. | `font_family=Courier New`
 **font_style** | regular | The font style for a text: `bold`, `italic` or `underline`.<br />Several font styles can be combined by listing them separated by commas. | `font_style=bold, italic`
 **font_size** | 12 | Font size for the text. | `font_size=16`
-**color** | black | Text color. Can be picked from the following values: `Aqua`, `Aquamarine`, `Black`, `Blue`, `BlueViolet`, `Crimson`, `DarkBlue`, `DarkGreen`, `DarkOrange`, `DarkSalmon`, `Fuchsia`, `Indigo`, `Lime`, `Red`, `Teal`, `White`, `Gray`, `LightGray`. | `color=red`
+**color** | black | Text color. Can be picked from one of the [supported](/omr/net/supported-colors/) values. | `color=red`
 **align** | left | Horizontal text alignment: `left`, `center` or `right`. | `align=center`
 
 ## Allowed child elements

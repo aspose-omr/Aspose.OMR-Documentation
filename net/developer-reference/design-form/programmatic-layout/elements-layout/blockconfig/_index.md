@@ -1,6 +1,6 @@
 ---
 weight: 20
-date: "2022-05-30"
+date: "2022-10-25"
 author: "Vladimir Lapin"
 type: docs
 url: /net/programmatic-forms/blockconfig/
@@ -67,6 +67,7 @@ Name | Type | Default value | Description
 **BorderLeftStyle** | `object` | _inherits border_size and border_color_ | Override the width and color of the element's left border. Provided as the object with the following properties: <ul><li>`BorderSize` - left border width, integer;</li><li>`BorderColor` - left border color, [`Color`](https://reference.aspose.com/omr/net/aspose.omr.generation/color/) object;</li><li>`Disable` - specify `true` to remove the left border, Boolean.</li></ul>
 **BorderRightStyle** | `object` | _inherits border_size and border_color_ | Override the width and color of the element's right border. Provided as the object with the following properties: <ul><li>`BorderSize` - right border width, integer;</li><li>`BorderColor` - right border color, [`Color`](https://reference.aspose.com/omr/net/aspose.omr.generation/color/) object;</li><li>`Disable` - specify `true` to remove the right border, Boolean.</li></ul>
 **IsClipped** | `bool` | false | If set to `true`, the content of the **BlockConfig** element is stored to [Images](https://reference.aspose.com/omr/net/aspose.omr.model/recognitionresult/properties/images) collection during recognition, similar to the [**WriteInConfig**](/omr/net/programmatic-forms/writeinconfig/) element. The image can be can be passed to optical character recognition library, such as [Aspose.OCR](https://products.aspose.app/ocr), or saved.<br />If the **BlockConfig** contains OMR elements, they will be recognized even if this property is set to `true`.
+**BackgroundColor** | [`Color`](https://reference.aspose.com/omr/net/aspose.omr.generation/color/) | _no fill_ | Background color of the **BlockConfig** element.
 
 ## Allowed child elements
 
