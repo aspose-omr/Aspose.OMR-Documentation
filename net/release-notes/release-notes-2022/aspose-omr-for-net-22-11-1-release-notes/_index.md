@@ -1,13 +1,14 @@
 ---
-weight: 1
+weight: 20
 date: "2022-11-25"
 author: "Vladimir Lapin"
 type: docs
-url: /net/release-notes/latest/
-title: Latest release (November 2022)
+url: /net/aspose-omr-for-net-22-11-1-release-notes/
+title: Aspose.OMR for .NET 22.11.1 Release Notes
 description: A summary of recent changes, enhancements and bug fixes in Aspose.OCR for .NET 22.11.1 (November 2022) release.
 keywords:
-- latest
+- 2022
+- November
 - new
 - release
 - changelog

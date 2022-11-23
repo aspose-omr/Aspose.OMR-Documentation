@@ -1,6 +1,6 @@
 ---
 weight: 10
-date: "2022-04-13"
+date: "2022-11-25"
 author: "Vladimir Lapin"
 type: docs
 url: /net/system-requirements/
@@ -50,6 +50,7 @@ You can use Aspose.OMR for .NET with any development environment targeting the .
 
 Aspose.OMR for .NET supports the following .NET Frameworks:
 
+- .NET 6.0
 - .NET 5.0
 - .NET Standard 2.0
 

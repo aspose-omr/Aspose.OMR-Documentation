@@ -1,6 +1,6 @@
 ---
 weight: 10
-date: "2022-05-19"
+date: "2022-11-25"
 author: "Vladimir Lapin"
 type: docs
 url: /net/
@@ -65,19 +65,18 @@ Explore free online apps build with Aspose.OMR for .NET. Experience product capa
 
 Check out how Aspose.OMR for .NET  can be used to solve real-world problems.
 
-- [Biology test](/omr/net/showcases/biology/)
-- [Financial services contract](/omr/net/showcases/bank/)
-- [English test](/omr/net/showcases/english/)
-- [Guest satisfaction survey](/omr/net/showcases/hotel/)
-- [Math test](/omr/net/showcases/math/)
-- [Medical journal questionnaire](/omr/net/showcases/journal/)
-- [Customer service feedback](/omr/net/showcases/pub/)
+- [Alumni questionnaire](/omr/net/showcases/alumni/)
+- [Customer satisfaction survey](/omr/net/showcases/satisfaction/)
+- [Final exam answer sheet](/omr/net/showcases/exam/)
+- [Meal preference](/omr/net/showcases/meal/)
+- [SAT form](/omr/net/showcases/sat/)
+- [OMR form with a tear line](/omr/net/showcases/tear/)
 
 ## Release Notes
 
 Read a summary of recent changes, enhancements and bug fixes in Aspose.OMR for .NET releases.
 
-- [Latest release (April 2022)](/omr/net/release-notes/latest/)
+- [Latest release](/omr/net/release-notes/latest/)
 - [2022 releases](/omr/net/release-notes-2022/)
 - [2021 releases](/omr/net/release-notes-2021/)
 - [2020 releases](/omr/net/release-notes-2020/)
