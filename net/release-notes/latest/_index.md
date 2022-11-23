@@ -1,6 +1,6 @@
 ---
 weight: 1
-date: "2022-11-25"
+date: "2022-11-23"
 author: "Vladimir Lapin"
 type: docs
 url: /net/release-notes/latest/

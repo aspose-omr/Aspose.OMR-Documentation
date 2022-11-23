@@ -1,6 +1,6 @@
 ---
 weight: 20
-date: "2022-11-25"
+date: "2022-11-23"
 author: "Vladimir Lapin"
 type: docs
 url: /net/aspose-omr-for-net-22-11-1-release-notes/
