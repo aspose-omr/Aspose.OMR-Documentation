@@ -1,6 +1,6 @@
 ---
 weight: 70
-date: "2022-04-27"
+date: "2022-12-02"
 author: "Vladimir Lapin"
 type: docs
 url: /net/json-markup/paragraph/
@@ -62,6 +62,7 @@ To allow the text to wrap around an image:
 - [**Content**](/omr/net/json-markup/content/)
 - [**Image**](/omr/net/json-markup/image/)
 - [**EmptyLine**](/omr/net/json-markup/emptyline/)
+- [**ChoiceBox**](/omr/net/json-markup/choicebox/)
 
 ## **Examples**
 

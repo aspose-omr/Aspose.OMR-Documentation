@@ -1,6 +1,6 @@
 ---
 weight: 70
-date: "2022-05-27"
+date: "2022-12-02"
 author: "Vladimir Lapin"
 type: docs
 url: /net/programmatic-forms/paragraphconfig/
@@ -69,6 +69,7 @@ To allow the text to wrap around an image:
 - [**ContentConfig**](/omr/net/programmatic-forms/contentconfig/)
 - [**ImageConfig**](/omr/net/programmatic-forms/imageconfig/)
 - [**EmptyLineConfig**](/omr/net/programmatic-forms/emptylineconfig/)
+- [**ChoiceBoxConfig**](/omr/net/programmatic-forms/choiceboxconfig/)
 
 ## **Examples**
 

@@ -1,6 +1,6 @@
 ---
 weight: 70
-date: "2022-04-21"
+date: "2022-12-02"
 author: "Vladimir Lapin"
 type: docs
 url: /net/txt-markup/paragraph/
@@ -54,6 +54,7 @@ To allow the text to wrap around an image:
 - [content](/omr/net/txt-markup/content/)
 - [image](/omr/net/txt-markup/image/)
 - [empty_line](/omr/net/txt-markup/empty_line/)
+- [choicebox](/omr/net/txt-markup/choicebox/)
 
 ## **Examples**
 
