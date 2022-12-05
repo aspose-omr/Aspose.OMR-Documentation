@@ -3,7 +3,7 @@ weight: 11
 date: "2022-12-02"
 author: "Vladimir Lapin"
 type: docs
-url: /net/release-notes/latest/
+url: /net/aspose-omr-for-net-22-12-0-release-notes/
 title: Aspose.OMR for .NET 22.12.0 Release Notes
 description: A summary of recent changes, enhancements and bug fixes in Aspose.OCR for .NET 22.12.0 (December 2022) release.
 keywords:
