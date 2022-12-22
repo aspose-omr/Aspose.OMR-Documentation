@@ -22,8 +22,8 @@ This article contains a summary of recent changes, enhancements and bug fixes in
 
 Key | Summary | Category
 --- | ------- | --------
-OMRNET-716 | Added support for **Arabic** and **Persian** writing systems. Support can be enabled by specifying it in [GlobalPageSettings]([/omr/net/generate-template/page-setup/) .<br />See [Right to Left writing system support](#RTL-support) for details. | New feature
-OMRNET-715 | Fixed a layout issue with **Footer** container ([text markup](omr/net/txt-markup/container/) / [JSON markup](omr/net/json-markup/container/)) overlapping [Wrapped]([/omr/net/generate-template/page-setup/) container. | Fix
+OMRNET-716 | Added support for **Arabic** and **Persian** writing systems. Support can be enabled by specifying it in [GlobalPageSettings](/omr/net/generate-template/page-setup/) .<br />See [Right to Left writing system support](#rtl-support) for details. | New feature
+OMRNET-715 | Fixed a layout issue with **Footer** container ([text markup](/omr/net/txt-markup/container/) / [JSON markup](/omr/net/json-markup/container/)) overlapping [Wrapped](/omr/net/generate-template/page-setup/) container. | Fix
 
 ## Known issues and limitations
 
