@@ -5,7 +5,7 @@ author: "Vladimir Lapin"
 type: docs
 url: /net/supported-colors/
 title: Font and background colors
-description: The list of font colors and fill colors supported by Aspose.OCR for .NET.
+description: The list of font colors and fill colors supported by Aspose.OMR for .NET.
 keywords:
 - color
 - fill
