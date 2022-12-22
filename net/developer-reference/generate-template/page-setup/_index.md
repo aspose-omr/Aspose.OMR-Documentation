@@ -41,6 +41,7 @@ You can customize the following page layout parameters through `GlobalPageSettin
     - `Aspose.OMR.Generation.WrappingPolicy.None` - disable column wrapping (default);
     - `Aspose.OMR.Generation.WrappingPolicy.Column` - enable automatic column wrapping.
 - `RotationPointPosition` - the placement of the rectangular [positioning marker](/omr/net/omr-form-structure/) that is used to detect the page orientation. See details below.
+- `WritingSystem` - Preset of template generation settings. Include directionality (LeftToRight or RightToLeft) and digits usage. Exam
 
 ## Image paths
 
@@ -76,3 +77,26 @@ Aspose.OMR.Generation.GlobalPageSettings globalPageSettings = new Aspose.OMR.Gen
 	}
 };
 ```
+
+## Using Persian writing system
+
+```
+?text=بخش پاسخنامه
+?answer_sheet=MainQuestions
+	elements_count=50
+	columns_count=5
+	answers_list=(١)(۲)(۳)(۴)
+```
+
+```csharp
+	var engine = new Aspose.OMR.Api.OmrEngine();
+	var settings = new Aspose.OMR.GenerationGlobalPageSettings()
+		{
+			WritingSystem = new Aspose.OMR.Generation.WritingSystems.Persian(true)
+		};
+	Aspose.OMR.Generation.GenerationResult result = engine.GenerateTemplate(configPath, settings);
+	
+```
+
+
+![Persian answersheet](answersheet_persian.png)
