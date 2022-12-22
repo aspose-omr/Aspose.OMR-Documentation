@@ -1,28 +1,30 @@
 ---
 weight: 1
-date: "2022-12-02"
-author: "Vladimir Lapin"
+date: "2022-12-22"
+author: "Korobeynikov Nikita"
 type: docs
 url: /net/release-notes/latest/
 title: Latest release (December 2022)
-description: A summary of recent changes, enhancements and bug fixes in Aspose.OMR for .NET 22.12.0 (December 2022) release.
+description: A summary of recent changes, enhancements and bug fixes in Aspose.OMR for .NET 22.12.1 (December 2022) release.
 keywords:
-- latest
+- 2022
+- December
 - new
 - release
 - changelog
+- latest
 ---
 
 {{% alert color="primary" %}} 
-This article contains a summary of recent changes, enhancements and bug fixes in [**Aspose.OMR for .NET 22.12.0 (December 2022)**](https://www.nuget.org/packages/Aspose.OMR/22.12.0) release.
+This article contains a summary of recent changes, enhancements and bug fixes in [**Aspose.OMR for .NET 22.12.1 (December 2022)**](https://www.nuget.org/packages/Aspose.OMR/22.12.1) release.
 {{% /alert %}} 
 
 ## What was changed
 
 Key | Summary | Category
 --- | ------- | --------
-OMRNET-687 | Extended formatting capabilities of **ChoiceBox** element ([text markup](/omr/net/txt-markup/question/) / [JSON markup](/omr/net/json-markup/choicebox/)).<br />See [Public API changes and backwards compatibility](#choicebox-element) for details. | Enhancement
-OMRNET-614 | Fixed _"'RotationPointPosition' is inaccessible due to its protection level"_ error occurred when setting [`RotationPointPosition`](/omr/net/generate-template/page-setup/) attribute of page settings. | Fix
+OMRNET-716 | Added support for **Arabic** and **Persian** writing systems. Support can be enabled by specifying it in [GlobalPageSettings](/omr/net/generate-template/page-setup/) .<br />See [Right to Left writing system support](#rtl-support) for details. | New feature
+OMRNET-715 | Fixed a layout issue with **Footer** container ([text markup](/omr/net/txt-markup/container/) / [JSON markup](/omr/net/json-markup/container/)) overlapping [Wrapped](/omr/net/generate-template/page-setup/) container. | Fix
 
 ## Known issues and limitations
 
@@ -33,30 +35,25 @@ OMRNET-555 | [`Recalculate`](https://reference.aspose.com/omr/net/aspose.omr.api
 
 ## Public API changes and backwards compatibility
 
-This section lists all public API changes introduced in **Aspose.OMR for .NET 22.12.0** that may affect the code of existing applications.
+This section lists all public API changes introduced in **Aspose.OMR for .NET 22.12.1** that may affect the code of existing applications.
 
 ### Added public APIs:
 
-_No changes._
+The following public APIs have been added in this release:
+
+#### RTL support
+
+A new `WritingSystem` property has been added to [page settings](/omr/net/generate-template/page-setup/) that allows to enable support for different writing systems:
+
+Value | Alignment
+----- | ---------
+`Aspose.OMR.Generation.WritingSystems.Western` | LeftToRight writing and 1, 2, 3, 4 as digits (default).
+`Aspose.OMR.Generation.WritingSystems.Arabic` | RightToLeft writing and optional digits ١,۲, ۳, ٤
+`Aspose.OMR.Generation.WritingSystems.Persian` | RightToLeft writing and optional digits ١,۲, ۳, ۴
 
 ### Updated public APIs:
 
-The following public APIs have been updated in this release:
-
-#### ChoiceBox element
-
-{{% alert color="primary" %}}
-**Compatibility: fully backward compatible.**
-
-This change will not affect existing code, print forms, or recognition results.
-{{% /alert %}}
-
-The **ChoiceBox** element ([text markup](/omr/net/txt-markup/question/) / [JSON markup](/omr/net/json-markup/choicebox/)) has been significantly enhanced:
-
-- Added automatic wrapping of long texts.
-- **ChoiceBox** element written in [simplified syntax](/omr/net/txt-markup/choicebox/#simplified-syntax) can be nested inside [**blocks**](/omr/net/txt-markup/block/) and [**paragraphs**](/omr/net/txt-markup/paragraph/).
-- ChoiceBox answers can be written in form of `?option=` elements.
-- Each answer can be individually customized.
+_No changes._
 
 ### Removed public APIs:
 
@@ -66,60 +63,66 @@ _No changes._
 
 See the examples below to learn more about the changes introduced in this release:
 
-### Nesting ChoiceBox inside containers
+### Using Arabic writing system
 
 ```
-?container=
-	columns_count=2
-?block=
-	column=1
-	border=square
-?content=Super long line that will fit whole length of the block to see of there is any empty space between two block columns
-	font_size=14
-&block
-?block=
-	column=2
-	border=square
-#What is Aspose.OMR main function?
-	() OCR () Capture human-marked data
-	() There is no main function () Enhance images
-&block
-&container
+?text=قسم ورقة الإجابة
+?answer_sheet=MainQuestions
+	elements_count=50
+	columns_count=5
+	answers_list=(١)(۲)(۳)(٤)
 ```
 
-![Nesting ChoiceBox inside containers](container_example.png)
-
-### Customize individual answers
-
-```
-#What is Aspose.OMR main function?
-	() OCR () Capture human-marked data
-	font_style=bold
-	() There is no main function () Enhance images
-	color=red
-?choicebox=Do you have to mark up every question on the page?
-	font_style=bold, underline
-	color=red
-	align=right
-	font_family=Times new Roman
-	font_size=20
-?option= Yes, that will help a lot! 
-	bubble_value=Yes
-	font_style=italic, underline
-	color=purple
-	align=right
-	font_family=Segoe UI
-	font_size=11
-	row_index=2
-?option= No 
-	bubble_value=No
-	font_style=italic
-	color=Green
-	align=center
-	font_family=Segoe UI
-	font_size=14
-	row_index=1
-&choicebox
+```csharp
+	var engine = new Aspose.OMR.Api.OmrEngine();
+	var settings = new Aspose.OMR.GenerationGlobalPageSettings()
+		{
+			WritingSystem = new Aspose.OMR.Generation.WritingSystems.Arabic(true)
+		};
+	Aspose.OMR.Generation.GenerationResult result = engine.GenerateTemplate(configPath, settings);
+	
 ```
 
-![Customize individual answers](customize_answers.png)
+
+![Arabic answersheet](answersheet_arabic.png)
+
+### Using Persian writing system
+
+```
+?text=بخش پاسخنامه
+?answer_sheet=MainQuestions
+	elements_count=50
+	columns_count=5
+	answers_list=(١)(۲)(۳)(۴)
+```
+
+```csharp
+	var engine = new Aspose.OMR.Api.OmrEngine();
+	var settings = new Aspose.OMR.GenerationGlobalPageSettings()
+		{
+			WritingSystem = new Aspose.OMR.Generation.WritingSystems.Persian(true)
+		};
+	Aspose.OMR.Generation.GenerationResult result = engine.GenerateTemplate(configPath, settings);
+	
+```
+
+
+![Persian asnwersheet](answersheet_persian.png)
+
+### Using Western writing system
+
+```
+?text=Answer sheet section
+?answer_sheet=MainQuestions
+	elements_count=50
+	columns_count=5
+	answers_list=(1)(2)(3)(4)
+```
+
+```csharp
+	var engine = new Aspose.OMR.Api.OmrEngine();
+	Aspose.OMR.Generation.GenerationResult result = engine.GenerateTemplate(configPath, settings);
+	
+```
+
+![Western asnwersheet](answersheet_western.png)
