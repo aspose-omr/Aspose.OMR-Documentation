@@ -39,9 +39,9 @@ The following public APIs have been added in this release:
 
 #### Including image
 
-A new **Image** element has been added to [template layout](/java/create-omr-template/) that allows to include static images into template, e.g. png\jpg\bmp.
+A new **Image** element has been added to [template layout](/omr/java/create-omr-template/) that allows to include static images into template, e.g. png\jpg\bmp.
 
-[Examples](/java/images/)
+[Examples](/omr/java/images/)
 
 ### Updated public APIs:
 

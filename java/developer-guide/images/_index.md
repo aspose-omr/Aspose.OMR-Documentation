@@ -24,11 +24,7 @@ If an image file is mentioned in the source code but no file path is provided, a
 
 {{% /alert %}}
 
-Images can be provided with:
-
-- `com.aspose.omr.ImageCollection` object - a collection of key-value pairs where the key contains the image file name and the value contains the binary content (`java.io.InputStream`) of the image file.
-
-#### Image properties
+## Image properties
 Field | Description | Default value
 --- | ------- | --------
 ?image=|string value to correspond layout element and `java.io.InputStream`| n/a
@@ -37,7 +33,8 @@ width | Width of the inserted image. Set in pixels | 200
 x | Horizontal coordinate on template layout. Set in pixels. Increments left to right| 210
 y | Vertical coordinate on template layout. Set in pixels. Increments top to bottom. </br> | Calculated based on previous elements
 
-#### Image source code example
+
+## Image source code example
 ```
 ?image=logo.png
 	height=300
@@ -46,9 +43,7 @@ y | Vertical coordinate on template layout. Set in pixels. Increments top to bot
 	y=180
 ```
 
-
-
-#### Example of template source code with Image
+## Example of template source code with Image
 
 ```
 ?text=Name__________________________________ Date____________
@@ -87,7 +82,13 @@ and "9" being preference towards flexibility.
 	y=180
 ```
 
-## Generate and save the printable form, providing image with FileInputStream:
+
+
+## Images can be provided with:
+
+- `com.aspose.omr.ImageCollection` object - a collection of key-value pairs where the key contains the image file name and the value contains the binary content (`java.io.InputStream`) of the image file.
+
+### Generate and save the printable form, providing image with FileInputStream:
 
 ```java
 OmrEngine engine = new OmrEngine();
@@ -103,16 +104,15 @@ res.Save("path\to\the\output_directory","template_name");
 ```
 
 
+### Resettable InputStream:
+
 {{% alert color="primary" %}}
 
-If the same image file is mentioned in the form source code multiple times it is **required** to pass **resetable** InputStream. e.g. ByteArrayInputStream
+If the same image file is mentioned in the form source code multiple times it is **required** to pass **resettable** InputStream. e.g. ByteArrayInputStream
 
 {{% /alert %}}
 
-
-## Generate and save the printable form, providing image with resetable InputStream:
-
-#### Resetable stream
+#### Resettable stream from file
 ```java
 private ByteArrayInputStream ReadFile(String filepath){
 		File file = new File(filepath);
@@ -134,7 +134,7 @@ private ByteArrayInputStream ReadFile(String filepath){
     }
 ```
 
-Generate and save the printable form, loading images from memory:
+#### Generate and save the printable form, providing image with resettable stream:
 
 ```java
 OmrEngine engine = new OmrEngine();
