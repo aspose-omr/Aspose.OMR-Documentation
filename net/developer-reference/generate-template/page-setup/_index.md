@@ -1,6 +1,6 @@
 ---
 weight: 10
-date: "2022-05-13"
+date: "2023-01-09"
 author: "Vladimir Lapin"
 type: docs
 url: /net/generate-template/page-setup/
@@ -41,7 +41,7 @@ You can customize the following page layout parameters through `GlobalPageSettin
     - `Aspose.OMR.Generation.WrappingPolicy.None` - disable column wrapping (default);
     - `Aspose.OMR.Generation.WrappingPolicy.Column` - enable automatic column wrapping.
 - `RotationPointPosition` - the placement of the rectangular [positioning marker](/omr/net/omr-form-structure/) that is used to detect the page orientation. See details below.
-- `WritingSystem` - Preset of template generation settings. Include directionality (LeftToRight or RightToLeft) and digits usage. Exam
+- `WritingSystem` - [form localization](#form-localization), which affects text direction (LTR or RTL) and item numbering of generated OMR forms.
 
 ## Image paths
 
@@ -64,6 +64,28 @@ Enumeration | Value | Result
 `BottomRight1` | 40 | ![Above the bottom-right square positioning marker](BottomRight1.png)
 `BottomRight2` | 41 | ![To the left of the bottom-right square positioning marker](BottomRight2.png)
 
+## Form localization
+
+The `WritingSystem` property controls the text direction (LTR or RTL) and item numbering of generated OMR forms. It is provided as an instance of one of the following classes:
+
+Value | Default | Text direction | Item numbering
+----- | ------- | -------------- | --------------
+[`Aspose.OMR.Generation.WritingSystems.Western`](https://reference.aspose.com/omr/net/aspose.omr.generation.writingsystems/arabic/) | Yes | Left-to-right (LTR) | Western (0, 1, 2, 3, 4, 5, 6, 7, 8, 9)
+[`Aspose.OMR.Generation.WritingSystems.Arabic`](https://reference.aspose.com/omr/net/aspose.omr.generation.writingsystems/persian/) | | Right-to-left (RTL) | `useNativeNumber = true` - Eastern Arabic (٠,	 ١, ٢, ٣, ٤, ٥, ٦, ٧, ٨, ٩)<br />`useNativeNumber = false` - Western (0, 1, 2, 3, 4, 5, 6, 7, 8, 9)
+[`Aspose.OMR.Generation.WritingSystems.Persian`](https://reference.aspose.com/omr/net/aspose.omr.generation.writingsystems/western/) | | Right-to-left (RTL) | `useNativeNumber = true` - Persian (۰, ۱, ۲, ۳, ۴, ۵, ۶, ۷, ۸, ۹)<br />`useNativeNumber = false` - Western (0, 1, 2, 3, 4, 5, 6, 7, 8, 9)
+
+### Arabic answer sheet
+
+Right-to-left answer sheet with Eastern Arabic numbering.
+
+```csharp
+Aspose.OMR.Generation.GlobalPageSettings globalPageSettings = new Aspose.OMR.Generation.GlobalPageSettings() {
+	WritingSystem = new Aspose.OMR.Generation.WritingSystems.Arabic(true)
+};
+```
+
+![Arabic answer sheet](answersheet_arabic.png)
+
 ## Example
 
 ```csharp
@@ -77,26 +99,3 @@ Aspose.OMR.Generation.GlobalPageSettings globalPageSettings = new Aspose.OMR.Gen
 	}
 };
 ```
-
-## Using Persian writing system
-
-```
-?text=بخش پاسخنامه
-?answer_sheet=MainQuestions
-	elements_count=50
-	columns_count=5
-	answers_list=(١)(۲)(۳)(۴)
-```
-
-```csharp
-	var engine = new Aspose.OMR.Api.OmrEngine();
-	var settings = new Aspose.OMR.GenerationGlobalPageSettings()
-		{
-			WritingSystem = new Aspose.OMR.Generation.WritingSystems.Persian(true)
-		};
-	Aspose.OMR.Generation.GenerationResult result = engine.GenerateTemplate(configPath, settings);
-	
-```
-
-
-![Persian answersheet](answersheet_persian.png)
