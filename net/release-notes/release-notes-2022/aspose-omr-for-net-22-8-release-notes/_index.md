@@ -27,9 +27,8 @@ Key | Summary | Category
 OMRNET-614 | Improved handling of rotated images by adding an extra [positioning marker](/omr/net/omr-form-structure/) to the form. See [Changes in application logic](#additional-positioning-marker) for important details on backward compatibility. | Enhancement
 OMRNET-622 | Additional rectangles on a scanned or photographed OMR form no longer interfere with the [positioning markers](/omr/net/omr-form-structure/). | Enhancement
 OMRNET-614 | `VerticalChoiceBox` ([text markup](/omr/net/txt-markup/vertical_choicebox/) / [JSON markup](/omr/net/json-markup/verticalchoicebox/)) element now supports more than one write-in field. | Enhancement
+OMRNET-622| Improved the algorithm for detecting positioning markers. | Enhancement
 n/a | Removed a blank line at the end of recognition results saved as a [comma-separated values (CSV)](/omr/net/recognition/save/#saving-as-csv) file. | Enhancement
-|OMRNET-622| Improved filtering mechanism for recognition module to minimize false positive Reference Points| Enhancement
-
 
 ## Known issues and limitations
 
@@ -129,6 +128,18 @@ All forms generated with previous versions of Aspose.OMR for .NET (that lack tha
 
 Previous versions of Aspose.OMR for .NET may be able to process forms generated with Aspose.OMR for .NET 22.8, but recognition results are not guaranteed to be correct.
 
+### Improved positioning marker detection
+
+{{% alert color="primary" %}}
+**Compatibility: fully backward compatible.**
+
+This change will not affect existing code, print forms, or recognition results.
+{{% /alert %}}
+
+The algorithm for detecting [OMR form positioning markers](/omr/net/omr-form-structure/#positioning-markers) has been significantly improved. Now it can filter out additional elements on the form that might otherwise be mistaken for a position marker.
+
+![Filter out elements that look like a position marker](filter_example.png)
+
 ## Usage examples
 
 See the examples below to learn more about the changes introduced in this release:
@@ -175,9 +186,3 @@ This source code is backward compatible with Aspose.OMR for .NET 22.7 and below.
 ```
 
 ![Multiple write-in fields](form.png)
-
-### New filtering mechanism
-
-Filtering mechanism have been improved. Now scanned images with false positive reference point (see example below) can be properly recognized.
-
-![Multiple write-in fields](filter_example.png)
