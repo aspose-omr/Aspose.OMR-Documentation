@@ -28,6 +28,8 @@ OMRNET-614 | Improved handling of rotated images by adding an extra [positioning
 OMRNET-622 | Additional rectangles on a scanned or photographed OMR form no longer interfere with the [positioning markers](/omr/net/omr-form-structure/). | Enhancement
 OMRNET-614 | `VerticalChoiceBox` ([text markup](/omr/net/txt-markup/vertical_choicebox/) / [JSON markup](/omr/net/json-markup/verticalchoicebox/)) element now supports more than one write-in field. | Enhancement
 n/a | Removed a blank line at the end of recognition results saved as a [comma-separated values (CSV)](/omr/net/recognition/save/#saving-as-csv) file. | Enhancement
+|OMRNET-622| Improved filtering mechanism for recognition module to minimize false positive Reference Points| Enhancement
+
 
 ## Known issues and limitations
 
@@ -173,3 +175,9 @@ This source code is backward compatible with Aspose.OMR for .NET 22.7 and below.
 ```
 
 ![Multiple write-in fields](form.png)
+
+### New filtering mechanism
+
+Filtering mechanism have been improved. Now scanned images with false positive reference point (see example below) can be properly recognized.
+
+![Multiple write-in fields](filter_example.png)
