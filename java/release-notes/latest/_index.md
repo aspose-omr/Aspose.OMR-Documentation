@@ -1,14 +1,13 @@
 ---
-weight: 10
+weight: 1
 date: "2023-01-13"
 author: "Vladimir Lapin"
 type: docs
-url: /java/aspose-omr-for-java-22-12-release-notes/
-title: Aspose.OMR for Java 22.12 - Release Notes
+url: /java/release-notes/latest/
+title: Latest release (December 2022)
 description: A summary of recent changes, enhancements and bug fixes in Aspose.OMR for Java 22.12 (December 2022) release.
 keywords:
-- 2022
-- December
+- latest
 - new
 - release
 - changelog
