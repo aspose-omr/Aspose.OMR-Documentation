@@ -1,6 +1,6 @@
 ---
 weight: 30
-date: "2022-04-29"
+date: "2023-01-24"
 author: "Vladimir Lapin"
 type: docs
 url: /net/json-markup/verticalchoicebox/
@@ -80,13 +80,18 @@ Name | Type | Description
 **element_type** | string | Must be `"Answer"` (case-insensitive).
 **children** | array | An array of [**Paragraph**](/omr/net/json-markup/paragraph/), [**Content**](/omr/net/json-markup/content/), or [**WriteIn**](/omr/net/json-markup/writein/) elements that form the answer text.
 
-
 #### Optional properties
+
+{{% alert color="primary" %}} 
+These properties can override the settings of the entire **VerticalChoiceBox** element.
+{{% /alert %}}
 
 Name | Type | Default value | Description
 ---- | ---- | ------------- | -----------
 **name** | string | Used for identifying the marked answer in recognition results.
-**bubble_position** | string | left | The bubble position relative to the answer text:<ul><li>`"left"`</li><li>`"right"`</li></ul>
+**selectable** | Boolean | true | Whether to display the bubble for the answer.<br />**Setting this attribute to `false` removes the bubble in the generated form. This results in the answer cannot be chosen by the respondents.**
+**bubble_position** | string | left | Override the bubble position relative to the answer text:<ul><li>`"left"`</li><li>`"right"`</li></ul>
+**bubble_type** | string | "round" | Override the bubble design:<ul><li>`"round"` - oval;</li><li>`"square"` - box.</li></ul>
 
 ## Combining with WriteIn elements
 

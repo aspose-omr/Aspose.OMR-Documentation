@@ -1,6 +1,6 @@
 ---
 weight: 30
-date: "2022-04-25"
+date: "2023-01-24"
 author: "Vladimir Lapin"
 type: docs
 url: /net/txt-markup/vertical_choicebox/
@@ -39,18 +39,6 @@ Never add empty lines after the opening `?vertical_choicebox=` statement. Doing 
 
 {{% /alert %}}
 
-### Answers
-
-Answers are provided using **answer** elements that are placed inside the **vertical_choicebox** declaration. An answer declaration begins with `?answer=<value>` statement and ends with `&answer` statement. These statements must be placed on separate lines.
-
-`Value` property is used for identifying the marked answer in recognition results.
-
-Each answer can include the following elements:
-
-- [paragraph](/omr/net/txt-markup/paragraph/)
-- [content](/omr/net/txt-markup/content/)
-- [write_in](/omr/net/txt-markup/write_in/)
-
 ### Attributes
 
 The **vertical_choicebox** element can be customized by adding optional attributes to it.
@@ -63,6 +51,30 @@ Attribute | Default value | Description | Usage example
 **bubble_type** | round | Set the bubble design:<ul><li>`round` - circle</li><li>`square` - box</li></ul> | `bubble_type=square`
 **top_padding** | 0 | The vertical spacing (in pixels) before the first **answer** element. | `top_padding=160`
 **bubble_position** | left | The bubble position relative to the answer text:<ul><li>`"left"`</li><li>`"right"`</li></ul> | `bubble_position=right`
+
+### Answers
+
+Answers are provided using **answer** elements that are placed inside the **vertical_choicebox** declaration. An answer declaration begins with `?answer=<value>` statement and ends with `&answer` statement. These statements must be placed on separate lines.
+
+`Value` property is used for identifying the marked answer in recognition results.
+
+Each answer can include the following elements:
+
+- [paragraph](/omr/net/txt-markup/paragraph/)
+- [content](/omr/net/txt-markup/content/)
+- [write_in](/omr/net/txt-markup/write_in/)
+
+#### Answer element attributes
+
+The **answer** element can be customized by adding optional attributes to it. These attributes can override the settings of the entire **vertical_choicebox** element.
+
+An attribute is written as `[attribute_name]=[value]`. Each attribute must be placed on a **new line** immediately after the opening `?answer=` statement or another attribute, and must begin with a **tab character**.
+
+Attribute | Default value | Description | Usage example
+--------- | ------------- | ----------- | -------------
+**selectable** | true | Whether to display the bubble for the answer.<br />**Setting this attribute to `false` removes the bubble in the generated form. This results in the answer cannot be chosen by the respondents.** | `selectable=false`
+**bubble_type** | round | Override the bubble design for the answer:<ul><li>`round` - circle</li><li>`square` - box</li></ul> | `bubble_type=square`
+**bubble_position** | left | Override the bubble position relative to the answer text:<ul><li>`"left"`</li><li>`"right"`</li></ul> | `bubble_position=right`
 
 ## Combining with write_in elements
 

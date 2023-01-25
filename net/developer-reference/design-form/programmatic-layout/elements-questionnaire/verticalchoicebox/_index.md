@@ -1,6 +1,6 @@
 ---
 weight: 30
-date: "2022-05-31"
+date: "2023-01-24"
 author: "Vladimir Lapin"
 type: docs
 url: /net/programmatic-forms/verticalchoiceboxconfig/
@@ -69,6 +69,8 @@ Name | Type | Default value | Description
 **Name** | `string` | _n/a_ | Used as an element's identifier in recognition results and as a reminder of the element's purpose in template source; for example, `"Preference"`.<br />This text is not displayed on the form.
 **Threshold** | `int` | 45 | Set the recognition accuracy for the answer bubbles, from 0 to 100. Lower values allow even the lightest marks to be recognized, but may cause dirt or paper defects to be treated as marks. Higher values require a more solid fill and may cause pencil marks or small checks to be ignored.<br /><br />![VerticalChoicebox threshold](program-threshold.png)
 **TopPadding** | `int` | 0 | The vertical spacing (in pixels) before the first [**AnswerConfig**]({{< ref "#answerconfig-element" >}}) element.
+**BubblePosition** | `string` | The bubble position relative to the answer text:<ul><li>`"left"`</li><li>`"right"`</li></ul>
+**BubbleType** | `string` | The bubble design:<ul><li>`"round"` - oval;</li><li>`"square"` - box.</li></ul>
 
 ### AnswerConfig element
 
@@ -90,10 +92,16 @@ Name | Type | Description
 
 #### Optional properties
 
+{{% alert color="primary" %}} 
+These properties can override the settings of the entire **VerticalChoiceBoxConfig** element.
+{{% /alert %}}
+
 Name | Type | Default value | Description
 ---- | ---- | ------------- | -----------
 **Name** | `string` | Used for identifying the marked answer in recognition results.
-**BubblePosition** | `string` | The bubble position relative to the answer text:<ul><li>`"left"`</li><li>`"right"`</li></ul>
+**BubblePosition** | `string` | Override the bubble position relative to the answer text:<ul><li>`"left"`</li><li>`"right"`</li></ul>
+**BubbleType** | `string` | Override the bubble design:<ul><li>`"round"` - oval;</li><li>`"square"` - box.</li></ul>
+**Selectable** | `bool` | true | Whether to display the bubble for the answer.<br />**Setting this attribute to `false` removes the bubble in the generated form. This results in the answer cannot be chosen by the respondents.**
 
 ## Combining with WriteInConfig elements
 
