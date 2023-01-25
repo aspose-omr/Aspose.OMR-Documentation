@@ -3,6 +3,7 @@ title: Aspose.OMR for .NET 19.7 Release Notes
 type: docs
 weight: 30
 url: /net/aspose-omr-for-net-19-7-release-notes/
+feedback: OMRNET
 ---
 
 {{% alert color="primary" %}} 

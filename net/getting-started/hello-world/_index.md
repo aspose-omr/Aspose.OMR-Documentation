@@ -4,6 +4,7 @@ date: "2022-04-15"
 author: "Vladimir Lapin"
 type: docs
 url: /net/hello-world/
+feedback: OMRNET
 title: Hello, World!
 description: Get familiar with Aspose.OMR for .NET by creating a bare minimum application for rendering and recognizing OMR forms.
 keywords:

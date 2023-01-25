@@ -4,6 +4,7 @@ date: "2022-04-27"
 author: "Vladimir Lapin"
 type: docs
 url: /net/json-markup/content/
+feedback: OMRNET
 title: Content
 description: Content element is used to add one or more lines of text to the parent element.
 keywords:

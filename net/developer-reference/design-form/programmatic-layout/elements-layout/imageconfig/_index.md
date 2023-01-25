@@ -4,6 +4,7 @@ date: "2022-05-27"
 author: "Vladimir Lapin"
 type: docs
 url: /net/programmatic-forms/imageconfig/
+feedback: OMRNET
 title: ImageConfig
 description: ImageConfig element is used to add a picture.
 keywords:

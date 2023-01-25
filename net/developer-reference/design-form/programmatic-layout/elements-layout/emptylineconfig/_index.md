@@ -4,6 +4,7 @@ date: "2022-05-27"
 author: "Vladimir Lapin"
 type: docs
 url: /net/programmatic-forms/emptylineconfig/
+feedback: OMRNET
 title: EmptyLineConfig
 description: EmptyLineConfig element is used to add vertical spacing between elements.
 keywords:

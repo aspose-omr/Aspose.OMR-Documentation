@@ -4,6 +4,7 @@ date: "2022-04-29"
 author: "Vladimir Lapin"
 type: docs
 url: /net/json-markup/scoregroup/
+feedback: OMRNET
 aliases:
 - /net/template-generation/json/elements-description/score/
 title: ScoreGroup

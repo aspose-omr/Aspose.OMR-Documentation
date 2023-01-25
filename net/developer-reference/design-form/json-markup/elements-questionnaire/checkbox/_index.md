@@ -4,6 +4,7 @@ date: "2022-04-29"
 author: "Vladimir Lapin"
 type: docs
 url: /net/json-markup/checkbox/
+feedback: OMRNET
 title: CheckBox
 description: CheckBox element generates a list of answers with blank bubbles that can accommodate any kind of marks.
 keywords:

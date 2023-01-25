@@ -4,6 +4,7 @@ date: "2022-05-20"
 author: "Vladimir Lapin"
 type: docs
 url: /net/recognition/
+feedback: OMRNET
 title: Optical mark recognition (OMR)
 description: How to recognize the filled form with Aspose.OMR for .NET.
 keywords:

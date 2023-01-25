@@ -4,6 +4,7 @@ date: "2022-04-12"
 author: "Vladimir Lapin"
 type: docs
 url: /net/omr-technology/
+feedback: OMRNET
 title: Optical mark recognition (OMR) at a glance
 description: Learn what optical mark recognition (OMR) is and how it is used in everyday life.
 keywords:

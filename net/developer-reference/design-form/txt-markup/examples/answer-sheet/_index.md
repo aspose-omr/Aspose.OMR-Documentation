@@ -4,6 +4,7 @@ date: "2022-05-04"
 author: "Vladimir Lapin"
 type: docs
 url: /net/txt-markup/examples/answer-sheet-barcode/
+feedback: OMRNET
 aliases:
 - /net/template-generation/txt/examples/barcode/
 title: Answer sheet with barcode

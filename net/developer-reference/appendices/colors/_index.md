@@ -4,6 +4,7 @@ date: "2022-10-25"
 author: "Vladimir Lapin"
 type: docs
 url: /net/supported-colors/
+feedback: OMRNET
 title: Font and background colors
 description: The list of font colors and fill colors supported by Aspose.OMR for .NET.
 keywords:

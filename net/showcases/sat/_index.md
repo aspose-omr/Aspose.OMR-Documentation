@@ -4,6 +4,7 @@ date: "2022-06-03"
 author: "Vladimir Lapin"
 type: docs
 url: /net/showcases/sat/
+feedback: OMRNET
 title: SAT form
 description: Ready-made answer sheet for SAT Exam.
 keywords:

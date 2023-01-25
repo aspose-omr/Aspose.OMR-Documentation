@@ -4,6 +4,7 @@ date: "2022-04-25"
 author: "Vladimir Lapin"
 type: docs
 url: /net/txt-markup/vertical_choicebox/
+feedback: OMRNET
 title: vertical_choicebox
 description: Vertical_choicebox element generates a vertical question block with multiple answers and an optional write-in field.
 keywords:

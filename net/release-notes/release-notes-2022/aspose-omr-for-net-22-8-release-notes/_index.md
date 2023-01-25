@@ -4,6 +4,7 @@ date: "2022-08-17"
 author: "Vladimir Lapin"
 type: docs
 url: /net/aspose-omr-for-net-22-8-release-notes/
+feedback: OMRNET
 title: Aspose.OMR for .NET 22.8 Release Notes
 description: A summary of recent changes, enhancements and bug fixes in Aspose.OMR for .NET 22.8 (August 2022) release.
 keywords:

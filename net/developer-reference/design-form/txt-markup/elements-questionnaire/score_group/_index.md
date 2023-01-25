@@ -4,6 +4,7 @@ date: "2022-04-25"
 author: "Vladimir Lapin"
 type: docs
 url: /net/txt-markup/score_group/
+feedback: OMRNET
 aliases:
 - /net/template-generation/txt/elements-description/score/
 title: score_group

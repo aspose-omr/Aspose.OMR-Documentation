@@ -4,6 +4,7 @@ date: "2022-04-29"
 author: "Vladimir Lapin"
 type: docs
 url: /net/json-markup/choicebox/
+feedback: OMRNET
 title: ChoiceBox
 description: ChoiceBox element generates a question with a fixed number of answers.
 keywords:

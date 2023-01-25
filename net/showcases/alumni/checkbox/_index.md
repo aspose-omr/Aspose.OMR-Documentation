@@ -4,6 +4,7 @@ date: "2022-06-03"
 author: "Vladimir Lapin"
 type: docs
 url: /net/showcases/alumni/checkbox/
+feedback: OMRNET
 title: Alumni questionnaire with free-form answers
 description: OMR ready alumni questionnaire template with free-form answers and checkboxes.
 keywords:

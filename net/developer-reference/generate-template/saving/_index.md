@@ -4,6 +4,7 @@ date: "2022-05-13"
 author: "Vladimir Lapin"
 type: docs
 url: /net/generate-template/save/
+feedback: OMRNET
 title: Saving a printable form and recognition pattern
 description: How to save a generated printable form and a recognition pattern file on disk.
 keywords:

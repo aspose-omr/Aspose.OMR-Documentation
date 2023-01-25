@@ -4,6 +4,7 @@ date: "2022-05-13"
 author: "Vladimir Lapin"
 type: docs
 url: /net/json-markup/image/
+feedback: OMRNET
 title: Image
 description: Image element is used to add a picture.
 keywords:

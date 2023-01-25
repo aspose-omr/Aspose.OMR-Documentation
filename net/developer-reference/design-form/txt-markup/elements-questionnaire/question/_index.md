@@ -4,6 +4,7 @@ date: "2022-12-02"
 author: "Vladimir Lapin"
 type: docs
 url: /net/txt-markup/choicebox/
+feedback: OMRNET
 aliases: /net/txt-markup/question/
 title: choicebox
 description: An element that generates a question with a fixed number of answers.

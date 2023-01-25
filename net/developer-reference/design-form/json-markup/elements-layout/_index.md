@@ -4,6 +4,7 @@ date: "2022-05-16"
 author: "Vladimir Lapin"
 type: docs
 url: /net/json-markup/elements-layout/
+feedback: OMRNET
 title: Layout
 description: Layout elements are used to arrange other elements and define the appearance and design of the OMR form.
 keywords:

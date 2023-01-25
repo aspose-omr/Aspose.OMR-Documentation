@@ -4,6 +4,7 @@ date: "2022-05-20"
 author: "Vladimir Lapin"
 type: docs
 url: /net/recognition/accuracy-threshold/
+feedback: OMRNET
 title: Fine tuning recognition accuracy
 description: How to adjust the recognition accuracy to get reliable results under various conditions.
 keywords:

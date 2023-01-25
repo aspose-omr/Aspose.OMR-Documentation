@@ -4,6 +4,7 @@ date: "2022-04-29"
 author: "Vladimir Lapin"
 type: docs
 url: /net/json-markup/table/
+feedback: OMRNET
 aliases:
 - /net/template-generation/json/elements-description/table/
 title: Table

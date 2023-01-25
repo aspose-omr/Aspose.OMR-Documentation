@@ -4,6 +4,7 @@ date: "2022-04-21"
 author: "Vladimir Lapin"
 type: docs
 url: /net/txt-markup/write_in/
+feedback: OMRNET
 title: write_in
 description: Write_in element provides a blank field in which the respondent can hand write some text or draw a picture.
 keywords:

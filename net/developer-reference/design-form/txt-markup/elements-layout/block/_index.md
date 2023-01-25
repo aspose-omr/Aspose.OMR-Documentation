@@ -4,6 +4,7 @@ date: "2022-10-25"
 author: "Vladimir Lapin"
 type: docs
 url: /net/txt-markup/block/
+feedback: OMRNET
 title: block
 description: Block element is used to organize content within containers.
 keywords:

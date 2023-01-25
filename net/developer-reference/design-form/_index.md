@@ -4,6 +4,7 @@ date: "2022-04-19"
 author: "Vladimir Lapin"
 type: docs
 url: /net/design-form/
+feedback: OMRNET
 aliases:
 - /net/template-generation/
 title: Designing the form

@@ -4,6 +4,7 @@ date: "2022-06-03"
 author: "Vladimir Lapin"
 type: docs
 url: /net/showcases/satisfaction/table/
+feedback: OMRNET
 title: Customer satisfaction survey with table layout
 description: OMR ready customer satisfaction survey with table layout
 keywords:

@@ -4,6 +4,7 @@ date: "2022-10-25"
 author: "Vladimir Lapin"
 type: docs
 url: /net/programmatic-forms/blockconfig/
+feedback: OMRNET
 title: BlockConfig
 description: BlockConfig element is used to organize content within containers.
 keywords:

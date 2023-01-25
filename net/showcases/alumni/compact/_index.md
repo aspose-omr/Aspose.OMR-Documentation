@@ -4,6 +4,7 @@ date: "2022-06-03"
 author: "Vladimir Lapin"
 type: docs
 url: /net/showcases/alumni/compact/
+feedback: OMRNET
 title: Compact alumni questionnaire
 description: OMR ready alumni questionnaire template in a compact design.
 keywords:

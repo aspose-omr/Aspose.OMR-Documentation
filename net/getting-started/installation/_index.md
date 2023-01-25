@@ -4,6 +4,7 @@ date: "2022-04-14"
 author: "Vladimir Lapin"
 type: docs
 url: /net/installation/
+feedback: OMRNET
 title: Installation
 description: Adding or updating Aspose.OMR for .NET NuGet package in your project.
 keywords:

@@ -4,6 +4,7 @@ date: "2022-06-03"
 author: "Vladimir Lapin"
 type: docs
 url: /net/showcases/tear/
+feedback: OMRNET
 title: OMR form with a tear line
 description: Two identical forms on one sheet separated with a vertical or horizontal tear line.
 keywords:

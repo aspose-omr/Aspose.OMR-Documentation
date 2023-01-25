@@ -4,6 +4,7 @@ date: "2022-05-04"
 author: "Vladimir Lapin"
 type: docs
 url: /net/txt-markup/examples/branded-survey/
+feedback: OMRNET
 aliases:
 - /net/template-generation/txt/examples/image/
 - /net/template-generation/txt/examples/choice-box/

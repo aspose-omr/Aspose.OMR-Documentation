@@ -4,6 +4,7 @@ date: "2022-09-20"
 author: "Vladimir Lapin"
 type: docs
 url: /net/txt-markup/custom_answer_sheet/
+feedback: OMRNET
 aliases:
 - /net/template-generation/txt/elements-description/custom-answer-sheet/
 title: custom_answer_sheet

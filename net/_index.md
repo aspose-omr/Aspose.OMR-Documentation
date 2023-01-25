@@ -1,9 +1,10 @@
 ---
 weight: 10
-date: "2022-11-23"
+date: "2023-01-24"
 author: "Vladimir Lapin"
 type: docs
 url: /net/
+feedback: OMRNET
 is_root: true
 title: Aspose.OMR for .NET
 description: Aspose.OMR for .NET is an easy-to-use .NET library for designing and recognizing hand-filled questionnaires, surveys, and similar forms.
@@ -77,6 +78,7 @@ Check out how Aspose.OMR for .NET  can be used to solve real-world problems.
 Read a summary of recent changes, enhancements and bug fixes in Aspose.OMR for .NET releases.
 
 - [Latest release](/omr/net/release-notes/latest/)
+- [2023 releases](/omr/net/release-notes-2023/)
 - [2022 releases](/omr/net/release-notes-2022/)
 - [2021 releases](/omr/net/release-notes-2021/)
 - [2020 releases](/omr/net/release-notes-2020/)

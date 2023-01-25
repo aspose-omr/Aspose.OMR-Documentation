@@ -4,6 +4,7 @@ date: "2022-12-02"
 author: "Vladimir Lapin"
 type: docs
 url: /net/txt-markup/paragraph/
+feedback: OMRNET
 title: paragraph
 description: Paragraph element allows you to combine text and images.
 keywords:

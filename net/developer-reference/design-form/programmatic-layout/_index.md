@@ -4,6 +4,7 @@ date: "2022-05-30"
 author: "Vladimir Lapin"
 type: docs
 url: /net/programmatic-forms/
+feedback: OMRNET
 aliases:
 - /net/programmatic-layout/
 title: Building forms programmatically

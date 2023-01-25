@@ -4,6 +4,7 @@ date: "2022-05-30"
 author: "Vladimir Lapin"
 type: docs
 url: /net/programmatic-forms/containerconfig/
+feedback: OMRNET
 title: ContainerConfig
 description: ContainerConfig element is used to break content into columns and to add a footer to the form.
 keywords:

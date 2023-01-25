@@ -4,6 +4,7 @@ date: "2022-06-03"
 author: "Vladimir Lapin"
 type: docs
 url: /net/showcases/alumni/classic/
+feedback: OMRNET
 title: Classic alumni questionnaire with free-form answers
 description: Simple OMR ready alumni questionnaire template with free-form answers.
 keywords:

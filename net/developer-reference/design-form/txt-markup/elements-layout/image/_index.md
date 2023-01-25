@@ -4,6 +4,7 @@ date: "2022-05-13"
 author: "Vladimir Lapin"
 type: docs
 url: /net/txt-markup/image/
+feedback: OMRNET
 title: image
 description: Image element is used to add a picture.
 keywords:

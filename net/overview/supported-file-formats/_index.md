@@ -4,6 +4,7 @@ date: "2022-05-04"
 author: "Vladimir Lapin"
 type: docs
 url: /net/supported-file-formats/
+feedback: OMRNET
 title: Supported file formats
 description: File and data formats for print forms, scanned / photographed images and recognition results supported by Aspose.OMR for.NET.
 keywords:

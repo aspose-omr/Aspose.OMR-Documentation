@@ -4,6 +4,7 @@ date: "2022-05-19"
 author: "Vladimir Lapin"
 type: docs
 url: /net/omr-form-structure/
+feedback: OMRNET
 title: Aspose.OMR form structure
 description: The layout and structure of the Aspose.OMR for .NET printable form and the meaning of its key elements.
 keywords:

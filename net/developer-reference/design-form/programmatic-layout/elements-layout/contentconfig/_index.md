@@ -4,6 +4,7 @@ date: "2022-05-27"
 author: "Vladimir Lapin"
 type: docs
 url: /net/programmatic-forms/contentconfig/
+feedback: OMRNET
 title: ContentConfig
 description: ContentConfig element is used to add one or more lines of text to the parent element.
 keywords:

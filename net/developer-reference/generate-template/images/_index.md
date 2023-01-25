@@ -4,6 +4,7 @@ date: "2022-05-19"
 author: "Vladimir Lapin"
 type: docs
 url: /net/generate-template/images/
+feedback: OMRNET
 title: Adding images
 description: How to include images in Aspose.OMR forms.
 keywords:

@@ -4,6 +4,7 @@ date: "2022-10-25"
 author: "Vladimir Lapin"
 type: docs
 url: /net/programmatic-forms/elements-questionnaire/
+feedback: OMRNET
 title: Questionnaires
 description: Questionnairy elements allow you to programmatically build OMR-ready surveys, ballots, checklists, and similar forms.
 keywords:

@@ -4,6 +4,7 @@ date: "2022-06-03"
 author: "Vladimir Lapin"
 type: docs
 url: /net/showcases/tear/vertical-red/
+feedback: OMRNET
 title: Red OMR form with a vertical tear line
 description: OMR form with a vertical tear line in red
 keywords:

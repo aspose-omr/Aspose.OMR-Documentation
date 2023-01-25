@@ -4,6 +4,7 @@ date: "2022-06-03"
 author: "Vladimir Lapin"
 type: docs
 url: /net/showcases/sat/bw/
+feedback: OMRNET
 title: Black and white SAT Exam form
 description: OMR ready SAT Exam answer sheet in black and white
 keywords:

@@ -4,6 +4,7 @@ date: "2022-05-30"
 author: "Vladimir Lapin"
 type: docs
 url: /net/programmatic-forms/writeinconfig/
+feedback: OMRNET
 title: WriteInConfig
 description: WriteInConfig element provides a blank field in which the respondent can hand write some text or draw a picture.
 keywords:

@@ -4,6 +4,7 @@ date: "2022-04-14"
 author: "Vladimir Lapin"
 type: docs
 url: /net/licensing/
+feedback: OMRNET
 title: Licensing
 description: Learn how to obtain and apply Aspose.OMR for .NET license and discover limitations of the trial version.
 keywords:

@@ -4,6 +4,7 @@ date: "2022-04-27"
 author: "Vladimir Lapin"
 type: docs
 url: /net/json-markup/writein/
+feedback: OMRNET
 title: WriteIn
 description: WriteIn element provides a blank field in which the respondent can hand write some text or draw a picture.
 keywords:

@@ -4,6 +4,7 @@ date: "2022-06-03"
 author: "Vladimir Lapin"
 type: docs
 url: /net/showcases/satisfaction/grouped/
+feedback: OMRNET
 title: Customer satisfaction survey with grouped layout
 description: OMR ready customer satisfaction survey with grouped layout
 keywords:

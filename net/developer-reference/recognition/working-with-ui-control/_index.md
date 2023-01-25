@@ -4,6 +4,7 @@ date: "2022-05-26"
 author: "Vladimir Lapin"
 type: docs
 url: /net/working-with-ui-control/
+feedback: OMRNET
 title: Working with UI control
 description: Manually adjust the recognition parameters in the visual editor and watch their effect in real time.
 keywords:

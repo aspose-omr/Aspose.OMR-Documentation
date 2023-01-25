@@ -4,6 +4,7 @@ date: "2022-05-19"
 author: "Vladimir Lapin"
 type: docs
 url: /net/txt-markup/composite_grid/
+feedback: OMRNET
 aliases:
 - /net/template-generation/txt/elements-description/composite-grid/
 title: composite_grid

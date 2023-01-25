@@ -4,6 +4,7 @@ date: "2022-05-31"
 author: "Vladimir Lapin"
 type: docs
 url: /net/programmatic-forms/verticalchoiceboxconfig/
+feedback: OMRNET
 title: VerticalChoiceBoxConfig
 description: VerticalChoiceBoxConfig element generates a vertical question block with multiple answers and an optional write-in field.
 keywords:

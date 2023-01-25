@@ -4,6 +4,7 @@ date: "2022-05-04"
 author: "Vladimir Lapin"
 type: docs
 url: /net/txt-markup/examples/multi-column/
+feedback: OMRNET
 aliases:
 - /net/template-generation/txt/examples/multi-column
 title: Multi-column questionnaire

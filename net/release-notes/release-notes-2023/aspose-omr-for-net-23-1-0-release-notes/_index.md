@@ -1,18 +1,20 @@
 ---
-weight: 1
+weight: 121
 date: "2023-01-24"
 author: "Vladimir Lapin"
 type: docs
-url: /net/release-notes/latest/
+url: /net/aspose-omr-for-net-23-1-0-release-notes/
 feedback: OMRNET
-title: Latest release (January 2023)
+title: Aspose.OMR for .NET 23.1.0 - Release Notes
 description: A summary of recent changes, enhancements and bug fixes in Aspose.OMR for .NET 23.1.0 (January 2023) release.
 keywords:
-- latest
+- 2023
+- January
 - new
 - release
 - changelog
 ---
+
 
 {{% alert color="primary" %}} 
 This article contains a summary of recent changes, enhancements and bug fixes in [**Aspose.OMR for .NET 23.1.0 (January 2023)**](https://www.nuget.org/packages/Aspose.OMR/23.1.0) release.

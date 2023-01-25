@@ -4,6 +4,7 @@ date: "2022-10-25"
 author: "Vladimir Lapin"
 type: docs
 url: /net/showcases/
+feedback: OMRNET
 aliases:
 - /net/showcases/hotel/
 - /net/showcases/hotel/json/

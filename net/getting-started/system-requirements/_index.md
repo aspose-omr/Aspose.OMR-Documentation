@@ -4,6 +4,7 @@ date: "2022-11-23"
 author: "Vladimir Lapin"
 type: docs
 url: /net/system-requirements/
+feedback: OMRNET
 title: System requirements
 description: Minimum requirements and prerequisites for developing applications with Aspose.OMR for .NET.
 keywords:

@@ -4,6 +4,7 @@ date: "2022-09-19"
 author: "Vladimir Lapin"
 type: docs
 url: /net/generate-template/
+feedback: OMRNET
 aliases:
 - /net/template-generation/examples/english/txt/
 - /net/template-generation/examples/pub/txt/

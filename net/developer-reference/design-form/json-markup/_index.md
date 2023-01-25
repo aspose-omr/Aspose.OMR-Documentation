@@ -4,6 +4,7 @@ date: "2022-05-16"
 author: "Vladimir Lapin"
 type: docs
 url: /net/json-markup/
+feedback: OMRNET
 aliases:
 - /net/template-generation/json/
 - /net/template-generation/json/elements-description/

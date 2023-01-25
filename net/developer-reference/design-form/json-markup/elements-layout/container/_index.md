@@ -4,6 +4,7 @@ date: "2022-05-16"
 author: "Vladimir Lapin"
 type: docs
 url: /net/json-markup/container/
+feedback: OMRNET
 title: Container
 description: Container element is used to break content into columns and to add a footer to the form.
 keywords:

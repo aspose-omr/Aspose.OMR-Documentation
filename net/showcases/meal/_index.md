@@ -4,6 +4,7 @@ date: "2022-06-03"
 author: "Vladimir Lapin"
 type: docs
 url: /net/showcases/meal/
+feedback: OMRNET
 title: Meal preference
 description: Customizable OMR ready meal preference survey templates.
 keywords:

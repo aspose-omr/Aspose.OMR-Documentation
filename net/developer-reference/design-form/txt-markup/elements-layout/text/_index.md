@@ -4,6 +4,7 @@ date: "2022-04-21"
 author: "Vladimir Lapin"
 type: docs
 url: /net/txt-markup/text/
+feedback: OMRNET
 title: text
 description: Text element is used to add one or more lines of text to the form.
 keywords:

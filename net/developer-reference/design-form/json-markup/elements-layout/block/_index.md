@@ -4,6 +4,7 @@ date: "2022-10-25"
 author: "Vladimir Lapin"
 type: docs
 url: /net/json-markup/block/
+feedback: OMRNET
 title: Block
 description: Block element is used to organize content within containers.
 keywords:

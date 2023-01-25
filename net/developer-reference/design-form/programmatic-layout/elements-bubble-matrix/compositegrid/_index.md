@@ -4,6 +4,7 @@ date: "2022-06-01"
 author: "Vladimir Lapin"
 type: docs
 url: /net/programmatic-forms/compositegridconfig/
+feedback: OMRNET
 title: CompositeGridConfig
 description: CompositeGridConfig element generates a highly customizable matrix of numbered bubbles that are combined into a single answer.
 keywords:

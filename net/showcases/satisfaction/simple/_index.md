@@ -4,6 +4,7 @@ date: "2022-06-03"
 author: "Vladimir Lapin"
 type: docs
 url: /net/showcases/satisfaction/simple/
+feedback: OMRNET
 title: Customer satisfaction survey
 description: OMR ready customer satisfaction survey
 keywords:

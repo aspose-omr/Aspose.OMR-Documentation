@@ -4,6 +4,7 @@ date: "2022-05-30"
 author: "Vladimir Lapin"
 type: docs
 url: /net/programmatic-forms/textconfig/
+feedback: OMRNET
 title: TextConfig
 description: TextConfig element is used to add one or more lines of text to the form.
 keywords:

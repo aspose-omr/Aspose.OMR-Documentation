@@ -4,6 +4,7 @@ date: "2022-12-02"
 author: "Vladimir Lapin"
 type: docs
 url: /net/programmatic-forms/paragraphconfig/
+feedback: OMRNET
 title: ParagraphConfig
 description: ParagraphConfig element allows you to combine text and images.
 keywords:

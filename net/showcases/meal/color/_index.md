@@ -4,6 +4,7 @@ date: "2022-06-03"
 author: "Vladimir Lapin"
 type: docs
 url: /net/showcases/meal/color/
+feedback: OMRNET
 title: Colorful meal preference survey
 description: OMR ready meal preference survey in colorful design
 keywords:

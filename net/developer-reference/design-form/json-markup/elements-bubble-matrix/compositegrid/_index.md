@@ -4,6 +4,7 @@ date: "2022-05-19"
 author: "Vladimir Lapin"
 type: docs
 url: /net/json-markup/compositegrid/
+feedback: OMRNET
 aliases:
 - /net/template-generation/json/elements-description/composite-grid/
 title: CompositeGrid

@@ -4,6 +4,7 @@ date: "2022-06-01"
 author: "Vladimir Lapin"
 type: docs
 url: /net/programmatic-forms/gridconfig/
+feedback: OMRNET
 title: GridConfig
 description: GridConfig element generates a matrix of numbered bubbles that are combined into a single answer.
 keywords:

@@ -4,6 +4,7 @@ date: "2023-01-09"
 author: "Vladimir Lapin"
 type: docs
 url: /net/generate-template/page-setup/
+feedback: OMRNET
 title: Page setup
 description: How to customize the paper size, orientation, font, images, and other layout settings of a printable form.
 keywords:

@@ -4,6 +4,7 @@ date: "2022-05-31"
 author: "Vladimir Lapin"
 type: docs
 url: /net/programmatic-forms/scoregroupconfig/
+feedback: OMRNET
 title: ScoreGroupConfig
 description: ScoreGroupConfig element defines a group of questions with multiple evaluation criteria, which are summed up during recognition.
 keywords:

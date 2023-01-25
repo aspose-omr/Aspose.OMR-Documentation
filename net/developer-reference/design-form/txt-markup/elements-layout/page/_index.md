@@ -4,6 +4,7 @@ date: "2022-05-16"
 author: "Vladimir Lapin"
 type: docs
 url: /net/txt-markup/page/
+feedback: OMRNET
 title: page
 description: Page element allows you to break large forms into several pages that are recognized as a single document.
 keywords:

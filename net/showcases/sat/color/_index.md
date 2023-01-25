@@ -4,6 +4,7 @@ date: "2022-06-03"
 author: "Vladimir Lapin"
 type: docs
 url: /net/showcases/sat/color/
+feedback: OMRNET
 title: Colorful SAT Exam form
 description: OMR ready SAT Exam answer sheet in colorful design
 keywords:

@@ -4,6 +4,7 @@ date: "2022-04-13"
 author: "Vladimir Lapin"
 type: docs
 url: /net/getting-started/
+feedback: OMRNET
 title: Getting started
 description: Learn how to install and license Aspose.OMR for .NET and how to write a simple OMR application.
 keywords:

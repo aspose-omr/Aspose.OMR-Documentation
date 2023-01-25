@@ -4,6 +4,7 @@ date: "2022-05-31"
 author: "Vladimir Lapin"
 type: docs
 url: /net/programmatic-forms/choiceboxconfig/
+feedback: OMRNET
 title: ChoiceBoxConfig
 description: ChoiceBoxConfig element generates a question with a fixed number of answers.
 keywords:

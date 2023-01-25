@@ -4,6 +4,7 @@ date: "2022-05-31"
 author: "Vladimir Lapin"
 type: docs
 url: /net/programmatic-forms/checkboxconfig/
+feedback: OMRNET
 title: CheckBoxConfig
 description: CheckBoxConfig element generates a list of answers with blank bubbles that can accommodate any kind of marks.
 keywords:

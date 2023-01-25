@@ -4,6 +4,7 @@ date: "2022-05-23"
 author: "Vladimir Lapin"
 type: docs
 url: /net/recognition/save/
+feedback: OMRNET
 title: Saving recognition results
 description: How to get form recognition results in CSV, XML or JSON formats.
 keywords:

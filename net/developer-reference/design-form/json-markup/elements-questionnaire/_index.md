@@ -4,6 +4,7 @@ date: "2022-04-29"
 author: "Vladimir Lapin"
 type: docs
 url: /net/json-markup/elements-questionnaire/
+feedback: OMRNET
 title: Questionnaires
 description: Questionnairy elements allow you to build OMR-ready surveys, ballots, checklists, and similar forms.
 keywords:

@@ -4,6 +4,7 @@ date: "2022-05-23"
 author: "Vladimir Lapin"
 type: docs
 url: /net/recognition/write-in/
+feedback: OMRNET
 title: Processing write-in fields
 description: How to recognize fields in which the respondent can hand write some text or draw a picture.
 keywords:

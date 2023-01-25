@@ -4,6 +4,7 @@ date: "2022-05-31"
 author: "Vladimir Lapin"
 type: docs
 url: /net/programmatic-forms/tableconfig/
+feedback: OMRNET
 title: TableConfig
 description: TableConfig element organizes questions and answers in a tabular structure.
 keywords:

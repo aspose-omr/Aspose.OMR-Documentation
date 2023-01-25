@@ -4,6 +4,7 @@ date: "2022-04-28"
 author: "Vladimir Lapin"
 type: docs
 url: /net/json-markup/answersheet/
+feedback: OMRNET
 title: AnswerSheet
 description: AnswerSheet element generates a numbered matrix of bubbles arranged in multiple columns to make more efficient use of space.
 keywords:

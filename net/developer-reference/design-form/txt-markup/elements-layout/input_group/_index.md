@@ -4,6 +4,7 @@ date: "2022-04-21"
 author: "Vladimir Lapin"
 type: docs
 url: /net/txt-markup/input_group/
+feedback: OMRNET
 title: input_group
 description: Input_group element is used to insert personalized information, such as the respondent's name or email, into the form.
 keywords:

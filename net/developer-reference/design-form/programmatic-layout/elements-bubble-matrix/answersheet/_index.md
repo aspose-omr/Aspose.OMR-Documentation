@@ -4,6 +4,7 @@ date: "2022-06-01"
 author: "Vladimir Lapin"
 type: docs
 url: /net/programmatic-forms/answersheetconfig/
+feedback: OMRNET
 title: AnswerSheetConfig
 description: AnswerSheetConfig element generates a numbered matrix of bubbles arranged in multiple columns to make more efficient use of space.
 keywords:

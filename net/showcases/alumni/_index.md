@@ -4,6 +4,7 @@ date: "2022-06-03"
 author: "Vladimir Lapin"
 type: docs
 url: /net/showcases/alumni/
+feedback: OMRNET
 title: Alumni questionnaire
 description: Customizable OMR ready alumni questionnaire templates.
 keywords:

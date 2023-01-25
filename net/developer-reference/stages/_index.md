@@ -4,6 +4,7 @@ date: "2022-04-19"
 author: "Vladimir Lapin"
 type: docs
 url: /net/omr-stages/
+feedback: OMRNET
 title: Stages of the OMR process
 description: "Three major stages of Aspose.OMR workflow are: designing the content and layout, generating a printable form and recognition pattern, and performing optical mark recognition (OMR)."
 keywords:

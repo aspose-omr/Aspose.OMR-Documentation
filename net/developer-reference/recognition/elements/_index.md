@@ -4,6 +4,7 @@ date: "2022-05-24"
 author: "Vladimir Lapin"
 type: docs
 url: /net/recognition/elements/
+feedback: OMRNET
 title: How form elements are recognized
 description: How Aspose.OMR for .NET recognizes different types of elements in forms.
 keywords:

@@ -4,6 +4,7 @@ date: "2022-04-21"
 author: "Vladimir Lapin"
 type: docs
 url: /net/txt-markup/elements-barcode/
+feedback: OMRNET
 title: Barcodes and QR codes
 description: Add barcodes and QR codes to personalize or uniquely identify a form.
 keywords:

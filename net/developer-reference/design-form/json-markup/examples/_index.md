@@ -4,6 +4,7 @@ date: "2022-05-04"
 author: "Vladimir Lapin"
 type: docs
 url: /net/json-markup/examples/
+feedback: OMRNET
 aliases:
 - /net/template-generation/json/examples/
 title: JSON markup examples
