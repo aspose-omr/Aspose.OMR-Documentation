@@ -34,7 +34,11 @@ This section lists all public API changes introduced in **Aspose.OMR for Java 23
 
 The following public APIs have been added in this release:
 
-#### GlobalPageSettings.PaperSize
+#### `GlobalPageSettings`
+
+`GlobalPageSettings` class allows you to customize the design and layout of the generated OMR form. Starting with **Aspose.OMR for Java 23.1.0**, you can configure the following parameters:
+
+##### `GlobalPageSettings.PaperSize`
 
 The new setting `GlobalPageSettings.PaperSize` allows you to configure page size for the generated OMR form. This setting takes one of the following values:
 
@@ -47,7 +51,7 @@ Value | Standard | Paper size (mm) | Paper size (inches) | Dimensions (pixels)
 `PaperSize.p8519` | | 215.9 × 482.6 | 8.5 × 19 | 2551 × 5702
 `PaperSize.p8521` | | 215.9 × 533.4 | 8.5 × 21 | 2551 × 6302
 
-#### GlobalPageSettings.BubbleColor
+##### `GlobalPageSettings.BubbleColor`
 
 The new setting `GlobalPageSettings.BubbleColor` allows you to specify the color of all bubbles in the generated OMR form. This setting takes one of the following values:
 
@@ -198,7 +202,22 @@ The new setting `GlobalPageSettings.BubbleColor` allows you to specify the color
 
 ### Updated public APIs:
 
-_No changes._
+The following public APIs have been updated in this release:
+
+#### `generateTemplate()` method
+
+{{% alert color="info" %}} 
+**Compatibility: fully backward compatible.**
+
+This change will not affect existing code, print forms, or recognition results.
+{{% /alert %}} 
+
+This method now accepts a new [`settings`](#globalpagesettings) parameter, which customizes the design and layout of the generated OMR form. Available overloads:
+
+Method | Description
+------ | -----------
+`generateTemplate(String markupPath, GlobalPageSettings settings)` | Creates a printable OMR form from source code with a custom page size and bubble color.
+`generateTemplate(String markupPath, ImageCollection collection, GlobalPageSettings settings)` | Creates a printable OMR form with images from source code. Allows for specifying page size and bubble color.
 
 ### Removed public APIs:
 
@@ -223,7 +242,9 @@ res.Save("target", "omr_form");
 ```java
 OmrEngine engine = new OmrEngine();
 GlobalPageSettings pageSettings = new GlobalPageSettings();
-pageSettings.BubbleColor = DrawingColor.Violet;
+pageSettings.BubbleColor = DrawingColor.Red;
 GenerationResult res = engine.generateTemplate("source.txt", pageSettings);
 res.Save("target", "omr_form");
 ```
+
+![Custom bubble color](colored-bubbles.png)
