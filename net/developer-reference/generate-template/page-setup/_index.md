@@ -1,6 +1,6 @@
 ---
 weight: 10
-date: "2023-01-09"
+date: "2023-02-20"
 author: "Vladimir Lapin"
 type: docs
 url: /net/generate-template/page-setup/
@@ -27,28 +27,21 @@ The paper size, orientation, font, and other layout settings are configured thro
 
 You can customize the following page layout parameters through `GlobalPageSettings`:
 
-- [`PaperSize`](https://reference.aspose.com/omr/net/aspose.omr.generation/papersize) - page sizes and dimensions. Default: _A4 (210 x 297 mm)_.
-- [`Orientation`](https://reference.aspose.com/omr/net/aspose.omr.generation/orientation) - page orientation. Default: _portrait (vertical)_.
-- `PageMarginLeft` and `PageMarginRight` - left and right margins of the page, in pixels.
-- `FontFamily` - default font family for all texts, except for those directly overridden in the source code. For example, `"Courier New"`.  
-  {{% alert color="primary" %}}
-  Make sure the font is installed on the system that generates the printable form!
-  {{% /alert %}}
-- `FontSize` - default font size for all texts, except for those directly overridden in the source code.
-- [`FontStyle`](https://reference.aspose.com/omr/net/aspose.omr.generation/fontstyle) - default font style for all texts, except for those directly overridden in the source code.
-- [`BubbleSize`](https://reference.aspose.com/omr/net/aspose.omr.generation/bubblesize) - default size of answer bubbles, except for those directly overridden in the source code.
-- [`BubbleColor`](https://reference.aspose.com/omr/net/aspose.omr.generation/color) - color of all bubbles. Default: black.
-- [`Wrap`](https://reference.aspose.com/omr/net/aspose.omr.generation/wrap) - wrapping mode:
-    - `Aspose.OMR.Generation.WrappingPolicy.None` - disable column wrapping (default);
-    - `Aspose.OMR.Generation.WrappingPolicy.Column` - enable automatic column wrapping.
-- `RotationPointPosition` - the placement of the rectangular [positioning marker](/omr/net/omr-form-structure/) that is used to detect the page orientation. See details below.
-- `WritingSystem` - [form localization](#form-localization), which affects text direction (LTR or RTL) and item numbering of generated OMR forms.
-
-## Image paths
-
-The `GlobalPageSettings` object is also used to provide the full path to each image mentioned in the [source code](/omr/net/design-form/). The paths are provided as an array of strings using `ImagesPaths` property.
-
-Read more info in this [article](/omr/net/generate-template/images/).
+Setting | Type | Default value | Description
+------- | ---- | ------------- | -----------
+[`PaperSize`](https://reference.aspose.com/omr/net/aspose.omr.generation/papersize) | `Aspose.OMR.Generation.PaperSize` | A4 (210 x 297 mm) | Physical page dimensions.
+[`Orientation`](https://reference.aspose.com/omr/net/aspose.omr.generation/orientation) | `Aspose.OMR.Generation.Orientation` | Portrait (vertical) | Page orientation.
+`PageMarginLeft` | `int` | 210 pixels | The size of the left page margin in pixels.
+`PageMarginLeft` | `int` | 210 pixels | The size of the right page margin in pixels.
+`FontFamily` | `string` | Segoe UI | Font family for all texts, except for those directly overridden in the source code. For example, `"Courier New"`.<br />The selected font must be installed on the system that generates the printable form!
+`FontSize` | `int` | 12 | Font size for all texts, except for those directly overridden in the source code.
+[`FontStyle`](https://reference.aspose.com/omr/net/aspose.omr.generation/fontstyle) | `Aspose.OMR.Generation.FontStyle` | Regular | Font style for all texts, except for those directly overridden in the source code.
+[`BubbleSize`](https://reference.aspose.com/omr/net/aspose.omr.generation/bubblesize) | `Aspose.OMR.Generation.BubbleSize` | Normal | Size of answer bubbles, except for those directly overridden in the source code.
+[`BubbleColor`](https://reference.aspose.com/omr/net/aspose.omr.generation/color) | `Aspose.OMR.Generation.Color` | Black | [Color](/omr/net/supported-colors/) of all answer bubbles in the form.
+[`Overflow`](https://reference.aspose.com/omr/net/aspose.omr.generation/overflow) | `Aspose.OMR.Generation.OverflowActions.<Algorithm>` | Do not clip and wrap elements | How to render elements that do not fit in the parent container.<br />See details [below](#clipping-and-wrapping-elements).
+[`RotationPointPosition`](https://reference.aspose.com/omr/net/aspose.omr.generation/globalpagesettings/rotationpointposition/) | `Aspose.OMR.Generation.RotationPointPosition` | Below the top-right square positioning marker | The placement of the rectangular [positioning marker](/omr/net/omr-form-structure/) that is used to detect the page orientation.<br />See details [below](#positioning-marker-placement).
+[`WritingSystem`](https://reference.aspose.com/omr/net/aspose.omr.generation/globalpagesettings/writingsystem/) | `Aspose.OMR.Generation.WritingSystems.WritingSystem` | Left-to-right (LTR), Western numbering | [Localization](#form-localization), which affects text direction (LTR or RTL) and item numbering of generated OMR forms.
+`ImagesPaths` | `string[]` | _n/a_ | Full path to each image mentioned in the [source code](/omr/net/design-form/).<br />Read more info in this [article](/omr/net/generate-template/images/).
 
 ## Positioning marker placement
 
@@ -64,6 +57,49 @@ Enumeration | Value | Result
 `BottomLeft2` | 31 | ![To the right of the bottom-left square positioning marker](BottomLeft2.png)
 `BottomRight1` | 40 | ![Above the bottom-right square positioning marker](BottomRight1.png)
 `BottomRight2` | 41 | ![To the left of the bottom-right square positioning marker](BottomRight2.png)
+
+## Clipping and wrapping elements
+
+When designing OMR forms, you may run into a situation where the element does not fit on the page or inside the parent container. Aspose.OMR for .NET offers flexible handling of these edge cases through the use of `Overflow` page setting.
+
+### Do not clip or wrap content
+
+Overflow content is rendered outside the bounds of the parent element. This can result in content overlapping with other elements or being clipped at page boundaries.
+
+This is the default rendering method.
+
+```csharp
+Aspose.OMR.Generation.GlobalPageSettings globalPageSettings = new Aspose.OMR.Generation.GlobalPageSettings() {
+	Overflow = new Aspose.OMR.Generation.OverflowActions.NoClip()
+};
+```
+
+![Do not clip content](overflow-noclip.png)
+
+### Hide content outside of parent's bounds
+
+Overflow content will be invisible. Cropping will be done both horizontally and vertically. This may result in some content (images, bubbles, text, and so on) not being presented in the rendered OMR form.
+
+```csharp
+Aspose.OMR.Generation.GlobalPageSettings globalPageSettings = new Aspose.OMR.Generation.GlobalPageSettings() {
+	Overflow = new Aspose.OMR.Generation.OverflowActions.Clip()
+};
+```
+
+![Do not clip content](overflow-clip.png)
+
+
+### Wrap content
+
+Content that does not match the parent's bounds will automatically appear in the next column. This rendering method only applies to multi-column layouts and cannot slice monolithic elements such as images and barcodes.
+
+```csharp
+Aspose.OMR.Generation.GlobalPageSettings globalPageSettings = new Aspose.OMR.Generation.GlobalPageSettings() {
+	Overflow = new Aspose.OMR.Generation.OverflowActions.Wrap()
+};
+```
+
+![Move overlapping content on the next column](overflow-wrap.png)
 
 ## Form localization
 
