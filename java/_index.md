@@ -11,7 +11,7 @@ is_root: true
 
 {{% alert color="primary" %}} 
 
-**![Aspose.OMR for Java Product Logo](home_1.png)**
+**![Aspose.OMR for Java Product Logo](https://releases.aspose.com/images/aspose/aspose_omr-for-java.svg)**
 
 **Welcome to the Aspose.OMR for Java**
 

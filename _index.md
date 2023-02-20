@@ -18,13 +18,15 @@ keywords:
 - app
 - application
 - mobile
+- c++
+- answer sheet
 ---
 
 ## Aspose.OMR for .NET
 
 {{% alert color="primary" %}} 
 
-**![Aspose.OMR for .NET Product Logo](home_1.png)**
+**![Aspose.OMR for .NET Product Logo](https://releases.aspose.com/images/aspose/aspose_omr-for-net.svg)**
 
 **Welcome to the Aspose.OMR for .NET**
 
@@ -54,7 +56,7 @@ Find more information, download Aspose.OMR for .NET packages and get professiona
 
 {{% alert color="primary" %}} 
 
-**![Aspose.OMR for Java Product Logo](home_2.png)**
+**![Aspose.OMR for Java Product Logo](https://releases.aspose.com/images/aspose/aspose_omr-for-java.svg)**
 
 **Welcome to the Aspose.OMR for Java**
 
@@ -83,3 +85,34 @@ Discover full capabilities of Aspose.OMR without writing a single line of code.
   Instantly create and recognize OMR forms from anywhere using only a web browser. No additional software is required on your computer.
 - [Free mobile app](/omr/apps/mobile/)  
   Create, photograph and recognize OMR forms with your smartphone.
+
+
+## Aspose.OMR for C++
+
+{{% alert color="primary" %}} 
+
+**![Aspose.OMR for .NET Product Logo](https://releases.aspose.com/images/aspose/aspose_omr-for-cpp.svg)**
+
+**Welcome to the Aspose.OMR for C++**
+
+**Aspose.OMR for C++** is an easy-to-use, versatile, and cost-effective API for designing, rendering and recognizing hand-filled answer sheets, surveys, applications, and similar forms. With it, you can quickly develop on-premise and web-based .NET software for optical mark recognition (OMR) that work without dedicated scanners, transoptic paper or special ink. Respondents can fill out your forms with a pen or pencil and use any type of marks - artificial intelligence and advanced accuracy calibration ensure reliable results.
+
+Aspose.OMR for C++ library can recognize scanned images or even smartphone photos in the most popular formats: JPG, PDF, TIFF, PNG, BMP or GIF. Results are returned as CSV, XML or JSON, which allows for importing them into the database, CRM or analysis system of your choice.
+
+In addition to form recognition, Aspose.OMR for C++ can generate professional print forms, from examination papers to customer satisfaction surveys and election ballots. A highly flexible markup language allows you to combine various elements that best suit your purpose and target audience. You can further personalize and brand OMR forms by adding logos, barcodes, QR codes, or images.
+
+{{% /alert %}} 
+
+### Resources
+
+Find more information, download Aspose.OMR for C++ packages and get professional help:
+
+- [Aspose.OMR for C++ online documentation](/omr/cpp/)
+- [Aspose.OMR for C++ Release Notes](/omr/cpp/release-notes/)
+- [Aspose.OMR for C++ NuGet package](https://www.nuget.org/packages/Aspose.OMR.Cpp/)
+- [Aspose.OMR for C++ downloads](https://releases.aspose.com/omr/cpp/)
+- [Aspose.OMR for C++ API reference](https://reference.aspose.com/omr/cpp)
+- [Aspose.OMR for C++ Examples](https://github.com/aspose-omr/Aspose.OMR-for-C++)
+- [Blog](https://blog.aspose.com/category/omr/)
+- [Free Support Forum](https://forum.aspose.com/c/omr/38)
+- [Paid Support Helpdesk](https://helpdesk.aspose.com/)
