@@ -1,6 +1,6 @@
 ---
 weight: 50
-date: "2022-04-21"
+date: "2023-02-28"
 author: "Vladimir Lapin"
 type: docs
 url: /net/txt-markup/write_in/
@@ -53,6 +53,13 @@ Attribute | Default value | Description | Usage example
 **required** | false | Set to `true` to store the hand-filled content of the element to [Images](https://reference.aspose.com/omr/net/aspose.omr.model/recognitionresult/properties/images) collection during recognition. Set to `false` or omit the attribute to ignore this element during recognition. | `required=true`
 **hint** | "write-in" | Redefine the underlying label of the write-in element. | `hint=phone`
 **color** | black | Color of the underlying label text. Can be picked from one of the [supported](/omr/net/supported-colors/) values. | `color=red`
+**adaptive** | false | Set to `true` to fill the remaining height of the parent container with the write-in element. Set to `false` or omit the attribute to render the write-in element with the fixed height. See [Adaptive write-in height](#adaptive-write-in-height) for details. | `adaptive=true`
+
+## Adaptive write-in height
+
+The `adaptive` attribute affects both the rendering height of the write-in element and the height of the handwriting / drawing capture area.
+
+![Adaptive write-in height](writein-adaptive.png)
 
 ## Combining with vertical_choicebox elements
 

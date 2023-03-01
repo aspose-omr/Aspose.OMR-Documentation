@@ -19,7 +19,7 @@ keywords:
 
 ## Welcome to Aspose.OMR for .NET
 
-![Aspose.OMR for .NET](https://releases.aspose.com/images/aspose/aspose_omr-for-net.svg)
+![Aspose.OMR for .NET](aspose-omr-net.png)
 
 **Aspose.OMR for .NET** is an easy-to-use, versatile, and cost-effective API for [designing](/omr/net/design-form/), [rendering](/omr/net/generate-template/) and [recognizing](/omr/net/recognition/) hand-filled answer sheets, surveys, applications, and similar forms. With it, you can quickly develop on-premise and web-based .NET software for [optical mark recognition (OMR)](/omr/net/omr-technology/) that work without dedicated scanners, transoptic paper or special ink. Respondents can fill out your forms with a pen or pencil and use any type of marks - artificial intelligence and advanced accuracy calibration ensure reliable results.
 
