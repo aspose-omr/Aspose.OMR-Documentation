@@ -6,17 +6,17 @@ type: docs
 url: /net/aspose-omr-for-net-23-3-0-release-notes/
 feedback: OMRNET
 title: Aspose.OMR for .NET 23.3.0 - Release Notes
-description: A summary of recent changes, enhancements and bug fixes in Aspose.OMR for .NET 23.3.0 (February 2023) release.
+description: A summary of recent changes, enhancements and bug fixes in Aspose.OMR for .NET 23.3.0 (March 2023) release.
 keywords:
 - 2023
-- February
+- March
 - new
 - release
 - changelog
 ---
 
 {{% alert color="primary" %}} 
-This article contains a summary of recent changes, enhancements and bug fixes in [**Aspose.OMR for .NET 23.3.0 (February 2023)**](https://www.nuget.org/packages/Aspose.OMR/23.3.0) release.
+This article contains a summary of recent changes, enhancements and bug fixes in [**Aspose.OMR for .NET 23.3.0 (March 2023)**](https://www.nuget.org/packages/Aspose.OMR/23.3.0) release.
 {{% /alert %}} 
 
 ## What was changed
