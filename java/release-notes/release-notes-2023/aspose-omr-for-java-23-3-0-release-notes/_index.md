@@ -1,18 +1,18 @@
 ---
-weight: 1
+weight: 101
 date: "2023-03-15"
 author: "Vladimir Lapin"
 type: docs
-url: /java/release-notes/latest/
-title: Latest release (March 2023)
-description: A summary of recent changes, enhancements and bug fixes in Aspose.OMR for Java 23.3.0 (March 2022) release.
+url: /java/aspose-omr-for-java-23-3-0-release-notes/
+title: Aspose.OMR for Java 23.3.0 - Release Notes
+description: A summary of recent changes, enhancements and bug fixes in Aspose.OMR for Java 23.3.0 (March 2023) release.
 keywords:
-- latest
+- 2023
+- March
 - new
 - release
 - changelog
 ---
-
 
 {{% alert color="primary" %}} 
 This article contains a summary of recent changes, enhancements and bug fixes in [**Aspose.OMR for Java 23.3.0 (March 2023)**](https://releases.aspose.com/java/repo/com/aspose/aspose-omr/23.3.0/) release.
