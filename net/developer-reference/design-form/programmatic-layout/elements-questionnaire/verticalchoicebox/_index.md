@@ -1,6 +1,6 @@
 ---
 weight: 30
-date: "2023-01-24"
+date: "2023-03-27"
 author: "Vladimir Lapin"
 type: docs
 url: /net/programmatic-forms/verticalchoiceboxconfig/
@@ -98,10 +98,12 @@ These properties can override the settings of the entire **VerticalChoiceBoxConf
 
 Name | Type | Default value | Description
 ---- | ---- | ------------- | -----------
-**Name** | `string` | Used for identifying the marked answer in recognition results.
-**BubblePosition** | `string` | Override the bubble position relative to the answer text:<ul><li>`"left"`</li><li>`"right"`</li></ul>
-**BubbleType** | `string` | Override the bubble design:<ul><li>`"round"` - oval;</li><li>`"square"` - box.</li></ul>
+**Name** | `string` | _n/a_ | Used for identifying the marked answer in recognition results.
+**BubblePosition** | `string` | _auto_ | Override the bubble position relative to the answer text:<ul><li>`"left"`</li><li>`"right"`</li></ul> By default, the button position depends on the selected writing system (LTR or RTL).
+**BubbleType** | `string` | `"round"` | Override the bubble design:<ul><li>`"round"` - oval;</li><li>`"square"` - box.</li></ul>
 **Selectable** | `bool` | true | Whether to display the bubble for the answer.<br />**Setting this attribute to `false` removes the bubble in the generated form. This results in the answer cannot be chosen by the respondents.**
+**BubbleOffsetX** | `int` | _auto_ | Bubble offset relative to the left (for LTR layouts) or right (for RTL layouts) of the **answer** element.<br />By default, the bubble is positioned to the left (for LTR layouts) or to the right (for RTL layouts) of the **answer** element.
+**BubbleOffsetY** | `int` | _auto_ | Bubble offset, relative to the top of the **answer** element.<br />By default, the bubble is centered along the cross-axis of the first line of the **answer** element.
 
 ## Combining with WriteInConfig elements
 

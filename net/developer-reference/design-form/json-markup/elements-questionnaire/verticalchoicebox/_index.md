@@ -1,6 +1,6 @@
 ---
 weight: 30
-date: "2023-01-24"
+date: "2023-03-27"
 author: "Vladimir Lapin"
 type: docs
 url: /net/json-markup/verticalchoicebox/
@@ -92,6 +92,8 @@ Name | Type | Default value | Description
 **selectable** | Boolean | true | Whether to display the bubble for the answer.<br />**Setting this attribute to `false` removes the bubble in the generated form. This results in the answer cannot be chosen by the respondents.**
 **bubble_position** | string | left | Override the bubble position relative to the answer text:<ul><li>`"left"`</li><li>`"right"`</li></ul>
 **bubble_type** | string | "round" | Override the bubble design:<ul><li>`"round"` - oval;</li><li>`"square"` - box.</li></ul>
+**bubble_offset_x** | string | _auto_ | Bubble offset relative to the left (for LTR layouts) or right (for RTL layouts) of the **answer** element.<br />By default, the bubble is positioned to the left (for LTR layouts) or to the right (for RTL layouts) of the **answer** element.
+**bubble_offset_y** | string | _auto_ | Bubble offset, relative to the top of the **answer** element.<br />By default, the bubble is centered along the cross-axis of the first line of the **answer** element.
 
 ## Combining with WriteIn elements
 

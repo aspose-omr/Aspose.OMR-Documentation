@@ -1,6 +1,6 @@
 ---
 weight: 10
-date: "2022-11-23"
+date: "2023-03-24"
 author: "Vladimir Lapin"
 type: docs
 url: /net/system-requirements/
@@ -51,28 +51,11 @@ You can use Aspose.OMR for .NET with any development environment targeting the .
 
 Aspose.OMR for .NET supports the following .NET Frameworks:
 
+- .NET 7.0
 - .NET 6.0
 - .NET 5.0
 - .NET Standard 2.0
-
-    - .NET Core 3.1
-    - .NET Core 3.0
-    - .NET Core 2.2
-    - .NET Core 2.1
-    - .NET Core 2.0
-
-- .NET Framework
-
-    - .NET Framework 4.8
-    - .NET Framework 4.7.2
-    - .NET Framework 4.7
-    - .NET Framework 4.6.2
-    - .NET Framework 4.6.0
-    - .NET Framework 4.5.2
-    - .NET Framework 4.5.1
-    - .NET Framework 4.5.0
-    - .NET Framework 4.0
-    - .NET Framework 4.0 Client Profile
+- .NET Framework 4.x
 
 {{% alert color="primary" %}} 
 

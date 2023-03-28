@@ -1,6 +1,6 @@
 ---
 weight: 30
-date: "2023-01-24"
+date: "2023-03-27"
 author: "Vladimir Lapin"
 type: docs
 url: /net/txt-markup/vertical_choicebox/
@@ -75,6 +75,8 @@ Attribute | Default value | Description | Usage example
 **selectable** | true | Whether to display the bubble for the answer.<br />**Setting this attribute to `false` removes the bubble in the generated form. This results in the answer cannot be chosen by the respondents.** | `selectable=false`
 **bubble_type** | round | Override the bubble design for the answer:<ul><li>`round` - circle</li><li>`square` - box</li></ul> | `bubble_type=square`
 **bubble_position** | left | Override the bubble position relative to the answer text:<ul><li>`"left"`</li><li>`"right"`</li></ul> | `bubble_position=right`
+**bubble_offset_x** | auto | Bubble offset relative to the left (for LTR layouts) or right (for RTL layouts) of the **answer** element.<br />By default, the bubble is positioned to the left (for LTR layouts) or to the right (for RTL layouts) of the **answer** element. | `bubble_offset_x=30`
+**bubble_offset_y** | auto | Bubble offset, relative to the top of the **answer** element.<br />By default, the bubble is centered along the cross-axis of the first line of the **answer** element. | `bubble_offset_y=70`
 
 ## Combining with write_in elements
 
