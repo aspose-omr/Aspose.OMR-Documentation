@@ -1,6 +1,6 @@
 ---
 weight: 10
-date: "2023-02-20"
+date: "2023-04-20"
 author: "Vladimir Lapin"
 type: docs
 url: /net/generate-template/page-setup/
@@ -42,6 +42,7 @@ Setting | Type | Default value | Description
 [`RotationPointPosition`](https://reference.aspose.com/omr/net/aspose.omr.generation/globalpagesettings/rotationpointposition/) | `Aspose.OMR.Generation.RotationPointPosition` | Below the top-right square positioning marker | The placement of the rectangular [positioning marker](/omr/net/omr-form-structure/) that is used to detect the page orientation.<br />See details [below](#positioning-marker-placement).
 [`WritingSystem`](https://reference.aspose.com/omr/net/aspose.omr.generation/globalpagesettings/writingsystem/) | `Aspose.OMR.Generation.WritingSystems.WritingSystem` | Left-to-right (LTR), Western numbering | [Localization](#form-localization), which affects text direction (LTR or RTL) and item numbering of generated OMR forms.
 `ImagesPaths` | `string[]` | _n/a_ | Full path to each image mentioned in the [source code](/omr/net/design-form/).<br />Read more info in this [article](/omr/net/generate-template/images/).
+`LongWordHandling` | `Aspose.OMR.Generation.LongWordHandling` | Draw word over element's bounds | How to render very long words that do not fit the parent element's width and cannot be wrapped.<ul><li>`DrawOver` (default) - draw long words until a space or end of line is encountered, even outside the bounds of an element.</li><li>`ThrowException` - throw an exception when rendering the form if the long word does not fit the width of the parent element. The form will not be generated.</li></ul>
 
 ## Positioning marker placement
 
