@@ -1,28 +1,29 @@
 ---
-weight: 1
-date: "2023-05-11"
+weight: 90
+date: "2023-04-28"
 author: "Vladimir Lapin"
 type: docs
-url: /net/release-notes/latest/
+url: /net/aspose-omr-for-net-23-4-1-release-notes/
 feedback: OMRNET
-title: Latest release (May 2023)
-description: A summary of recent changes, enhancements and bug fixes in Aspose.OMR for .NET 23.5.0 (May 2023) release.
+title: Aspose.OMR for .NET 23.4.1 - Release Notes
+description: A summary of recent changes, enhancements and bug fixes in Aspose.OMR for .NET 23.4.1 (April 2023) release.
 keywords:
-- latest
+- 2023
+- April
 - new
 - release
 - changelog
 ---
 
 {{% alert color="primary" %}} 
-This article contains a summary of recent changes, enhancements and bug fixes in [**Aspose.OMR for .NET 23.5.0 (May 2023)**](https://www.nuget.org/packages/Aspose.OMR/23.5.0) release.
+This article contains a summary of recent changes, enhancements and bug fixes in [**Aspose.OMR for .NET 23.4.1 (April 2023)**](https://www.nuget.org/packages/Aspose.OMR/23.4.1) release.
 {{% /alert %}} 
 
 ## What was changed
 
 Key | Summary | Category
 --- | ------- | --------
-OMRNET-815 | Fixed _TypeLoadException_ exception when [generating a form ](/omr/net/generate-template/) under .NET 5 and .NET 6. | Fix
+n/a | Fixed _TypeLoadException_ exception when [generating a form ](/omr/net/generate-template/) under .NET 5 and .NET 6. | Fix
 
 ## Known issues and limitations
 
@@ -30,10 +31,11 @@ Key | Summary | Workaround
 --- | ------- | ----------
 OMRNET&#8209;462 | Recognition of multi-page PDF and TIFF files causes an error. | Scan each page of the filled form into a separate file and recognize them one-by-one.
 OMRNET&#8209;555 | [`Recalculate`](https://reference.aspose.com/omr/net/aspose.omr.api/templateprocessor/recalculate/) method results in incorrect processing of **ScoreGroup** elements ([text markup](/omr/net/txt-markup/score_group/) / [JSON markup](/omr/net/json-markup/scoregroup/)) and **CustomAnswerSheet** elements ([text markup](/omr/net/txt-markup/custom_answer_sheet/) / [JSON markup](/omr/net/json-markup/customanswersheet/)). | Use [`RecognizeImage`](https://reference.aspose.com/omr/net/aspose.omr.api/templateprocessor/recognizeimage/) method with different threshold setting instead of [run-time adjustments of recognition accuracy](/omr/net/recognition/accuracy-threshold/#adjusting-recognition-accuracy-at-run-time).
+n/a | [Generating a form ](/omr/net/generate-template/) from a JSON source under .NET 5 and .NET 6 may occasionally fail with _TypeLoadException_ exception. | If you encounter that error, use .NET Standard 2.0 or .NET Framework 4.x.
 
 ## Public API changes and backwards compatibility
 
-This section lists all public API changes introduced in **Aspose.OMR for .NET 23.5.0** that may affect the code of existing applications.
+This section lists all public API changes introduced in **Aspose.OMR for .NET 23.4.1** that may affect the code of existing applications.
 
 ### Added public APIs:
 
