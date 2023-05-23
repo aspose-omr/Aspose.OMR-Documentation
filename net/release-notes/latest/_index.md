@@ -1,6 +1,6 @@
 ---
 weight: 1
-date: "2023-05-11"
+date: "2023-05-23"
 author: "Vladimir Lapin"
 type: docs
 url: /net/release-notes/latest/
@@ -23,6 +23,7 @@ This article contains a summary of recent changes, enhancements and bug fixes in
 Key | Summary | Category
 --- | ------- | --------
 OMRNET-815 | Fixed _TypeLoadException_ exception when [generating a form ](/omr/net/generate-template/) under .NET 5 and .NET 6. | Fix
+n/a | Fixed "_Attempted to read\write protected memory_" exception that sometimes occurred when recognizing OMR forms with a barcode. | Fix
 
 ## Known issues and limitations
 
