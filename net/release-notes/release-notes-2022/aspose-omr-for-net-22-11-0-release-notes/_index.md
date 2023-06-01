@@ -23,15 +23,15 @@ This article contains a summary of recent changes, enhancements and bug fixes in
 
 Key | Summary | Category
 --- | ------- | --------
-OMRNET-684 | New text markup syntax for [questions](/omr/net/txt-markup/question/). | Enhancement
+OMRNET-684 | New text markup syntax for [questions](/omr/txt-markup/question/). | Enhancement
 
 ## Known issues and limitations
 
 Key | Summary | Workaround
 --- | ------- | ----------
 OMRNET-462 | Recognition of multi-page PDF and TIFF files causes an error. | Scan each page of the filled form into a separate file and recognize them one-by-one.
-OMRNET-555 | [`Recalculate`](https://reference.aspose.com/omr/net/aspose.omr.api/templateprocessor/recalculate/) method results in incorrect processing of **ScoreGroup** elements ([text markup](/omr/net/txt-markup/score_group/) / [JSON markup](/omr/net/json-markup/scoregroup/)) and **CustomAnswerSheet** elements ([text markup](/omr/net/txt-markup/custom_answer_sheet/) / [JSON markup](/omr/net/json-markup/customanswersheet/)). | Use [`RecognizeImage`](https://reference.aspose.com/omr/net/aspose.omr.api/templateprocessor/recognizeimage/) method with different threshold setting instead of [run-time adjustments of recognition accuracy](/omr/net/recognition/accuracy-threshold/#adjusting-recognition-accuracy-at-run-time).
-OMRNET-685 | Texts in **ChoiceBox** elements ([text markup](/omr/net/txt-markup/question/) / [JSON markup](/omr/net/json-markup/choicebox/)) are not automatically wrapped to fit the parent. | Set line breaks manually to match the width of the parent element / page.
+OMRNET-555 | [`Recalculate`](https://reference.aspose.com/omr/net/aspose.omr.api/templateprocessor/recalculate/) method results in incorrect processing of **ScoreGroup** elements ([text markup](/omr/txt-markup/score_group/) / [JSON markup](/omr/json-markup/scoregroup/)) and **CustomAnswerSheet** elements ([text markup](/omr/txt-markup/custom_answer_sheet/) / [JSON markup](/omr/json-markup/customanswersheet/)). | Use [`RecognizeImage`](https://reference.aspose.com/omr/net/aspose.omr.api/templateprocessor/recognizeimage/) method with different threshold setting instead of [run-time adjustments of recognition accuracy](/omr/net/recognition/accuracy-threshold/#adjusting-recognition-accuracy-at-run-time).
+OMRNET-685 | Texts in **ChoiceBox** elements ([text markup](/omr/txt-markup/question/) / [JSON markup](/omr/json-markup/choicebox/)) are not automatically wrapped to fit the parent. | Set line breaks manually to match the width of the parent element / page.
 
 ## Public API changes and backwards compatibility
 
@@ -43,7 +43,7 @@ The following public APIs have been added in this release:
 
 #### New text markup syntax for questions
 
-New syntax for [question](/omr/net/txt-markup/question/) elements has been added to the text markup. It standardizes code readability, allows questions to be included in blocks (for example, into a multi-column layout), and enables customization of text style. The original question markup syntax will continue to work as before.
+New syntax for [question](/omr/txt-markup/question/) elements has been added to the text markup. It standardizes code readability, allows questions to be included in blocks (for example, into a multi-column layout), and enables customization of text style. The original question markup syntax will continue to work as before.
 
 See _Usage examples_ for details.
 

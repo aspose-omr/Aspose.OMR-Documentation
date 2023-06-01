@@ -24,8 +24,8 @@ Aspose.OMR for .NET supports a specialized markup language for designing OMR for
 
 Format     | Details
 ---------- | -------
-[**JSON**](/omr/net/json-markup/) | A popular [open standard](https://www.json.org/) file format for describing nested data structures.
-[**text**](/omr/net/txt-markup/) | Lightweight text markup specifically tailored for Aspose.OMR forms.
+[**JSON**](/omr/json-markup/) | A popular [open standard](https://www.json.org/) file format for describing nested data structures.
+[**text**](/omr/txt-markup/) | Lightweight text markup specifically tailored for Aspose.OMR forms.
 [**Object**](/omr/net/programmatic-layout/) | Describe the OMR form directly in the application code.
 
 ## Printable forms

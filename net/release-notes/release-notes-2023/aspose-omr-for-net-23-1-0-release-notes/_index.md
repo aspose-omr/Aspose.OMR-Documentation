@@ -24,14 +24,14 @@ This article contains a summary of recent changes, enhancements and bug fixes in
 
 Key | Summary | Category
 --- | ------- | --------
-OMRNET-712 | Added the ability to hide answer bubbles in **VerticalChoiceBox** element ([text markup](/omr/net/txt-markup/vertical_choicebox/) / [JSON markup](/omr/net/json-markup/verticalchoicebox/)) | Enhancement
+OMRNET-712 | Added the ability to hide answer bubbles in **VerticalChoiceBox** element ([text markup](/omr/txt-markup/vertical_choicebox/) / [JSON markup](/omr/json-markup/verticalchoicebox/)) | Enhancement
 
 ## Known issues and limitations
 
 Key | Summary | Workaround
 --- | ------- | ----------
 OMRNET-462 | Recognition of multi-page PDF and TIFF files causes an error. | Scan each page of the filled form into a separate file and recognize them one-by-one.
-OMRNET-555 | [`Recalculate`](https://reference.aspose.com/omr/net/aspose.omr.api/templateprocessor/recalculate/) method results in incorrect processing of **ScoreGroup** elements ([text markup](/omr/net/txt-markup/score_group/) / [JSON markup](/omr/net/json-markup/scoregroup/)) and **CustomAnswerSheet** elements ([text markup](/omr/net/txt-markup/custom_answer_sheet/) / [JSON markup](/omr/net/json-markup/customanswersheet/)). | Use [`RecognizeImage`](https://reference.aspose.com/omr/net/aspose.omr.api/templateprocessor/recognizeimage/) method with different threshold setting instead of [run-time adjustments of recognition accuracy](/omr/net/recognition/accuracy-threshold/#adjusting-recognition-accuracy-at-run-time).
+OMRNET-555 | [`Recalculate`](https://reference.aspose.com/omr/net/aspose.omr.api/templateprocessor/recalculate/) method results in incorrect processing of **ScoreGroup** elements ([text markup](/omr/txt-markup/score_group/) / [JSON markup](/omr/json-markup/scoregroup/)) and **CustomAnswerSheet** elements ([text markup](/omr/txt-markup/custom_answer_sheet/) / [JSON markup](/omr/json-markup/customanswersheet/)). | Use [`RecognizeImage`](https://reference.aspose.com/omr/net/aspose.omr.api/templateprocessor/recognizeimage/) method with different threshold setting instead of [run-time adjustments of recognition accuracy](/omr/net/recognition/accuracy-threshold/#adjusting-recognition-accuracy-at-run-time).
 
 ## Public API changes and backwards compatibility
 
@@ -53,12 +53,12 @@ The following public APIs have been updated in Aspose.OMR for .NET 23.1.0:
 This change will not affect existing code, print forms, or recognition results.
 {{% /alert %}} 
 
-A new boolean-type property was added to **Answer** element of **VerticalChoiceBox** element ([text markup](/omr/net/txt-markup/vertical_choicebox/) / [JSON markup](/omr/net/json-markup/verticalchoicebox/)):
+A new boolean-type property was added to **Answer** element of **VerticalChoiceBox** element ([text markup](/omr/txt-markup/vertical_choicebox/) / [JSON markup](/omr/json-markup/verticalchoicebox/)):
 
 Markup | Usage
 ------ | -----
-[Text](/omr/net/txt-markup/) | `selectable=false`
-[JSON](/omr/net/json-markup/) | `"selectable": false`
+[Text](/omr/txt-markup/) | `selectable=false`
+[JSON](/omr/json-markup/) | `"selectable": false`
 [Programmatic](/omr/net/programmatic-forms/) | `Answer1.Selectable = false;`
 
 When this property is set to `false`, a bubble will not be displayed for the corresponding answer. It can be used to add inline instructions to OMR forms without complicated formatting.

@@ -720,9 +720,9 @@ File | Description
 **example.png** | "how to fill" guidelines
 **logo.jpg** | company logo
 **sat.csv** | recognition results based on the filled form available in this package
-**sat.json** | source code in [JSON markup](/omr/net/json-markup/)
+**sat.json** | source code in [JSON markup](/omr/json-markup/)
 **sat.omr** | recognition pattern
 **sat.png** | printable form
-**sat.txt** | source code in [text markup](/omr/net/txt-markup/)
+**sat.txt** | source code in [text markup](/omr/txt-markup/)
 **sat-recognized.png** | filled form
 **settings.json** | [page settings](/omr/net/generate-template/page-setup/)

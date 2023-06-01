@@ -1095,9 +1095,9 @@ File | Description
 **logo.jpg** | company logo
 **settings.json** | [page settings](/omr/net/generate-template/page-setup/)
 **tearline.csv** | recognition results based on the filled form available in this package
-**tearline.json** | source code in [JSON markup](/omr/net/json-markup/)
+**tearline.json** | source code in [JSON markup](/omr/json-markup/)
 **tearline.omr** | recognition pattern
 **tearline.png** | printable form
-**tearline.txt** | source code in [text markup](/omr/net/txt-markup/)
+**tearline.txt** | source code in [text markup](/omr/txt-markup/)
 **tearline-recognized.png** | filled form
 **tear-line-small.png** | horizontal tear line image

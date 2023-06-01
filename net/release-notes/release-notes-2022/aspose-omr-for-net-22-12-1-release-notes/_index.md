@@ -24,14 +24,14 @@ This article contains a summary of recent changes, enhancements and bug fixes in
 Key | Summary | Category
 --- | ------- | --------
 OMRNET-716 | Added the ability to [localize](#asposeomrgenerationwritingsystems) OMR forms to different writing systems. Affects text direction and item numbering. | New feature
-OMRNET-715 | Fixed a layout issue when a footer-type container ([text markup](/omr/net/txt-markup/container/#adding-page-footer) / [JSON markup](/omr/net/json-markup/container/#adding-page-footer)) overlaps another container with [wrap mode](/omr/net/generate-template/page-setup/) active. | Fix
+OMRNET-715 | Fixed a layout issue when a footer-type container ([text markup](/omr/txt-markup/container/#adding-page-footer) / [JSON markup](/omr/json-markup/container/#adding-page-footer)) overlaps another container with [wrap mode](/omr/net/generate-template/page-setup/) active. | Fix
 
 ## Known issues and limitations
 
 Key | Summary | Workaround
 --- | ------- | ----------
 OMRNET-462 | Recognition of multi-page PDF and TIFF files causes an error. | Scan each page of the filled form into a separate file and recognize them one-by-one.
-OMRNET-555 | [`Recalculate`](https://reference.aspose.com/omr/net/aspose.omr.api/templateprocessor/recalculate/) method results in incorrect processing of **ScoreGroup** elements ([text markup](/omr/net/txt-markup/score_group/) / [JSON markup](/omr/net/json-markup/scoregroup/)) and **CustomAnswerSheet** elements ([text markup](/omr/net/txt-markup/custom_answer_sheet/) / [JSON markup](/omr/net/json-markup/customanswersheet/)). | Use [`RecognizeImage`](https://reference.aspose.com/omr/net/aspose.omr.api/templateprocessor/recognizeimage/) method with different threshold setting instead of [run-time adjustments of recognition accuracy](/omr/net/recognition/accuracy-threshold/#adjusting-recognition-accuracy-at-run-time).
+OMRNET-555 | [`Recalculate`](https://reference.aspose.com/omr/net/aspose.omr.api/templateprocessor/recalculate/) method results in incorrect processing of **ScoreGroup** elements ([text markup](/omr/txt-markup/score_group/) / [JSON markup](/omr/json-markup/scoregroup/)) and **CustomAnswerSheet** elements ([text markup](/omr/txt-markup/custom_answer_sheet/) / [JSON markup](/omr/json-markup/customanswersheet/)). | Use [`RecognizeImage`](https://reference.aspose.com/omr/net/aspose.omr.api/templateprocessor/recognizeimage/) method with different threshold setting instead of [run-time adjustments of recognition accuracy](/omr/net/recognition/accuracy-threshold/#adjusting-recognition-accuracy-at-run-time).
 
 ## Public API changes and backwards compatibility
 

@@ -1239,8 +1239,8 @@ File | Description
 **settings.json** | [page settings](/omr/net/generate-template/page-setup/)
 **tear-line.png** | vertical tear line image
 **vertical tear-line.csv** | recognition results based on the filled form available in this package
-**vertical tear-line.json** | source code in [JSON markup](/omr/net/json-markup/)
+**vertical tear-line.json** | source code in [JSON markup](/omr/json-markup/)
 **vertical tear-line.omr** | recognition pattern
-**vertical tear-line.png** | source code in [text markup](/omr/net/txt-markup/)
+**vertical tear-line.png** | source code in [text markup](/omr/txt-markup/)
 **vertical tear-line.txt** | vertical tear line image
 **vertical tear-line-recognized.png** | filled form

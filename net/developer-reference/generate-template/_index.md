@@ -29,7 +29,7 @@ The method depends on the template source markup.
 
 ## Text markup
 
-Aspose.OMR [text markup](/omr/net/txt-markup/) is a lightweight markup language specifically tailored for describing content and layout of Aspose.OMR forms. It is content-focused, with minimal number of tags or formatting instructions.
+Aspose.OMR [text markup](/omr/txt-markup/) is a lightweight markup language specifically tailored for describing content and layout of Aspose.OMR forms. It is content-focused, with minimal number of tags or formatting instructions.
 
 You can pass the template source code to the generator in a number of ways:
 
@@ -51,7 +51,7 @@ globalPageSettings.PaperSize = Aspose.OMR.Generation.PaperSize.Letter;
 Aspose.OMR.Generation.GenerationResult generationResult = omrEngine.GenerateTemplate("source.txt", globalPageSettings);
 ```
 
-If your form contains [images](/omr/net/txt-markup/image/) and you are fine with the default page settings, [pass](https://reference.aspose.com/omr/net/aspose.omr.api.omrengine/generatetemplate/methods/5) the absolute path to each image file in a string array:
+If your form contains [images](/omr/txt-markup/image/) and you are fine with the default page settings, [pass](https://reference.aspose.com/omr/net/aspose.omr.api.omrengine/generatetemplate/methods/5) the absolute path to each image file in a string array:
 
 ```csharp
 string workingDirectory = System.IO.Directory.GetCurrentDirectory();
@@ -179,7 +179,7 @@ using(System.IO.FileStream fs = new System.IO.FileStream("source.txt", System.IO
 
 ## JSON markup
 
-Aspose.OMR [JSON markup](/omr/net/json-markup/) is an easy-to-read, open standard format that supports syntax highlighting, automatic formatting, and code folding in all popular code editors.
+Aspose.OMR [JSON markup](/omr/json-markup/) is an easy-to-read, open standard format that supports syntax highlighting, automatic formatting, and code folding in all popular code editors.
 
 You can pass the template source code to the generator in a number of ways:
 

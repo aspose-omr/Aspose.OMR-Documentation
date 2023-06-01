@@ -64,7 +64,7 @@ The structure and layout of the questionnaire (template source) is defined in a 
 	() Pretty good, thanks! () I won't respond until I see my lawyer.
 ```
 
-In this article, we won't delve into the [full syntax](/omr/net/txt-markup/) of the template. Let's just take a look at its key building blocks:
+In this article, we won't delve into the [full syntax](/omr/txt-markup/) of the template. Let's just take a look at its key building blocks:
 
 - The text after `?text=` keyword is rendered as a simple paragraph. You can optionally format it by adding layout attributes (font, style, and the like) on the lines immediately following the text. Each attribute definition must be preceded by a **tab character**.
 - The question text is provided on a new line starting with a hash (`#`). The hash itself is not rendered.

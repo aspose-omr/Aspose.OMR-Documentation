@@ -2696,10 +2696,10 @@ Tea,"Regular"
 File | Description
 ---- | -----------
 **hospital-breakfast.csv** | recognition results based on the filled form available in this package
-**hospital-breakfast.json** | source code in [JSON markup](/omr/net/json-markup/)
+**hospital-breakfast.json** | source code in [JSON markup](/omr/json-markup/)
 **hospital-breakfast.omr** | recognition pattern
 **hospital-breakfast.png** | printable form
-**hospital-breakfast.txt** | source code in [text markup](/omr/net/txt-markup/)
+**hospital-breakfast.txt** | source code in [text markup](/omr/txt-markup/)
 **hospital-breakfast-recognized.png** | filled form
 **logo.jpg** | company logo
 **settings.json** | [page settings](/omr/net/generate-template/page-setup/)

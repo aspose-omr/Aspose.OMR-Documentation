@@ -1,5 +1,5 @@
 ---
-weight: 30
+weight: 40
 date: "2022-05-30"
 author: "Vladimir Lapin"
 type: docs
@@ -20,7 +20,7 @@ keywords:
 - C#
 ---
 
-Aspose.OMR allows you to describe the layout and content of an OMR form directly in the application code. Although it takes much more coding than generating forms from [text](/omr/net/txt-markup/) or [JSON](/omr/net/programmatic-forms/) sources, this approach works best when you need to design forms with personalized fields such as a respondent's name or a unique QR code.
+Aspose.OMR allows you to describe the layout and content of an OMR form directly in the application code. Although it takes much more coding than generating forms from [text](/omr/txt-markup/) or [JSON](/omr/net/programmatic-forms/) sources, this approach works best when you need to design forms with personalized fields such as a respondent's name or a unique QR code.
 
 ## Form object
 

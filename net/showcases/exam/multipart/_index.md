@@ -553,10 +553,10 @@ File | Description
 ---- | -----------
 **example.png** | "how to fill" guidelines
 **final-exam.csv** | recognition results based on the filled form available in this package
-**final-exam.json** | source code in [JSON markup](/omr/net/json-markup/)
+**final-exam.json** | source code in [JSON markup](/omr/json-markup/)
 **final-exam.omr** | recognition pattern
 **final-exam.png** | printable form
-**final-exam.txt** | source code in [text markup](/omr/net/txt-markup/)
+**final-exam.txt** | source code in [text markup](/omr/txt-markup/)
 **final-exam-recognized.png** | filled form
 **logo.jpg** | company logo
 **settings.json** | [page settings](/omr/net/generate-template/page-setup/)

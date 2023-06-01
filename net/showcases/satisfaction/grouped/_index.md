@@ -1957,10 +1957,10 @@ The vehicle price and/or payments were discussed in a thorough manner,"Fantastic
 File | Description
 ---- | -----------
 **car-dealership.csv** | recognition results based on the filled form available in this package
-**car-dealership.json** | source code in [JSON markup](/omr/net/json-markup/)
+**car-dealership.json** | source code in [JSON markup](/omr/json-markup/)
 **car-dealership.omr** | recognition pattern
 **car-dealership.png** | printable form
-**car-dealership.txt** | source code in [text markup](/omr/net/txt-markup/)
+**car-dealership.txt** | source code in [text markup](/omr/txt-markup/)
 **car-dealership-recognized.png** | filled form
 **logo.jpg** | company logo
 **settings.json** | [page settings](/omr/net/generate-template/page-setup/)

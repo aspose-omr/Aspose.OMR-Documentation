@@ -23,20 +23,20 @@ This article contains a summary of recent changes, enhancements and bug fixes in
 
 Key | Summary | Category
 --- | ------- | --------
-OMRNET&#8209;712 | Added the ability to set the position of a bubble relative to the content of the **answer** element ([text markup](/omr/net/txt-markup/vertical_choicebox/#answers) / [JSON markup](/omr/net/json-markup/verticalchoicebox/#answer-element)). | New feature
-OMRNET&#8209;775 | Empty **blocks** ([text markup](/omr/net/txt-markup/block/) / [JSON markup](/omr/net/json-markup/block/)) are not displayed, including those which have a border. | Enhancement
-OMRNET&#8209;712 | Setting `overflow` property of the page footer ([text markup](/omr/net/txt-markup/container/#adding-page-footer) / [JSON markup](/omr/net/json-markup/container/#adding-page-footer)) to `clip` no longer breaks the form layout. | Fix
-OMRNET&#8209;712 | Setting `overflow` property of the **answer** element ([text markup](/omr/net/txt-markup/vertical_choicebox/#answers) / [JSON markup](/omr/net/json-markup/verticalchoicebox/#answer-element)) to `clip` no longer hides all of its child elements. | Fix
+OMRNET&#8209;712 | Added the ability to set the position of a bubble relative to the content of the **answer** element ([text markup](/omr/txt-markup/vertical_choicebox/#answers) / [JSON markup](/omr/json-markup/verticalchoicebox/#answer-element)). | New feature
+OMRNET&#8209;775 | Empty **blocks** ([text markup](/omr/txt-markup/block/) / [JSON markup](/omr/json-markup/block/)) are not displayed, including those which have a border. | Enhancement
+OMRNET&#8209;712 | Setting `overflow` property of the page footer ([text markup](/omr/txt-markup/container/#adding-page-footer) / [JSON markup](/omr/json-markup/container/#adding-page-footer)) to `clip` no longer breaks the form layout. | Fix
+OMRNET&#8209;712 | Setting `overflow` property of the **answer** element ([text markup](/omr/txt-markup/vertical_choicebox/#answers) / [JSON markup](/omr/json-markup/verticalchoicebox/#answer-element)) to `clip` no longer hides all of its child elements. | Fix
 OMRNET&#8209;759 | Fixed _"Unknown runtime implemented delegate method"_ error when [saving the generated form as PDF](/omr/net/generate-template/save/#save-as-pdf) under .NET 6.0. | Fix
-OMRNET&#8209;767 | If the **block** ([text markup](/omr/net/txt-markup/block/) / [JSON markup](/omr/net/json-markup/block/)) contains an element with absolute positioning (for example, an image), its borders no longer stretch to the absolute position on the page. | Fix
-N/A | Using **text** ([text markup](/omr/net/txt-markup/text/) / [JSON markup](/omr/net/json-markup/text/)) element as the last child of the parent block no longer results in a template read error. | Fix
+OMRNET&#8209;767 | If the **block** ([text markup](/omr/txt-markup/block/) / [JSON markup](/omr/json-markup/block/)) contains an element with absolute positioning (for example, an image), its borders no longer stretch to the absolute position on the page. | Fix
+N/A | Using **text** ([text markup](/omr/txt-markup/text/) / [JSON markup](/omr/json-markup/text/)) element as the last child of the parent block no longer results in a template read error. | Fix
 
 ## Known issues and limitations
 
 Key | Summary | Workaround
 --- | ------- | ----------
 OMRNET&#8209;462 | Recognition of multi-page PDF and TIFF files causes an error. | Scan each page of the filled form into a separate file and recognize them one-by-one.
-OMRNET&#8209;555 | [`Recalculate`](https://reference.aspose.com/omr/net/aspose.omr.api/templateprocessor/recalculate/) method results in incorrect processing of **ScoreGroup** elements ([text markup](/omr/net/txt-markup/score_group/) / [JSON markup](/omr/net/json-markup/scoregroup/)) and **CustomAnswerSheet** elements ([text markup](/omr/net/txt-markup/custom_answer_sheet/) / [JSON markup](/omr/net/json-markup/customanswersheet/)). | Use [`RecognizeImage`](https://reference.aspose.com/omr/net/aspose.omr.api/templateprocessor/recognizeimage/) method with different threshold setting instead of [run-time adjustments of recognition accuracy](/omr/net/recognition/accuracy-threshold/#adjusting-recognition-accuracy-at-run-time).
+OMRNET&#8209;555 | [`Recalculate`](https://reference.aspose.com/omr/net/aspose.omr.api/templateprocessor/recalculate/) method results in incorrect processing of **ScoreGroup** elements ([text markup](/omr/txt-markup/score_group/) / [JSON markup](/omr/json-markup/scoregroup/)) and **CustomAnswerSheet** elements ([text markup](/omr/txt-markup/custom_answer_sheet/) / [JSON markup](/omr/json-markup/customanswersheet/)). | Use [`RecognizeImage`](https://reference.aspose.com/omr/net/aspose.omr.api/templateprocessor/recognizeimage/) method with different threshold setting instead of [run-time adjustments of recognition accuracy](/omr/net/recognition/accuracy-threshold/#adjusting-recognition-accuracy-at-run-time).
 
 ## Public API changes and backwards compatibility
 
@@ -58,7 +58,7 @@ The following public APIs have been updated in Aspose.OMR for .NET 23.3.1:
 This change will not affect existing code, print forms, or recognition results.
 {{% /alert %}} 
 
-It is now possible to manually position a bubble relative to the content of the **answer** element ([text markup](/omr/net/txt-markup/vertical_choicebox/#answers) / [JSON markup](/omr/net/json-markup/verticalchoicebox/#answer-element)) using the following attributes:
+It is now possible to manually position a bubble relative to the content of the **answer** element ([text markup](/omr/txt-markup/vertical_choicebox/#answers) / [JSON markup](/omr/json-markup/verticalchoicebox/#answer-element)) using the following attributes:
 
 Attribute (text markup) | Property (JSON markup) | Property (programmatic layout) | Description | Default behavior
 ----------------------- | ---------------------- | ------------------------------ | ----------- | ----------------

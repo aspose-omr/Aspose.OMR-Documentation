@@ -23,18 +23,18 @@ This article contains a summary of recent changes, enhancements and bug fixes in
 
 Key | Summary | Category
 --- | ------- | --------
-OMRNET-712 | Added the ability to override [clipping / wrapping](/omr/net/generate-template/page-setup/#clipping-and-wrapping-elements) of individual block elements ([text markup](/omr/net/txt-markup/block/) / [JSON markup](/omr/net/json-markup/block/)). | New feature
-OMRNET-712 | Configurable height of block elements ([text markup](/omr/net/txt-markup/block/) / [JSON markup](/omr/net/json-markup/block/)). | Enhancement
-OMRNET-712 | Configurable horizontal (left and right) padding of block elements ([text markup](/omr/net/txt-markup/block/) / [JSON markup](/omr/net/json-markup/block/)). | Enhancement
-OMRNET-712 | Configurable vertical (top and bottom) padding of block elements ([text markup](/omr/net/txt-markup/block/) / [JSON markup](/omr/net/json-markup/block/)). | Enhancement
-OMRNET-712 | The write-in element ([text markup](/omr/net/txt-markup/write_in/) / [JSON markup](/omr/net/json-markup/writein/)) can be configured to take up the remaining height of the parent container. | Enhancement
+OMRNET-712 | Added the ability to override [clipping / wrapping](/omr/net/generate-template/page-setup/#clipping-and-wrapping-elements) of individual block elements ([text markup](/omr/txt-markup/block/) / [JSON markup](/omr/json-markup/block/)). | New feature
+OMRNET-712 | Configurable height of block elements ([text markup](/omr/txt-markup/block/) / [JSON markup](/omr/json-markup/block/)). | Enhancement
+OMRNET-712 | Configurable horizontal (left and right) padding of block elements ([text markup](/omr/txt-markup/block/) / [JSON markup](/omr/json-markup/block/)). | Enhancement
+OMRNET-712 | Configurable vertical (top and bottom) padding of block elements ([text markup](/omr/txt-markup/block/) / [JSON markup](/omr/json-markup/block/)). | Enhancement
+OMRNET-712 | The write-in element ([text markup](/omr/txt-markup/write_in/) / [JSON markup](/omr/json-markup/writein/)) can be configured to take up the remaining height of the parent container. | Enhancement
 
 ## Known issues and limitations
 
 Key | Summary | Workaround
 --- | ------- | ----------
 OMRNET-462 | Recognition of multi-page PDF and TIFF files causes an error. | Scan each page of the filled form into a separate file and recognize them one-by-one.
-OMRNET-555 | [`Recalculate`](https://reference.aspose.com/omr/net/aspose.omr.api/templateprocessor/recalculate/) method results in incorrect processing of **ScoreGroup** elements ([text markup](/omr/net/txt-markup/score_group/) / [JSON markup](/omr/net/json-markup/scoregroup/)) and **CustomAnswerSheet** elements ([text markup](/omr/net/txt-markup/custom_answer_sheet/) / [JSON markup](/omr/net/json-markup/customanswersheet/)). | Use [`RecognizeImage`](https://reference.aspose.com/omr/net/aspose.omr.api/templateprocessor/recognizeimage/) method with different threshold setting instead of [run-time adjustments of recognition accuracy](/omr/net/recognition/accuracy-threshold/#adjusting-recognition-accuracy-at-run-time).
+OMRNET-555 | [`Recalculate`](https://reference.aspose.com/omr/net/aspose.omr.api/templateprocessor/recalculate/) method results in incorrect processing of **ScoreGroup** elements ([text markup](/omr/txt-markup/score_group/) / [JSON markup](/omr/json-markup/scoregroup/)) and **CustomAnswerSheet** elements ([text markup](/omr/txt-markup/custom_answer_sheet/) / [JSON markup](/omr/json-markup/customanswersheet/)). | Use [`RecognizeImage`](https://reference.aspose.com/omr/net/aspose.omr.api/templateprocessor/recognizeimage/) method with different threshold setting instead of [run-time adjustments of recognition accuracy](/omr/net/recognition/accuracy-threshold/#adjusting-recognition-accuracy-at-run-time).
 n/a | If the block contains an element with absolute positioning (for example, an image), the block will be moved along with this element to an absolute position on the page. | Do not nest absolutely positioned elements. They should always be top-level elements in the form hierarchy.
 
 ## Public API changes and backwards compatibility
@@ -57,7 +57,7 @@ The following public APIs have been updated in Aspose.OMR for .NET 23.3.0:
 This change will not affect existing code, print forms, or recognition results.
 {{% /alert %}} 
 
-Block element ([text markup](/omr/net/txt-markup/block/) / [JSON markup](/omr/net/json-markup/block/)) has been extended with the following new properties:
+Block element ([text markup](/omr/txt-markup/block/) / [JSON markup](/omr/json-markup/block/)) has been extended with the following new properties:
 
 Property | Type | Default behavior | Description
 -------- | ---- | ---------------- | ------------
@@ -76,7 +76,7 @@ Property | Type | Default behavior | Description
 This change will not affect existing code, print forms, or recognition results.
 {{% /alert %}} 
 
-The boolean `adaptive` property has been added to write-in element ([text markup](/omr/net/txt-markup/write_in/) / [JSON markup](/omr/net/json-markup/writein/)). Possible values:
+The boolean `adaptive` property has been added to write-in element ([text markup](/omr/txt-markup/write_in/) / [JSON markup](/omr/json-markup/writein/)). Possible values:
 
 - `false` (default) - the write-in element has a fixed height, as in previous releases.
 - `true` - the write-in element takes up the remaining height of the parent container.

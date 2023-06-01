@@ -23,7 +23,7 @@ This article contains a summary of recent changes, enhancements and bug fixes in
 
 Key | Summary | Category
 --- | ------- | --------
-OMRNET-687 | Extended formatting capabilities of **ChoiceBox** element ([text markup](/omr/net/txt-markup/question/) / [JSON markup](/omr/net/json-markup/choicebox/)).<br />See [Public API changes and backwards compatibility](#choicebox-element) for details. | Enhancement
+OMRNET-687 | Extended formatting capabilities of **ChoiceBox** element ([text markup](/omr/txt-markup/question/) / [JSON markup](/omr/json-markup/choicebox/)).<br />See [Public API changes and backwards compatibility](#choicebox-element) for details. | Enhancement
 OMRNET-614 | Fixed _"'RotationPointPosition' is inaccessible due to its protection level"_ error occurred when setting [`RotationPointPosition`](/omr/net/generate-template/page-setup/) attribute of page settings. | Fix
 
 ## Known issues and limitations
@@ -31,7 +31,7 @@ OMRNET-614 | Fixed _"'RotationPointPosition' is inaccessible due to its protecti
 Key | Summary | Workaround
 --- | ------- | ----------
 OMRNET-462 | Recognition of multi-page PDF and TIFF files causes an error. | Scan each page of the filled form into a separate file and recognize them one-by-one.
-OMRNET-555 | [`Recalculate`](https://reference.aspose.com/omr/net/aspose.omr.api/templateprocessor/recalculate/) method results in incorrect processing of **ScoreGroup** elements ([text markup](/omr/net/txt-markup/score_group/) / [JSON markup](/omr/net/json-markup/scoregroup/)) and **CustomAnswerSheet** elements ([text markup](/omr/net/txt-markup/custom_answer_sheet/) / [JSON markup](/omr/net/json-markup/customanswersheet/)). | Use [`RecognizeImage`](https://reference.aspose.com/omr/net/aspose.omr.api/templateprocessor/recognizeimage/) method with different threshold setting instead of [run-time adjustments of recognition accuracy](/omr/net/recognition/accuracy-threshold/#adjusting-recognition-accuracy-at-run-time).
+OMRNET-555 | [`Recalculate`](https://reference.aspose.com/omr/net/aspose.omr.api/templateprocessor/recalculate/) method results in incorrect processing of **ScoreGroup** elements ([text markup](/omr/txt-markup/score_group/) / [JSON markup](/omr/json-markup/scoregroup/)) and **CustomAnswerSheet** elements ([text markup](/omr/txt-markup/custom_answer_sheet/) / [JSON markup](/omr/json-markup/customanswersheet/)). | Use [`RecognizeImage`](https://reference.aspose.com/omr/net/aspose.omr.api/templateprocessor/recognizeimage/) method with different threshold setting instead of [run-time adjustments of recognition accuracy](/omr/net/recognition/accuracy-threshold/#adjusting-recognition-accuracy-at-run-time).
 
 ## Public API changes and backwards compatibility
 
@@ -53,10 +53,10 @@ The following public APIs have been updated in this release:
 This change will not affect existing code, print forms, or recognition results.
 {{% /alert %}}
 
-The **ChoiceBox** element ([text markup](/omr/net/txt-markup/question/) / [JSON markup](/omr/net/json-markup/choicebox/)) has been significantly enhanced:
+The **ChoiceBox** element ([text markup](/omr/txt-markup/question/) / [JSON markup](/omr/json-markup/choicebox/)) has been significantly enhanced:
 
 - Added automatic wrapping of long texts.
-- **ChoiceBox** element written in [simplified syntax](/omr/net/txt-markup/choicebox/#simplified-syntax) can be nested inside [**blocks**](/omr/net/txt-markup/block/) and [**paragraphs**](/omr/net/txt-markup/paragraph/).
+- **ChoiceBox** element written in [simplified syntax](/omr/txt-markup/choicebox/#simplified-syntax) can be nested inside [**blocks**](/omr/txt-markup/block/) and [**paragraphs**](/omr/txt-markup/paragraph/).
 - ChoiceBox answers can be written in form of `?option=` elements.
 - Each answer can be individually customized.
 

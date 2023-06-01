@@ -27,7 +27,7 @@ Aspose.OMR for .NET is a software OMR solution that works without special hardwa
 
 ## Design
 
-Describe the content and layout of the form using [**text**](/omr/net/txt-markup/) or [**JSON**](/omr/net/json-markup/) notations, or directly in the [**application code**](/omr/net/programmatic-layout/).
+Describe the content and layout of the form using [**text**](/omr/txt-markup/) or [**JSON**](/omr/json-markup/) notations, or directly in the [**application code**](/omr/net/programmatic-layout/).
 
 ## Generate
 

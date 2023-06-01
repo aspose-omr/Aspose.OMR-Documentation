@@ -23,9 +23,9 @@ This article contains a summary of recent changes, enhancements and bug fixes in
 
 Key | Summary | Category
 --- | ------- | --------
-OMRNET-670 | Added the ability to set the fill color of block elements ([text markup](/omr/net/txt-markup/block/) / [JSON markup](/omr/net/json-markup/block/)) | New feature
+OMRNET-670 | Added the ability to set the fill color of block elements ([text markup](/omr/txt-markup/block/) / [JSON markup](/omr/json-markup/block/)) | New feature
 OMRNET-673 | Extended the [list](/omr/net/supported-colors/) of supported background and font colors. | Enhancement
-OMRNET-673 | Added the ability to show or hide the title of `CompositeGrid` elements ([text markup](/omr/net/txt-markup/composite_grid/) / [JSON markup](/omr/net/json-markup/compositegrid/)) | New feature
+OMRNET-673 | Added the ability to show or hide the title of `CompositeGrid` elements ([text markup](/omr/txt-markup/composite_grid/) / [JSON markup](/omr/json-markup/compositegrid/)) | New feature
 n/a | Fixed an issue with incorrect calculation of the size of the `CustomRow` element of the `CustomAnswerSheet` element. | Fix
 n/a | Fixed an issue with image wrapping in the first child element when column wrapping is enabled. | Fix
 n/a | Fixed an issue with finding the next column when column wrapping is enabled. | Fix
@@ -37,7 +37,7 @@ n/a | Renamed `Aspose.OMR.Generation.WrappingPolicy.Collumn` to `Aspose.OMR.Gene
 Key | Summary | Workaround
 --- | ------- | ----------
 OMRNET-462 | Recognition of multi-page PDF and TIFF files causes an error. | Scan each page of the filled form into a separate file and recognize them one-by-one.
-OMRNET-555 | [`Recalculate`](https://reference.aspose.com/omr/net/aspose.omr.api/templateprocessor/recalculate/) method results in incorrect processing of **ScoreGroup** elements ([text markup](/omr/net/txt-markup/score_group/) / [JSON markup](/omr/net/json-markup/scoregroup/)) and **CustomAnswerSheet** elements ([text markup](/omr/net/txt-markup/custom_answer_sheet/) / [JSON markup](/omr/net/json-markup/customanswersheet/)). | Use [`RecognizeImage`](https://reference.aspose.com/omr/net/aspose.omr.api/templateprocessor/recognizeimage/) method with different threshold setting instead of [run-time adjustments of recognition accuracy](/omr/net/recognition/accuracy-threshold/#adjusting-recognition-accuracy-at-run-time).
+OMRNET-555 | [`Recalculate`](https://reference.aspose.com/omr/net/aspose.omr.api/templateprocessor/recalculate/) method results in incorrect processing of **ScoreGroup** elements ([text markup](/omr/txt-markup/score_group/) / [JSON markup](/omr/json-markup/scoregroup/)) and **CustomAnswerSheet** elements ([text markup](/omr/txt-markup/custom_answer_sheet/) / [JSON markup](/omr/json-markup/customanswersheet/)). | Use [`RecognizeImage`](https://reference.aspose.com/omr/net/aspose.omr.api/templateprocessor/recognizeimage/) method with different threshold setting instead of [run-time adjustments of recognition accuracy](/omr/net/recognition/accuracy-threshold/#adjusting-recognition-accuracy-at-run-time).
 
 ## Public API changes and backwards compatibility
 
@@ -49,7 +49,7 @@ The following public APIs have been added in this release:
 
 #### Background color of block elements
 
-A new `background_color` [attribute](/omr/net/txt-markup/block/#attributes) / [property](/omr/net/json-markup/block/#optional-properties) has been added to `block` elements. It allows to specify the fill (background) color of blocks.
+A new `background_color` [attribute](/omr/txt-markup/block/#attributes) / [property](/omr/json-markup/block/#optional-properties) has been added to `block` elements. It allows to specify the fill (background) color of blocks.
 
 #### New colors
 
@@ -198,7 +198,7 @@ Added support for more than 100 new colors. The full list of supported colors:
 
 #### Show or hide CompositeGrid title
 
-A new boolean `display_hint` [attribute](/omr/net/txt-markup/composite_grid/#attributes) / [property](/omr/net/json-markup/compositegrid/#optional-properties) has been added to `CompositeGrid` elements.
+A new boolean `display_hint` [attribute](/omr/txt-markup/composite_grid/#attributes) / [property](/omr/json-markup/compositegrid/#optional-properties) has been added to `CompositeGrid` elements.
 
 Value | Result
 ----- | ------

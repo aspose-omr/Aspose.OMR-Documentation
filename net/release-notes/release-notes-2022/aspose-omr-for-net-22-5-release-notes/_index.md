@@ -27,7 +27,7 @@ Key | Summary | Category
 OMRNET-494 | `GetTemplateProcessor` method of [`Aspose.OMR.Api.OmrEngine`](https://reference.aspose.com/omr/net/aspose.omr.api/omrengine) class now accepts the recognition pattern as a `System.IO.MemoryStream` object. | New feature
 OMRNET-495 | [Recognition results](https://reference.aspose.com/omr/net/aspose.omr.model/recognitionresult) can now be received as an array of bytes. See [Public API changes and backwards compatibility]({{< ref "#added-public-apis" >}}) for details. | New feature
 OMRNET-495 | [Recognition results](https://reference.aspose.com/omr/net/aspose.omr.model/recognitionresult) can now be received as a `System.IO.MemoryStream` object. See [Public API changes and backwards compatibility]({{< ref "#added-public-apis" >}}) for details. | New feature
-OMRNET-496 | Empty lines after the opening [`?container=` statement](/omr/net/txt-markup/container/) no longer cause the entire **container** element to be skipped during rendering. | Fix
+OMRNET-496 | Empty lines after the opening [`?container=` statement](/omr/txt-markup/container/) no longer cause the entire **container** element to be skipped during rendering. | Fix
 OMRNET-497 | `Save` and `SaveAsPdf` methods of [`Aspose.OMR.Generation.GenerationResult`](https://reference.aspose.com/omr/net/aspose.omr.generation/generationresult) class now provide verbose error details in the thrown exception. | Enhancement
 OMRNET-498 | Added support for rounded element borders. | New feature
 OMRNET-501 | Images used in a form can now be loaded not only from the file system, but also from memory through a special [`Aspose.OMR.Api.ImageCollection`]({{< ref "#asposeomrapiimagecollection" >}}) object - a collection of key-value pairs where the key contains the image file name and the value contains the binary content (`System.IO.MemoryStream`) of the image file. See [Public API changes and backwards compatibility]({{< ref "#public-api-changes-and-backwards-compatibility" >}}) for details. | New feature
@@ -110,7 +110,7 @@ Returns recognition results in XML format as a `System.IO.MemoryStream` object.
 
 Added a new method that accepts the following parameters:
 
-- **jsonString** - source code in [JSON markup](/omr/net/json-markup/) as a string.
+- **jsonString** - source code in [JSON markup](/omr/json-markup/) as a string.
 - **settings** - [Aspose.OMR.Generation.GlobalPageSettings](https://reference.aspose.com/omr/net/aspose.omr.generation/globalpagesettings) object. Optional.
 - **userImages** - form images, as [`Aspose.OMR.Api.ImageCollection`]({{< ref "#asposeomrapiimagecollection" >}}) object. Optional.
 

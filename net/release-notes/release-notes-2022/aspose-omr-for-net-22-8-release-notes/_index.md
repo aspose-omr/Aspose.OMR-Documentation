@@ -27,7 +27,7 @@ Key | Summary | Category
 --- | ------- | --------
 OMRNET-614 | Improved handling of rotated images by adding an extra [positioning marker](/omr/net/omr-form-structure/) to the form. See [Changes in application logic](#additional-positioning-marker) for important details on backward compatibility. | Enhancement
 OMRNET-622 | Additional rectangles on a scanned or photographed OMR form no longer interfere with the [positioning markers](/omr/net/omr-form-structure/). | Enhancement
-OMRNET-614 | `VerticalChoiceBox` ([text markup](/omr/net/txt-markup/vertical_choicebox/) / [JSON markup](/omr/net/json-markup/verticalchoicebox/)) element now supports more than one write-in field. | Enhancement
+OMRNET-614 | `VerticalChoiceBox` ([text markup](/omr/txt-markup/vertical_choicebox/) / [JSON markup](/omr/json-markup/verticalchoicebox/)) element now supports more than one write-in field. | Enhancement
 OMRNET-622| Improved the algorithm for detecting positioning markers. | Enhancement
 n/a | Removed a blank line at the end of recognition results saved as a [comma-separated values (CSV)](/omr/net/recognition/save/#saving-as-csv) file. | Enhancement
 
@@ -36,7 +36,7 @@ n/a | Removed a blank line at the end of recognition results saved as a [comma-s
 Key | Summary | Workaround
 --- | ------- | ----------
 OMRNET-462 | Recognition of multi-page PDF and TIFF files causes an error. | Scan each page of the filled form into a separate file and recognize them one-by-one.
-OMRNET-555 | [`Recalculate`](https://reference.aspose.com/omr/net/aspose.omr.api/templateprocessor/recalculate/) method results in incorrect processing of **ScoreGroup** elements ([text markup](/omr/net/txt-markup/score_group/) / [JSON markup](/omr/net/json-markup/scoregroup/)) and **CustomAnswerSheet** elements ([text markup](/omr/net/txt-markup/custom_answer_sheet/) / [JSON markup](/omr/net/json-markup/customanswersheet/)). | Use [`RecognizeImage`](https://reference.aspose.com/omr/net/aspose.omr.api/templateprocessor/recognizeimage/) method with different threshold setting instead of [run-time adjustments of recognition accuracy](/omr/net/recognition/accuracy-threshold/#adjusting-recognition-accuracy-at-run-time).
+OMRNET-555 | [`Recalculate`](https://reference.aspose.com/omr/net/aspose.omr.api/templateprocessor/recalculate/) method results in incorrect processing of **ScoreGroup** elements ([text markup](/omr/txt-markup/score_group/) / [JSON markup](/omr/json-markup/scoregroup/)) and **CustomAnswerSheet** elements ([text markup](/omr/txt-markup/custom_answer_sheet/) / [JSON markup](/omr/json-markup/customanswersheet/)). | Use [`RecognizeImage`](https://reference.aspose.com/omr/net/aspose.omr.api/templateprocessor/recognizeimage/) method with different threshold setting instead of [run-time adjustments of recognition accuracy](/omr/net/recognition/accuracy-threshold/#adjusting-recognition-accuracy-at-run-time).
 
 ## Public API changes and backwards compatibility
 
@@ -60,7 +60,7 @@ See _Backwards compatibility considerations_ below for more details.
 
 {{% /alert %}}
 
-The OMR API can now process more than one write-in field per `VerticalChoiceBox` ([text markup](/omr/net/txt-markup/vertical_choicebox/) / [JSON markup](/omr/net/json-markup/verticalchoicebox/)) element. The corresponding `WriteIn` ([text markup](/omr/net/txt-markup/write_in/) / [JSON markup](/omr/net/json-markup/writein/)) elements must have unique names.
+The OMR API can now process more than one write-in field per `VerticalChoiceBox` ([text markup](/omr/txt-markup/vertical_choicebox/) / [JSON markup](/omr/json-markup/verticalchoicebox/)) element. The corresponding `WriteIn` ([text markup](/omr/txt-markup/write_in/) / [JSON markup](/omr/json-markup/writein/)) elements must have unique names.
 
 When the bubble corresponding to the write-in field is marked, the name of the `Answer` element is added to the recognition results and the contents of the write-in field are stored in [`Images`](https://reference.aspose.com/omr/net/aspose.omr.model/recognitionresult/properties/images) collection.
 

@@ -526,10 +526,10 @@ Were you able to find a job related to your major?,"Were you able to find a job 
 File | Description
 ---- | -----------
 **alumni.csv** | recognition results based on the filled form available in this package
-**alumni.json** | source code in [JSON markup](/omr/net/json-markup/)
+**alumni.json** | source code in [JSON markup](/omr/json-markup/)
 **alumni.omr** | recognition pattern
 **alumni.png** | printable form
-**alumni.txt** | source code in [text markup](/omr/net/txt-markup/)
+**alumni.txt** | source code in [text markup](/omr/txt-markup/)
 **alumni-recognized.png** | filled form
 **example.png** | "how to fill" guidelines
 **logo.jpg** | company logo

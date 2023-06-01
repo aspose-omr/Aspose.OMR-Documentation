@@ -23,8 +23,8 @@ Below is information and examples on how Aspose.OMR for .NET recognizes differen
 <details>
 <summary>Show / hide details</summary>
 
-- [Text markup](/omr/net/txt-markup/write_in/)
-- [JSON markup](/omr/net/json-markup/writein/)
+- [Text markup](/omr/txt-markup/write_in/)
+- [JSON markup](/omr/json-markup/writein/)
 
 ### Mapping
 
@@ -41,8 +41,8 @@ See [Processing write-in fields](/omr/net/recognition/write-in/) for details.
 <details>
 <summary>Show / hide details</summary>
 
-- [Text markup](/omr/net/txt-markup/elements-barcode/)
-- [JSON markup](/omr/net/json-markup/elements-barcode/)
+- [Text markup](/omr/txt-markup/elements-barcode/)
+- [JSON markup](/omr/json-markup/elements-barcode/)
 
 ### Mapping
 
@@ -65,8 +65,8 @@ QR code,“https://products.aspose.com/omr/net/"
 <details>
 <summary>Show / hide details</summary>
 
-- [Text markup](/omr/net/txt-markup/question/)
-- [JSON markup](/omr/net/json-markup/choicebox/)
+- [Text markup](/omr/txt-markup/question/)
+- [JSON markup](/omr/json-markup/choicebox/)
 
 ### Mapping
 
@@ -89,8 +89,8 @@ Question1,"A,C"
 <details>
 <summary>Show / hide details</summary>
 
-- [Text markup](/omr/net/txt-markup/checkbox/)
-- [JSON markup](/omr/net/json-markup/checkbox/)
+- [Text markup](/omr/txt-markup/checkbox/)
+- [JSON markup](/omr/json-markup/checkbox/)
 
 ### Mapping
 
@@ -113,8 +113,8 @@ Food preference:,"Vegan,Low-carb"
 <details>
 <summary>Show / hide details</summary>
 
-- [Text markup](/omr/net/txt-markup/vertical_choicebox/)
-- [JSON markup](/omr/net/json-markup/verticalchoicebox/)
+- [Text markup](/omr/txt-markup/vertical_choicebox/)
+- [JSON markup](/omr/json-markup/verticalchoicebox/)
 
 ### Mapping
 
@@ -138,8 +138,8 @@ Definition,"1"
 <details>
 <summary>Show / hide details</summary>
 
-- [Text markup](/omr/net/txt-markup/score_group/)
-- [JSON markup](/omr/net/json-markup/scoregroup/)
+- [Text markup](/omr/txt-markup/score_group/)
+- [JSON markup](/omr/json-markup/scoregroup/)
 
 ### Mapping
 
@@ -164,8 +164,8 @@ Satisfaction survey_total,"3"
 <details>
 <summary>Show / hide details</summary>
 
-- [Text markup](/omr/net/txt-markup/table/)
-- [JSON markup](/omr/net/json-markup/table/)
+- [Text markup](/omr/txt-markup/table/)
+- [JSON markup](/omr/json-markup/table/)
 
 ### Mapping
 
@@ -190,8 +190,8 @@ Is Aspose.OMR for .NET easy to use?,"Yes"
 <details>
 <summary>Show / hide details</summary>
 
-- [Text markup](/omr/net/txt-markup/answer_sheet/)
-- [JSON markup](/omr/net/json-markup/answersheet/)
+- [Text markup](/omr/txt-markup/answer_sheet/)
+- [JSON markup](/omr/json-markup/answersheet/)
 
 ### Mapping
 
@@ -228,8 +228,8 @@ Exam15,"A"
 <details>
 <summary>Show / hide details</summary>
 
-- [Text markup](/omr/net/txt-markup/grid/)
-- [JSON markup](/omr/net/json-markup/grid/)
+- [Text markup](/omr/txt-markup/grid/)
+- [JSON markup](/omr/json-markup/grid/)
 
 ### Mapping
 
@@ -252,8 +252,8 @@ Phone number,"1234567"
 <details>
 <summary>Show / hide details</summary>
 
-- [Text markup](/omr/net/txt-markup/custom_answer_sheet/)
-- [JSON markup](/omr/net/json-markup/customanswersheet/)
+- [Text markup](/omr/txt-markup/custom_answer_sheet/)
+- [JSON markup](/omr/json-markup/customanswersheet/)
 
 ### Mapping
 
@@ -290,8 +290,8 @@ Example_15,"C"
 <details>
 <summary>Show / hide details</summary>
 
-- [Text markup](/omr/net/txt-markup/composite_grid/)
-- [JSON markup](/omr/net/json-markup/compositegrid/)
+- [Text markup](/omr/txt-markup/composite_grid/)
+- [JSON markup](/omr/json-markup/compositegrid/)
 
 ### Mapping
 

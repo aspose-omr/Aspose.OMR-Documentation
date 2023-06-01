@@ -24,20 +24,20 @@ This article contains a summary of recent changes, enhancements and bug fixes in
 Key | Summary | Category
 --- | ------- | --------
 OMRNET-614 | Added the ability to set the memory stream or file encoding in the [GenerateTemplate](/omr/net/generate-template/) method. | Enhancement
-OMRNET-614 | Inline paragraphs ([text markup](/omr/net/txt-markup/paragraph/) / [JSON markup](/omr/net/json-markup/paragraph/)): placing all paragraph elements on the same line. | New feature
-OMRNET-614 | Vertical alignment of elements inside inline paragraphs ([text markup](/omr/net/txt-markup/paragraph/) / [JSON markup](/omr/net/json-markup/paragraph/)). | New feature
+OMRNET-614 | Inline paragraphs ([text markup](/omr/txt-markup/paragraph/) / [JSON markup](/omr/json-markup/paragraph/)): placing all paragraph elements on the same line. | New feature
+OMRNET-614 | Vertical alignment of elements inside inline paragraphs ([text markup](/omr/txt-markup/paragraph/) / [JSON markup](/omr/json-markup/paragraph/)). | New feature
 OMRNET-614 | Automatic column wrapping can be enabled in the [page settings](/omr/net/generate-template/page-setup/). | New feature
-OMRNET-614 | Individual adjustment of top, bottom, left, and right border for **CustomAnswerSheet** ([text markup](/omr/net/txt-markup/custom_answer_sheet/) / [JSON markup](/omr/net/json-markup/customanswersheet/)), **Block** ([text markup](/omr/net/txt-markup/block/) / [JSON markup](/omr/net/json-markup/block/)), **InputGroup** ([text markup](/omr/net/txt-markup/input_group/) / [JSON markup](/omr/net/json-markup/inputgroup/)), and **TableTitle** ([text markup](/omr/net/txt-markup/table/#table_title-element) / [JSON markup](/omr/net/json-markup/table/#tabletitle-element)) elements. | New feature
-OMRNET-614 | Switching bubble placement for **Answer** elements ([text markup](/omr/net/txt-markup/vertical_choicebox/#answers) / [JSON markup](/omr/net/json-markup/verticalchoicebox/#answer-element)). | New feature
-OMRNET-614 | Setting text color for **Text** ([text markup](/omr/net/txt-markup/text/) / [JSON markup](/omr/net/json-markup/text/)), **Content** ([text markup](/omr/net/txt-markup/content/) / [JSON markup](/omr/net/json-markup/content/)) and **WriteIn** ([text markup](/omr/net/txt-markup/write_in/) / [JSON markup](/omr/net/json-markup/writein/)) elements. | New feature
-OMRNET-614 | Customizing the underlying label of **WriteIn** elements ([text markup](/omr/net/txt-markup/write_in/) / [JSON markup](/omr/net/json-markup/writein/)). | New feature
+OMRNET-614 | Individual adjustment of top, bottom, left, and right border for **CustomAnswerSheet** ([text markup](/omr/txt-markup/custom_answer_sheet/) / [JSON markup](/omr/json-markup/customanswersheet/)), **Block** ([text markup](/omr/txt-markup/block/) / [JSON markup](/omr/json-markup/block/)), **InputGroup** ([text markup](/omr/txt-markup/input_group/) / [JSON markup](/omr/json-markup/inputgroup/)), and **TableTitle** ([text markup](/omr/txt-markup/table/#table_title-element) / [JSON markup](/omr/json-markup/table/#tabletitle-element)) elements. | New feature
+OMRNET-614 | Switching bubble placement for **Answer** elements ([text markup](/omr/txt-markup/vertical_choicebox/#answers) / [JSON markup](/omr/json-markup/verticalchoicebox/#answer-element)). | New feature
+OMRNET-614 | Setting text color for **Text** ([text markup](/omr/txt-markup/text/) / [JSON markup](/omr/json-markup/text/)), **Content** ([text markup](/omr/txt-markup/content/) / [JSON markup](/omr/json-markup/content/)) and **WriteIn** ([text markup](/omr/txt-markup/write_in/) / [JSON markup](/omr/json-markup/writein/)) elements. | New feature
+OMRNET-614 | Customizing the underlying label of **WriteIn** elements ([text markup](/omr/txt-markup/write_in/) / [JSON markup](/omr/json-markup/writein/)). | New feature
 
 ## Known issues and limitations
 
 Key | Summary | Workaround
 --- | ------- | ----------
 OMRNET-462 | Recognition of multi-page PDF and TIFF files causes an error. | Scan each page of the filled form into a separate file and recognize them one-by-one.
-OMRNET-555 | [`Recalculate`](https://reference.aspose.com/omr/net/aspose.omr.api/templateprocessor/recalculate/) method results in incorrect processing of **ScoreGroup** elements ([text markup](/omr/net/txt-markup/score_group/) / [JSON markup](/omr/net/json-markup/scoregroup/)) and **CustomAnswerSheet** elements ([text markup](/omr/net/txt-markup/custom_answer_sheet/) / [JSON markup](/omr/net/json-markup/customanswersheet/)). | Use [`RecognizeImage`](https://reference.aspose.com/omr/net/aspose.omr.api/templateprocessor/recognizeimage/) method with different threshold setting instead of [run-time adjustments of recognition accuracy](/omr/net/recognition/accuracy-threshold/#adjusting-recognition-accuracy-at-run-time).
+OMRNET-555 | [`Recalculate`](https://reference.aspose.com/omr/net/aspose.omr.api/templateprocessor/recalculate/) method results in incorrect processing of **ScoreGroup** elements ([text markup](/omr/txt-markup/score_group/) / [JSON markup](/omr/json-markup/scoregroup/)) and **CustomAnswerSheet** elements ([text markup](/omr/txt-markup/custom_answer_sheet/) / [JSON markup](/omr/json-markup/customanswersheet/)). | Use [`RecognizeImage`](https://reference.aspose.com/omr/net/aspose.omr.api/templateprocessor/recognizeimage/) method with different threshold setting instead of [run-time adjustments of recognition accuracy](/omr/net/recognition/accuracy-threshold/#adjusting-recognition-accuracy-at-run-time).
 
 ## Public API changes and backwards compatibility
 
@@ -49,7 +49,7 @@ The following public APIs have been added in this release:
 
 #### Vertical alignment of paragraph elements
 
-A new `vertical_align` [attribute](/omr/net/txt-markup/paragraph/#attributes) / [property](/omr/net/json-markup/paragraph/#optional-properties) has been added to paragraphs. It controls how inline elements of different sizes align vertically within the lines of a paragraph:
+A new `vertical_align` [attribute](/omr/txt-markup/paragraph/#attributes) / [property](/omr/json-markup/paragraph/#optional-properties) has been added to paragraphs. It controls how inline elements of different sizes align vertically within the lines of a paragraph:
 
 Value | Alignment
 ----- | ---------
@@ -72,7 +72,7 @@ Value | Alignment
 
 #### Individual adjustment of element borders
 
-New attributes / properties have been added to **CustomAnswerSheet** ([text markup](/omr/net/txt-markup/custom_answer_sheet/) / [JSON markup](/omr/net/json-markup/customanswersheet/)), **Block** ([text markup](/omr/net/txt-markup/block/) / [JSON markup](/omr/net/json-markup/block/)), **InputGroup** ([text markup](/omr/net/txt-markup/input_group/) / [JSON markup](/omr/net/json-markup/inputgroup/)), and **TableTitle** ([text markup](/omr/net/txt-markup/table/#table_title-element) / [JSON markup](/omr/net/json-markup/table/#tabletitle-element)) elements that allow to control the width and color of each element border:
+New attributes / properties have been added to **CustomAnswerSheet** ([text markup](/omr/txt-markup/custom_answer_sheet/) / [JSON markup](/omr/json-markup/customanswersheet/)), **Block** ([text markup](/omr/txt-markup/block/) / [JSON markup](/omr/json-markup/block/)), **InputGroup** ([text markup](/omr/txt-markup/input_group/) / [JSON markup](/omr/json-markup/inputgroup/)), and **TableTitle** ([text markup](/omr/txt-markup/table/#table_title-element) / [JSON markup](/omr/json-markup/table/#tabletitle-element)) elements that allow to control the width and color of each element border:
 
 Property | Border
 -------- | ------
@@ -87,7 +87,7 @@ The value of the property is provided in `<border width> <border color>` format,
 
 #### Bubble placement
 
-The bubble position of an **Answer** element ([text markup](/omr/net/txt-markup/vertical_choicebox/#answers) / [JSON markup](/omr/net/json-markup/verticalchoicebox/#answer-element)) can be switched with `bubble_position` attribute / property:
+The bubble position of an **Answer** element ([text markup](/omr/txt-markup/vertical_choicebox/#answers) / [JSON markup](/omr/json-markup/verticalchoicebox/#answer-element)) can be switched with `bubble_position` attribute / property:
 
 Value | Position
 ----- | --------
@@ -96,13 +96,13 @@ Value | Position
 
 #### Text color
 
-A new `color` attribute / property has been added to **Text** ([text markup](/omr/net/txt-markup/text/) / [JSON markup](/omr/net/json-markup/text/)), **Content** ([text markup](/omr/net/txt-markup/content/) / [JSON markup](/omr/net/json-markup/content/)) and **WriteIn** ([text markup](/omr/net/txt-markup/write_in/) / [JSON markup](/omr/net/json-markup/writein/)) elements.
+A new `color` attribute / property has been added to **Text** ([text markup](/omr/txt-markup/text/) / [JSON markup](/omr/json-markup/text/)), **Content** ([text markup](/omr/txt-markup/content/) / [JSON markup](/omr/json-markup/content/)) and **WriteIn** ([text markup](/omr/txt-markup/write_in/) / [JSON markup](/omr/json-markup/writein/)) elements.
 
 It allows to define the color of an element's text.
 
 #### Underlying label of WriteIn elements
 
-A new `hint` attribute / property has been added to **WriteIn** elements ([text markup](/omr/net/txt-markup/write_in/) / [JSON markup](/omr/net/json-markup/writein/)). It allows to re-define an underlying label of the write-in field.
+A new `hint` attribute / property has been added to **WriteIn** elements ([text markup](/omr/txt-markup/write_in/) / [JSON markup](/omr/json-markup/writein/)). It allows to re-define an underlying label of the write-in field.
 
 By default, a write-in field has a label _"write-in"_.
 
