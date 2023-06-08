@@ -1,35 +1,60 @@
 ---
-title: System Requirements
+weight: 10
+date: "2023-06-06"
+author: "Vladimir Lapin"
 type: docs
-weight: 40
 url: /java/system-requirements/
+feedback: OMRJAVA
+title: System requirements
+description: Minimum hardware requirements and software prerequisites for developing applications with Aspose.OMR for Java.
+keywords:
+- prerequisites
+- requirements
+- framework
+- environment
+- .NET
 ---
 
-## **Overview**
-Aspose.OMR for Java is an independent OMR recognition engine and does not need to have any specific software installed.
-## **Supported Operating Systems**
-Aspose.OMR for Java supports any operating system that runs the Java runtime including, but not limited:
-### **Windows**
-- Microsoft Windows 2003 Server ( x64, x86)
-- Microsoft Windows 2008 Server ( x64, x86)
-- Microsoft Windows 2012 Server ( x64, x86)
-- Microsoft Windows 2012 R2 Server ( x64, x86)
-- Microsoft Windows 2016 Server ( x64, x86)
-- Microsoft Windows 2019 Server ( x64, x86)
-- Microsoft Windows Vista ( x64, x86)
-- Microsoft Windows XP ( x64, x86)
-- Microsoft Windows 7 ( x64, x86)
-- Microsoft Windows 8, 8.1 ( x64, x86)
-- Microsoft Windows 10 ( x64, x86)
-- Microsoft Azure
-### **Linux**
-- Linux (Ubuntu, openSUSE, CentOS and others)
-### **Mac**
-- Mac OS X etc.
-## **Supported Java Versions**
-Aspose.OMR for Java supports the following Java versions:
+Aspose.OMR for Java is a self-contained development library that does not require specialized hardware or additional third-party components.
 
-- J2SE 6.0 (1.6)
-- J2SE 7.0 (1.7)
-- J2SE 8.0 (1.8)
-- or above (*for example Java 10*)
+## Hardware
+
+- Laser or inkjet printer for printing OMR forms.
+- A scanner or a camera for digitizing completed forms.
+
+## Supported operating systems
+
+Both x86 (where applicable) and x64 versions of the following operating systems are supported:
+
+### Windows desktop
+
+- Windows 11: Home, Pro, Pro Education, Pro for Workstations, Enterprise, and Education
+- Windows 10 version 1703: Home, Professional, Education, and Enterprise
+- Windows 8: Core, Professional, and Enterprise
+- Windows 7: Home Premium, Professional, Enterprise, Ultimate
+
+### Windows server
+
+- Windows Server 2022
+- Windows Server 2019
+- Windows Server 2016
+- Windows Server 2012
+- Windows Server 2008
+
+### macOS
+
+- Mac OS X or above
+
+### Linux
+
+- Ubuntu
+- OpenSUSE
+- CentOS
+
+{{% alert color="primary" %}} 
+Other Linux operating systems that can run a Java virtual machine are also supported.
+{{% /alert %}} 
+
+## Java
+
+- Java Platform, Standard Edition (J2SE) 7.0 (1.7) or above.
