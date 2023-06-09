@@ -29,7 +29,7 @@ Apply a license to remove the restrictions.
 
 ## Getting a temporary license
 
-A temporary license removes all limitations of the trial version for **30 days**. Use it to start building a fully functional OMR application and make the final decision to [purchase](https://purchase.aspose.com/pricing/omr/net) Aspose.OMR for Java later.
+A temporary license removes all limitations of the trial version for **30 days**. Use it to start building a fully functional OMR application and make the final decision to [purchase](https://purchase.aspose.com/pricing/omr/java) Aspose.OMR for Java later.
 
 To request a temporary license, visit ["Get a Temporary License"](https://purchase.aspose.com/temporary-license) page.
 
@@ -37,7 +37,7 @@ To request a temporary license, visit ["Get a Temporary License"](https://purcha
 
 Aspose.OMR for Java is licensed either by the number of developers and locations (sites) where the products will be used (_Developer_ and _Site_ licenses).
 
-Read [License Types](https://purchase.aspose.com/policies/license-types) for details and [purchase a license](https://purchase.aspose.com/pricing/omr/net) that best suits your needs.
+Read [License Types](https://purchase.aspose.com/policies/license-types) for details and [purchase a license](https://purchase.aspose.com/pricing/omr/java) that best suits your needs.
 
 {{% alert color="primary" %}} 
 You can rename the license file after purchasing and even change its extension.
@@ -64,5 +64,5 @@ omrLicense.setLicense(new java.io.FileInputStream("Aspose.OMR.lic"));
 
 ## Licensing multiple Aspose products
 
-- Even if you have a single license file for all Aspose products (such as [Aspose.Total for .NET](https://products.aspose.com/total/net/)), you still need to apply the license separately to **each** Aspose product you are using in your application.
+- Even if you have a single license file for all Aspose products (such as [Aspose.Total](https://products.aspose.com/total/)), you still need to apply the license separately to **each** Aspose product you are using in your application.
 - Each Aspose product has a **License** class in its namespace. Use the fully qualified **License** class name when applying licenses to each product to avoid ambiguity.

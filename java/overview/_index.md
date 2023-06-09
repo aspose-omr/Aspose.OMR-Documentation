@@ -20,11 +20,11 @@ keywords:
 
 Learn more about optical mark recognition (OMR) technology and how it can be used in everyday life and business operations.
 
-- [What is optical mark recognition (OMR)?](/omr/net/omr-technology/)  
+- [What is optical mark recognition (OMR)?](/omr/java/omr-technology/)  
   Never heard of OMR before? Get familiar with the basics.
-- [Why Aspose.OMR for Java?](/omr/net/features-benefits/)  
+- [Why Aspose.OMR for Java?](/omr/java/features-benefits/)  
   Key features and benefits of Aspose.OMR for Java library.
-- [Supported file formats](/omr/net/supported-file-formats/)  
+- [Supported file formats](/omr/java/supported-file-formats/)  
   Formats in which Aspose.OMR for Java can create and recognize machine-readable questionnaires.
-- [OMR form structure](/omr/net/omr-form-structure/)  
+- [OMR form structure](/omr/java/omr-form-structure/)  
   Core elements of the Aspose.OMR for Java printable form.

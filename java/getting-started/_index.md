@@ -11,7 +11,8 @@ keywords:
 - prerequisites
 - requirements
 - installation
-- NuGet
+- Maven
+- repository
 - library
 - license
 - example

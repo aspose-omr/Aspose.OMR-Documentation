@@ -117,7 +117,7 @@ omrLicense.Embedded = true;
 
 ## Licensing multiple Aspose products
 
-- Even if you have a single license file for all Aspose products (such as [Aspose.Total for .NET](https://products.aspose.com/total/net/)), you still need to apply the license separately to **each** Aspose product you are using in your application.
+- Even if you have a single license file for all Aspose products (such as [Aspose.Total](https://products.aspose.com/total/)), you still need to apply the license separately to **each** Aspose product you are using in your application.
 - Each Aspose product has a **License** class in its namespace. Use the fully qualified **License** class name when applying licenses to each product to avoid ambiguity; for example:  
   
   ```c#

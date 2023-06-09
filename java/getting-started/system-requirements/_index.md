@@ -12,7 +12,7 @@ keywords:
 - requirements
 - framework
 - environment
-- .NET
+- Java
 ---
 
 Aspose.OMR for Java is a self-contained development library that does not require specialized hardware or additional third-party components.
