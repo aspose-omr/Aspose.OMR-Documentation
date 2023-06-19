@@ -20,7 +20,7 @@ To recognize a filled questionnaire, answer sheet, ballot, or other OMR form, di
 
 {{% alert color="primary" %}} 
 
-Make sure that all 4 [positioning markers](/omr/net/omr-form-structure/) are present on the image.
+Make sure that all 5 [positioning markers](/omr/net/omr-form-structure/) are present on the image.
 
 {{% /alert %}} 
 

@@ -35,4 +35,4 @@ Describe the content and layout of the form using [**text**](/omr/txt-markup/) o
 
 ## Recognize
 
-[**Recognize**](http://10.0.0.203:1313/omr/net/recognition/) scanned images or photos of filled forms and **get results** in CSV, XML or JSON formats.
+[**Recognize**](/omr/net/recognition/) scanned images or photos of filled forms and **get results** in CSV, XML or JSON formats.

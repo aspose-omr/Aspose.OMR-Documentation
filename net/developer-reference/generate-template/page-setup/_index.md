@@ -1,6 +1,6 @@
 ---
 weight: 10
-date: "2023-04-20"
+date: "2023-06-15"
 author: "Vladimir Lapin"
 type: docs
 url: /net/generate-template/page-setup/
@@ -44,12 +44,30 @@ Setting | Type | Default value | Description
 `ImagesPaths` | `string[]` | _n/a_ | Full path to each image mentioned in the [source code](/omr/net/design-form/).<br />Read more info in this [article](/omr/net/generate-template/images/).
 `LongWordHandling` | `Aspose.OMR.Generation.LongWordHandling` | Draw word over element's bounds | How to render very long words that do not fit the parent element's width and cannot be wrapped.<ul><li>`DrawOver` (default) - draw long words until a space or end of line is encountered, even outside the bounds of an element.</li><li>`ThrowException` - throw an exception when rendering the form if the long word does not fit the width of the parent element. The form will not be generated.</li></ul>
 
+## Supported paper sizes
+
+The `PaperSize` property controls the paper size of the generated form. All form elements will be re-aligned to best match the selected paper size.
+
+Enumeration | Page dimensions (pixels) | Page dimensions (mm) | Page dimensions (inches)
+----------- | ------------------------ | -------------------- | ------------------------
+`A3` | 3508 x 4961 | 297 x 420 | 11.7 x 16.5
+`A4`| 2480 x 3508 | 210 x 297 | 8.3 x 11.7
+`Legal` | 2551 x 4205 | 215.9 x 355.6 | 8.5 x 14
+`Letter`| 2551 x 3295 | 215.9 x 279.4 | 8.5 x 11
+`p8519` | 2551 x 5702 | 215.9 x 482.6 | 8.5 x 19
+`p8521` | 2551 x 6302 | 215.9 x 533.4 | 8.5 x 21
+`Tabloid` | 3295 x 5102 | 279 x 432 | 11 x 17
+
+{{% alert color="primary" %}} 
+The selected paper size does not affect the size of bubbles, images or fonts. Changing the paper size only affects the positioning of elements on the page.
+{{% /alert %}} 
+
 ## Positioning marker placement
 
 The `RotationPointPosition` property controls the placement of the rectangular [positioning marker](/omr/net/omr-form-structure/) that is used to detect the page orientation. It is provided one of the following values of `Aspose.OMR.Generation.RotationPointPosition` enumerator:
 
 Enumeration | Value | Result
----------- | ----- | ------
+----------- | ----- | ------
 `TopLeft1` | 10 | ![Below the top-left square positioning marker](TopLeft1.png)
 `TopLeft2` | 11 | ![To the right of the top-left square positioning marker](TopLeft2.png)
 `TopRight1` | 20 | ![Below the top-right square positioning marker](TopRight1.png)
