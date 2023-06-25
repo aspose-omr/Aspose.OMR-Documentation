@@ -4,6 +4,7 @@ date: "2023-05-30"
 author: "Vladimir Lapin"
 type: docs
 url: /txt-markup/choicebox/
+feedback: OMRCOMMON
 title: choicebox
 description: An element that generates a question with a fixed number of answers.
 keywords:

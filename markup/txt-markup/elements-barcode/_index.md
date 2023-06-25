@@ -4,6 +4,7 @@ date: "2023-05-30"
 author: "Vladimir Lapin"
 type: docs
 url: /txt-markup/elements-barcode/
+feedback: OMRCOMMON
 title: Barcodes and QR codes
 description: Add barcodes and QR codes to personalize or uniquely identify a form.
 keywords:

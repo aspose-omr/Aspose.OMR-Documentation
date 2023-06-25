@@ -4,6 +4,7 @@ date: "2023-05-30"
 author: "Vladimir Lapin"
 type: docs
 url: /txt-markup/page/
+feedback: OMRCOMMON
 title: page
 description: Page element allows you to break large forms into several pages that are recognized as a single document.
 keywords:

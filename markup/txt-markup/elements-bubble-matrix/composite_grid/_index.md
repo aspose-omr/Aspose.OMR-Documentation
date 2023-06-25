@@ -4,6 +4,7 @@ date: "2023-05-30"
 author: "Vladimir Lapin"
 type: docs
 url: /txt-markup/composite_grid/
+feedback: OMRCOMMON
 title: composite_grid
 description: Composite_grid element generates a highly customizable matrix of numbered bubbles that are combined into a single answer.
 keywords:

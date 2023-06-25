@@ -4,6 +4,7 @@ date: "2023-05-30"
 author: "Vladimir Lapin"
 type: docs
 url: /txt-markup/text/
+feedback: OMRCOMMON
 title: text
 description: Text element is used to add one or more lines of text to the form.
 keywords:

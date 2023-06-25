@@ -4,6 +4,7 @@ date: "2023-05-30"
 author: "Vladimir Lapin"
 type: docs
 url: /txt-markup/examples/multi-column/
+feedback: OMRCOMMON
 title: Multi-column questionnaire
 description: A compact questionnaire with multi-column layout and open-ended questions.
 keywords:

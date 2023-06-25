@@ -4,6 +4,7 @@ date: "2023-05-30"
 author: "Vladimir Lapin"
 type: docs
 url: /txt-markup/table/
+feedback: OMRCOMMON
 title: table
 description: Table element organizes questions and answers in a tabular structure.
 keywords:

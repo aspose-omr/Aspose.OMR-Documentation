@@ -4,6 +4,7 @@ date: "2023-05-30"
 author: "Vladimir Lapin"
 type: docs
 url: /json-markup/scoregroup/
+feedback: OMRCOMMON
 title: ScoreGroup
 description: ScoreGroup element defines a group of questions with multiple evaluation criteria, which are summed up during recognition.
 keywords:

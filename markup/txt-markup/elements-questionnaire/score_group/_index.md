@@ -4,6 +4,7 @@ date: "2023-05-30"
 author: "Vladimir Lapin"
 type: docs
 url: /txt-markup/score_group/
+feedback: OMRCOMMON
 title: score_group
 description: Score_group element defines a group of questions with multiple evaluation criteria, which are summed up during recognition.
 keywords:

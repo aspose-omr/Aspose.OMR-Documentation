@@ -4,6 +4,7 @@ date: "2023-05-30"
 author: "Vladimir Lapin"
 type: docs
 url: /design-form/
+feedback: OMRCOMMON
 is_root: true
 title: Designing machine-readable forms
 description: Design OMR forms of any layout and complexity with a specialized markup languages.

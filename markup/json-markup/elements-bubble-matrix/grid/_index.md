@@ -4,6 +4,7 @@ date: "2023-05-30"
 author: "Vladimir Lapin"
 type: docs
 url: /json-markup/grid/
+feedback: OMRCOMMON
 title: Grid
 description: Grid element generates a matrix of numbered bubbles that are combined into a single answer.
 keywords:

@@ -4,6 +4,7 @@ date: "2023-05-30"
 author: "Vladimir Lapin"
 type: docs
 url: /txt-markup/checkbox/
+feedback: OMRCOMMON
 title: checkbox
 description: Checkbox element generates a list of answers with blank bubbles that can accommodate any kind of marks.
 keywords:
