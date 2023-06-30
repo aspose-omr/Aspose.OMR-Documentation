@@ -1,6 +1,6 @@
 ---
 weight: 30
-date: "2022-05-23"
+date: "2023-06-29"
 author: "Vladimir Lapin"
 type: docs
 url: /net/recognition/write-in/
@@ -51,7 +51,7 @@ You must add a reference to `System.Drawing` assembly to your application in ord
 string appPath = Path.GetDirectoryName(typeof(Program).Assembly.Location);
 Aspose.OMR.Api.OmrEngine omrEngine = new Aspose.OMR.Api.OmrEngine();
 Aspose.OMR.Api.TemplateProcessor templateProcessor = omrEngine.GetTemplateProcessor("pattern.omr");
-Aspose.OMR.Model.RecognitionResult recognitionResult = templateProcessor.RecognizeImage("form-20220519.png");
+Aspose.OMR.Model.RecognitionResult recognitionResult = templateProcessor.Recognize("form-20220519.png");
 int i = 1;
 foreach(System.Drawing.Bitmap bitmap in recognitionResult.Images)
 {

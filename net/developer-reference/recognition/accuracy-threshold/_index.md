@@ -1,6 +1,6 @@
 ---
 weight: 10
-date: "2022-05-20"
+date: "2023-06-29"
 author: "Vladimir Lapin"
 type: docs
 url: /net/recognition/accuracy-threshold/
@@ -50,7 +50,7 @@ Aspose.OMR for .NET allows you to process the form image multiple times with dif
 Aspose.OMR.Api.OmrEngine omrEngine = new Aspose.OMR.Api.OmrEngine();
 Aspose.OMR.Api.TemplateProcessor templateProcessor = omrEngine.GetTemplateProcessor("pattern.omr");
 // Results based on 60% fill percentage
-Aspose.OMR.Model.RecognitionResult recognitionResult = templateProcessor.RecognizeImage("filled-form.png", 60);
+Aspose.OMR.Model.RecognitionResult recognitionResult = templateProcessor.Recognize("filled-form.png", 60);
 string result = recognitionResult.GetCsv();
 Console.WriteLine(result);
 // Results based on 80% fill percentage
@@ -88,7 +88,7 @@ A form that requires all bubbles to be completely filled in with a pen, except f
 Aspose.OMR.Api.OmrEngine omrEngine = new Aspose.OMR.Api.OmrEngine();
 Aspose.OMR.Api.TemplateProcessor templateProcessor = omrEngine.GetTemplateProcessor("pattern.omr");
 // Require bubbles to be filled with a pen or marker
-Aspose.OMR.Model.RecognitionResult recognitionResult = templateProcessor.RecognizeImage("filled-form.png", 60);
+Aspose.OMR.Model.RecognitionResult recognitionResult = templateProcessor.Recognize("filled-form.png", 60);
 string result = recognitionResult.GetCsv();
 Console.WriteLine(result);
 ```

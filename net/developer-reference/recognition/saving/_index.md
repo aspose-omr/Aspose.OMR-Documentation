@@ -1,6 +1,6 @@
 ---
 weight: 20
-date: "2022-05-23"
+date: "2023-06-29"
 author: "Vladimir Lapin"
 type: docs
 url: /net/recognition/save/
@@ -34,7 +34,7 @@ Returns a string with the recognition results in CSV format. You can optionally 
 ```csharp
 Aspose.OMR.Api.OmrEngine omrEngine = new Aspose.OMR.Api.OmrEngine();
 Aspose.OMR.Api.TemplateProcessor templateProcessor = omrEngine.GetTemplateProcessor("pattern.omr");
-Aspose.OMR.Model.RecognitionResult recognitionResult = templateProcessor.RecognizeImage("filled-form.png");
+Aspose.OMR.Model.RecognitionResult recognitionResult = templateProcessor.Recognize("filled-form.png");
 string result = recognitionResult.GetCsv();
 ```
 
@@ -45,7 +45,7 @@ Returns a `MemoryStream` object in the specified encoding with the recognition r
 ```csharp
 Aspose.OMR.Api.OmrEngine omrEngine = new Aspose.OMR.Api.OmrEngine();
 Aspose.OMR.Api.TemplateProcessor templateProcessor = omrEngine.GetTemplateProcessor("pattern.omr");
-Aspose.OMR.Model.RecognitionResult recognitionResult = templateProcessor.RecognizeImage("filled-form.png");
+Aspose.OMR.Model.RecognitionResult recognitionResult = templateProcessor.Recognize("filled-form.png");
 MemoryStream result = recognitionResult.GetCsvAsStream(Encoding.UTF8);
 ```
 
@@ -62,7 +62,7 @@ Returns a string with the recognition results in JSON format. You can optionally
 ```csharp
 Aspose.OMR.Api.OmrEngine omrEngine = new Aspose.OMR.Api.OmrEngine();
 Aspose.OMR.Api.TemplateProcessor templateProcessor = omrEngine.GetTemplateProcessor("pattern.omr");
-Aspose.OMR.Model.RecognitionResult recognitionResult = templateProcessor.RecognizeImage("filled-form.png");
+Aspose.OMR.Model.RecognitionResult recognitionResult = templateProcessor.Recognize("filled-form.png");
 string result = recognitionResult.GetJson();
 ```
 
@@ -73,7 +73,7 @@ Returns a `MemoryStream` object in the specified encoding with the recognition r
 ```csharp
 Aspose.OMR.Api.OmrEngine omrEngine = new Aspose.OMR.Api.OmrEngine();
 Aspose.OMR.Api.TemplateProcessor templateProcessor = omrEngine.GetTemplateProcessor("pattern.omr");
-Aspose.OMR.Model.RecognitionResult recognitionResult = templateProcessor.RecognizeImage("filled-form.png");
+Aspose.OMR.Model.RecognitionResult recognitionResult = templateProcessor.Recognize("filled-form.png");
 MemoryStream result = recognitionResult.GetJsonAsStream(Encoding.UTF8);
 ```
 
@@ -90,7 +90,7 @@ Returns a string with the recognition results in XML format. You can optionally 
 ```csharp
 Aspose.OMR.Api.OmrEngine omrEngine = new Aspose.OMR.Api.OmrEngine();
 Aspose.OMR.Api.TemplateProcessor templateProcessor = omrEngine.GetTemplateProcessor("pattern.omr");
-Aspose.OMR.Model.RecognitionResult recognitionResult = templateProcessor.RecognizeImage("filled-form.png");
+Aspose.OMR.Model.RecognitionResult recognitionResult = templateProcessor.Recognize("filled-form.png");
 string result = recognitionResult.GetXml();
 ```
 
@@ -101,6 +101,6 @@ Returns a `MemoryStream` object in the specified encoding with the recognition r
 ```csharp
 Aspose.OMR.Api.OmrEngine omrEngine = new Aspose.OMR.Api.OmrEngine();
 Aspose.OMR.Api.TemplateProcessor templateProcessor = omrEngine.GetTemplateProcessor("pattern.omr");
-Aspose.OMR.Model.RecognitionResult recognitionResult = templateProcessor.RecognizeImage("filled-form.png");
+Aspose.OMR.Model.RecognitionResult recognitionResult = templateProcessor.Recognize("filled-form.png");
 MemoryStream result = recognitionResult.GetXmlAsStream(Encoding.UTF8);
 ```

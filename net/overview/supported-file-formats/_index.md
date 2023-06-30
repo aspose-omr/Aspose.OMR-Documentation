@@ -47,18 +47,12 @@ Aspose.OMR for .NET can recognize any file you get from a scanner or camera:
 
 Extension             | Details
 --------------------- | -------
-**.PDF**              | Portable Document Format (_see the note below_).
+**.PDF**              | Portable Document Format (including multi-page documents).
 **.JPG**              | JPEG, the most popular format for smartphone photos.
 **.PNG**              | Portable Network Graphics.
-**.TIFF** or **.TIF** | Tag Image File Format, commonly used for high quality scanning (_see the note below_).
+**.TIFF** or **.TIF** | Single-page TIFF image, commonly used for high quality scanning.
 **.GIF**              | Graphics Interchange Format. Limited to 256 colors.
 **.BMP**              | Bitmap image file.
-
-{{% alert color="primary" %}} 
-
-Recognition of multi-page PDF and TIFF files is not supported. Each page must be scanned as a separate file.
-
-{{% /alert %}} 
 
 ## Recognition results
 

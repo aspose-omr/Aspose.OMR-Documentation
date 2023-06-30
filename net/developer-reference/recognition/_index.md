@@ -1,6 +1,6 @@
 ---
 weight: 40
-date: "2022-05-20"
+date: "2023-06-29"
 author: "Vladimir Lapin"
 type: docs
 url: /net/recognition/
@@ -19,9 +19,7 @@ keywords:
 To recognize a filled questionnaire, answer sheet, ballot, or other OMR form, digitize it in one of the [supported formats](/omr/net/supported-file-formats/). For best results, we recommend using a scanner (a basic office scanner or multifunction copier will suffice). If you do not have a scanner, you can simply take a picture of the form with any modern smartphone and upload the photo to your computer.
 
 {{% alert color="primary" %}} 
-
 Make sure that all 5 [positioning markers](/omr/net/omr-form-structure/) are present on the image.
-
 {{% /alert %}} 
 
 ## Initializing the recognition engine
@@ -49,24 +47,35 @@ using(MemoryStream ms = new MemoryStream(pattern))
 
 If you have lost the recognition pattern file for the survey, simply [generate](/omr/net/generate-template/) it again from the [form source code](/omr/net/design-form/) using **exactly the same** paper size, orientation, font, and other [layout setting](/omr/net/generate-template/page-setup/).
 
-## Recognizing OMR forms
+## Recognizing OMR form from a single respondent
 
 {{% alert color="primary" %}} 
-
-All recognition methods support [accuracy adjustments](/omr/net/recognition/accuracy-threshold/) for reliable results under various conditions.
-
+The process below assumes that you are recognizing a completed form (single-page or multi-page) from a single respondent. To recognize forms from multiple respondents, use [bulk recognition](#bulk-recognition).
 {{% /alert %}} 
 
-To recognize a filled form page, process its scan or photo with the [initialized]({{< ref "#initializing-the-recognition-engine" >}}) recognition engine using `RecognizeImage` method of the [`Aspose.OMR.Api.TemplateProcessor`](https://reference.aspose.com/omr/net/aspose.omr.api/templateprocessor/) class:
+To recognize a completed form, process its scan or photo through `Recognize` method of the [initialized](#initializing-the-recognition-engine) recognition engine. You can supply a form as:
 
+- An absolute or relative path to the image (for single-page forms).
+- An absolute or relative path to the scanned PDF (for single-page or multi-page forms).
+- A memory stream containing a scan or a photo of the form in any of the [supported formats](/omr/net/supported-file-formats/). Useful for building web applications or APIs.
+- An array of paths to scanned form pages (for multi-page forms).
+- An array of memory streams containing scans or photographs of the completed form pages in any of the [supported formats](/omr/net/supported-file-formats/). Useful for building web applications or APIs.
+
+{{% alert color="caution" %}} 
+If you provide images/PDFs without [page identifier](/omr/net/omr-form-structure/) when recognizing a multi-page form, the recognition will fail with an exception _"QR code for multi page template is not found."_.
+{{% /alert %}} 
+
+Regardless of the completed form format, the recognition method supports [accuracy adjustments](/omr/net/recognition/accuracy-threshold/) for reliable results under various conditions.
+
+{{< tabs tabID="1" tabTotal="2" tabName1="Recognize form from file" tabName2="Recognize form from memory stream" >}}
+{{< tab tabNum="1" >}}
 ```csharp
 Aspose.OMR.Api.OmrEngine omrEngine = new Aspose.OMR.Api.OmrEngine();
 Aspose.OMR.Api.TemplateProcessor templateProcessor = omrEngine.GetTemplateProcessor("pattern.omr");
-Aspose.OMR.Model.RecognitionResult recognitionResult = templateProcessor.RecognizeImage("form-20220519.png");
+Aspose.OMR.Model.RecognitionResult recognitionResult = templateProcessor.Recognize("form-20230629.pdf");
 ```
-
-You can also provide a form image as a `MemoryStream` object, which can be very useful when building web applications or APIs:
-
+{{< /tab >}}
+{{< tab tabNum="2" >}}
 ```csharp
 // Load recognition pattern and form image
 byte[] pattern = Encoding.UTF8.GetBytes(payload[0]);
@@ -82,11 +91,13 @@ using(MemoryStream patternStream = new MemoryStream(pattern))
 Aspose.OMR.Model.RecognitionResult recognitionResult = null;
 using(MemoryStream formStream = new MemoryStream(form))
 {
-	recognitionResult = templateProcessor.RecognizeImage(formStream);
+	recognitionResult = templateProcessor.Recognize(formStream);
 }
 ```
+{{< /tab >}}
+{{< /tabs >}}
 
-### Batch recognition
+## Bulk recognition
 
 The whole idea behind OMR is to automatically process hundreds of forms. Aspose.OMR for .NET greatly simplifies this task by allowing you to recognize a directory with form images using a [single method](https://reference.aspose.com/omr/net/aspose.omr.api/templateprocessor/recognizefolder/) rather than recognizing files one by one:
 
@@ -94,17 +105,6 @@ The whole idea behind OMR is to automatically process hundreds of forms. Aspose.
 Aspose.OMR.Api.OmrEngine omrEngine = new Aspose.OMR.Api.OmrEngine();
 Aspose.OMR.Api.TemplateProcessor templateProcessor = omrEngine.GetTemplateProcessor("pattern.omr");
 Aspose.OMR.Model.RecognitionResult recognitionResults[] = templateProcessor.RecognizeFolder(@"C:\final_exam\");
-```
-
-### Recognizing multi-page forms
-
-If a form consists of several pages, use [`RecognizeMultiPageTemplate`](https://reference.aspose.com/omr/net/aspose.omr.api/templateprocessor/recognizemultipagetemplate/) method to recognize them as a single entity:
-
-```csharp
-string[] formPages = { "page1.png", "page2.png", "page3.png" };
-Aspose.OMR.Api.OmrEngine omrEngine = new Aspose.OMR.Api.OmrEngine();
-Aspose.OMR.Api.TemplateProcessor templateProcessor = omrEngine.GetTemplateProcessor("pattern.omr");
-Aspose.OMR.Model.RecognitionResult recognitionResult[] = templateProcessor.RecognizeMultiPageTemplate(formPages);
 ```
 
 ## Saving recognition results
