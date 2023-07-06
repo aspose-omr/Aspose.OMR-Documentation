@@ -1,14 +1,15 @@
 ---
-weight: 1
+weight: 81
 date: "2023-07-06"
 author: "Vladimir Lapin"
 type: docs
-url: /cpp/release-notes/latest/
+url: /cpp/aspose-omr-for-cpp-23-7-0-release-notes/
 feedback: OMRCPP
-title: Latest release (July 2023)
+title: Aspose.OMR for C++ 23.7.0 - Release Notes
 description: A summary of recent changes, enhancements and bug fixes in Aspose.OMR for C++ 23.7.0 (July 2023) release.
 keywords:
-- latest
+- 2023
+- July
 - new
 - release
 - changelog

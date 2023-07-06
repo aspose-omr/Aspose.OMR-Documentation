@@ -1,6 +1,6 @@
 ---
 weight: 10
-date: "2023-06-23"
+date: "2023-07-06"
 author: "Vladimir Lapin"
 type: docs
 url: /cpp/generate-template/page-setup/
@@ -21,7 +21,7 @@ keywords:
 - color
 ---
 
-The paper size, orientation, font, and other layout settings are configured through [`GlobalPageSettings`](https://reference.aspose.com/omr/net/aspose.omr.generation/globalpagesettings) object. It also allows you to provide paths to images used in the form. `GlobalPageSettings` object is passed as an optional parameter to the [template generation methods](/omr/net/generate-template/).
+The paper size, orientation, font, and other layout settings are configured through `GlobalPageSettings` structure. It also allows you to provide paths to images used in the form. `GlobalPageSettings` is passed as an optional parameter to the [template generation function](/omr/cpp/generate-template/).
 
 ## Page setup
 
@@ -38,7 +38,7 @@ Setting | Type | Default value | Description
 `FontStyle` | `FontStyle` | Regular | Font style for all texts, except for those directly overridden in the source code. See the full list of supported font styles [below](#supported-font-styles).
 `BubbleSize` | `BubbleSize` | Normal | Size of answer bubbles, except for those directly overridden in the source code. See the full list of supported bubble sizes [below](#supported-bubble-sizes).
 `BubbleColor` | `DrawingColor` | Black | Color of all answer bubbles in the form. See the full list of [supported colors](/omr/cpp/supported-colors/).
-`ImagesPaths` | `string[]` | _n/a_ | Full path to each image mentioned in the form's [source code](/omr/net/design-form/).
+`ImagesPaths` | `string[]` | _n/a_ | Full path to each image mentioned in the form's [source code](/omr/cpp/design-form/).
 
 ## Supported paper sizes
 
@@ -80,3 +80,13 @@ Value | Bubble size
 `BubbleSize.Normal` | 60 pixels
 `BubbleSize.Large` | 80 pixels
 `BubbleSize.Extralarge` | 100 pixels
+
+## Example
+
+```cpp
+System::SharedPtr<Api::OmrEngine> engine = System::MakeObject<Api::OmrEngine>();
+// Generate the form for ANSI Letter paper size (8.5 by 11 inches)
+System::SharedPtr<Api::GlobalPageSettings> settings = System::MakeObject<Api::GlobalPageSettings>();
+settings->setPaperSize(Api::PaperSize::Letter);
+System::SharedPtr<Generation::GenerationResult> result = engine->GenerateTemplate(markupPath, nullptr, settings);
+```
