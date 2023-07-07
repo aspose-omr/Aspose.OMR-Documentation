@@ -1,6 +1,6 @@
 ---
 weight: 10
-date: "2022-05-30"
+date: "2023-07-07"
 author: "Vladimir Lapin"
 type: docs
 url: /net/programmatic-forms/containerconfig/
@@ -65,6 +65,7 @@ Name | Type | Default value | Description
 **BlockRightMargin** | `int` | 40 | Right margin (in pixels) of container's columns.
 **BlockBottomMargin** | `int` | 20 | Bottom margin (in pixels) of nested [**BlockConfig**](/omr/net/programmatic-forms/blockconfig/) elements.
 **BlockTopPadding** | `int` | 20 | Top padding (in pixels) of nested [**BlockConfig**](/omr/net/programmatic-forms/blockconfig/) elements.
+**SyncBlockHeight** | `bool` | `false` | If set to `true`, all blocks in the container will have the same height, regardless of their content.
 
 ## Adding page footer
 

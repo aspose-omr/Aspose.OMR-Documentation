@@ -1,6 +1,6 @@
 ---
 weight: 10
-date: "2023-05-30"
+date: "2023-07-07"
 author: "Vladimir Lapin"
 type: docs
 url: /json-markup/container/
@@ -58,6 +58,7 @@ Name | Type | Default value | Description
 **block_right_margin** | integer | 40 | Right margin (in pixels) of container's columns.
 **block_bottom_margin** | integer | 20 | Bottom margin (in pixels) of nested [**Block**](/omr/json-markup/block/) elements.
 **block_top_padding** | integer | 20 | Top padding (in pixels) of nested [**Block**](/omr/json-markup/block/) elements.
+**sync_children_height** | Boolean | false | If set to `true`, all blocks in the container will have the same height, regardless of their content.
 
 ## Adding page footer
 

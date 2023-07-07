@@ -1,6 +1,6 @@
 ---
 weight: 10
-date: "2023-05-30"
+date: "2023-07-07"
 author: "Vladimir Lapin"
 type: docs
 url: /txt-markup/container/
@@ -46,7 +46,7 @@ Attribute | Default value | Description | Usage example
 **block_right_margin** | 40 | Right margin (in pixels) of container's columns. | `block_right_margin=60`
 **block_bottom_margin** | 20 | Bottom margin (in pixels) of nested [**block**](/omr/txt-markup/block/) elements. | `block_bottom_margin=100`
 **block_top_padding** | 20 | Top padding (in pixels) of nested [**block**](/omr/txt-markup/block/) elements. | `block_top_padding=50`
-
+**sync_children_height** | false | If set to `true`, all blocks in the container will have the same height, regardless of their content. | `sync_children_height=true`
 
 ## Adding page footer
 

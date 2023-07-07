@@ -1,6 +1,6 @@
 ---
 weight: 10
-date: "2023-06-15"
+date: "2023-07-07"
 author: "Vladimir Lapin"
 type: docs
 url: /net/generate-template/page-setup/
@@ -126,9 +126,12 @@ The `WritingSystem` property controls the text direction (LTR or RTL) and item n
 
 Value | Default | Text direction | Item numbering
 ----- | ------- | -------------- | --------------
-[`Aspose.OMR.Generation.WritingSystems.Western`](https://reference.aspose.com/omr/net/aspose.omr.generation.writingsystems/arabic/) | Yes | Left-to-right (LTR) | Western (0, 1, 2, 3, 4, 5, 6, 7, 8, 9)
 [`Aspose.OMR.Generation.WritingSystems.Arabic`](https://reference.aspose.com/omr/net/aspose.omr.generation.writingsystems/persian/) | | Right-to-left (RTL) | `useNativeNumber = true` - Eastern Arabic (٠,	 ١, ٢, ٣, ٤, ٥, ٦, ٧, ٨, ٩)<br />`useNativeNumber = false` - Western (0, 1, 2, 3, 4, 5, 6, 7, 8, 9)
+[`Aspose.OMR.Generation.WritingSystems.Bengali`](https://reference.aspose.com/omr/net/aspose.omr.generation.writingsystems/bengali/) | | Left-to-right (LTR) | `useNativeNumber = true` - Bengali (০, ১, ২, ৩, ৪, ৫, ৬, ৭, ৮, ৯)<br />`useNativeNumber = false` - Western (0, 1, 2, 3, 4, 5, 6, 7, 8, 9)
+[`Aspose.OMR.Generation.WritingSystems.Hebrew`](https://reference.aspose.com/omr/net/aspose.omr.generation.writingsystems/hebrew/) | | Right-to-left (RTL) | `useNativeNumber = true` - [Hebrew alphabetic numeral system](https://en.wikipedia.org/wiki/Hebrew_numerals)<br />`useNativeNumber = false` - Western (0, 1, 2, 3, 4, 5, 6, 7, 8, 9)
 [`Aspose.OMR.Generation.WritingSystems.Persian`](https://reference.aspose.com/omr/net/aspose.omr.generation.writingsystems/western/) | | Right-to-left (RTL) | `useNativeNumber = true` - Persian (۰, ۱, ۲, ۳, ۴, ۵, ۶, ۷, ۸, ۹)<br />`useNativeNumber = false` - Western (0, 1, 2, 3, 4, 5, 6, 7, 8, 9)
+[`Aspose.OMR.Generation.WritingSystems.Urdu`](https://reference.aspose.com/omr/net/aspose.omr.generation.writingsystems/urdu/) | | Right-to-left (RTL) | `useNativeNumber = true` - Urdu (۰, ١, ۲, ۳, ۴, ۵, ۶, ۷, ۸, ۹)<br />`useNativeNumber = false` - Western (0, 1, 2, 3, 4, 5, 6, 7, 8, 9)
+[`Aspose.OMR.Generation.WritingSystems.Western`](https://reference.aspose.com/omr/net/aspose.omr.generation.writingsystems/arabic/) | Yes | Left-to-right (LTR) | Western (0, 1, 2, 3, 4, 5, 6, 7, 8, 9)
 
 ### Arabic answer sheet
 

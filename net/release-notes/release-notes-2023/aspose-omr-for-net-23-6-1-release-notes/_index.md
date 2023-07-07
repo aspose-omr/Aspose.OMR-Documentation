@@ -1,6 +1,6 @@
 ---
 weight: 70
-date: "2023-06-30"
+date: "2023-07-07"
 author: "Vladimir Lapin"
 type: docs
 url: /net/aspose-omr-for-net-23-6-1-release-notes/
@@ -33,8 +33,10 @@ To make it easier to upgrade your code, we have kept existing methods fully func
 
 Key | Summary | Category
 --- | ------- | --------
+OMRNET&#8209;594 | Added support for Urdu, Hebrew and Bengali writing and number systems. | New feature
 OMRNET&#8209;850 | Added the ability to [save](/omr/net/generate-template/save/#save-as-pdf) a multi-page printable form to a single PDF file. | New feature
 OMRNET&#8209;850 | Added a unified recognition API for single-page and multi-page forms. | New feature
+OMRNET&#8209;697 | Added the ability to synchronize the height of all blocks in the container. | New feature
 OMRNET&#8209;850 | Added the ability to [recognize](/omr/net/recognition/) a completed form scanned as a multi-page PDF document. | Fix
 
 ## Known issues and limitations
@@ -43,6 +45,7 @@ Key | Summary | Workaround
 --- | ------- | ----------
 OMRNET&#8209;850 | Recognition of multi-page TIFF images causes an error. | Scan each page of the filled form into a separate TIFF file and recognize them one-by-one.
 OMRNET&#8209;555 | [`Recalculate`](https://reference.aspose.com/omr/net/aspose.omr.api/templateprocessor/recalculate/) method results in incorrect processing of **ScoreGroup** elements ([text markup](/omr/txt-markup/score_group/) / [JSON markup](/omr/json-markup/scoregroup/)) and **CustomAnswerSheet** elements ([text markup](/omr/txt-markup/custom_answer_sheet/) / [JSON markup](/omr/json-markup/customanswersheet/)). | Use [`RecognizeImage`](https://reference.aspose.com/omr/net/aspose.omr.api/templateprocessor/recognizeimage/) method with different threshold setting instead of [run-time adjustments of recognition accuracy](/omr/net/recognition/accuracy-threshold/#adjusting-recognition-accuracy-at-run-time).
+n/a | When choosing the Bengali writing system, characters are written from right to left. | To be fixed in the next version. For now, you can use the Western writing system and manually specify localized numerals.
 
 ## Public API changes and backwards compatibility
 
@@ -61,6 +64,30 @@ Method | Action
 `RecognizeImage(string, int)` | Recognition of a single-page form provided by file path.
 `RecognizeImage(MemoryStream, int)` | Recognition of a single-page form provided as a memory stream.
 `RecognizeMultiPageTemplate(string[], int)` | Recognition of a multi-page form from a single respondent.
+
+#### `Aspose.OMR.Generation.WritingSystems.Bengali` class
+
+Use the Bengali writing system and native Bengali numbers (optional) in generated forms.
+
+#### `Aspose.OMR.Generation.WritingSystems.Hebrew` class
+
+Use the Hebrew writing system and native Hebrew numbers (optional) in generated forms.
+
+#### `Aspose.OMR.Generation.WritingSystems.Urdu` class
+
+Use the Urdu writing system and native Urdu numbers (optional) in generated forms.
+
+#### `Aspose.OMR.Generation.Config.Elements.Parents.ContainerConfig.SyncBlockHeight` property
+
+If set to `true`, all blocks in the container will have the same height.
+
+#### `sync_children_height` text markup attribute
+
+If set to `true`, all blocks in the container will have the same height.
+
+#### `SyncHeight` JSON markup attribute
+
+If set to `true`, all blocks in the container will have the same height.
 
 ### Updated public APIs:
 
@@ -194,4 +221,44 @@ Aspose.OMR.Api.OmrEngine omrEngine = new Aspose.OMR.Api.OmrEngine();
 Aspose.OMR.Generation.GenerationResult generationResult = omrEngine.GenerateTemplate("source.txt");
 Aspose.OMR.Generation.MemoryGenerationResult memoryGenerationResult = new Aspose.OMR.Generation.MemoryGenerationResult(generationResult);
 MemoryStream stream = memoryGenerationResult.GetPDF();
+```
+
+### Synchronizing height of all blocks in the container
+
+```text
+?container=
+	columns_count=3
+	sync_children_height=true
+?block=
+	column=1
+	border=square
+	border_size=10
+	border_color=red
+?content=Aspose.OMR
+&block
+?block=
+	column=2
+	border=square
+	border_size=10
+	border_color=red
+?content=The five boxing wizards jump quickly.
+&block
+?block=
+	column=3
+	border=square
+	border_size=10
+	border_color=red
+?content=All men live enveloped in whale-lines. All are born with halters round their necks; but it is only when caught in the swift, sudden turn of death, that mortals realize the silent, subtle, ever-present perils of life.
+&block
+&container
+```
+
+#### Generate machine-readable form in Urdu
+
+In this example, all Western European numbers are replaced with Urdu numbers.
+
+```csharp
+Aspose.OMR.Generation.GlobalPageSettings globalPageSettings = new Aspose.OMR.Generation.GlobalPageSettings() {
+	WritingSystem = new Aspose.OMR.Generation.WritingSystems.Urdu(true)
+};
 ```
