@@ -4,6 +4,8 @@ date: "2023-05-30"
 author: "Vladimir Lapin"
 type: docs
 url: /json-markup/customanswersheet/
+aliases:
+- /net/json-markup/customanswersheet/
 feedback: OMRCOMMON
 title: CustomAnswerSheet
 description: CustomAnswerSheet element generates a numbered list of answers with full control over the layout and content of an answer.

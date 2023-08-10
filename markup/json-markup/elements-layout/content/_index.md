@@ -4,6 +4,8 @@ date: "2023-05-30"
 author: "Vladimir Lapin"
 type: docs
 url: /json-markup/content/
+aliases:
+- /net/json-markup/content/
 feedback: OMRCOMMON
 title: Content
 description: Content element is used to add one or more lines of text to the parent element.

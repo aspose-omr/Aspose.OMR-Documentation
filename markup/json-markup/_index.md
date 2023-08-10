@@ -4,6 +4,8 @@ date: "2023-05-30"
 author: "Vladimir Lapin"
 type: docs
 url: /json-markup/
+aliases:
+- /net/json-markup/
 feedback: OMRCOMMON
 title: JSON markup
 description: Use the most popular data exchange format for describing complex Aspose.OMR forms as nested data structures.

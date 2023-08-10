@@ -4,6 +4,8 @@ date: "2023-05-30"
 author: "Vladimir Lapin"
 type: docs
 url: /json-markup/paragraph/
+aliases:
+- /net/json-markup/paragraph/
 feedback: OMRCOMMON
 title: Paragraph
 description: Paragraph element allows you to combine text and images.

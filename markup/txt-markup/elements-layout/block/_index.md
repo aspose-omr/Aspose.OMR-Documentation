@@ -4,6 +4,8 @@ date: "2023-05-30"
 author: "Vladimir Lapin"
 type: docs
 url: /txt-markup/block/
+aliases:
+- /net/txt-markup/block/
 feedback: OMRCOMMON
 title: block
 description: Block element is used to organize content within containers.

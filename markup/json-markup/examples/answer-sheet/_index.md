@@ -4,6 +4,8 @@ date: "2023-05-30"
 author: "Vladimir Lapin"
 type: docs
 url: /json-markup/examples/answer-sheet-barcode/
+aliases:
+- /net/json-markup/examples/answer-sheet-barcode/
 feedback: OMRCOMMON
 title: Answer sheet with barcode
 description: A classic answer sheet with a barcode encoding the student's name.

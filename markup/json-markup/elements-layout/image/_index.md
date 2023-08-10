@@ -4,6 +4,8 @@ date: "2023-05-30"
 author: "Vladimir Lapin"
 type: docs
 url: /json-markup/image/
+aliases:
+- /net/json-markup/image/
 feedback: OMRCOMMON
 title: Image
 description: Image element is used to add a picture.

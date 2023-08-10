@@ -4,6 +4,8 @@ date: "2023-05-30"
 author: "Vladimir Lapin"
 type: docs
 url: /txt-markup/examples/branded-survey/
+aliases:
+- /net/txt-markup/examples/branded-survey/
 feedback: OMRCOMMON
 title: Branded survey
 description: A customer satisfaction survey decorated with your logo.

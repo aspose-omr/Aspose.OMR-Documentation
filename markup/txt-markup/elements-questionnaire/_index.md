@@ -4,6 +4,8 @@ date: "2023-05-30"
 author: "Vladimir Lapin"
 type: docs
 url: /txt-markup/elements-questionnaire/
+aliases:
+- /net/txt-markup/elements-questionnaire/
 feedback: OMRCOMMON
 title: Questionnaires
 description: Questionnairy elements allow you to build OMR-ready customer satisfaction surveys, voting ballots, customs forms, and similar forms.

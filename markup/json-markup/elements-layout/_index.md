@@ -4,6 +4,8 @@ date: "2023-05-30"
 author: "Vladimir Lapin"
 type: docs
 url: /json-markup/elements-layout/
+aliases:
+- /net/json-markup/elements-layout/
 feedback: OMRCOMMON
 title: Layout
 description: Layout elements are used to arrange other elements and define the appearance and design of the OMR form.

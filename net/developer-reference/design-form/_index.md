@@ -5,31 +5,6 @@ author: "Vladimir Lapin"
 type: docs
 url: /net/design-form/
 feedback: OMRNET
-aliases:
-- /net/template-generation/
-- /net/template-generation/txt/
-- /net/template-generation/txt/elements-description/
-- /net/template-generation/json/
-- /net/template-generation/json/elements-description/
-- /net/txt-markup/question/
-- /net/template-generation/txt/elements-description/score/
-- /net/template-generation/txt/elements-description/table/
-- /net/template-generation/txt/elements-description/custom-answer-sheet/
-- /net/template-generation/txt/elements-description/composite-grid/
-- /net/template-generation/txt/examples/
-- /net/template-generation/txt/examples/multi-column
-- /net/template-generation/txt/examples/barcode/
-- /net/template-generation/txt/examples/image/
-- /net/template-generation/txt/examples/choice-box/
-- /net/template-generation/json/elements-description/score/
-- /net/template-generation/json/elements-description/table/
-- /net/template-generation/json/elements-description/custom-answer-sheet/
-- /net/template-generation/json/elements-description/composite-grid/
-- /net/template-generation/json/examples/
-- /net/template-generation/json/examples/multi-column
-- /net/template-generation/json/examples/barcode/
-- /net/template-generation/json/examples/image/
-- /net/template-generation/json/examples/choice-box/
 title: Designing machine-readable forms with Aspose.OMR for .NET
 description: How to design Aspose.OMR for .NET forms of any layout and complexity with specialized markup languages or programmatically.
 keywords:

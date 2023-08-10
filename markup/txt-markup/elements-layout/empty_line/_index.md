@@ -4,6 +4,8 @@ date: "2023-05-30"
 author: "Vladimir Lapin"
 type: docs
 url: /txt-markup/empty_line/
+aliases:
+- /net/txt-markup/empty_line/
 feedback: OMRCOMMON
 title: empty_line
 description: empty_line element is used to add vertical spacing between elements.

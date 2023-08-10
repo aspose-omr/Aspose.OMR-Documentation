@@ -4,6 +4,8 @@ date: "2023-05-30"
 author: "Vladimir Lapin"
 type: docs
 url: /json-markup/choicebox/
+aliases:
+- /net/json-markup/choicebox/
 feedback: OMRCOMMON
 title: ChoiceBox
 description: ChoiceBox element generates a question with a fixed number of answers.

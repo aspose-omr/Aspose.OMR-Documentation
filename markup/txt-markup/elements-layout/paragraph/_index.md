@@ -4,6 +4,8 @@ date: "2023-05-30"
 author: "Vladimir Lapin"
 type: docs
 url: /txt-markup/paragraph/
+aliases:
+- /net/txt-markup/paragraph/
 feedback: OMRCOMMON
 title: paragraph
 description: Paragraph element allows you to combine text and images.

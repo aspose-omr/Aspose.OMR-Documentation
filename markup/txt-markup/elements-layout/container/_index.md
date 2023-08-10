@@ -4,6 +4,8 @@ date: "2023-07-07"
 author: "Vladimir Lapin"
 type: docs
 url: /txt-markup/container/
+aliases:
+- /net/txt-markup/container/
 feedback: OMRCOMMON
 title: container
 description: Container element is used to break content into columns and to add a footer to the form.

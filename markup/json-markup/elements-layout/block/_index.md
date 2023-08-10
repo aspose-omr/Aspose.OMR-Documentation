@@ -4,6 +4,8 @@ date: "2023-05-30"
 author: "Vladimir Lapin"
 type: docs
 url: /json-markup/block/
+aliases:
+- /net/json-markup/block/
 feedback: OMRCOMMON
 title: Block
 description: Block element is used to organize content within containers.

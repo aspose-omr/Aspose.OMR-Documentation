@@ -4,6 +4,8 @@ date: "2023-05-30"
 author: "Vladimir Lapin"
 type: docs
 url: /txt-markup/
+aliases:
+- /net/txt-markup/
 feedback: OMRCOMMON
 title: Text markup
 description: Lightweight markup language specifically tailored for creating Aspose.OMR forms.

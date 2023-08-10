@@ -4,6 +4,8 @@ date: "2023-05-30"
 author: "Vladimir Lapin"
 type: docs
 url: /txt-markup/answer_sheet/
+aliases:
+- /net/txt-markup/answer_sheet/
 feedback: OMRCOMMON
 title: answer_sheet
 description: Answer_sheet element generates a numbered matrix of bubbles arranged in multiple columns to make more efficient use of space.

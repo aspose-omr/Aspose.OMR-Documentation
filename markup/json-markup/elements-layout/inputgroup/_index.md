@@ -4,6 +4,8 @@ date: "2023-05-30"
 author: "Vladimir Lapin"
 type: docs
 url: /json-markup/inputgroup/
+aliases:
+- /net/json-markup/inputgroup/
 feedback: OMRCOMMON
 title: InputGroup
 description: InputGroup element is used to insert personalized information, such as the respondent's name or email, into the form.

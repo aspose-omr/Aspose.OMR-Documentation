@@ -4,6 +4,8 @@ date: "2023-05-30"
 author: "Vladimir Lapin"
 type: docs
 url: /txt-markup/image/
+aliases:
+- /net/txt-markup/image/
 feedback: OMRCOMMON
 title: image
 description: Image element is used to add a picture.
