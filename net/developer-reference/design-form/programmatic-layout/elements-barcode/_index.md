@@ -1,6 +1,6 @@
 ---
 weight: 40
-date: "2022-05-30"
+date: "2023-08-15"
 author: "Vladimir Lapin"
 type: docs
 url: /net/programmatic-forms/elements-barcode/
@@ -95,6 +95,7 @@ Aspose.OMT for .NET can generate and recognize a wide variety of barcodes:
 - UpcaGs1DatabarCoupon
 - CodablockF
 - GS1CodablockF
+- MailMark
 
 ## Declaration
 

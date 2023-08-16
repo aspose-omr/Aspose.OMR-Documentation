@@ -32,7 +32,7 @@ Setting | Type | Default value | Description
 [`PaperSize`](https://reference.aspose.com/omr/net/aspose.omr.generation/papersize) | `Aspose.OMR.Generation.PaperSize` | A4 (210 x 297 mm) | Physical page dimensions.
 [`Orientation`](https://reference.aspose.com/omr/net/aspose.omr.generation/orientation) | `Aspose.OMR.Generation.Orientation` | Portrait (vertical) | Page orientation.
 `PageMarginLeft` | `int` | 210 pixels | The size of the left page margin in pixels.
-`PageMarginLeft` | `int` | 210 pixels | The size of the right page margin in pixels.
+`PageMarginRight` | `int` | 210 pixels | The size of the right page margin in pixels.
 `FontFamily` | `string` | Segoe UI | Font family for all texts, except for those directly overridden in the source code. For example, `"Courier New"`.<br />The selected font must be installed on the system that generates the printable form!
 `FontSize` | `int` | 12 | Font size for all texts, except for those directly overridden in the source code.
 [`FontStyle`](https://reference.aspose.com/omr/net/aspose.omr.generation/fontstyle) | `Aspose.OMR.Generation.FontStyle` | Regular | Font style for all texts, except for those directly overridden in the source code.

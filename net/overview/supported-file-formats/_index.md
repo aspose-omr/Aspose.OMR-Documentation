@@ -1,6 +1,6 @@
 ---
 weight: 30
-date: "2022-05-04"
+date: "2023-08-15"
 author: "Vladimir Lapin"
 type: docs
 url: /net/supported-file-formats/
@@ -50,7 +50,7 @@ Extension             | Details
 **.PDF**              | Portable Document Format (including multi-page documents).
 **.JPG**              | JPEG, the most popular format for smartphone photos.
 **.PNG**              | Portable Network Graphics.
-**.TIFF** or **.TIF** | Single-page TIFF image, commonly used for high quality scanning.
+**.TIFF** or **.TIF** | Single-page or multi-page TIFF image, commonly used for high quality scanning.
 **.GIF**              | Graphics Interchange Format. Limited to 256 colors.
 **.BMP**              | Bitmap image file.
 

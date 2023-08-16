@@ -1,6 +1,6 @@
 ---
 weight: 40
-date: "2023-05-30"
+date: "2023-08-15"
 author: "Vladimir Lapin"
 type: docs
 url: /json-markup/elements-barcode/
@@ -92,6 +92,7 @@ Aspose.OMT for .NET can generate and recognize a wide variety of barcodes:
 - UPCA
 - UPCE
 - VIN
+- MailMark
 
 ## Declaration
 
