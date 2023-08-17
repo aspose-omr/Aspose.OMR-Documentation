@@ -41,6 +41,7 @@ OMRNET&#8209;850 | [Page identifier](/omr/net/omr-form-structure/) is no longer 
 OMRNET&#8209;555 | [`Recalculate`](https://reference.aspose.com/omr/net/aspose.omr.api/templateprocessor/recalculate/) method now correctly processes **ScoreGroup**, **CompositeGrid**, **CheckBox**, **ReplaceTrigger**, and **ClipArea** elements. | Fix
 OMRNET&#8209;890 | Removed unnecessary commas when saving grid ([text markup](/omr/txt-markup/grid/) / [JSON markup](/omr/json-markup/grid/)) recognition results to [CSV](/omr/net/recognition/save/#saving-as-csv). | Fix
 OMRNET&#8209;890 | Multiple grid ([text markup](/omr/txt-markup/grid/) / [JSON markup](/omr/json-markup/grid/)) elements with the same name are no longer merged into one result during recognition. | Fix
+n/a | Changed text direction for Bengali from RTL to LTR. | Fix
 
 ## Public API changes and backwards compatibility
 
