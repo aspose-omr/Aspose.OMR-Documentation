@@ -1,6 +1,6 @@
 ---
 weight: 30
-date: "2023-05-30"
+date: "2023-09-13"
 author: "Vladimir Lapin"
 type: docs
 url: /json-markup/customanswersheet/
@@ -56,6 +56,7 @@ Name | Type | Default value | Description
 **border_bottom_style** | object | _inherits border_size and border_color_ | Override the width and color of the element's bottom border. Provided as the following object: `{"size": <border width>, "color": "<border color>", "disable": <true \| false>}`. Specifying `true` in the `disable` property removes the bottom border.
 **border_left_style** | object | _inherits border_size and border_color_ | Override the width and color of the element's left border. Provided as the following object: `{"size": <border width>, "color": "<border color>", "disable": <true \| false>}`. Specifying `true` in the `disable` property removes the left border.
 **border_right_style** | object | _inherits border_size and border_color_ | Override the width and color of the element's right border. Provided as the following object: `{"size": <border width>, "color": "<border color>", "disable": <true \| false>}`. Specifying `true` in the `disable` property removes the right border.
+**start_id** | integer | 1 | The value from which the numbering of custom answer sheet rows begins. The number of each subsequent row is increased by 1.
 
 ### Header element
 
@@ -147,6 +148,7 @@ Name | Type | Default value | Description
 **font_family** | string | "Segoe UI" | The font family for the bubble character.
 **font_style** | string / array | "regular" | The font style for the bubble character: `"bold"`, `"italic"` or `"underline"`.<br />Several font styles can be combined by providing them as an array; for example `["bold", "italic"]`.
 **font_size** | integer | 12 | Font size for the bubble character.
+**recogintion_values** | array | _Same as `answers_list`_ | The values returned in recognition results (numbers and/or characters).<br />The array length must exactly match the length of `answers_list` array.
 
 #### CustomTrigger element
 

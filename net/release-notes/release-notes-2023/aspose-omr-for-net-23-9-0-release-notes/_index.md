@@ -1,14 +1,15 @@
 ---
-weight: 1
+weight: 41
 date: "2023-09-13"
 author: "Vladimir Lapin"
 type: docs
-url: /net/release-notes/latest/
+url: /net/aspose-omr-for-net-23-9-0-release-notes/
 feedback: OMRNET
-title: Latest release (September 2023)
+title: Aspose.OMR for .NET 23.9.0 - Release Notes
 description: A summary of recent changes, enhancements and bug fixes in Aspose.OMR for .NET 23.9.0 (September 2023) release.
 keywords:
-- latest
+- 2023
+- September
 - new
 - release
 - changelog

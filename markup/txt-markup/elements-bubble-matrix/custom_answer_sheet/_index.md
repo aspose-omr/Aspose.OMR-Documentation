@@ -1,6 +1,6 @@
 ---
 weight: 30
-date: "2023-05-30"
+date: "2023-09-13"
 author: "Vladimir Lapin"
 type: docs
 url: /txt-markup/custom_answer_sheet/
@@ -64,6 +64,7 @@ Attribute | Default value | Description | Usage example
 **border_bottom_style** | _inherits border_size and border_color_ | Override the width and color of the element's bottom border in `<border width> <border color>` format. Specify `none` to remove the bottom border. | `border_bottom_style=10 red`
 **border_left_style** | _inherits border_size and border_color_ | Override the width and color of the element's left border in `<border width> <border color>` format. Specify `none` to remove the left border. | `border_left_style=10 red`
 **border_right_style** | _inherits border_size and border_color_ | Override the width and color of the element's right border in `<border width> <border color>` format. Specify `none` to remove the right border. | `border_right_style=10 red`
+**start_id** | 1 | The value from which the numbering of custom answer sheet rows begins. The number of each subsequent row is increased by 1. | `start_id=0`
 
 ### Header element
 
@@ -146,6 +147,7 @@ Attribute | Default value | Description | Usage example
 **font_family** | Segoe UI | The font family for the bubble character. | `font_family=Courier New`
 **font_style** | regular | The font style for the bubble character: `bold`, `italic` or `underline`.<br />Several font styles can be combined by listing them separated by commas. | `font_style=bold, italic`
 **font_size** | 12 | Font size for the bubble character. | `font_size=16`
+**recogintion_values** | _Same as `answers_list`_ | The values returned in recognition results.<br />The number of answer keys must exactly match the total number of bubbles specified in `answers_list` property. | `recogintion_values=(1)(2)(3)(4)`
 
 #### Custom_trigger
 
