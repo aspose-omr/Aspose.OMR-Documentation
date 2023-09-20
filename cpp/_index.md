@@ -36,7 +36,9 @@ As a result, building a software optical mark reader (OMR) with Aspose.OMR for C
 
 Download Aspose.OMR for C++ and find more information on OMR API:
 
+- [Aspose.OMR for C++ Release](https://releases.aspose.com/omr/cpp/)
 - [Install Aspose.OMR for C++ NuGet package](https://www.nuget.org/packages/Aspose.OMR.Cpp/)
+- [Aspose.OMR for C++ Release Notes](https://releases.aspose.com/omr/cpp/release-notes/)
 - [Get a temporary license](https://purchase.aspose.com/temporary-license/)
 - [Learn technical details from the API Reference](https://reference.aspose.com/omr/cpp/aspose.omr/)
 - [View online demo apps](https://products.aspose.app/omr/family)

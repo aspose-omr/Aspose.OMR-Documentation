@@ -77,19 +77,20 @@ Check out how Aspose.OMR for .NET  can be used to solve real-world problems.
 
 Read a summary of recent changes, enhancements and bug fixes in Aspose.OMR for .NET releases.
 
-- [Latest release](/omr/net/release-notes/latest/)
-- [2023 releases](/omr/net/release-notes-2023/)
-- [2022 releases](/omr/net/release-notes-2022/)
-- [2021 releases](/omr/net/release-notes-2021/)
-- [2020 releases](/omr/net/release-notes-2020/)
-- [2019 releases](/omr/net/release-notes-2019/)
+- [Latest release](https://releases.aspose.com/omr/net/release-notes/latest/)
+- [2023 releases](https://releases.aspose.com/omr/net/release-notes/2023/)
+- [2022 releases](https://releases.aspose.com/omr/net/release-notes/2022/)
+- [2021 releases](https://releases.aspose.com/omr/net/release-notes/2021/)
+- [2020 releases](https://releases.aspose.com/omr/net/release-notes/2020/)
+- [2019 releases](https://releases.aspose.com/omr/net/release-notes/2019/)
 
 ## Resources
 
 Find more information, download Aspose.OMR for .NET packages and get professional help.
 
 - [NuGet package](https://www.nuget.org/packages/Aspose.Omr/)
-- [Downloads](https://downloads.aspose.com/omr/net)
+- [Downloads](https://releases.aspose.com/omr/net/)
+- [Release Notes](https://releases.aspose.com/omr/net/release-notes/)
 - [GitHub repository](https://github.com/aspose-omr/Aspose.OMR-for-.NET)
 - [API reference](https://reference.aspose.com/omr/net)
 - [Examples](https://github.com/aspose-omr/Aspose.OMR-for-.NET)
