@@ -22,7 +22,7 @@ keywords:
 
 ## Aspose.OMR for .NET
 
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 
 **![Aspose.OMR for .NET Product Logo](omr-net.png)**
 
@@ -34,7 +34,7 @@ Aspose.OMR for .NET library can recognize scanned images or even smartphone phot
 
 In addition to form recognition, Aspose.OMR for .NET can generate professional print forms, from examination papers to customer satisfaction surveys and election ballots. A highly flexible [markup language](/omr/net/design-form/) allows you to combine various elements that best suit your purpose and target audience. You can further personalize and brand OMR forms by adding logos, barcodes, QR codes, or images.
 
-{{% /alert %}} 
+{{% /alert %}}
 
 ### Resources
 
@@ -42,7 +42,7 @@ Find more information, download Aspose.OMR for .NET Nuget package and get profes
 
 - [Read online documentation](/omr/net/)
 - [Get technical details from the API Reference](https://reference.aspose.com/omr/net)
-- [Find out about the recent changes, improvements and bug fixes](/omr/net/release-notes/)
+- [Find out about the recent changes, improvements and bug fixes](https://releases.aspose.com/omr/net/release-notes/)
 - [Install Aspose.OMR for .NET NuGet package](https://www.nuget.org/packages/Aspose.Omr/)
 - [Download Aspose.OMR for .NET package](https://releases.aspose.com/omr/net/)
 - [View Aspose.OMR for .NET examples](https://github.com/aspose-omr/Aspose.OMR-for-.NET)
@@ -52,7 +52,7 @@ Find more information, download Aspose.OMR for .NET Nuget package and get profes
 
 ## Aspose.OMR for Java
 
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 
 **![Aspose.OMR for Java Product Logo](omr-java.png)**
 
@@ -62,7 +62,7 @@ Find more information, download Aspose.OMR for .NET Nuget package and get profes
 
 The library covers the full cycle of processing OMR forms: from designing the printable template to recognizing hand-filled forms. It is extremely cost-effective: you don't need to purchase and learn design tools, buy expensive scanners or specialized consumables. To create and process questionnaires of any type, an ordinary office copier and an entry-level smartphone are more than enough.
 
-{{% /alert %}} 
+{{% /alert %}}
 
 ### Resources
 
@@ -70,7 +70,7 @@ Find more information, install Aspose.OMR for Java and get professional help:
 
 - [Read online documentation](/omr/java/)
 - [Get technical details from the API Reference](https://apireference.aspose.com/omr/java)
-- [Find out about the recent changes, improvements and bug fixes](/omr/java/release-notes/)
+- [Find out about the recent changes, improvements and bug fixes](https://releases.aspose.com/omr/java/release-notes/)
 - [Install Aspose.OMR for Java](/omr/java/installation/)
 - [Visit Aspose.OMR for Java Maven repository](https://releases.aspose.com/java/repo/com/aspose/aspose-omr/)
 - [View Aspose.OMR for Java examples](https://github.com/aspose-omr/Aspose.OMR-for-Java)
@@ -80,7 +80,7 @@ Find more information, install Aspose.OMR for Java and get professional help:
 
 ## Aspose.OMR for C++
 
-{{% alert color="primary" %}} 
+{{% alert color="primary" %}}
 
 **![Aspose.OMR for C++ Product Logo](omr-cpp.png)**
 
@@ -90,7 +90,7 @@ Find more information, install Aspose.OMR for Java and get professional help:
 
 The library is built with economic efficiency in mind. No need to purchase and learn professional design and layout software - machine-readable forms of any complexity can be created with a few lines of code in an easy-to-read and flexible markup language. No need to buy expensive scanners or specialized consumables - an ordinary office copier and an entry-level smartphone are more than enough. Respondents can fill in your forms with any pen, pencil or marker.
 
-{{% /alert %}} 
+{{% /alert %}}
 
 ### Resources
 
@@ -98,7 +98,7 @@ Find more information, download Aspose.OMR for C++ and get professional help:
 
 - [Read online documentation](/omr/cpp/)
 - [Get technical details from the API Reference](https://reference.aspose.com/omr/cpp/aspose.omr/)
-- [Find out about the recent changes, improvements and bug fixes](/omr/cpp/release-notes/)
+- [Find out about the recent changes, improvements and bug fixes](https://releases.aspose.com/omr/cpp/release-notes/)
 - [Install Aspose.OMR for C++ NuGet package](https://www.nuget.org/packages/Aspose.OMR.Cpp/)
 - [Gain valuable insights from Blog](https://blog.aspose.com/category/omr/)
 - [Ask for an advice from Free Support Forum](https://forum.aspose.com/c/omr/38)
