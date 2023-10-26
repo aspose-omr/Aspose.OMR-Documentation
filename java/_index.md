@@ -33,8 +33,6 @@ Aspose's expertise in machine learning and AI libraries, years of customer feedb
 Get Aspose.OMR for Java and related software:
 
 - [Download Aspose.OMR for Java package](https://releases.aspose.com/omr/java/)
-- [Aspose.OMR for Java Release Notes](https://releases.aspose.com/omr/java/release-notes/)
-- [Aspose.OMR for Java Maven Repository](https://releases.aspose.com/java/repo/com/aspose/aspose-omr/)
 - [Learn by examples](https://github.com/aspose-omr/Aspose.OMR-for-Java)
 
 ## Resources

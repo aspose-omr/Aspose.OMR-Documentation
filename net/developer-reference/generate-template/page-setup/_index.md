@@ -1,6 +1,6 @@
 ---
 weight: 10
-date: "2023-07-07"
+date: "2023-10-24"
 author: "Vladimir Lapin"
 type: docs
 url: /net/generate-template/page-setup/
@@ -39,7 +39,11 @@ Setting | Type | Default value | Description
 [`BubbleSize`](https://reference.aspose.com/omr/net/aspose.omr.generation/bubblesize) | `Aspose.OMR.Generation.BubbleSize` | Normal | Size of answer bubbles, except for those directly overridden in the source code.
 [`BubbleColor`](https://reference.aspose.com/omr/net/aspose.omr.generation/color) | `Aspose.OMR.Generation.Color` | Black | [Color](/omr/net/supported-colors/) of all answer bubbles in the form.
 [`Overflow`](https://reference.aspose.com/omr/net/aspose.omr.generation/overflow) | `Aspose.OMR.Generation.OverflowActions.<Algorithm>` | Do not clip and wrap elements | How to render elements that do not fit in the parent container.<br />See details [below](#clipping-and-wrapping-elements).
-[`RotationPointPosition`](https://reference.aspose.com/omr/net/aspose.omr.generation/globalpagesettings/rotationpointposition/) | `Aspose.OMR.Generation.RotationPointPosition` | Below the top-right square positioning marker | The placement of the rectangular [positioning marker](/omr/net/omr-form-structure/) that is used to detect the page orientation.<br />See details [below](#positioning-marker-placement).
+`ReferencePoints.Offset.Top` | `int` | 1% of the page height | Offset (in pixels) of the [reference point markers](/omr/net/omr-form-structure/) from the top edge of the page.
+`ReferencePoints.Offset.Bottom` | `int` | 1% of the page height | Offset (in pixels) of the [reference point markers](/omr/net/omr-form-structure/) from the bottom edge of the page.
+`ReferencePoints.Offset.Left` | `int` | 1% of the page width | Offset (in pixels) of the [reference point markers](/omr/net/omr-form-structure/) from the left edge of the page.
+`ReferencePoints.Offset.Right` | `int` | 1% of the page width | Offset (in pixels) of the [reference point markers](/omr/net/omr-form-structure/) from the right edge of the page.
+`ReferencePoints.RotationMarkerPosition` | `Aspose.OMR.Generation.RotationPointPosition` | Below the top-right square reference point marker | The placement of the rectangular [rotation marker](/omr/net/omr-form-structure/) that is used to detect the page orientation.<br />See details [below](#rotation-marker-placement).
 [`WritingSystem`](https://reference.aspose.com/omr/net/aspose.omr.generation/globalpagesettings/writingsystem/) | `Aspose.OMR.Generation.WritingSystems.WritingSystem` | Left-to-right (LTR), Western numbering | [Localization](#form-localization), which affects text direction (LTR or RTL) and item numbering of generated OMR forms.
 `ImagesPaths` | `string[]` | _n/a_ | Full path to each image mentioned in the [source code](/omr/net/design-form/).<br />Read more info in this [article](/omr/net/generate-template/images/).
 `LongWordHandling` | `Aspose.OMR.Generation.LongWordHandling` | Draw word over element's bounds | How to render very long words that do not fit the parent element's width and cannot be wrapped.<ul><li>`DrawOver` (default) - draw long words until a space or end of line is encountered, even outside the bounds of an element.</li><li>`ThrowException` - throw an exception when rendering the form if the long word does not fit the width of the parent element. The form will not be generated.</li></ul>
@@ -62,20 +66,20 @@ Enumeration | Page dimensions (pixels) | Page dimensions (mm) | Page dimensions 
 The selected paper size does not affect the size of bubbles, images or fonts. Changing the paper size only affects the positioning of elements on the page.
 {{% /alert %}} 
 
-## Positioning marker placement
+## Rotation marker placement
 
-The `RotationPointPosition` property controls the placement of the rectangular [positioning marker](/omr/net/omr-form-structure/) that is used to detect the page orientation. It is provided one of the following values of `Aspose.OMR.Generation.RotationPointPosition` enumerator:
+The `ReferencePoints.RotationMarkerPosition` property controls the placement of the rectangular [rotation marker](/omr/net/omr-form-structure/) that is used to detect the page orientation. It is provided one of the following values of `Aspose.OMR.Generation.RotationPointPosition` enumerator:
 
 Enumeration | Value | Result
 ----------- | ----- | ------
-`TopLeft1` | 10 | ![Below the top-left square positioning marker](TopLeft1.png)
-`TopLeft2` | 11 | ![To the right of the top-left square positioning marker](TopLeft2.png)
-`TopRight1` | 20 | ![Below the top-right square positioning marker](TopRight1.png)
-`TopRight2` | 21 | ![To the left of the top-left square positioning marker](TopRight2.png)
-`BottomLeft1` | 30 | ![Above the bottom-left square positioning marker](BottomLeft1.png)
-`BottomLeft2` | 31 | ![To the right of the bottom-left square positioning marker](BottomLeft2.png)
-`BottomRight1` | 40 | ![Above the bottom-right square positioning marker](BottomRight1.png)
-`BottomRight2` | 41 | ![To the left of the bottom-right square positioning marker](BottomRight2.png)
+`TopLeft1` | 10 | ![Below the top-left square reference point marker](TopLeft1.png)
+`TopLeft2` | 11 | ![To the right of the top-left square reference point marker](TopLeft2.png)
+`TopRight1` | 20 | ![Below the top-right square reference point marker](TopRight1.png)
+`TopRight2` | 21 | ![To the left of the top-left square reference point marker](TopRight2.png)
+`BottomLeft1` | 30 | ![Above the bottom-left square reference point marker](BottomLeft1.png)
+`BottomLeft2` | 31 | ![To the right of the bottom-left square reference point marker](BottomLeft2.png)
+`BottomRight1` | 40 | ![Above the bottom-right square reference point marker](BottomRight1.png)
+`BottomRight2` | 41 | ![To the left of the bottom-right square reference point marker](BottomRight2.png)
 
 ## Clipping and wrapping elements
 

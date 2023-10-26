@@ -1,6 +1,6 @@
 ---
 weight: 40
-date: "2022-05-19"
+date: "2023-10-24"
 author: "Vladimir Lapin"
 type: docs
 url: /net/omr-form-structure/
@@ -15,19 +15,28 @@ keywords:
 - design
 ---
 
-Most OMR-ready forms have a unified structure that allows the recognition engine to reliably associate handwritten marks with answers. **Aspose.OMR** uses a special page layout to provide superior recognition accuracy of multi-page forms, photos, and even rotated / skewed images.
+Most OMR-ready forms have a unified structure that allows the recognition engine to reliably associate hand-drawn marks with answers. **Aspose.OMR** uses a special page layout to provide superior recognition accuracy of multi-page forms, photos, and even rotated / skewed images.
 
 ![Aspose.OMR form structure](omr-form-structure.png)
 
-## Positioning markers
+## Reference point markers
 
-Located at the corners of the page, these 5 boxes allow a recognition engine to quickly find inner elements of the form, and determine its size and orientation. Positioning markers are crucial for processing skewed scans and photos.
+Located at the corners of the page, these 5 black boxes allow a recognition engine to quickly find inner elements of the form and determine its size and orientation. Reference point markers are crucial for form recognition.
 
-{{% alert color="primary" %}} 
+Due to their importance, reference point markers are always rendered above all other elements of the form.
 
-Never remove these markers from the OMR form and do not change their size or position in a graphics editor!
+{{% alert color="caution" %}}
+**Important considerations:**
 
+- Never remove these markers from the OMR form and do not change their size or position in a graphics editor.
+- When scanning or photographing completed forms, ensure that all 5 markers are present in the image.
 {{% /alert %}} 
+
+### Rotation marker
+
+This rectangular marker is used to determine page orientation in scans and photographs. It guarantees accurate recognition of skewed, rotated and distorted images.
+
+Position of the rotation marker can be [customized](/omr/net/generate-template/page-setup/#rotation-marker-placement) in page layout settings. 
 
 ## Form content
 

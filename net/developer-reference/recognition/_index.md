@@ -19,7 +19,7 @@ keywords:
 To recognize a filled questionnaire, answer sheet, ballot, or other OMR form, digitize it in one of the [supported formats](/omr/net/supported-file-formats/). For best results, we recommend using a scanner (a basic office scanner or multifunction copier will suffice). If you do not have a scanner, you can simply take a picture of the form with any modern smartphone and upload the photo to your computer.
 
 {{% alert color="primary" %}} 
-Make sure that all 5 [positioning markers](/omr/net/omr-form-structure/) are present on the image.
+Make sure that all 5 [reference point markers](/omr/net/omr-form-structure/) are present on the image.
 {{% /alert %}} 
 
 ## Initializing the recognition engine

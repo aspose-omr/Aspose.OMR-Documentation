@@ -1,6 +1,6 @@
 ---
 weight: 9
-date: "2023-08-15"
+date: "2023-10-24"
 author: "Vladimir Lapin"
 type: docs
 url: /net/programmatic-forms/pageconfig/
@@ -72,7 +72,7 @@ Name | Type | Default value | Description
 **PaperSize** | `Aspose.OMR.Generation.PaperSize` | `Aspose.OMR.Generation.PaperSize.A4` | Override the physical dimensions for the individual page.<br />See details [below](#supported-paper-sizes).
 **PageMarginLeft** | `int` | 210 pixels | Override the size of the left page margin in pixels.
 **PageMarginRight** | `int` | 210 pixels | Override the size of the right page margin in pixels.
-**RotationPointPosition** | `Aspose.OMR.Generation.RotationPointPosition` | Below the top-right square positioning marker. | Override the placement of the rectangular [positioning marker](/omr/net/omr-form-structure/) that is used to detect the page orientation.<br />See details [below](#positioning-marker-placement).
+**RotationPointPosition** | `Aspose.OMR.Generation.RotationPointPosition` | Below the top-right square reference point marker. | Override the placement of the rectangular [rotation marker](/omr/net/omr-form-structure/) that is used to detect the page orientation.<br />See details [below](#rotation-marker-placement).
 
 #### Supported paper sizes
 
@@ -92,20 +92,20 @@ Enumeration | Page dimensions (pixels) | Page dimensions (mm) | Page dimensions 
 The selected paper size does not affect the size of bubbles, images or fonts. Changing the paper size only affects the positioning of elements on the page.
 {{% /alert %}} 
 
-#### Positioning marker placement
+#### Rotation marker placement
 
-The `RotationPointPosition` property controls the placement of the rectangular [positioning marker](/omr/net/omr-form-structure/) that is used to detect the page orientation. It is provided one of the following values of `Aspose.OMR.Generation.RotationPointPosition` enumerator:
+The `RotationPointPosition` property controls the placement of the rectangular [rotation marker](/omr/net/omr-form-structure/) that is used to detect the page orientation. It is provided one of the following values of `Aspose.OMR.Generation.RotationPointPosition` enumerator:
 
 Enumeration | Result
 ----------- | ------
-`RotationPointPosition.TopLeft1` | ![Below the top-left square positioning marker](TopLeft1.png)
-`RotationPointPosition.TopLeft2` | ![To the right of the top-left square positioning marker](TopLeft2.png)
-`RotationPointPosition.TopRight1` | ![Below the top-right square positioning marker](TopRight1.png)
-`RotationPointPosition.TopRight2` | ![To the left of the top-left square positioning marker](TopRight2.png)
-`RotationPointPosition.BottomLeft1` | ![Above the bottom-left square positioning marker](BottomLeft1.png)
-`RotationPointPosition.BottomLeft2` | ![To the right of the bottom-left square positioning marker](BottomLeft2.png)
-`RotationPointPosition.BottomRight1` | ![Above the bottom-right square positioning marker](BottomRight1.png)
-`RotationPointPosition.BottomRight2` | ![To the left of the bottom-right square positioning marker](BottomRight2.png)
+`RotationPointPosition.TopLeft1` | ![Below the top-left square reference point marker](TopLeft1.png)
+`RotationPointPosition.TopLeft2` | ![To the right of the top-left square reference point marker](TopLeft2.png)
+`RotationPointPosition.TopRight1` | ![Below the top-right square reference point marker](TopRight1.png)
+`RotationPointPosition.TopRight2` | ![To the left of the top-left square reference point marker](TopRight2.png)
+`RotationPointPosition.BottomLeft1` | ![Above the bottom-left square reference point marker](BottomLeft1.png)
+`RotationPointPosition.BottomLeft2` | ![To the right of the bottom-left square reference point marker](BottomLeft2.png)
+`RotationPointPosition.BottomRight1` | ![Above the bottom-right square reference point marker](BottomRight1.png)
+`RotationPointPosition.BottomRight2` | ![To the left of the bottom-right square reference point marker](BottomRight2.png)
 
 ## Allowed child elements
 
