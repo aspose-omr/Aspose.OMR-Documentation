@@ -1,6 +1,6 @@
 ---
 weight: 10
-date: "2023-05-30"
+date: "2023-12-20"
 author: "Vladimir Lapin"
 type: docs
 url: /json-markup/elements-layout/
@@ -40,6 +40,8 @@ The type of the element is specified in the value of **element_type** property o
   This element is used to break content into columns and to add a footer to the form.
 - [**Block**](/omr/json-markup/block/)  
   This element is used to organize other elements in container columns.
+- [**PositionedBlock**](/omr/json-markup/positionedblock/)  
+  This element is used to place any number of other form elements at the specific coordinates on the page.
 - [**Text**](/omr/json-markup/text/)  
   This element is used to add one or more lines of text to the form. Can only be used at the **top level** of the form hierarchy.
 - [**Content**](/omr/json-markup/content/)  

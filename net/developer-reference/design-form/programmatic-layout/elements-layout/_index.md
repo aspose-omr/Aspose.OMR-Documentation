@@ -1,6 +1,6 @@
 ---
 weight: 10
-date: "2022-05-25"
+date: "2023-12-20"
 author: "Vladimir Lapin"
 type: docs
 url: /net/programmatic-forms/elements-layout/
@@ -39,6 +39,8 @@ Each element is defined as an instance of the corresponding class.
   This element is used to break content into columns and to add a footer to the form.
 - [BlockConfig](/omr/net/programmatic-forms/blockconfig/)  
   This element is used to organize other elements in container columns.
+- [PositionedBlockConfig](/omr/net/programmatic-forms/positionedblockconfig/)  
+  This element is used to place any number of other form elements at the specific coordinates on the page.
 - [TextConfig](/omr/net/programmatic-forms/textconfig/)  
   This element is used to add one or more lines of text to the form. Can only be used at the **top level** of the form hierarchy.
 - [ContentConfig](/omr/net/programmatic-forms/contentconfig/)  

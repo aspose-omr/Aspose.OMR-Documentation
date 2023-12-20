@@ -1,6 +1,6 @@
 ---
 weight: 30
-date: "2023-06-16"
+date: "2023-12-20"
 author: "Vladimir Lapin"
 type: docs
 url: /java/design-form/grid/
@@ -38,6 +38,7 @@ Attribute | Default value | Description | Usage example
 --------- | ------------- | ----------- | -------------
 **sections_count** | 8 | The maximum number of digits in the combined response. Each digit is represented as a column of bubbles. | `sections_count=7`
 **options_count** | 10 | The number of bubbles for each column. Bubble numbering always starts with _0_. | `options_count=8`
+**bubble_size** | `normal` | Size of bubbles:<ul><li>`extrasmall` - 40 pixels</li><li>`small` - 50 pixels</li><li>`normal` - 60 pixels</li><li>`large` - 80 pixels</li><li>`extralarge` - 100 pixels</li></ul>Overrides the global bubble size configured in [page settings](/omr/java/generate-template/page-setup/).
 
 ## Recognition behavior
 

@@ -1,6 +1,6 @@
 ---
 weight: 20
-date: "2023-06-16"
+date: "2023-12-20"
 author: "Vladimir Lapin"
 type: docs
 url: /java/design-form/answer_sheet/
@@ -54,6 +54,7 @@ Attribute | Default value | Description | Usage example
 **columns_count** | 4 | The number of columns to arrange lines into. Use multiple columns to make the answer sheet more compact. | `columns_count=3`
 **answers_count** | 4 | The total number of bubbles (answers) for each question.<br />You can only set the same number of answers for all questions. If the number of answers is different for each section of the exam, use multiple **answer_sheet** elements. | `answers_count=5`
 **start_id** | Automatic | The number of the first line used as a base for further numbering.<br />If omitted, the number will be calculated based on the numbering of previous elements. | `start_id=1`
+**bubble_size** | `normal` | Size of bubbles:<ul><li>`extrasmall` - 40 pixels</li><li>`small` - 50 pixels</li><li>`normal` - 60 pixels</li><li>`large` - 80 pixels</li><li>`extralarge` - 100 pixels</li></ul>Overrides the global bubble size configured in [page settings](/omr/java/generate-template/page-setup/).
 
 ## Example
 

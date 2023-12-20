@@ -1,6 +1,6 @@
 ---
 weight: 10
-date: "2023-05-30"
+date: "2023-12-20"
 author: "Vladimir Lapin"
 type: docs
 url: /txt-markup/elements-layout/
@@ -37,6 +37,8 @@ All form elements are rendered one below the other and occupy the entire width o
   This element is used to break content into columns and to add a footer to the form.
 - [**block**](/omr/txt-markup/block/)  
   This element is used to organize other elements in columns.
+- [**positioned_block**](/omr/txt-markup/positioned_block/)  
+  This element is used to place any number of other form elements at the specific coordinates on the page.
 - [**text**](/omr/txt-markup/text/)  
   This element is used to add one or more lines of text to the form. Can only be used at the top level of the form hierarchy.
 - [**content**](/omr/txt-markup/content/)  
