@@ -1,6 +1,6 @@
 ---
 weight: 40
-date: "2022-04-15"
+date: "2024-01-22"
 author: "Vladimir Lapin"
 type: docs
 url: /net/hello-world/
@@ -144,7 +144,7 @@ Now we are ready for what OMR stands for – optical mark recognition.
    ```
 7. Recognize the photo of the filled form:  
    ```c#
-   Aspose.OMR.Model.RecognitionResult recognitionResult = templateProcessor.RecognizeImage("IMG_20220401.jpg");
+   Aspose.OMR.Model.RecognitionResult recognitionResult = templateProcessor.Recognize("IMG_20220401.jpg");
    ```
 8. Convert the recognition result to comma-separated values (CSV) format and output it to the console:  
    ```c#
@@ -165,7 +165,7 @@ namespace HelloOMR
 		{
 			Aspose.OMR.Api.OmrEngine omrEngine = new Aspose.OMR.Api.OmrEngine();
 			Aspose.OMR.Api.TemplateProcessor templateProcessor = omrEngine.GetTemplateProcessor("Hello.OMR.omr");
-			Aspose.OMR.Model.RecognitionResult recognitionResult = templateProcessor.RecognizeImage("IMG_20220401.jpg");
+			Aspose.OMR.Model.RecognitionResult recognitionResult = templateProcessor.Recognize("IMG_20220401.jpg");
 			string result = recognitionResult.GetCsv();
 			Console.WriteLine(result);
 			Console.ReadLine();

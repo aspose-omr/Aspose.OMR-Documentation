@@ -1,6 +1,6 @@
 ---
 weight: 50
-date: "2022-05-26"
+date: "2024-01-22"
 author: "Vladimir Lapin"
 type: docs
 url: /net/working-with-ui-control/
@@ -64,7 +64,7 @@ Simply execute the following code:
 
 ```csharp
 if(control == null) return;
-control.RecognizeImage();
+control.Recognize();
 ```
 
 If you are working with an example application, click **Recognize Image** button on top of the main screen. The overlay layer will show the recognized bubbles and the calculated position of the form body.
