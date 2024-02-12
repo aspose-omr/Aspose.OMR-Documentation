@@ -54,7 +54,6 @@ Name | Type | Description
 **XPosition** | `int` | Absolute position of the block (in pixels) relative to the left edge of the page.
 **YPosition** | `int` | Absolute position of the block (in pixels) relative to the top edge of the page.
 
-
 ### Optional properties
 
 Name | Type | Default value | Description
