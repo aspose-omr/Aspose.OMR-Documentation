@@ -41,6 +41,7 @@ In addition to form recognition, Aspose.OMR for .NET can generate professional p
 Find more information, download Aspose.OMR for .NET Nuget package and get professional help:
 
 - [Read online documentation](/omr/net/)
+- [Interactively design OMR forms](https://products.aspose.app/omr/omr-sheet-designer)
 - [Get technical details from the API Reference](https://reference.aspose.com/omr/net)
 - [Find out about the recent changes, improvements and bug fixes](/omr/net/release-notes/)
 - [Install Aspose.OMR for .NET NuGet package](https://www.nuget.org/packages/Aspose.Omr/)
