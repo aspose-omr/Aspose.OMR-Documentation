@@ -1,6 +1,6 @@
 ---
 weight: 10
-date: "2023-06-16"
+date: "2024-05-13"
 author: "Vladimir Lapin"
 type: docs
 url: /java/generate-template/page-setup/
@@ -35,6 +35,7 @@ Setting | Type | Default value | Description
 `FontStyle` | `FontStyle` | Regular | Font style for all texts, except for those directly overridden in the source code. See the full list of supported font styles [below](#supported-font-styles).
 `BubbleSize` | `BubbleSize` | Normal | Size of answer bubbles, except for those directly overridden in the source code. See the full list of supported bubble sizes [below](#supported-bubble-sizes).
 `BubbleColor` | `DrawingColor` | Black | Color of all answer bubbles in the form. See the full list of supported colors [below](#supported-colors).
+`FontColor` | `DrawingColor` | Black | Color of all texts in the form. See the full list of supported colors [below](#supported-colors).
 
 ## Supported paper sizes
 
