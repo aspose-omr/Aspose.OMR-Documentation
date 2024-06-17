@@ -1,6 +1,6 @@
 ---
 weight: 10
-date: "2023-01-24"
+date: "2024-01-24"
 author: "Vladimir Lapin"
 type: docs
 url: /net/
