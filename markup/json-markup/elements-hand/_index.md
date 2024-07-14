@@ -1,6 +1,6 @@
 ---
 weight: 50
-date: "2024-02-10"
+date: "2024-07-09"
 author: "Vladimir Lapin"
 type: docs
 url: /json-markup/elements-freehand/
@@ -28,3 +28,5 @@ Aspose.OMR does not confine respondents to merely filling in circles or checking
   This element provides a blank field in which the respondent can hand write some text or draw a picture.
 - [**Text input**](/omr/json-markup/text_input/)  
   This element generates a placeholder consisting of several boxes in which the respondent can write letters or numbers, one character in each box.
+- [**Free text input**](/omr/json-markup/free_text_input/)  
+  This element generates a placeholder where the respondent can enter handwritten text in a free-form manner.
