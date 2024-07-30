@@ -1,6 +1,6 @@
 ---
 weight: 40
-date: "2023-08-15"
+date: "2024-07-29"
 author: "Vladimir Lapin"
 type: docs
 url: /txt-markup/elements-barcode/
@@ -122,6 +122,7 @@ Attribute | Default value | Description | Usage example
 **height** | Automatic | Barcode height, in pixels. The width is adjusted automatically. | `height=300`
 **x** | n/a | Set the absolute position of the barcode relative to the left edge of the page.<br />Overrides the value of **align** attribute. | `x=300`
 **y** | n/a | Set the absolute position of the barcode relative to the top edge of the page. | `y=500`
+**rotation_angle** | n/a | Rotate the element by the specified angle (in degrees).<br />Negative angle rotates the element counter-clockwise, positive angle rotates the element clockwise. | `rotation_angle=-90`
 
 ## Allowed child elements
 

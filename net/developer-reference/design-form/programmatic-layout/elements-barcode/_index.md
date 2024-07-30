@@ -1,6 +1,6 @@
 ---
 weight: 40
-date: "2023-08-15"
+date: "2024-07-29"
 author: "Vladimir Lapin"
 type: docs
 url: /net/programmatic-forms/elements-barcode/
@@ -132,6 +132,7 @@ Name | Type | Default value | Description
 **Height** | `int` | _Automatic_ | Barcode height, in pixels. The width is adjusted automatically.
 **X** | `int` | _n/a_ | Set the absolute position of the barcode relative to the left edge of the page.<br />Overrides the value of `Align` property.
 **Y** | `int` | _n/a_ | Set the absolute position of the barcode relative to the top edge of the page.
+**RotationAngle** | `int` | n/a | Rotate the element by the specified angle (in degrees).<br />Negative angle rotates the element counter-clockwise, positive angle rotates the element clockwise.
 
 ## Allowed child elements
 

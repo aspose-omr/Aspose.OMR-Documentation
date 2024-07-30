@@ -1,6 +1,6 @@
 ---
 weight: 40
-date: "2023-08-15"
+date: "2024-07-29"
 author: "Vladimir Lapin"
 type: docs
 url: /json-markup/elements-barcode/
@@ -126,6 +126,7 @@ Name | Type | Default value | Description
 **height** | integer | _Automatic_ | Barcode height, in pixels. The width is adjusted automatically.
 **x** | integer | _n/a_ | Set the absolute position of the barcode relative to the left edge of the page.<br />Overrides the value of **align** property.
 **y** | integer | _n/a_ | Set the absolute position of the barcode relative to the top edge of the page.
+**rotation_angle** | integer | n/a | Rotate the element by the specified angle (in degrees).<br />Negative angle rotates the element counter-clockwise, positive angle rotates the element clockwise.
 
 ## Allowed child elements
 
