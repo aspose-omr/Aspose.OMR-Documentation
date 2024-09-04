@@ -1,6 +1,6 @@
 ---
 weight: 10
-date: "2022-06-01"
+date: "2024-09-04"
 author: "Vladimir Lapin"
 type: docs
 url: /net/programmatic-forms/examples/personalized/
@@ -152,7 +152,7 @@ namespace FormBuilder
 					}
 				};
 				// Save form
-				GenerationResult generationResult = omrEngine.GenerateTemplate(templateConfig, globalPageSettings);
+				GenerationResult generationResult = omrEngine.Generate(templateConfig, globalPageSettings);
 				generationResult.SaveAsPdf("forms", student.Value.Replace(' ', '_'));
 			}
 		}

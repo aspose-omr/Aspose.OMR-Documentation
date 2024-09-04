@@ -1,6 +1,6 @@
 ---
 weight: 40
-date: "2023-06-29"
+date: "2024-09-04"
 author: "Vladimir Lapin"
 type: docs
 url: /net/generate-template/save/
@@ -44,7 +44,7 @@ Printable pages are saved as _PNG_ images. Their dimensions match the provided [
 {{< tab tabNum="1" >}}
 ```csharp
 Aspose.OMR.Api.OmrEngine omrEngine = new Aspose.OMR.Api.OmrEngine();
-Aspose.OMR.Generation.GenerationResult generationResult = omrEngine.GenerateTemplate("source.txt");
+Aspose.OMR.Generation.GenerationResult generationResult = omrEngine.Generate("source.txt");
 if(generationResult.ErrorCode != 0)
 {
 	Console.WriteLine(generationResult.ErrorMessage);
@@ -74,7 +74,7 @@ Call `SaveAsPdf` method of of the [`GenerationResult`](https://reference.aspose.
 {{< tab tabNum="1" >}}
 ```csharp
 Aspose.OMR.Api.OmrEngine omrEngine = new Aspose.OMR.Api.OmrEngine();
-Aspose.OMR.Generation.GenerationResult generationResult = omrEngine.GenerateTemplate("source.txt");
+Aspose.OMR.Generation.GenerationResult generationResult = omrEngine.Generate("source.txt");
 if(generationResult.ErrorCode != 0)
 {
 	Console.WriteLine(generationResult.ErrorMessage);
@@ -101,7 +101,7 @@ To enable in-memory form generation, convert the object returned by [`GenerateTe
 
 ```csharp
 Aspose.OMR.Api.OmrEngine omrEngine = new Aspose.OMR.Api.OmrEngine();
-Aspose.OMR.Generation.GenerationResult generationResult = omrEngine.GenerateTemplate("source.txt");
+Aspose.OMR.Generation.GenerationResult generationResult = omrEngine.Generate("source.txt");
 if(generationResult.ErrorCode != 0)
 {
 	Console.WriteLine(generationResult.ErrorMessage);
@@ -148,7 +148,7 @@ byte[] recognitionPattern = omr.ToArray();
 
 ```csharp
 Aspose.OMR.Api.OmrEngine omrEngine = new Aspose.OMR.Api.OmrEngine();
-Aspose.OMR.Generation.GenerationResult generationResult = omrEngine.GenerateTemplate("source.txt");
+Aspose.OMR.Generation.GenerationResult generationResult = omrEngine.Generate("source.txt");
 if(generationResult.ErrorCode != 0)
 {
 	Console.WriteLine(generationResult.ErrorMessage);

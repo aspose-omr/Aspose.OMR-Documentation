@@ -1,6 +1,6 @@
 ---
 weight: 40
-date: "2024-01-22"
+date: "2024-09-04"
 author: "Vladimir Lapin"
 type: docs
 url: /net/hello-world/
@@ -85,7 +85,7 @@ Once you have finished with the questionnaire structure and layout, let's build 
    ```
 5. Generate a form from the template source file:  
    ```c#
-   Aspose.OMR.Generation.GenerationResult generationResult = omrEngine.GenerateTemplate("template.txt");
+   Aspose.OMR.Generation.GenerationResult generationResult = omrEngine.Generate("template.txt");
    ```
 6. Save the result:  
    ```c#
@@ -102,7 +102,7 @@ namespace HelloOMR
 		static void Main(string[] args)
 		{
 			Aspose.OMR.Api.OmrEngine omrEngine = new Aspose.OMR.Api.OmrEngine();
-			Aspose.OMR.Generation.GenerationResult generationResult = omrEngine.GenerateTemplate("template.txt");
+			Aspose.OMR.Generation.GenerationResult generationResult = omrEngine.Generate("template.txt");
 			generationResult.Save("", "Hello.OMR");
 		}
 	}

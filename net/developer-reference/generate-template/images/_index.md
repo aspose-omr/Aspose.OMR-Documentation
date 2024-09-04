@@ -1,6 +1,6 @@
 ---
 weight: 20
-date: "2022-05-19"
+date: "2024-09-04"
 author: "Vladimir Lapin"
 type: docs
 url: /net/generate-template/images/
@@ -61,7 +61,7 @@ Aspose.OMR.Generation.GlobalPageSettings globalPageSettings = new Aspose.OMR.Gen
 	}
 };
 Aspose.OMR.Api.OmrEngine omrEngine = new Aspose.OMR.Api.OmrEngine();
-Aspose.OMR.Generation.GenerationResult generationResult = omrEngine.GenerateTemplate("source.txt", globalPageSettings);
+Aspose.OMR.Generation.GenerationResult generationResult = omrEngine.Generate("source.txt", globalPageSettings);
 generationResult.Save("", "OMR-Form");
 ```
 
@@ -76,7 +76,7 @@ images.Add("vignette.png", new MemoryStream(File.ReadAllBytes(@"C:\Users\Public\
 Aspose.OMR.Api.OmrEngine omrEngine = new Aspose.OMR.Api.OmrEngine();
 using(MemoryStream source = new MemoryStream(buffer))
 {
-	Aspose.OMR.Generation.GenerationResult generationResult = omrEngine.GenerateTemplate(source, images);
+	Aspose.OMR.Generation.GenerationResult generationResult = omrEngine.Generate(source, images);
 	generationResult.Save("", "OMR-Form");
 }
 ```

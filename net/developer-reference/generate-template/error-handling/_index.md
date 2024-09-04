@@ -1,6 +1,6 @@
 ---
 weight: 30
-date: "2022-05-19"
+date: "2024-09-04"
 author: "Vladimir Lapin"
 type: docs
 url: /net/generate-template/error-handling/
@@ -29,7 +29,7 @@ Alternatively, you can catch an exception from `Save` or `SaveAsPdf` methods of 
 
 ```csharp
 Aspose.OMR.Api.OmrEngine omrEngine = new Aspose.OMR.Api.OmrEngine();
-Aspose.OMR.Generation.GenerationResult generationResult = omrEngine.GenerateTemplate("source.txt");
+Aspose.OMR.Generation.GenerationResult generationResult = omrEngine.Generate("source.txt");
 if(generationResult.ErrorCode != 0)
 {
 	Console.WriteLine(generationResult.ErrorMessage);
