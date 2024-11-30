@@ -1,6 +1,6 @@
 ---
 weight: 40
-date: "2024-09-04"
+date: "2024-11-29"
 author: "Vladimir Lapin"
 type: docs
 url: /net/generate-template/save/
@@ -61,6 +61,8 @@ generationResult.Save("", "OMR-Form");
 
 ### Saving form as a PDF document
 
+The method described below is used for saving a form as an image-only (printable) PDF. To convert bubbles ant write-ins to interactive elements that can be filled electronically, use `Aspose.OMR.Generation.GenerationResult.SaveAsInteractivePdf()` method.
+
 {{% alert color="primary" %}} 
 This is the recommended method for saving multi-page forms.
 {{% /alert %}} 
@@ -81,6 +83,49 @@ if(generationResult.ErrorCode != 0)
 	return generationResult.ErrorCode;
 }
 generationResult.SaveAsPdf("", "OMR-Form");
+```
+{{< /tab >}}
+{{< tab tabNum="2" >}}
+- OMR-Form.pdf
+- OMR-Form.omr
+{{< /tab >}}
+{{< /tabs >}}
+
+### Saving form as an interactive PDF
+
+The method described below is used for saving a form as a PDF document with interactive elements, such as fields and checkboxes, enabling users to fill it electronically on a computer or smartphone. To get a PDF document that can be printed and filled by hand, use `Aspose.OMR.Generation.GenerationResult.SaveAsPdf()` method.
+
+{{% alert color="caution" %}}
+Saving a form as an interactive PDF may take longer if the page contains many interactive elements, such as bubbles and write-in fields.If you encounter significant performance issues, consider splitting the source into smaller forms.
+{{% /alert %}}
+
+The following [markup](https://docs.aspose.com/omr/design-form/) elements are supported in interactive PDFs:
+
+- **Choice box**: a question with a fixed number of answers. Each bubble is converted to an interactive checkbox.
+- **Vertical choice box**: a vertical block with answers and an optional write-in element. Each bubble is converted to an interactive checkbox; write-in element is converted to a text input field.
+- **Checkbox**: a list of answers with blank boxes, which can contain any marks - from marker filling to light pencil checks. Each checkbox is converted to an interactive checkbox.
+- **Grid**: a block consisting of numbered bubbles which are recognized as a whole, resulting in all marked bubbles forming a single answer. Each bubble is converted to an interactive checkbox.
+- **Answer sheet**: a numbered matrix of bubbles representing answers to a list of questions. Each bubble is converted to an interactive checkbox.
+- **Score group**: a group of questions with multiple evaluation criteria. The marked criteria for each question are summarized upon recognition and the resulting value is used as an answer for the question. Each bubble is converted to an interactive checkbox.
+- **Write-in**: a blank field in which the respondent can hand write some text. This element is converted to a text input field.
+- **Barcode**: a barcode or QR code based on the provided string. It is represented as a non-interactive image.
+
+Call `SaveAsInteractivePdf` method of of the [`GenerationResult`](https://reference.aspose.com/omr/net/aspose.omr.generation/generationresult) object returned by [`GenerateTemplate` or `GenerateJSONTemplate` methods](/omr/net/generate-template/). The method takes the following arguments:
+
+- Target directory name, either absolute or relative to your application's working directory. Provide an empty string to save files into the working directory.
+- File name (without extension) for a printable form and the recognition pattern. All pages are saved to a single PDF document.
+
+{{< tabs tabID="2" tabTotal="2" tabName1="Source code" tabName2="Saved files" >}}
+{{< tab tabNum="1" >}}
+```csharp
+Aspose.OMR.Api.OmrEngine omrEngine = new Aspose.OMR.Api.OmrEngine();
+Aspose.OMR.Generation.GenerationResult generationResult = omrEngine.Generate("source.txt");
+if(generationResult.ErrorCode != 0)
+{
+	Console.WriteLine(generationResult.ErrorMessage);
+	return generationResult.ErrorCode;
+}
+generationResult.SaveAsInteractivePdf("", "OMR-Form");
 ```
 {{< /tab >}}
 {{< tab tabNum="2" >}}

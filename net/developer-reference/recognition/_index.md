@@ -1,6 +1,6 @@
 ---
 weight: 40
-date: "2023-06-29"
+date: "2024-11-29"
 author: "Vladimir Lapin"
 type: docs
 url: /net/recognition/
@@ -47,6 +47,16 @@ using(MemoryStream ms = new MemoryStream(pattern))
 
 If you have lost the recognition pattern file for the survey, simply [generate](/omr/net/generate-template/) it again from the [form source code](/omr/net/design-form/) using **exactly the same** paper size, orientation, font, and other [layout setting](/omr/net/generate-template/page-setup/).
 
+## Completed form sources
+
+Aspose.OCR for .NET can [recognize](/net/recognition/) completed interactive machine-readable PDF forms along with scanned or photographed hand-filled forms. You can provide a mix of scanned and interactive forms and get the identical [recognition results](/net/recognition/save/) regardless of the source file type.
+
+If Aspose.OCR for .NET detects at least one interactive element (such as a checkbox or input field) in the provided PDF, it classifies the PDF as interactive and reads the built-in form elements to retrieve results. If no interactive elements are found, the form is treated as a scanned document, and filled-in elements are identified using optical mark recognition algorithms. Barcodes and QR codes are always treated as images, regardless of the PDF type.
+
+{{% alert color="primary" %}}
+The original form must be generated with Aspose.OCR for .NET 24.11.0 or later. PDF forms or images based on other sources (including earlier versions of Aspose.OMR) will be ignored.
+{{% /alert %}}
+
 ## Recognizing OMR form from a single respondent
 
 {{% alert color="primary" %}} 
@@ -57,6 +67,7 @@ To recognize a completed form, process its scan or photo through `Recognize` met
 
 - An absolute or relative path to the image (for single-page forms).
 - An absolute or relative path to the scanned PDF (for single-page or multi-page forms).
+- An absolute or relative path to the interactive PDF (for single-page or multi-page forms).
 - A memory stream containing a scan or a photo of the form in any of the [supported formats](/omr/net/supported-file-formats/). Useful for building web applications or APIs.
 - An array of paths to scanned form pages (for multi-page forms).
 - An array of memory streams containing scans or photographs of the completed form pages in any of the [supported formats](/omr/net/supported-file-formats/). Useful for building web applications or APIs.
