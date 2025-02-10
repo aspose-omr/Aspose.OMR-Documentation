@@ -1,6 +1,6 @@
 ---
 weight: 40
-date: "2024-11-29"
+date: "2025-02-10"
 author: "Vladimir Lapin"
 type: docs
 url: /net/generate-template/save/
@@ -33,7 +33,7 @@ The printable form can be saved in one or more images (one image per page) or in
 
 ### Saving form as an image
 
-Call `Save` method of of the [`GenerationResult`](https://reference.aspose.com/omr/net/aspose.omr.generation/generationresult) object returned by [`GenerateTemplate` or `GenerateJSONTemplate` methods](/omr/net/generate-template/). The method takes the following arguments:
+Call `Save` method of of the [`GenerationResult`](https://reference.aspose.com/omr/net/aspose.omr.generation/generationresult) object returned by [`Generate` method](/omr/net/generate-template/). The method takes the following arguments:
 
 - Target directory name, either absolute or relative to your application's working directory. Provide an empty string to save files into the working directory.
 - File name (without extension) for printable form pages and the recognition pattern. Each page is always saved as a separate file. If multiple pages are generated, the suffix "_Page{NUMBER}_" will be added to each file; for example, "_OMR-FormPage1.png_".
@@ -67,7 +67,7 @@ The method described below is used for saving a form as an image-only (printable
 This is the recommended method for saving multi-page forms.
 {{% /alert %}} 
 
-Call `SaveAsPdf` method of of the [`GenerationResult`](https://reference.aspose.com/omr/net/aspose.omr.generation/generationresult) object returned by [`GenerateTemplate` or `GenerateJSONTemplate` methods](/omr/net/generate-template/). The method takes the following arguments:
+Call `SaveAsPdf` method of of the [`GenerationResult`](https://reference.aspose.com/omr/net/aspose.omr.generation/generationresult) object returned by [`Generate` method](/omr/net/generate-template/). The method takes the following arguments:
 
 - Target directory name, either absolute or relative to your application's working directory. Provide an empty string to save files into the working directory.
 - File name (without extension) for a printable form and the recognition pattern. All pages are saved to a single PDF document.
@@ -110,7 +110,7 @@ The following [markup](https://docs.aspose.com/omr/design-form/) elements are su
 - **Write-in**: a blank field in which the respondent can hand write some text. This element is converted to a text input field.
 - **Barcode**: a barcode or QR code based on the provided string. It is represented as a non-interactive image.
 
-Call `SaveAsInteractivePdf` method of of the [`GenerationResult`](https://reference.aspose.com/omr/net/aspose.omr.generation/generationresult) object returned by [`GenerateTemplate` or `GenerateJSONTemplate` methods](/omr/net/generate-template/). The method takes the following arguments:
+Call `SaveAsInteractivePdf` method of of the [`GenerationResult`](https://reference.aspose.com/omr/net/aspose.omr.generation/generationresult) object returned by [`Generate` method](/omr/net/generate-template/). The method takes the following arguments:
 
 - Target directory name, either absolute or relative to your application's working directory. Provide an empty string to save files into the working directory.
 - File name (without extension) for a printable form and the recognition pattern. All pages are saved to a single PDF document.
@@ -142,7 +142,7 @@ If you do not have direct access to storage (for example, when building web appl
 This approach requires that the recognition pattern be [generated separately](#getting-recognition-pattern).
 {{% /alert %}} 
 
-To enable in-memory form generation, convert the object returned by [`GenerateTemplate` or `GenerateJSONTemplate` methods](/omr/net/generate-template/) to [`MemoryGenerationResult`](https://reference.aspose.com/omr/net/aspose.omr.generation/memorygenerationresult/memorygenerationresult/) object:
+To enable in-memory form generation, convert the object returned by [`Generate` method](/omr/net/generate-template/) to [`MemoryGenerationResult`](https://reference.aspose.com/omr/net/aspose.omr.generation/memorygenerationresult/memorygenerationresult/) object:
 
 ```csharp
 Aspose.OMR.Api.OmrEngine omrEngine = new Aspose.OMR.Api.OmrEngine();
@@ -187,7 +187,7 @@ byte[] recognitionPattern = omr.ToArray();
 
 ## Iterating through pages
 
-[GenerationResult](https://reference.aspose.com/omr/net/aspose.omr.generation/generationresult) object returned by [`GenerateTemplate` or `GenerateJSONTemplate` methods](/omr/net/generate-template/) also contains a collection of all generated printable pages (as `System.Drawing.Bitmap` objects). You can manually iterate through this list and save the pages in [different formats](/omr/net/supported-file-formats/) if necessary.
+[GenerationResult](https://reference.aspose.com/omr/net/aspose.omr.generation/generationresult) object returned by [`Generate` method](/omr/net/generate-template/) also contains a collection of all generated printable pages (as `System.Drawing.Bitmap` objects). You can manually iterate through this list and save the pages in [different formats](/omr/net/supported-file-formats/) if necessary.
 
 ### Example
 

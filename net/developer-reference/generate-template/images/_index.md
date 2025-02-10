@@ -1,6 +1,6 @@
 ---
 weight: 20
-date: "2024-09-04"
+date: "2025-02-10"
 author: "Vladimir Lapin"
 type: docs
 url: /net/generate-template/images/
@@ -27,7 +27,7 @@ If an image file is mentioned in the source code but no file path is provided, a
 
 Image paths can be provided with:
 
-- A string array in [`GenerateTemplate`](https://reference.aspose.com/omr/net/aspose.omr.api.omrengine/generatetemplate/methods/5) method.  
+- A string array in [`Generate`] method.  
   It only works with text markup files and **does not** allow you to configure page settings.
 - `ImagesPaths` property of [`GlobalPageSettings`](https://reference.aspose.com/omr/net/aspose.omr.generation/globalpagesettings) object. Full paths to images are provided as an array of strings.  
   This is a universal approach that works with all types of sources, and also allows you to [customize page settings](/omr/net/generate-template/page-setup/).
