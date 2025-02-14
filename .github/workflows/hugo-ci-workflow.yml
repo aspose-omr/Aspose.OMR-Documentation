@@ -23,7 +23,8 @@ jobs:
           pwd
           sudo npm install -D --save autoprefixer
           sudo npm install -D --save postcss-cli
-          rsync --recursive --delete --force --progress ${{ secrets.PROJECTPATH }} content/
+         # rsync --recursive --delete --force --progress ${{ secrets.PROJECTPATH }} content/
+          rsync --recursive --delete --force --progress $GITHUB_WORKSPACE/aspose-omr-docs/Aspose.OMR-Documentation content/
           rm -rf public
           hugo --minify --baseURL https://docs.aspose.com/omr
           rsync --recursive --delete --force -e "ssh" --progress public/ ${{ secrets.TRANSFERPATH }}
