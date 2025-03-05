@@ -1,6 +1,6 @@
 ---
 weight: 10
-date: "2023-05-30"
+date: "2025-03-04"
 author: "Vladimir Lapin"
 type: docs
 url: /txt-markup/answer_sheet/
@@ -63,6 +63,7 @@ Attribute | Default value | Description | Usage example
 **bubble_type** | round | Bubble style: `round` or `square`. | `bubble_type=square`
 **answers_list** | A to Z | Characters to be drawn inside bubbles in _({Character 1})({Character 2})...({Character N})_ format.<br />The total number of characters must match the value of the **answers_count** attribute. | `answers_list=(α)(β)(γ)(δ)(ε)`
 **column** | 1 | The number of the column where the **answer_sheet** element will be placed. Only applicable if **answer_sheet** is placed in a multi-column [**container**](/omr/txt-markup/container/). | `column=2`
+**multiselect** | true | Set to `false` to allow the OMR API to validate whether multiple answers are selected and throws an exception if more than one choice per question is detected. Set to `true` to accept multiple answers for the same question.<br />Overrides the `Multiselect` page setting. | `multiselect=false`
 
 ## Allowed child elements
 

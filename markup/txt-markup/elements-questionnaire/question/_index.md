@@ -1,6 +1,6 @@
 ---
 weight: 10
-date: "2023-05-30"
+date: "2025-03-04"
 author: "Vladimir Lapin"
 type: docs
 url: /txt-markup/choicebox/
@@ -43,6 +43,7 @@ Attribute | Default value | Description | Usage example
 **color** | black | Color of question and answer texts. Can be picked from one of the supported values. | `color=red`
 **align** | left | Horizontal alignment of question and answer texts: `left`, `center` or `right`. | `align=center`
 **display_number** | true | Set to `true` to show a sequence number before the question. Set to `false` to show the question text only. | `display_number=false`
+**multiselect** | true | Set to `false` to allow the OMR API to validate whether multiple answers are selected and throws an exception if more than one choice is detected. Set to `true` to accept multiple answers.<br />Overrides the `Multiselect` page setting. | `multiselect=false`
 
 ### Answers
 
@@ -96,6 +97,8 @@ Attribute | Default value | Description | Usage example
 **font_size** | 12 | Font size for the answer's text. | `font_size=16`
 **color** | black | Color of the answer's texts. Can be picked from one of the supported values. | `color=red`
 **align** | left | Horizontal alignment of the answer texts: `left`, `center` or `right`. | `align=center`
+**display_number** | true | Set to `true` to show a sequence number before the question. Set to `false` to show the question text only. | `display_number=false`
+**multiselect** | true | Set to `false` to allow the OMR API to validate whether multiple answers are selected and throws an exception if more than one choice is detected. Set to `true` to accept multiple answers.<br />Overrides the `Multiselect` page setting. | `multiselect=false`
 
 If the preceding string contains more than one answer, the attributes are applied to all of them:
 

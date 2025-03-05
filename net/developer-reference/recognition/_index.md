@@ -1,6 +1,6 @@
 ---
 weight: 40
-date: "2024-11-29"
+date: "2025-03-04"
 author: "Vladimir Lapin"
 type: docs
 url: /net/recognition/
@@ -117,6 +117,34 @@ Aspose.OMR.Api.OmrEngine omrEngine = new Aspose.OMR.Api.OmrEngine();
 Aspose.OMR.Api.TemplateProcessor templateProcessor = omrEngine.GetTemplateProcessor("pattern.omr");
 Aspose.OMR.Model.RecognitionResult recognitionResults[] = templateProcessor.RecognizeFolder(@"C:\final_exam\");
 ```
+
+## Handling recognition errors
+
+Aspose.OMR API can automatically validate the completed forms and throw an exception when the form is filled incorrectly. For example, when more than one answer is provided for a question that can only accept a single answer. This can be very useful when handling strict forms, such as:
+
+- Quizzes
+- Exam sheets
+- Voting ballots
+- Application forms
+
+To validate the forms, set an additional parameter in the `GetTemplateProcessor` method to `FormValidationLogic.Exception` and catch `Aspose.OMR.MultiselectException` upon form recognition.
+
+```csharp
+OmrEngine engine = new OmrEngine();
+TemplateProcessor templateProcessor = engine.GetTemplateProcessor(templatePath, FormValidationLogic.Exception);
+try
+{
+	RecognitionResult result = templateProcessor.Recognize("scan.png");
+}
+catch (MultiselectException ex)
+{
+	Console.WriteLine("The student filled the form incorrectly!");
+}
+```
+
+{{% alert color="primary" %}}
+Form validation will only work when the validation logic was defined in the [form source code](/omr/net/design-form/) or in [global page settings](/omr/net/generate-template/page-setup/).
+{{% /alert %}}
 
 ## Saving recognition results
 

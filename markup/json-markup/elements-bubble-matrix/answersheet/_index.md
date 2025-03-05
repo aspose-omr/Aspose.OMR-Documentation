@@ -1,6 +1,6 @@
 ---
 weight: 10
-date: "2023-05-30"
+date: "2025-03-04"
 author: "Vladimir Lapin"
 type: docs
 url: /json-markup/answersheet/
@@ -65,6 +65,7 @@ Name | Type | Default value | Description
 **bubble_type** | string | "round" | Bubble style: `"round`" or `"square"`.
 **answers_list** | array | _["A" ... "Z"]_ | Characters to be drawn inside bubbles. The total number of array items must match the value of the **answers_count** property.
 **column** | integer | 1 | The number of the column where the **AnswerSheet** element will be placed. Only applicable if **AnswerSheet** is placed in a multi-column [**Container**](/omr/json-markup/container/).
+**multiselect** | boolean | true | Set to `false` to allow the OMR API to validate whether multiple answers are selected and throws an exception if more than one choice per question is detected. Set to `true` to accept multiple answers for the same question.<br />Overrides the `Multiselect` page setting.
 
 ## Allowed child elements
 

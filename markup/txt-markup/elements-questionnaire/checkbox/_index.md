@@ -1,6 +1,6 @@
 ---
 weight: 20
-date: "2023-05-30"
+date: "2025-03-04"
 author: "Vladimir Lapin"
 type: docs
 url: /txt-markup/checkbox/
@@ -49,6 +49,7 @@ Attribute | Default value | Description | Usage example
 **align** | left | Horizontal alignment of **checkbox** element: `left`, `center` or `right`. | `align=center`
 **font_style** | regular | The font style for a checkbox label: `bold`, `italic` or `underline`.<br />Several font styles can be combined by listing them separated by commas. | `font_style=bold, italic`
 **font_size** | 12 | Font size for the checkbox label. | `font_size=16`
+**multiselect** | true | Set to `false` to allow the OMR API to validate whether multiple answers are selected and throws an exception if more than one choice is detected. Set to `true` to accept multiple answers.<br />Overrides the `Multiselect` page setting. | `multiselect=false`
 
 ## Allowed child elements
 

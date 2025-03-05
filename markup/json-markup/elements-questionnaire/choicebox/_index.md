@@ -1,6 +1,6 @@
 ---
 weight: 10
-date: "2023-05-30"
+date: "2025-03-04"
 author: "Vladimir Lapin"
 type: docs
 url: /json-markup/choicebox/
@@ -55,6 +55,7 @@ Name | Type | Default value | Description
 **font_style** | string / array | "regular" | The font style for a text: `"bold"`, `"italic"` or `"underline"`.<br />Several font styles can be combined by providing them as an array, for example `["bold", "italic"]`.
 **font_size** | integer | 12 | Font size for the text.
 **align** | string | "left" | Horizontal text alignment: `"left"`, `"center"` or `"right"`.
+**multiselect** | boolean | true | Set to `false` to allow the OMR API to validate whether multiple answers are selected and throws an exception if more than one choice is detected. Set to `true` to accept multiple answers.<br />Overrides the `Multiselect` page setting.
 
 ## Rating scale
 
