@@ -1,6 +1,6 @@
 ---
 weight: 10
-date: "2024-09-04"
+date: "2025-03-20"
 author: "Vladimir Lapin"
 type: docs
 url: /net/programmatic-forms/examples/personalized/

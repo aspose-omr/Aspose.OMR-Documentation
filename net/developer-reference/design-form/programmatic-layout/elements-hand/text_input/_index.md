@@ -1,6 +1,6 @@
 ---
 weight: 20
-date: "2024-02-10"
+date: "2025-03-20"
 author: "Vladimir Lapin"
 type: docs
 url: /net/programmatic-forms/textinputconfig/

@@ -1,6 +1,6 @@
 ---
 weight: 40
-date: "2024-07-29"
+date: "2025-03-20"
 author: "Vladimir Lapin"
 type: docs
 url: /net/programmatic-forms/elements-barcode/

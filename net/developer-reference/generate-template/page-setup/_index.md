@@ -1,6 +1,6 @@
 ---
 weight: 10
-date: "2024-11-07"
+date: "2025-03-07"
 author: "Vladimir Lapin"
 type: docs
 url: /net/generate-template/page-setup/
@@ -47,6 +47,7 @@ Setting | Type | Default value | Description
 [`WritingSystem`](https://reference.aspose.com/omr/net/aspose.omr.generation/globalpagesettings/writingsystem/) | `Aspose.OMR.Generation.WritingSystems.WritingSystem` | Left-to-right (LTR), Western numbering | [Localization](#form-localization), which affects text direction (LTR or RTL) and item numbering of generated OMR forms.
 `ImagesPaths` | `string[]` | _n/a_ | Full path to each image mentioned in the [source code](/omr/net/design-form/).<br />Read more info in this [article](/omr/net/generate-template/images/).
 `LongWordHandling` | `Aspose.OMR.Generation.LongWordHandling` | Draw word over element's bounds | How to render very long words that do not fit the parent element's width and cannot be wrapped.<ul><li>`DrawOver` (default) - draw long words until a space or end of line is encountered, even outside the bounds of an element.</li><li>`ThrowException` - throw an exception when rendering the form if the long word does not fit the width of the parent element. The form will not be generated.</li><li>`Hyphenation` - hyphenate word that reach the page or block margin.</li></ul>
+`BatchBarcode` | `BarcodeConfig` | _n/a_ | Defines the type, position and size of a mandatory [barcode](/omr/net/programmatic-forms/elements-barcode/) element which contains the unique identifier of a personalized form in the batch. The barcode element is required for proper processing of bubbles and to distinguish between individual forms in batches. It cannot be disabled or removed.<br />This element is drawn on top of form elements, except for [reference point markers](/omr/net/omr-form-structure/#reference-point-markers). Choose the position where it does not overlap with any other form element.
 `Multiselect` | `bool` | `true` | When set to `false`, the OMR API validates whether multiple answers are selected and throws an exception if more than one choice is detected. This mode is particularly useful for processing exam sheets and quizzes, where only a single answer per question is expected.<br />If set to true (default behavior), multiple answers for the same question are processed without errors. This behavior maintains compatibility with Aspose.OMR forms from version 24.1.0 and earlier.<br />This setting can be overridden on individual element level.
 
 ## Supported paper sizes

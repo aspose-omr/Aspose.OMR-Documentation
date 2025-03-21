@@ -1,6 +1,6 @@
 ---
 weight: 30
-date: "2022-05-30"
+date: "2025-03-20"
 author: "Vladimir Lapin"
 type: docs
 url: /net/programmatic-forms/textconfig/

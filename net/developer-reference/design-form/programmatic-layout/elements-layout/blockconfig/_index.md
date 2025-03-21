@@ -1,6 +1,6 @@
 ---
 weight: 20
-date: "2022-10-25"
+date: "2025-03-20"
 author: "Vladimir Lapin"
 type: docs
 url: /net/programmatic-forms/blockconfig/

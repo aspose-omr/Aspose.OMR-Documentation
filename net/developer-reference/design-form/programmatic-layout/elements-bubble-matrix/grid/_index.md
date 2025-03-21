@@ -1,6 +1,6 @@
 ---
 weight: 20
-date: "2022-06-01"
+date: "2025-03-20"
 author: "Vladimir Lapin"
 type: docs
 url: /net/programmatic-forms/gridconfig/
@@ -77,7 +77,7 @@ Numbers from each marked bubble are merged into a single number.
 
 If several bubbles are marked in one row / column, they are also merged into a number with multiple digits. For example, if the respondent marks bubbles "_3_" and "_7_" in one row and "_5_" in another, the recognition result for the **grid** element will be "_375_".
 
-If this behavior is undesirable, instruct respondents to select one bubble per row / column (depending on the `orientation` property) or use [**CompositeGrid**](/omr/json-markup/compositegrid/) element.
+If this behavior is undesirable, instruct respondents to select one bubble per row / column (depending on the `orientation` property) or use [**CompositeGrid**](/omr/net/json-markup/compositegrid/) element.
 
 ## Allowed child elements
 

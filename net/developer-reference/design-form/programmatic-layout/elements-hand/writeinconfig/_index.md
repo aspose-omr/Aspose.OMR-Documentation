@@ -1,6 +1,6 @@
 ---
 weight: 10
-date: "2022-05-30"
+date: "2025-03-20"
 author: "Vladimir Lapin"
 type: docs
 url: /net/programmatic-forms/writeinconfig/
@@ -60,7 +60,7 @@ Name | Type | Default value | Description
 
 ## Combining with VerticalChoiceBoxConfig elements
 
-**WriteInConfig** element can be included into [**VerticalChoiceBoxConfig**](/omr/json-markup/verticalchoiceboxconfig/) element to give the respondent the opportunity to provide a free-form answer to an open-ended question.
+**WriteInConfig** element can be included into [**VerticalChoiceBoxConfig**](/omr/net/json-markup/verticalchoiceboxconfig/) element to give the respondent the opportunity to provide a free-form answer to an open-ended question.
 
 In this case, the content of the element is stored to [`Images`](https://reference.aspose.com/omr/net/aspose.omr.model/recognitionresult/properties/images) collection only if the respondent marks the corresponding bubble.
 
