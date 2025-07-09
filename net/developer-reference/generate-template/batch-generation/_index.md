@@ -3,7 +3,7 @@ weight: 50
 date: "2025-03-17"
 author: "Vladimir Lapin"
 type: docs
-url: /net/recognition/batch/
+url: /net/generation/batch/
 feedback: OMRNET
 title: Batch generation
 description: How to generate multiple personalized OMR forms.
