@@ -5,7 +5,7 @@ author: "Vladimir Lapin"
 type: docs
 url: /net/recognition/batch/
 feedback: OMRNET
-title: Saving recognition results
+title: Batch recognition
 description: How to get form recognition results in CSV, XML or JSON formats.
 keywords:
 - OMR
