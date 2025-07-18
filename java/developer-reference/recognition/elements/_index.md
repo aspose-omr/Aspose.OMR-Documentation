@@ -3,6 +3,8 @@ weight: 20
 date: "2023-06-16"
 author: "Vladimir Lapin"
 type: docs
+ai_search_scope: omr_java
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 url: /java/recognition/elements/
 feedback: OMRJAVA
 title: How form elements are recognized

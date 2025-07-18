@@ -3,6 +3,8 @@ weight: 40
 date: "2025-03-20"
 author: "Vladimir Lapin"
 type: docs
+ai_search_scope: omr_net
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 url: /net/programmatic-forms/elements-barcode/
 feedback: OMRNET
 title: Barcodes and QR codes

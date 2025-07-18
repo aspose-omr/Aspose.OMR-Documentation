@@ -3,6 +3,8 @@ weight: 40
 date: "2022-05-24"
 author: "Vladimir Lapin"
 type: docs
+ai_search_scope: omr_net
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 url: /net/recognition/elements/
 feedback: OMRNET
 title: How form elements are recognized

@@ -3,6 +3,8 @@ weight: 30
 date: "2025-02-10"
 author: "Vladimir Lapin"
 type: docs
+ai_search_scope: omr_net
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 url: /net/generate-template/error-handling/
 feedback: OMRNET
 title: Error handling

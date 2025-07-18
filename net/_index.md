@@ -3,6 +3,8 @@ weight: 10
 date: "2023-01-24"
 author: "Vladimir Lapin"
 type: docs
+ai_search_scope: omr_net
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 url: /net/
 feedback: OMRNET
 is_root: true

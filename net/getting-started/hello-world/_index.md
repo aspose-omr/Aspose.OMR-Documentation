@@ -3,6 +3,8 @@ weight: 40
 date: "2024-09-04"
 author: "Vladimir Lapin"
 type: docs
+ai_search_scope: omr_net
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 url: /net/hello-world/
 feedback: OMRNET
 title: Hello, World!

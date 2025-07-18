@@ -3,6 +3,8 @@ weight: 10
 date: "2025-03-07"
 author: "Vladimir Lapin"
 type: docs
+ai_search_scope: omr_net
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 url: /net/generate-template/page-setup/
 feedback: OMRNET
 title: Page setup

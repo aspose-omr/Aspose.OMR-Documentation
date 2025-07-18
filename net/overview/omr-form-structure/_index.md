@@ -3,6 +3,8 @@ weight: 40
 date: "2023-10-24"
 author: "Vladimir Lapin"
 type: docs
+ai_search_scope: omr_net
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 url: /net/omr-form-structure/
 feedback: OMRNET
 title: Aspose.OMR form structure

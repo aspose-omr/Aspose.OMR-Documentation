@@ -3,6 +3,8 @@ weight: 10
 date: "2022-06-16"
 author: "Vladimir Lapin"
 type: docs
+ai_search_scope: omr_java
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 url: /java/recognition/accuracy-threshold/
 feedback: OMRJAVA
 title: Fine-tuning recognition accuracy

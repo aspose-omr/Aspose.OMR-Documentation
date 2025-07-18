@@ -3,6 +3,8 @@ weight: 20
 date: "2022-06-03"
 author: "Vladimir Lapin"
 type: docs
+ai_search_scope: omr_net
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 url: /net/showcases/satisfaction/grouped/
 feedback: OMRNET
 title: Customer satisfaction survey with grouped layout

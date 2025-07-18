@@ -3,6 +3,8 @@ weight: 30
 date: "2023-06-16"
 author: "Vladimir Lapin"
 type: docs
+ai_search_scope: omr_java
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 url: /java/generate-template/
 feedback: OMRJAVA
 title: Generating the form

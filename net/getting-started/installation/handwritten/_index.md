@@ -3,6 +3,8 @@ weight: 10
 date: "2024-02-10"
 author: "Vladimir Lapin"
 type: docs
+ai_search_scope: omr_net
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 url: /net/installation/handwriting/
 feedback: OMRNET
 title: Handwriting recognition plugin

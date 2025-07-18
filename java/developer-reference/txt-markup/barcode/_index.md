@@ -3,6 +3,8 @@ weight: 60
 date: "2024-12-05"
 author: "Vladimir Lapin"
 type: docs
+ai_search_scope: omr_java
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 url: /design-form/barcode/
 feedback: OMRCOMMON
 title: Barcodes and QR codes

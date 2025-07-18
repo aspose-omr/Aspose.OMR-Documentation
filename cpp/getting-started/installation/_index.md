@@ -3,6 +3,8 @@ weight: 20
 date: "2023-06-06"
 author: "Vladimir Lapin"
 type: docs
+ai_search_scope: omr_cpp
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 url: /cpp/installation/
 feedback: OMRCPP
 title: Installation

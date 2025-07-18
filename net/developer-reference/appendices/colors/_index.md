@@ -3,6 +3,8 @@ weight: 10
 date: "2022-10-25"
 author: "Vladimir Lapin"
 type: docs
+ai_search_scope: omr_net
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 url: /net/supported-colors/
 feedback: OMRNET
 title: Font and background colors

@@ -3,6 +3,8 @@ weight: 10
 date: "2022-04-12"
 author: "Vladimir Lapin"
 type: docs
+ai_search_scope: omr_net
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 url: /net/omr-technology/
 feedback: OMRNET
 title: Optical mark recognition (OMR) at a glance

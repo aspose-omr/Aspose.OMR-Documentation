@@ -3,6 +3,8 @@ weight: 30
 date: "2023-12-20"
 author: "Vladimir Lapin"
 type: docs
+ai_search_scope: omr_java
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 url: /java/design-form/grid/
 title: Grid
 feedback: OMRJAVA

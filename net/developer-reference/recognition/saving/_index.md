@@ -3,6 +3,8 @@ weight: 20
 date: "2023-06-29"
 author: "Vladimir Lapin"
 type: docs
+ai_search_scope: omr_net
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 url: /net/recognition/save/
 feedback: OMRNET
 title: Saving recognition results

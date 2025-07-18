@@ -3,6 +3,8 @@ weight: 40
 date: "2024-05-13"
 author: "Vladimir Lapin"
 type: docs
+ai_search_scope: omr_java
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 url: /java/design-form/text/
 title: Text
 feedback: OMRJAVA

@@ -3,6 +3,8 @@ weight: 30
 date: "2023-08-15"
 author: "Vladimir Lapin"
 type: docs
+ai_search_scope: omr_net
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 url: /net/supported-file-formats/
 feedback: OMRNET
 title: Supported file formats

@@ -3,6 +3,8 @@ weight: 15
 date: "2024-02-10"
 author: "Vladimir Lapin"
 type: docs
+ai_search_scope: omr_net
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 url: /net/plugins/
 feedback: OMRNET
 title: Adding new functionality through plugins

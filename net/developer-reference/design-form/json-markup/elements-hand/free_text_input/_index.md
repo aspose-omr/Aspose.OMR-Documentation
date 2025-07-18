@@ -3,6 +3,8 @@ weight: 30
 date: "2025-03-20"
 author: "Vladimir Lapin"
 type: docs
+ai_search_scope: omr_net
+ai_search_endpoint: "https://docsearch.api.aspose.cloud/ask"
 url: /net/json-markup/free_text_input/
 aliases:
 - /json-markup/free_text_input/
